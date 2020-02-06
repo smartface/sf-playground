@@ -1,0 +1,16 @@
+{
+    ".sf-statusBar": {
+        "android": {
+            "color": "#00A1F1"
+        },
+        "style": "LIGHTCONTENT",
+        "visible": true
+    },
+    ".statusBar": {
+        "android": {
+            "color": "#00A1F1"
+        },
+        "style": "LIGHTCONTENT",
+        "visible": true
+    }
+}

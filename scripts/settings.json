@@ -1,0 +1,22 @@
+{
+	"config": {
+		"theme": {
+			"currentTheme": "baseTheme",
+			"baseTheme": "baseTheme",
+			"themes": [
+				"defaultTheme",
+				"baseTheme"
+			]
+		},
+		"paths": {
+			"pgxFolder": ".ui",
+			"uiFolder": "scripts/ui",
+			"pagesFolder": "scripts/pages",
+			"libraryUiFolder": "scripts/node_modules/library",
+			"libraryUserFolder": "scripts/components",
+			"themesFolder": "themes",
+			"themesDistFolder": "scripts/themes"
+		},
+		"version": "6.15.1"
+	}
+}

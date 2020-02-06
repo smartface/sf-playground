@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "types": ["Node"],
+    "checkJs": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "rootDir": "scripts",
+    "noImplicitAny": false,
+    "paths": {
+      "ui/*": ["./scripts/ui/*"],
+      "components/*": ["./scripts/components/*"],
+      "library/*": ["./scripts/components/*"]
+    }
+  },
+  "files": ["./typings.d.ts"],
+  "exclude": [".dist", "node_modules", "**/*.test.js"]
+}
