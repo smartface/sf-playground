@@ -9,7 +9,8 @@
 					"42b807d1",
 					"b7d28cff",
 					"980522a9",
-					"9e49-7873-afba-472b"
+					"9e49-7873-afba-472b",
+					"d4f9-404e-2119-d701"
 				],
 				"isRemovable": true,
 				"name": "page1",
@@ -119,6 +120,42 @@
 				"text": "Next Page",
 				"usePageVariable": true,
 				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "d4f9-404e-2119-d701",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "pageTitleLayout",
+				"parent": "e891b86d"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "pageTitleLayout",
+				"id": "0201-dc86-607b-2891"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flex": {
+					"justifyContent": 1,
+					"positionType": 0
+				},
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER"
+				},
+				"height": 41.333333333333336,
+				"ios": {
+					"shadowOpacity": 0.24
+				},
+				"left": 0,
+				"top": 0,
+				"width": 340.6666666666667
 			}
 		}
 	]

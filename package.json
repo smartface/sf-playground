@@ -1,6 +1,14 @@
 {
 	"dependencies": {
+		"@types/node": "^13.7.0",
 		"@smartface/smartface.ui-editor": "6.15.1"
 	},
-	"marketplace-assets": {}
+	"marketplace-assets": {},
+	"devDependencies": {
+		"@microsoft/rush": "^5.19.4",
+		"typescript": "^3.7.5"
+	},
+	"scripts": {
+		"run:dev": "tsc -w"
+	}
 }

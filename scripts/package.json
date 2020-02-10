@@ -1,4 +1,5 @@
 {
+    "private": true,
     "dependencies": {
         "@smartface/contx": "^2.2.9",
         "@smartface/html-to-text": "^1.1.1",
@@ -8,6 +9,9 @@
         "sf-core": "^4.1.0",
         "sf-extension-utils": "^11.0.0"
     },
+    "workspaces": [
+        "../packages/*"
+    ],
     "scripts": {
         "postinstall": "ENV_PATH=.smf/.env sfMarketplaceService install && rm -rf node_modules/.bin"
     }

@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-gridViewItem .sf-gridViewItem-simple",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "aea8-55c1-833e-4baa",
 			"initialized": true,
 			"props": {
@@ -21,8 +21,8 @@
 			"userProps": {
 				"flexProps": {},
 				"height": 227,
-				"left": 123.91304347826086,
-				"top": 127.17391304347825
+				"left": 83.33333333333334,
+				"top": 114.28571428571429
 			}
 		},
 		{
