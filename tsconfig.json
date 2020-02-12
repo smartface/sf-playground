@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "checkJs": false,
+        "skipLibCheck": true,
+        "target": "ES5",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "rootDir": "scripts",
+        "lib": ["ES2015"]
+    },
+    "files": ["./typings.d.ts", "./scripts/node_modules/sf-core/index.d.ts"],
+    "exclude": ["node_modules"],
+    "include": ["scripts"]
+}

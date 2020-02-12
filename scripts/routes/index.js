@@ -6,9 +6,6 @@ const {
     Route
 } = require("@smartface/router");
 require("sf-extension-utils/lib/router/goBack"); // Implements onBackButtonPressed
-Router.of({
-
-})
 const router = Router.of({
     path: "/",
     isRoot: true,
