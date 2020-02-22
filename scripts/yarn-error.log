@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: http://cd.smartface.io/nexus/content/repositories/npmjs/@types/node/-/node-12.12.26.tgz: Request failed "404 Not Found"
+  Error: http://cd.smartface.io/nexus/content/repositories/npmjs/@types/node/-/node-12.12.27.tgz: Request failed "404 Not Found"
       at ResponseError.ExtendableBuiltin (/opt/yarn-v1.17.3/lib/cli.js:696:66)
       at new ResponseError (/opt/yarn-v1.17.3/lib/cli.js:802:124)
       at Request.<anonymous> (/opt/yarn-v1.17.3/lib/cli.js:66900:16)

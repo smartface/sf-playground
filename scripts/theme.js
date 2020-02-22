@@ -5,7 +5,7 @@ const { createThemeContextBound } = require("@smartface/contx/lib/styling/ThemeC
 const themeSources = themeConfig.themes
     .map(name => ({
         name,
-        rawStyles: require(`./themes/${name}`),
+        rawStyles: require(`./generated/themes/${name}`),
         isDefault: themeConfig.currentTheme === name
     }));
 

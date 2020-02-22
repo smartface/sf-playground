@@ -13,5 +13,7 @@ plugin/*
 node_modules/
 scripts/ui
 scripts/themes
+scripts/generated
 .DS_Store
 /packages
+dist

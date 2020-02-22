@@ -15,11 +15,11 @@ const router = Router.of({
             routes: [
                 Route.of({
                     path: "/pages/page1",
-                    build: buildExtender({ getPageClass: () => require("pages/page1"), headerBarStyle: { visible: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page1").default, headerBarStyle: { visible: true } })
                 }),
                 Route.of({
                     path: "/pages/page2",
-                    build: buildExtender({ getPageClass: () => require("pages/page2"), headerBarStyle: { visible: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page2").default, headerBarStyle: { visible: true } })
                 }),
             ]
         })

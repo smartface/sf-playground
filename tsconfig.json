@@ -1,18 +1,22 @@
 {
     "compilerOptions": {
-        "allowJs": false,
+        "allowJs": true,
         "checkJs": false,
         "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "noEmit": false,
         "target": "ES5",
+        "outDir": "./dist",
         "moduleResolution": "Node",
         "resolveJsonModule": true,
         "isolatedModules": false,
         "allowSyntheticDefaultImports": true,
-        "baseUrl": ".",
-        "rootDir": "scripts",
+        "baseUrl": "scripts",
+        "rootDirs": ["scripts"],
         "lib": ["ES2015"]
     },
     "files": ["./typings.d.ts", "./scripts/node_modules/sf-core/index.d.ts"],
-    "exclude": ["node_modules"],
-    "include": ["scripts"]
+    "exclude": ["node_modules", "./scripts/dist"],
+    "include": ["scripts", "scripts/**/*.json"],
+    "path": [{}]
 }

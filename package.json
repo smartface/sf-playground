@@ -1,7 +1,8 @@
 {
 	"dependencies": {
+		"@smartface/smartface.ui-editor": "6.15.1",
 		"@types/node": "^13.7.0",
-		"@smartface/smartface.ui-editor": "6.15.1"
+		"lerna": "^3.20.2"
 	},
 	"marketplace-assets": {},
 	"devDependencies": {
@@ -9,6 +10,7 @@
 		"typescript": "^3.7.5"
 	},
 	"scripts": {
-		"run:dev": "tsc -w"
+		"dev": "tsc -w",
+		"build": "rm -rf ./scripts/dist && tsc"
 	}
 }

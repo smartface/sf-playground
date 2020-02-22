@@ -10,13 +10,21 @@
 		},
 		"paths": {
 			"pgxFolder": ".ui",
-			"uiFolder": "scripts/ui",
+			"uiFolder": "scripts/generated/pages",
 			"pagesFolder": "scripts/pages",
-			"libraryUiFolder": "scripts/node_modules/library",
+			"libraryUiFolder": "scripts/generated/my-components",
 			"libraryUserFolder": "scripts/components",
 			"themesFolder": "themes",
-			"themesDistFolder": "scripts/themes"
+			"themesDistFolder": "scripts/generated/themes",
+			"output": {
+				"root": "dist",
+				"include": [
+					"node_modules",
+					"sf_modules"
+				]
+			}
 		},
-		"version": "6.15.1"
+		"version": "6.15.1",
+		"projectType": "ts"
 	}
 }
