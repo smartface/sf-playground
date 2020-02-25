@@ -3,7 +3,7 @@
 		{
 			"className": ".sf-page",
 			"id": "7761adc8",
-			"initialized": true,
+			"initialized": false,
 			"props": {
 				"children": [
 					"a829471c",
