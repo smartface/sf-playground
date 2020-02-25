@@ -52,11 +52,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7761adc8",
-				"title": "jhkhjjkgkjhkjhkj"
+				"title": "Page2"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "jhkhjjkgkjhkjhkj",
+				"title": "Page2",
 				"visible": true
 			}
 		},
