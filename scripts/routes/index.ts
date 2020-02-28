@@ -26,4 +26,4 @@ const router = Router.of({
     ]
 });
 
-module.exports = router;
+export = router;
