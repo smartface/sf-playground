@@ -8,6 +8,9 @@ declare class __SF_DTXSourcePosition {
     line: number;
     column: number;
 };
+import File = require('sf-core/io/file');
+import FileStream = require('sf-core/io/filestream');
+import Path = require('sf-core/io/path');
 
 function errorStackSourceMapSupport(e: Error) {
 
@@ -16,7 +19,6 @@ function errorStackSourceMapSupport(e: Error) {
     const lines = e.stack.split('\n');
     const lineRegex = /^(?:(.+)(?:\@(.*)\:(\d+)(?::(\d+)))|(?:(.*)\:(\d+)(?::(\d+))))/;
 
-
     try {
         const parsedStack = lines
             .map(line => lineRegex.exec(line))
@@ -24,32 +26,39 @@ function errorStackSourceMapSupport(e: Error) {
             .map((line, index) => {
                 if (line) {
                     const path = line.length === 5 ? line[2] : line[1];
-                    const lineNum = line.length === 5 ? line[3] : line[2];
-                    const colNum = line.length === 5 ? line[4] : line[3];
-                    const map: SourceMapData = require(path + ".json");
+                    const lineNum = parseInt(line.length === 5 ? line[3] : line[2]);
+                    const colNum = parseInt(line.length === 5 ? line[4] : line[3]);
+                    // const map: SourceMapData = require(path + ".json");
+                    console.log(path);
+
+                    var myFile = new File({
+                        path: Path.DataDirectory+"/app.js"
+                    } as any);
                     
-                    const dtxMapsParser = __SF_DTXSourceMapsParser.sourceMapsParserForSourceMaps(map);
-                    const dtxSourcePosition = new __SF_DTXSourcePosition();
-                    dtxSourcePosition.line = parseInt(lineNum);
-                    dtxSourcePosition.column = parseInt(colNum);
-                    const originalPosition: __SF_DTXSourcePosition = dtxMapsParser.originalPositionForPosition(dtxSourcePosition);
-                    const oldPath = `${path}:${lineNum}:${colNum}`;
-                    const newLineNum = `:${originalPosition.line}:${originalPosition.column}`;
-                    console.log(originalPosition, dtxSourcePosition);
-                    const newPath = path.replace(".js", ".ts")+newLineNum;
-                    console.log("Original Line : ", originalPosition.line);
-                    console.log("Original Column : ", originalPosition.column);
-                    return lines[index].replace(oldPath, newPath);
+                    console.log("myFile.exists : ", path, myFile.exists);
+                    if (myFile.exists) {
+                        const mapData = myFile.openStream(FileStream.StreamType.READ, FileStream.ContentMode.BINARY).readToEnd() as string;
+                        console.log(mapData);
+                        var smc = new sourceMap.SourceMapConsumer(JSON.parse(mapData));
+                        const originalPosition = smc.originalPositionFor({
+                            line: lineNum,
+                            column: colNum
+                        });
+                        const oldPath = `${path}:${lineNum}:${colNum}`;
+                        const newLineNum = `:${originalPosition.line}:${originalPosition.column}`;
+                        const newPath = path.replace(".js", ".ts") + newLineNum;
+                        return lines[index].replace(oldPath, newPath);
+                    }
                 }
 
                 return lines[index];
             });
-            console.log("parsedStack : ", parsedStack);
+        console.log("parsedStack : ", parsedStack.join('\n'));
     } catch (e) {
         console.error(e.message, e.stack);
     }
 }
-
+var sourceMap = require('source-map');
 
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.

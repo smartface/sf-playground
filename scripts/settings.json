@@ -21,7 +21,8 @@
 				"include": [
 					"node_modules",
 					"sf_modules"
-				]
+				],
+                "acceptedExtensions": [".js", ".json", ".map"]
 			}
 		},
 		"version": "6.15.1",
