@@ -89,13 +89,13 @@
 					"family": "SFProText",
 					"style": "Regular"
 				},
-				"height": 90,
+				"height": 600,
 				"multiline": true,
 				"text": "Page1",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
 				"usePageVariable": true,
-				"width": null
+				"width": 314.2857142857143
 			}
 		},
 		{

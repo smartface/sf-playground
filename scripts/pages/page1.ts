@@ -25,6 +25,7 @@ export default class Page1 extends Page1Design {
 function onShow(superOnShow) {
   superOnShow();
   this.headerBar.titleLayout.applyLayout();
+  throw new Error('Page 1 error');
 }
 
 /**

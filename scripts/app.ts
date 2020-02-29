@@ -3,59 +3,90 @@ require("i18n/i18n.js"); // Generates global lang object
 
 import Application = require("sf-core/application");
 import System = require("sf-core/device/system");
-declare const __SF_DTXSourceMapsParser: any;
-declare class __SF_DTXSourcePosition {
+declare interface SourcePosition {
     line: number;
     column: number;
+};
+type ErrorStackLine = {
+    line: number;
+    column: number;
+    callee?: string;
+    path: string;
 };
 import File = require('sf-core/io/file');
 import FileStream = require('sf-core/io/filestream');
 import Path = require('sf-core/io/path');
 
-function errorStackSourceMapSupport(e: Error) {
-
-    const inlineSourceMapRegex = /^\s*\/(?:\/|\*)[@#]\s+sourceMappingURL=data:(?:application|text)\/json;(?:charset[:=]\S+?;)?base64,(?:.*)$/mg;
-
-    const lines = e.stack.split('\n');
+function parseErrorStack(lines: string[]): (null | ErrorStackLine)[] {
     const lineRegex = /^(?:(.+)(?:\@(.*)\:(\d+)(?::(\d+)))|(?:(.*)\:(\d+)(?::(\d+))))/;
+    let parsed: any[] = lines
+        .map(line => lineRegex.exec(line));
 
+    return parsed
+        .map(parsedLine => {
+            if(parsedLine){
+                const res = parsedLine
+                    .filter(res => !!res);
+
+                const stackLine: ErrorStackLine = {
+                    path: null,
+                    line: null,
+                    column: null,
+                    callee: null
+                };
+                stackLine.path = res.length === 5 ? res[2] : res[1];
+                stackLine.line = parseInt(res.length === 5 ? res[3] : res[2]);
+                stackLine.column = parseInt(res.length === 5 ? res[4] : res[3]);
+                stackLine.callee = res[0];
+                return stackLine;
+            }
+            return parsedLine;
+        })
+}
+
+function errorStackSourceMapSupport(e: Error): Error {
+    if(!e.stack)
+        return e;
+    const lines = e.stack.split('\n');
+    const scriptsRoot = System.OS === "Android" ? Path.android.storages.internal + "/Android/data/" + Application.android.packageName + "/cache/assets/" : Path.DataDirectory + "/scripts/";
+    let parsedStack: string[];
     try {
-        const parsedStack = lines
-            .map(line => lineRegex.exec(line))
-            .map(item => !!item ? item.filter(res => !!res) : item)
-            .map((line, index) => {
-                if (line) {
-                    const path = line.length === 5 ? line[2] : line[1];
-                    const lineNum = parseInt(line.length === 5 ? line[3] : line[2]);
-                    const colNum = parseInt(line.length === 5 ? line[4] : line[3]);
+        parsedStack = parseErrorStack(lines)
+            .filter(stackLine => !!stackLine)
+            .map((stackLine, index) => {
+                // console.log(stackLine);
+                if (stackLine) {
                     // const map: SourceMapData = require(path + ".json");
-                    console.log(path);
+                    const mapFilePath = scriptsRoot + stackLine.path + ".map";
+                    var mapFile = new File({
+                        path: mapFilePath
+                    });
 
-                    var myFile = new File({
-                        path: Path.DataDirectory+"/app.js"
-                    } as any);
-                    
-                    console.log("myFile.exists : ", path, myFile.exists);
-                    if (myFile.exists) {
-                        const mapData = myFile.openStream(FileStream.StreamType.READ, FileStream.ContentMode.BINARY).readToEnd() as string;
-                        console.log(mapData);
+                    // console.log('mapFile.exists : ', stackLine, ' : ', mapFilePath);
+
+                    if (mapFile.exists) {
+                        const mapData = mapFile.openStream(FileStream.StreamType.READ, FileStream.ContentMode.BINARY).readToEnd() as string;
                         var smc = new sourceMap.SourceMapConsumer(JSON.parse(mapData));
-                        const originalPosition = smc.originalPositionFor({
-                            line: lineNum,
-                            column: colNum
+                        const originalPosition: SourcePosition = smc.originalPositionFor({
+                            line: stackLine.line,
+                            column: stackLine.column
                         });
-                        const oldPath = `${path}:${lineNum}:${colNum}`;
-                        const newLineNum = `:${originalPosition.line}:${originalPosition.column}`;
-                        const newPath = path.replace(".js", ".ts") + newLineNum;
-                        return lines[index].replace(oldPath, newPath);
+                        const transpiledPath = `${stackLine.path}:${stackLine.line}:${stackLine.column}`;
+                        const originalPosStr = `:${originalPosition.line}:${originalPosition.column}`;
+                        const originialPath = stackLine.path.replace(".js", ".ts") + originalPosStr;
+                        return lines[index].replace(transpiledPath, originialPath);
                     }
                 }
 
                 return lines[index];
             });
-        console.log("parsedStack : ", parsedStack.join('\n'));
     } catch (e) {
-        console.error(e.message, e.stack);
+        return e;
+    } finally {
+        return {
+        ...e,
+        stack: parsedStack.join('\n')
+    }
     }
 }
 var sourceMap = require('source-map');
@@ -63,14 +94,15 @@ var sourceMap = require('source-map');
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function (e: UnhandledError) {
+    const error = errorStackSourceMapSupport(e);
     console.error({
         title: e.type || lang.applicationError,
-        message: System.OS === "Android" ? e.stack : (e.message + "\n\n*" + e.stack)
+        message: System.OS === "Android" ? e.stack : (e.message + "\n\n*" + error.stack)
     });
     // errorStackSourceMapSupport(e);
     alert({
         title: e.type || lang.applicationError,
-        message: System.OS === "Android" ? e.stack : (e.message + "\n\n*" + e.stack)
+        message: System.OS === "Android" ? e.stack : (e.message + "\n\n*" + error.stack)
     });
 };
 
