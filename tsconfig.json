@@ -3,21 +3,22 @@
         "allowJs": true,
         "checkJs": false,
         "skipLibCheck": true,
-        "skipDefaultLibCheck": true,
         "sourceMap": true,
         "noEmit": false,
         "target": "ES5",
         "outDir": "./dist",
         "moduleResolution": "Node",
+        "module": "CommonJS",
         "resolveJsonModule": true,
         "isolatedModules": false,
-        "allowSyntheticDefaultImports": true,
+        "typeRoots": [
+            "./scripts/node_modules/sf-core/device/system"
+        ],
         "baseUrl": "scripts",
-        "rootDirs": ["scripts"],
-        "lib": ["ES2015"]
+        "rootDir": "scripts",
+        "lib": ["ES2015", "ES2017"]
     },
-    "files": ["./typings.d.ts", "./scripts/node_modules/sf-core/index.d.ts"],
-    "exclude": ["node_modules", "./scripts/dist"],
-    "include": ["scripts", "scripts/**/*.json"],
-    "path": [{}]
+    "files": ["./typings.d.ts", "./scripts/node_modules/sf-core/index.d.ts", "./scripts/node_modules/sf-core/device/System.d.ts"],
+    "exclude": ["node_modules", "./dist", "**/node_modules/*"],
+    "include": ["./scripts", "./scripts/**/*.json"]
 }

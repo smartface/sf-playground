@@ -1,4 +1,3 @@
-  
 import HeaderBarItem = require("sf-core/ui/headerbaritem");
 import touch = require("sf-extension-utils/lib/touch");
 import Image = require("sf-core/ui/image");
