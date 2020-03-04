@@ -11,3 +11,12 @@ const themeSources = themeConfig.themes
     }));
 
 Application.theme = createThemeContextBound(themeSources);
+
+export const ThemeService = {
+    changeTheme(name: string) {
+        Application.theme()({
+            type: "changeTheme",
+            themeName: name
+        })
+    }
+}
