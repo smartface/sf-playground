@@ -78,10 +78,9 @@
                     "keyPass": "smartface"
                 },
                 "plugins": {
-                    "smfimagecode": {
-                        "url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/2.0.0/CodeReaderAndroid.zip",
-                        "path": "plugins/Android/CodeReaderAndroid.zip",
-                        "active": false
+                    "aars": {
+                    },
+                    "modules": {
                     }
                 },
                 "playerPath": null
@@ -99,7 +98,8 @@
             },
             "android": {
                 "outputFolder": "output/Android",
-                "packageName": "io.smartface.demo"
+                "packageName": "io.smartface.demo",
+                "obfuscationEnabled": false
             }
         },
         "tempFolder": "output/.tmp"
