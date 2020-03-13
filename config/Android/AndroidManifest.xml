@@ -66,7 +66,7 @@
 	
 	
 	
-	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="android.support.multidex.MultiDexApplication">
+	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication">
 		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
 		<activity android:name=".A" 
 					android:label="${ApplicationName}" 	
@@ -145,7 +145,7 @@
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="${GoogleMapsKey}" />
 		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
 		<receiver android:name="io.smartface.android.notifications.LocalNotificationReceiver" />
-		<provider android:name="android.support.v4.content.FileProvider" android:authorities="${PackageName}.provider" android:exported="false" android:grantUriPermissions="true">
+		<provider android:name="androidx.core.content.FileProvider" android:authorities="${PackageName}.provider" android:exported="false" android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
 		</provider>
 		<!-- Cropping Image Activity comes built-in into the Emulator. 
