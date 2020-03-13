@@ -24,8 +24,10 @@ export const ThemeService = {
         const deletionIndex = themeListenerKeys.length - 1;
 
         return () => {
-            themeListeners.delete(key);
-            themeListenerKeys.splice(deletionIndex, 1);
+            if(themeListeners.has(key)){
+                themeListeners.delete(key);
+                themeListenerKeys.splice(deletionIndex, 1);
+            }
         }
     },
     changeTheme(name: string) {
