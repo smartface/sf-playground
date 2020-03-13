@@ -24,7 +24,7 @@ export const ThemeService = {
         const deletionIndex = themeListenerKeys.length - 1;
 
         return () => {
-            themeListeners.delete(listener);
+            themeListeners.delete(key);
             themeListenerKeys.splice(deletionIndex, 1);
         }
     },
