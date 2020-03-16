@@ -1,5 +1,6 @@
 {
     ".sf-searchView": {
+        "masksToBounds": true,
         "touchEnabled": true,
         "width": null,
         "height": 70,
@@ -38,6 +39,7 @@
         }
     },
     ".searchView": {
+        "masksToBounds": true,
         "touchEnabled": true,
         "width": null,
         "height": 70,
@@ -72,6 +74,7 @@
         }
     },
     ".default_searchView": {
+        "masksToBounds": true,
         "touchEnabled": true,
         "borderColor": "rgba(0,0,0,1)",
 		"+Device:Device.os === \"Android\"": {

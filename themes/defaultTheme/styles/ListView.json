@@ -1,5 +1,6 @@
 {
     ".sf-listView": {
+        "masksToBounds": true,
         "height": 216,
 		"width": null,
         "marginTop": 1,
@@ -19,6 +20,7 @@
         }
     },
     ".listView": {
+        "masksToBounds": true,
         "height": 216,
 		"width": null,
         "flexProps": {

@@ -1,5 +1,6 @@
 {
     ".sf-textView": {
+        "masksToBounds": true,
         "width": null,
         "height": 131,
         "maxLines": 1,
@@ -22,6 +23,7 @@
         }
     },
     ".textView": {
+        "masksToBounds": true,
         "width": null,
         "height": 131,
         "maxLines": 0,
@@ -42,5 +44,6 @@
         }
     },
     ".deafult_textView": {
+        "masksToBounds": true
     }
 }

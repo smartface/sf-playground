@@ -1,5 +1,6 @@
 {
     ".sf-textBox": {
+        "masksToBounds": true,
         "height": 54,
         "width": null,
         "borderColor": "#00a1f1",
@@ -31,6 +32,7 @@
         }
     },
     ".textBox": {
+        "masksToBounds": true,
         "height": 54,
         "width": null,
         "borderColor": "#00a1f1",
@@ -58,5 +60,6 @@
         }
     },
     ".default_textBox": {
+        "masksToBounds": true
     }
 }

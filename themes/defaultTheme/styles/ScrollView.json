@@ -1,5 +1,6 @@
 {
 	".sf-scrollView": {
+        "masksToBounds": true,
 		"height": 343,
 		"width": null,
 		"scrollBarEnabled": true,
@@ -28,6 +29,7 @@
 		}
 	},
 	".scrollView": {
+        "masksToBounds": true,
 		"height": 343,
 		"width": null,
 		"scrollBarEnabled": true,
@@ -54,6 +56,7 @@
 		}
 	},
 	".default_scrollView": {
+        "masksToBounds": true,
 		"scrollBarEnabled": true,
 		"align": "VERTICAL"
 	}
