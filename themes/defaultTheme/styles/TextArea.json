@@ -1,5 +1,6 @@
 {
     ".sf-textArea": {
+        "masksToBounds": true,
         "height": 120,
         "width": null,
         "borderColor": "#00a1f1",
@@ -31,6 +32,7 @@
         }
     },
     ".textArea": {
+        "masksToBounds": true,
         "height": 120,
         "width": null,
         "borderColor": "#00a1f1",
@@ -58,5 +60,6 @@
         }
     },
     ".deafult_textArea": {
+        "masksToBounds": true
     }
 }

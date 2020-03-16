@@ -24,6 +24,7 @@
         }
     },
     ".slider": {
+        "masksToBounds": true,
         "maxTrackColor": "rgb(183,183,183)",
         "minTrackColor": "#00a1f1",
         "value": 60,

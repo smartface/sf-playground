@@ -1,5 +1,6 @@
 {
     ".sf-page": {
+        "masksToBounds": true,
         "flexProps": {
             "alignContent": "STRETCH",
             "alignItems": "STRETCH",
@@ -16,6 +17,7 @@
         "orientation": "PORTRAIT"
     },
     ".page": {
+        "masksToBounds": true,
         "flexProps": {
             "alignContent": "STRETCH",
             "alignItems": "STRETCH",
@@ -28,6 +30,7 @@
         "orientation": "PORTRAIT"
     },
     ".default_page": {
+        "masksToBounds": true,
         "orientation": "PORTRAIT"
     }
 }

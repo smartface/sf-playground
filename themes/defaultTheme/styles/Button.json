@@ -1,5 +1,6 @@
 {
     ".sf-button": {
+        "masksToBounds": true,
         "width": null,
         "height": 50,
         "borderRadius": 8,
@@ -49,6 +50,7 @@
         }
     },
     ".button": {
+        "masksToBounds": true,
         "width": null,
         "height": 50,
         "borderRadius": 8,
@@ -99,6 +101,7 @@
         "borderWidth": 0,
         "borderColor": "rgba(0,0,0,1)",
         "touchEnabled": true,
+        "masksToBounds": true,
         "textAlignment": "MIDCENTER"
     }
 }

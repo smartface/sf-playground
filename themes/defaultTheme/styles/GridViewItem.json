@@ -1,5 +1,6 @@
 {
 	".sf-gridViewItem": {
+        "masksToBounds": true,
 		"height": 227,
 		"width": 165,
 		"flexProps": {
@@ -19,6 +20,7 @@
 		}
 	},
 	".gridViewItem": {
+        "masksToBounds": true,
 		"height": 227,
 		"width": 165,
 		"flexProps": {

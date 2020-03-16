@@ -1,5 +1,6 @@
 {
     ".sf-label": {
+        "masksToBounds": true,
         "height": 50,
         "width": null,
         "maxLines": 1,
@@ -44,6 +45,7 @@
         }
     },
     ".label": {
+        "masksToBounds": true,
         "width": null,
         "height": 50,
         "maxLines": 0,
@@ -86,5 +88,6 @@
         }
     },
     ".default_label": {
+        "masksToBounds": true
     }
 }
