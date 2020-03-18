@@ -13,8 +13,6 @@
     "workspaces": [
         "../packages/*"
     ],
-    "scripts": {
-        "postinstall": "ENV_PATH=.smf/.env sfMarketplaceService install && rm -rf node_modules/.bin"
-    },
+    "scripts": {},
     "devDependencies": {}
 }
