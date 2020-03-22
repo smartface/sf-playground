@@ -21,7 +21,7 @@ end-to-end, fully in the cloud.
 Welcome to the world of mobility!
 Smartface Team.
 
-## Build or watch workspace in your computer
+## Build or watch a workspace in a computer
 - Watch Mode
 ``` npm run watch```
 - Transpile and Build Workspace
