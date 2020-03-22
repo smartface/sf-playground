@@ -14,5 +14,6 @@
 		"build:tsc": "rm -rf ./dist && tsc",
 		"build:sf": "SMF_CIDE_WS_PATH=$PWD sfBuilder --standalone",
 		"watch": "SMF_CIDE_WS_PATH=$PWD concurrently 'sfBuilder'  'tsc -w'"
-	}
+	},
+	"version": "1.0.0"
 }
