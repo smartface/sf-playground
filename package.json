@@ -6,11 +6,13 @@
 	"marketplace-assets": {},
 	"devDependencies": {
 		"typescript": "^3.7.5",
-		"@smartface/wsbuilder": "^1.0.0"
+		"@smartface/wsbuilder": "^1.0.0",
+		"concurrently": "^5.1.0"
 	},
 	"scripts": {
 		"dev": "tsc -w",
-		"build": "rm -rf ./dist && tsc",
-		"build:transpile": "SMF_CIDE_WS_PATH=$PWD sfBuilder && tsc"
+		"build:tsc": "rm -rf ./dist && tsc",
+		"build:sf": "SMF_CIDE_WS_PATH=$PWD sfBuilder --standalone",
+		"watch": "SMF_CIDE_WS_PATH=$PWD concurrently 'sfBuilder'  'tsc -w'"
 	}
 }
