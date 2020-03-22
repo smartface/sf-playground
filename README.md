@@ -21,6 +21,14 @@ end-to-end, fully in the cloud.
 Welcome to the world of mobility!
 Smartface Team.
 
+## Build or watch workspace in your computer
+- Watch Mode
+``` npm run watch```
+- Transpile and Build Workspace
+``` npm run build:sf```
+- Build Typescript
+``` npm run build:tsc```
+
 ## Support & Documentation & Useful Links
 
 - [Guides](https://developer.smartface.io)
