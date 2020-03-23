@@ -13,7 +13,7 @@
 		"dev": "tsc -w",
 		"build:tsc": "rm -rf ./dist && tsc",
 		"build:sf": "SMF_CIDE_WS_PATH=$PWD sfBuilder --standalone",
-		"build:transpile": "npm run build:sf",
+		"build:transpile": "npm run build:sf && npm run build:tsc",
 		"build": "npm run build:tsc",
 		"watch": "SMF_CIDE_WS_PATH=$PWD concurrently 'sfBuilder'  'tsc -w'"
 	},
