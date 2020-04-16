@@ -94,8 +94,7 @@
 				"text": "Page1",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
-				"usePageVariable": true,
-				"width": 314.2857142857143
+				"usePageVariable": true
 			}
 		},
 		{
