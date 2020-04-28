@@ -150,6 +150,6 @@
 		</provider>
 		<!-- Cropping Image Activity comes built-in into the Emulator. 
 			But to use this feature in published apps, you must define it-->
-		<!--<activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat" />-->
+		<!--<activity android:name="io.smartface.android.sfcore.device.multimedia.crop.SFCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>-->
 	</application>
 </manifest>
