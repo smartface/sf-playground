@@ -5,11 +5,13 @@
 .tmp/*
 .templates/*
 output/*
-plugin/*
+plugins/*
+images/automated/*.png
 !output/Android/README.md
 !output/iOS/README.md
-!plugin/Android/README.md
-!plugin/iOS/README.md
+!output/.license.xml
+!plugins/Android/README.md
+!plugins/iOS/README.md
 node_modules/
 scripts/ui
 scripts/themes
