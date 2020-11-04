@@ -6,7 +6,7 @@
 	"marketplace-assets": {},
 	"devDependencies": {
 		"typescript": "^3.7.5",
-		"@smartface/wsbuilder": "^1.0.0",
+		"@smartface/wsbuilder": "^2.0.1",
 		"concurrently": "^5.1.0"
 	},
 	"scripts": {
