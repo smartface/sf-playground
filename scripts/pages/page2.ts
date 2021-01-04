@@ -2,7 +2,7 @@ import HeaderBarItem = require("sf-core/ui/headerbaritem");
 import touch = require("sf-extension-utils/lib/touch");
 import Image = require("sf-core/ui/image");
 import PageTitleLayout  from "components/PageTitleLayout";
-import componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
+import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
 import Color = require("sf-core/ui/color");
 import System = require("sf-core/device/system");
 import Page2Design from 'generated/pages/page2';
