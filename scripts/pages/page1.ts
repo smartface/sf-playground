@@ -1,5 +1,5 @@
 import Page1Design from 'generated/pages/page1';
-import componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
+import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
 import PageTitleLayout  from "components/PageTitleLayout";
 import System = require("sf-core/device/system");
 

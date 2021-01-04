@@ -1,4 +1,4 @@
-Smartface iOS Plugin Folder
+# Smartface iOS Plugin Folder
  
 Place your Smartface plugin files here and define them in "config/project.json" 
 to use them in your projects.
