@@ -11,6 +11,7 @@
         "module": "CommonJS",
         "resolveJsonModule": true,
         "isolatedModules": false,
+        "esModuleInterop": true,
         "typeRoots": [
             "./scripts/node_modules/sf-core/device/system"
         ],
