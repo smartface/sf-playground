@@ -4,9 +4,11 @@
         "@smartface/html-to-text": "^1.1.1",
         "@smartface/router": "^1.6.2",
         "@smartface/styler": "^2.0.0",
+        "js-base": "^1.0.5",
+        "keyboardlayout": "^2.0.3",
+        "materialtextbox": "^4.0.7",
         "sf-core": "^4.3.0",
-        "sf-extension-utils": "^14.0.0",
-        "source-map": "0.6.1",
-        "js-base": "^1.0.5"
+        "sf-extension-utils": "^14.5.0",
+        "source-map": "0.6.1"
     }
 }

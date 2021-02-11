@@ -29,6 +29,10 @@ Smartface Team.
 - Build Typescript
 ``` npm run build:tsc```
 
+## Learn about cool components that are included in the project 
+- MaterialTextBox -> https://github.com/smartface/sf-component-materialtextbox
+- KeyboardLayout -> https://github.com/smartface/sf-component-keyboardlayout
+
 ## Support & Documentation & Useful Links
 
 - [Guides](https://developer.smartface.io)
