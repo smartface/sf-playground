@@ -58,6 +58,7 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"marginBottom": 16,
 				"testId": "K_pKFsNtt",
 				"text": "Select Your Page to Start Playing",
 				"textAlignment": "MIDCENTER"
