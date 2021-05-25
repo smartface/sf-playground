@@ -7,7 +7,10 @@
 			"props": {
 				"children": [
 					"729a-fbfb-2fa3-cef2",
-					"f5df-c94a-d994-7bd0"
+					"f5df-c94a-d994-7bd0",
+					"f3e7-d604-667c-0e8d",
+					"e9c6-4c11-7d9d-567b",
+					"43a6-8ff8-9b47-419f"
 				],
 				"name": "pgNoTouch",
 				"orientation": "PORTRAIT",
@@ -43,6 +46,59 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "pgNoTouch"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "f3e7-d604-667c-0e8d",
+			"props": {
+				"children": [],
+				"name": "btnTimeout",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"text": "Press to wait for 3 seconds",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "omUxalyxe",
+				"text": "Press to wait for 3 seconds",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "e9c6-4c11-7d9d-567b",
+			"props": {
+				"children": [],
+				"name": "lblTouchIndicator",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"text": "Current Touch Status : Enabled",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "_wfqiTALG",
+				"text": "Current Touch Status : Enabled",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "43a6-8ff8-9b47-419f",
+			"props": {
+				"children": [],
+				"name": "btnCounter",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"text": "Touch Counter : 0",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"marginTop": 100,
+				"testId": "lh0q4UC9K",
+				"text": "Touch Counter : 0",
+				"usePageVariable": true
 			}
 		}
 	]
