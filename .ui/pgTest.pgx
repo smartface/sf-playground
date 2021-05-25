@@ -1,96 +1,49 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "7105-57b3-8a5a-b429",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "7105-57b3-8a5a-b429",
+			"initialized": true,
 			"props": {
-				"name": "pgTest",
-				"parent": null,
 				"children": [
 					"c4bd-3fbf-b589-aad0",
 					"8f4c-f6e8-b256-a656"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "c4bd-3fbf-b589-aad0",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "7105-57b3-8a5a-b429",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "8f4c-f6e8-b256-a656",
-			"userProps": {
-				"title": "pgTest"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "7105-57b3-8a5a-b429",
-				"children": [],
-				"title": "pgTest",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"34c5-e16c-2ded-450b": {
-			"type": "Page",
-			"id": "7105-57b3-8a5a-b429",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgTest",
-				"parent": null,
-				"children": [
-					"c4bd-3fbf-b589-aad0",
-					"8f4c-f6e8-b256-a656"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"initialized": false
+			"type": "Page",
+			"userProps": {}
 		},
-		"fbbe-3360-5a59-054b": {
-			"type": "StatusBar",
-			"id": "c4bd-3fbf-b589-aad0",
-			"userProps": {},
+		{
 			"className": ".sf-statusBar",
+			"id": "c4bd-3fbf-b589-aad0",
 			"props": {
-				"name": "statusBar",
-				"parent": "7105-57b3-8a5a-b429",
 				"children": [],
-				"visible": true,
-				"isRemovable": false
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7105-57b3-8a5a-b429"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
 			}
 		},
-		"f2f8-98ea-b74d-234f": {
-			"type": "HeaderBar",
-			"id": "8f4c-f6e8-b256-a656",
-			"userProps": {
-				"title": "pgTest"
-			},
+		{
 			"className": ".sf-headerBar",
+			"id": "8f4c-f6e8-b256-a656",
 			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7105-57b3-8a5a-b429",
-				"children": [],
-				"title": "pgTest",
-				"visible": true,
-				"isRemovable": false
+				"title": "pgTest"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTest"
 			}
 		}
-	}
+	]
 }

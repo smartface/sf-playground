@@ -1,96 +1,49 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "517f-fe49-c913-28cc",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "517f-fe49-c913-28cc",
+			"initialized": true,
 			"props": {
-				"name": "pgEmpty",
-				"parent": null,
 				"children": [
 					"1e76-ee10-dc54-9e31",
 					"51de-0914-c4b4-2512"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "1e76-ee10-dc54-9e31",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "517f-fe49-c913-28cc",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "51de-0914-c4b4-2512",
-			"userProps": {
-				"title": "pgEmpty"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "517f-fe49-c913-28cc",
-				"children": [],
-				"title": "pgEmpty",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"b0f5-53e8-cd27-7990": {
-			"type": "Page",
-			"id": "517f-fe49-c913-28cc",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgEmpty",
-				"parent": null,
-				"children": [
-					"1e76-ee10-dc54-9e31",
-					"51de-0914-c4b4-2512"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"initialized": false
+			"type": "Page",
+			"userProps": {}
 		},
-		"6860-7486-2d68-faec": {
-			"type": "StatusBar",
-			"id": "1e76-ee10-dc54-9e31",
-			"userProps": {},
+		{
 			"className": ".sf-statusBar",
+			"id": "1e76-ee10-dc54-9e31",
 			"props": {
-				"name": "statusBar",
-				"parent": "517f-fe49-c913-28cc",
 				"children": [],
-				"visible": true,
-				"isRemovable": false
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "517f-fe49-c913-28cc"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
 			}
 		},
-		"e8ee-7f06-eb5f-32b0": {
-			"type": "HeaderBar",
-			"id": "51de-0914-c4b4-2512",
-			"userProps": {
-				"title": "pgEmpty"
-			},
+		{
 			"className": ".sf-headerBar",
+			"id": "51de-0914-c4b4-2512",
 			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "517f-fe49-c913-28cc",
-				"children": [],
-				"title": "pgEmpty",
-				"visible": true,
-				"isRemovable": false
+				"title": "pgEmpty"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgEmpty"
 			}
 		}
-	}
+	]
 }

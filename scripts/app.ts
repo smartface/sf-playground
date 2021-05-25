@@ -1,8 +1,12 @@
 /* globals lang */
-require("i18n/i18n.js"); // Generates global lang object
-import Application = require("sf-core/application");
+import "i18n/i18n"; // Generates global lang object
+import Application from "sf-core/application";
 import { errorStackBySourceMap } from "error-by-sourcemap";
-import System = require("sf-core/device/system");
+import System from "sf-core/device/system";
+import "theme";
+import "sf-extension-utils";
+import router from "routes";
+
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function (e: UnhandledError) {
@@ -12,7 +16,5 @@ Application.onUnhandledError = function (e: UnhandledError) {
         message: System.OS === "Android" ? error.stack : (e.message + "\n\n*" + error.stack)
     });
 };
-import "./theme";
-require("sf-extension-utils");
-const router = require("./routes");
-router.push("/pages/page1");
+
+router.push("/pages/mainpage");

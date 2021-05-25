@@ -31,7 +31,9 @@
 				"parent": "dfc3-9700-8047-a537"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {
+				"visible": true
+			}
 		},
 		{
 			"className": ".sf-headerBar",

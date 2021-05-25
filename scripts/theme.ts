@@ -1,10 +1,11 @@
-import Data = require("sf-core/data");
-import Application = require("sf-core/application");
-const { config } = require("./settings.json");
+import Data from "sf-core/global/data";
+import Application from "sf-core/application";
+import { config } from "settings.json";
+import { clearCache } from "sf-extension-utils/lib/getCombinedStyle";
+import { createThemeContextBound } from "@smartface/contx/lib/styling/ThemeContext";
+
 const themeConfig = config.theme;
-const { createThemeContextBound } = require("@smartface/contx/lib/styling/ThemeContext");
 const currentTheme = Data.getStringVariable("currentTheme") || themeConfig.currentTheme;
-const { clearCache } = require("sf-extension-utils/lib/getCombinedStyle");
 const themeSources = themeConfig.themes
     .map(name => ({
         name,
@@ -15,7 +16,7 @@ Application["theme"] = createThemeContextBound(themeSources);
 type ThemeListener = (themeName: string) => void;
 
 const themeListeners = new WeakMap<{}, ThemeListener>();
-const themeListenerKeys:{}[] = [];
+const themeListenerKeys: {}[] = [];
 export const ThemeService = {
     onChange(listener: ThemeListener) {
         const key = {};
@@ -24,7 +25,7 @@ export const ThemeService = {
         const deletionIndex = themeListenerKeys.length - 1;
 
         return () => {
-            if(themeListeners.has(key)){
+            if (themeListeners.has(key)) {
                 themeListeners.delete(key);
                 themeListenerKeys.splice(deletionIndex, 1);
             }
@@ -37,7 +38,7 @@ export const ThemeService = {
         });
         clearCache();
         themeListenerKeys.forEach((key) => {
-            if(themeListeners.has(key)){
+            if (themeListeners.has(key)) {
                 themeListeners.get(key)(name);
             }
         })

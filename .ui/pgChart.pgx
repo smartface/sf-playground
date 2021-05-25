@@ -28,7 +28,9 @@
 				"parent": "dd76-5bb1-4adc-c2f0"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {
+				"visible": true
+			}
 		},
 		{
 			"className": ".sf-headerBar",

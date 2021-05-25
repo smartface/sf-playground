@@ -1,96 +1,49 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "a3d3-2f28-e668-ecd1",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "a3d3-2f28-e668-ecd1",
+			"initialized": true,
 			"props": {
-				"name": "pgHttp",
-				"parent": null,
 				"children": [
 					"2772-42b4-8b4e-88d0",
 					"a076-35fd-6bcb-503e"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "2772-42b4-8b4e-88d0",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "a3d3-2f28-e668-ecd1",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "a076-35fd-6bcb-503e",
-			"userProps": {
-				"title": "pgHttp"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "a3d3-2f28-e668-ecd1",
-				"children": [],
-				"title": "pgHttp",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"a4e9-7623-1a78-6eff": {
-			"type": "Page",
-			"id": "a3d3-2f28-e668-ecd1",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgHttp",
-				"parent": null,
-				"children": [
-					"2772-42b4-8b4e-88d0",
-					"a076-35fd-6bcb-503e"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"initialized": false
+			"type": "Page",
+			"userProps": {}
 		},
-		"400a-4611-f8f6-e0e5": {
-			"type": "StatusBar",
-			"id": "2772-42b4-8b4e-88d0",
-			"userProps": {},
+		{
 			"className": ".sf-statusBar",
+			"id": "2772-42b4-8b4e-88d0",
 			"props": {
-				"name": "statusBar",
-				"parent": "a3d3-2f28-e668-ecd1",
 				"children": [],
-				"visible": true,
-				"isRemovable": false
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "a3d3-2f28-e668-ecd1"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
 			}
 		},
-		"648c-6a3e-9554-6c33": {
-			"type": "HeaderBar",
-			"id": "a076-35fd-6bcb-503e",
-			"userProps": {
-				"title": "pgHttp"
-			},
+		{
 			"className": ".sf-headerBar",
+			"id": "a076-35fd-6bcb-503e",
 			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "a3d3-2f28-e668-ecd1",
-				"children": [],
-				"title": "pgHttp",
-				"visible": true,
-				"isRemovable": false
+				"title": "pgHttp"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgHttp"
 			}
 		}
-	}
+	]
 }

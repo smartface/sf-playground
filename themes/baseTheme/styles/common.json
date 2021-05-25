@@ -1,2 +1,12 @@
 {
+	".sf": {
+		"&-page": {
+			".nopadding": {
+				"paddingLeft": 0,
+				"paddingBottom": 0,
+				"paddingRight": 0,
+				"paddingTop": 0
+			}
+		}
+	}
 }

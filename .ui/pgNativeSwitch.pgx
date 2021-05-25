@@ -1,96 +1,49 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "60b6-10bf-e1d9-973f",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "60b6-10bf-e1d9-973f",
+			"initialized": true,
 			"props": {
-				"name": "pgNativeSwitch",
-				"parent": null,
 				"children": [
 					"9c08-59c0-1a36-a46e",
 					"a43c-f800-53d5-7a27"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "9c08-59c0-1a36-a46e",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "60b6-10bf-e1d9-973f",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "a43c-f800-53d5-7a27",
-			"userProps": {
-				"title": "pgNativeSwitch"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "60b6-10bf-e1d9-973f",
-				"children": [],
-				"title": "pgNativeSwitch",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"ffb5-f05f-5e81-f371": {
-			"type": "Page",
-			"id": "60b6-10bf-e1d9-973f",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgNativeSwitch",
-				"parent": null,
-				"children": [
-					"9c08-59c0-1a36-a46e",
-					"a43c-f800-53d5-7a27"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"initialized": false
+			"type": "Page",
+			"userProps": {}
 		},
-		"21df-1ab9-5b1a-7b9c": {
-			"type": "StatusBar",
-			"id": "9c08-59c0-1a36-a46e",
-			"userProps": {},
+		{
 			"className": ".sf-statusBar",
+			"id": "9c08-59c0-1a36-a46e",
 			"props": {
-				"name": "statusBar",
-				"parent": "60b6-10bf-e1d9-973f",
 				"children": [],
-				"visible": true,
-				"isRemovable": false
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "60b6-10bf-e1d9-973f"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
 			}
 		},
-		"7f7e-4b72-96dc-de2a": {
-			"type": "HeaderBar",
-			"id": "a43c-f800-53d5-7a27",
-			"userProps": {
-				"title": "pgNativeSwitch"
-			},
+		{
 			"className": ".sf-headerBar",
+			"id": "a43c-f800-53d5-7a27",
 			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "60b6-10bf-e1d9-973f",
-				"children": [],
-				"title": "pgNativeSwitch",
-				"visible": true,
-				"isRemovable": false
+				"title": "pgNativeSwitch"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgNativeSwitch"
 			}
 		}
-	}
+	]
 }
