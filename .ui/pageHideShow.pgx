@@ -1,0 +1,131 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "73dd-6eef-0570-de44",
+			"initialized": true,
+			"props": {
+				"children": [
+					"7d83-93d7-e744-5512",
+					"1587-0041-10da-aeb1",
+					"2ce7-f3d6-d755-c118",
+					"e8d7-ed5b-1706-d591"
+				],
+				"name": "pageHideShow",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "7d83-93d7-e744-5512",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "73dd-6eef-0570-de44"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "1587-0041-10da-aeb1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "73dd-6eef-0570-de44",
+				"title": "pageHideShow"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pageHideShow"
+			}
+		},
+		{
+			"className": ".sf-webView",
+			"id": "2ce7-f3d6-d755-c118",
+			"props": {
+				"children": [],
+				"name": "webView1",
+				"parent": "73dd-6eef-0570-de44",
+				"usePageVariable": true
+			},
+			"type": "WebView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"testId": "seCIhrddt",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "e8d7-ed5b-1706-d591",
+			"props": {
+				"children": [
+					"32a0-2435-e9f4-9f5d",
+					"1e5b-0adf-7131-ac69"
+				],
+				"name": "flWrapper",
+				"parent": "73dd-6eef-0570-de44"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 70,
+				"testId": "ntg288NQf"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "32a0-2435-e9f4-9f5d",
+			"props": {
+				"children": [],
+				"name": "btnHide",
+				"parent": "e8d7-ed5b-1706-d591",
+				"text": "Hide",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 70,
+				"testId": "nOZpeoW_O",
+				"text": "Hide",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "1e5b-0adf-7131-ac69",
+			"props": {
+				"children": [],
+				"name": "btnShow",
+				"parent": "e8d7-ed5b-1706-d591",
+				"text": "Show",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 70,
+				"testId": "Da1wDDoPp",
+				"text": "Show",
+				"usePageVariable": true
+			}
+		}
+	]
+}

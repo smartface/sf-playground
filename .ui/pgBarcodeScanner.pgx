@@ -1,0 +1,96 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "7913-786f-f8bd-81f8",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgBarcodeScanner",
+				"parent": null,
+				"children": [
+					"2bec-1497-8fcc-0cbf",
+					"713d-b9e7-e105-e65f"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "2bec-1497-8fcc-0cbf",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "7913-786f-f8bd-81f8",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "713d-b9e7-e105-e65f",
+			"userProps": {
+				"title": "pgBarcodeScanner"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "7913-786f-f8bd-81f8",
+				"children": [],
+				"title": "pgBarcodeScanner",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"20d4-77b7-e8a3-3c61": {
+			"type": "Page",
+			"id": "7913-786f-f8bd-81f8",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgBarcodeScanner",
+				"parent": null,
+				"children": [
+					"2bec-1497-8fcc-0cbf",
+					"713d-b9e7-e105-e65f"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"initialized": false
+		},
+		"1f84-829a-5ede-610f": {
+			"type": "StatusBar",
+			"id": "2bec-1497-8fcc-0cbf",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "7913-786f-f8bd-81f8",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"a15a-e14f-2c3c-2ffb": {
+			"type": "HeaderBar",
+			"id": "713d-b9e7-e105-e65f",
+			"userProps": {
+				"title": "pgBarcodeScanner"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "7913-786f-f8bd-81f8",
+				"children": [],
+				"title": "pgBarcodeScanner",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

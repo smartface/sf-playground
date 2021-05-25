@@ -1,0 +1,186 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "dd76-5bb1-4adc-c2f0",
+			"initialized": true,
+			"props": {
+				"children": [
+					"7411-c478-ff2f-1930",
+					"03a3-01bf-8f91-421b",
+					"1555-2314-51c9-9161",
+					"b200-db5a-6e9e-d332"
+				],
+				"name": "pgChart",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "7411-c478-ff2f-1930",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "dd76-5bb1-4adc-c2f0"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "03a3-01bf-8f91-421b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "dd76-5bb1-4adc-c2f0",
+				"title": "Chart"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Chart"
+			}
+		},
+		{
+			"className": ".sf-webView",
+			"id": "1555-2314-51c9-9161",
+			"props": {
+				"children": [],
+				"name": "webView1",
+				"parent": "dd76-5bb1-4adc-c2f0",
+				"usePageVariable": true
+			},
+			"type": "WebView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"testId": "_QyBNF7be",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "b200-db5a-6e9e-d332",
+			"props": {
+				"children": [
+					"2808-3b6f-1c76-bd54",
+					"abe0-a084-69b9-1686",
+					"9556-e787-9a36-eaba",
+					"082d-6c0f-166a-2b40",
+					"d328-f939-9e82-568d"
+				],
+				"name": "flWrapper",
+				"parent": "dd76-5bb1-4adc-c2f0"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexWrap": "WRAP"
+				},
+				"height": 210,
+				"testId": "x6w7n_iZz"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2808-3b6f-1c76-bd54",
+			"props": {
+				"children": [],
+				"name": "btnRandomizeData",
+				"parent": "b200-db5a-6e9e-d332",
+				"text": "Randomize Data",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"height": 70,
+				"testId": "UNDG84t8h",
+				"text": "Randomize Data",
+				"usePageVariable": true,
+				"width": 180
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "abe0-a084-69b9-1686",
+			"props": {
+				"children": [],
+				"name": "btnAddDataSet",
+				"parent": "b200-db5a-6e9e-d332",
+				"text": "Add Dataset",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"height": 70,
+				"testId": "yJ0BYv-VL",
+				"text": "Add Dataset",
+				"usePageVariable": true,
+				"width": 120
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9556-e787-9a36-eaba",
+			"props": {
+				"children": [],
+				"name": "btnRemoveDataset",
+				"parent": "b200-db5a-6e9e-d332",
+				"text": "Remove Dataset",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"height": 70,
+				"testId": "aDSMf1DHG",
+				"text": "Remove Dataset",
+				"usePageVariable": true,
+				"width": 150
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "082d-6c0f-166a-2b40",
+			"props": {
+				"children": [],
+				"name": "btnAddData",
+				"parent": "b200-db5a-6e9e-d332",
+				"text": "Add Data",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"height": 70,
+				"testId": "owsuQpaMm",
+				"text": "Add Data",
+				"usePageVariable": true,
+				"width": 120
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "d328-f939-9e82-568d",
+			"props": {
+				"children": [],
+				"name": "btnRemoveData",
+				"parent": "b200-db5a-6e9e-d332",
+				"text": "Remove Data",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"height": 70,
+				"testId": "e6j6Wfems",
+				"text": "Remove Data",
+				"usePageVariable": true,
+				"width": 120
+			}
+		}
+	]
+}

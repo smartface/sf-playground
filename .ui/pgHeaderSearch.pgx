@@ -8,13 +8,11 @@
 				"children": [
 					"42b807d1",
 					"b7d28cff",
-					"3680-0cd5-22de-45eb",
 					"980522a9",
-					"9e49-7873-afba-472b",
-					"2ade-ea56-91b2-77e5"
+					"9e49-7873-afba-472b"
 				],
 				"isRemovable": true,
-				"name": "page1",
+				"name": "pgHeaderSearch",
 				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
@@ -31,7 +29,8 @@
 				"paddingRight": 16,
 				"safeAreaEnabled": true
 			},
-			"version": "6.15.1"
+			"version": "6.15.1",
+			"degree": 0
 		},
 		{
 			"className": ".sf-statusBar",
@@ -45,7 +44,8 @@
 			"type": "StatusBar",
 			"userProps": {
 				"visible": true
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-headerBar",
@@ -61,24 +61,8 @@
 			"userProps": {
 				"title": "Page1",
 				"visible": true
-			}
-		},
-		{
-			"className": ".sf-textBox",
-			"id": "3680-0cd5-22de-45eb",
-			"props": {
-				"children": [],
-				"name": "textBox1",
-				"parent": "e891b86d",
-				"text": "textBox1",
-				"usePageVariable": true
 			},
-			"type": "TextBox",
-			"userProps": {
-				"testId": "WV3-BEl9Z",
-				"text": "textBox1",
-				"usePageVariable": true
-			}
+			"degree": 1
 		},
 		{
 			"className": ".sf-label",
@@ -110,12 +94,13 @@
 				},
 				"height": 600,
 				"multiline": true,
-				"testId": "L-42gAben",
 				"text": "Page1",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
-				"usePageVariable": true
-			}
+				"usePageVariable": true,
+				"testId": "L-42gAben"
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-button",
@@ -135,26 +120,12 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"testId": "ucEDBF6ZMB",
 				"text": "Next Page",
 				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".sf-imageView",
-			"id": "2ade-ea56-91b2-77e5",
-			"props": {
-				"children": [],
-				"name": "imageView1",
-				"parent": "e891b86d",
-				"usePageVariable": true
+				"width": null,
+				"testId": "ucEDBF6ZMB"
 			},
-			"type": "ImageView",
-			"userProps": {
-				"testId": "DORp2X8mX",
-				"usePageVariable": true
-			}
+			"degree": 1
 		}
 	]
 }

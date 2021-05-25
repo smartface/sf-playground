@@ -1,0 +1,96 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "59ae-5eb2-b7e9-b48f",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgNoTouch",
+				"parent": null,
+				"children": [
+					"729a-fbfb-2fa3-cef2",
+					"f5df-c94a-d994-7bd0"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "729a-fbfb-2fa3-cef2",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "f5df-c94a-d994-7bd0",
+			"userProps": {
+				"title": "pgNoTouch"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"children": [],
+				"title": "pgNoTouch",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"21a0-93e2-17e0-542a": {
+			"type": "Page",
+			"id": "59ae-5eb2-b7e9-b48f",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgNoTouch",
+				"parent": null,
+				"children": [
+					"729a-fbfb-2fa3-cef2",
+					"f5df-c94a-d994-7bd0"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"initialized": false
+		},
+		"f2d3-ef3a-84d4-d86e": {
+			"type": "StatusBar",
+			"id": "729a-fbfb-2fa3-cef2",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"f105-aeef-5f42-427f": {
+			"type": "HeaderBar",
+			"id": "f5df-c94a-d994-7bd0",
+			"userProps": {
+				"title": "pgNoTouch"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "59ae-5eb2-b7e9-b48f",
+				"children": [],
+				"title": "pgNoTouch",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

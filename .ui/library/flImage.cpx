@@ -1,0 +1,51 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout",
+			"id": "2ca1-cb03-95f1-c455",
+			"initialized": true,
+			"props": {
+				"children": [
+					"e484-4e90-7ed1-3e83"
+				],
+				"name": "flImage",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"marginLeft": 20,
+				"testId": "HCZssz8KW",
+				"width": 50
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "e484-4e90-7ed1-3e83",
+			"props": {
+				"children": [],
+				"name": "imgIcon",
+				"parent": "2ca1-cb03-95f1-c455",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 40,
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT",
+				"testId": "AzxLc9-mQ",
+				"usePageVariable": true,
+				"width": 50
+			}
+		}
+	]
+}

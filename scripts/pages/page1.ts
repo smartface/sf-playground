@@ -1,45 +1,89 @@
 import Page1Design from 'generated/pages/page1';
 import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
-import PageTitleLayout  from "components/PageTitleLayout";
+import PageTitleLayout from "components/PageTitleLayout";
 import System = require("sf-core/device/system");
+import { BarcodeScanner } from 'sf-extension-barcode';
+import Multimedia from 'sf-core/device/multimedia';
+import Permission from 'sf-extension-utils/lib/permission';
+import Application from 'sf-core/application';
+import SMSReceiver from 'sf-extension-smsreceiver';
+import TextContentType from 'sf-core/ui/textcontenttype';
+import DatePicker from 'sf-core/ui/datepicker';
 
 export default class Page1 extends Page1Design {
     router: any;
-	constructor () {
+    datePicker: DatePicker;
+    constructor() {
         super();
-		// Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
-		// Overrides super.onLoad method
-		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.onHide = onHide.bind(this, this.onHide && this.onHide.bind(this));
         this.btnNext.onPress = () => {
-            this.router.push("/pages/page2", { message: "Hello World!" });
+            this.capturePhoto();
         }
     }
-}
-
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
-function onShow(superOnShow) {
-  superOnShow();
-  this.headerBar.titleLayout.applyLayout();
-}
-
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(superOnLoad) {
-    superOnLoad();
-    console.info('Onload page1');
-    this.headerBar.leftItemEnabled = false;
-    this.headerBar.titleLayout = new PageTitleLayout();
-    componentContextPatch(this.headerBar.titleLayout, "titleLayout");
-    if (System.OS === "Android") {
-        this.headerBar.title = "";
+    capturePhoto() {
+        Multimedia.capturePhoto({
+            onSuccess: ({ image }) => {
+                this.imageView1.image = image;
+            },
+            page: this,
+            android: {
+                cropShape: Multimedia.Android.CropShape.RECTANGLE,
+                fixOrientation: true,
+                maxImageSize: 2048
+            },
+            allowsEditing: true,
+            action: Multimedia.ActionType.IMAGE_CAPTURE,
+            type: Multimedia.Type.IMAGE,
+            ios: {
+                cameraDevice: Multimedia.iOS.CameraDevice.REAR
+            }
+        });
     }
+
+    requestSMSPermission() {
+        Permission.getPermission({
+            androidPermission: Application.Android.Permissions.RECEIVE_SMS,
+            permissionText: "Requesting to Receive SMS to do awesome stuff",
+            permissionTitle: "Permission Required"
+        })
+            .then(() => {
+                SMSReceiver.registerReceiver();
+                SMSReceiver.callback = (e) => {
+                    console.info(e);
+                    alert("SMS IS RECEIVED");
+                    SMSReceiver.unRegisterReceiver();
+                }
+            })
+    }
+
+    initOTP() {
+        this.textBox1.ios.textContentType = TextContentType.ONETIMECODE;
+    }
+
+    initDatePicker() {
+        this.datePicker = new DatePicker();
+        this.datePicker.show();
+    }
+}
+
+function onHide(superOnHide: () => void) {
+    superOnHide();
+    /**
+     * This will be triggered when user leaves the page.
+     */
+    SMSReceiver.unRegisterReceiver();
+}
+
+function onShow(superOnShow: () => void) {
+    superOnShow();
+    this.initDatePicker();
+}
+
+function onLoad(superOnLoad: () => void) {
+    superOnLoad();
+    // this.capturePhoto();
+    // this.requestSMSPermission();
+    // this.initOTP();
 }
