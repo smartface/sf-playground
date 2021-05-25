@@ -31,6 +31,7 @@ export default class PgButtonPress extends PgButtonPressDesign {
         });
 
         wvb.ready().then(() => {
+            //@ts-ignore
             wvb.evaluateJS(script);
         });
     }
