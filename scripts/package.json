@@ -1,17 +1,16 @@
 {
     "dependencies": {
         "@smartface/contx": "^3.0.2",
-        "@smartface/html-to-text": "^1.1.1",
         "@smartface/router": "^1.6.2",
         "@smartface/styler": "^2.0.0",
         "js-base": "^1.0.5",
         "keyboardlayout": "^2.0.7",
         "materialtextbox": "^4.0.15",
-        "sf-core": "^4.3.1",
+        "sf-core": "beta",
         "sf-extension-barcode": "^3.0.0",
         "sf-extension-listviewindex": "^1.0.0",
         "sf-extension-smsreceiver": "^2.0.0",
-        "sf-extension-utils": "^14.6.0",
+        "sf-extension-utils": "^14.10.0",
         "source-map": "0.6.1"
     }
 }
