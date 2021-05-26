@@ -22,7 +22,7 @@ export default class PgButtonPress extends PgButtonPressDesign {
             webView: this.webView1, //WebView. Should be assigned from UI editor.
             source: url
         });
-
+        //@ts-ignore
         wvb.on("buttonPress", (data) => {
             const text = "Button pressed";
             console.info(text);

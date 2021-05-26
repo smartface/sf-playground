@@ -27,6 +27,7 @@ export default class PgWebSocket extends PgWebSocketDesign {
         });
         this.wvb = wvb;
 
+        //@ts-ignore
         wvb.on("buttonPress", (data) => {
             const message = `Message recieved containing: ${data.text}`
             console.log(message);
