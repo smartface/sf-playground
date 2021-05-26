@@ -1,5 +1,5 @@
 import PgButtonPressDesign from 'generated/pages/pgButtonPress';
-import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
+// import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
 
 export default class PgButtonPress extends PgButtonPressDesign {
     constructor() {
@@ -43,5 +43,5 @@ function onShow(superOnShow: () => void) {
 
 function onLoad(superOnLoad: () => void) {
     superOnLoad();
-    this.initWebViewBridge();
+    // this.initWebViewBridge();
 }

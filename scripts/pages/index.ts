@@ -11,3 +11,4 @@ export { default as PgHeaderSearch } from './pgHeaderSearch';
 export { default as PgNoTouch } from './pgNoTouch';
 export { default as MainPage } from './mainPage';
 export { default as PgSafeArea } from './pgSafeArea';
+export { default as PgMapRegion } from './pgMapRegion';

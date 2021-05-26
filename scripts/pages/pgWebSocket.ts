@@ -1,8 +1,8 @@
 import PgWebSocketDesign from 'generated/pages/pgWebSocket';
-import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
+// import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
 
 export default class PgWebSocket extends PgWebSocketDesign {
-    wvb: WebViewBridge;
+    // wvb: WebViewBridge;
     constructor() {
         super();
         this.onShow = onShow.bind(this, this.onShow.bind(this));
@@ -48,5 +48,5 @@ function onShow(superOnShow: () => void) {
 
 function onLoad(superOnLoad: () => void) {
     superOnLoad();
-    this.initWebViewBridge();
+    // this.initWebViewBridge();
 }
