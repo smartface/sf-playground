@@ -1,5 +1,5 @@
 import PgButtonPressDesign from 'generated/pages/pgButtonPress';
-// import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
+import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
 
 export default class PgButtonPress extends PgButtonPressDesign {
     constructor() {
@@ -22,7 +22,6 @@ export default class PgButtonPress extends PgButtonPressDesign {
             webView: this.webView1, //WebView. Should be assigned from UI editor.
             source: url
         });
-        //@ts-ignore
         wvb.on("buttonPress", (data) => {
             const text = "Button pressed";
             console.info(text);
@@ -31,7 +30,6 @@ export default class PgButtonPress extends PgButtonPressDesign {
         });
 
         wvb.ready().then(() => {
-            //@ts-ignore
             wvb.evaluateJS(script);
         });
     }
@@ -43,5 +41,5 @@ function onShow(superOnShow: () => void) {
 
 function onLoad(superOnLoad: () => void) {
     superOnLoad();
-    // this.initWebViewBridge();
+    this.initWebViewBridge();
 }
