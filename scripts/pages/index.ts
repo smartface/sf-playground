@@ -1,4 +1,5 @@
 export { default as Page1 } from './page1';
+export { default as PgListViewIndex } from './pgListViewIndex';
 export { default as PgNativeSwitch } from './pgNativeSwitch';
 export { default as Page2 } from './page2';
 export { default as PageHideShow } from './pageHideShow';
@@ -12,3 +13,4 @@ export { default as PgNoTouch } from './pgNoTouch';
 export { default as MainPage } from './mainPage';
 export { default as PgSafeArea } from './pgSafeArea';
 export { default as PgMapRegion } from './pgMapRegion';
+export { default as PgSpriteView } from './pgSpriteView';

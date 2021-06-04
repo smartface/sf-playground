@@ -3,7 +3,7 @@ import System from 'sf-core/device/system';
 import Animator from 'sf-core/ui/animator';
 import LviBadge from 'components/LviBadge';
 import FlImage from 'components/FlImage';
-import ListViewIndex from 'sf-extension-listviewindex';
+import ListViewIndex from '@smartface/extension-listviewindex';
 
 export default class PgBadgeAnimation extends PgBadgeAnimationDesign {
     scrollData: string[] = [];
@@ -19,7 +19,7 @@ export default class PgBadgeAnimation extends PgBadgeAnimationDesign {
     initListView() {
         this.listViewIndex = new ListViewIndex();
         this.listViewIndex.width = 20;
-        this.listViewIndex.indexItems = () => this.scrollData;
+        this.listViewIndex.items = this.scrollData;
         this.listViewIndex.reloadData();
         this.listViewIndex.indexDidSelect = (index) => {
             this.myListView.scrollTo(0, false);
