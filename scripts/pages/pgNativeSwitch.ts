@@ -1,7 +1,7 @@
 import PgNativeSwitchDesign from 'generated/pages/pgNativeSwitch';
 import SwitchAndroid from 'lib/SwitchAndroid';
 import SwitchIOS from 'lib/SwitchIOS';
-import System from 'sf-core/device/system';
+import System from '@smartface/native/device/system';
 
 export default class PgNativeSwitch extends PgNativeSwitchDesign {
     constructor() {

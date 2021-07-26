@@ -1,9 +1,9 @@
 import PageSampleDesign from 'generated/pages/pgHttp';
-import FlexLayout from 'sf-core/ui/flexlayout';
-import Application from 'sf-core/application';
-import ImageView from 'sf-core/ui/imageview';
-import Http from "sf-core/net/http";
-import Image from 'sf-core/ui/image';
+import FlexLayout from '@smartface/native/ui/flexlayout';
+import Application from '@smartface/native/application';
+import ImageView from '@smartface/native/ui/imageview';
+import Http from "@smartface/native/net/http";
+import Image from '@smartface/native/ui/image';
 
 //You should create new Page from UI-Editor and extend with it.
 export default class Sample extends PageSampleDesign {

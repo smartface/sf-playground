@@ -1,14 +1,14 @@
 import Page1Design from 'generated/pages/page1';
 import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
 import PageTitleLayout from "components/PageTitleLayout";
-import System = require("sf-core/device/system");
-import { BarcodeScanner } from 'sf-extension-barcode';
-import Multimedia from 'sf-core/device/multimedia';
-import Permission from 'sf-extension-utils/lib/permission';
-import Application from 'sf-core/application';
-import SMSReceiver from 'sf-extension-smsreceiver';
-import TextContentType from 'sf-core/ui/textcontenttype';
-import DatePicker from 'sf-core/ui/datepicker';
+import System = require("@smartface/native/device/system");
+import { BarcodeScanner } from '@smartface/extension-barcode';
+import Multimedia from '@smartface/native/device/multimedia';
+import Permission from '@smartface/extension-utils/lib/permission';
+import Application from '@smartface/native/application';
+import SMSReceiver from '@smartface/extension-sms-receiver';
+import TextContentType from '@smartface/native/ui/textcontenttype';
+import DatePicker from '@smartface/native/ui/datepicker';
 
 export default class Page1 extends Page1Design {
     router: any;

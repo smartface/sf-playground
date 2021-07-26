@@ -1,5 +1,5 @@
 import PgWebSocketDesign from 'generated/pages/pgWebSocket';
-import WebViewBridge from 'sf-extension-utils/lib/webviewbridge';
+import WebViewBridge from '@smartface/extension-utils/lib/webviewbridge';
 
 export default class PgWebSocket extends PgWebSocketDesign {
     wvb: WebViewBridge;

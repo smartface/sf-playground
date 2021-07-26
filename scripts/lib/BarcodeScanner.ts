@@ -1,9 +1,9 @@
-import Screen from "sf-core/device/screen";
-import Application from "sf-core/application";
-import System from "sf-core/device/system";
-import Page from 'sf-core/ui/page';
-import { BarcodeScanner as SFBarcodeScanner } from "sf-extension-barcode";
-import AlertView from 'sf-core/ui/alertview';
+import Screen from "@smartface/native/device/screen";
+import Application from "@smartface/native/application";
+import System from "@smartface/native/device/system";
+import Page from '@smartface/native/ui/page';
+import { BarcodeScanner as SFBarcodeScanner } from "@smartface/extension-barcode";
+import AlertView from '@smartface/native/ui/alertview';
 
 export class BarcodeScanner {
     listeners: (() => void)[] = [];

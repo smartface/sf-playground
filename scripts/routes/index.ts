@@ -1,12 +1,12 @@
 
-import buildExtender from "sf-extension-utils/lib/router/buildExtender";
+import buildExtender from "@smartface/extension-utils/lib/router/buildExtender";
 import {
     NativeRouter as Router,
     NativeStackRouter as StackRouter,
     Route
 } from "@smartface/router";
 import * as Pages from 'pages';
-import "sf-extension-utils/lib/router/goBack"; // Implements onBackButtonPressed
+import "@smartface/extension-utils/lib/router/goBack"; // Implements onBackButtonPressed
 
 function generatePageRoutes(basePath: string) {
     return Object.keys(Pages).map((pageName, index) => {

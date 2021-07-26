@@ -1,5 +1,5 @@
 import PgNoTouchDesign from 'generated/pages/pgNoTouch';
-import System from 'sf-core/device/system';
+import System from '@smartface/native/device/system';
 
 export default class PgNoTouch extends PgNoTouchDesign {
     isPageTouchEnabled = true;

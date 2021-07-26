@@ -1,11 +1,11 @@
-import System from 'sf-core/device/system';
-import View from 'sf-core/ui/view';
+import System from '@smartface/native/device/system';
+import View from '@smartface/native/ui/view';
 
 export default class SwitchAndroid extends View {
     constructor(params?: any) {
         super();
         if (System.OS === 'Android') {
-            const AndroidConfig = require("sf-core/util/Android/androidconfig");
+            const AndroidConfig = require("@smartface/native/util/Android/androidconfig");
             const NativeSwitch = requireClass("android.widget.Switch");
             //@ts-ignore
             this.nativeObject = new NativeSwitch(AndroidConfig.activity);

@@ -1,11 +1,11 @@
 import PgListViewIndexDesign from 'generated/pages/pgListViewIndex';
-import FlexLayout from 'sf-core/ui/flexlayout';
-import ListView from 'sf-core/ui/listview';
+import FlexLayout from '@smartface/native/ui/flexlayout';
+import ListView from '@smartface/native/ui/listview';
 import ListViewIndex from '@smartface/extension-listviewindex';
-import ListViewItem from 'sf-core/ui/listviewitem';
-import Label from 'sf-core/ui/label';
-import Color from 'sf-core/ui/color';
-import Font from 'sf-core/ui/font';
+import ListViewItem from '@smartface/native/ui/listviewitem';
+import Label from '@smartface/native/ui/label';
+import Color from '@smartface/native/ui/color';
+import Font from '@smartface/native/ui/font';
 
 export default class PgListViewIndex extends PgListViewIndexDesign {
   listViewItemArray: any[] = [];

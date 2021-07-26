@@ -1,7 +1,7 @@
 import PgSpriteViewDesign from 'generated/pages/pgSpriteView';
 import SpriteView from '@smartface/extension-spriteview';
-import Image from 'sf-core/ui/image';
-import ImageView from 'sf-core/ui/imageview';
+import Image from '@smartface/native/ui/image';
+import ImageView from '@smartface/native/ui/imageview';
 
 export default class PgSpriteView extends PgSpriteViewDesign {
     spriteView: SpriteView;

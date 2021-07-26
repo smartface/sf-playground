@@ -1,6 +1,6 @@
 import PgSafeAreaDesign from 'generated/pages/pgSafeArea';
-import Screen from 'sf-core/device/screen';
-import System from 'sf-core/device/system';
+import Screen from '@smartface/native/device/screen';
+import System from '@smartface/native/device/system';
 
 export default class PgSafeArea extends PgSafeAreaDesign {
     constructor() {

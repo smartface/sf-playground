@@ -1,7 +1,7 @@
 import PgLoginDesign from 'generated/pages/pgLogin';
-import ActionKeyType from 'sf-core/ui/actionkeytype';
-import KeyboardType from 'sf-core/ui/keyboardtype';
-import TextAlignment from 'sf-core/ui/textalignment';
+import ActionKeyType from '@smartface/native/ui/actionkeytype';
+import KeyboardType from '@smartface/native/ui/keyboardtype';
+import TextAlignment from '@smartface/native/ui/textalignment';
 
 export default class PgLogin extends PgLoginDesign {
     router: any;

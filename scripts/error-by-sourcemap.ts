@@ -1,5 +1,5 @@
-import Application = require("sf-core/application");
-import System = require("sf-core/device/system");
+import Application = require("@smartface/native/application");
+import System = require("@smartface/native/device/system");
 
 declare interface SourcePosition {
     line: number;
@@ -20,9 +20,9 @@ declare interface SourceMapData {
   mappings: string;
 }
 
-import File = require('sf-core/io/file');
-import FileStream = require('sf-core/io/filestream');
-import Path = require('sf-core/io/path');
+import File = require('@smartface/native/io/file');
+import FileStream = require('@smartface/native/io/filestream');
+import Path = require('@smartface/native/io/path');
 
 function parseErrorStackIOS(lines: string[]): (null | ErrorStackLine)[] {
     const lineRegex = /^(?:(.+)(?:\@(.*)\:(\d+)(?::(\d+)))|(?:(.*)\:(\d+)(?::(\d+))))/;

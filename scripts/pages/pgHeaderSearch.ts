@@ -1,6 +1,6 @@
 import Page1Design from 'generated/pages/pgHeaderSearch';
-import SearchView from 'sf-core/ui/searchview';
-import Color from 'sf-core/ui/color';
+import SearchView from '@smartface/native/ui/searchview';
+import Color from '@smartface/native/ui/color';
 
 export default class Page1 extends Page1Design {
     router: any;
@@ -15,7 +15,7 @@ export default class Page1 extends Page1Design {
     }
     initSearchView(): void {
         this.mySearchView = new SearchView();
-        this.mySearchView.textFieldBorderRadius = 20;
+        this.mySearchView.android.textFieldBorderRadius = 20;
         this.mySearchView.textFieldBackgroundColor = Color.WHITE;
         //@ts-ignore
         this.mySearchView.cursorColor = Color.BLACK;

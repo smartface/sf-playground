@@ -1,5 +1,5 @@
-import System from 'sf-core/device/system';
-import View from 'sf-core/ui/view';
+import System from '@smartface/native/device/system';
+import View from '@smartface/native/ui/view';
 
 export default class SwitchIOS extends View {
     constructor(params?: any) {

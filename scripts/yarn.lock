@@ -26,15 +26,15 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-barcode/-/extension-barcode-4.0.0-rc.1.tgz#02a37d047101f99362d823a11be80712e0d038b2"
   integrity sha512-wG5v2iCBrgcoKS2v9UEdIc8kjwjtXVP2wzVz/L7KsZkxUvDz9+25WXcmqJEBpohiW7oOSrX2/yRgI5fyVeu69w==
 
-"@smartface/extension-listviewindex@^2.0.0-rc":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-listviewindex/-/extension-listviewindex-2.0.0.tgz#a1ac4b066710053ef05cbe15843606542319286f"
-  integrity sha512-BG7j9yAY2QBibbl+/LnKrswhu9npjMFPLl2vQt9KPBhbFYFjHGulTIgVbNnNsDTVDsJNxeQrKa0TA6+/8XFDwg==
+"@smartface/extension-listviewindex@^2.0.1-rc":
+  version "2.0.1-rc.1"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-listviewindex/-/extension-listviewindex-2.0.1-rc.1.tgz#572507e7653a1457671da86bb3412e9e07b312da"
+  integrity sha512-fsuzhvJHdBmqLYJjO3ypl+MWLhTJqoRZh/hc115DFgOP+yk88/EtYWic9Csy1MdzNFItvz5q+p4wq1YLmPzDaQ==
 
 "@smartface/extension-sms-receiver@^3.0.0-rc":
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-sms-receiver/-/extension-sms-receiver-3.0.0-rc.1.tgz#ce8956af40ede17cf0d181b44e994bf8a0aacdc4"
-  integrity sha512-M3dIJXjVQxK4OFhTIEdO+n0f9OKIS70blMgaoNQDpHz1591gzNfy9JVKpS5rEFEy2zHg+sdPs76aIRacasfC+g==
+  version "3.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-sms-receiver/-/extension-sms-receiver-3.0.0-rc.2.tgz#0c880419dbaddef8b14ea56e5a6614fb2fbe98d9"
+  integrity sha512-KkezEEextZu5zgot54nRIVgqGRjNvaMWp+N7srj3BwNwIJU3zh+rQZYTfSkZLdboOsCdxboP2TXzMagC6y2Sbg==
 
 "@smartface/extension-spriteview@^2.0.0-rc":
   version "2.0.0-rc.1"
@@ -63,9 +63,9 @@
     html-parse-stringify "1.0.2"
 
 "@smartface/native@^4.3.2-beta":
-  version "4.3.2-beta.26"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.2-beta.26.tgz#1a487ef99b85aaf0dbb0f7f9a53c0c32a03e6015"
-  integrity sha512-llZXJ1/MqDEOThbIlHqUz6/vRMAQb29MzIXver13uq4hpDZ6a6AME2BDy7DiuaPuPWVMJEFGBrUQB/16wOG4lw==
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.3.tgz#208d9094e2a2c7ca7ad8236f12302e573a65cc2c"
+  integrity sha512-BaNyfgi/aQRqCuzm9yQZK0rVQuwrwLSY0fgWyHpbD9gC3hsUUSO23ttn9H2arngAQYL7g1ABLuWxge6DvY74Bg==
 
 "@smartface/router@^2.0.0-rc":
   version "2.0.0-rc.1"

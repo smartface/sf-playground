@@ -1,7 +1,7 @@
 import PgMapRegionDesign from 'generated/pages/pgMapRegion';
-import Color from 'sf-core/ui/color';
-import Font from 'sf-core/ui/font';
-import MapView from 'sf-core/ui/mapview';
+import Color from '@smartface/native/ui/color';
+import Font from '@smartface/native/ui/font';
+import MapView from '@smartface/native/ui/mapview';
 
 export default class PgMapRegion extends PgMapRegionDesign {
     constructor() {
