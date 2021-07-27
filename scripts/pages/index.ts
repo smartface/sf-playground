@@ -1,4 +1,5 @@
 export { default as Page1 } from './page1';
+export { default as PgHeaderImage } from './pgHeaderImage';
 export { default as PgListViewIndex } from './pgListViewIndex';
 export { default as PgNativeSwitch } from './pgNativeSwitch';
 export { default as Page2 } from './page2';
