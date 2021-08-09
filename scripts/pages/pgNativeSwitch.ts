@@ -16,11 +16,11 @@ export default class PgNativeSwitch extends PgNativeSwitchDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgNativeSwitch, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgNativeSwitch, superOnLoad: () => void) {
     superOnLoad();
     this.initAndroidSwitch()
 }

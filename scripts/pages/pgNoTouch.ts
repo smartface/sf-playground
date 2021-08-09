@@ -49,11 +49,11 @@ export default class PgNoTouch extends PgNoTouchDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgNoTouch, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgNoTouch, superOnLoad: () => void) {
     superOnLoad();
     this.initButtons();
 }

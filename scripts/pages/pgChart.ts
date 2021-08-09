@@ -74,12 +74,12 @@ export default class PgChart extends PgChartDesign {
 }
 
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgChart, superOnShow: () => void) {
     superOnShow();
     this.webView1.loadURL("https://az793023.vo.msecnd.net/examples/sf-core/webview/chart.html");
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgChart, superOnLoad: () => void) {
     superOnLoad();
     this.initComponents();
 }

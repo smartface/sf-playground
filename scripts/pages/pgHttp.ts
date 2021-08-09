@@ -55,7 +55,7 @@ export default class Sample extends PageSampleDesign {
         });
     }
 }
-function onShow(superOnShow: () => void) {
+function onShow(this: Sample, superOnShow: () => void) {
     const { headerBar } = this;
     superOnShow();
     Application.statusBar.visible = false;
@@ -67,7 +67,7 @@ function onShow(superOnShow: () => void) {
  * This event is called once when page is created.
  * @param {function} superOnLoad super onLoad function
  */
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: Sample, superOnLoad: () => void) {
     superOnLoad();
     this.requestImage();
 }

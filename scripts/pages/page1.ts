@@ -76,12 +76,12 @@ function onHide(superOnHide: () => void) {
     SMSReceiver.unRegisterReceiver();
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: Page1, superOnShow: () => void) {
     superOnShow();
     this.initDatePicker();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: Page1, superOnLoad: () => void) {
     superOnLoad();
     // this.capturePhoto();
     // this.requestSMSPermission();

@@ -22,11 +22,11 @@ export default class PgSafeArea extends PgSafeAreaDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgSafeArea, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgSafeArea, superOnLoad: () => void) {
     superOnLoad();
 }
 

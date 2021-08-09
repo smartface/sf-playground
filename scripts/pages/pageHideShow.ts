@@ -18,12 +18,12 @@ export default class PageHideShow extends PageHideShowDesign {
 }
 
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PageHideShow, superOnShow: () => void) {
     superOnShow();
     this.webView1.loadURL("https://az793023.vo.msecnd.net/examples/sf-core/webview/hide-show.html");
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PageHideShow, superOnLoad: () => void) {
     superOnLoad();
     this.headerBar.title = "Hide Show";
     this.initComponents();

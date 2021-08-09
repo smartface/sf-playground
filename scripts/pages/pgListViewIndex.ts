@@ -113,11 +113,11 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
   }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgListViewIndex, superOnShow: () => void) {
   superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgListViewIndex, superOnLoad: () => void) {
   superOnLoad();
   this.initListView();
   this.initListViewIndex();

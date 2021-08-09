@@ -9,10 +9,10 @@ export default class Page1 extends Page1Design {
 }
 
 
-function onShow(superOnShow: () => void) {
+function onShow(this: Page1, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: Page1, superOnLoad: () => void) {
     superOnLoad();
 }

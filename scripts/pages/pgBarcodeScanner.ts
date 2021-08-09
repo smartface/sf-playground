@@ -16,11 +16,11 @@ export default class PgBarcodeScanner extends PgBarcodeScannerDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgBarcodeScanner, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgBarcodeScanner, superOnLoad: () => void) {
     superOnLoad();
     this.initBarcodeScanner();
 }

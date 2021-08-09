@@ -35,7 +35,7 @@ export default class PgSpriteView extends PgSpriteViewDesign {
  * @param {function} superOnShow super onShow function
  * @param {Object} parameters passed from Router.go function
  */
-function onShow(superOnShow: () => void) {
+function onShow(this: PgSpriteView, superOnShow: () => void) {
     superOnShow();
     this.spriteView.play(500);
 }
@@ -45,7 +45,7 @@ function onShow(superOnShow: () => void) {
  * This event is called once when page is created.
  * @param {function} superOnLoad super onLoad function
  */
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgSpriteView, superOnLoad: () => void) {
     superOnLoad();
     this.initSpriteView();
 }

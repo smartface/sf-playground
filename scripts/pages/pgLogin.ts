@@ -45,10 +45,10 @@ export default class PgLogin extends PgLoginDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgLogin, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgLogin, superOnLoad: () => void) {
     superOnLoad();
 }

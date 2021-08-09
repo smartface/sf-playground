@@ -28,13 +28,13 @@ export default class MainPage extends MainPageDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: MainPage, superOnShow: () => void) {
     superOnShow();
     this.refreshListView();
 }
 
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: MainPage, superOnLoad: () => void) {
     superOnLoad();
     this.initListView();
 }

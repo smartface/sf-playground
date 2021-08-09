@@ -35,11 +35,11 @@ export default class PgButtonPress extends PgButtonPressDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgButtonPress, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgButtonPress, superOnLoad: () => void) {
     superOnLoad();
     this.initWebViewBridge();
 }

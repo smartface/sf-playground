@@ -32,11 +32,11 @@ export default class PgHeaderImage extends PgHeaderImageDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgHeaderImage, superOnShow: () => void) {
 	superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgHeaderImage, superOnLoad: () => void) {
     superOnLoad();
     this.initButtonClicks();
 }

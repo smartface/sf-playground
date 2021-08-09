@@ -27,7 +27,7 @@ export default class Page1 extends Page1Design {
  * @event onShow
  * This event is called when a page appears on the screen (everytime).
  */
-function onShow(superOnShow: () => void) {
+function onShow(this: Page1, superOnShow: () => void) {
     superOnShow();
 }
 
@@ -35,7 +35,7 @@ function onShow(superOnShow: () => void) {
  * @event onLoad
  * This event is called once when page is created.
  */
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: Page1, superOnLoad: () => void) {
     superOnLoad();
     this.initSearchView();
 }

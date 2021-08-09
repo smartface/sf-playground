@@ -40,11 +40,11 @@ export default class PgWebSocket extends PgWebSocketDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgWebSocket, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgWebSocket, superOnLoad: () => void) {
     superOnLoad();
     this.initWebViewBridge();
 }

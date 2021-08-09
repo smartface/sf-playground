@@ -59,11 +59,11 @@ export default class PgBadgeAnimation extends PgBadgeAnimationDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgBadgeAnimation, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgBadgeAnimation, superOnLoad: () => void) {
     superOnLoad();
     this.initListView();
 }

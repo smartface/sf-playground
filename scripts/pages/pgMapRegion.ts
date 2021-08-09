@@ -59,11 +59,11 @@ export default class PgMapRegion extends PgMapRegionDesign {
     }
 }
 
-function onShow(superOnShow: () => void) {
+function onShow(this: PgMapRegion, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: PgMapRegion, superOnLoad: () => void) {
     superOnLoad();
     this.initMapView();
 }

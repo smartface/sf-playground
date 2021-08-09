@@ -16,7 +16,7 @@ export default class Page1 extends Page1Design {
  * @param {function} superOnShow super onShow function
  * @param {Object} parameters passed from Router.go function
  */
-function onShow(superOnShow: () => void) {
+function onShow(this: Page1, superOnShow: () => void) {
 	superOnShow();
 }
 
@@ -25,6 +25,6 @@ function onShow(superOnShow: () => void) {
  * This event is called once when page is created.
  * @param {function} superOnLoad super onLoad function
  */
-function onLoad(superOnLoad: () => void) {
+function onLoad(this: Page1, superOnLoad: () => void) {
 	superOnLoad();
 }
