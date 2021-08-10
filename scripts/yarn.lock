@@ -42,9 +42,9 @@
   integrity sha512-3pvkZA8Y4NgVlKV0lR/lwB8+f7xXw/7Ah6LfurKFvd89QbwdBIOwP2ByHxbEbUGjMkb4Ss/eqYLN79VX2X3+jg==
 
 "@smartface/extension-utils@^15.0.0":
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-15.0.0.tgz#59228aad50dc162fe6de695163135c24b3577331"
-  integrity sha512-lQx2XsnxOEDRJ9nfiS+HWvVvjgW6EJiP/C2hXeiIfM8z0NSglHmmBlQ17hpNqnk5wEUZj/fAsV6xQnDF7EqZBA==
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-15.0.2.tgz#7bac62c121194a2c978efd59d5d079c3f2d19d60"
+  integrity sha512-zSfoV92gNE14P56kM1CeVGfc3h62Oof8VrSj9kmMHTQByvYegFZpMdEdEycHbJLNCm4XP0ep8f5dgXtKiQjElQ==
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
@@ -63,9 +63,9 @@
     html-parse-stringify "1.0.2"
 
 "@smartface/native@^4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.3.tgz#208d9094e2a2c7ca7ad8236f12302e573a65cc2c"
-  integrity sha512-BaNyfgi/aQRqCuzm9yQZK0rVQuwrwLSY0fgWyHpbD9gC3hsUUSO23ttn9H2arngAQYL7g1ABLuWxge6DvY74Bg==
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.4.tgz#3b209448b87af02792aeb2448ca17f6b9724caa9"
+  integrity sha512-P+BtytIFdxpzm20yxTA11tsonpeYPhNQeJc13IdNopprNCUJdJ2EI0WRQLO3N60GwsY+IiceHuQU1oSG3GmjGw==
 
 "@smartface/router@^2.0.0-rc":
   version "2.0.0-rc.1"
