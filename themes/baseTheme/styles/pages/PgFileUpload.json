@@ -1,0 +1,60 @@
+{
+	"#pgFileUpload": {
+		"backgroundColor": "rgba(255,255,255,1)",
+		"&-flFileSelector": {
+			"height": 60,
+			"flexProps": {
+				"flexDirection": "ROW",
+				"justifyContent": "CENTER"
+			},
+			"paddingLeft": 16,
+			"paddingRight": null
+		},
+		"&-lblFileSelectorName": {
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"ellipsizeMode": "MIDDLE",
+			"height": null
+		},
+		"&-imgFileSelectorDownArrow": {
+			"image": "arrowbottom.png",
+			"height": 60,
+			"width": 60,
+			"imageFillType": "ASPECTFILL",
+			"flexProps": {
+				"alignSelf": "CENTER"
+			}
+		},
+		"&-flUploadIndicator": {
+			"height": 80,
+			"flexProps": {
+				"flexDirection": "ROW"
+			},
+			"paddingLeft": 15,
+			"paddingRight": 15
+		},
+		"&-lblUploadIndicator": {
+			"flexProps": {
+				"flexGrow": 1,
+				"alignSelf": "CENTER"
+			}
+		},
+		"&-btnUpload": {
+			"flexProps": {
+				"alignSelf": "STRETCH"
+			}
+		},
+		"flexProps": {
+			"flexDirection": "COLUMN"
+		},
+		"&-flSpacer": {
+			"flexProps": {
+				"flexGrow": 1
+			}
+		},
+		"&-aiUploadIndicator": {
+			"visible": false
+		}
+	}
+}
