@@ -110,7 +110,6 @@ export default class PgFileUpload extends PgFileUploadDesign {
     }
 
     async uploadFile(fileBas64: string) {
-        Network.chan
         if (Network.connectionType === Network.ConnectionType.NONE) {
             return; // No internet
         }
