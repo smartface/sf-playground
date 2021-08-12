@@ -1,0 +1,30 @@
+{
+	"#pgMapView": {
+		"&-flSelector": {
+			"height": 60,
+			"flexProps": {
+				"flexDirection": "ROW"
+			},
+			"paddingLeft": 15,
+			"borderColor": "rgba( 0, 0, 0, 1 )",
+			"borderWidth": 1
+		},
+		"&-lblCurrentSelection": {
+			"height": null,
+			"flexProps": {
+				"flexGrow": 1
+			}
+		},
+		"&-imgDropDown": {
+			"image": "arrowbottom.png",
+			"width": 60,
+			"height": 60,
+			"imageFillType": "ASPECTFILL"
+		},
+		"&-map": {
+			"flexProps": {
+				"flexGrow": 1
+			}
+		}
+	}
+}

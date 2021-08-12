@@ -1,0 +1,116 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "e01a-d643-2187-ec9e",
+			"initialized": true,
+			"props": {
+				"children": [
+					"3bb2-e6b4-ab5d-00ce",
+					"3cde-4967-a22a-b05d",
+					"abcf-033c-13da-1f90",
+					"c1b5-8472-4b97-290e"
+				],
+				"name": "pgMapView",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"safeAreaEnabled": true
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "3bb2-e6b4-ab5d-00ce",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e01a-d643-2187-ec9e"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "3cde-4967-a22a-b05d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e01a-d643-2187-ec9e",
+				"title": "pgMapView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgMapView"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgMapView-flSelector",
+			"id": "abcf-033c-13da-1f90",
+			"props": {
+				"children": [
+					"6615-f3cf-3514-1f6e",
+					"53e5-cf55-f913-dd30"
+				],
+				"name": "flSelector",
+				"parent": "e01a-d643-2187-ec9e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "a6Qrb9fjw",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label #pgMapView-lblCurrentSelection",
+			"id": "6615-f3cf-3514-1f6e",
+			"props": {
+				"children": [],
+				"name": "lblCurrentSelection",
+				"parent": "abcf-033c-13da-1f90",
+				"text": "Select a Style",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "2F6FmDRiZ",
+				"text": "Select a Style",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView #pgMapView-imgDropDown",
+			"id": "53e5-cf55-f913-dd30",
+			"props": {
+				"children": [],
+				"name": "imgDropDown",
+				"parent": "abcf-033c-13da-1f90"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"testId": "h23XqLoBj"
+			}
+		},
+		{
+			"className": ".sf-mapView #pgMapView-map",
+			"id": "c1b5-8472-4b97-290e",
+			"props": {
+				"children": [],
+				"name": "map",
+				"parent": "e01a-d643-2187-ec9e",
+				"usePageVariable": true
+			},
+			"type": "MapView",
+			"userProps": {
+				"testId": "neqIQ6EiJ",
+				"usePageVariable": true
+			}
+		}
+	]
+}
