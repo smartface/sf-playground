@@ -6,6 +6,7 @@ import ListViewItem from '@smartface/native/ui/listviewitem';
 import Label from '@smartface/native/ui/label';
 import Color from '@smartface/native/ui/color';
 import Font from '@smartface/native/ui/font';
+import System from '@smartface/native/device/system';
 
 export default class PgListViewIndex extends PgListViewIndexDesign {
   listViewItemArray: any[] = [];
@@ -93,6 +94,9 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
     this.myListView.onRowType = (index) => this.listViewItemArray[index].isHeader ? 2 : 1;
   }
   initListViewIndex() {
+    if (System.OS === System.OSType.ANDROID) {
+      return;
+    }
     this.listViewIndex.width = 20;
     this.listViewIndex.items = this.listViewItemIndexItems;
     this.listViewIndex.indexDidSelect = (index) => {
