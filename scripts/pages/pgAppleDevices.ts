@@ -3,8 +3,8 @@ import { getModelName } from "@smartface/extension-utils/lib/appleDevices";
 import LviPages from 'components/LviPages';
 import deviceMappings from "@smartface/extension-utils/lib/appleDevices/deviceMapping.json";
 import copy from "@smartface/extension-utils/lib/copy";
-import orientationLib from "@smartface/extension-utils/lib/orientation";
-
+import { getOrientationOnchage } from "@smartface/extension-utils/lib/orientation";
+import { createAsyncTask } from "@smartface/extension-utils/lib/async";
 export default class PgAppleDevices extends PgAppleDevicesDesign {
     dataSet: string[];
     constructor() {
@@ -15,14 +15,18 @@ export default class PgAppleDevices extends PgAppleDevicesDesign {
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
         this.onOrientationChange = () => {
-            const orientation = orientationLib.getOrientationOnchage();
-            this.onOrientationChangeForDataset();
+            const orientation = getOrientationOnchage();
+            createAsyncTask(() => {
+                setTimeout(() => {
+                    this.scrambleDatasetOnOrientationChange();
+                }, 10)
+            }, {})
+                .then(() => this.refreshListView())
         }
     }
 
-    onOrientationChangeForDataset() {
+    scrambleDatasetOnOrientationChange() {
         this.dataSet.sort(() => .5 - Math.random());
-        this.refreshListView();
     }
 
     initCopyDeviceMapping() {
