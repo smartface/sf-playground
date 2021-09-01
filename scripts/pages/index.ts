@@ -1,5 +1,6 @@
 export { default as Page1 } from './page1';
 export { default as PgHeaderImage } from './pgHeaderImage';
+export { default as PgArt } from './pgArt';
 export { default as PgFileUpload } from './pgFileUpload';
 export { default as PgListViewIndex } from './pgListViewIndex';
 export { default as PgNativeSwitch } from './pgNativeSwitch';
@@ -18,3 +19,4 @@ export { default as PgMapRegion } from './pgMapRegion';
 export { default as PgSpriteView } from './pgSpriteView';
 export { default as PgServiceCall } from './pgServiceCall';
 export { default as PgWebView } from './pgWebView'
+export { default as PgLocationManagment } from './pgLocationManagment';
