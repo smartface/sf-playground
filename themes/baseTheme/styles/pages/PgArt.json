@@ -1,0 +1,29 @@
+{
+	"#pgArt": {
+		"&-flToggle": {
+			"flexProps": {
+				"flexDirection": "ROW",
+				"justifyContent": "SPACE_BETWEEN"
+			},
+			"height": 50,
+			"paddingLeft": 16
+		},
+		"&-swArtToggle": {
+			"flexProps": {
+				"alignSelf": "CENTER"
+			}
+		},
+		"&-lblArtType": {
+			"flexProps": {
+				"alignSelf": "STRETCH",
+				"flexGrow": 1
+			},
+			"height": null
+		},
+		"&-wvMain": {
+			"flexProps": {
+				"flexGrow": 1
+			}
+		}
+	}
+}
