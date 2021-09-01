@@ -7,6 +7,13 @@ import {
 } from "@smartface/router";
 import * as Pages from 'pages';
 import "@smartface/extension-utils/lib/router/goBack"; // Implements onBackButtonPressed
+import backClose from '@smartface/extension-utils/lib/router/back-close';
+import Image from "@smartface/native/ui/image";
+
+backClose.setDefaultBackStyle({
+    image: Image.createFromFile('images://backarrow.png'),
+    hideTitle: false
+});
 
 function generatePageRoutes(basePath: string) {
     return Object.keys(Pages).map((pageName, index) => {

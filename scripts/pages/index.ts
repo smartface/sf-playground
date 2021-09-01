@@ -1,5 +1,7 @@
 export { default as Page1 } from './page1';
 export { default as PgMapView } from './pgMapView';
+export { default as PgMapViewRadius } from './pgMapViewRadius';
+export { default as PgMapViewRegion } from './pgMapViewRegion';
 export { default as PgHeaderImage } from './pgHeaderImage';
 export { default as PgFileUpload } from './pgFileUpload';
 export { default as PgListViewIndex } from './pgListViewIndex';
