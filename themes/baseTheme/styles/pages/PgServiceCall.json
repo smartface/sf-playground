@@ -1,0 +1,12 @@
+{
+	"#pgServiceCall": {
+		"&-lblNetworkStatus": {
+			"&-offline": {
+				"textColor": "#D0021B"
+			},
+			"&-online": {
+				"textColor": "#7ED321"
+			}
+		}
+	}
+}
