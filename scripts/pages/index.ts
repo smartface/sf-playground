@@ -17,3 +17,4 @@ export { default as MainPage } from './mainPage';
 export { default as PgSafeArea } from './pgSafeArea';
 export { default as PgMapRegion } from './pgMapRegion';
 export { default as PgSpriteView } from './pgSpriteView';
+export { default as PgLocationManagment } from './pgLocationManagment';
