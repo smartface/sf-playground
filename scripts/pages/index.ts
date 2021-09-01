@@ -1,5 +1,6 @@
 export { default as Page1 } from './page1';
 export { default as PgHeaderImage } from './pgHeaderImage';
+export { default as PgArt } from './pgArt';
 export { default as PgFileUpload } from './pgFileUpload';
 export { default as PgListViewIndex } from './pgListViewIndex';
 export { default as PgNativeSwitch } from './pgNativeSwitch';
