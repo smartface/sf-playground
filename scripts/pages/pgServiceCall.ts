@@ -5,6 +5,7 @@ import removeClassName from '@smartface/contx/lib/styling/action/removeClassName
 import { pushClassNames } from '@smartface/contx/lib/styling';
 import { getDogPic, dogApiData } from "services/dogPic";
 import { OfflineRequestServiceCall, OfflineResponseServiceCall } from "@smartface/extension-utils/lib/service-call-offline";
+import Network from "@smartface/native/device/network";
 
 export default class PgServiceCall extends PgServiceCallDesign {
     isConnected: boolean;
@@ -87,4 +88,11 @@ function onLoad(superOnLoad: () => void) {
     superOnLoad();
     this.initIsEmulatorCheck();
     this.checkAndSetNetworkStatus();
+    //@ts-ignore
+    const notifier = new Network.createNotifier();
+
+    //@ts-ignore
+    notifier.subscribe((connectionType) => {
+        this.checkAndSetNetworkStatus();
+    });
 }
