@@ -41,10 +41,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-spriteview/-/extension-spriteview-2.0.0.tgz#fe6cce25babb825a70583d918dc2e3f82e13e1e8"
   integrity sha512-3pvkZA8Y4NgVlKV0lR/lwB8+f7xXw/7Ah6LfurKFvd89QbwdBIOwP2ByHxbEbUGjMkb4Ss/eqYLN79VX2X3+jg==
 
-"@smartface/extension-utils@^16.0.0-rc.15":
-  version "16.0.0-rc.17"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0-rc.17.tgz#eec7d24d58dc931e411780329968b84e5813c296"
-  integrity sha512-G3ORmypL5Wz8po9AKpL6MfcjvMBMoZjodf3+A0bq485Qu/nmP/6uRj+VbROKjfHFhuiXCHdxa6ozlnq4251psw==
+"@smartface/extension-utils@^16.0.0-rc.20":
+  version "16.0.0-rc.20"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0-rc.20.tgz#ef590138fbb6f994b451691a760f7645fa705f12"
+  integrity sha512-SaOnqcJWkZO4FP+8gH5M6G5R6+bSFethz7xHc8sQzlX3LOLMZk2shxJTsEHrIvv/eI0JEzEMQcK6dHP7TlIw6Q==
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"

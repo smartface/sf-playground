@@ -41,10 +41,16 @@
 			"height": 240
 		},
 		"&-txtAreaHtml": {
-			"height": 50
+			"height": 50,
+			"font": {
+				"style": "Medium"
+			}
 		},
 		"&-tvHtml": {
-			"height": 100
+			"height": 100,
+			"font": {
+				"style": "Medium"
+			}
 		},
 		"&-flRowHtml": {
 			"height": 50

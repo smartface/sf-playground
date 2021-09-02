@@ -1,7 +1,7 @@
 import PgColorAndHtmlDesign from 'generated/pages/pgColorAndHtml';
 import Color from '@smartface/native/ui/color';
-const colorUtil = require('@smartface/extension-utils/lib/color');
-const touch = require('@smartface/extension-utils/lib/touch');
+import colorUtil from '@smartface/extension-utils/lib/color';
+import touch from '@smartface/extension-utils/lib/touch';
 import generateGuid from '@smartface/extension-utils/lib/guid';
 import { createAttributedStrings, createAttributedTexts } from '@smartface/extension-utils/lib/html-to-text';
 import AttributedString from "@smartface/native/ui/attributedstring";
