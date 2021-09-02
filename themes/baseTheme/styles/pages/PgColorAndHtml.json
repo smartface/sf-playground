@@ -48,9 +48,7 @@
 		},
 		"&-tvHtml": {
 			"height": 100,
-			"font": {
-				"style": "Medium"
-			}
+			"font": {}
 		},
 		"&-flRowHtml": {
 			"height": 50
