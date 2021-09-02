@@ -1,12 +1,17 @@
 {
-	".sf": {
-		"&-page": {
-			".nopadding": {
-				"paddingLeft": 0,
-				"paddingBottom": 0,
-				"paddingRight": 0,
-				"paddingTop": 0
-			}
+	".card": {
+		"backgroundColor": "rgba(255,255,255,1)",
+		"borderRadius": 10,
+		"marginTop": 15,
+		"paddingLeft": 15,
+		"paddingRight": 15
+	},
+	".grow": {
+		"flexProps": {
+			"flexGrow": 1
 		}
+	},
+	".getCombinedStyleTest" : {
+		"backgroundColor": "rgba(0,0,0,1)"
 	}
 }
