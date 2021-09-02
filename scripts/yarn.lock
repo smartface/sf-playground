@@ -41,10 +41,17 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-spriteview/-/extension-spriteview-2.0.0.tgz#fe6cce25babb825a70583d918dc2e3f82e13e1e8"
   integrity sha512-3pvkZA8Y4NgVlKV0lR/lwB8+f7xXw/7Ah6LfurKFvd89QbwdBIOwP2ByHxbEbUGjMkb4Ss/eqYLN79VX2X3+jg==
 
-"@smartface/extension-utils@^15.0.0":
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-15.0.2.tgz#7bac62c121194a2c978efd59d5d079c3f2d19d60"
-  integrity sha512-zSfoV92gNE14P56kM1CeVGfc3h62Oof8VrSj9kmMHTQByvYegFZpMdEdEycHbJLNCm4XP0ep8f5dgXtKiQjElQ==
+<<<<<<< HEAD
+"@smartface/extension-utils@^16.0.0-rc.15":
+  version "16.0.0-rc.23"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0-rc.23.tgz#4bfdcf23d83536b4c88f639ee473f9a3bda88878"
+  integrity sha512-IigOsgFWZNPvVCBWEekUNim9NezXS7Eu/T7THE8RQYARTr6ydE7/7UUNc5KTc+WEP/rm9m8eLyU+XOBIuReS1g==
+=======
+"@smartface/extension-utils@^16.0.0-rc.20":
+  version "16.0.0-rc.21"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0-rc.21.tgz#beab81a78f18d62061cf7ea522c5f97a34c55d7b"
+  integrity sha512-jJ4TOkrHNK1bafSN4ZwL8RYD+LC8bm3T1VCAxdKjWrGCgMqNo2+r9g/e2GqeT+hz50HHw5QK9ONB/dM9nz8WXA==
+>>>>>>> 560dd9d7f846a64aed0598a1630ca62ab6d91d13
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
@@ -81,9 +88,9 @@
   integrity sha512-XLgoSUdXM8l0xHFIHV85ZEwzlYl07be2qi+Ca9p3lU1oE8STetxLFR3z7LD8eIq5Wp0Vzoh9xDsGdu0gTwo/dw==
 
 apexcharts@^3.26.3:
-  version "3.27.3"
-  resolved "https://cd.smartface.io/repository/npm-all-public/apexcharts/-/apexcharts-3.27.3.tgz#1b921ac64dea2f28a2b1aad4b396b38464223849"
-  integrity sha512-1ZrqiQT0VahkqW0kVjf5QVURYGaHMlGN08BoIZG2c2U/gY2AtnEoFN4r9q4d/pYYYKvI9AyLBHq0otzcVGrHAw==
+  version "3.28.1"
+  resolved "https://cd.smartface.io/repository/npm-all-public/apexcharts/-/apexcharts-3.28.1.tgz#35a17ea9ef9a1a93fb01ce79d245af8aedb59a7b"
+  integrity sha512-5M1KitI/XmY2Sx6ih9vQOXyQUTmotDG/cML2N6bkBlVseF10RPSzM7dkrf7Y68apSZF6e7J581gXXu1+qkLhCA==
   dependencies:
     svg.draggable.js "^2.2.2"
     svg.easing.js "^2.0.0"

@@ -1,0 +1,62 @@
+{
+	"#pgColorAndHtml": {
+		"&-flTouch": {
+			"height": 50,
+			"backgroundColor": "rgba( 202, 191, 191, 1 )"
+		},
+		"&-flColorArea": {
+			"height": 215
+		},
+		"backgroundColor": "rgba( 243, 232, 232, 1 )",
+		"&-flRow": {
+			"flexProps": {
+				"flexDirection": "ROW"
+			},
+			"height": 30
+		},
+		"&-lblRgb": {
+			"width": 30,
+			"height": null
+		},
+		"&-textBox": {
+			"width": 50,
+			"height": null,
+			"marginRight": 15
+		},
+		"&-lblKey": {
+			"width": 80,
+			"height": null,
+			"textColor": "rgba( 165, 98, 98, 1 )"
+		},
+		"&-lblValue": {
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"height": null
+		},
+		"&-flGuidArea": {
+			"height": 110
+		},
+		"&-HtmlArea": {
+			"height": 240
+		},
+		"&-txtAreaHtml": {
+			"height": 50,
+			"font": {
+				"style": "Medium"
+			}
+		},
+		"&-tvHtml": {
+			"height": 100,
+			"font": {}
+		},
+		"&-flRowHtml": {
+			"height": 50
+		},
+		"&-lblTitle": {
+			"height": 30,
+			"marginTop": 10,
+			"marginBottom": 10
+		}
+	}
+}

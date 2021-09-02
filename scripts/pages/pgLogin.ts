@@ -51,4 +51,5 @@ function onShow(this: PgLogin, superOnShow: () => void) {
 
 function onLoad(this: PgLogin, superOnLoad: () => void) {
     superOnLoad();
+    this.initMaterialTextBoxes();
 }

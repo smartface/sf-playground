@@ -1,0 +1,86 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "31f4-eeb3-63f7-db49",
+			"initialized": true,
+			"props": {
+				"children": [
+					"88a3-99ac-0a9b-054d",
+					"98c6-9358-a727-23b9",
+					"30a0-95cb-76e9-61e2",
+					"2f8f-ee38-0eb3-c777"
+				],
+				"name": "pgWebView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND"
+				}
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "88a3-99ac-0a9b-054d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "31f4-eeb3-63f7-db49"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "98c6-9358-a727-23b9",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "31f4-eeb3-63f7-db49",
+				"title": "pgWebView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgWebView"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "30a0-95cb-76e9-61e2",
+			"props": {
+				"children": [],
+				"name": "lblMenu",
+				"parent": "31f4-eeb3-63f7-db49",
+				"text": "Open the menu",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "qTgB4u1N2",
+				"text": "Open the menu",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-webView",
+			"id": "2f8f-ee38-0eb3-c777",
+			"props": {
+				"children": [],
+				"name": "webView1",
+				"parent": "31f4-eeb3-63f7-db49",
+				"usePageVariable": true
+			},
+			"type": "WebView",
+			"userProps": {
+				"testId": "wvs2eJOv5",
+				"usePageVariable": true
+			}
+		}
+	]
+}

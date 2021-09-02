@@ -19,7 +19,7 @@ function generatePageRoutes(basePath: string) {
     return Object.keys(Pages).map((pageName, index) => {
         return Route.of({
             path: `${basePath}/${pageName}`,
-            build: buildExtender({ getPageClass: () => Pages[pageName], headerBarStyle: { visible: true } })
+            build: buildExtender({ getPageClass: () => Pages[pageName], headerBarStyle: { visible: true }, pageName })
         })
     });
 }
