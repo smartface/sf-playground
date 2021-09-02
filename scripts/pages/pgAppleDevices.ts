@@ -5,6 +5,9 @@ import deviceMappings from "@smartface/extension-utils/lib/appleDevices/deviceMa
 import copy from "@smartface/extension-utils/lib/copy";
 import { getOrientationOnchage } from "@smartface/extension-utils/lib/orientation";
 import { createAsyncTask } from "@smartface/extension-utils/lib/async";
+import Http = require("@smartface/native/net/http");
+import Image = require('@smartface/native/ui/image');
+
 export default class PgAppleDevices extends PgAppleDevicesDesign {
     dataSet: string[];
     constructor() {
@@ -17,9 +20,7 @@ export default class PgAppleDevices extends PgAppleDevicesDesign {
         this.onOrientationChange = () => {
             const orientation = getOrientationOnchage();
             createAsyncTask(() => {
-                setTimeout(() => {
-                    this.scrambleDatasetOnOrientationChange();
-                }, 10)
+                this.scrambleDatasetOnOrientationChange();
             }, {})
                 .then(() => this.refreshListView())
         }

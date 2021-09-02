@@ -11,6 +11,10 @@ import router from "routes";
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function (e: UnhandledError) {
     const error = errorStackBySourceMap(e);
+    console.error({
+        message: e.message,
+        ...error
+    });
     alert({
         title: e.type || lang.applicationError,
         message: System.OS === "Android" ? error.stack : (e.message + "\n\n*" + error.stack)
