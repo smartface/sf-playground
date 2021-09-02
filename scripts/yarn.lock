@@ -42,9 +42,9 @@
   integrity sha512-3pvkZA8Y4NgVlKV0lR/lwB8+f7xXw/7Ah6LfurKFvd89QbwdBIOwP2ByHxbEbUGjMkb4Ss/eqYLN79VX2X3+jg==
 
 "@smartface/extension-utils@^16.0.0-rc.15":
-  version "16.0.0-rc.17"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0-rc.17.tgz#eec7d24d58dc931e411780329968b84e5813c296"
-  integrity sha512-G3ORmypL5Wz8po9AKpL6MfcjvMBMoZjodf3+A0bq485Qu/nmP/6uRj+VbROKjfHFhuiXCHdxa6ozlnq4251psw==
+  version "16.0.0-rc.23"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0-rc.23.tgz#4bfdcf23d83536b4c88f639ee473f9a3bda88878"
+  integrity sha512-IigOsgFWZNPvVCBWEekUNim9NezXS7Eu/T7THE8RQYARTr6ydE7/7UUNc5KTc+WEP/rm9m8eLyU+XOBIuReS1g==
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
