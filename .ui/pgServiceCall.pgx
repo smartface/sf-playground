@@ -1,0 +1,119 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "5df5-b816-2e3a-906b",
+			"initialized": true,
+			"props": {
+				"children": [
+					"0e95-71de-873f-dafc",
+					"a2d7-7558-5031-4462",
+					"f290-07ff-ac40-cfcc",
+					"054b-01e7-19e8-cb20",
+					"6ba4-5982-040a-1f0c",
+					"40e3-5b5b-8344-11aa"
+				],
+				"name": "pgServiceCall",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "0e95-71de-873f-dafc",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "5df5-b816-2e3a-906b"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "a2d7-7558-5031-4462",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "5df5-b816-2e3a-906b",
+				"title": "pgServiceCall"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgServiceCall"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "f290-07ff-ac40-cfcc",
+			"props": {
+				"children": [],
+				"name": "lblIsEmulator",
+				"parent": "5df5-b816-2e3a-906b",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "YE2aPUft7",
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label #pgServiceCall-lblNetworkStatus-offline #pgServiceCall-lblNetworkStatus-online",
+			"id": "054b-01e7-19e8-cb20",
+			"props": {
+				"children": [],
+				"name": "lblNetworkStatus",
+				"parent": "5df5-b816-2e3a-906b",
+				"text": "Connected to internet",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "iqqwBcfZM",
+				"text": "Connected to internet",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "6ba4-5982-040a-1f0c",
+			"props": {
+				"children": [],
+				"name": "btnRequest",
+				"parent": "5df5-b816-2e3a-906b",
+				"text": "Get a random dog pic!",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "DuLe3m5TN",
+				"text": "Get a random dog pic!",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "40e3-5b5b-8344-11aa",
+			"props": {
+				"children": [],
+				"name": "imgDogPic",
+				"parent": "5df5-b816-2e3a-906b",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"imageFillType": "ASPECTFIT",
+				"testId": "c5rnvWggs",
+				"usePageVariable": true
+			}
+		}
+	]
+}
