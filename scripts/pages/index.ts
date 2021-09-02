@@ -21,3 +21,4 @@ export { default as PgServiceCall } from './pgServiceCall';
 export { default as PgWebView } from './pgWebView';
 export { default as PgLocationManagment } from './pgLocationManagment';
 export { default as PgAppleDevices } from "./pgAppleDevices";
+export { default as PgColorAndHtml } from './pgColorAndHtml';
