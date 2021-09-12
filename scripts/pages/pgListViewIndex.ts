@@ -10,7 +10,7 @@ import System from '@smartface/native/device/system';
 
 export default class PgListViewIndex extends PgListViewIndexDesign {
   listViewItemArray: any[] = [];
-  listViewItemIndexItems: ListViewIndex['items'] = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
+  listViewItemIndexItems = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
   myListView: ListView;
   headerIndex: number[] = [];
   listViewIndex = new ListViewIndex();
@@ -105,7 +105,6 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
     }
     this.listViewIndex.reloadData();
 
-    this.layout.addChild(this.listViewIndex);
     // this.listViewIndex.backgroundView.backgroundColor = Color.GREEN;
     // this.listViewIndex.backgroundColor = Color.BLUE;
     // this.listViewIndex.tintColor = Color.RED;
@@ -113,7 +112,10 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
     // this.listViewIndex.font = Font.create("TimesNewRomanPS-BoldMT", 16);
     // this.listViewIndex.indexInset = { top: 10, left: 0, bottom: 10, right: 0 };
     // this.listViewIndex.indexOffset = { vertical: -2, horizontal: -2 };
-    // this.listViewIndex.listviewIndexMinimumWidth = 40;
+    // this.listViewIndex.listViewIndexMinimumWidth = 40;
+
+    this.layout.addChild(this.listViewIndex);
+    this.layout.applyLayout();
   }
 }
 

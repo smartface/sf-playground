@@ -7,7 +7,7 @@ import ListViewIndex from '@smartface/extension-listviewindex';
 
 export default class PgBadgeAnimation extends PgBadgeAnimationDesign {
     scrollData: string[] = [];
-    listViewIndex: ListViewIndex;
+    listViewIndex = new ListViewIndex();
     constructor() {
         super();
         let firstLetter = 65;
