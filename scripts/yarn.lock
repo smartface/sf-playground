@@ -31,10 +31,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-listviewindex/-/extension-listviewindex-2.0.1.tgz#05e9c974c75f480d7ef977af4007d760f342f69b"
   integrity sha512-9+78kdZ0FAC4A35tYaD5itg1y68gDl4CyvBReSwrKQUvTmTPdV1Z/Aj9CA8UzYAfasnuECDDFisauQHv7krhHg==
 
-"@smartface/extension-sms-receiver@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-sms-receiver/-/extension-sms-receiver-3.0.0.tgz#fcceeaba2cafb204fee8eecd744aded843978511"
-  integrity sha512-ft/icz7kJNCYUN+bpYHoEhTIfpF1XLmzTM8gpdzbqR39QXDikdXXjjB4tfF4Rs8vcjNE2VqXdJLIT7kBM7cCIA==
+"@smartface/extension-sms-receiver@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-sms-receiver/-/extension-sms-receiver-4.0.0.tgz#1d2c18cb0a214b8262f1e18b2797ef31c6b1ef2e"
+  integrity sha512-q5eiPltoeSbutqu+AuRIICvneINkQxIEq9ULd2HcvSYI2mJ1l7jtXsIDza/BAVbe7uIoYii6Rztz6VrBlHPHUw==
 
 "@smartface/extension-spriteview@^2.0.0":
   version "2.0.0"

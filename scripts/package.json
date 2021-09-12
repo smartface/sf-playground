@@ -5,7 +5,7 @@
         "@smartface/contx": "^4.0.0",
         "@smartface/extension-barcode": "^4.0.0",
         "@smartface/extension-listviewindex": "^2.0.1",
-        "@smartface/extension-sms-receiver": "^3.0.0",
+        "@smartface/extension-sms-receiver": "^4.0.0",
         "@smartface/extension-spriteview": "^2.0.0",
         "@smartface/extension-utils": "^16.0.0-rc",
         "@smartface/native": "^4.3.3",

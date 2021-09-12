@@ -1,7 +1,7 @@
 import Page1Design from 'generated/pages/page1';
 import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
 import PageTitleLayout from "components/PageTitleLayout";
-import System = require("@smartface/native/device/system");
+import System from "@smartface/native/device/system");
 import { BarcodeScanner } from '@smartface/extension-barcode';
 import Multimedia from '@smartface/native/device/multimedia';
 import Permission from '@smartface/extension-utils/lib/permission';
@@ -84,6 +84,6 @@ function onShow(this: Page1, superOnShow: () => void) {
 function onLoad(this: Page1, superOnLoad: () => void) {
     superOnLoad();
     // this.capturePhoto();
-    // this.requestSMSPermission();
-    // this.initOTP();
+    this.requestSMSPermission();
+    this.initOTP();
 }
