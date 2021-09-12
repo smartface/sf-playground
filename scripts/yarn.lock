@@ -36,10 +36,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-sms-receiver/-/extension-sms-receiver-4.0.0.tgz#1d2c18cb0a214b8262f1e18b2797ef31c6b1ef2e"
   integrity sha512-q5eiPltoeSbutqu+AuRIICvneINkQxIEq9ULd2HcvSYI2mJ1l7jtXsIDza/BAVbe7uIoYii6Rztz6VrBlHPHUw==
 
-"@smartface/extension-spriteview@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-spriteview/-/extension-spriteview-2.0.0.tgz#fe6cce25babb825a70583d918dc2e3f82e13e1e8"
-  integrity sha512-3pvkZA8Y4NgVlKV0lR/lwB8+f7xXw/7Ah6LfurKFvd89QbwdBIOwP2ByHxbEbUGjMkb4Ss/eqYLN79VX2X3+jg==
+"@smartface/extension-spriteview@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-spriteview/-/extension-spriteview-3.0.0.tgz#4d20d175683d1f7df15b1335269c725fc2716a25"
+  integrity sha512-0gdecB6jyzGBvh7DqboA7XXi/uQJZfl+dJAQNnC12YQl4unJp/ZUwlCj3Is3SpfkHl9cczgTDjYmzenrmnHWxQ==
 
 "@smartface/extension-utils@^16.0.0-rc":
   version "16.0.0"
@@ -54,6 +54,11 @@
     squel "^5.13.0"
     tinycolor2 "^1.4.1"
     wolfy87-eventemitter "^5.2.9"
+
+"@smartface/extension-zoomable-imageview@^3.0.0-rc":
+  version "3.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-zoomable-imageview/-/extension-zoomable-imageview-3.0.0-rc.1.tgz#138cf36a64e7727e72fbbdd6550604ac6ec5fd53"
+  integrity sha512-CVnZ/DoW6y4eWIRcBACSOaVmsGrKTcVfcA0erdlnzyOVepM1nmS1tyHcdhtklsS++5DF3kd2oDgp1qx3/vaQZQ==
 
 "@smartface/html-to-text@^1.0.0":
   version "1.2.0"
