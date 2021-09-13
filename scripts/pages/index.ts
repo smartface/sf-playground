@@ -4,6 +4,7 @@ export { default as PgMapViewRadius } from './pgMapViewRadius';
 export { default as PgZoomableImageView } from './pgZoomableImageView';
 export { default as PgMapViewRegion } from './pgMapViewRegion';
 export { default as PgHeaderImage } from './pgHeaderImage';
+export { default as PgEventEmitter } from './pgEventEmitter';
 export { default as PgArt } from './pgArt';
 export { default as PgFileUpload } from './pgFileUpload';
 export { default as PgListViewIndex } from './pgListViewIndex';
