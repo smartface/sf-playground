@@ -5,7 +5,6 @@ import { errorStackBySourceMap } from "error-by-sourcemap";
 import System from "@smartface/native/device/system";
 import "theme";
 import "@smartface/extension-utils";
-import router from "routes";
 
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
@@ -20,5 +19,6 @@ Application.onUnhandledError = function (e: UnhandledError) {
         message: System.OS === "Android" ? error.stack : (e.message + "\n\n*" + error.stack)
     });
 };
+import router from "routes";
 
-router.push("/pages/mainpage");
+router.push("/root/btb/tab0/mainpage");

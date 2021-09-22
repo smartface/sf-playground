@@ -2,7 +2,7 @@ import Page1Design from 'generated/pages/pgHeaderSearch';
 import SearchView from '@smartface/native/ui/searchview';
 import Color from '@smartface/native/ui/color';
 
-export default class Page1 extends Page1Design {
+export default class PgHeaderSearch extends Page1Design {
     router: any;
     mySearchView: SearchView;
     constructor() {
@@ -27,7 +27,7 @@ export default class Page1 extends Page1Design {
  * @event onShow
  * This event is called when a page appears on the screen (everytime).
  */
-function onShow(this: Page1, superOnShow: () => void) {
+function onShow(this: PgHeaderSearch, superOnShow: () => void) {
     superOnShow();
 }
 
@@ -35,7 +35,7 @@ function onShow(this: Page1, superOnShow: () => void) {
  * @event onLoad
  * This event is called once when page is created.
  */
-function onLoad(this: Page1, superOnLoad: () => void) {
+function onLoad(this: PgHeaderSearch, superOnLoad: () => void) {
     superOnLoad();
     this.initSearchView();
 }

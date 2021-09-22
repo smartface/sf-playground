@@ -1,9 +1,8 @@
 import MainPageDesign from 'generated/pages/mainPage';
 import LviPages from 'components/LviPages';
-import * as Pages from '.';
 
 export default class MainPage extends MainPageDesign {
-    pages = Object.keys(Pages);
+    pages: (typeof MainPage)[] = [];
     router: any;
     constructor() {
         super();
@@ -15,10 +14,10 @@ export default class MainPage extends MainPageDesign {
         this.lvPages.refreshEnabled = false;
         this.lvPages.rowHeight = 54;
         this.lvPages.onRowBind = (listViewItem: LviPages, index) => {
-            listViewItem.lblPageName.text = this.pages[index];
+            listViewItem.lblPageName.text = this.pages[index].name;
         }
         this.lvPages.onRowSelected = (listViewItem: LviPages, index) => {
-            this.router.push(`/pages/${this.pages[index]}`)
+            this.router.push(`${this.pages[index].name}`)
         }
     }
 

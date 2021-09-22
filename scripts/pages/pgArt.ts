@@ -44,7 +44,7 @@ export default class PgArt extends PgArtDesign {
   initEmojiAnimation() {
     this.emojiAnimation = new EmojiAnimation({
       emojis: this.emojis,
-      webView: this.wvMain
+      webView: this.wvMain as any
     });
     this.emojiIntervalCode = setInterval(() => {
       this.emojis.forEach((_, index) => {
@@ -55,7 +55,7 @@ export default class PgArt extends PgArtDesign {
 
   initCircularProgressBar() {
     this.circularProgressBar = new CircularProgressBar({
-      webView: this.wvMain
+      webView: this.wvMain as any
     })
     this.circularProgressBar.value = 55;
   }
