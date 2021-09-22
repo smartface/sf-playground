@@ -15,7 +15,7 @@ export default class PgZoomableImageView extends PgZoomableImageViewDesign {
             height: 250
         });
         this.zoomableImageView.image = "images://smartface.png";
-        this.zoomableImageView.minumumZoomScale = 1;
+        this.zoomableImageView.minimumZoomScale = 1;
         this.zoomableImageView.android.mediumZoomScale = 2;
         this.zoomableImageView.maximumZoomScale = 3;
 

@@ -20,7 +20,7 @@ export default class PgBadgeAnimation extends PgBadgeAnimationDesign {
         this.listViewIndex = new ListViewIndex();
         this.listViewIndex.width = 20;
         this.listViewIndex.items = this.scrollData;
-        this.listViewIndex.reloadData();
+        System.OS === System.OSType.IOS && this.listViewIndex.reloadData();
         this.listViewIndex.indexDidSelect = (index) => {
             this.myListView.scrollTo(0, false);
             return true; //haptic

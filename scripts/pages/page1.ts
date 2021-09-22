@@ -1,8 +1,4 @@
 import Page1Design from 'generated/pages/page1';
-import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
-import PageTitleLayout from "components/PageTitleLayout";
-import System from "@smartface/native/device/system";
-import { BarcodeScanner } from '@smartface/extension-barcode';
 import Multimedia from '@smartface/native/device/multimedia';
 import Permission from '@smartface/extension-utils/lib/permission';
 import Application from '@smartface/native/application';
