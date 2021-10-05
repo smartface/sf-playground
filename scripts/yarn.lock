@@ -21,10 +21,10 @@
     "@smartface/styler" "^2.0.0"
     filtrex "^0.5.4"
 
-"@smartface/extension-barcode@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-barcode/-/extension-barcode-4.0.0.tgz#56fd90c3fcc17d9853e5e580ba89306577537194"
-  integrity sha512-dx6VvbON1XBcw1S3GdbpI9e4Qdvi+3gu/7dn8/MrEUTw4O8D7C5hYmzkiGaJnGGGtrq3ogFuyyWQZQTh6gBffA==
+"@smartface/extension-barcode@^5.0.0-rc":
+  version "5.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-barcode/-/extension-barcode-5.0.0-rc.0.tgz#e89088b06a1676dcad75379e320377d4da95dd5f"
+  integrity sha512-y3Tkx8bNTt28fKKs8p8WaqHMzFXHMiTiH/S/PnGkkUP4Vdrwd6zGVA+/q7OPvJ/lgr3+kU1fsDgNBRdCu1oLOQ==
 
 "@smartface/extension-listviewindex@^3.0.0":
   version "3.0.0"
@@ -41,7 +41,7 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-spriteview/-/extension-spriteview-3.0.0.tgz#4d20d175683d1f7df15b1335269c725fc2716a25"
   integrity sha512-0gdecB6jyzGBvh7DqboA7XXi/uQJZfl+dJAQNnC12YQl4unJp/ZUwlCj3Is3SpfkHl9cczgTDjYmzenrmnHWxQ==
 
-"@smartface/extension-utils@^16.0.0-rc":
+"@smartface/extension-utils@^16.0.0":
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.0.tgz#f62ae95d139ff57800217a3a179c2b18a61961b3"
   integrity sha512-rms+zk065eqViwNJwUC005z8Khf7fxIewtqvUPH2iCV0u2EV1WIuXeEmakEgN39KjfLNmSrlddJQpwqtPWavcw==

@@ -7,7 +7,7 @@ import AlertView from '@smartface/native/ui/alertview';
 
 export class BarcodeScanner {
     listeners: (() => void)[] = [];
-    barcodeScanner: SFBarcodeScanner;
+    barcodeScanner: InstanceType<typeof SFBarcodeScanner>;
     constructor(page: Page) {
         this.barcodeScanner = new SFBarcodeScanner({
             layout: page.layout,

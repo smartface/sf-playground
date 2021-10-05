@@ -5,6 +5,7 @@ export { default as PgZoomableImageView } from './pgZoomableImageView';
 export { default as PgMapViewRegion } from './pgMapViewRegion';
 export { default as PgHeaderImage } from './pgHeaderImage';
 export { default as PgArt } from './pgArt';
+export { default as PgBarcodeScanner } from './pgBarcodeScanner';
 export { default as PgFileUpload } from './pgFileUpload';
 export { default as PgListViewIndex } from './pgListViewIndex';
 export { default as PgNativeSwitch } from './pgNativeSwitch';
