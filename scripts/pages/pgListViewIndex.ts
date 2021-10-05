@@ -103,7 +103,7 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
       this.myListView.scrollTo(this.headerIndex[index], true);
       return true; //haptic
     }
-    this.listViewIndex.reloadData();
+    System.OS === System.OSType.IOS && this.listViewIndex.reloadData();
 
     // this.listViewIndex.backgroundView.backgroundColor = Color.GREEN;
     // this.listViewIndex.backgroundColor = Color.BLUE;
