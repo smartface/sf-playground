@@ -42,9 +42,9 @@
   integrity sha512-0gdecB6jyzGBvh7DqboA7XXi/uQJZfl+dJAQNnC12YQl4unJp/ZUwlCj3Is3SpfkHl9cczgTDjYmzenrmnHWxQ==
 
 "@smartface/extension-utils@^16.0.1-rc":
-  version "16.0.1-rc.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.0.1-rc.0.tgz#974068d390a219ebbc57e4d1f7e034b222905c22"
-  integrity sha512-3+h5YJDHoaFhlakjZnS1cMn+tlj6wkYDHfpg4M7EZxVGcnOYIEM9Lzsz9T8GXGFGD/1JSAyyJMs+TkWgOPwlwQ==
+  version "16.2.2"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.2.2.tgz#ddb110c4eb0249b1d49c3663312cb2e5ee170543"
+  integrity sha512-fvpNM7EcSVJJ9cC7vQW8AnZ6c1D7hsAES7N8mm+/lWwvRQD4EgAYzrKcV/hABcgrWXrETNNpzJmGBzKQ+HAFQg==
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
@@ -73,9 +73,9 @@
   integrity sha512-uvHd4HExaUIi0LQAozaNqP8mmgxq0+jc0xS5l24SPEoJ2wGRqFeE8qaxwBfVb1EGayluv9pdDy6mRzG/HSakWw==
 
 "@smartface/router@^2.0.0-rc.1":
-  version "2.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@smartface/router/-/router-2.0.0-rc.4.tgz#e0014ea7febb3daf3c3d4ede1ef62ab4648c460e"
-  integrity sha512-ZbZWGWa5MH23rFaUSeldloEiQQSG/3yWFFwz7gkFcBOEaxWxjorKdpxYAL9tj7+FgJtJbkG7xaL2R0LZUBLU6w==
+  version "2.0.0-rc.10"
+  resolved "https://registry.yarnpkg.com/@smartface/router/-/router-2.0.0-rc.10.tgz#21c906314cc68ba706d91115549ccc99f6e6d906"
+  integrity sha512-6txuxGDgtLg3zw0V/HAyfEu2I51OnF5hjrd89ptFKzG2D0WC3EeyPiCjL9gJ8bW5IpotlZvSAKEBr2XdQftNQA==
   dependencies:
     path-to-regexp "^2.4.0"
     resolve-pathname "^2.2.0"

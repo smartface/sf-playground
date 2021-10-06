@@ -22,10 +22,10 @@ backClose.setDefaultBackStyle({
   hideTitle: false
 });
 
-backClose.dissmissBuilder = () => {
+backClose.dismissBuilder = () => {
   return {
     image: Image.createFromFile("images://backarrow.png"),
-    position: "left"
+    position: backClose.DismissPosition.LEFT
   };
 };
 
