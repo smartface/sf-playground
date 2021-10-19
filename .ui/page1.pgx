@@ -8,10 +8,8 @@
 				"children": [
 					"42b807d1",
 					"b7d28cff",
-					"3680-0cd5-22de-45eb",
 					"980522a9",
-					"9e49-7873-afba-472b",
-					"2ade-ea56-91b2-77e5"
+					"9e49-7873-afba-472b"
 				],
 				"isRemovable": true,
 				"name": "page1",
@@ -61,23 +59,6 @@
 			"userProps": {
 				"title": "Page1",
 				"visible": true
-			}
-		},
-		{
-			"className": ".sf-textBox",
-			"id": "3680-0cd5-22de-45eb",
-			"props": {
-				"children": [],
-				"name": "textBox1",
-				"parent": "e891b86d",
-				"text": "textBox1",
-				"usePageVariable": true
-			},
-			"type": "TextBox",
-			"userProps": {
-				"testId": "WV3-BEl9Z",
-				"text": "textBox1",
-				"usePageVariable": true
 			}
 		},
 		{
@@ -139,21 +120,6 @@
 				"text": "Next Page",
 				"usePageVariable": true,
 				"width": null
-			}
-		},
-		{
-			"className": ".sf-imageView",
-			"id": "2ade-ea56-91b2-77e5",
-			"props": {
-				"children": [],
-				"name": "imageView1",
-				"parent": "e891b86d",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"testId": "DORp2X8mX",
-				"usePageVariable": true
 			}
 		}
 	]
