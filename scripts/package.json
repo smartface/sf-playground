@@ -1,16 +1,16 @@
 {
     "dependencies": {
-        "@smartface/component-keyboardlayout": "^3.0.0",
-        "@smartface/component-materialtextbox": "^5.0.0",
+        "@smartface/component-keyboardlayout": "^4.0.0",
+        "@smartface/component-materialtextbox": "^6.0.1",
         "@smartface/contx": "^4.0.0",
-        "@smartface/extension-barcode": "^5.0.0-rc",
+        "@smartface/extension-barcode": "^5.0.0",
         "@smartface/extension-listviewindex": "^3.0.0",
         "@smartface/extension-sms-receiver": "^4.0.0",
         "@smartface/extension-spriteview": "^3.0.0",
-        "@smartface/extension-utils": "^16.0.0",
-        "@smartface/extension-zoomable-imageview": "^3.0.0-rc",
-        "@smartface/native": "^4.3.3",
-        "@smartface/router": "^2.0.0-rc",
+        "@smartface/extension-utils": "^16.2.2",
+        "@smartface/extension-zoomable-imageview": "^3.0.1",
+        "@smartface/native": "^4.3.5-alpha",
+        "@smartface/router": "^2.0.0",
         "@smartface/styler": "^2.0.0",
         "source-map": "0.6.1"
     }

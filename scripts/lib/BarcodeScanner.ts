@@ -23,7 +23,8 @@ export class BarcodeScanner {
         });
     }
     show() {
-        if (System.OS === "iOS") {
+        if (System.OS === System.OSType.IOS) {
+            //@ts-ignore
             SFBarcodeScanner.ios.checkPermission({
                 onSuccess: () => this.showScanPage(),
                 onFailure: async () => {
