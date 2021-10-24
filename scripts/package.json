@@ -9,7 +9,7 @@
     "@smartface/extension-spriteview": "^3.0.0",
     "@smartface/extension-utils": "^16.2.2",
     "@smartface/extension-zoomable-imageview": "^3.0.1",
-    "@smartface/native": "^4.3.5-alpha",
+    "@smartface/native": "^4.3.5-beta",
     "@smartface/router": "^2.0.0",
     "@smartface/styler": "^2.0.0",
     "source-map": "0.6.1"
