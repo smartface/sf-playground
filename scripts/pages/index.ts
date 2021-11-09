@@ -1,5 +1,6 @@
 export { default as Page1 } from './page1';
 export { default as PgOTP } from './pgOTP';
+export { default as PgSSLPinning } from './pgSSLPinning';
 export { default as PgMapView } from './pgMapView';
 export { default as PgMapViewRadius } from './pgMapViewRadius';
 export { default as PgZoomableImageView } from './pgZoomableImageView';

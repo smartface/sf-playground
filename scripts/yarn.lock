@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-4.0.0.tgz#efa462362a4e0c5756dc4833ba1fb9339f950d1a"
   integrity sha512-WKHXs2yhu6V0nTL7ig+z+964ciubXqNGjT6C1D7VifsedT1iwifnz9WsUo1PzybJFVrptao9+EIcnGbnTrmyQA==
 
-"@smartface/component-materialtextbox@^6.0.0":
+"@smartface/component-materialtextbox@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@smartface/component-materialtextbox/-/component-materialtextbox-6.0.1.tgz#88f304ddace80a4a528d36b1d2a3a10c33894cb9"
   integrity sha512-hB6z/pvQAm3UzAWJ2uwIlZwRB6JA2KCqoMrmh7oDQ1IO11nU4Lwazxqo4eBA+gkPl1wuu+Pdf95T2pWxwOhZ9g==
@@ -67,10 +67,10 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/native@^4.3.5-alpha":
-  version "4.3.5-beta.2"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.5-beta.2.tgz#7703180dc59494dfd1dc49fa9c6882798892a349"
-  integrity sha512-yD3DLC1lqe+SqBxC1YuwO8ep1686Yi1kHh4vWOAKGXldB94hQ1QuOzsQAt06qUA3DGF3OhJwwZCN2F/1D/SEdQ==
+"@smartface/native@^4.3.5-beta":
+  version "4.3.5-beta.3"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.5-beta.3.tgz#b33cf854d2f685f90a87d1801cebb944b8dda007"
+  integrity sha512-XUajU4DByjFtYxNikzgFf4XyHnU206VneB7w19+BDgWA8BfTuRVWncOUnQDIgwK6mgj0qTXW8LMSUWYPBRTF5A==
 
 "@smartface/router@^2.0.0":
   version "2.0.0"
@@ -101,6 +101,11 @@ decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://cd.smartface.io/repository/npm-all-public/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+
+events@^3.3.0:
+  version "3.3.0"
+  resolved "https://cd.smartface.io/repository/npm-all-public/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
+  integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
 
 filter-obj@^1.1.0:
   version "1.1.0"
