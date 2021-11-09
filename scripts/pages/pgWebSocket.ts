@@ -1,50 +1,40 @@
-import PgWebSocketDesign from 'generated/pages/pgWebSocket';
-import WebViewBridge from '@smartface/extension-utils/lib/webviewbridge';
+import PgWebSocketDesign from "generated/pages/pgWebSocket";
+import WebSocket from "@smartface/native/net/websocket";
+import Blob from "@smartface/native/global/blob";
 
 export default class PgWebSocket extends PgWebSocketDesign {
-    wvb: WebViewBridge;
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
+  webSocket: WebSocket;
+  constructor() {
+    super();
+    this.onShow = onShow.bind(this, this.onShow.bind(this));
+    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+  }
 
-    initWebViewBridge() {
-        const url = "https://www.websocket.org/echo.html";
-        const script = `
-        window.conn.onmessage = function(superOnMessage, message) {
-        superOnMessage(message);
-        window.boubleEvent("message", {
-            text: event.data
-        });
-        }.bind(window.conn, window.conn.onmessage.bind(window.conn));
-        `;
-
-        //Within constructor
-        const wvb = new WebViewBridge({
-            webView: this.webView1, //WebView
-            source: url
-        });
-        this.wvb = wvb;
-
-        wvb.on("buttonPress", (data) => {
-            const message = `Message recieved containing: ${data.text}`
-            console.log(message);
-            alert(message);
-            //Do your own logic
-        });
-
-        wvb.ready().then(() => {
-            wvb.evaluateJS(script);
-        });
-    }
+  initWebSocket() {
+    this.webSocket = new WebSocket({
+      url: "wss://javascript.info/article/websocket/demo/hello",
+    });
+    this.webSocket.on(WebSocket.Events.Open, () => {
+      console.log("Websocket opened.");
+      console.log("Sending a string...");
+      this.webSocket.send({ data: "some string" });
+    });
+    this.webSocket.on(WebSocket.Events.Close, (params: { code: number; reason?: string }) => {
+      console.log(`Websocket closed with exit code: `, params.code);
+    });
+    this.webSocket.on(WebSocket.Events.Message, (e: { string: string; blob: Blob }) => {
+      console.log("Message received.");
+      console.log("Message: ", e.string);
+      this.webSocket.close({ code: 1000 });
+    });
+  }
 }
 
 function onShow(this: PgWebSocket, superOnShow: () => void) {
-    superOnShow();
+  superOnShow();
 }
 
 function onLoad(this: PgWebSocket, superOnLoad: () => void) {
-    superOnLoad();
-    this.initWebViewBridge();
+  superOnLoad();
+  this.initWebSocket();
 }
