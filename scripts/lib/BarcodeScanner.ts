@@ -7,7 +7,7 @@ import AlertView from '@smartface/native/ui/alertview';
 
 export class BarcodeScanner {
     listeners: (() => void)[] = [];
-    barcodeScanner: SFBarcodeScanner;
+    barcodeScanner: InstanceType<typeof SFBarcodeScanner>;
     constructor(page: Page) {
         this.barcodeScanner = new SFBarcodeScanner({
             layout: page.layout,
@@ -23,7 +23,8 @@ export class BarcodeScanner {
         });
     }
     show() {
-        if (System.OS === "iOS") {
+        if (System.OS === System.OSType.IOS) {
+            //@ts-ignore
             SFBarcodeScanner.ios.checkPermission({
                 onSuccess: () => this.showScanPage(),
                 onFailure: async () => {

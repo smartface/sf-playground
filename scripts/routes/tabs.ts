@@ -28,6 +28,8 @@ import PgLocationManagment from 'pages/pgLocationManagment';
 import PgAppleDevices from "pages/pgAppleDevices";
 import PgColorAndHtml from 'pages/pgColorAndHtml';
 import PgModalTest from 'pages/pgModalTest'
+import PgOTP from 'pages/pgOTP';
+import PgSSLPinning from 'pages/pgSSLPinning';
 
 type Tab = { name: string; tabIndex: number; pages: (typeof Page)[]; }
 
@@ -59,7 +61,8 @@ export const tab1: Tab = {
         PgServiceCall,
         PgLocationManagment,
         PgAppleDevices,
-        PgColorAndHtml
+        PgColorAndHtml,
+        PgSSLPinning
     ]
 };
 
@@ -91,6 +94,7 @@ export const tab4: Tab = {
         PgHeaderSearch,
         PgNoTouch,
         PgSafeArea,
-        PgWebView
+        PgWebView,
+        PgOTP
     ]
 };
