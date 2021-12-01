@@ -1,6 +1,6 @@
 import Page1Design from 'generated/pages/page1';
 
-export default class Page1 extends Page1Design {
+export default class PgEmpty extends Page1Design {
     constructor() {
         super();
         this.onShow = onShow.bind(this, this.onShow.bind(this));
@@ -9,10 +9,10 @@ export default class Page1 extends Page1Design {
 }
 
 
-function onShow(this: Page1, superOnShow: () => void) {
+function onShow(this: PgEmpty, superOnShow: () => void) {
     superOnShow();
 }
 
-function onLoad(this: Page1, superOnLoad: () => void) {
+function onLoad(this: PgEmpty, superOnLoad: () => void) {
     superOnLoad();
 }

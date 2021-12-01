@@ -6,6 +6,7 @@ export default class PgNoTouch extends PgNoTouchDesign {
     touchCounter = 0;
     constructor() {
         super();
+        alert("TEST")
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     }
