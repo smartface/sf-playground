@@ -30,3 +30,4 @@ export { default as PgWebView } from './pgWebView';
 export { default as PgLocationManagment } from './pgLocationManagment';
 export { default as PgAppleDevices } from "./pgAppleDevices";
 export { default as PgColorAndHtml } from './pgColorAndHtml';
+export { default as PgYogaTest } from './pgYogaTest';
