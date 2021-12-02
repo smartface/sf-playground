@@ -30,6 +30,7 @@ import PgColorAndHtml from 'pages/pgColorAndHtml';
 import PgModalTest from 'pages/pgModalTest'
 import PgOTP from 'pages/pgOTP';
 import PgSSLPinning from 'pages/pgSSLPinning';
+import PgGlide from 'pages/pgGlide';
 
 type Tab = { name: string; tabIndex: number; pages: (typeof Page)[]; }
 
@@ -47,7 +48,8 @@ export const tab0: Tab = {
         PgHeaderImage,
         PgEventEmitter,
         PgNativeSwitch,
-        PageHideShow
+        PageHideShow,
+        PgGlide
     ]
 };
 
