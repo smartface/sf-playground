@@ -4,13 +4,24 @@ import ImageView from "@smartface/native/ui/imageview";
 import Dialog from "@smartface/native/ui/dialog";
 import ActivityIndicator from "@smartface/native/ui/activityindicator";
 import FlexLayout from "@smartface/native/ui/flexlayout";
+import { getCombinedStyle } from "@smartface/extension-utils/lib/getCombinedStyle";
+import Screen from "@smartface/native/device/screen";
 
 enum CacheTypes {
   "Memory Caching",
   "HTTP Caching",
   "Disk Caching",
 }
-const IMAGE_COUNT = 20;
+const imageOptions = {
+  count: 150,
+  size: {
+    width: 2800,
+    height: 2000,
+  },
+};
+
+const { paddingLeft, paddingRight } = getCombinedStyle(".sf-page");
+const IMAGE_WIDTH = Screen.width - (paddingLeft + paddingRight);
 
 export default class PgGlide extends PgGlideDesign {
   dialog: Dialog;
@@ -30,9 +41,7 @@ export default class PgGlide extends PgGlideDesign {
       button.text = item;
       button.on(Button.Events.Press, () => {
         this.initImages(
-          item === String(CacheTypes["Disk Caching"]) ? CacheTypes["Disk Caching"] 
-          : item === String(CacheTypes["HTTP Caching"]) ? CacheTypes["HTTP Caching"] 
-          : CacheTypes["Memory Caching"]
+          item === String(CacheTypes["Disk Caching"]) ? CacheTypes["Disk Caching"] : item === String(CacheTypes["HTTP Caching"]) ? CacheTypes["HTTP Caching"] : CacheTypes["Memory Caching"]
         );
       });
       i++;
@@ -43,13 +52,13 @@ export default class PgGlide extends PgGlideDesign {
     this.dialog.show();
     this.svMain.layout.removeAll();
 
-    for (let i = 1; i <= IMAGE_COUNT; i++) {
+    for (let i = 1; i <= imageOptions.count; i++) {
       const imageView = new ImageView({
-        width: 200,
-        height: 300,
+        width: Math.round(IMAGE_WIDTH),
+        height: Math.round(IMAGE_WIDTH / (imageOptions.size.width / imageOptions.size.height)),
       });
       // @ts-ignore
-      this.svMain.layout.addChild(imageView, `image${i}`, ".sf-imageView");
+      this.svMain.layout.addChild(imageView, `image${i}`, ".sf-imageView #pgGlide-image");
       imageView.loadFromUrl({
         url: this.getImageEndpoint(i),
         useHTTPCacheControl: type === CacheTypes["HTTP Caching"],
@@ -76,7 +85,7 @@ export default class PgGlide extends PgGlideDesign {
     this.dialog.layout.applyLayout();
   }
   getImageEndpoint(index: number) {
-    return `https://picsum.photos/id/${index}/200/300`;
+    return `https://picsum.photos/id/${index}/${imageOptions.size.width}/${imageOptions.size.height}`;
   }
 }
 
