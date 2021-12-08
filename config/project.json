@@ -3,7 +3,7 @@
         "name": "Smartface Empty Workspace",
         "company": "Smartface User",
         "webSite": "https://www.smartface.io",
-        "version": "1.0.3",
+        "version": "1.0.4",
         "runtimeVersion": "1100",
         "description": "This is Smartface's default empty project. You can click to Run on Device button to see it on your device."
     },
