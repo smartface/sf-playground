@@ -63,7 +63,16 @@
 
 	${supportsScreens}
 	
-	
+	<queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="tg"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="whatsapp"/>
+        </intent>
+    </queries>
 	
 	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication" android:requestLegacyExternalStorage="true" android:extractNativeLibs="true" android:allowNativeHeapPointerTagging="false">
 		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
