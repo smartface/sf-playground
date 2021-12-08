@@ -22,18 +22,23 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
     this.btnOpenUrl.on(Button.Events.Press, () => {
       Linking.openURL({
         uriScheme: url,
-        onSuccess: (value) => console.info("openURL: ", value),
-        onFailure: (value) => console.error("openURLErr: ", value),
+        onSuccess: () => {
+          alert("URL Opened");
+        },
+        onFailure: (e) => {
+          alert("URL couldn't open");
+          alert(JSON.stringify(e));
+        },
       });
     });
     this.btnCanOpen.on(Button.Events.Press, () => {
       const canOpen = Linking.canOpenURL(url);
-      console.info("canOpenUrl: ", canOpen);
+      alert("Can Open URL: " + canOpen);
     });
     this.btnOpenSettings.on(Button.Events.Press, () => {
       Linking.openSettings()
-        .then(() => console.info("openSettings"))
-        .catch((err) => console.error("openSettingsErr: ", err));
+        .then(() => alert("Settings opened"))
+        .catch(() => alert("Settings couldn't open"));
     });
   }
   initPermission() {
@@ -45,8 +50,8 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
         androidPermission: Application.Android.Permissions.CAMERA,
         showSettingsAlert: true,
       })
-        .then((res) => console.info("cameraPermission: ", res))
-        .catch((err) => console.error("cameraPermissionErr: ", err));
+        .then((res) => alert("Permission Success: " + res))
+        .catch((err) => alert("Permission failed " + JSON.stringify(err)));
     });
     this.btnLocationPermission.on(Button.Events.Press, () => {
       Permission.getPermission({
@@ -56,18 +61,22 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
         androidPermission: Application.Android.Permissions.ACCESS_FINE_LOCATION,
         showSettingsAlert: true,
       })
-        .then((res) => console.info("locationPermission: ", res))
-        .catch((err) => console.error("locationPermissionErr: ", err));
+        .then((res) => alert("Permission Success: " + res))
+        .catch((err) => alert("Permission failed " + JSON.stringify(err)));
     });
   }
   initLocation() {
     this.btnGetLocation.on(Button.Events.Press, () => {
-      Location.getLocation().then(console.info).catch(console.error);
+      Location.getLocation()
+        .then((res) => alert("Location Success: " + res))
+        .catch((err) => alert("Location failed " + JSON.stringify(err)));
     });
   }
   initNetwork() {
     this.btnCheckConnected.on(Button.Events.Press, () => {
-      Network.isConnected().then(console.info).catch(console.error);
+      Network.isConnected()
+        .then((res) => alert("Is connected: " + res))
+        .catch((err) => alert("Is Connected failed " + JSON.stringify(err)));
     });
   }
 }
