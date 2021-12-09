@@ -6,8 +6,9 @@ import Permission from "@smartface/native/device/permission";
 import Application from "@smartface/native/application";
 import Location from "@smartface/native/device/location";
 import Network from "@smartface/native/device/network";
-import NetworkIOS from "@smartface/native/device/network/network-iOS";
 import "@smartface/native/core/base";
+import { openMaps, openNavigation } from "@smartface/native/application/maps";
+import { TransportTypes } from "@smartface/native/application/linking/shared/map";
 
 export default class PgNativeFunctions extends PgNativeFunctionsDesign {
   constructor() {
@@ -79,6 +80,33 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
         .catch((err) => alert("Is Connected failed " + JSON.stringify(err)));
     });
   }
+  initMaps() {
+    this.btnOpenMaps.on(Button.Events.Press, () => {
+      openMaps({
+        mapType: "GOOGLE_MAPS",
+        name: "Smartface Inc.",
+        location: {
+          latitude: 37.4488259,
+          longitude: -122.1600047,
+        },
+      })
+        .then(() => alert("Maps opened"))
+        .catch(() => alert("Maps failed"));
+    });
+    this.btnOpenNavigation.on(Button.Events.Press, () => {
+      openNavigation({
+        mapType: "YANDEX_MAPS",
+        name: "Smartface Inc.",
+        location: {
+          latitude: 37.4488259,
+          longitude: -122.1600047,
+        },
+        transportType: TransportTypes.WALKING,
+      })
+        .then(() => alert("Navigation opened"))
+        .catch(() => alert("Navigation failed"));
+    });
+  }
 }
 
 function onShow(superOnShow: () => void) {
@@ -91,4 +119,5 @@ function onLoad(this: PgNativeFunctions, superOnLoad: () => void) {
   this.initPermission();
   this.initLocation();
   this.initNetwork();
+  this.initMaps();
 }

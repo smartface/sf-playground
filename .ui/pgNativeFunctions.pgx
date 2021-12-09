@@ -60,7 +60,10 @@
 					"c1a1-1557-6e2c-eee5",
 					"8cbb-2419-9018-f622",
 					"8b4c-ab87-d7ab-2b31",
-					"d7c7-a3e1-9b37-2f55"
+					"d7c7-a3e1-9b37-2f55",
+					"ddfe-5416-1a14-cf96",
+					"9a78-63d3-60ab-3064",
+					"5e2a-fc62-f78d-ae10"
 				],
 				"name": "svMain",
 				"parent": "b52b-b058-0de2-1778",
@@ -252,6 +255,56 @@
 			"userProps": {
 				"testId": "yYwwuIwlP",
 				"text": "Check Network",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "ddfe-5416-1a14-cf96",
+			"props": {
+				"children": [],
+				"name": "lblMaps",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Maps"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "HH1W9fBpy",
+				"text": "Maps",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9a78-63d3-60ab-3064",
+			"props": {
+				"children": [],
+				"name": "btnOpenMaps",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Open Maps",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Open Maps",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5e2a-fc62-f78d-ae10",
+			"props": {
+				"children": [],
+				"name": "btnOpenNavigation",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Open Navigation",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Open Navigation",
 				"usePageVariable": true
 			}
 		}
