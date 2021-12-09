@@ -1,0 +1,50 @@
+{
+	"#pgTouchConfiguration": {
+		"&-lblPress": {
+			"textAlignment": "MIDCENTER",
+			"flexProps": {
+				"flexGrow": 1
+			}
+		},
+		"&-flColorArea": {
+			"height": 110
+		},
+		"backgroundColor": "rgba( 243, 232, 232, 1 )",
+		"&-flRow": {
+			"flexProps": {
+				"flexDirection": "ROW"
+			},
+			"height": 40
+		},
+		"&-lblOption": {
+			"width": 160,
+			"height": null
+		},
+		"&-textBox": {
+			"width": 50,
+			"height": null,
+			"marginRight": 15
+		},
+		"&-lblKey": {
+			"width": 80,
+			"height": null,
+			"textColor": "rgba( 165, 98, 98, 1 )"
+		},
+		"&-lblValue": {
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"height": null
+		},
+		"&-lblTitle": {
+			"height": 30,
+			"marginTop": 10,
+			"marginBottom": 10
+		},
+		"&-flex": {
+			"height": 100,
+			"borderWidth": 1,
+			"borderColor": "rgba( 0, 0, 0, 1 )"
+		}
+	}
+}
