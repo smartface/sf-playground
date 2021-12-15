@@ -30,6 +30,7 @@ import PgColorAndHtml from 'pages/pgColorAndHtml';
 import PgModalTest from 'pages/pgModalTest'
 import PgOTP from 'pages/pgOTP';
 import PgSSLPinning from 'pages/pgSSLPinning';
+import PgListViewMaterial from 'pages/pgListViewMaterial';
 
 type Tab = { name: string; tabIndex: number; pages: (typeof Page)[]; }
 
@@ -70,6 +71,7 @@ export const tab2: Tab = {
     name: "Modules",
     tabIndex: 2,
     pages: [
+        PgListViewMaterial,
         PgZoomableImageView,
         PgListViewIndex,
         PgSpriteView
