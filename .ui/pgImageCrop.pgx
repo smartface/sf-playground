@@ -1,0 +1,74 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "0f3e-17d4-17b6-ccbf",
+			"initialized": true,
+			"props": {
+				"children": [
+					"fdc0-46a0-6991-4597",
+					"3ed5-1a4d-58bf-619a",
+					"84b4-f9bc-b5a6-44cc"
+				],
+				"name": "pgImageCrop",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "fdc0-46a0-6991-4597",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "0f3e-17d4-17b6-ccbf"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "3ed5-1a4d-58bf-619a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "0f3e-17d4-17b6-ccbf",
+				"title": "pgImageCrop"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgImageCrop"
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "84b4-f9bc-b5a6-44cc",
+			"props": {
+				"children": [],
+				"name": "imgScreen",
+				"parent": "0f3e-17d4-17b6-ccbf",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"imageFillType": "ASPECTFILL",
+				"testId": "sZA5Xxlfw",
+				"usePageVariable": true
+			}
+		}
+	]
+}

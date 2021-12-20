@@ -67,10 +67,10 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/native@^4.3.5-beta":
-  version "4.3.5-beta.7"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.5-beta.7.tgz#9e1950787e0ae23532ba3dc92c97390a3baec657"
-  integrity sha512-oGjbyowUExmbmNwuEcizb+VLzRjnhhQEIFRZAYLO3Hc9/J3aZqV0as/Sd9+m+GGvxe01Ow/6ok55gA9sL8g9pA==
+"@smartface/native@^4.3.6-beta.6":
+  version "4.3.6-beta.6"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.6-beta.6.tgz#dc06ec192cd8392acf8dea51133955c74f4dd989"
+  integrity sha512-NLsvmqa15xW7BByal3nJBcp40kslz3VdUKtw9rCPancTwafvJ52w1rg/RmRrv2spwd+wMvABvfv6iR7gNmJRnw==
   dependencies:
     events "^3.3.0"
 

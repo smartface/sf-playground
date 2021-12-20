@@ -9,7 +9,13 @@
 	".grow": {
 		"flexProps": {
 			"flexGrow": 1
-		}
+		},
+        "&-relative": {
+            "flexProps": {
+			    "flexGrow": 1,
+                "positionType": "RELATIVE"
+            }
+        }
 	},
 	".getCombinedStyleTest" : {
 		"backgroundColor": "rgba(0,0,0,1)"
