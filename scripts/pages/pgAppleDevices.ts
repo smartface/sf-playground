@@ -1,72 +1,66 @@
-import PgAppleDevicesDesign from 'generated/pages/pgAppleDevices';
+import PgAppleDevicesDesign from "generated/pages/pgAppleDevices";
 import { getModelName } from "@smartface/extension-utils/lib/appleDevices";
-import LviPages from 'components/LviPages';
+import LviPages from "components/LviPages";
 import deviceMappings from "@smartface/extension-utils/lib/appleDevices/deviceMapping.json";
 import copy from "@smartface/extension-utils/lib/copy";
 import { getOrientationOnchage } from "@smartface/extension-utils/lib/orientation";
 import { createAsyncTask } from "@smartface/extension-utils/lib/async";
 import Http = require("@smartface/native/net/http");
-import Image = require('@smartface/native/ui/image');
+import Image = require("@smartface/native/ui/image");
+import Router from "@smartface/router/lib/router/Router";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
 
-export default class PgAppleDevices extends PgAppleDevicesDesign {
-    dataSet: string[];
-    constructor() {
-        super();
-        // Overrides super.onShow method
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        // Overrides super.onLoad method
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevicesDesign) {
+  dataSet: string[];
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+    this.onOrientationChange = () => {
+      const orientation = getOrientationOnchage();
+      createAsyncTask(() => {
+        this.scrambleDatasetOnOrientationChange();
+      }, {}).then(() => this.refreshListView());
+    };
+  }
 
-        this.onOrientationChange = () => {
-            const orientation = getOrientationOnchage();
-            createAsyncTask(() => {
-                this.scrambleDatasetOnOrientationChange();
-            }, {})
-                .then(() => this.refreshListView())
-        }
-    }
+  scrambleDatasetOnOrientationChange() {
+    this.dataSet.sort(() => 0.5 - Math.random());
+  }
 
-    scrambleDatasetOnOrientationChange() {
-        this.dataSet.sort(() => .5 - Math.random());
-    }
+  initCopyDeviceMapping() {
+    const copiedJSONFile = copy(deviceMappings);
+    this.dataSet = Object.values(copiedJSONFile);
+  }
+  initListView() {
+    this.lvAppleDevices.refreshEnabled = false;
+    this.lvAppleDevices.rowHeight = 54;
+    this.lvAppleDevices.onRowBind = (listViewItem: LviPages, index) => {
+      listViewItem.lblPageName.text = this.dataSet[index];
+    };
+  }
 
-    initCopyDeviceMapping() {
-        const copiedJSONFile = copy(deviceMappings);
-        this.dataSet = Object.values(copiedJSONFile);
-    }
-    initListView() {
-        this.lvAppleDevices.refreshEnabled = false;
-        this.lvAppleDevices.rowHeight = 54;
-        this.lvAppleDevices.onRowBind = (listViewItem: LviPages, index) => {
-            listViewItem.lblPageName.text = this.dataSet[index];
-        }
-    }
+  refreshListView() {
+    this.lvAppleDevices.itemCount = this.dataSet.length;
+    this.lvAppleDevices.refreshData();
+  }
 
-    refreshListView() {
-        this.lvAppleDevices.itemCount = this.dataSet.length;
-        this.lvAppleDevices.refreshData();
-    }
-}
-
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
-function onShow(superOnShow: () => void) {
-    superOnShow();
+  /**
+   * @event onShow
+   * This event is called when a page appears on the screen (everytime).
+   */
+  onShow() {
+    super.onShow();
     this.headerBar.title = getModelName();
     this.refreshListView();
-}
+  }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(superOnLoad: () => void) {
-    superOnLoad();
+  /**
+   * @event onLoad
+   * This event is called once when page is created.
+   */
+  onLoad() {
+    super.onLoad();
     this.initCopyDeviceMapping();
     this.initListView();
+  }
 }

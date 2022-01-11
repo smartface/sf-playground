@@ -1,26 +1,27 @@
-import PgBarcodeScannerDesign from 'generated/pages/pgBarcodeScanner';
-import { BarcodeScanner } from 'lib/BarcodeScanner';
+import PgBarcodeScannerDesign from "generated/pages/pgBarcodeScanner";
+import { BarcodeScanner } from "lib/BarcodeScanner";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import Router from "@smartface/router/lib/router/Router";
+import { Route } from "@smartface/router";
 
-export default class PgBarcodeScanner extends PgBarcodeScannerDesign {
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
-    initBarcodeScanner() {
-        const scanner = new BarcodeScanner(this);
-        scanner.addEventListener(content => {
-            console.info(content);
-        });
-        scanner.show();
-    }
-}
+export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcodeScannerDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+  }
+  initBarcodeScanner() {
+    const scanner = new BarcodeScanner(this);
+    scanner.addEventListener((content) => {
+      console.info(content);
+    });
+    scanner.show();
+  }
 
-function onShow(this: PgBarcodeScanner, superOnShow: () => void) {
-    superOnShow();
-}
+  onShow() {
+    super.onShow();
+  }
 
-function onLoad(this: PgBarcodeScanner, superOnLoad: () => void) {
-    superOnLoad();
+  onLoad() {
+    super.onLoad();
     this.initBarcodeScanner();
+  }
 }
