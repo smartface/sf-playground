@@ -1,32 +1,31 @@
-import PgSafeAreaDesign from 'generated/pages/pgSafeArea';
-import Screen from '@smartface/native/device/screen';
-import System from '@smartface/native/device/system';
+import PgSafeAreaDesign from "generated/pages/pgSafeArea";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router, Route } from "@smartface/router";
+import { backButtonImage } from "lib/constants/style";
 
-export default class PgSafeArea extends PgSafeAreaDesign {
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        this.ios.onSafeAreaPaddingChange = (padding) => {
-            this.dispatch({
-                type: "updateUserStyle",
-                userStyle: {
-                    paddingBottom: padding.bottom,
-                    paddingLeft: padding.left,
-                    paddingRight: padding.right,
-                    paddingTop: padding.top
-                }
-            });
-            this.layout.applyLayout();
-        }
-    }
+export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+    this.ios.onSafeAreaPaddingChange = (padding) => {
+      this.dispatch({
+        type: "updateUserStyle",
+        userStyle: {
+          paddingBottom: padding.bottom,
+          paddingLeft: padding.left,
+          paddingRight: padding.right,
+          paddingTop: padding.top,
+        },
+      } as any);
+      this.layout.applyLayout();
+    };
+  }
+
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
+
+  onLoad() {
+    super.onLoad();
+  }
 }
-
-function onShow(this: PgSafeArea, superOnShow: () => void) {
-    superOnShow();
-}
-
-function onLoad(this: PgSafeArea, superOnLoad: () => void) {
-    superOnLoad();
-}
-
