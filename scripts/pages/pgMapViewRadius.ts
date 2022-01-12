@@ -107,9 +107,7 @@ export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewR
   }
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

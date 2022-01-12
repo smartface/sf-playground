@@ -159,9 +159,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

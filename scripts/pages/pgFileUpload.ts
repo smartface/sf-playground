@@ -147,9 +147,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
   onShow() {
     super.onShow();
     this.headerBar.title = "File Upload";
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

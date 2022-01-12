@@ -18,9 +18,7 @@ export default class PgNativeSwitch extends withDismissAndBackButton(PgNativeSwi
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

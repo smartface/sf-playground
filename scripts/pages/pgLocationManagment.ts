@@ -80,9 +80,7 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

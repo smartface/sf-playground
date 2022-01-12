@@ -27,9 +27,7 @@ export default class Page2 extends withDismissAndBackButton(Page2Design) {
     const { routeData, headerBar } = this;
     headerBar.titleLayout.applyLayout();
     routeData && console.info(routeData.message);
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   /**

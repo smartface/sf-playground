@@ -37,9 +37,7 @@ export default class PgButtonPress extends withDismissAndBackButton(PgButtonPres
   }
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
   onLoad() {
     super.onLoad();

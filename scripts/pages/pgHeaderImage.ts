@@ -34,9 +34,7 @@ export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImag
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

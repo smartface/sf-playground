@@ -64,9 +64,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

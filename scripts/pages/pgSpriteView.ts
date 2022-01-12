@@ -29,9 +29,7 @@ export default class PgSpriteView extends withDismissAndBackButton(PgSpriteViewD
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
     this.spriteView.play(500);
   }
 

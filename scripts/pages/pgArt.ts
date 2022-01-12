@@ -61,9 +61,7 @@ export default class PgArt extends withDismissAndBackButton(PgArtDesign) {
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

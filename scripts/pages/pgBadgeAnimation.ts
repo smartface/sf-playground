@@ -64,9 +64,7 @@ export default class PgBadgeAnimation extends withDismissAndBackButton(PgBadgeAn
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

@@ -43,9 +43,7 @@ export default class PgListViewMaterial extends withDismissAndBackButton(PgListV
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
     this.refreshListView();
   }
 

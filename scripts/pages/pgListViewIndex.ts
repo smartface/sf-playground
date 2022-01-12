@@ -121,9 +121,7 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

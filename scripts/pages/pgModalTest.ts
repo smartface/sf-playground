@@ -24,9 +24,7 @@ export default class PgModalTest extends withDismissAndBackButton(PgModalTestDes
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

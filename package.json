@@ -36,7 +36,7 @@
   "devDependencies": {
     "@smartface/builder": "^0.7.0",
     "@smartface/dispatcher": "^0.7.0",
-    "@smartface/image-processor": "^1.2.1",
+    "@smartface/image-processor": "^1.2.2",
     "@smartface/library-reader": "^0.3.0",
     "@smartface/marketplace-service": "^1.2.0-beta",
     "@typescript-eslint/eslint-plugin": "^4.26.0",

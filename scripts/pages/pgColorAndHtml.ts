@@ -100,9 +100,7 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
   }
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
   onLoad() {
     super.onLoad();

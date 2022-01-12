@@ -19,9 +19,7 @@ export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcode
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

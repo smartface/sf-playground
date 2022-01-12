@@ -25,9 +25,7 @@ export default class PgZoomableImageView extends withDismissAndBackButton(PgZoom
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

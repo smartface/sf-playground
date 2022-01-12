@@ -50,9 +50,7 @@ export default class PgNoTouch extends withDismissAndBackButton(PgNoTouchDesign)
   }
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
   onLoad() {
     super.onLoad();

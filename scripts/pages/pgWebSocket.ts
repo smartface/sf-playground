@@ -32,9 +32,7 @@ export default class PgWebSocket extends withDismissAndBackButton(PgWebSocketDes
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

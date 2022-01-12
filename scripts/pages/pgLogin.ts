@@ -47,9 +47,7 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

@@ -22,9 +22,7 @@ export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesig
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

@@ -10,9 +10,7 @@ export default class PgTest extends withDismissAndBackButton(Page1Design) {
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

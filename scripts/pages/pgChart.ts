@@ -75,9 +75,7 @@ export default class PgChart extends withDismissAndBackButton(PgChartDesign) {
   }
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
     this.webView1.loadURL("https://az793023.vo.msecnd.net/examples/sf-core/webview/chart.html");
   }
   onLoad() {

@@ -152,9 +152,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
     this.headerBar.title = active.page.pageName;
   }
 

@@ -689,16 +689,17 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/image-processor@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@smartface/image-processor/-/image-processor-1.2.1.tgz#ad4d976d9447ccb61bd0259acc9d7ac919283845"
-  integrity sha512-1e4gGyVR+1sWyPTYZ8fv2JlZSqPOrSKv3NhFjup/v17QK1/dGGbuX5GwbU3+Snc0v5jL8Kf8wq5n/jnlNqxAHw==
+"@smartface/image-processor@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@smartface/image-processor/-/image-processor-1.2.2.tgz#b33d891f4babebeca1f1c66f8f56a4cc06a35319"
+  integrity sha512-6ls2ocGeM2jrBYifk5heVD1liVzDd2SeXlHQLI+tTfHFr0DI7YJ6DN6DqpFQ+xhXYxLPjeTi/uG2tBv3CSl//A==
   dependencies:
     colors "1.4.0"
     fs-extra "^5.0.0"
     gettemporaryfilepath "^1.0.0"
     jimp "^0.4.0"
     minimist "^1.2.0"
+    pngcrush "^3.0.0"
     rmdir "^1.2.0"
 
 "@smartface/library-reader@^0.3.0":

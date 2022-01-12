@@ -77,9 +77,7 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
   onShow() {
     super.onShow();
     this.initDatePicker();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   onLoad() {

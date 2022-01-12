@@ -18,9 +18,7 @@ export default class PgSSLPinning extends withDismissAndBackButton(PgSSLPinningD
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
     const { headerBar } = this;
     Application.statusBar.visible = false;
     headerBar.visible = false;

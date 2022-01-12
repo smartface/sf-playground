@@ -16,9 +16,7 @@ export default class PgEventEmitter extends withDismissAndBackButton(PgEventEmit
    */
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
   }
 
   /**

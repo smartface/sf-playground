@@ -51,9 +51,7 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
    */
   onShow() {
     super.onShow();
-    this.initBackButton(this.router, {
-      image: backButtonImage,
-    });
+    this.initBackButton(this.router);
     this.headerBar.title = getModelName();
     this.refreshListView();
   }
