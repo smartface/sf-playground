@@ -3,7 +3,6 @@ import WebViewBridge from "@smartface/extension-utils/lib/webviewbridge";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgButtonPress extends withDismissAndBackButton(PgButtonPressDesign) {
   constructor(private router?: Router, private route?: Route) {

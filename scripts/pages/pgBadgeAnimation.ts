@@ -7,7 +7,6 @@ import ListViewIndex from "@smartface/extension-listviewindex";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgBadgeAnimation extends withDismissAndBackButton(PgBadgeAnimationDesign) {
   scrollData: string[] = [];

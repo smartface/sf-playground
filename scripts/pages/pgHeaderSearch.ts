@@ -3,7 +3,6 @@ import SearchView from "@smartface/native/ui/searchview";
 import Color from "@smartface/native/ui/color";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design) {
   mySearchView: SearchView;

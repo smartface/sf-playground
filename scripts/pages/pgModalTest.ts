@@ -3,7 +3,7 @@ import { NativeStackRouter } from "@smartface/router";
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgModalTest extends withDismissAndBackButton(PgModalTestDesign) {
   constructor(private router?: Router, private route?: Route) {

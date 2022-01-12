@@ -7,7 +7,7 @@ import { getDogPic, dogApiData } from "services/dogPic";
 import Network from "@smartface/native/device/network";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgServiceCall extends withDismissAndBackButton(PgServiceCallDesign) {
   isConnected: boolean;

@@ -2,7 +2,7 @@ import PgMapViewRegionDesign from "generated/pages/pgMapViewRegion";
 import MapView from "@smartface/native/ui/mapview";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;

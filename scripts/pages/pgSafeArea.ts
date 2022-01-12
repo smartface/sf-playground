@@ -1,7 +1,7 @@
 import PgSafeAreaDesign from "generated/pages/pgSafeArea";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesign) {
   constructor(private router?: Router, private route?: Route) {

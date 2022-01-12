@@ -4,7 +4,6 @@ import LviMaterialTextBox from "components/LviMaterialTextBox";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgListViewMaterial extends withDismissAndBackButton(PgListViewMaterialDesign) {
   data: ReturnType<PgListViewMaterial["generateMaterialWrapper"]>[] = Array.from(Array(30), () => this.generateMaterialWrapper());

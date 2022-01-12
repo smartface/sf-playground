@@ -10,7 +10,6 @@ import System from "@smartface/native/device/system";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgListViewIndex extends withDismissAndBackButton(PgListViewIndexDesign) {
   listViewItemArray: any[] = [];
