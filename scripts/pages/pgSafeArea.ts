@@ -1,12 +1,11 @@
 import PgSafeAreaDesign from "generated/pages/pgSafeArea";
-import Screen from "@smartface/native/device/screen";
-import System from "@smartface/native/device/system";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router, Route } from "@smartface/router";
+import { backButtonImage } from "lib/constants/style";
 
-export default class PgSafeArea extends PgSafeAreaDesign {
-  constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
     this.ios.onSafeAreaPaddingChange = (padding) => {
       this.dispatch({
         type: "updateUserStyle",
@@ -20,12 +19,15 @@ export default class PgSafeArea extends PgSafeAreaDesign {
       this.layout.applyLayout();
     };
   }
-}
 
-function onShow(this: PgSafeArea, superOnShow: () => void) {
-  superOnShow();
-}
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
+  }
 
-function onLoad(this: PgSafeArea, superOnLoad: () => void) {
-  superOnLoad();
+  onLoad() {
+    super.onLoad();
+  }
 }

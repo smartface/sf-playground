@@ -10,6 +10,7 @@ import Image = require("@smartface/native/ui/image");
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
+import { backButtonImage } from "lib/constants/style";
 
 export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevicesDesign) {
   dataSet: string[];
@@ -50,6 +51,9 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
    */
   onShow() {
     super.onShow();
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
     this.headerBar.title = getModelName();
     this.refreshListView();
   }

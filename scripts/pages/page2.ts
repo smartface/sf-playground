@@ -8,6 +8,7 @@ import Page2Design from "generated/pages/page2";
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
+import { backButtonImage } from "lib/constants/style";
 
 export default class Page2 extends withDismissAndBackButton(Page2Design) {
   constructor(private router?: Router, private route?: Route) {
@@ -26,6 +27,9 @@ export default class Page2 extends withDismissAndBackButton(Page2Design) {
     const { routeData, headerBar } = this;
     headerBar.titleLayout.applyLayout();
     routeData && console.info(routeData.message);
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
   }
 
   /**

@@ -7,15 +7,17 @@ import { createAttributedStrings, createAttributedTexts } from "@smartface/exten
 import AttributedString from "@smartface/native/ui/attributedstring";
 import propFactory from "@smartface/contx/lib/smartface/sfCorePropFactory";
 import { themeService } from "theme";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router } from "@smartface/router";
+import { backButtonImage } from "lib/constants/style";
 
 const exampleHtml =
   '<span style="font-size: 24px; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);"><span style="font-family: Nunito-LightItalic; font-size: 24px; background-color: transparent; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);">Your </span><font face="ios-Default-Bold" style="font-size: 24px; font-family: ios-Default-Regular; background-color: transparent; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);">attributed </font><span style="text-decoration-line: underline; color: rgb(139, 87, 42); font-size: 24px; font-family: ios-Default-Regular; background-color: transparent; text-decoration-color: rgb(0, 0, 0);">Stri<span style="color: rgb(139, 87, 42); text-decoration-line: underline ; text-decoration-color: rgb(0, 0, 0); font-size: 24px; font-family: ios-Default-Regular; background-color: transparent;">ngs</span></span></span><div><span style="font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; text-decoration-color: rgb(0, 0, 0); font-size: 24px; font-family: ios-Default-Regular; background-color: rgb(189, 16, 224);">second</span></span></span></div><div><span style="font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; text-decoration-color: rgb(0, 0, 0); font-size: 16px; font-family: ios-Default-Regular; background-color: rgb(189, 16, 224); color: rgb(248, 231, 28);">Third</span></span></span></div>';
 
-export default class PgColorAndHtml extends PgColorAndHtmlDesign {
-  constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndHtmlDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
   }
 
   initTouchButton() {
@@ -96,17 +98,18 @@ export default class PgColorAndHtml extends PgColorAndHtmlDesign {
     const { backgroundColor } = themeService.getStyle(".getCombinedStyleTest");
     this.btnGetCombinedStyle.backgroundColor = backgroundColor;
   }
-}
-
-function onShow(superOnShow: () => void) {
-  superOnShow();
-}
-
-function onLoad(superOnLoad: () => void) {
-  superOnLoad();
-  this.initTouchButton();
-  this.initTextBoxes();
-  this.initGuid();
-  this.initHtml();
-  this.initGetCombinedStyle();
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
+  }
+  onLoad() {
+    super.onLoad();
+    this.initTouchButton();
+    this.initTextBoxes();
+    this.initGuid();
+    this.initHtml();
+    this.initGetCombinedStyle();
+  }
 }

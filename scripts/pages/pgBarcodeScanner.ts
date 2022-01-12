@@ -3,6 +3,7 @@ import { BarcodeScanner } from "lib/BarcodeScanner";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
+import { backButtonImage } from "lib/constants/style";
 
 export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcodeScannerDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -18,6 +19,9 @@ export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcode
 
   onShow() {
     super.onShow();
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
   }
 
   onLoad() {

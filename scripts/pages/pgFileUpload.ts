@@ -10,16 +10,17 @@ import FileStream from "@smartface/native/io/filestream";
 import Blob from "@smartface/native/global/blob";
 import View from "@smartface/native/ui/view";
 import Network from "@smartface/native/device/network";
-import {} from "@smartface/extension-utils/lib/network";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router } from "@smartface/router";
+import { backButtonImage } from "lib/constants/style";
 
-export default class PgFileUpload extends PgFileUploadDesign {
+export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadDesign) {
   protected uploadMenu = new Menu();
   protected currentBase64 = "";
   protected isUploading = false;
-  constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+  constructor(private router?: Router, private route?: Route) {
+    super({});
   }
 
   setVisible(view: StyleContextComponentWithDispatch<View>, visible: boolean) {
@@ -142,16 +143,19 @@ export default class PgFileUpload extends PgFileUploadDesign {
   getFileSizeInMebiBytes(base64: string): number {
     return base64.length * (3 / 4) * 1024 * 1024;
   }
-}
 
-function onShow(this: PgFileUpload, superOnShow: () => void) {
-  superOnShow();
-  this.headerBar.title = "File Upload";
-}
+  onShow() {
+    super.onShow();
+    this.headerBar.title = "File Upload";
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
+  }
 
-function onLoad(this: PgFileUpload, superOnLoad: () => void) {
-  superOnLoad();
-  this.initMenu();
-  this.initButton();
-  this.initUploadIndicator();
+  onLoad() {
+    super.onLoad();
+    this.initMenu();
+    this.initButton();
+    this.initUploadIndicator();
+  }
 }

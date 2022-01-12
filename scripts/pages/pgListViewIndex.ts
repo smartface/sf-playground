@@ -1,23 +1,25 @@
-import PgListViewIndexDesign from 'generated/pages/pgListViewIndex';
-import FlexLayout from '@smartface/native/ui/flexlayout';
-import ListView from '@smartface/native/ui/listview';
-import ListViewIndex from '@smartface/extension-listviewindex';
-import ListViewItem from '@smartface/native/ui/listviewitem';
-import Label from '@smartface/native/ui/label';
-import Color from '@smartface/native/ui/color';
-import Font from '@smartface/native/ui/font';
-import System from '@smartface/native/device/system';
+import PgListViewIndexDesign from "generated/pages/pgListViewIndex";
+import FlexLayout from "@smartface/native/ui/flexlayout";
+import ListView from "@smartface/native/ui/listview";
+import ListViewIndex from "@smartface/extension-listviewindex";
+import ListViewItem from "@smartface/native/ui/listviewitem";
+import Label from "@smartface/native/ui/label";
+import Color from "@smartface/native/ui/color";
+import Font from "@smartface/native/ui/font";
+import System from "@smartface/native/device/system";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router } from "@smartface/router";
+import { backButtonImage } from "lib/constants/style";
 
-export default class PgListViewIndex extends PgListViewIndexDesign {
+export default class PgListViewIndex extends withDismissAndBackButton(PgListViewIndexDesign) {
   listViewItemArray: any[] = [];
-  listViewItemIndexItems = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
+  listViewItemIndexItems = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
   myListView: ListView;
   headerIndex: number[] = [];
   listViewIndex = new ListViewIndex();
-  constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+  constructor(private router?: Router, private route?: Route) {
+    super({});
     this.layout.flexDirection = FlexLayout.FlexDirection.ROW;
   }
 
@@ -50,17 +52,17 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
       if (type == 1) {
         var myLabelTitle = new Label({
           flexGrow: 1,
-          margin: 10
+          margin: 10,
         });
         myLabelTitle.textColor = Color.WHITE;
         myLabelTitle.borderRadius = 10;
         myListViewItem.addChild(myLabelTitle);
         myListViewItem.myLabelTitle = myLabelTitle;
-      }
-      else { // Header
+      } else {
+        // Header
         var myLabelTitle = new Label({
           flexGrow: 1,
-          margin: 10
+          margin: 10,
         });
         myLabelTitle.font = Font.create(Font.DEFAULT, 30, Font.BOLD);
         myLabelTitle.backgroundColor = Color.WHITE;
@@ -83,15 +85,14 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
       var myLabelTitle = listViewItem.myLabelTitle;
 
       if (this.listViewItemArray[index].isHeader) {
-        myLabelTitle.text = (typeof this.listViewItemArray[index].data === 'string') ? this.listViewItemArray[index].data : "Image";
-      }
-      else {
+        myLabelTitle.text = typeof this.listViewItemArray[index].data === "string" ? this.listViewItemArray[index].data : "Image";
+      } else {
         myLabelTitle.backgroundColor = Color.create(this.listViewItemArray[index].data);
         myLabelTitle.text = this.listViewItemArray[index].data;
       }
     };
 
-    this.myListView.onRowType = (index) => this.listViewItemArray[index].isHeader ? 2 : 1;
+    this.myListView.onRowType = (index) => (this.listViewItemArray[index].isHeader ? 2 : 1);
   }
   initListViewIndex() {
     if (System.OS === System.OSType.ANDROID) {
@@ -102,7 +103,7 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
     this.listViewIndex.indexDidSelect = (index) => {
       this.myListView.scrollTo(this.headerIndex[index], true);
       return true; //haptic
-    }
+    };
     System.OS === System.OSType.IOS && this.listViewIndex.reloadData();
 
     // this.listViewIndex.backgroundView.backgroundColor = Color.GREEN;
@@ -117,14 +118,17 @@ export default class PgListViewIndex extends PgListViewIndexDesign {
     this.layout.addChild(this.listViewIndex);
     this.layout.applyLayout();
   }
-}
 
-function onShow(this: PgListViewIndex, superOnShow: () => void) {
-  superOnShow();
-}
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
+  }
 
-function onLoad(this: PgListViewIndex, superOnLoad: () => void) {
-  superOnLoad();
-  this.initListView();
-  this.initListViewIndex();
+  onLoad() {
+    super.onLoad();
+    this.initListView();
+    this.initListViewIndex();
+  }
 }

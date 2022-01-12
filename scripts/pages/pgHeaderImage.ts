@@ -1,14 +1,15 @@
 import PgHeaderImageDesign from "generated/pages/pgHeaderImage";
-import Image from "@smartface/native/ui/image";
 import HeaderBarItem from "@smartface/native/ui/headerbaritem";
 import Color from "@smartface/native/ui/color";
 import { themeService } from "theme";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import Router from "@smartface/router/lib/router/Router";
+import { backButtonImage } from "lib/constants/style";
 
-export default class PgHeaderImage extends PgHeaderImageDesign {
-  constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImageDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
   }
   initButtonClicks() {
     this.btnDirectImage.onPress = () => this.addHeaderWithDirectImage();
@@ -30,13 +31,16 @@ export default class PgHeaderImage extends PgHeaderImageDesign {
     imageHeaderBarItem.image = themeService.getStyle("#pgHeaderImage").image;
     this.headerBar.setItems([imageHeaderBarItem]);
   }
-}
 
-function onShow(this: PgHeaderImage, superOnShow: () => void) {
-  superOnShow();
-}
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router, {
+      image: backButtonImage,
+    });
+  }
 
-function onLoad(this: PgHeaderImage, superOnLoad: () => void) {
-  superOnLoad();
-  this.initButtonClicks();
+  onLoad() {
+    super.onLoad();
+    this.initButtonClicks();
+  }
 }

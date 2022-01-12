@@ -4,9 +4,10 @@ import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import Page from "@smartface/native/ui/page";
+import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 
 export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
-  pages: (new (params: any) => Page)[] = [];
+  pages: ConstructorOf<Page>[] = [];
 
   constructor(private router?: Router, private route?: Route, params?: any) {
     super({});
@@ -33,6 +34,7 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   }
   onLoad() {
     super.onLoad();
+    this.headerBar.leftItemEnabled = false;
     this.initListView();
   }
 }

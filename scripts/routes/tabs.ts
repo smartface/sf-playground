@@ -31,8 +31,9 @@ import PgModalTest from "pages/pgModalTest";
 import PgOTP from "pages/pgOTP";
 import PgSSLPinning from "pages/pgSSLPinning";
 import PgListViewMaterial from "pages/pgListViewMaterial";
+import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 
-type Tab = { name: string; tabIndex: number; pages: { new (params: any): Page }[] };
+type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
   name: "Native",

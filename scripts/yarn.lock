@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-4.0.1.tgz#5a203d2becb4c6934298ce2c4dcb61c2b99d8a46"
   integrity sha512-O8/+re45bLydf9d9LQ1olOoyr/AGnU1hyDR3/Y/fa8vhTQQHg6rnR8IEhG5NnzX87k5NlHiv4L9L7dtZwFHJ8w==
 
-"@smartface/component-materialtextbox@^6.1.0-rc.0":
-  version "6.1.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@smartface/component-materialtextbox/-/component-materialtextbox-6.1.0-rc.0.tgz#b985978528ad83f1985abe3d6acb12305553f71c"
-  integrity sha512-xUG2Ku9gOqwlOBgVgHfETvQpcdTMtW3br5eU9P7XMUoZzlei7hZYx4cvZJEuDYBd1/WBI5SanUR6frHosIfK9Q==
+"@smartface/component-materialtextbox@^7.0.0-rc":
+  version "7.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@smartface/component-materialtextbox/-/component-materialtextbox-7.0.0-rc.1.tgz#40829a607783a00decf0cf5a777c6f9b1c2f9f6c"
+  integrity sha512-IRSiticyld9yiUqaBQxHdTlfG3JQAePedMIftR5oypeicqUI616kKMt6phq1f+l7oTParTIUTshCehxAFxtWAA==
 
 "@smartface/contx@^4.2.0", "@smartface/contx@^4.2.2":
   version "4.2.2"

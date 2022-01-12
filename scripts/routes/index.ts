@@ -1,42 +1,34 @@
-import buildExtender from "@smartface/extension-utils/lib/router/buildExtender";
 import { NativeRouter as Router, NativeStackRouter as StackRouter, Route, BottomTabBarRouter } from "@smartface/router";
-import "@smartface/extension-utils/lib/router/goBack"; // Implements onBackButtonPressed
-import backClose from "@smartface/extension-utils/lib/router/back-close";
 import Image from "@smartface/native/ui/image";
 import Page from "@smartface/native/ui/page";
 import MainPage from "pages/mainPage";
 import PgModalTest from "pages/pgModalTest";
 import * as Tabs from "routes/tabs";
+import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
+import Application from "@smartface/native/application";
+
+Application.on(Application.Events.BackButtonPressed, () => {
+    Router.getActiveRouter()?.goBack();
+  });
 
 const ROOT_PATH = "/root";
 const TAB_PREFIX = "tab";
-
-backClose.setDefaultBackStyle({
-  image: Image.createFromFile("images://backarrow.png"),
-  hideTitle: false,
-});
-
-backClose.dismissBuilder = () => {
-  return {
-    image: Image.createFromFile("images://backarrow.png"),
-    position: backClose.DismissPosition.LEFT,
-  };
-};
 
 function generatePageRoutes(basePath: string, pages: Page[]) {
   return Object.keys(pages).map((pageName) => {
     return Route.of({
       path: `${basePath}/${pageName}`,
-      build: buildExtender({ getPageClass: () => pages[pageName], headerBarStyle: { visible: true }, pageName }),
+      build: (router, route) => pages[pageName],
     });
   });
 }
 
-function generateRoute(basePath: string, page: { new (params: any): Page }) {
+function generateRoute(basePath: string, page: ConstructorOf<Page> ) {
   const pageName = page.name;
+
   return Route.of({
     path: `${basePath}/${pageName}`,
-    build: (router, route) => page,
+    build: (router, route) => new page(router, route)
   });
 }
 // buildExtender({
@@ -71,7 +63,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
         routes: [
           Route.of({
             path: `${path}/modal/page`,
-            build: () => new PgModalTest(),
+            build: (router, route) => new PgModalTest(router, route),
           }),
         ],
       }),
