@@ -5,7 +5,6 @@ import { themeService } from "theme";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import Router from "@smartface/router/lib/router/Router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImageDesign) {
   constructor(private router?: Router, private route?: Route) {

@@ -4,7 +4,6 @@ import SwitchIOS from "lib/SwitchIOS";
 import System from "@smartface/native/device/system";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgNativeSwitch extends withDismissAndBackButton(PgNativeSwitchDesign) {
   constructor(private router?: Router, private route?: Route) {

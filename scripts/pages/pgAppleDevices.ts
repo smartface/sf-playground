@@ -5,12 +5,9 @@ import deviceMappings from "@smartface/extension-utils/lib/appleDevices/deviceMa
 import copy from "@smartface/extension-utils/lib/copy";
 import { getOrientationOnchage } from "@smartface/extension-utils/lib/orientation";
 import { createAsyncTask } from "@smartface/extension-utils/lib/async";
-import Http = require("@smartface/native/net/http");
-import Image = require("@smartface/native/ui/image");
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevicesDesign) {
   dataSet: string[];
