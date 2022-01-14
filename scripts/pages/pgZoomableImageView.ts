@@ -2,7 +2,7 @@ import PgZoomableImageViewDesign from "generated/pages/pgZoomableImageView";
 import ZoomableImageView from "@smartface/extension-zoomable-imageview";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgZoomableImageView extends withDismissAndBackButton(PgZoomableImageViewDesign) {
   zoomableImageView: InstanceType<typeof ZoomableImageView>;

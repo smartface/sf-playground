@@ -2,7 +2,6 @@ import PageHideShowDesign from "generated/pages/pageHideShow";
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PageHideShow extends withDismissAndBackButton(PageHideShowDesign) {
   constructor(private router?: Router, private route?: Route) {

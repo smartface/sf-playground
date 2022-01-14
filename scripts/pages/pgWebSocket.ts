@@ -3,7 +3,7 @@ import WebSocket from "@smartface/native/net/websocket";
 import Blob from "@smartface/native/global/blob";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgWebSocket extends withDismissAndBackButton(PgWebSocketDesign) {
   webSocket: WebSocket;

@@ -4,7 +4,7 @@ import Application from "@smartface/native/application";
 import WebView from "@smartface/native/ui/webview";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 //You should create new Page from UI-Editor and extend with it.
 export default class PgSSLPinning extends withDismissAndBackButton(PgSSLPinningDesign) {

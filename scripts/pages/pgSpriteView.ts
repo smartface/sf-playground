@@ -4,7 +4,7 @@ import Image from "@smartface/native/ui/image";
 import ImageView from "@smartface/native/ui/imageview";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgSpriteView extends withDismissAndBackButton(PgSpriteViewDesign) {
   spriteView: SpriteView;

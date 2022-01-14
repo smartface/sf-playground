@@ -8,7 +8,7 @@ import Chart from "@smartface/extension-utils/lib/chart";
 import Table from "@smartface/extension-utils/lib/table";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign) {
   myMenu: Menu;

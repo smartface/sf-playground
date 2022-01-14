@@ -3,7 +3,7 @@ import MapView from "@smartface/native/ui/mapview";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;

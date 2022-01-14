@@ -13,7 +13,6 @@ import Network from "@smartface/native/device/network";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadDesign) {
   protected uploadMenu = new Menu();

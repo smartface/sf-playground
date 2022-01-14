@@ -2,7 +2,7 @@ import PgNoTouchDesign from "generated/pages/pgNoTouch";
 import System from "@smartface/native/device/system";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgNoTouch extends withDismissAndBackButton(PgNoTouchDesign) {
   isPageTouchEnabled = true;

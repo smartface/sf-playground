@@ -7,7 +7,6 @@ import { openApplicationSettings } from "@smartface/extension-utils/lib/settings
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
 
 const CURRENT_LOCATION = "Current Location";
 type Location = { latitude: number; longitude: number };

@@ -5,7 +5,7 @@ import TextAlignment from "@smartface/native/ui/textalignment";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
-import { backButtonImage } from "lib/constants/style";
+
 
 export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
   constructor(private router?: Router, private route?: Route) {
