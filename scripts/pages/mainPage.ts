@@ -1,40 +1,40 @@
-import MainPageDesign from 'generated/pages/mainPage';
-import LviPages from 'components/LviPages';
-import * as Pages from '.';
+import MainPageDesign from "generated/pages/mainPage";
+import LviPages from "components/LviPages";
+import Router from "@smartface/router/lib/router/Router";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import Page from "@smartface/native/ui/page";
+import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 
-export default class MainPage extends MainPageDesign {
-    pages = Object.keys(Pages);
-    router: any;
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
+export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
+  pages: ConstructorOf<Page>[] = [];
 
-    initListView() {
-        this.lvPages.refreshEnabled = false;
-        this.lvPages.rowHeight = 54;
-        this.lvPages.onRowBind = (listViewItem: LviPages, index) => {
-            listViewItem.lblPageName.text = this.pages[index];
-        }
-        this.lvPages.onRowSelected = (listViewItem: LviPages, index) => {
-            this.router.push(`/pages/${this.pages[index]}`)
-        }
-    }
+  constructor(private router?: Router, private route?: Route, params?: any) {
+    super({});
+  }
 
-    refreshListView() {
-        this.lvPages.itemCount = this.pages.length;
-        this.lvPages.refreshData();
-    }
-}
+  initListView() {
+    this.lvPages.refreshEnabled = false;
+    this.lvPages.rowHeight = 54;
+    this.lvPages.onRowBind = (listViewItem: LviPages, index) => {
+      listViewItem.lblPageName.text = this.pages[index].name;
+    };
+    this.lvPages.onRowSelected = (listViewItem: LviPages, index) => {
+      this.router.push(`${this.pages[index].name}`);
+    };
+  }
 
-function onShow(this: MainPage, superOnShow: () => void) {
-    superOnShow();
+  refreshListView() {
+    this.lvPages.itemCount = this.pages.length;
+    this.lvPages.refreshData();
+  }
+  onShow() {
+    super.onShow();
     this.refreshListView();
-}
-
-
-function onLoad(this: MainPage, superOnLoad: () => void) {
-    superOnLoad();
+  }
+  onLoad() {
+    super.onLoad();
+    this.headerBar.leftItemEnabled = false;
     this.initListView();
+  }
 }

@@ -1,18 +1,17 @@
-import Page1Design from 'generated/pages/page1';
+import Page1Design from "generated/pages/page1";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router } from "@smartface/router";
 
-export default class Page1 extends Page1Design {
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
-}
-
-
-function onShow(this: Page1, superOnShow: () => void) {
-    superOnShow();
-}
-
-function onLoad(this: Page1, superOnLoad: () => void) {
-    superOnLoad();
+export default class PgEmpty extends withDismissAndBackButton(Page1Design) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+  }
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
+  onLoad() {
+    super.onLoad();
+  }
 }

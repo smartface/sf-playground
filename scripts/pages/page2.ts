@@ -1,66 +1,63 @@
 import HeaderBarItem = require("@smartface/native/ui/headerbaritem");
 import touch = require("@smartface/extension-utils/lib/touch");
 import Image = require("@smartface/native/ui/image");
-import PageTitleLayout  from "components/PageTitleLayout";
-import componentContextPatch from "@smartface/contx/lib/smartface/componentContextPatch";
+import PageTitleLayout from "components/PageTitleLayout";
 import Color = require("@smartface/native/ui/color");
 import System = require("@smartface/native/device/system");
-import Page2Design from 'generated/pages/page2';
+import Page2Design from "generated/pages/page2";
+import Router from "@smartface/router/lib/router/Router";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
 
-export default class Page2 extends Page2Design {
-	constructor() {
-		super();
-		// Overrides super.onShow method
-		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		// Overrides super.onLoad method
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        touch.addPressEvent(this.btnSayHello, () => {
-            alert("Hello World!");
-        });
-	}
-}
+export default class Page2 extends withDismissAndBackButton(Page2Design) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+    touch.addPressEvent(this.btnSayHello, () => {
+      alert("Hello World!");
+    });
+  }
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
-function onShow(superOnShow) {
+  /**
+   * @event onShow
+   * This event is called when a page appears on the screen (everytime).
+   */
+  onShow() {
+    super.onShow();
     const { routeData, headerBar } = this;
-    superOnShow();
     headerBar.titleLayout.applyLayout();
     routeData && console.info(routeData.message);
-}
+    this.initBackButton(this.router);
+  }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(superOnLoad) {
+  /**
+   * @event onLoad
+   * This event is called once when page is created.
+   */
+  onLoad() {
+    super.onLoad();
     var headerBar;
-    superOnLoad();
     this.headerBar.titleLayout = new PageTitleLayout();
-    componentContextPatch(this.headerBar.titleLayout, "titleLayout");
-    this.headerBar.setItems([new HeaderBarItem({
+    this.headerBar.setItems([
+      new HeaderBarItem({
         title: "Option",
         onPress: () => {
-            console.warn("You pressed Option item!");
-        }
-    })]);
+          console.warn("You pressed Option item!");
+        },
+      }),
+    ]);
     if (System.OS === "Android") {
-        headerBar = this.headerBar;
-        headerBar.setLeftItem(new HeaderBarItem({
-            onPress: () => {
-                this.router.goBack();
-            },
-            image: Image.createFromFile("images://arrow_back.png")
-        }));
-    }
-    else {
-        headerBar = this.parentController.headerBar;
+      headerBar = this.headerBar;
+      headerBar.setLeftItem(
+        new HeaderBarItem({
+          onPress: () => {
+            this.router.goBack();
+          },
+          image: Image.createFromFile("images://arrow_back.png"),
+        })
+      );
+    } else {
+      headerBar = this.parentController.headerBar;
     }
     headerBar.itemColor = Color.WHITE;
+  }
 }
-
