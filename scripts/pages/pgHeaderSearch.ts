@@ -3,14 +3,15 @@ import SearchView from "@smartface/native/ui/searchview";
 import Color from "@smartface/native/ui/color";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
+import Button from "@smartface/native/ui/button";
 
 export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design) {
   mySearchView: SearchView;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnNext.onPress = () => {
+    this.btnNext.on(Button.Events.Press, () => {
       this.router.push("/pages/page2", { message: "Hello World!" });
-    };
+    });
   }
   initSearchView(): void {
     this.mySearchView = new SearchView();

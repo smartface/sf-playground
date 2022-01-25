@@ -1,13 +1,10 @@
 import PgServiceCallDesign from "generated/pages/pgServiceCall";
 import network from "@smartface/extension-utils/lib/network";
-import isEmulator from "@smartface/extension-utils/lib/isEmulator";
-import removeClassName from "@smartface/contx/lib/styling/action/removeClassName";
-import { pushClassNames } from "@smartface/contx/lib/styling";
 import { getDogPic, dogApiData } from "services/dogPic";
 import Network from "@smartface/native/device/network";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
-
+import System from "@smartface/native/device/system";
 
 export default class PgServiceCall extends withDismissAndBackButton(PgServiceCallDesign) {
   isConnected: boolean;
@@ -40,7 +37,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
   }
 
   initIsEmulatorCheck() {
-    if (isEmulator()) {
+    if (System.isEmulator) {
       this.lblIsEmulator.text = "Running on emulator environment";
     } else {
       this.lblIsEmulator.text = "Running on production environment";
@@ -52,12 +49,18 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
       .isConnected()
       .then(() => {
         this.lblNetworkStatus.text = "Connected to internet";
-        this.lblNetworkStatus.dispatch(pushClassNames("#pgServiceCall-lblNetworkStatus-online"));
+        this.lblNetworkStatus.dispatch({
+          type: "pushClassNames",
+          classNames: "#pgServiceCall-lblNetworkStatus-online"
+        });
         this.isConnected = true;
       })
       .catch(() => {
         this.lblNetworkStatus.text = "Not connected to internet";
-        this.lblNetworkStatus.dispatch(removeClassName("#pgServiceCall-lblNetworkStatus-online"));
+        this.lblNetworkStatus.dispatch({
+          type: "removeClassName",
+          className: "#pgServiceCall-lblNetworkStatus-online"
+        });
         this.isConnected = false;
       });
   }
