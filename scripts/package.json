@@ -10,10 +10,11 @@
     "@smartface/extension-utils": "^16.2.9",
     "@smartface/extension-zoomable-imageview": "^3.0.1",
     "@smartface/mixins": "^1.0.0",
-    "@smartface/native": "^4.3.6-alpha.40",
+    "@smartface/native": "^4.3.4",
     "@smartface/router": "^2.1.0",
     "@smartface/styler": "^2.0.0",
-    "@smartface/styling-context": "^1.1.0",
+    "@smartface/styling-context": "^1.1.9",
+    "@smartface/core": "^1.0.0",
     "source-map": "0.6.1"
   }
 }
