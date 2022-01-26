@@ -1,6 +1,6 @@
 {
   "#pgHeaderImage": {
-    "image": "images://arrowbottom.png",
+    "image": "arrowbottom.png",
     "imageFillType": "ASPECTFILL"
   }
 }

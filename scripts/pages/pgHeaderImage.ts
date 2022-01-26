@@ -12,7 +12,7 @@ export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImag
   }
   initButtonClicks() {
     this.btnDirectImage.onPress = () => this.addHeaderWithDirectImage();
-    this.btnStyle.onPress = () => this.addHeaderWithGetCombinedStyle();
+    this.btnStyle.onPress = () => this.addHeaderWithGetNativeStyle();
   }
   addHeaderWithDirectImage() {
     const imageHeaderBarItem = new HeaderBarItem();
@@ -25,9 +25,9 @@ export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImag
     this.headerBar.setItems([imageHeaderBarItem]);
   }
 
-  addHeaderWithGetCombinedStyle() {
+  addHeaderWithGetNativeStyle() {
     const imageHeaderBarItem = new HeaderBarItem();
-    imageHeaderBarItem.image = themeService.getStyle("#pgHeaderImage").image;
+    imageHeaderBarItem.image = themeService.getNativeStyle("#pgHeaderImage").image;
     this.headerBar.setItems([imageHeaderBarItem]);
   }
 
