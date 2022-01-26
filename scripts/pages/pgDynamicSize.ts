@@ -11,7 +11,7 @@ export default class PgDynamicSize extends withDismissAndBackButton(PgDynamicSiz
    * This event is called when a page appears on the screen (everytime).
    * @param {Object} parameters passed from Router.go function
    */
-  public onShow() {
+  onShow() {
     super.onShow();
     const newText =
       "Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines";
