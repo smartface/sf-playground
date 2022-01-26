@@ -1,0 +1,11 @@
+{
+  ".flDynamicSize": {
+    "backgroundColor": "rgba( 155, 155, 155, 1 )",
+    "&-lblDynamicSize": {
+      "textColor": "rgba(255,255,255,1)",
+      "maxLines": 0,
+      "height": null
+    },
+    "height": null
+  }
+}
