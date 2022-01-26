@@ -3,7 +3,6 @@
 		{
 			"className": ".sf-flexLayout .flDynamicSize",
 			"id": "8120-5b64-07b4-23ab",
-			"oldName": "flNoSize",
 			"props": {
 				"children": [
 					"9cd6-45be-3903-64ae"
