@@ -10,11 +10,13 @@ import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 
 export default class Page2 extends withDismissAndBackButton(Page2Design) {
+  private routeData: any;
   constructor(private router?: Router, private route?: Route) {
     super({});
     touch.addPressEvent(this.btnSayHello, () => {
       alert("Hello World!");
     });
+    this.routeData = route.getState().routeData;
   }
 
   /**
@@ -23,9 +25,7 @@ export default class Page2 extends withDismissAndBackButton(Page2Design) {
    */
   onShow() {
     super.onShow();
-    const { routeData, headerBar } = this;
-    headerBar.titleLayout.applyLayout();
-    routeData && console.info(routeData.message);
+    console.info(this.routeData?.message);
     this.initBackButton(this.router);
   }
 
@@ -35,29 +35,5 @@ export default class Page2 extends withDismissAndBackButton(Page2Design) {
    */
   onLoad() {
     super.onLoad();
-    var headerBar;
-    this.headerBar.titleLayout = new PageTitleLayout();
-    this.headerBar.setItems([
-      new HeaderBarItem({
-        title: "Option",
-        onPress: () => {
-          console.warn("You pressed Option item!");
-        },
-      }),
-    ]);
-    if (System.OS === "Android") {
-      headerBar = this.headerBar;
-      headerBar.setLeftItem(
-        new HeaderBarItem({
-          onPress: () => {
-            this.router.goBack();
-          },
-          image: Image.createFromFile("images://arrow_back.png"),
-        })
-      );
-    } else {
-      headerBar = this.parentController.headerBar;
-    }
-    headerBar.itemColor = Color.WHITE;
   }
 }
