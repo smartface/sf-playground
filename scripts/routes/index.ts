@@ -79,10 +79,7 @@ const router = Router.of({
   to: ROOT_PATH,
   isRoot: true,
   routes: [
-    StackRouter.of({
-      path: ROOT_PATH,
-      routes: [bottomTabBarRouter],
-    }),
+    bottomTabBarRouter
   ],
 });
 
