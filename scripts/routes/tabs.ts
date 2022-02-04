@@ -1,3 +1,5 @@
+import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
+
 import Page from "@smartface/native/ui/page";
 import Page1 from "pages/page1";
 import PgMapView from "pages/pgMapView";
@@ -32,7 +34,7 @@ import PgOTP from "pages/pgOTP";
 import PgSSLPinning from "pages/pgSSLPinning";
 import PgListViewMaterial from "pages/pgListViewMaterial";
 import PgDynamicSize from "pages/pgDynamicSize";
-import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
+import PageSample from "pages/pageSample";
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -63,5 +65,5 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP],
+  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP],
 };
