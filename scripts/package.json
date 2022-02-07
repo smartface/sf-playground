@@ -15,7 +15,6 @@
     "@smartface/router": "^2.1.0",
     "@smartface/source-map": "^1.0.0",
     "@smartface/styler": "^2.0.0",
-    "@smartface/styling-context": "^1.1.9",
-    "source-map": "0.6.1"
+    "@smartface/styling-context": "^1.1.9"
   }
 }
