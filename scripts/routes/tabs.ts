@@ -31,7 +31,7 @@ import PgModalTest from "pages/pgModalTest";
 import PgOTP from "pages/pgOTP";
 import PgSSLPinning from "pages/pgSSLPinning";
 import PgListViewMaterial from "pages/pgListViewMaterial";
-import PgImagePick from 'pages/pgImagePick';
+import PgPhotoPicker from 'pages/pgPhotoPicker';
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
@@ -39,7 +39,7 @@ type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgImagePick],
+  pages: [PgFileUpload, PgBadgeAnimation, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgPhotoPicker],
 };
 
 export const tab1: Tab = {

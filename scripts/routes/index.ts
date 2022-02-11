@@ -6,6 +6,7 @@ import PgModalTest from "pages/pgModalTest";
 import * as Tabs from "routes/tabs";
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 import Application from "@smartface/native/application";
+import PgPhotoCropper from "pages/pgPhotoCropper";
 
 Application.on(Application.Events.BackButtonPressed, () => {
     Router.getActiveRouter()?.goBack();
@@ -56,6 +57,17 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
         },
       }),
       ...tabItems,
+      StackRouter.of({
+        path: `${path}/PgPhotoCropper`,
+        to: `${path}/PgPhotoCropper/main`,
+        modal: true,
+        routes: [
+          Route.of({
+            path: `${path}/PgPhotoCropper/main`,
+            build: (router, route) => new PgPhotoCropper(router, route)
+          }),
+        ],
+      }),
       StackRouter.of({
         path: `${path}/modal`,
         to: `${path}/modal/page`,

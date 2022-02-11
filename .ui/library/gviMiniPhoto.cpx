@@ -1,0 +1,63 @@
+{
+	"components": [
+		{
+			"className": ".sf-gridViewItem .gviMiniPhoto",
+			"hiddenComponent": true,
+			"id": "8417-61ca-c49a-4b9c",
+			"props": {
+				"children": [
+					"bbbf-3cbd-81b7-f82d"
+				],
+				"name": "gviMiniPhoto",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "GridViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": "37.50",
+				"top": "54.50"
+			}
+		},
+		{
+			"className": ".sf-flexLayout .gviMiniPhoto-flex",
+			"id": "bbbf-3cbd-81b7-f82d",
+			"props": {
+				"children": [
+					"a171-65a9-b720-aef6"
+				],
+				"name": "flex",
+				"parent": "8417-61ca-c49a-4b9c",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "OlrJ5aPaB",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .gviMiniPhoto-img",
+			"id": "a171-65a9-b720-aef6",
+			"props": {
+				"children": [],
+				"name": "img",
+				"parent": "bbbf-3cbd-81b7-f82d",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"testId": "dPyUkTQXx",
+				"usePageVariable": true
+			}
+		}
+	]
+}
