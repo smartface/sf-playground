@@ -9,8 +9,7 @@
 					"88a3-99ac-0a9b-054d",
 					"98c6-9358-a727-23b9",
 					"30a0-95cb-76e9-61e2",
-					"2f8f-ee38-0eb3-c777",
-					"1d75-ec4e-cac2-dccb"
+					"2f8f-ee38-0eb3-c777"
 				],
 				"name": "pgWebView",
 				"orientation": "PORTRAIT",
@@ -80,36 +79,6 @@
 			"type": "WebView",
 			"userProps": {
 				"testId": "wvs2eJOv5",
-				"usePageVariable": true
-			}
-		},
-		{
-			"className": ".flexLayout .materialTextBox-wrapper",
-			"hiddenComponent": false,
-			"id": "1d75-ec4e-cac2-dccb",
-			"initialized": true,
-			"props": {
-				"children": [],
-				"name": "materialTextBox",
-				"parent": "31f4-eeb3-63f7-db49",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__",
-				"type": "materialTextBox",
-				"id": "574a-10da-b765-48e5"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"testId": "_IT57B8Rs",
-				"top": 0,
 				"usePageVariable": true
 			}
 		}
