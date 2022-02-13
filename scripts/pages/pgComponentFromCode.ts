@@ -1,6 +1,6 @@
 import PgComponentFromCodeDesign from "generated/pages/pgComponentFromCode";
 import { withDismissAndBackButton } from "@smartface/mixins";
-import { Route, BaseRouter as Router } from "@smartface/router";
+import { Route, Router } from "@smartface/router";
 import type { StyleContextComponentType } from "@smartface/styling-context";
 import FlexLayout from "@smartface/native/ui/flexlayout";
 import Color from "@smartface/native/ui/color";

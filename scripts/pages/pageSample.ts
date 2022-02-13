@@ -1,6 +1,6 @@
 import PageSampleDesign from 'generated/pages/pageSample';
 import { withDismissAndBackButton } from '@smartface/mixins';
-import { Route, BaseRouter as Router } from '@smartface/router';
+import { Route, Router } from '@smartface/router';
 
 /**
  * Note for developer:
