@@ -1,0 +1,84 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "63e9-18c5-a89c-83cb",
+			"initialized": true,
+			"props": {
+				"children": [
+					"72cc-5705-0a78-2d38",
+					"74bd-3aeb-e91b-2e59",
+					"26d1-34cd-a09c-59e3",
+					"74b7-7d25-43c1-9cf7"
+				],
+				"name": "pgGlide",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "72cc-5705-0a78-2d38",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "63e9-18c5-a89c-83cb"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "74bd-3aeb-e91b-2e59",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "63e9-18c5-a89c-83cb",
+				"title": "pgGlide"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgGlide"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "26d1-34cd-a09c-59e3",
+			"props": {
+				"children": [],
+				"name": "flOptions",
+				"parent": "63e9-18c5-a89c-83cb",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"height": 180,
+				"testId": "hkhZ3cOOF",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "74b7-7d25-43c1-9cf7",
+			"props": {
+				"children": [],
+				"name": "svMain",
+				"parent": "63e9-18c5-a89c-83cb",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"testId": "1hSRXPFyk",
+				"usePageVariable": true
+			}
+		}
+	]
+}
