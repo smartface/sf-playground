@@ -1,30 +1,18 @@
-import Page1Design from 'generated/pages/page1';
+import Page1Design from "generated/pages/page1";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router, Route } from "@smartface/router";
 
-export default class PgTest extends Page1Design {
-    constructor() {
-        super();
-        // Overrides super.onShow method
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        // Overrides super.onLoad method
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
-}
+export default class PgTest extends withDismissAndBackButton(Page1Design) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+  }
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
-function onShow(this: PgTest, superOnShow: () => void) {
-    superOnShow();
-}
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(this: PgTest, superOnLoad: () => void) {
-    superOnLoad();
+  onLoad() {
+    super.onLoad();
+  }
 }

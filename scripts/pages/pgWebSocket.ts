@@ -1,13 +1,14 @@
 import PgWebSocketDesign from "generated/pages/pgWebSocket";
 import WebSocket from "@smartface/native/net/websocket";
 import Blob from "@smartface/native/global/blob";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router, Route } from "@smartface/router";
 
-export default class PgWebSocket extends PgWebSocketDesign {
+
+export default class PgWebSocket extends withDismissAndBackButton(PgWebSocketDesign) {
   webSocket: WebSocket;
-  constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+  constructor(private router?: Router, private route?: Route) {
+    super({});
   }
 
   initWebSocket() {
@@ -28,13 +29,14 @@ export default class PgWebSocket extends PgWebSocketDesign {
       this.webSocket.close({ code: 1000 });
     });
   }
-}
 
-function onShow(this: PgWebSocket, superOnShow: () => void) {
-  superOnShow();
-}
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
 
-function onLoad(this: PgWebSocket, superOnLoad: () => void) {
-  superOnLoad();
-  this.initWebSocket();
+  onLoad() {
+    super.onLoad();
+    this.initWebSocket();
+  }
 }

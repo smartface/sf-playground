@@ -1,15 +1,16 @@
-import PgChartDesign from 'generated/pages/pgChart';
+import PgChartDesign from "generated/pages/pgChart";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router } from "@smartface/router";
 
-export default class PgChart extends PgChartDesign {
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
+export default class PgChart extends withDismissAndBackButton(PgChartDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+  }
 
-    initComponents() {
-        this.btnRandomizeData.onPress = () => {
-            const script = `
+  initComponents() {
+    this.btnRandomizeData.onPress = () => {
+      const script = `
                 config.data.datasets.forEach(function(dataset) {
                     dataset.data = dataset.data.map(function() {
                         return randomScalingFactor();
@@ -17,10 +18,10 @@ export default class PgChart extends PgChartDesign {
 
                 });
             window.myLine.update();`;
-            this.webView1.evaluateJS(script, () => { });
-        }
-        this.btnAddDataSet.onPress = () => {
-            const script = `
+      this.webView1.evaluateJS(script, () => {});
+    };
+    this.btnAddDataSet.onPress = () => {
+      const script = `
                 const colorName = colorNames[config.data.datasets.length % colorNames.length];
                 const newColor = window.chartColors[colorName];
                 const newDataset = {
@@ -37,16 +38,16 @@ export default class PgChart extends PgChartDesign {
 
                 config.data.datasets.push(newDataset);
                 window.myLine.update();`;
-            this.webView1.evaluateJS(script, () => { });
-        }
-        this.btnRemoveDataset.onPress = () => {
-            const script = `
+      this.webView1.evaluateJS(script, () => {});
+    };
+    this.btnRemoveDataset.onPress = () => {
+      const script = `
             config.data.datasets.splice(0, 1);
             window.myLine.update();`;
-            this.webView1.evaluateJS(script, () => { });
-        }
-        this.btnAddData.onPress = () => {
-            const script = `
+      this.webView1.evaluateJS(script, () => {});
+    };
+    this.btnAddData.onPress = () => {
+      const script = `
             if (config.data.datasets.length > 0) {
                 const month = MONTHS[config.data.labels.length % MONTHS.length];
                 config.data.labels.push(month);
@@ -57,10 +58,10 @@ export default class PgChart extends PgChartDesign {
 
                 window.myLine.update();
             }`;
-            this.webView1.evaluateJS(script, () => { });
-        }
-        this.btnRemoveData.onPress = () => {
-            const script = `
+      this.webView1.evaluateJS(script, () => {});
+    };
+    this.btnRemoveData.onPress = () => {
+      const script = `
             config.data.labels.splice(-1, 1); // remove the label first
 
             config.data.datasets.forEach(function(dataset, datasetIndex) {
@@ -68,18 +69,16 @@ export default class PgChart extends PgChartDesign {
             });
 
             window.myLine.update();`;
-            this.webView1.evaluateJS(script, () => { });
-        }
-    }
-}
-
-
-function onShow(this: PgChart, superOnShow: () => void) {
-    superOnShow();
+      this.webView1.evaluateJS(script, () => {});
+    };
+  }
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
     this.webView1.loadURL("https://az793023.vo.msecnd.net/examples/sf-core/webview/chart.html");
-}
-
-function onLoad(this: PgChart, superOnLoad: () => void) {
-    superOnLoad();
+  }
+  onLoad() {
+    super.onLoad();
     this.initComponents();
+  }
 }

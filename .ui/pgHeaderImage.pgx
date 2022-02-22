@@ -70,13 +70,13 @@
 				"children": [],
 				"name": "btnStyle",
 				"parent": "b739-f6cf-1fb3-2b38",
-				"text": "Header with GetCombinedStyle",
+				"text": "Header with GetNativeStyle",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
 				"testId": "0hPeLDSL8",
-				"text": "Header with GetCombinedStyle",
+				"text": "Header with GetNativeStyle",
 				"usePageVariable": true
 			}
 		}

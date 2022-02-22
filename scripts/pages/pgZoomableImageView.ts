@@ -1,38 +1,35 @@
-import PgZoomableImageViewDesign from 'generated/pages/pgZoomableImageView';
-import ZoomableImageView from '@smartface/extension-zoomable-imageview';
+import PgZoomableImageViewDesign from "generated/pages/pgZoomableImageView";
+import ZoomableImageView from "@smartface/extension-zoomable-imageview";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router, Route } from "@smartface/router";
 
-export default class PgZoomableImageView extends PgZoomableImageViewDesign {
-    zoomableImageView: InstanceType<typeof ZoomableImageView>;
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
 
-    initZoomableImageView() {
-        this.zoomableImageView = new ZoomableImageView({
-            width: 250,
-            height: 250
-        });
-        this.zoomableImageView.image = "images://smartface.png";
-        this.zoomableImageView.minimumZoomScale = 1;
-        this.zoomableImageView.android.mediumZoomScale = 2;
-        this.zoomableImageView.maximumZoomScale = 3;
+export default class PgZoomableImageView extends withDismissAndBackButton(PgZoomableImageViewDesign) {
+  zoomableImageView: InstanceType<typeof ZoomableImageView>;
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+  }
 
-        this.layout.addChild(this.zoomableImageView);
-    }
-}
+  initZoomableImageView() {
+    this.zoomableImageView = new ZoomableImageView({
+      width: 250,
+      height: 250,
+    });
+    this.zoomableImageView.image = "images://smartface.png";
+    this.zoomableImageView.minimumZoomScale = 1;
+    this.zoomableImageView.android.mediumZoomScale = 2;
+    this.zoomableImageView.maximumZoomScale = 3;
 
-function onShow(this: PgZoomableImageView, superOnShow: () => void) {
-    superOnShow();
-}
+    this.layout.addChild(this.zoomableImageView);
+  }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
-function onLoad(this: PgZoomableImageView, superOnLoad: () => void) {
-    superOnLoad();
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
+
+  onLoad() {
+    super.onLoad();
     this.initZoomableImageView();
+  }
 }
