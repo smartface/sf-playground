@@ -31,6 +31,7 @@ import PgModalTest from 'pages/pgModalTest'
 import PgOTP from 'pages/pgOTP';
 import PgSSLPinning from 'pages/pgSSLPinning';
 import PgNativeFunctions from 'pages/pgNativeFunctions';
+import PgTouchConfiguration from 'pages/pgTouchConfiguration';
 
 type Tab = { name: string; tabIndex: number; pages: (typeof Page)[]; }
 
@@ -64,7 +65,8 @@ export const tab1: Tab = {
         PgLocationManagment,
         PgAppleDevices,
         PgColorAndHtml,
-        PgSSLPinning
+        PgSSLPinning,
+        PgTouchConfiguration
     ]
 };
 
