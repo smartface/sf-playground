@@ -72,7 +72,7 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/mixins@^1.0.0":
+"@smartface/mixins@^1.0.7":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-1.1.5.tgz#de8fbff8a94b368b04d25811a8a3f45ff588d408"
   integrity sha512-tFR9L/9XTzKzbRGUpttITGRj4eEKjroFab8VJhNYRI3Z2uFv8LRyTMjxTJuRkzkvhB6IVCb+Nfa4hBuraLPswQ==

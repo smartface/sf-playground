@@ -1,16 +1,25 @@
 {
-  ".card": {
-    "backgroundColor": "rgba(255,255,255,1)",
-    "borderRadius": 10,
-    "marginTop": 15,
-    "paddingLeft": 15,
-    "paddingRight": 15
-  },
-  ".grow": {
-    "flexProps": {
-      "flexGrow": 1
-    }
-  },
+	".card": {
+		"backgroundColor": "rgba(255,255,255,1)",
+		"borderRadius": 10,
+		"marginTop": 15,
+		"paddingLeft": 15,
+		"paddingRight": 15
+	},
+	".grow": {
+		"flexProps": {
+			"flexGrow": 1
+		},
+        "&-relative": {
+            "flexProps": {
+			    "flexGrow": 1,
+                "positionType": "RELATIVE"
+            }
+        }
+	},
+	".getCombinedStyleTest" : {
+		"backgroundColor": "rgba(0,0,0,1)"
+	},
   ".getNativeStyleTest": {
     "backgroundColor": "rgba(0,0,0,1)"
   }
