@@ -1,0 +1,33 @@
+{
+	"#pgPhotoCropper": {
+		"backgroundColor": "rgba( 0, 0, 0, 1 )",
+		"&-headerBar": {
+			"transparent": true,
+			"ios": {},
+			"visible": true,
+			"android": {
+				"elevation": 0
+			},
+			"borderVisibility": false
+		},
+		"&-gvPhotos": {
+			"flexProps": {
+				"positionType": "ABSOLUTE"
+			},
+			"height": 40,
+			"bottom": 30,
+			"left": 10,
+			"right": 10,
+			"layoutManager": {
+				"spanCount": 1,
+				"scrollDirection": "HORIZONTAL"
+			}
+		},
+		"&-flex": {
+			"flexProps": {
+				"flexGrow": 1
+			},
+			"marginBottom": 80
+		}
+	}
+}

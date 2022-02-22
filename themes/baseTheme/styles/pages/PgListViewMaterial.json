@@ -1,0 +1,9 @@
+{
+	"#pgListViewMaterial": {
+		"&-lvMain": {
+			"flexProps": {
+				"flexGrow": 1
+			}
+		}
+	}
+}

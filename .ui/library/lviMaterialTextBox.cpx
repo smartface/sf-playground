@@ -1,0 +1,56 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviMaterialTextBox",
+            "hiddenComponent": true,
+			"id": "8e62-e3ee-fda5-da76",
+			"props": {
+				"children": [
+					"18e4-d358-7a27-dd3e"
+				],
+				"name": "lviMaterialTextBox",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": "-0.90",
+				"testId": "ptpapVReN",
+				"top": "181.98"
+			}
+		},
+		{
+			"className": ".flexLayout .materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "18e4-d358-7a27-dd3e",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "materialTextBox",
+				"parent": "8e62-e3ee-fda5-da76",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "materialTextBox",
+				"id": "574a-10da-b765-48e5"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"testId": "Q3aX4IFPZ",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

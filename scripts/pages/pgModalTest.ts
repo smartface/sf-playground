@@ -1,33 +1,34 @@
-import PgModalTestDesign from 'generated/pages/pgModalTest';
-import { Router, NativeStackRouter } from '@smartface/router';
+import PgModalTestDesign from "generated/pages/pgModalTest";
+import { NativeStackRouter } from "@smartface/router";
+import Router from "@smartface/router/lib/router/Router";
+import { Route } from "@smartface/router";
+import { withDismissAndBackButton } from "@smartface/mixins";
 
-export default class PgModalTest extends PgModalTestDesign {
-    router: any;
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    }
-    initButton() {
-        this.btnOpenModal.onPress = () => {
-            this.router.push('modal');
-        }
-        this.btnDismiss.onPress = () => {
-            if (Router.currentRouter instanceof NativeStackRouter) {
-                Router.currentRouter.dismiss();
-            }
-            else {
-                alert("This page is not derived from modal.")
-            }
-        }
-    }
-}
 
-function onShow(this: PgModalTest, superOnShow: () => void) {
-    superOnShow();
-}
+export default class PgModalTest extends withDismissAndBackButton(PgModalTestDesign) {
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+  }
+  initButton() {
+    this.btnOpenModal.onPress = () => {
+      this.router.push("modal");
+    };
+    this.btnDismiss.onPress = () => {
+      if (Router.currentRouter instanceof NativeStackRouter) {
+        Router.currentRouter.dismiss();
+      } else {
+        alert("This page is not derived from modal.");
+      }
+    };
+  }
 
-function onLoad(this: PgModalTest, superOnLoad: () => void) {
-    superOnLoad();
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
+
+  onLoad() {
+    super.onLoad();
     this.initButton();
+  }
 }

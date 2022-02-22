@@ -1,6 +1,6 @@
 {
-	"#pgHeaderImage": {
-		"image": "arrowbottom.png",
-		"imageFillType": "ASPECTFILL"
-	}
+  "#pgHeaderImage": {
+    "image": "arrowbottom.png",
+    "imageFillType": "ASPECTFILL"
+  }
 }

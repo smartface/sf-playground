@@ -1,11 +1,11 @@
 {
     "info": {
-        "name": "Smartface Empty Workspace",
+        "name": "Smartface Playground",
         "company": "Smartface User",
         "webSite": "https://www.smartface.io",
         "version": "1.0.4",
         "runtimeVersion": "1100",
-        "description": "This is Smartface's default empty project. You can click to Run on Device button to see it on your device."
+        "description": "This is Smartface's Playground. You can click to Run on Device button to see it on your device."
     },
     "config": {
         "cache": {
