@@ -1,41 +1,42 @@
-import Page1Design from 'generated/pages/pgHeaderSearch';
-import SearchView from '@smartface/native/ui/searchview';
-import Color from '@smartface/native/ui/color';
+import Page1Design from "generated/pages/pgHeaderSearch";
+import SearchView from "@smartface/native/ui/searchview";
+import Color from "@smartface/native/ui/color";
+import { withDismissAndBackButton } from "@smartface/mixins";
+import { Router, Route } from "@smartface/router";
+import Button from "@smartface/native/ui/button";
 
-export default class PgHeaderSearch extends Page1Design {
-    router: any;
-    mySearchView: SearchView;
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        this.btnNext.onPress = () => {
-            this.router.push("/pages/page2", { message: "Hello World!" });
-        }
-    }
-    initSearchView(): void {
-        this.mySearchView = new SearchView();
-        this.mySearchView.android.textFieldBorderRadius = 20;
-        this.mySearchView.textFieldBackgroundColor = Color.WHITE;
-        //@ts-ignore
-        this.mySearchView.cursorColor = Color.BLACK;
-        this.mySearchView.addToHeaderBar(this);
-    }
-}
+export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design) {
+  mySearchView: SearchView;
+  constructor(private router?: Router, private route?: Route) {
+    super({});
+    this.btnNext.on(Button.Events.Press, () => {
+      this.router.push("/pages/page2", { message: "Hello World!" });
+    });
+  }
+  initSearchView(): void {
+    this.mySearchView = new SearchView();
+    this.mySearchView.android.textFieldBorderRadius = 20;
+    this.mySearchView.textFieldBackgroundColor = Color.WHITE;
+    //@ts-ignore
+    this.mySearchView.cursorColor = Color.BLACK;
+    this.mySearchView.addToHeaderBar(this);
+  }
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- */
-function onShow(this: PgHeaderSearch, superOnShow: () => void) {
-    superOnShow();
-}
+  /**
+   * @event onShow
+   * This event is called when a page appears on the screen (everytime).
+   */
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router);
+  }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- */
-function onLoad(this: PgHeaderSearch, superOnLoad: () => void) {
-    superOnLoad();
+  /**
+   * @event onLoad
+   * This event is called once when page is created.
+   */
+  onLoad() {
+    super.onLoad();
     this.initSearchView();
+  }
 }

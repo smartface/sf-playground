@@ -2,24 +2,29 @@
 # yarn lockfile v1
 
 
-"@smartface/component-keyboardlayout@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-4.0.0.tgz#efa462362a4e0c5756dc4833ba1fb9339f950d1a"
-  integrity sha512-WKHXs2yhu6V0nTL7ig+z+964ciubXqNGjT6C1D7VifsedT1iwifnz9WsUo1PzybJFVrptao9+EIcnGbnTrmyQA==
+"@smartface/component-keyboardlayout@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-5.0.0.tgz#9b67fa41f43fa6ed5b31aa54590fc0588b2562a4"
+  integrity sha512-6vt4p7vAjb7t0te9KgBKTSbUB3UW2O3wPUaUpU9sWxeEFeXy/oTMmOtkhyj6ud0xmgglE3vYn3gyBmu8px4+uw==
 
-"@smartface/component-materialtextbox@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@smartface/component-materialtextbox/-/component-materialtextbox-6.0.1.tgz#88f304ddace80a4a528d36b1d2a3a10c33894cb9"
-  integrity sha512-hB6z/pvQAm3UzAWJ2uwIlZwRB6JA2KCqoMrmh7oDQ1IO11nU4Lwazxqo4eBA+gkPl1wuu+Pdf95T2pWxwOhZ9g==
+"@smartface/component-materialtextbox@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@smartface/component-materialtextbox/-/component-materialtextbox-7.0.0.tgz#5529ffd41fef238ac5a94eb64c490ace6d298ef2"
+  integrity sha512-cKlDcfHwkXHbsKBw6bQxh9mFXbfWoWSZdU3Cs3PHRGa9rUkOwir86Ijni1t3nyOGC3tNIOINAfQ90G+mZ/rOqQ==
 
-"@smartface/contx@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/contx/-/contx-4.0.0.tgz#081ed427bac3a097707eafdcd2191c79c5444380"
-  integrity sha512-RH5IH05iAXMIjFayvxcLlcqqTTvdIGcDkvTP4JrKnDTTFXMndiirZY8DMha3PrEkxcuY+zFkQimFD+nE7DmpTg==
+"@smartface/contx@^4.2.0":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@smartface/contx/-/contx-4.2.4.tgz#cf16a3844c79bfdc0c53bbbdb825160ae0143b97"
+  integrity sha512-qQPbVTwJCPw3jLRT5Lf6S4V4O81vNsbiGGreqxATdOw1GuAqALfpV2BRnHnrP5vWpK9UBgV5q35b74p0Gf11ZA==
   dependencies:
     "@smartface/html-to-text" "^1.0.0"
     "@smartface/styler" "^2.0.0"
     filtrex "^0.5.4"
+
+"@smartface/core@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@smartface/core/-/core-1.0.0.tgz#adf3c6a0cc04805b832927a09b78dbe84256db0b"
+  integrity sha512-VBp08RFhnl6GVuGgUTf2+qU9w4yIiF4taa8031sU1WxbsGcyNIWFS+MZm7juN6rnQ0M4FeqveTPfCAHwfD/i0w==
 
 "@smartface/extension-barcode@^5.0.0":
   version "5.0.0"
@@ -41,10 +46,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/extension-spriteview/-/extension-spriteview-3.0.0.tgz#4d20d175683d1f7df15b1335269c725fc2716a25"
   integrity sha512-0gdecB6jyzGBvh7DqboA7XXi/uQJZfl+dJAQNnC12YQl4unJp/ZUwlCj3Is3SpfkHl9cczgTDjYmzenrmnHWxQ==
 
-"@smartface/extension-utils@^16.2.2":
-  version "16.2.4"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.2.4.tgz#74db15caa5cb28be18a73370e1df4bae54433f3c"
-  integrity sha512-5HEJz4aOwIRZCDHrwAY5fADYgztPWs9X6uJi4lftuXXJw2P3/3IwO3zHTFkRC8ss6g/uHzzwPbbF8vlELyr7Nw==
+"@smartface/extension-utils@^16.2.9":
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.4.0.tgz#1c332fd0ab18444fcea5f2e44a6dfea8150ecdcd"
+  integrity sha512-NCX7bA+VdMa784J9SMqAwVOxQ5IGfV5C6O+bDYW0NnlnN7BOhQo+Zpj2f3PGYAMcm1YoWexzaPxmdLJpXoguzQ==
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
@@ -67,30 +72,52 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/native@^4.3.6-beta.3":
-  version "4.3.6-beta.3"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.3.6-beta.3.tgz#cc63adfc38c003388efcedeec453781f86668ede"
-  integrity sha512-h6zKovGJZY862x5sJ01NB5vKiduX3DU/CrKSLLGIW5kcKqZysqk5WfrPXqitIUjDE9v9UQoQeMJryMCZnMu9sw==
+"@smartface/mixins@^1.0.7":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-1.1.5.tgz#de8fbff8a94b368b04d25811a8a3f45ff588d408"
+  integrity sha512-tFR9L/9XTzKzbRGUpttITGRj4eEKjroFab8VJhNYRI3Z2uFv8LRyTMjxTJuRkzkvhB6IVCb+Nfa4hBuraLPswQ==
+  dependencies:
+    "@smartface/core" "^1.0.0"
+
+"@smartface/native@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-4.4.0.tgz#620b309ad66ebf0c7dff57fed1fc9eb87c8b6303"
+  integrity sha512-qKawjNvSiK2d0hkl/lkKk9ayXv6fOboto3EZcN3m8TwRnzW6hKQoWb/NbklbNEyClsH9244q8J6U8E8ZIIOKWA==
   dependencies:
     events "^3.3.0"
 
-"@smartface/router@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/router/-/router-2.0.0.tgz#d749e5b6e221dc377d37015c5d777b6e2af6edf6"
-  integrity sha512-DLvDPAKMaFl7BxNf25/nsv0rtr5w39CUJJIj4hjuKy6MKCt9RQFyVItwfFWlIYv+OB79bXF5YI+yuRBl6hW34g==
+"@smartface/router@^2.1.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@smartface/router/-/router-2.2.0.tgz#01690807cb050750f5ca9d715541b397c88b574d"
+  integrity sha512-P4J1GEqMINaj8iR/ImIadG7yM/puAp7LR2rEQPFTKMstuf1UgBb+d8UschlEojcGbro/CkluaL88QuRRHDeFOQ==
   dependencies:
     path-to-regexp "^2.4.0"
     resolve-pathname "^2.2.0"
+
+"@smartface/source-map@^1.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-1.0.2.tgz#80bd9ef70eea293b0f094f25380928ef6820bfe8"
+  integrity sha512-53iqKY85DJhOafdZkzbm3xQHzbtTmRbHjTn8AjJn3vHsqWXCaNgLD619O65tnD06D57yTHk44ogePdPOMYzedg==
+  dependencies:
+    source-map "0.6.1"
 
 "@smartface/styler@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-2.0.0.tgz#4b6a127bad90e3a6daf50076e2b38e90eb17043a"
   integrity sha512-XLgoSUdXM8l0xHFIHV85ZEwzlYl07be2qi+Ca9p3lU1oE8STetxLFR3z7LD8eIq5Wp0Vzoh9xDsGdu0gTwo/dw==
 
+"@smartface/styling-context@^1.1.9":
+  version "1.1.16"
+  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-1.1.16.tgz#6ffdd9ddb4afce918d41db0ac01529c88671f321"
+  integrity sha512-cRlutPcmd+APCLmSdEn7VMtXcc5c9Y/PJkqzrebGeMEhM83OTmSg5KcJaYT1Lo7iBL2OpjqOo1nmfvxg+8eBYw==
+  dependencies:
+    "@smartface/contx" "^4.2.0"
+    "@smartface/styler" "^2.0.0"
+
 apexcharts@^3.26.3:
-  version "3.29.0"
-  resolved "https://cd.smartface.io/repository/npm-all-public/apexcharts/-/apexcharts-3.29.0.tgz#1ffb940f293b21e20830ca0567bb37c29894e832"
-  integrity sha512-PhI17VayidYAbLb5/g+7WOeirgFrVopzt0qGwLq8V+cd6NXx4CeHYq3S0pDZiUGO7UFQ4YIrT8+ie9/Fnler+w==
+  version "3.33.1"
+  resolved "https://cd.smartface.io/repository/npm-all-public/apexcharts/-/apexcharts-3.33.1.tgz#7159f45e7d726a548e5135a327c03e7894d0bf13"
+  integrity sha512-5aVzrgJefd8EH4w7oRmuOhA3+cxJxQg27cYg3ANVGvPCOB4AY3mVVNtFHRFaIq7bv8ws4GRaA9MWfzoWQw3MPQ==
   dependencies:
     svg.draggable.js "^2.2.2"
     svg.easing.js "^2.0.0"

@@ -594,12 +594,13 @@
 		{
 			"className": ".sf-flexLayout .card",
 			"id": "edf6-50b8-f3a0-9453",
+			"oldName": "flCombinedStyleArea",
 			"props": {
 				"children": [
 					"2213-a00b-ae86-06eb",
 					"41fe-c643-a14f-cf86"
 				],
-				"name": "flCombinedStyleArea",
+				"name": "flNativeStyleArea",
 				"parent": "e511-4598-ca6e-8a0c"
 			},
 			"type": "FlexLayout",
@@ -611,24 +612,26 @@
 		{
 			"className": ".sf-label",
 			"id": "2213-a00b-ae86-06eb",
+			"oldName": "lblTitleGetCombinedStyle",
 			"props": {
 				"children": [],
-				"name": "lblTitleGetCombinedStyle",
+				"name": "lblTitleGetNativeStyle",
 				"parent": "edf6-50b8-f3a0-9453",
-				"text": "getCombinedStyle Test"
+				"text": "getNativeStyle Test"
 			},
 			"type": "Label",
 			"userProps": {
 				"testId": "m1j-tnY9V",
-				"text": "getCombinedStyle Test"
+				"text": "getNativeStyle Test"
 			}
 		},
 		{
 			"className": ".sf-button",
 			"id": "41fe-c643-a14f-cf86",
+			"oldName": "btnGetCombinedStyle",
 			"props": {
 				"children": [],
-				"name": "btnGetCombinedStyle",
+				"name": "btnGetNativeStyle",
 				"parent": "edf6-50b8-f3a0-9453",
 				"text": "Background color is black",
 				"usePageVariable": true
