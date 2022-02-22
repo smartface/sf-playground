@@ -40,13 +40,15 @@ import PgDynamicSize from "pages/pgDynamicSize";
 import PageSample from "pages/pageSample";
 import PgComponentFromCode from "pages/pgComponentFromCode";
 import PgGlide from 'pages/pgGlide';
+import PgNativeFunctions from 'pages/pgNativeFunctions';
+import PgTouchConfiguration from 'pages/pgTouchConfiguration';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgPhotoPicker],
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker],
 };
 
 export const tab1: Tab = {
@@ -70,5 +72,5 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide],
+  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration],
 };

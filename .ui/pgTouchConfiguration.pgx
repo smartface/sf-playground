@@ -1,0 +1,235 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "aa26-2d29-3351-758b",
+			"initialized": true,
+			"props": {
+				"children": [
+					"cbbc-714b-bf59-b8e7",
+					"0edc-2bba-1da3-abd6",
+					"4f11-6877-848e-2cab",
+					"d0aa-f953-3cbf-3c1c",
+					"c5c0-0ecf-4db7-ef37"
+				],
+				"name": "pgTouchConfiguration",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "cbbc-714b-bf59-b8e7",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "aa26-2d29-3351-758b"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0edc-2bba-1da3-abd6",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "aa26-2d29-3351-758b",
+				"title": "pgTouchConfiguration"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTouchConfiguration"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgTouchConfiguration-flex",
+			"id": "4f11-6877-848e-2cab",
+			"props": {
+				"children": [
+					"2028-bb69-fb66-1f10"
+				],
+				"name": "flex",
+				"parent": "aa26-2d29-3351-758b",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "abXWc9bIl",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label #pgTouchConfiguration-lblPress",
+			"id": "2028-bb69-fb66-1f10",
+			"props": {
+				"children": [],
+				"name": "lblPress",
+				"parent": "4f11-6877-848e-2cab",
+				"text": "Press to Fade",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "1cG7qIPzg",
+				"text": "Press to Fade",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgTouchConfiguration-flColorArea .card",
+			"id": "d0aa-f953-3cbf-3c1c",
+			"props": {
+				"children": [
+					"f88b-29eb-f0a2-dc98",
+					"ae90-e588-7782-6fde",
+					"f0f8-18cc-6b4c-ce5b"
+				],
+				"name": "flColorArea",
+				"parent": "aa26-2d29-3351-758b",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 150,
+				"left": 0,
+				"testId": "_U7Ds0hea",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label #pgTouchConfiguration-lblTitle",
+			"id": "f88b-29eb-f0a2-dc98",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "d0aa-f953-3cbf-3c1c",
+				"text": "Configuration"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "hzu_OTuBw",
+				"text": "Configuration"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgTouchConfiguration-flRow",
+			"id": "ae90-e588-7782-6fde",
+			"props": {
+				"children": [
+					"f71d-f3a7-e068-d214",
+					"6e7b-93e9-bfb6-6638"
+				],
+				"name": "flRow2",
+				"parent": "d0aa-f953-3cbf-3c1c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "xkpPT0SmD"
+			}
+		},
+		{
+			"className": ".sf-label #pgTouchConfiguration-lblOption",
+			"id": "f71d-f3a7-e068-d214",
+			"props": {
+				"children": [],
+				"name": "lblFadeDuration",
+				"parent": "ae90-e588-7782-6fde",
+				"text": "Fade Duration:"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "KT3hI6XF5",
+				"text": "Fade Duration:"
+			}
+		},
+		{
+			"className": ".sf-textBox #pgTouchConfiguration-textBox",
+			"id": "6e7b-93e9-bfb6-6638",
+			"props": {
+				"children": [],
+				"name": "tbFadeDuration",
+				"parent": "ae90-e588-7782-6fde",
+				"text": "0",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"testId": "kmO6Zyt0D",
+				"text": "0",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgTouchConfiguration-flRow",
+			"id": "f0f8-18cc-6b4c-ce5b",
+			"props": {
+				"children": [
+					"6eb8-3c6e-9c02-a333",
+					"b2b1-bb43-3ef7-319a"
+				],
+				"name": "flRow3",
+				"parent": "d0aa-f953-3cbf-3c1c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "xkpPT0SmD"
+			}
+		},
+		{
+			"className": ".sf-label #pgTouchConfiguration-lblOption",
+			"id": "6eb8-3c6e-9c02-a333",
+			"props": {
+				"children": [],
+				"name": "lblFadeMaxOpacity",
+				"parent": "f0f8-18cc-6b4c-ce5b",
+				"text": "Fade Max Opacity:"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "KT3hI6XF5",
+				"text": "Fade Max Opacity:"
+			}
+		},
+		{
+			"className": ".sf-textBox #pgTouchConfiguration-textBox",
+			"id": "b2b1-bb43-3ef7-319a",
+			"props": {
+				"children": [],
+				"name": "tbFadeMaxOpacity",
+				"parent": "f0f8-18cc-6b4c-ce5b",
+				"text": "0",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"testId": "kmO6Zyt0D",
+				"text": "0",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "c5c0-0ecf-4db7-ef37",
+			"props": {
+				"children": [],
+				"name": "btnUpdate",
+				"parent": "aa26-2d29-3351-758b",
+				"text": "Update Configuration",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "rDsOhixAw",
+				"text": "Update Configuration",
+				"usePageVariable": true
+			}
+		}
+	]
+}
