@@ -1,3 +1,5 @@
+import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
+
 import Page from "@smartface/native/ui/page";
 import Page1 from "pages/page1";
 import PgMapView from "pages/pgMapView";
@@ -33,13 +35,17 @@ import PgSSLPinning from "pages/pgSSLPinning";
 import PgListViewMaterial from "pages/pgListViewMaterial";
 import PgPhotoPicker from 'pages/pgPhotoPicker';
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
+import PgDynamicSize from "pages/pgDynamicSize";
+import PageSample from "pages/pageSample";
+import PgComponentFromCode from "pages/pgComponentFromCode";
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgPhotoPicker],
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgDynamicSize, PgPhotoPicker],
+
 };
 
 export const tab1: Tab = {
@@ -63,5 +69,5 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP],
+  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP],
 };

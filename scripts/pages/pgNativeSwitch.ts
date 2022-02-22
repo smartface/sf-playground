@@ -11,7 +11,6 @@ export default class PgNativeSwitch extends withDismissAndBackButton(PgNativeSwi
   }
   initAndroidSwitch() {
     const nativeSwitch = System.OS === "iOS" ? new SwitchIOS() : new SwitchAndroid();
-    //@ts-ignore
     this.addChild(nativeSwitch, "switchIOS");
   }
 

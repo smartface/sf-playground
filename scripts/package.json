@@ -2,7 +2,6 @@
   "dependencies": {
     "@smartface/component-keyboardlayout": "^5.0.0",
     "@smartface/component-materialtextbox": "^7.0.0",
-    "@smartface/contx": "^4.2.2",
     "@smartface/extension-barcode": "^5.0.0",
     "@smartface/extension-listviewindex": "^3.0.0",
     "@smartface/extension-sms-receiver": "^4.0.0",
@@ -12,9 +11,7 @@
     "@smartface/mixins": "^1.0.7",
     "@smartface/native": "^4.4.0",
     "@smartface/router": "^2.1.0",
-    "@smartface/styler": "^2.0.0",
-    "@smartface/styling-context": "^1.1.9",
-    "@smartface/core": "^1.0.0",
-    "source-map": "0.6.1"
+    "@smartface/source-map": "^1.0.0",
+    "@smartface/styling-context": "^1.1.9"
   }
 }

@@ -19,5 +19,8 @@
 	},
 	".getCombinedStyleTest" : {
 		"backgroundColor": "rgba(0,0,0,1)"
-	}
+	},
+  ".getNativeStyleTest": {
+    "backgroundColor": "rgba(0,0,0,1)"
+  }
 }

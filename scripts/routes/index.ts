@@ -9,8 +9,8 @@ import Application from "@smartface/native/application";
 import PgPhotoCropper from "pages/pgPhotoCropper";
 
 Application.on(Application.Events.BackButtonPressed, () => {
-    Router.getActiveRouter()?.goBack();
-  });
+  Router.getActiveRouter()?.goBack();
+});
 
 const ROOT_PATH = "/root";
 const TAB_PREFIX = "tab";
@@ -24,22 +24,14 @@ function generatePageRoutes(basePath: string, pages: Page[]) {
   });
 }
 
-function generateRoute(basePath: string, page: ConstructorOf<Page> ) {
+function generateRoute(basePath: string, page: ConstructorOf<Page>) {
   const pageName = page.name;
 
   return Route.of({
     path: `${basePath}/${pageName}`,
-    build: (router, route) => new page(router, route)
+    build: (router, route) => new page(router, route),
   });
 }
-// buildExtender({
-//     getPageClass: () => MainPage,
-//     headerBarStyle: { visible: true },
-//     pageName: "mainpage",
-//     pageProps: {
-//       pages: tab.pages,
-//     },
-//   }),
 
 function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
   const path = `${basePath}/${TAB_PREFIX}${tab.tabIndex}`;
@@ -99,10 +91,7 @@ const router = Router.of({
   to: ROOT_PATH,
   isRoot: true,
   routes: [
-    StackRouter.of({
-      path: ROOT_PATH,
-      routes: [bottomTabBarRouter],
-    }),
+    bottomTabBarRouter
   ],
 });
 

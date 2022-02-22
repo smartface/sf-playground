@@ -93,9 +93,9 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     this.tvHtml.attributedText = attributedStrings.map((s) => new AttributedString(propFactory(s)));
   }
 
-  initGetCombinedStyle() {
-    const { backgroundColor } = themeService.getStyle(".getCombinedStyleTest");
-    this.btnGetCombinedStyle.backgroundColor = backgroundColor;
+  initGetNativeStyle() {
+    const { backgroundColor } = themeService.getNativeStyle(".getNativeStyleTest");
+    this.btnGetNativeStyle.backgroundColor = backgroundColor;
   }
   onShow() {
     super.onShow();
@@ -107,6 +107,6 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     this.initTextBoxes();
     this.initGuid();
     this.initHtml();
-    this.initGetCombinedStyle();
+    this.initGetNativeStyle();
   }
 }
