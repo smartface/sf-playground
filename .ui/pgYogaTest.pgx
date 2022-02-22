@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "8acd-5e73-3014-d9af",
+			"initialized": true,
+			"props": {
+				"children": [
+					"a9fc-bb45-7cf8-8912",
+					"59ac-7185-15a3-0236",
+					"dbc6-7111-0c83-653f"
+				],
+				"name": "pgYogaTest",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "a9fc-bb45-7cf8-8912",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "8acd-5e73-3014-d9af"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "59ac-7185-15a3-0236",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "8acd-5e73-3014-d9af",
+				"title": "pgYogaTest"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgYogaTest"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "dbc6-7111-0c83-653f",
+			"props": {
+				"children": [],
+				"name": "svMain",
+				"parent": "8acd-5e73-3014-d9af",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"testId": "wIyLfTjDi",
+				"usePageVariable": true
+			}
+		}
+	]
+}

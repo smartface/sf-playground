@@ -1,0 +1,19 @@
+{
+	"#pgYogaTest": {
+		"&-parent": {
+			"backgroundColor": "rgba(49,128,195,1)",
+			"marginBottom": 15,
+			"paddingLeft": 15,
+			"paddingRight": 15,
+			"paddingTop": 15,
+			"paddingBottom": 15,
+			"flexProps": {
+				"justifyContent": "CENTER",
+				"alignItems": "CENTER"
+			}
+		},
+		"&-child": {
+			"backgroundColor": "rgba(81,81,81,1)"
+		}
+	}
+}

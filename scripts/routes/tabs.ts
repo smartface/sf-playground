@@ -28,6 +28,7 @@ import PgServiceCall from "pages/pgServiceCall";
 import PgWebView from "pages/pgWebView";
 import PgLocationManagment from "pages/pgLocationManagment";
 import PgAppleDevices from "pages/pgAppleDevices";
+import PgYogaTest from 'pages/pgYogaTest';
 import PgColorAndHtml from "pages/pgColorAndHtml";
 import PgModalTest from "pages/pgModalTest";
 import PgOTP from "pages/pgOTP";
@@ -42,10 +43,10 @@ import PgComponentFromCode from "pages/pgComponentFromCode";
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
+
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgDynamicSize, PgPhotoPicker],
-
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgPhotoPicker],
 };
 
 export const tab1: Tab = {
