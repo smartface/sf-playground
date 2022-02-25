@@ -4,7 +4,7 @@ import ImageView from "@smartface/native/ui/imageview";
 import Dialog from "@smartface/native/ui/dialog";
 import ActivityIndicator from "@smartface/native/ui/activityindicator";
 import FlexLayout from "@smartface/native/ui/flexlayout";
-import { getCombinedStyle } from "@smartface/extension-utils/lib/getCombinedStyle";
+// import { getCombinedStyle } from "@smartface/extension-utils/lib/getCombinedStyle";
 import Screen from "@smartface/native/device/screen";
 
 enum CacheTypes {
@@ -20,8 +20,8 @@ const imageOptions = {
   },
 };
 
-const { paddingLeft, paddingRight } = getCombinedStyle(".sf-page");
-const IMAGE_WIDTH = Screen.width - (paddingLeft + paddingRight);
+// const { paddingLeft, paddingRight } = getCombinedStyle(".sf-page");
+// const IMAGE_WIDTH = Screen.width - (paddingLeft + paddingRight);
 
 export default class PgGlide extends PgGlideDesign {
   dialog: Dialog;
@@ -54,8 +54,8 @@ export default class PgGlide extends PgGlideDesign {
 
     for (let i = 1; i <= imageOptions.count; i++) {
       const imageView = new ImageView({
-        width: Math.round(IMAGE_WIDTH),
-        height: Math.round(IMAGE_WIDTH / (imageOptions.size.width / imageOptions.size.height)),
+        // width: Math.round(IMAGE_WIDTH),
+        // height: Math.round(IMAGE_WIDTH / (imageOptions.size.width / imageOptions.size.height)),
       });
       // @ts-ignore
       this.svMain.layout.addChild(imageView, `image${i}`, ".sf-imageView #pgGlide-image");
