@@ -15,7 +15,7 @@ export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesig
           paddingRight: padding.right,
           paddingTop: padding.top,
         },
-      } as any);
+      });
       this.layout.applyLayout();
     };
   }

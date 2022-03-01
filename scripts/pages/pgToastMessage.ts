@@ -20,18 +20,17 @@ export default class PgToastMessage extends withDismissAndBackButton(PgToastMess
     this.toast = new Toast({
         message: "This is a toast message",
         actionTextColor: Color.GREEN,
-        bottomOffset: 200,
-        duration: 5,
         backgroundColor: Color.GRAY,
         messageTextColor: Color.RED,
-        onDismissed: () => console.log("Dismissed"),
+        bottomOffset: 300,
+        onDismissed: () => console.log("test constructor event")
     });
+    this.toast.on(Toast.Events.Dismissed, () => {
+        console.log('test eventemitter');
+    })
     this.toast.message = "This is a new toast message";
-    this.toast.duration = 3;
     this.toast.createAction("Action Title", () => {console.log("Action Pressed!")});
     this.toast.show();
-
-    setTimeout(() => (this.toast.bottomOffset = 4000), 200);
   }
 
   /**

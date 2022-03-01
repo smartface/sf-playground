@@ -1,9 +1,8 @@
 import PgWebViewDesign from "generated/pages/pgWebView";
-import active from "@smartface/extension-utils/lib/router/active";
 import Menu from "@smartface/native/ui/menu";
 import MenuItem from "@smartface/native/ui/menuitem";
 import pdf from "@smartface/extension-utils/lib/pdf";
-import WebViewBridge from "@smartface/extension-utils/lib/webviewbridge";
+import WebViewBridge from "@smartface/webviewbridge";
 import Chart from "@smartface/extension-utils/lib/chart";
 import Table from "@smartface/extension-utils/lib/table";
 import { withDismissAndBackButton } from "@smartface/mixins";
@@ -29,6 +28,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     });
 
     const chart = new Chart({
+        // @ts-ignore
       webViewBridge: wvb,
       apexOptions: {
         barOptions: {
@@ -153,14 +153,12 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
-    this.headerBar.title = active.page.pageName;
   }
 
   onLoad() {
     super.onLoad();
     this.myMenu = new Menu();
     ["Chart", "Pdf", "Table"].forEach((item) => {
-      //@ts-ignore
       const menuItem = new MenuItem({
         title: item,
         onSelected: () => {

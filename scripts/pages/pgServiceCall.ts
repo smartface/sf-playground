@@ -77,7 +77,6 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     //@ts-ignore
     const notifier = new Network.createNotifier();
 
-    //@ts-ignore
     notifier.subscribe((connectionType) => {
       this.checkAndSetNetworkStatus();
     });

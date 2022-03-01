@@ -20,7 +20,7 @@ export default class PgZoomableImageView extends withDismissAndBackButton(PgZoom
     this.zoomableImageView.android.mediumZoomScale = 2;
     this.zoomableImageView.maximumZoomScale = 3;
 
-    this.layout.addChild(this.zoomableImageView);
+    this.addChild(this.zoomableImageView);
   }
 
   onShow() {

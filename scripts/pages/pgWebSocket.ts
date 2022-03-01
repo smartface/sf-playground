@@ -13,7 +13,7 @@ export default class PgWebSocket extends withDismissAndBackButton(PgWebSocketDes
 
   initWebSocket() {
     this.webSocket = new WebSocket({
-      url: "wss://javascript.info/article/websocket/demo/hello",
+      url: "wss://demo.piesocket.com/v3/channel_1?api_key=oCdCMcMPQpbvNjUIzqtvF1d2X2okWpDQj4AwARJuAgtjhzKxVEjQU6IdCjwm&notify_self",
     });
     this.webSocket.on(WebSocket.Events.Open, () => {
       console.log("Websocket opened.");

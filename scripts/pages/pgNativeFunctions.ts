@@ -1,6 +1,6 @@
 import PgNativeFunctionsDesign from "generated/pages/pgNativeFunctions";
+import { Router, Route } from "@smartface/router";
 import Button from "@smartface/native/ui/button";
-
 // import Linking from "@smartface/native/application/linking";
 // import Permission from "@smartface/native/device/permission";
 import Application from "@smartface/native/application";
@@ -11,12 +11,8 @@ import Network from "@smartface/native/device/network";
 // import { TransportTypes } from "@smartface/native/application/linking/shared/map";
 
 export default class PgNativeFunctions extends PgNativeFunctionsDesign {
-  constructor() {
-    super();
-    // Overrides super.onShow method
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // Overrides super.onLoad method
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+  constructor(private router?: Router, private route?: Route) {
+    super({});
   }
   initLinking() {
     // const url = "tg://";
@@ -107,17 +103,17 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
     //     .catch(() => alert("Navigation failed"));
     // });
   }
-}
 
-function onShow(superOnShow: () => void) {
-  superOnShow();
-}
-
-function onLoad(this: PgNativeFunctions, superOnLoad: () => void) {
-  superOnLoad();
-  this.initLinking();
-  this.initPermission();
-  this.initLocation();
-  this.initNetwork();
-  this.initMaps();
+  onShow() {
+      super.onShow();
+  }
+  
+  onLoad() {
+      super.onLoad();
+      this.initLinking();
+      this.initPermission();
+      this.initLocation();
+      this.initNetwork();
+      this.initMaps();
+  }
 }
