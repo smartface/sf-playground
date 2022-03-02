@@ -1,11 +1,15 @@
 import PgYogaTestDesign from 'generated/pages/pgYogaTest';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import Screen from '@smartface/native/device/screen';
-import { getCombinedStyle } from '@smartface/extension-utils/lib/getCombinedStyle';
 import System from '@smartface/native/device/system';
 import View from '@smartface/native/ui/view';
+import { themeService } from 'theme';
+import { Router, Route } from "@smartface/router";
+import { styleableContainerComponentMixin } from '@smartface/styling-context';
 
-const { paddingLeft, paddingRight, paddingTop, paddingBottom } = getCombinedStyle('.sf-page');
+class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {};
+
+const { paddingLeft, paddingRight, paddingTop, paddingBottom } = themeService.getStyle('.sf-page');
 
 const MAX_WIDTH = Screen.width - (paddingLeft + paddingRight);
 const MIN_WIDTH = MAX_WIDTH / 2;
@@ -16,17 +20,13 @@ const MAX_DURATION = 5_000;
 const MIN_DURATION = 1_000;
 
 export default class PgYogaTest extends PgYogaTestDesign {
-    constructor() {
-        super();
-        this.onShow = onShow.bind(this, this.onShow.bind(this));
-        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    constructor(private router?: Router, private route?: Route) {
+        super({});
     }
     init() {
         for (let i = 0; i < MAX_ITEM_LENGTH; i++) {
-            const parentFlex = new FlexLayout();
-            // @ts-ignore
-            this.svMain.layout.addChild(parentFlex, `parent${i}`, '.sf-flexLayout #pgYogaTest-parent');
-            // @ts-ignore
+            const parentFlex = new StyleableFlexLayout();
+            this.svMain.addChild(parentFlex, `parent${i}`, '.sf-flexLayout #pgYogaTest-parent');
             parentFlex.dispatch({
                 type: 'updateUserStyle',
                 userStyle: {
@@ -35,10 +35,8 @@ export default class PgYogaTest extends PgYogaTestDesign {
                 }
             });
 
-            const childFlex = new FlexLayout();
-            // @ts-ignore
+            const childFlex = new StyleableFlexLayout();
             parentFlex.addChild(childFlex, `child${i}`, '.sf-flexLayout #pgYogaTest-child');
-            // @ts-ignore
             childFlex.dispatch({
                 type: 'updateUserStyle',
                 userStyle: {
@@ -52,7 +50,6 @@ export default class PgYogaTest extends PgYogaTestDesign {
                 : this.applyLayoutToItems([parentFlex, childFlex]);
 
             setInterval(() => {
-                // @ts-ignore
                 parentFlex.dispatch({
                     type: 'updateUserStyle',
                     userStyle: {
@@ -60,7 +57,6 @@ export default class PgYogaTest extends PgYogaTestDesign {
                         height: this.getRandomHeight()
                     }
                 });
-                // @ts-ignore
                 childFlex.dispatch({
                     type: 'updateUserStyle',
                     userStyle: {
@@ -83,14 +79,14 @@ export default class PgYogaTest extends PgYogaTestDesign {
         for (let view of views) {
             view.applyLayout();
         }
+     }
+
+     onShow() {
+        super.onShow();
     }
-}
 
-function onShow(superOnShow: () => void) {
-    superOnShow();
-}
-
-function onLoad(superOnLoad: () => void) {
-    superOnLoad();
-    this.init();
+    onLoad() {
+        super.onLoad();
+        this.init();
+    }
 }

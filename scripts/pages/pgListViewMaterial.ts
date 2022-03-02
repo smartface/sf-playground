@@ -29,9 +29,8 @@ export default class PgListViewMaterial extends withDismissAndBackButton(PgListV
     this.lvMain.rowHeight = LviMaterialTextBox.getHeight();
     this.lvMain.onRowBind = (item: LviMaterialTextBox, index: number) => {
       const currentData = this.data[index];
+      console.log("curr ", currentData);
       item.materialTextBox.options = currentData.options;
-      item.materialTextBox.clearAllEnabled = index > 15;
-      item.applyLayout();
     };
   }
 

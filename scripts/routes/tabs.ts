@@ -1,5 +1,4 @@
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
-
 import Page from "@smartface/native/ui/page";
 import Page1 from "pages/page1";
 import PgMapView from "pages/pgMapView";
@@ -35,20 +34,21 @@ import PgOTP from "pages/pgOTP";
 import PgSSLPinning from "pages/pgSSLPinning";
 import PgListViewMaterial from "pages/pgListViewMaterial";
 import PgPhotoPicker from 'pages/pgPhotoPicker';
-import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 import PgDynamicSize from "pages/pgDynamicSize";
 import PageSample from "pages/pageSample";
 import PgComponentFromCode from "pages/pgComponentFromCode";
 import PgGlide from 'pages/pgGlide';
 import PgNativeFunctions from 'pages/pgNativeFunctions';
 import PgTouchConfiguration from 'pages/pgTouchConfiguration';
+import PgToastMessage from 'pages/pgToastMessage';
+import PgHttp from 'pages/pgHttp';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker],
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp],
 };
 
 export const tab1: Tab = {

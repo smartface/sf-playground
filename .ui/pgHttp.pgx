@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".sf-page #pgHttp",
 			"id": "a3d3-2f28-e668-ecd1",
 			"initialized": true,
 			"props": {

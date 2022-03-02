@@ -4,8 +4,12 @@ import ImageView from "@smartface/native/ui/imageview";
 import Dialog from "@smartface/native/ui/dialog";
 import ActivityIndicator from "@smartface/native/ui/activityindicator";
 import FlexLayout from "@smartface/native/ui/flexlayout";
-import { getCombinedStyle } from "@smartface/extension-utils/lib/getCombinedStyle";
 import Screen from "@smartface/native/device/screen";
+import { themeService } from "theme";
+import { styleableComponentMixin } from "@smartface/styling-context";
+
+class StyleableActivityIndicator extends styleableComponentMixin(ActivityIndicator) {}
+class StyleableImageView extends styleableComponentMixin(ImageView) {}
 
 enum CacheTypes {
   "Memory Caching",
@@ -20,23 +24,20 @@ const imageOptions = {
   },
 };
 
-const { paddingLeft, paddingRight } = getCombinedStyle(".sf-page");
+const { paddingLeft, paddingRight } = themeService.getStyle(".sf-page");
 const IMAGE_WIDTH = Screen.width - (paddingLeft + paddingRight);
 
 export default class PgGlide extends PgGlideDesign {
   dialog: Dialog;
-  activityIndicator: ActivityIndicator;
+  activityIndicator: StyleableActivityIndicator;
   constructor() {
-    super();
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    super({});
   }
   initButtons() {
     let i = 1;
     const items = Object.values(CacheTypes).filter((value) => typeof value === "string") as string[];
     for (let item of items) {
       const button = new Button();
-      // @ts-ignore
       this.flOptions.addChild(button, `button${i}`, ".sf-button");
       button.text = item;
       button.on(Button.Events.Press, () => {
@@ -53,12 +54,11 @@ export default class PgGlide extends PgGlideDesign {
     this.svMain.layout.removeAll();
 
     for (let i = 1; i <= imageOptions.count; i++) {
-      const imageView = new ImageView({
+      const imageView = new StyleableImageView({
         width: Math.round(IMAGE_WIDTH),
         height: Math.round(IMAGE_WIDTH / (imageOptions.size.width / imageOptions.size.height)),
       });
-      // @ts-ignore
-      this.svMain.layout.addChild(imageView, `image${i}`, ".sf-imageView #pgGlide-image");
+      this.svMain.addChild(imageView, `image${i}`, ".sf-imageView #pgGlide-image");
       imageView.loadFromUrl({
         url: this.getImageEndpoint(i),
         useHTTPCacheControl: type === CacheTypes["HTTP Caching"],
@@ -80,21 +80,23 @@ export default class PgGlide extends PgGlideDesign {
     this.dialog.layout.alignItems = FlexLayout.AlignItems.CENTER;
     this.dialog.layout.justifyContent = FlexLayout.JustifyContent.CENTER;
 
-    this.activityIndicator = new ActivityIndicator();
+    this.activityIndicator = new StyleableActivityIndicator();
     this.dialog.layout.addChild(this.activityIndicator);
     this.dialog.layout.applyLayout();
   }
   getImageEndpoint(index: number) {
     return `https://picsum.photos/id/${index}/${imageOptions.size.width}/${imageOptions.size.height}`;
   }
+
+  onShow() {
+    super.onShow();
+  }
+
+  onLoad() {
+    super.onLoad();
+    this.initButtons();
+    this.initDialog();
+  }
 }
 
-function onShow(this: PgGlide, superOnShow: () => void) {
-  superOnShow();
-}
 
-function onLoad(this: PgGlide, superOnLoad: () => void) {
-  superOnLoad();
-  this.initButtons();
-  this.initDialog();
-}

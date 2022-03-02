@@ -61,8 +61,7 @@ export default class PgSSLPinning extends withDismissAndBackButton(PgSSLPinningD
       this.myWebView.loadURL("https://www.smartface.io");
     }, 5000);
 
-    //@ts-ignore
-    this.layout.addChild(this.myWebView, "myWebView", ".sf-webView", {
+    this.addChild(this.myWebView, "myWebView", ".sf-webView", {
       left: 10,
       top: 10,
       right: 10,

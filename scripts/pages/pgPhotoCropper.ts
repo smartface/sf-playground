@@ -7,7 +7,7 @@ import SwipeView from '@smartface/native/ui/swipeview';
 import GviMiniPhoto from 'components/GviMiniPhoto';
 import PgPhotoCropperDesign from 'generated/pages/pgPhotoCropper';
 import PgPhotoViewer from './pgPhotoViewer';
-import { BaseRouter as Router, Route } from "@smartface/router";
+import { Router, Route } from "@smartface/router";
 
 export default class PgPhotoCropper extends PgPhotoCropperDesign {
     images: Image[];
@@ -65,6 +65,7 @@ export default class PgPhotoCropper extends PgPhotoCropperDesign {
         this.swipeView = new SwipeView({
             page: this,
             flexGrow: 1,
+            // @ts-ignore
             pages: this.swipeViewPages,
             onPageSelected: (index) => {
                 this.activeIndex = index;

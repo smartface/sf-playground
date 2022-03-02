@@ -1,5 +1,5 @@
 import PgTouchConfigurationDesign from 'generated/pages/pgTouchConfiguration';
-import { addPressEvent } from '@smartface/native/ui/view/touchconfiguration'
+// import { addPressEvent } from '@smartface/native/ui/view/touchconfiguration'
 import Color from '@smartface/native/ui/color';
 const DEFAULT_COLOR = Color.create(23,200,23);
 export default class PgTouchConfiguration extends PgTouchConfigurationDesign {
@@ -27,7 +27,7 @@ export default class PgTouchConfiguration extends PgTouchConfigurationDesign {
     this.initTouchConfiguration();
   }
   initTouchConfiguration() {
-    addPressEvent(this.flex, () => alert('Pressed'), this.options);
+    // addPressEvent(this.flex, () => alert('Pressed'), this.options);
   }
 }
 
