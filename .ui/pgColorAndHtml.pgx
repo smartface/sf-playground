@@ -480,7 +480,8 @@
 					"7811-c815-afb1-801d",
 					"2610-d122-c1d1-091b",
 					"2eea-ec93-d12d-914a",
-					"5804-9746-7f5e-3203"
+					"5804-9746-7f5e-3203",
+					"9b53-f88e-7b5a-ac33"
 				],
 				"name": "flHtmlArea",
 				"parent": "e511-4598-ca6e-8a0c"
@@ -592,20 +593,39 @@
 			}
 		},
 		{
+			"className": ".sf-textView #pgColorAndHtml-tvHtml",
+			"id": "9b53-f88e-7b5a-ac33",
+			"oldName": "textView1",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvAttrString",
+				"parent": "fd17-247f-6982-d2f7",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"testId": "QVzcsI1XC",
+				"usePageVariable": true
+			}
+		},
+		{
 			"className": ".sf-flexLayout .card",
 			"id": "edf6-50b8-f3a0-9453",
 			"oldName": "flCombinedStyleArea",
 			"props": {
 				"children": [
 					"2213-a00b-ae86-06eb",
-					"41fe-c643-a14f-cf86"
+					"41fe-c643-a14f-cf86",
+					"f5a3-8727-f68f-ffb3"
 				],
 				"name": "flNativeStyleArea",
 				"parent": "e511-4598-ca6e-8a0c"
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"height": 120,
+				"height": 170,
 				"testId": "x9978uufT"
 			}
 		},
@@ -640,6 +660,24 @@
 			"userProps": {
 				"testId": "eUbapfm0x",
 				"text": "Background color is black",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "f5a3-8727-f68f-ffb3",
+			"oldName": "btnGetNativeStyle_1",
+			"props": {
+				"children": [],
+				"name": "btnGradientColor",
+				"parent": "edf6-50b8-f3a0-9453",
+				"text": "Background color is gradient",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "eUbapfm0x",
+				"text": "Background color is gradient",
 				"usePageVariable": true
 			}
 		}

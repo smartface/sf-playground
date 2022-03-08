@@ -42,13 +42,19 @@ import PgNativeFunctions from 'pages/pgNativeFunctions';
 import PgTouchConfiguration from 'pages/pgTouchConfiguration';
 import PgToastMessage from 'pages/pgToastMessage';
 import PgHttp from 'pages/pgHttp';
+import PgFileIO from 'pages/pgFileIO';
+import PgSound from 'pages/pgSound';
+import PgAsyncTask from 'pages/pgAsyncTask';
+import PgCrypto from 'pages/pgCrypto';
+import PgSpeechRecognizer from 'pages/pgSpeechRecognizer';
+
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp],
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask],
 };
 
 export const tab1: Tab = {
@@ -72,5 +78,5 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration],
+  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgSpeechRecognizer],
 };

@@ -65,6 +65,17 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
       });
   }
 
+  initNativeTypescriptTest() {
+      console.log('Network carrier test: ', Network.carrier);
+      console.log('Network connectionIP test: ', Network.connectionIP);
+      console.log('Network SMSEnabled test: ', Network.SMSEnabled);
+      console.log('Network IMSI test: ', Network.IMSI);
+      console.log('Network bluetoothMacAddress test: ', Network.bluetoothMacAddress);
+      console.log('Network wirelessMacAddress test: ', Network.wirelessMacAddress);
+      console.log('Network roamingEnabled test: ', Network.roamingEnabled);
+
+  }
+
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
@@ -80,5 +91,6 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     notifier.subscribe((connectionType) => {
       this.checkAndSetNetworkStatus();
     });
+    this.initNativeTypescriptTest();
   }
 }

@@ -28,6 +28,11 @@ export default class PgWebSocket extends withDismissAndBackButton(PgWebSocketDes
       console.log("Message: ", e.string);
       this.webSocket.close({ code: 1000 });
     });
+
+    console.log('Websocket headers: ', this.webSocket.headers);
+    console.log('Websocket url: ', this.webSocket.url);
+    console.log('Websocket headers: ', this.webSocket.headers);
+
   }
 
   onShow() {

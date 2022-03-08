@@ -10,6 +10,7 @@ import { themeService } from "theme";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
+import Font from "@smartface/native/ui/font";
 
 const exampleHtml =
   '<span style="font-size: 24px; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);"><span style="font-family: Nunito-LightItalic; font-size: 24px; background-color: transparent; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);">Your </span><font face="ios-Default-Bold" style="font-size: 24px; font-family: ios-Default-Regular; background-color: transparent; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);">attributed </font><span style="text-decoration-line: underline; color: rgb(139, 87, 42); font-size: 24px; font-family: ios-Default-Regular; background-color: transparent; text-decoration-color: rgb(0, 0, 0);">Stri<span style="color: rgb(139, 87, 42); text-decoration-line: underline ; text-decoration-color: rgb(0, 0, 0); font-size: 24px; font-family: ios-Default-Regular; background-color: transparent;">ngs</span></span></span><div><span style="font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; text-decoration-color: rgb(0, 0, 0); font-size: 24px; font-family: ios-Default-Regular; background-color: rgb(189, 16, 224);">second</span></span></span></div><div><span style="font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; text-decoration-color: rgb(0, 0, 0); font-size: 16px; font-family: ios-Default-Regular; background-color: rgb(189, 16, 224); color: rgb(248, 231, 28);">Third</span></span></span></div>';
@@ -97,6 +98,23 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     const { backgroundColor } = themeService.getNativeStyle(".getNativeStyleTest");
     this.btnGetNativeStyle.backgroundColor = backgroundColor;
   }
+
+  initNativeTypescriptTest() {
+         // AttributedString & Color TEST
+         const attributeString = new AttributedString();
+         attributeString.string = " Third";
+         attributeString.link = "https://www.google.com/";
+         attributeString.strikethrough = true;
+         attributeString.backgroundColor = Color.RED;
+         attributeString.foregroundColor = Color.GREEN;
+         attributeString.underline = true;
+         attributeString.font = Font.create("Times New Roman",30,Font.NORMAL);
+         attributeString.ios.underlineColor = Color.BLUE;
+         attributeString.ios.strikethroughColor = Color.WHITE;
+         this.tvAttrString.attributedText = [attributeString];
+         this.btnGradientColor.backgroundColor = Color.createGradient({direction: Color.GradientDirection.DIAGONAL_LEFT, startColor: Color.RED, endColor: Color.BLACK});
+  }
+
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
@@ -108,5 +126,6 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     this.initGuid();
     this.initHtml();
     this.initGetNativeStyle();
+    this.initNativeTypescriptTest();
   }
 }

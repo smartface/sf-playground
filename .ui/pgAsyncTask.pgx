@@ -1,0 +1,98 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "9682-fbab-fd91-28fd",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgAsyncTask",
+				"parent": null,
+				"children": [
+					"8839-2b68-c669-6ca8",
+					"84d0-69f3-d6d1-cf90"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "8839-2b68-c669-6ca8",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "9682-fbab-fd91-28fd",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "84d0-69f3-d6d1-cf90",
+			"userProps": {
+				"title": "pgAsyncTask"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "9682-fbab-fd91-28fd",
+				"children": [],
+				"title": "pgAsyncTask",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"931d-b51a-ea02-761a": {
+			"type": "Page",
+			"id": "9682-fbab-fd91-28fd",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgAsyncTask",
+				"parent": null,
+				"children": [
+					"8839-2b68-c669-6ca8",
+					"84d0-69f3-d6d1-cf90"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"a67d-dd9b-a6ac-d205": {
+			"type": "StatusBar",
+			"id": "8839-2b68-c669-6ca8",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "9682-fbab-fd91-28fd",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"5609-d2e8-5356-abd6": {
+			"type": "HeaderBar",
+			"id": "84d0-69f3-d6d1-cf90",
+			"userProps": {
+				"title": "pgAsyncTask"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "9682-fbab-fd91-28fd",
+				"children": [],
+				"title": "pgAsyncTask",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

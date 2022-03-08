@@ -53,7 +53,7 @@ export default class PgArt extends withDismissAndBackButton(PgArtDesign) {
 
   initCircularProgressBar() {
     this.circularProgressBar = new CircularProgressBar({
-      webView: this.wvMain as any,
+      webView: this.wvMain,
     });
     this.circularProgressBar.value = 55;
   }
