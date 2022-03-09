@@ -49,14 +49,13 @@ export default class PgMapRegion extends withDismissAndBackButton(PgMapRegionDes
     this.mapView1.clusterFont = Font.create(Font.DEFAULT, 20, Font.BOLD);
     this.mapView1.ios.clusterPadding = 15;
 
-    //@ts-ignore
     this.mapView1.onClusterPress = (pins: MapView.Pin[]) => {
       // var centerLocation = this.averageGeolocation(pins);
       // this.mapView1.setCenterLocationWithZoomLevel(centerLocation, 12, true);
     };
-    this.mapView1.onCameraMoveStarted = () => {
-      console.info(this.mapView1.visibleRegion);
-    };
+    this.mapView1.on('cameraMoveStarted', () => {
+        console.info(this.mapView1.visibleRegion);
+    })
     // this.mapView1.android.prepareMap();
   }
 

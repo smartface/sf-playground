@@ -42,7 +42,7 @@ export default class PgArt extends withDismissAndBackButton(PgArtDesign) {
   initEmojiAnimation() {
     this.emojiAnimation = new EmojiAnimation({
       emojis: this.emojis,
-      webView: this.wvMain as any,
+      webView: this.wvMain,
     });
     this.emojiIntervalCode = setInterval(() => {
       this.emojis.forEach((_, index) => {

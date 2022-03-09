@@ -1,0 +1,72 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "9955-6603-1862-1bd3",
+			"initialized": true,
+			"props": {
+				"children": [
+					"5b55-52f4-d337-383c",
+					"7fd3-084e-642b-2002",
+					"a06a-d862-ea64-9ac6"
+				],
+				"name": "pgViewGroup",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "5b55-52f4-d337-383c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "9955-6603-1862-1bd3"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "7fd3-084e-642b-2002",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "9955-6603-1862-1bd3",
+				"title": "pgViewGroup"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgViewGroup"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "a06a-d862-ea64-9ac6",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnAdd",
+				"parent": "9955-6603-1862-1bd3",
+				"text": "Add Button",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"text": "Add Button",
+				"usePageVariable": true,
+				"testId": "ytIQGTdInT"
+			},
+			"degree": 1
+		}
+	]
+}

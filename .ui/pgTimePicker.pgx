@@ -1,0 +1,98 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "04e4-6cbb-1eec-03cd",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgTimePicker",
+				"parent": null,
+				"children": [
+					"a22c-3d4f-2da8-8fd5",
+					"e296-4af4-27ba-2c49"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "a22c-3d4f-2da8-8fd5",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "04e4-6cbb-1eec-03cd",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "e296-4af4-27ba-2c49",
+			"userProps": {
+				"title": "pgTimePicker"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "04e4-6cbb-1eec-03cd",
+				"children": [],
+				"title": "pgTimePicker",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"7e80-9209-95b1-cfe9": {
+			"type": "Page",
+			"id": "04e4-6cbb-1eec-03cd",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgTimePicker",
+				"parent": null,
+				"children": [
+					"a22c-3d4f-2da8-8fd5",
+					"e296-4af4-27ba-2c49"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"8f30-8975-3648-b491": {
+			"type": "StatusBar",
+			"id": "a22c-3d4f-2da8-8fd5",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "04e4-6cbb-1eec-03cd",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"1b11-1891-2632-c268": {
+			"type": "HeaderBar",
+			"id": "e296-4af4-27ba-2c49",
+			"userProps": {
+				"title": "pgTimePicker"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "04e4-6cbb-1eec-03cd",
+				"children": [],
+				"title": "pgTimePicker",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

@@ -8,7 +8,7 @@ import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 import Application from "@smartface/native/application";
 import PgPhotoCropper from "pages/pgPhotoCropper";
 
-Application.on(Application.Events.BackButtonPressed, () => {
+Application.on("backButtonPressed", () => {
   Router.getActiveRouter()?.goBack();
 });
 
