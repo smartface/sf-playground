@@ -1,0 +1,98 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "3938-1b66-2b76-aa90",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgBlurView",
+				"parent": null,
+				"children": [
+					"b787-a89e-948c-98fb",
+					"251d-c285-f266-8430"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "b787-a89e-948c-98fb",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "3938-1b66-2b76-aa90",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "251d-c285-f266-8430",
+			"userProps": {
+				"title": "pgBlurView"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "3938-1b66-2b76-aa90",
+				"children": [],
+				"title": "pgBlurView",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"6d35-66c8-0eb8-f54f": {
+			"type": "Page",
+			"id": "3938-1b66-2b76-aa90",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgBlurView",
+				"parent": null,
+				"children": [
+					"b787-a89e-948c-98fb",
+					"251d-c285-f266-8430"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"76c7-db65-f0bd-245e": {
+			"type": "StatusBar",
+			"id": "b787-a89e-948c-98fb",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "3938-1b66-2b76-aa90",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"134e-b5ee-34aa-6e56": {
+			"type": "HeaderBar",
+			"id": "251d-c285-f266-8430",
+			"userProps": {
+				"title": "pgBlurView"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "3938-1b66-2b76-aa90",
+				"children": [],
+				"title": "pgBlurView",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

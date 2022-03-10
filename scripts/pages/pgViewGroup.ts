@@ -15,7 +15,7 @@ export default class PgViewGroup extends withDismissAndBackButton(PgViewGroupDes
     super({});
   }
 
-    // The page design has been made from the code for better
+  // The page design has been made from the code for better
   // showcase purposes. As a best practice, remove this and
   // use WYSIWYG editor to style your pages.
   centerizeTheChildrenLayout() {
