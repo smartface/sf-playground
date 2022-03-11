@@ -53,6 +53,7 @@ import PgTimePicker from 'pages/pgTimePicker';
 import PgViewGroup from 'pages/pgViewGroup';
 import PgBlurView from 'pages/pgBlurView';
 import PgLabel from 'pages/pgLabel';
+import PgTextBox from "pages/pgTextBox";
 
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
@@ -84,5 +85,5 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgSpeechRecognizer, PgApplicationEvents, PgTimePicker, PgViewGroup, PgBlurView, PgLabel],
+  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgSpeechRecognizer, PgApplicationEvents, PgTimePicker, PgViewGroup, PgBlurView, PgLabel, PgTextBox],
 };

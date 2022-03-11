@@ -1,0 +1,108 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "f514-b2a5-80fd-2e93",
+			"initialized": true,
+			"props": {
+				"children": [
+					"19cd-5732-3107-e0f6",
+					"a314-f725-9cb0-0acb",
+					"fbb9-4b0d-096e-23fa",
+					"006b-630e-9c0c-1cb3",
+					"cf27-2af0-9f05-0d43"
+				],
+				"name": "pgTextBox",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "19cd-5732-3107-e0f6",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "f514-b2a5-80fd-2e93"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "a314-f725-9cb0-0acb",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "f514-b2a5-80fd-2e93",
+				"title": "pgTextBox"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTextBox"
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "fbb9-4b0d-096e-23fa",
+			"oldName": "tbUsername",
+			"props": {
+				"children": [],
+				"name": "tbName",
+				"parent": "f514-b2a5-80fd-2e93",
+				"text": "Name",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "TextBox",
+			"userProps": {
+				"testId": "J1O2xzLv7",
+				"text": "Name",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "006b-630e-9c0c-1cb3",
+			"oldName": "textBox2",
+			"props": {
+				"children": [],
+				"name": "tbMail",
+				"parent": "f514-b2a5-80fd-2e93",
+				"text": "Mail",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "TextBox",
+			"userProps": {
+				"testId": "SLqC_eez4M",
+				"text": "Mail",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "cf27-2af0-9f05-0d43",
+			"oldName": "tb",
+			"props": {
+				"children": [],
+				"name": "tbPin",
+				"parent": "f514-b2a5-80fd-2e93",
+				"text": "Pin",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "TextBox",
+			"userProps": {
+				"testId": "k6WJYgAyvk",
+				"text": "Pin",
+				"usePageVariable": true
+			}
+		}
+	]
+}
