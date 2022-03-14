@@ -12,6 +12,9 @@ import Font from '@smartface/native/ui/font';
 import TextAlignment from '@smartface/native/ui/textalignment';
 import Screen from '@smartface/native/device/screen';
 import { themeService } from 'theme';
+import HeaderBarItem from '@smartface/native/ui/headerbaritem';
+import StatusbarStyle from '@smartface/native/ui/statusbarstyle';
+import Application from '@smartface/native/application';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -64,7 +67,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.tbName.text = "Name";
     this.tbName.autoCapitalize = 1;
     this.tbName.cursorColor = Color.GREEN;
-
+    
 //  this.tbName.autoCapitalize = AutoCapitalize.WORDS;  // THIS TO BE TESTED AS WELL.
 
     if(System.OS === System.OSType.IOS) {
@@ -99,10 +102,19 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
             }
         }
         const newFont = Font.createFromFile('assets://FontAwesome5BrandsRegular.ttf', 30);
-        console.log("Size of the font that got created from a file", newFont.size);
+        console.log("Size of the font that got created from a file ", newFont.size);
         const { paddingLeft: pagePadding } = themeService.getNativeStyle('.sf-page');
         console.log("SizeOfString test: ", this.tvMain.font.sizeOfString(this.tvMain.text, Screen.width - pagePadding * 2 ));
 
+  }
+
+  initBadge() {
+    const headerBarItem = new HeaderBarItem();
+    headerBarItem.title = "Badge";
+    headerBarItem.badge.text = "5";
+    headerBarItem.badge.visible = true;
+    headerBarItem.badge.move(0, 0);
+    this.headerBar.setItems([headerBarItem]);
   }
 
   /**
@@ -123,5 +135,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.initTextBoxes();
     this.initTextView();
     this.initFontTest();
+    this.initBadge();
+    Application.statusBar.style = StatusbarStyle.DEFAULT
   }
 }
