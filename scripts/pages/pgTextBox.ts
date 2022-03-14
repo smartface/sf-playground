@@ -8,9 +8,28 @@ import TextBox, { AutoCapitalize } from '@smartface/native/ui/textbox';
 import Color from '@smartface/native/ui/color';
 import KeyboardAppearance from '@smartface/native/ui/keyboardappearance';
 import TextContentType from '@smartface/native/ui/textcontenttype';
+import Font from '@smartface/native/ui/font';
+import TextAlignment from '@smartface/native/ui/textalignment';
+
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
+  }
+
+  initTextView() {
+      this.tvMain.backgroundColor = Color.GRAY;
+      this.tvMain.font = Font.create('Arial', 20, Font.BOLD);
+      this.tvMain.maxLines = 0;
+      this.tvMain.selectable = true;
+      this.tvMain.text = 'A new text for the texview component that will be shown on the multiline';
+      this.tvMain.textAlignment = TextAlignment.TOPCENTER;
+      this.tvMain.textColor = Color.WHITE;
+      if(System.OS === System.OSType.IOS) {
+          this.tvMain.ios.showScrollBar = true;
+      }
+      this.tvMain.scrollEnabled = true;
+      this.tvMain.bounces = true;
+      this.tvMain.letterSpacing = 1;
   }
 
   initTextBoxEvents() {
@@ -53,7 +72,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
         this.tbPin.ios.textContentType = TextContentType.ONETIMECODE;
     }
     if(System.OS === System.OSType.ANDROID) {
-        this.tbPin.android.maxLength = 4;
+       //  this.tbPin.android.maxLength = 4;
     }
     
     this.tbMail.keyboardType = KeyboardType.EMAILADDRESS;
@@ -86,5 +105,6 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
   onLoad() {
     super.onLoad();
     this.initTextBoxes();
+    this.initTextView();
   }
 }

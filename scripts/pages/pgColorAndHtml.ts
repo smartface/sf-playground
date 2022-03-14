@@ -112,6 +112,9 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
          attributeString.ios.underlineColor = Color.BLUE;
          attributeString.ios.strikethroughColor = Color.WHITE;
          this.tvAttrString.attributedText = [attributeString];
+         this.tvAttrString.on('linkClick', () => {
+             console.log('Textview LinkClick test');
+         })
          this.btnGradientColor.backgroundColor = Color.createGradient({direction: Color.GradientDirection.DIAGONAL_LEFT, startColor: Color.RED, endColor: Color.BLACK});
   }
 
