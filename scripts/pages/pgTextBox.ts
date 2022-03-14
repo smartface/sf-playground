@@ -10,6 +10,8 @@ import KeyboardAppearance from '@smartface/native/ui/keyboardappearance';
 import TextContentType from '@smartface/native/ui/textcontenttype';
 import Font from '@smartface/native/ui/font';
 import TextAlignment from '@smartface/native/ui/textalignment';
+import Screen from '@smartface/native/device/screen';
+import { themeService } from 'theme';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -21,7 +23,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
       this.tvMain.font = Font.create('Arial', 20, Font.BOLD);
       this.tvMain.maxLines = 0;
       this.tvMain.selectable = true;
-      this.tvMain.text = 'A new text for the texview component that will be shown on the multiline';
+      this.tvMain.text = 'A new text for the texview component to be shown on the multiline';
       this.tvMain.textAlignment = TextAlignment.TOPCENTER;
       this.tvMain.textColor = Color.WHITE;
       if(System.OS === System.OSType.IOS) {
@@ -89,6 +91,20 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.initTextBoxEvents();
   }
 
+  initFontTest() {
+        if(System.OS === System.OSType.IOS) {
+            const fontNames = Font.ios.allFontNames();
+            for (const font in fontNames) {
+                console.log("iOS allFontNamesTest: ", fontNames[font]);
+            }
+        }
+        const newFont = Font.createFromFile('assets://FontAwesome5BrandsRegular.ttf', 30);
+        console.log("Size of the font that got created from a file", newFont.size);
+        const { paddingLeft: pagePadding } = themeService.getNativeStyle('.sf-page');
+        console.log("SizeOfString test: ", this.tvMain.font.sizeOfString(this.tvMain.text, Screen.width - pagePadding * 2 ));
+
+  }
+
   /**
    * @event onShow
    * This event is called when the page appears on the screen (everytime).
@@ -106,5 +122,6 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     super.onLoad();
     this.initTextBoxes();
     this.initTextView();
+    this.initFontTest();
   }
 }
