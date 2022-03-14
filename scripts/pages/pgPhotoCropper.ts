@@ -66,12 +66,13 @@ export default class PgPhotoCropper extends PgPhotoCropperDesign {
             page: this,
             flexGrow: 1,
             // @ts-ignore
-            pages: this.swipeViewPages,
-            onPageSelected: (index) => {
-                this.activeIndex = index;
-                this.gvPhotos.refreshData();
-            }
+            pages: this.swipeViewPages
         });
+        // THIS IS NOT WORKING ON NTVE-BETA-2 for Android, To be tested after the TS migration. 
+        this.swipeView.on("pageSelected", (index) => {
+            this.activeIndex = index;
+            this.gvPhotos.refreshData();
+        })
         this.activeIndex && this.swipeView.swipeToIndex(this.activeIndex, false);
         this.flex.addChild(this.swipeView, 'swipeView',  '.grow-relative');
         this.flex.addStyleableChild(this.swipeView, 'swipeView', '.grow-relative');
