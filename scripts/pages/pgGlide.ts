@@ -78,6 +78,8 @@ export default class PgGlide extends PgGlideDesign {
     this.dialog = new Dialog({
       android: {
         themeStyle: Dialog.Android.Style.ThemeNoHeaderBar, // Show StatusBar
+        // isTransparent: true,
+        // cancelable: true
       },
     });
     this.dialog.layout.alignItems = FlexLayout.AlignItems.CENTER;
