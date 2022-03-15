@@ -12,7 +12,7 @@ export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design
   mySearchView: SearchView;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnNext.on(Button.Events.Press, () => {
+    this.btnNext.on("press", () => {
       this.router.push("/pages/page2", { message: "Hello World!" });
     });
   }

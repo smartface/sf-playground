@@ -43,7 +43,7 @@ export default class PgGlide extends PgGlideDesign {
       const button = new Button();
       this.flOptions.addChild(button, `button${i}`, ".sf-button");
       button.text = item;
-      button.on(Button.Events.Press, () => {
+      button.on("press", () => {
         this.initImages(
           item === String(CacheTypes["Disk Caching"]) ? CacheTypes["Disk Caching"] : item === String(CacheTypes["HTTP Caching"]) ? CacheTypes["HTTP Caching"] : CacheTypes["Memory Caching"]
         );
@@ -138,7 +138,7 @@ export default class PgGlide extends PgGlideDesign {
         
         // Accelerometer TESTS
         Accelerometer.start();
-        Accelerometer.on(Accelerometer.Events.Accelerate, (e) => {
+        Accelerometer.on("accelerate", (e) => {
             console.log("x: " + e.x + "  y : " + e.y + "  z : " + e.z);
             if (e.z > 9) {
                 Accelerometer.stop();

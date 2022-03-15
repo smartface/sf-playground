@@ -15,15 +15,15 @@ export default class PgWebSocket extends withDismissAndBackButton(PgWebSocketDes
     this.webSocket = new WebSocket({
       url: "wss://demo.piesocket.com/v3/channel_1?api_key=oCdCMcMPQpbvNjUIzqtvF1d2X2okWpDQj4AwARJuAgtjhzKxVEjQU6IdCjwm&notify_self",
     });
-    this.webSocket.on(WebSocket.Events.Open, () => {
+    this.webSocket.on("open", () => {
       console.log("Websocket opened.");
       console.log("Sending a string...");
       this.webSocket.send({ data: "some string" });
     });
-    this.webSocket.on(WebSocket.Events.Close, (params: { code: number; reason?: string }) => {
+    this.webSocket.on("close", (params: { code: number; reason?: string }) => {
       console.log(`Websocket closed with exit code: `, params.code);
     });
-    this.webSocket.on(WebSocket.Events.Message, (e: { string: string; blob: Blob }) => {
+    this.webSocket.on("message", (e: { string: string; blob: Blob }) => {
       console.log("Message received.");
       console.log("Message: ", e.string);
       this.webSocket.close({ code: 1000 });

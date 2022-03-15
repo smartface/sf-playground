@@ -25,7 +25,7 @@ export default class PgToastMessage extends withDismissAndBackButton(PgToastMess
         bottomOffset: 300,
         onDismissed: () => console.log("test constructor event")
     });
-    this.toast.on(Toast.Events.Dismissed, () => {
+    this.toast.on("dismissed", () => {
         console.log('test eventemitter');
     })
     this.toast.message = "This is a new toast message";

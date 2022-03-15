@@ -7,7 +7,7 @@ import Multimedia from '@smartface/native/device/multimedia';
 export default class PgPhotoPicker extends withDismissAndBackButton(PgPhotoPickerDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnPick.on(Button.Events.Press, () => {
+    this.btnPick.on("press", () => {
         Multimedia.pickMultipleFromGallery({
             android: { fixOrientation: true },
             type: Multimedia.Type.IMAGE,

@@ -47,28 +47,28 @@ export default class PgViewGroup extends withDismissAndBackButton(PgViewGroupDes
   onLoad() {
     super.onLoad();
     this.centerizeTheChildrenLayout();
-    this.myFl = new StyleableFlexLayout({
-        text: "Touch Me"
-    });
+    this.myFl = new StyleableFlexLayout();
 
 
-    this.myFl.on(FlexLayout.Events.ViewAdded, (removedChild) => {
+    this.myFl.on("viewRemoved", (removedChild) => {
+        console.log("viewRemoved")
         alert("removed child type: ");
     });
     this.myFl.on('viewAdded', (addedChild) => {
+        console.log("viewAdded")
         alert("added child type: ");
     });
 
-
-    this.btnAdd.on('press', () => {
-        this.myFl.addChild(this.myChildLbl);
-    })
     this.myChildLbl = new StyleableLabel({
         text: "Remove Me",
         width : 100,
         height: 50,
         textColor: '#FFFFFF'
     });
+
+    this.btnAdd.on('press', () => {
+        this.myFl.addChild(this.myChildLbl);
+    })
 
     this.myChildLbl.on('touch', () => {
         this.myFl.removeChild(this.myChildLbl);
