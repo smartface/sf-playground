@@ -2,6 +2,7 @@ import { NativeRouter as Router, NativeStackRouter as StackRouter, Route, Bottom
 import Image from "@smartface/native/ui/image";
 import Page from "@smartface/native/ui/page";
 import MainPage from "pages/mainPage";
+import pgSplashGif from "pages/pgSplashGif";
 import PgModalTest from "pages/pgModalTest";
 import * as Tabs from "routes/tabs";
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
@@ -43,7 +44,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
       Route.of({
         path: `${path}/mainpage`,
         build: (router, route) => {
-          const mainPage = new MainPage(router, route);
+          const mainPage = new pgSplashGif(router, route);
           mainPage.pages = tab.pages;
           return mainPage;
         },
@@ -56,7 +57,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
         routes: [
           Route.of({
             path: `${path}/PgPhotoCropper/main`,
-            build: (router, route) => new PgPhotoCropper(router, route)
+            build: (router, route) => new PgPhotoCropper(router, route),
           }),
         ],
       }),
@@ -90,9 +91,7 @@ const router = Router.of({
   path: "/",
   to: ROOT_PATH,
   isRoot: true,
-  routes: [
-    bottomTabBarRouter
-  ],
+  routes: [bottomTabBarRouter],
 });
 
 let listenerCounter = 0;
