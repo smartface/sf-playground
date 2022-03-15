@@ -6,6 +6,7 @@ import Dialog from "@smartface/native/ui/dialog";
 import GifImage from "@smartface/native/ui/gifimage";
 import GifImageView from "@smartface/native/ui/gifimageview";
 import FlexLayout from "@smartface/native/ui/flexlayout";
+import Screen from "@smartface/native/device/screen";
 
 class StyleableGifImageView extends styleableComponentMixin(GifImageView) {}
 
@@ -49,8 +50,8 @@ export default class PgSplashGif extends withDismissAndBackButton(PgSplashGifDes
     this.myGifImage = GifImage.createFromFile("assets://homer-simpson.gif");
     this.myGifImageView = new StyleableGifImageView({
       gifImage: this.myGifImage,
-      width: 500,
-      height: 360,
+      width: Screen.width,
+      height: Screen.height,
     });
     this.myDialog.layout.addChild(this.myGifImageView);
     this.myDialog.layout.applyLayout();
