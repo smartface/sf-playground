@@ -63,7 +63,11 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
   }
 
   initDatePicker() {
-    this.datePicker = new DatePicker();
+    this.datePicker = new DatePicker({
+        android: {
+            style: DatePicker.Android.Style.MATERIAL_DARK
+        }
+    });
     if(System.OS === System.OSType.IOS) {
         this.datePicker.ios.title = "Datepicker Title";
         this.datePicker.ios.titleColor = Color.WHITE;
@@ -79,9 +83,6 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
         this.datePicker.ios.datePickerMode = DatePicker.iOS.DatePickerMode.DATEANDTIME;
         this.datePicker.ios.dialogBackgroundColor = Color.GRAY;
         this.datePicker.ios.dialogLineColor = Color.BLACK;
-    }
-    else {
-        // this.datePicker.android.style = DatePicker.Android.Style.MATERIAL_DARK; // this doesn't work NTVE-607
     }
     this.datePicker.setDate(new Date());
     this.datePicker.setMinDate(new Date(2015, 10, 10));
