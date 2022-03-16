@@ -7,6 +7,7 @@ import GifImage from "@smartface/native/ui/gifimage";
 import GifImageView from "@smartface/native/ui/gifimageview";
 import FlexLayout from "@smartface/native/ui/flexlayout";
 import Screen from "@smartface/native/device/screen";
+import Color from "@smartface/native/ui/color";
 
 class StyleableGifImageView extends styleableComponentMixin(GifImageView) {}
 
@@ -30,7 +31,7 @@ export default class PgSplashGif extends withDismissAndBackButton(PgSplashGifDes
     setTimeout(() => {
       this.myDialog.hide();
       this.router.push("/root/btb/tab2/PgListViewIndex");
-    }, 3500);
+    }, 5000);
   }
 
   /**
@@ -46,12 +47,11 @@ export default class PgSplashGif extends withDismissAndBackButton(PgSplashGifDes
     });
     this.myDialog.layout.alignItems = FlexLayout.AlignItems.CENTER;
     this.myDialog.layout.justifyContent = FlexLayout.JustifyContent.CENTER;
-
-    this.myGifImage = GifImage.createFromFile("assets://homer-simpson.gif");
+    this.myDialog.layout.backgroundColor = Color.create("#00a1f1");
+    console.log("screenwidth,ssaasd", Screen.width, Screen.height);
+    this.myGifImage = GifImage.createFromFile("assets://smartface_splash.gif");
     this.myGifImageView = new StyleableGifImageView({
       gifImage: this.myGifImage,
-      width: Screen.width,
-      height: Screen.height,
     });
     this.myDialog.layout.addChild(this.myGifImageView);
     this.myDialog.layout.applyLayout();
