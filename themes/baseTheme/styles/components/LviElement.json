@@ -1,0 +1,59 @@
+{
+    ".lviElement": {
+        "height": 54,
+        "flexProps": {
+            "alignItems": "CENTER",
+            "flexDirection": "ROW"
+        },
+        "&-wrapper": {
+            "flexProps": {
+                "flexDirection": "ROW",
+                "flexGrow": 1
+            },
+            "backgroundColor": "rgba( 255, 255, 255, 1 )",
+            "height": 54,
+            "&-zebra": {
+                "backgroundColor": "rgba( 242, 242, 242, 0.8 )"
+            },
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "marginLeft": 0
+        },
+        "&-title": {
+            "flexProps": {
+                "positionType": "RELATIVE",
+                "alignSelf": "AUTO",
+                "flexGrow": 1
+            },
+            "font": {
+                "size": 15,
+                "bold": true,
+                "italic": false,
+                "family": "SFProText",
+                "style": "Semibold"
+            },
+            "height": 20,
+            "marginBottom": null,
+            "marginTop": 13,
+            "textAlignment": "MIDLEFT",
+            "textColor": "rgba( 0, 0, 0, 1 )",
+            "marginLeft": 0,
+            ".value": {
+                "marginLeft": 16,
+                "textAlignment": "MIDRIGHT"
+            }
+        },
+        "&-line": {
+            "backgroundColor": "rgba( 235, 235, 235, 1 )",
+            "bottom": 0,
+            "flexProps": {
+                "positionType": "ABSOLUTE"
+            },
+            "height": 1,
+            "left": 0,
+            "marginBottom": null,
+            "marginTop": null,
+            "right": 0
+        }
+    }
+}

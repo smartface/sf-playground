@@ -1,0 +1,101 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviElement",
+			"id": "5fa1-c783-3861-0cb7",
+			"props": {
+				"children": [
+					"bb91-5e65-a2ff-3aa6"
+				],
+				"name": "lviElement",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .lviElement-wrapper",
+			"id": "bb91-5e65-a2ff-3aa6",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"2d6a-b1ca-e0b7-9915",
+					"6ef8-17ba-8d17-2919",
+					"38a7-93f0-66c9-236e"
+				],
+				"name": "flElementWrapper",
+				"parent": "5fa1-c783-3861-0cb7",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .lviElement-title",
+			"id": "2d6a-b1ca-e0b7-9915",
+			"oldName": "label1_1",
+			"props": {
+				"children": [],
+				"name": "lblKey",
+				"parent": "bb91-5e65-a2ff-3aa6",
+				"text": "ListView Cell Title",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "ListView Cell Title",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .lviElement-title.value",
+			"id": "6ef8-17ba-8d17-2919",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblValue",
+				"parent": "bb91-5e65-a2ff-3aa6",
+				"text": "ListView Cell Title",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "ListView Cell Title",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .lviElement-line",
+			"id": "38a7-93f0-66c9-236e",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "flLine",
+				"parent": "bb91-5e65-a2ff-3aa6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

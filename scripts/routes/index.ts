@@ -7,6 +7,7 @@ import * as Tabs from "routes/tabs";
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 import Application from "@smartface/native/application";
 import PgPhotoCropper from "pages/pgPhotoCropper";
+import { innerPages } from "./innerPages";
 
 Application.on("backButtonPressed", () => {
   Router.getActiveRouter()?.goBack();
@@ -15,11 +16,11 @@ Application.on("backButtonPressed", () => {
 const ROOT_PATH = "/root";
 const TAB_PREFIX = "tab";
 
-function generatePageRoutes(basePath: string, pages: Page[]) {
-  return Object.keys(pages).map((pageName) => {
+function generateInnerPageRoutes(basePath: string, pages: ConstructorOf<Page>[]) {
+  return pages.map((page) => {
     return Route.of({
-      path: `${basePath}/${pageName}`,
-      build: (router, route) => pages[pageName],
+      path: `${basePath}/${page.name}`,
+      build: (router, route) => new page(router, route),
     });
   });
 }
@@ -71,6 +72,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
           }),
         ],
       }),
+      ...generateInnerPageRoutes(path, innerPages)
     ],
   });
 }

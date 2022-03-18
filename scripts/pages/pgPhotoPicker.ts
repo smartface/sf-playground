@@ -1,7 +1,6 @@
 import PgPhotoPickerDesign from 'generated/pages/pgPhotoPicker';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from "@smartface/router";
-import Button from '@smartface/native/ui/button';
 import Multimedia from '@smartface/native/device/multimedia';
 
 export default class PgPhotoPicker extends withDismissAndBackButton(PgPhotoPickerDesign) {

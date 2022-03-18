@@ -22,5 +22,25 @@
 	},
   ".getNativeStyleTest": {
     "backgroundColor": "rgba(0,0,0,1)"
+  },
+  ".swipeItem": {
+    "textColor": "#FFFFFF",
+    "font": {
+      "family": "SFProText",
+      "style": "Regular",
+      "bold": false,
+      "italic": false,
+      "size": 14
+    },
+    "ios": {
+      "iconTextSpacing": 5,
+      "padding": 30
+    },
+    ".delete": {
+      "backgroundColor": "#FF0000"
+    },
+    ".edit": {
+      "backgroundColor": "#0000FF"
+    }
   }
 }

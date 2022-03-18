@@ -1,0 +1,82 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .flRow1Line",
+			"hiddenComponent": true,
+			"id": "3541-f1d3-c335-9e7c",
+			"props": {
+				"children": [
+					"b37f-a6c4-54fe-afeb",
+					"d12c-64ba-12e1-19d4",
+					"66a3-0528-0191-84f5"
+				],
+				"name": "flRow1Line",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"left": 7.41,
+				"top": 131.48
+			}
+		},
+		{
+			"className": ".sf-label .flRow1Line-label1",
+			"id": "b37f-a6c4-54fe-afeb",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "3541-f1d3-c335-9e7c",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .flRow1Line-imgRightArrow",
+			"id": "d12c-64ba-12e1-19d4",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgRightArrow",
+				"parent": "3541-f1d3-c335-9e7c",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flRow1Line-separator",
+			"id": "66a3-0528-0191-84f5",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "3541-f1d3-c335-9e7c"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

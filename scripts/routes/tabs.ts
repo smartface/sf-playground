@@ -54,6 +54,7 @@ import PgViewGroup from 'pages/pgViewGroup';
 import PgBlurView from 'pages/pgBlurView';
 import PgLabel from 'pages/pgLabel';
 import PgTextBox from "pages/pgTextBox";
+import PgListView from "pages/pgListView";
 
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
@@ -61,7 +62,7 @@ type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask, PgRangeSlider],
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask, PgRangeSlider, PgListView],
 };
 
 export const tab1: Tab = {

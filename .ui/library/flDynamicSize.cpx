@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-flexLayout .flDynamicSize",
+			"hiddenComponent": true,
 			"id": "8120-5b64-07b4-23ab",
 			"props": {
 				"children": [

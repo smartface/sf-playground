@@ -1,0 +1,28 @@
+{
+  ".flRow1Line": {
+    "height": 40,
+    "flexProps": {
+      "flexDirection": "COLUMN"
+    },
+    "&-imgRightArrow": {
+      "flexProps": {
+        "positionType": "ABSOLUTE"
+      },
+      "height": 30,
+      "right": 10,
+      "top": 5,
+      "width": 30,
+      "image": "arrow_right.png"
+    },
+    "&-separator": {
+      "height": 1,
+      "flexProps": {
+        "positionType": "ABSOLUTE"
+      },
+      "bottom": 0,
+      "left": 15,
+      "backgroundColor": "rgba( 70, 70, 70, 1 )",
+      "right": 0
+    }
+  }
+}
