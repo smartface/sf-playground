@@ -1,98 +1,72 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "524a-8a2f-2e0a-28d1",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "524a-8a2f-2e0a-28d1",
+			"initialized": true,
 			"props": {
-				"name": "pgModalBottomSheet",
-				"parent": null,
 				"children": [
 					"5453-372f-be11-bd42",
-					"1a00-c819-4b0c-1f04"
+					"1a00-c819-4b0c-1f04",
+					"62e1-c194-77d8-8f09"
 				],
-				"orientation": "PORTRAIT"
+				"name": "pgModalBottomSheet",
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "5453-372f-be11-bd42",
+			"type": "Page",
 			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "524a-8a2f-2e0a-28d1",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+			"version": "0.0.1.a",
+			"degree": 0
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".sf-statusBar",
+			"id": "5453-372f-be11-bd42",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "524a-8a2f-2e0a-28d1"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar",
 			"id": "1a00-c819-4b0c-1f04",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "524a-8a2f-2e0a-28d1",
+				"title": "pgModalBottomSheet"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "pgModalBottomSheet"
 			},
-			"className": ".sf-headerBar",
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "62e1-c194-77d8-8f09",
+			"oldName": "button1",
 			"props": {
-				"name": "headerBar",
-				"parent": "524a-8a2f-2e0a-28d1",
 				"children": [],
-				"title": "pgModalBottomSheet",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"303a-81d1-b806-be6c": {
-			"type": "Page",
-			"id": "524a-8a2f-2e0a-28d1",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
-				"name": "pgModalBottomSheet",
-				"parent": null,
-				"children": [
-					"5453-372f-be11-bd42",
-					"1a00-c819-4b0c-1f04"
-				],
-				"orientation": "PORTRAIT"
+				"name": "btnOpen",
+				"parent": "524a-8a2f-2e0a-28d1",
+				"text": "Open Bottom-Sheet",
+				"usePageVariable": true
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		"cbaa-37c0-086e-0ced": {
-			"type": "StatusBar",
-			"id": "5453-372f-be11-bd42",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "524a-8a2f-2e0a-28d1",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		"3ce2-a811-98eb-7b52": {
-			"type": "HeaderBar",
-			"id": "1a00-c819-4b0c-1f04",
+			"ref": null,
+			"type": "Button",
 			"userProps": {
-				"title": "pgModalBottomSheet"
+				"text": "Open Bottom-Sheet",
+				"usePageVariable": true,
+				"testId": "4t54xcn2z"
 			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "524a-8a2f-2e0a-28d1",
-				"children": [],
-				"title": "pgModalBottomSheet",
-				"visible": true,
-				"isRemovable": false
-			}
+			"degree": 1
 		}
-	}
+	]
 }

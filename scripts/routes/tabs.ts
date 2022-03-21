@@ -55,6 +55,8 @@ import PgBlurView from 'pages/pgBlurView';
 import PgLabel from 'pages/pgLabel';
 import PgTextBox from "pages/pgTextBox";
 import PgListView from "pages/pgListView";
+import PgModalBottomSheet from "pages/pgModalBottomSheet";
+import PgPicker from "pages/pgPicker";
 
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
@@ -62,7 +64,7 @@ type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask, PgRangeSlider, PgListView],
+  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask, PgRangeSlider, PgListView, PgPicker, PgTimePicker, PgViewGroup, PgBlurView, PgLabel, PgTextBox, PgSpeechRecognizer],
 };
 
 export const tab1: Tab = {
@@ -80,11 +82,11 @@ export const tab2: Tab = {
 export const tab3: Tab = {
   name: "Router",
   tabIndex: 3,
-  pages: [PgModalTest],
+  pages: [PgModalTest, PgModalBottomSheet],
 };
 
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgSpeechRecognizer, PgApplicationEvents, PgTimePicker, PgViewGroup, PgBlurView, PgLabel, PgTextBox],
+  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgApplicationEvents],
 };

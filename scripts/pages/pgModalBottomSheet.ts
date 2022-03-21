@@ -7,6 +7,12 @@ export default class PgModalBottomSheet extends withDismissAndBackButton(PgModal
     super({});
   }
 
+  initButton() {
+      this.btnOpen.on('press', () => {
+        this.router.push("bottomSheet");
+      })
+  }
+
   /**
    * @event onShow
    * This event is called when the page appears on the screen (everytime).
@@ -22,5 +28,6 @@ export default class PgModalBottomSheet extends withDismissAndBackButton(PgModal
    */
   onLoad() {
     super.onLoad();
+    this.initButton();
   }
 }

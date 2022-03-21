@@ -8,7 +8,7 @@ import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 import Application from "@smartface/native/application";
 import PgPhotoCropper from "pages/pgPhotoCropper";
 import { innerPages } from "./innerPages";
-import PgListviewZebra from "pages/pgListviewZebra";
+import PgModalBottomSheet from "pages/pgModalBottomSheet";
 
 Application.on("backButtonPressed", () => {
   Router.getActiveRouter()?.goBack();
@@ -66,26 +66,27 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
         path: `${path}/modal`,
         to: `${path}/modal/page`,
         modal: true,
-        modalType: 'bottom-sheet',
-        routeDidExit: () => {
-            console.log('route did exit');
-        },
-        routeDidEnter: () => {
-            console.log('route did enter');
-        },
-        bottomSheetOptions: {
-            cornerRadius: 20,
-            detents: ['large', 'medium'],
-            isGrabberVisible: true
-        },
         routes: [
           Route.of({
             path: `${path}/modal/page`,
             build: (router, route) => new PgModalTest(router, route),
-          }),
+          })
+        ],
+      }),
+      StackRouter.of({
+        path: `${path}/bottomSheet`,
+        to: `${path}/bottomSheet/page`,
+        modal: true,
+        modalType: 'bottom-sheet',
+        bottomSheetOptions: {
+            cornerRadius: 20,
+            detents: ["large", "medium"],
+            isGrabberVisible: true
+        },
+        routes: [
           Route.of({
-            path: `${path}/modal/test`,
-            build: (router, route) => new PgListviewZebra(router, route),
+            path: `${path}/bottomSheet/page`,
+            build: (router, route) => new PgModalBottomSheet(router, route),
           })
         ],
       }),
