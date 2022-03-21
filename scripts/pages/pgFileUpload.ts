@@ -66,7 +66,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     const menuItemDocument = new MenuItem({ title: "Pick a File" });
     const menuItemCancel = new MenuItem({ title: "Cancel" });
     menuItemCancel.ios.style = MenuItem.ios.Style.CANCEL;
-    menuItemCamera.onSelected = () => {
+    menuItemCamera.on('selected', () => {
       /**
        * Don't forget to grant relevant permissions before calling this on your published app.
        * Smartface Emulator will have these permissions.
@@ -75,15 +75,15 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
         onSuccess: ({ image }) => this.selectFileAction(image),
         page: this,
       });
-    };
-    menuItemGallery.onSelected = () => {
+    });
+    menuItemGallery.on('selected', () => {
       Multimedia.pickFromGallery({
         type: Multimedia.Type.IMAGE,
         onSuccess: ({ image }) => this.selectFileAction(image),
         page: this,
       });
-    };
-    menuItemDocument.onSelected = () => {
+    });
+    menuItemDocument.on('selected', () => {
       DocumentPicker.pick({
         type: [DocumentPicker.Types.ALLFILES],
         onSuccess: (file) => this.selectFileAction(file),
@@ -91,7 +91,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
         onFailure: () => {},
         page: this,
       });
-    };
+    });
     const menuItems = [menuItemGallery, menuItemCamera, menuItemDocument];
     System.OS === System.OSType.IOS && menuItems.push(menuItemCancel); // Android doesn't need this
     this.uploadMenu.items = menuItems;
