@@ -1,0 +1,98 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "524a-8a2f-2e0a-28d1",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgModalBottomSheet",
+				"parent": null,
+				"children": [
+					"5453-372f-be11-bd42",
+					"1a00-c819-4b0c-1f04"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "5453-372f-be11-bd42",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "524a-8a2f-2e0a-28d1",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "1a00-c819-4b0c-1f04",
+			"userProps": {
+				"title": "pgModalBottomSheet"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "524a-8a2f-2e0a-28d1",
+				"children": [],
+				"title": "pgModalBottomSheet",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"303a-81d1-b806-be6c": {
+			"type": "Page",
+			"id": "524a-8a2f-2e0a-28d1",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgModalBottomSheet",
+				"parent": null,
+				"children": [
+					"5453-372f-be11-bd42",
+					"1a00-c819-4b0c-1f04"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"cbaa-37c0-086e-0ced": {
+			"type": "StatusBar",
+			"id": "5453-372f-be11-bd42",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "524a-8a2f-2e0a-28d1",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"3ce2-a811-98eb-7b52": {
+			"type": "HeaderBar",
+			"id": "1a00-c819-4b0c-1f04",
+			"userProps": {
+				"title": "pgModalBottomSheet"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "524a-8a2f-2e0a-28d1",
+				"children": [],
+				"title": "pgModalBottomSheet",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

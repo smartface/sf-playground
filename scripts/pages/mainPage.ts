@@ -6,6 +6,7 @@ import { withDismissAndBackButton } from "@smartface/mixins";
 import Page from "@smartface/native/ui/page";
 import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
 
+
 export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   pages: ConstructorOf<Page>[] = [];
 

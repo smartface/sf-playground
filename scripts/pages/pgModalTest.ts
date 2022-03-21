@@ -6,12 +6,15 @@ import { withDismissAndBackButton } from "@smartface/mixins";
 
 
 export default class PgModalTest extends withDismissAndBackButton(PgModalTestDesign) {
+    state = 0;
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
   initButton() {
     this.btnOpenModal.onPress = () => {
-      this.router.push("modal");
+        if(this.state != 2)
+            this.router.push("modal");
+        this.router.push('/root/btb/tab3/modal/test')
     };
     this.btnDismiss.onPress = () => {
       if (Router.currentRouter instanceof NativeStackRouter) {
@@ -25,6 +28,7 @@ export default class PgModalTest extends withDismissAndBackButton(PgModalTestDes
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
+    this.state +=1;
   }
 
   onLoad() {
