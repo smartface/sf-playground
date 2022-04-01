@@ -8,8 +8,8 @@
 				"children": [
 					"88c1-a794-5133-e410",
 					"c05b-24ff-2ff1-01e2",
-					"799a-dc64-a611-a33f",
-					"a615-9d95-7087-eb56"
+					"a615-9d95-7087-eb56",
+					"85ec-bc1a-057e-0615"
 				],
 				"name": "page1",
 				"orientation": "PORTRAIT",
@@ -17,7 +17,8 @@
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "0.0.1.a"
+			"version": "0.0.1.a",
+			"degree": 0
 		},
 		{
 			"className": ".sf-statusBar",
@@ -29,7 +30,8 @@
 				"parent": "a4e3-b04b-308f-a283"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {},
+			"degree": 1
 		},
 		{
 			"className": ".sf-headerBar",
@@ -44,46 +46,8 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "page1"
-			}
-		},
-		{
-			"className": ".sf-label",
-			"id": "799a-dc64-a611-a33f",
-			"props": {
-				"autoHeight": 39.325842696629216,
-				"children": [],
-				"name": "lbl",
-				"parent": "a4e3-b04b-308f-a283",
-				"text": "Page1",
-				"usePageVariable": true
 			},
-			"type": "Label",
-			"userProps": {
-				"autoHeight": 39.325842696629216,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20,
-					"alignSelf": "STRETCH",
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 32,
-					"bold": false,
-					"italic": false,
-					"family": "SFProText",
-					"style": "Regular"
-				},
-				"height": 600,
-				"left": 0,
-				"multiline": true,
-				"testId": "L-42gAben",
-				"text": "Page1",
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 210, 210, 210, 1 )",
-				"top": 0,
-				"usePageVariable": true
-			}
+			"degree": 1
 		},
 		{
 			"className": ".sf-button",
@@ -109,7 +73,25 @@
 				"top": 0,
 				"usePageVariable": true,
 				"width": null
-			}
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-videoView",
+			"id": "85ec-bc1a-057e-0615",
+			"props": {
+				"children": [],
+				"name": "videoView1",
+				"parent": "a4e3-b04b-308f-a283",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "VideoView",
+			"userProps": {
+				"usePageVariable": true,
+				"testId": "VUKMq9kOM"
+			},
+			"degree": 1
 		}
 	]
 }
