@@ -3,7 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Http from '@smartface/native/net/http';
 import Blob from "@smartface/native/global/blob";
-import AsyncTask from "@smartface/native/asynctask";
+import AsyncTask from "@smartface/native/global/asynctask";
 
 export default class PgAsyncTask extends withDismissAndBackButton(PgAsyncTaskDesign) {
     http: Http = new Http();

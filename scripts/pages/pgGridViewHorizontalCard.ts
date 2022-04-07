@@ -3,7 +3,6 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import GviTitle from 'components/GviTitle';
-import DecelerationRate from '@smartface/native/ui/ios/decelerationrate';
 import System from '@smartface/native/device/system';
 import GridView from '@smartface/native/ui/gridview';
 
@@ -56,7 +55,7 @@ export default class PgGridViewHorizontalCard extends withDismissAndBackButton(P
         gridViewItem.lblTitle.backgroundColor = backgroundColor;
         gridViewItem.applyLayout();
     }
-    this.gvMain.ios.decelerationRate = DecelerationRate.FAST;
+    this.gvMain.ios.decelerationRate = GridView.iOS.DecelerationRate.FAST;
     if (System.OS === System.OSType.ANDROID) {
         this.gvMain.android.snapToAlignment =
             GridView.Android.SnapAlignment.SNAPTO_START;

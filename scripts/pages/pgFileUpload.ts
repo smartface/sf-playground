@@ -65,7 +65,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     const menuItemGallery = new MenuItem({ title: "Pick an Image From Gallery" });
     const menuItemDocument = new MenuItem({ title: "Pick a File" });
     const menuItemCancel = new MenuItem({ title: "Cancel" });
-    menuItemCancel.ios.style = MenuItem.ios.Style.CANCEL;
+    menuItemCancel.ios.style = MenuItem.Styles.CANCEL;
     menuItemCamera.on('selected', () => {
       /**
        * Don't forget to grant relevant permissions before calling this on your published app.

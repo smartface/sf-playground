@@ -3,7 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import GviTitle from 'components/GviTitle';
-import DecelerationRate from '@smartface/native/ui/ios/decelerationrate';
+import DecelerationRate from '@smartface/native/ui/shared/ios/decelerationrate';
 
 type DatasetType = { title: string, backgroundColor: Color };
 const SPAN_COUNT: number = 1;

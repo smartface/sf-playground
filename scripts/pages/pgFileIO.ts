@@ -66,8 +66,8 @@ export default class PgFileIO extends withDismissAndBackButton(PgFileIODesign) {
         path: fetchedFile.path,
         size: fetchedFile.size,
         writable: fetchedFile.writable,
-        resolvedPath: fetchedFile.resolvedPath,
-        drawableResourceId: fetchedFile.drawableResourceId,
+        // resolvedPath: fetchedFile.resolvedPath, //These two variables should be private.
+        // drawableResourceId: fetchedFile.drawableResourceId,
         fullPath: fetchedFile.fullPath,
         type: fetchedFile.type,
         absolutePath: fetchedFile.getAbsolutePath(),

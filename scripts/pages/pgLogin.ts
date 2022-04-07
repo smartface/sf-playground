@@ -1,7 +1,7 @@
 import PgLoginDesign from "generated/pages/pgLogin";
-import ActionKeyType from "@smartface/native/ui/actionkeytype";
-import KeyboardType from "@smartface/native/ui/keyboardtype";
-import TextAlignment from "@smartface/native/ui/textalignment";
+import ActionKeyType from "@smartface/native/ui/shared/android/actionkeytype";
+import KeyboardType from "@smartface/native/ui/shared/keyboardtype";
+import TextAlignment from "@smartface/native/ui/shared/textalignment";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";

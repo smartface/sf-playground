@@ -6,7 +6,7 @@ import { Router, Route } from "@smartface/router";
 import Button from "@smartface/native/ui/button";
 import System from "@smartface/native/device/system";
 import Image from "@smartface/native/ui/image";
-import KeyboardAppearance from "@smartface/native/ui/keyboardappearance";
+import KeyboardAppearance from "@smartface/native/ui/shared/keyboardappearance";
 
 export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design) {
   mySearchView: SearchView;

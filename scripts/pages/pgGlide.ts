@@ -128,7 +128,7 @@ export default class PgGlide extends PgGlideDesign {
         console.log("Device.Hardware.UID: "        + Hardware.UID);
         console.log("Device.Hardware.brandName: "  + Hardware.brandName);
         console.log("Device.Hardware.brandModel: " + Hardware.brandModel);
-        console.log("Device.Hardware.deviceType: "   + Hardware.deviceType);
+        // console.log("Device.Hardware.deviceType: "   + Hardware.deviceType); //TODO: Check after devicetype fix
         if(System.OS === System.OSType.ANDROID) {
             console.log("Device.Hardware.vendorID: "   + Hardware.android.vendorID);
         };

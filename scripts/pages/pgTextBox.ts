@@ -1,20 +1,20 @@
 import PgTextBoxDesign from 'generated/pages/pgTextBox';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import KeyboardType from "@smartface/native/ui/keyboardtype";
-import KeyboardLayout from "@smartface/component-keyboardlayout";
+import KeyboardType from "@smartface/native/ui/shared/keyboardtype";
+// import KeyboardLayout from "@smartface/component-keyboardlayout";
 import System from '@smartface/native/device/system';
-import TextBox, { AutoCapitalize } from '@smartface/native/ui/textbox';
 import Color from '@smartface/native/ui/color';
-import KeyboardAppearance from '@smartface/native/ui/keyboardappearance';
-import TextContentType from '@smartface/native/ui/textcontenttype';
+import KeyboardAppearance from '@smartface/native/ui/shared/keyboardappearance';
+import TextContentType from '@smartface/native/ui/shared/textcontenttype';
 import Font from '@smartface/native/ui/font';
-import TextAlignment from '@smartface/native/ui/textalignment';
+import TextAlignment from '@smartface/native/ui/shared/textalignment';
 import Screen from '@smartface/native/device/screen';
 import { themeService } from 'theme';
 import HeaderBarItem from '@smartface/native/ui/headerbaritem';
-import StatusbarStyle from '@smartface/native/ui/statusbarstyle';
+import { StatusBarStyle }from '@smartface/native/application/statusbar/statusbar';
 import Application from '@smartface/native/application';
+import AutoCapitalize from '@smartface/native/ui/textbox/autocapitalize';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -33,7 +33,6 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
           this.tvMain.ios.showScrollBar = true;
       }
       this.tvMain.scrollEnabled = true;
-      this.tvMain.bounces = true;
       this.tvMain.letterSpacing = 1;
   }
 
@@ -60,7 +59,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
   initTextBoxes() {
     const userNameType =
     System.OS === System.OSType.ANDROID
-      ? KeyboardType.Android.TEXTPERSONNAME
+      ? KeyboardType.android.TEXTPERSONNAME
       : KeyboardType.DEFAULT;
 
     this.tbName.keyboardType = userNameType;
@@ -86,11 +85,11 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.tbPin.keyboardType = KeyboardType.NUMBER;
     this.tbPin.text = "";
 
-    const keyboardLayouts = KeyboardLayout.init([
-        this.tbName,
-        this.tbMail,
-        this.tbPin
-    ]);
+    // const keyboardLayouts = KeyboardLayout.init([
+    //     this.tbName,
+    //     this.tbMail,
+    //     this.tbPin
+    // ]);
     this.initTextBoxEvents();
   }
 
@@ -136,6 +135,6 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.initTextView();
     this.initFontTest();
     this.initBadge();
-    Application.statusBar.style = StatusbarStyle.DEFAULT
+    Application.statusBar.style = StatusBarStyle.DEFAULT
   }
 }

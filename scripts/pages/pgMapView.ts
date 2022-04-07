@@ -1,5 +1,5 @@
 import PgMapViewDesign from "generated/pages/pgMapView";
-import MapView from "@smartface/native/ui/mapview";
+import Pin from "@smartface/native/ui/mapview/pin";
 import Menu from "@smartface/native/ui/menu";
 import MenuItem from "@smartface/native/ui/menuitem";
 import System from "@smartface/native/device/system";
@@ -33,16 +33,16 @@ enum MAPVIEW_CHOICES {
 
 export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign) {
   menu: Menu = new Menu();
-  allPins: MapView.Pin[] = this.generateMockMapData();
-  addedPins: MapView.Pin[] = []; // This is for duplicate prevention
+  allPins: Pin[] = this.generateMockMapData();
+  addedPins: Pin[] = []; // This is for duplicate prevention
   currentMapViewStyle: MAPVIEW_CHOICES = null;
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
-  generateMockMapData(): MapView.Pin[] {
+  generateMockMapData(): Pin[] {
     const randomizedArray = Array.from({ length: 50 }).map(() => {
       const randomized = this.randomizeCoordinates(CenterMapCoordinates);
-      return new MapView.Pin({
+      return new Pin({
         location: {
           latitude: randomized.lat,
           longitude: randomized.lng,
@@ -82,7 +82,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     const radius = new MenuItem({ title: MAPVIEW_CHOICES.RADIUS });
     const fourRegions = new MenuItem({ title: MAPVIEW_CHOICES.FOUR_REGIONS });
     const cancel = new MenuItem({ title: "Cancel" });
-    cancel.ios.style = MenuItem.ios.Style.CANCEL;
+    cancel.ios.style = MenuItem.Styles.CANCEL;
     const menuItems = [radius, fourRegions];
 
     /**
@@ -137,7 +137,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     } else if (lazyLoadType === MAPVIEW_CHOICES.FOUR_REGIONS) {
     }
   }
-  checkForDuplicate(pin: MapView.Pin) {
+  checkForDuplicate(pin: Pin) {
     const doesCurrentPinAdded = this.addedPins.find((addedPin) => {
       return pin.location.latitude === addedPin.location.latitude && pin.location.longitude === addedPin.location.longitude;
     });

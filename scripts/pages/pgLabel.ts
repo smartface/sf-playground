@@ -7,7 +7,7 @@ import System from "@smartface/native/device/system";
 import FlexLayout from "@smartface/native/ui/flexlayout";
 import Label from "@smartface/native/ui/label";
 import { withDismissAndBackButton } from '@smartface/mixins';
-import TextDirection from '@smartface/native/ui/android/textdirection';
+import TextDirection from '@smartface/native/ui/shared/textdirection';
 
 class StyleableImageView extends styleableComponentMixin(ImageView) {}
 class StyleableLabel extends styleableComponentMixin(Label) {}

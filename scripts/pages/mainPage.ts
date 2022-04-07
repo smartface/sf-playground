@@ -28,7 +28,7 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   refreshListView() {
     this.lvPages.itemCount = this.pages.length;
     this.lvPages.refreshData();
-  }
+  } 
   onShow() {
     super.onShow();
     this.refreshListView();

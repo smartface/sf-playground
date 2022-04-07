@@ -3,7 +3,7 @@ import Multimedia from "@smartface/native/device/multimedia";
 import Permission from "@smartface/extension-utils/lib/permission";
 import Application from "@smartface/native/application";
 import SMSReceiver from "@smartface/extension-sms-receiver";
-import TextContentType from "@smartface/native/ui/textcontenttype";
+import TextContentType from "@smartface/native/ui/shared/textcontenttype";
 import DatePicker from "@smartface/native/ui/datepicker";
 import System from "@smartface/native/device/system";
 import { withDismissAndBackButton } from "@smartface/mixins";
@@ -45,7 +45,7 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
       return; // Only works on Android
     }
     Permission.getPermission({
-      androidPermission: Application.Android.Permissions.RECEIVE_SMS,
+      androidPermission: Application.Android.Permissions.RECEIVE_SMS as any, //TODO: Fix after util-to-native
       permissionText: "Requesting to Receive SMS to do awesome stuff",
       permissionTitle: "Permission Required",
     }).then(() => {

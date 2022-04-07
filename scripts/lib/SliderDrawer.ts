@@ -11,7 +11,7 @@ class StyleableButton extends styleableComponentMixin(Button) {}
 let mySliderDrawer = new StyleableSliderDrawer({
   width: 200,
 });
-themeService.addGlobalComponent(mySliderDrawer, "mySliderDrawer");
+themeService.addGlobalComponent(mySliderDrawer as any, "mySliderDrawer");
 let myButton = new StyleableButton({
   text: "Smartface Button",
 });
