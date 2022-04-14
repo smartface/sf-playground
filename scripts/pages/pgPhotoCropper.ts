@@ -8,9 +8,10 @@ import GviMiniPhoto from 'components/GviMiniPhoto';
 import PgPhotoCropperDesign from 'generated/pages/pgPhotoCropper';
 import PgPhotoViewer from './pgPhotoViewer';
 import { Router, Route } from "@smartface/router";
+import { IImage } from '@smartface/native/ui/image/image';
 
 export default class PgPhotoCropper extends PgPhotoCropperDesign {
-    images: Image[];
+    images: IImage[];
     swipeView: SwipeView;
     swipeViewPages: ReturnType<typeof PgPhotoViewer>[];
     activeIndex = 0;

@@ -6,6 +6,7 @@ import ListView from '@smartface/native/ui/listview';
 import { themeService } from 'theme';
 import { StyleContextComponentType } from '@smartface/styling-context';
 import LviTitle from 'components/LviTitle';
+import SwipeItem from '@smartface/native/ui/swipeitem';
 
 type DatasetType = { title: string };
 export default class PgListviewSwipe extends withDismissAndBackButton(PgListviewSwipeDesign) {
@@ -53,10 +54,10 @@ export default class PgListviewSwipe extends withDismissAndBackButton(PgListview
       ListViewItem.lblTitle.text = this.myDataSet[index].title;
     };
     this.lvMain.onRowSwipe = (e) => {
-      const deleteItem = new ListView.SwipeItem() as StyleContextComponentType<ListView.SwipeItem>;
-      const editItem = new ListView.SwipeItem() as StyleContextComponentType<ListView.SwipeItem>;
+      const deleteItem = new ListView.SwipeItem() as StyleContextComponentType<SwipeItem>;
+      const editItem = new ListView.SwipeItem() as StyleContextComponentType<SwipeItem>;
 
-      const items: ListView.SwipeItem[] = [];
+      const items: SwipeItem[] = [];
 
       if (e.direction === ListView.SwipeDirection.RIGHTTOLEFT) {
         deleteItem.text = 'Delete';

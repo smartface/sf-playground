@@ -3,7 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import GviTitle from 'components/GviTitle';
-import DecelerationRate from '@smartface/native/ui/shared/ios/decelerationrate';
+import GridView from '@smartface/native/ui/gridview';
 
 type DatasetType = { title: string, backgroundColor: Color };
 const SPAN_COUNT: number = 1;
@@ -60,7 +60,7 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
         gridViewItem.applyLayout();
     }
 
-    this.gvMain.ios.decelerationRate = DecelerationRate.FAST;
+    this.gvMain.ios.decelerationRate = GridView.iOS.DecelerationRate.FAST;
     this.gvMain.layoutManager.contentInset = { top: 0, left: 0, bottom: 0, right: 20 };
   }
 

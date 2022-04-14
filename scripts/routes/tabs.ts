@@ -58,15 +58,22 @@ import PgListView from "pages/pgListView";
 import PgModalBottomSheet from "pages/pgModalBottomSheet";
 import PgPicker from "pages/pgPicker";
 import PgGridView from "pages/pgGridView";
-
+import PgShimmerFlexLayout from "pages/pgShimmerFlexLayout";
+import PgTabbarController from 'pages/pgTabbarController';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
 export const tab0: Tab = {
   name: "Native",
   tabIndex: 0,
-  pages: [PgFileUpload, PgBadgeAnimation, PgComponentFromCode, PgButtonPress, PgMapView, PgMapViewRadius, PgMapRegion, PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask, PgRangeSlider, PgListView, PgGridView, PgPicker, PgTimePicker, PgViewGroup, PgBlurView, PgLabel, PgTextBox, PgSpeechRecognizer],
+  pages: [PgFileUpload, 
+    PgBadgeAnimation, 
+    PgComponentFromCode, 
+    PgButtonPress, PgMapView, 
+    PgMapViewRadius, PgMapRegion, PgShimmerFlexLayout, PgTabbarController as any,
+    PgMapViewRegion, PgHeaderImage, PgEventEmitter, PgNativeSwitch, PageHideShow, PgYogaTest, PgDynamicSize, PgNativeFunctions, PgPhotoPicker, PgToastMessage, PgHttp, PgFileIO, PgSound, PgAsyncTask, PgRangeSlider, PgListView, PgGridView, PgPicker, PgTimePicker, PgViewGroup, PgBlurView, PgLabel, PgTextBox, PgSpeechRecognizer]
 };
+
 
 export const tab1: Tab = {
   name: "Utility",

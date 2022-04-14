@@ -3,6 +3,7 @@ import MapView from "@smartface/native/ui/mapview";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
+import Pin from "@smartface/native/ui/mapview/pin";
 
 
 const MAP_RANDOM_RANGE = 1;
@@ -24,12 +25,12 @@ const CenterMapCoordinates: MapPoint = Object.freeze({
 });
 
 export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewRadiusDesign) {
-  allPins: MapView.Pin[] = this.generateMockMapData();
-  addedPins: MapView.Pin[] = []; // This is for duplicate prevention
+  allPins: Pin[] = this.generateMockMapData();
+  addedPins: Pin[] = []; // This is for duplicate prevention
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
-  generateMockMapData(): MapView.Pin[] {
+  generateMockMapData(): Pin[] {
     const randomizedArray = Array.from({ length: 50 }).map(() => {
       const randomized = this.randomizeCoordinates(CenterMapCoordinates);
       return new MapView.Pin({
@@ -86,7 +87,7 @@ export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewR
       }
     });
   }
-  checkForDuplicate(pin: MapView.Pin) {
+  checkForDuplicate(pin: Pin) {
     const doesCurrentPinAdded = this.addedPins.find((addedPin) => {
       return pin.location.latitude === addedPin.location.latitude && pin.location.longitude === addedPin.location.longitude;
     });

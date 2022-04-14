@@ -17,18 +17,8 @@ Application.on("backButtonPressed", () => {
 const ROOT_PATH = "/root";
 const TAB_PREFIX = "tab";
 
-function generateInnerPageRoutes(basePath: string, pages: ConstructorOf<Page>[]) {
-  return pages.map((page) => {
-    return Route.of({
-      path: `${basePath}/${page.name}`,
-      build: (router, route) => new page(router, route),
-    });
-  });
-}
-
 function generateRoute(basePath: string, page: ConstructorOf<Page>) {
   const pageName = page.name;
-
   return Route.of({
     path: `${basePath}/${pageName}`,
     build: (router, route) => new page(router, route),
@@ -90,7 +80,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs["tab0"]) {
           })
         ],
       }),
-      ...generateInnerPageRoutes(path, innerPages)
+      ...innerPages.map((page) => generateRoute(basePath, page))
     ],
   });
 }

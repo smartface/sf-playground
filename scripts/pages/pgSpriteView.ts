@@ -18,7 +18,7 @@ export default class PgSpriteView extends withDismissAndBackButton(PgSpriteViewD
       imageFillType: ImageView.FillType.ASPECTFIT,
     });
     this.spriteView.setSprite({
-      sheet: Image.createFromFile("images://braid.png"), // Image for the frame
+      sheet: Image.createFromFile("images://braid.png") as Image, // Image for the frame
       frameX: 7, // Distinct image count on X axis
       frameY: 4, // Distinct image count on Y axis
       frameCount: 27, // Frame count of the image

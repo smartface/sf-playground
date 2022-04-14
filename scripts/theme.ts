@@ -1,6 +1,7 @@
 import Data from "@smartface/native/global/data";
 import Application from "@smartface/native/application";
 import { config } from "settings.json";
+
 import { ThemeService } from "@smartface/styling-context/lib/ThemeService";
 
 const themeConfig = config.theme;

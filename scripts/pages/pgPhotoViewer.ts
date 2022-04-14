@@ -1,14 +1,14 @@
-import Image from '@smartface/native/ui/image';
+import { IImage } from '@smartface/native/ui/image/image';
 import PgPhotoViewerDesign from 'generated/pages/pgPhotoViewer';
 
-export default function PgPhotoViewer(props: { image: Image }) {
+export default function PgPhotoViewer(props: { image: IImage }) {
     return class extends PgPhotoViewerDesign {
         initialized = false;
         constructor() {
             super();
             this.headerBar.title = ' ';
         }
-        setImage(image: Image) {
+        setImage(image: IImage) {
             this.img.image = image;
         }
         onShow() {

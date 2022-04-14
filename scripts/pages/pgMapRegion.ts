@@ -5,6 +5,7 @@ import MapView from "@smartface/native/ui/mapview";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
+import Pin from "@smartface/native/ui/mapview/pin";
 
 
 export default class PgMapRegion extends withDismissAndBackButton(PgMapRegionDesign) {
@@ -49,7 +50,7 @@ export default class PgMapRegion extends withDismissAndBackButton(PgMapRegionDes
     this.mapView1.clusterFont = Font.create(Font.DEFAULT, 20, Font.BOLD);
     this.mapView1.ios.clusterPadding = 15;
 
-    this.mapView1.onClusterPress = (pins: MapView.Pin[]) => {
+    this.mapView1.onClusterPress = (pins: Pin[]) => {
       // var centerLocation = this.averageGeolocation(pins);
       // this.mapView1.setCenterLocationWithZoomLevel(centerLocation, 12, true);
     };

@@ -13,6 +13,7 @@ import Network from "@smartface/native/device/network";
 import { Route } from "@smartface/router";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router } from "@smartface/router";
+import { IImage } from "@smartface/native/ui/image/image";
 
 export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadDesign) {
   protected uploadMenu = new Menu();
@@ -35,7 +36,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     this.setVisible(this.aiUploadIndicator, false);
   }
 
-  selectFileAction(file: Image | File) {
+  selectFileAction(file: IImage | File) {
     if (file instanceof File) {
       // If your video is supposed to be really big like >100 MiB, consider dividing them into chunks.
       const fileStream = file.openStream(FileStream.StreamType.READ, FileStream.ContentMode.BINARY);

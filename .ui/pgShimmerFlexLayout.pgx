@@ -1,0 +1,92 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "7428-985a-1805-4283",
+			"initialized": true,
+			"props": {
+				"children": [
+					"ffb6-aa13-a10c-aee3",
+					"d09d-435d-4261-0d5e",
+					"b6ae-08ce-c00a-3659",
+					"49ea-9c17-b86a-e426"
+				],
+				"name": "pgShimmerFlexLayout",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "ffb6-aa13-a10c-aee3",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7428-985a-1805-4283"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "d09d-435d-4261-0d5e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7428-985a-1805-4283",
+				"title": "pgShimmerFlexLayout"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgShimmerFlexLayout"
+			}
+		},
+		{
+			"className": ".sf-shimmerFlexLayout",
+			"id": "b6ae-08ce-c00a-3659",
+			"props": {
+				"children": [
+					"65da-90cd-3503-48b2"
+				],
+				"name": "shimmerFlexLayout1",
+				"parent": "7428-985a-1805-4283"
+			},
+			"ref": null,
+			"type": "ShimmerFlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-activityIndicator",
+			"id": "65da-90cd-3503-48b2",
+			"props": {
+				"children": [],
+				"name": "activityIndicator1",
+				"parent": "b6ae-08ce-c00a-3659"
+			},
+			"ref": null,
+			"type": "ActivityIndicator",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button",
+			"id": "49ea-9c17-b86a-e426",
+			"oldName": "btnToggle",
+			"props": {
+				"children": [],
+				"name": "btnToggleShimmer",
+				"parent": "7428-985a-1805-4283",
+				"text": "button1"
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"text": "button1"
+			}
+		}
+	]
+}

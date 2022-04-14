@@ -16,7 +16,7 @@ export default class Page2 extends withDismissAndBackButton(Page2Design) {
     touch.addPressEvent(this.btnSayHello, () => {
       alert("Hello World!");
     });
-    this.routeData = route.getState().routeData;
+    this.routeData = route?.getState().routeData || {};
   }
 
   /**
