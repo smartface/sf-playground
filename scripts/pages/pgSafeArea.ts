@@ -6,23 +6,23 @@ import { Router, Route } from "@smartface/router";
 export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.ios.onSafeAreaPaddingChange = (padding) => {
-      this.dispatch({
-        type: "updateUserStyle",
-        userStyle: {
-          paddingBottom: padding.bottom,
-          paddingLeft: padding.left,
-          paddingRight: padding.right,
-          paddingTop: padding.top,
-        },
-      });
-      this.layout.applyLayout();
-    };
+    // this.ios.onSafeAreaPaddingChange = (padding) => {
+    //   this.dispatch({
+    //     type: "updateUserStyle",
+    //     userStyle: {
+    //       paddingBottom: padding.bottom,
+    //       paddingLeft: padding.left,
+    //       paddingRight: padding.right,
+    //       paddingTop: padding.top,
+    //     },
+    //   });
+    //   this.layout.applyLayout();
+    // };
   }
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router);
+    // this.initBackButton(this.router);
   }
 
   onLoad() {
