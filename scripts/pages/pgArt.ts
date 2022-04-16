@@ -27,6 +27,7 @@ export default class PgArt extends withDismissAndBackButton(PgArtDesign) {
 
   initSwitch() {
     this.swArtToggle.on('toggleChanged', (toggle) => {
+      console.info('toggleChange: ', toggle)
         this.toggleBetweenArt(toggle); 
     });
     // this.swArtToggle.android.thumbImage = 'images://arrow_back.png'

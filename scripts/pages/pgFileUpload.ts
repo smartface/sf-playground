@@ -96,7 +96,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     const menuItems = [menuItemGallery, menuItemCamera, menuItemDocument];
     System.OS === System.OSType.IOS && menuItems.push(menuItemCancel); // Android doesn't need this
     this.uploadMenu.items = menuItems;
-    this.flFileSelector.onTouchEnded = () => this.uploadMenu.show(this);
+    this.flFileSelector.on('touch', () => this.uploadMenu.show(this));
   }
 
   initButton() {

@@ -1,4 +1,5 @@
 /* globals lang */
+import "@smartface/native";
 import "i18n/i18n"; // Generates global lang object
 import Application from "@smartface/native/application";
 import { errorStackBySourceMap } from "@smartface/source-map";

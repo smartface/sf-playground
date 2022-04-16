@@ -9,7 +9,7 @@ export default class PgNoTouch extends withDismissAndBackButton(PgNoTouchDesign)
   touchCounter = 0;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    alert("TEST");
+    // alert("TEST");
   }
 
   async yourServiceCall(): Promise<void> {
