@@ -70,6 +70,7 @@ import PgGridViewFullSpan from "pages/pgGridViewFullSpan";
 import PgGridViewHorizontalCard from "pages/pgGridViewHorizontalCard";
 import PgGridViewRowRange from "pages/pgGridViewPagination";
 import PgGridViewPagination from "pages/pgGridViewRowRange";
+import PgTouchHandling from "pages/pgTouchHandling";
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -79,6 +80,7 @@ export const tab0: Tab = {
   pages: [
     PgFileUpload,
     PgBadgeAnimation,
+    PgTouchHandling,
     PgComponentFromCode,
     PgButtonPress,
     PgMapView,
