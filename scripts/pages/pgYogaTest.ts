@@ -79,12 +79,10 @@ export default class PgYogaTest extends PgYogaTestDesign {
 
   onShow() {
     super.onShow();
-    console.info('yogatest onshow');
   }
 
   onLoad() {
     super.onLoad();
     this.initLayout();
-    console.info('yogatest onload');
   }
 }
