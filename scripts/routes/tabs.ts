@@ -97,7 +97,6 @@ export const tab0: Tab = {
     PgEventEmitter,
     PgNativeSwitch,
     PageHideShow,
-    PgYogaTest,
     PgDynamicSize,
     PgNativeFunctions,
     PgPhotoPicker,
@@ -144,5 +143,5 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: "Miscellaneous",
   tabIndex: 4,
-  pages: [PageSample, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgApplicationEvents],
+    pages: [PageSample, PgYogaTest, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgApplicationEvents],
 };
