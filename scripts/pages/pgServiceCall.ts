@@ -1,6 +1,6 @@
 import PgServiceCallDesign from "generated/pages/pgServiceCall";
 import network from "@smartface/extension-utils/lib/network";
-import { getDogPic, dogApiData } from "services/dogPic";
+import { getDogPic, dogApiData, getDogPicWithAxios } from "services/dogPic";
 import Network from "@smartface/native/device/network";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import { Router, Route } from "@smartface/router";
@@ -11,7 +11,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
   constructor(private router?: Router, private route?: Route) {
     super({});
 
-    this.btnRequest.onPress = async () => {
+    this.btnUseServiceCall.onPress = async () => {
       this.checkAndSetNetworkStatus();
       try {
         if (this.isConnected) {
@@ -34,6 +34,17 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
         alert("Service unavailable");
       }
     };
+    this.btnUseAxios.onPress = async () => {
+        this.checkAndSetNetworkStatus();
+        try {
+            if (this.isConnected) {
+                const response: dogApiData = await getDogPicWithAxios();
+                this.imgDogPic.loadFromUrl({ url: response.message });
+            }
+        } catch (err) {
+            alert("Service unavailable");
+        }
+    }
   }
 
   initIsEmulatorCheck() {
