@@ -58,6 +58,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"backgroundColor": "rgba( 126, 211, 33, 1 )",
 				"testId": "yxkWIEB8n",
 				"usePageVariable": true
 			}

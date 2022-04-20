@@ -12,32 +12,30 @@ Application.on("unhandledError", (e: UnhandledError) => {
   const error = errorStackBySourceMap(e);
   const message = {
     message: System.OS === System.OSType.ANDROID ? error.stack : e.message,
-    stack: System.OS === System.OSType.IOS ? error.stack : undefined
+    stack: System.OS === System.OSType.IOS ? error.stack : undefined,
   };
   console.error("Unhandled Error: ", message);
   alert(JSON.stringify(message, null, 2), e.type || lang.applicationError);
 });
 
-Application.on('exit', () => {
-    console.log('Application onExit Test');
+Application.on("exit", () => {
+  console.log("Application onExit Test");
 });
 
-Application.on('maximize', () => {
-    alert('Application onMaximize Test');
+Application.on("maximize", () => {
+  alert("Application onMaximize Test");
 });
 
-Application.on('minimize', () => {
-    console.log('Application onMinimize Test');
+Application.on("minimize", () => {
+  console.log("Application onMinimize Test");
 });
 
-Application.on('applicationCallReceived', (e: {
-    data: { [key: string]: any };
-  }): void => {
-    alert({
-      title: "onApplicationCallReceived",
-      message: JSON.stringify(e),
-    });
+Application.on("applicationCallReceived", (e: { data: { [key: string]: any } }): void => {
+  alert({
+    title: "onApplicationCallReceived",
+    message: JSON.stringify(e),
   });
-  
+});
+
 
 import "start";

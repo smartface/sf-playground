@@ -3,14 +3,12 @@ import System from "@smartface/native/device/system";
 import Animator from "@smartface/native/ui/animator";
 import LviBadge from "components/LviBadge";
 import FlImage from "components/FlImage";
-import ListViewIndex from "@smartface/extension-listviewindex";
 import { withDismissAndBackButton } from "@smartface/mixins";
 import Router from "@smartface/router/lib/router/Router";
 import { Route } from "@smartface/router";
 
 export default class PgBadgeAnimation extends withDismissAndBackButton(PgBadgeAnimationDesign) {
   scrollData: string[] = [];
-  listViewIndex = new ListViewIndex();
   constructor(private router?: Router, private route?: Route) {
     super({});
     let firstLetter = 65;
@@ -20,15 +18,6 @@ export default class PgBadgeAnimation extends withDismissAndBackButton(PgBadgeAn
   }
 
   initListView() {
-    this.listViewIndex = new ListViewIndex();
-    this.listViewIndex.width = 20;
-    this.listViewIndex.items = this.scrollData;
-    System.OS === System.OSType.IOS && this.listViewIndex.reloadData();
-    this.listViewIndex.indexDidSelect = (index) => {
-      this.myListView.scrollTo(0, false);
-      return true; //haptic
-    };
-    this.layout.addChild(this.listViewIndex);
     this.myListView.onPullRefresh = () => {
       this.refreshListView();
       this.myListView.stopRefresh();
