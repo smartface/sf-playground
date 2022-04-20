@@ -80,9 +80,9 @@
     "@smartface/core" "^5.0.0-alpha.0"
 
 "@smartface/native@^5.0.0-alpha":
-  version "5.0.0-alpha.43"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.43.tgz#8ff27752a98ef4ef870267d86106e5f447707c80"
-  integrity sha512-AetcbkZDmJK2cJNrIrz+4FeLIDt0/fAlsfCxtlfhA1L9Ioi+B9zAGNV//e8YSj0On9rSUZGiJ692xyFhFpLowg==
+  version "5.0.0-alpha.45"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.45.tgz#65e863c473cbfbd6331fa46365aac7e69cd8f216"
+  integrity sha512-iLm3i1+fXJBdZPTdye50kOEaC2npQxLaNe7TY2FOOsKk/X2eDBh0zXRZ7Xecjnjxobr9812zaJ5Rll91mN25BQ==
   dependencies:
     events "^3.3.0"
 
@@ -95,9 +95,9 @@
     resolve-pathname "^2.2.0"
 
 "@smartface/source-map@^5.0.0-alpha":
-  version "5.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.0.0-alpha.0.tgz#13668767858e5b6737720914b7d7be0aff675055"
-  integrity sha512-OCfWBziR8DIPMPgx09hHub3YrhSamBRh4hcbWG/nKIQE/yzMqSTsfEnKjLzB/EQKmJftHkl1LV41wPQyACu+Pg==
+  version "5.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.0.0-alpha.1.tgz#d66d648a8cb2cac543737d6ad7bf8a874d5c5db2"
+  integrity sha512-S1flFX1LsbCH6mS4wWsoOcUWkWmbgPAqBdqkBBSTNHPeXkeAWnuujd0BzdE35aKQS1e7i4faYPuLb+xXRlq/Lg==
   dependencies:
     source-map "0.6.1"
 
