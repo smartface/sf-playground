@@ -15,7 +15,7 @@ Application.on("unhandledError", (e: UnhandledError) => {
     stack: System.OS === System.OSType.IOS ? error.stack : undefined,
   };
   console.error("Unhandled Error: ", message);
-  alert(JSON.stringify(message, null, 2), e.type || lang.applicationError);
+  // alert(JSON.stringify(message, null, 2), e.type || lang.applicationError);
 });
 
 Application.on("exit", () => {
