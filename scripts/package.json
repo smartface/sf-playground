@@ -12,7 +12,7 @@
     "@smartface/native": "^5.0.0-alpha",
     "@smartface/router": "^2.3.1",
     "@smartface/source-map": "^5.0.0-alpha",
-    "@smartface/styling-context": "^5.0.0-alpha",
+    "@smartface/styling-context": "5.0.0-alpha.5",
     "@smartface/webviewbridge": "1.0.4",
     "axios": "^0.26.1"
   }
