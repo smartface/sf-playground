@@ -70,6 +70,7 @@ export default class PgLabel extends withDismissAndBackButton(PgLabelDesign) {
   });
   this.textLabel.onTouch = () => {
     alert("Upload Operation System");
+    return true;
   };
   this.myLabel2 = new StyleableLabel({
     text: "General Settingssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",

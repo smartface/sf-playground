@@ -15,6 +15,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     super({});
     this.lblMenu.onTouch = () => {
       this.myMenu.show(this);
+      return false;
     };
   }
 

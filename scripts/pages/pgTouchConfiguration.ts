@@ -15,7 +15,10 @@ export default class PgTouchConfiguration extends PgTouchConfigurationDesign {
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     this.tbFadeDuration.text = this.options.fadeDuration.toString();
     this.tbFadeMaxOpacity.text = this.options.fadeMaxOpacity.toString();
-    this.btnUpdate.onTouch = () => this.updateConfiguration();
+    this.btnUpdate.onTouch = () => {
+      this.updateConfiguration();
+      return true;
+    }
   }
   updateConfiguration() {
     this.options = {

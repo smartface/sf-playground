@@ -112,7 +112,10 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     });
     System.OS === System.OSType.IOS && menuItems.push(cancel); // Android doesn't need this
     this.menu.items = menuItems;
-    this.flSelector.onTouchEnded = () => this.menu.show(this);
+    this.flSelector.onTouchEnded = () => {
+      this.menu.show(this);
+      return true;
+    };
   }
 
   addPinsWithLazyLoad(lazyLoadType: MAPVIEW_CHOICES) {

@@ -69,7 +69,10 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
   }
 
   initGuid() {
-    this.lblGuid.onTouch = () => this.createAndUpdateGuid();
+    this.lblGuid.onTouch = () => {
+      this.createAndUpdateGuid();
+      return true;
+    };
     this.createAndUpdateGuid();
   }
 
@@ -80,8 +83,14 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
 
   initHtml() {
     this.taHtml.text = exampleHtml;
-    this.btnAttrTexts.onTouch = () => this.createAndShowAttributedTexts();
-    this.btnAttrStr.onTouch = () => this.createAndShowAttributedStrs();
+    this.btnAttrTexts.onTouch = () => {
+      this.createAndShowAttributedTexts();
+      return false;
+    }
+    this.btnAttrStr.onTouch = () => {
+      this.createAndShowAttributedStrs();
+      return false;
+    };
   }
 
   createAndShowAttributedTexts() {
