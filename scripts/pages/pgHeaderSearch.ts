@@ -41,7 +41,6 @@ export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design
     this.mySearchView.searchIcon = Image.createFromFile('images://headerbar_done.png');
     this.mySearchView.text = "Default Text";
     this.initSearchViewEvents();
-    //@ts-ignore
     this.mySearchView.cursorColor = Color.BLACK;
     if(System.OS === System.OSType.ANDROID) {
         this.mySearchView.android.searchButtonIcon = Image.createFromFile('images://headerbar_done.png');

@@ -96,8 +96,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     super.onLoad();
     this.initIsEmulatorCheck();
     this.checkAndSetNetworkStatus();
-    //@ts-ignore
-    const notifier = new Network.createNotifier();
+    const notifier = Network.notifier;
 
     notifier.subscribe((connectionType) => {
       this.checkAndSetNetworkStatus();
