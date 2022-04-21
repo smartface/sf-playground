@@ -71,6 +71,7 @@ import PgGridViewHorizontalCard from "pages/pgGridViewHorizontalCard";
 import PgGridViewRowRange from "pages/pgGridViewPagination";
 import PgGridViewPagination from "pages/pgGridViewRowRange";
 import PgTouchHandling from "pages/pgTouchHandling";
+import PgContacts from "pages/pgContacts";
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -121,6 +122,7 @@ export const tab0: Tab = {
     PgGridViewHorizontalCard,
     PgGridViewRowRange,
     PgGridViewPagination,
+    PgContacts
   ],
 };
 

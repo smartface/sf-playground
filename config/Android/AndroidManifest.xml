@@ -14,7 +14,8 @@
 	<!-- Required for vibrate function. -->
 	<!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
 	<!-- Required for contact list functions. -->
-	<!-- <uses-permission android:name="android.permission.READ_CONTACTS"/> -->
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 	<!-- Allows an application to get information about the currently or recently running tasks. -->
 	<!--<uses-permission android:name="android.permission.GET_TASKS"/>-->
 	<!-- Required for camera functions. -->
