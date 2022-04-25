@@ -1,6 +1,6 @@
-import PgListViewDesign from "generated/pages/pgListView";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
+import PgListViewDesign from 'generated/pages/pgListView';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 export default class PgListView extends withDismissAndBackButton(PgListViewDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -8,21 +8,21 @@ export default class PgListView extends withDismissAndBackButton(PgListViewDesig
   }
 
   initLabels() {
-    this.flMultipleLvi.lblTitle.text = "Multiple ListviewItem";
-    this.flPagination.lblTitle.text = "Lazy Loading (Pagination)";
-    this.flStickyItem.lblTitle.text = "Listview with Sticky Item";
-    this.flSwipeItem.lblTitle.text = "ListviewItem Swipe";
-    this.flDragDrop.lblTitle.text = "ListviewItem Drag&Drop";
-    this.flZebra.lblTitle.text = "Listview Zebra Design";
+    this.flMultipleLvi.lblTitle.text = 'Multiple ListviewItem';
+    this.flPagination.lblTitle.text = 'Lazy Loading (Pagination)';
+    this.flStickyItem.lblTitle.text = 'Listview with Sticky Item';
+    this.flSwipeItem.lblTitle.text = 'ListviewItem Swipe';
+    this.flDragDrop.lblTitle.text = 'ListviewItem Drag&Drop';
+    this.flZebra.lblTitle.text = 'Listview Zebra Design';
   }
 
   initPressEvents() {
-    this.flMultipleLvi.imgRightArrow.on("touch", () => this.router.push("PgListviewMultipleLvi"));
-    this.flPagination.imgRightArrow.on("touch", () => this.router.push("PgListviewPagination"));
-    this.flStickyItem.imgRightArrow.on("touch", () => this.router.push("PgListviewSticky"));
-    this.flSwipeItem.imgRightArrow.on("touch", () => this.router.push("PgListviewSwipe"));
-    this.flDragDrop.imgRightArrow.on("touch", () => this.router.push("PgListviewDragDrop"));
-    this.flZebra.imgRightArrow.on("touch", () => this.router.push("PgListviewZebra"));
+    this.flMultipleLvi.imgRightArrow.on('touch', () => this.router.push('PgListviewMultipleLvi'));
+    this.flPagination.imgRightArrow.on('touch', () => this.router.push('PgListviewPagination'));
+    this.flStickyItem.imgRightArrow.on('touch', () => this.router.push('PgListviewSticky'));
+    this.flSwipeItem.imgRightArrow.on('touch', () => this.router.push('PgListviewSwipe'));
+    this.flDragDrop.imgRightArrow.on('touch', () => this.router.push('PgListviewDragDrop'));
+    this.flZebra.imgRightArrow.on('touch', () => this.router.push('PgListviewZebra'));
   }
 
   /**

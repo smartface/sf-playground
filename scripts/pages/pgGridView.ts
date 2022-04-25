@@ -12,7 +12,7 @@ export default class PgGridView extends withDismissAndBackButton(PgGridViewDesig
     this.flHorizontalCard.lblTitle.text = 'Gridview Horizontal Cards';
     this.flRowRange.lblTitle.text = 'Gridview Row Range Methods';
     this.flPagination.lblTitle.text = 'Lazy Loading (Pagination)';
-  };
+  }
 
   initPressEvents() {
     this.flFullSpan.imgRightArrow.on('touch', () => this.router.push('PgGridViewFullSpan'));

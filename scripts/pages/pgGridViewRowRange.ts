@@ -15,7 +15,7 @@ export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridV
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
-  
+
   generateDataset(): DatasetType[] {
     let dataset: DatasetType[] = [];
     for (let i = 0; i < 12; ++i) {
@@ -28,50 +28,44 @@ export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridV
   }
 
   initButtonPressEvents() {
-      this.btnInsert.on('press', () => {
-          this.insertRowToDataset();
-          this.gvMain.itemCount = this.myDataset.length;
-          this.gvMain.insertRowRange({positionStart: 0, itemCount: 1});
-          if (System.OS === System.OSType.ANDROID) {
-            this.gvMain.scrollTo(0);
-          }
-      });
+    this.btnInsert.on('press', () => {
+      this.insertRowToDataset();
+      this.gvMain.itemCount = this.myDataset.length;
+      this.gvMain.insertRowRange({ positionStart: 0, itemCount: 1 });
+      if (System.OS === System.OSType.ANDROID) {
+        this.gvMain.scrollTo(0);
+      }
+    });
 
-      this.btnRefresh.on('press', () => {
-          this.myDataset[0].title = `New Title ${this.refreshCount}`;
-          this.refreshCount++;
-          this.gvMain.itemCount = this.myDataset.length;
-          this.gvMain.refreshRowRange({positionStart: 0, itemCount: 1});
-      });
+    this.btnRefresh.on('press', () => {
+      this.myDataset[0].title = `New Title ${this.refreshCount}`;
+      this.refreshCount++;
+      this.gvMain.itemCount = this.myDataset.length;
+      this.gvMain.refreshRowRange({ positionStart: 0, itemCount: 1 });
+    });
 
-      this.btnDelete.on('press', () => {
-          this.myDataset.splice(0, 1);
-          this.gvMain.deleteRowRange({positionStart: 0, itemCount: 1});
-          this.gvMain.itemCount = this.myDataset.length;
-      })
+    this.btnDelete.on('press', () => {
+      this.myDataset.splice(0, 1);
+      this.gvMain.deleteRowRange({ positionStart: 0, itemCount: 1 });
+      this.gvMain.itemCount = this.myDataset.length;
+    });
   }
 
   insertRowToDataset() {
     this.myDataset.unshift({ title: 'New Item', backgroundColor: Color.RED });
   }
 
-
-
-
-
-
   initGridView() {
-      this.gvMain.layoutManager.onItemLength = () => ITEM_WIDTH;
-      this.gvMain.itemCount = this.myDataset.length;
-      this.gvMain.refreshEnabled = false;
-      this.gvMain.scrollBarEnabled = false;
-      this.gvMain.onItemBind = (gridViewItem: GviTitle, index) => {
-        let { title, backgroundColor } = this.myDataset[index];
-        gridViewItem.lblTitle.text = title;
-        gridViewItem.lblTitle.backgroundColor = backgroundColor;
-        gridViewItem.applyLayout();
-      };
-
+    this.gvMain.layoutManager.onItemLength = () => ITEM_WIDTH;
+    this.gvMain.itemCount = this.myDataset.length;
+    this.gvMain.refreshEnabled = false;
+    this.gvMain.scrollBarEnabled = false;
+    this.gvMain.onItemBind = (gridViewItem: GviTitle, index) => {
+      let { title, backgroundColor } = this.myDataset[index];
+      gridViewItem.lblTitle.text = title;
+      gridViewItem.lblTitle.backgroundColor = backgroundColor;
+      gridViewItem.applyLayout();
+    };
   }
 
   /**

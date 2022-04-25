@@ -1,10 +1,10 @@
-import PageSampleDesign from "generated/pages/pgHttp";
-import Application from "@smartface/native/application";
-import ImageView from "@smartface/native/ui/imageview";
-import Http from "@smartface/native/net/http";
-import Image from "@smartface/native/ui/image";
-import { Router, Route } from "@smartface/router";
-import { styleableComponentMixin } from "@smartface/styling-context";
+import PageSampleDesign from 'generated/pages/pgHttp';
+import Application from '@smartface/native/application';
+import ImageView from '@smartface/native/ui/imageview';
+import Http from '@smartface/native/net/http';
+import Image from '@smartface/native/ui/image';
+import { Router, Route } from '@smartface/router';
+import { styleableComponentMixin } from '@smartface/styling-context';
 
 class StyleableImageView extends styleableComponentMixin(ImageView) {}
 
@@ -18,8 +18,8 @@ export default class PgHttp extends PageSampleDesign {
 
   requestImage(): void {
     this.myHttp.requestImage({
-      method: "GET",
-      url: "https://httpbin.org/image/png",
+      method: 'GET',
+      url: 'https://httpbin.org/image/png',
       onLoad: (e: { statusCode: number; headers: { [key: string]: string }; image: Image }): void => {
         // Image loaded.
         this.myImageView.image = e.image;
@@ -27,17 +27,17 @@ export default class PgHttp extends PageSampleDesign {
       onError: (e: { message: string; body: any; statusCode: number; headers: { [key: string]: string } }): void => {
         // Http request image failed.
         alert(e.message);
-      },
+      }
     });
 
     this.myImageView = new StyleableImageView();
-    this.addChild(this.myImageView, "myImageView", ".sf-imageView", {
+    this.addChild(this.myImageView, 'myImageView', '.sf-imageView', {
       width: 100,
       height: 100,
       flexProps: {
-        alignSelf: "CENTER",
+        alignSelf: 'CENTER'
       },
-      imageFillType: ImageView.FillType.STRETCH,
+      imageFillType: ImageView.FillType.STRETCH
     });
   }
   onShow() {

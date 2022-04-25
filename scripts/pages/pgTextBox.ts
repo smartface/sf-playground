@@ -1,7 +1,7 @@
 import PgTextBoxDesign from 'generated/pages/pgTextBox';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import KeyboardType from "@smartface/native/ui/shared/keyboardtype";
+import KeyboardType from '@smartface/native/ui/shared/keyboardtype';
 // import KeyboardLayout from "@smartface/component-keyboardlayout";
 import System from '@smartface/native/device/system';
 import Color from '@smartface/native/ui/color';
@@ -12,7 +12,7 @@ import TextAlignment from '@smartface/native/ui/shared/textalignment';
 import Screen from '@smartface/native/device/screen';
 import { themeService } from 'theme';
 import HeaderBarItem from '@smartface/native/ui/headerbaritem';
-import { StatusBarStyle }from '@smartface/native/application/statusbar/statusbar';
+import { StatusBarStyle } from '@smartface/native/application/statusbar/statusbar';
 import Application from '@smartface/native/application';
 import AutoCapitalize from '@smartface/native/ui/textbox/autocapitalize';
 
@@ -22,68 +22,64 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
   }
 
   initTextView() {
-      this.tvMain.backgroundColor = Color.GRAY;
-      this.tvMain.font = Font.create('Arial', 20, Font.BOLD);
-      this.tvMain.maxLines = 0;
-      this.tvMain.selectable = true;
-      this.tvMain.text = 'A new text for the texview component to be shown on the multiline';
-      this.tvMain.textAlignment = TextAlignment.TOPCENTER;
-      this.tvMain.textColor = Color.WHITE;
-      if(System.OS === System.OSType.IOS) {
-          this.tvMain.ios.showScrollBar = true;
-      }
-      this.tvMain.scrollEnabled = true;
-      this.tvMain.letterSpacing = 1;
+    this.tvMain.backgroundColor = Color.GRAY;
+    this.tvMain.font = Font.create('Arial', 20, Font.BOLD);
+    this.tvMain.maxLines = 0;
+    this.tvMain.selectable = true;
+    this.tvMain.text = 'A new text for the texview component to be shown on the multiline';
+    this.tvMain.textAlignment = TextAlignment.TOPCENTER;
+    this.tvMain.textColor = Color.WHITE;
+    if (System.OS === System.OSType.IOS) {
+      this.tvMain.ios.showScrollBar = true;
+    }
+    this.tvMain.scrollEnabled = true;
+    this.tvMain.letterSpacing = 1;
   }
 
   initTextBoxEvents() {
-      this.tbName.on("actionButtonPress", () => {
-          console.log("TextBox actionButtonPress test");
-          this.tbMail.requestFocus();
-      });
-      this.tbName.on("clearButtonPress", () => {
-        console.log("TextBox clearButtonPress test");
-      });
-      this.tbMail.on("editBegins", () => {
-        console.log("TextBox editBegins test");
-      });
-      this.tbMail.on("editEnds", () => {
-        console.log("TextBox editEnds test");
-      });
-      this.tbPin.on("textChanged", () => {
-        console.log("TextBox textChanged test");
-      });
-      
+    this.tbName.on('actionButtonPress', () => {
+      console.log('TextBox actionButtonPress test');
+      this.tbMail.requestFocus();
+    });
+    this.tbName.on('clearButtonPress', () => {
+      console.log('TextBox clearButtonPress test');
+    });
+    this.tbMail.on('editBegins', () => {
+      console.log('TextBox editBegins test');
+    });
+    this.tbMail.on('editEnds', () => {
+      console.log('TextBox editEnds test');
+    });
+    this.tbPin.on('textChanged', () => {
+      console.log('TextBox textChanged test');
+    });
   }
 
   initTextBoxes() {
-    const userNameType =
-    System.OS === System.OSType.ANDROID
-      ? KeyboardType.android.TEXTPERSONNAME
-      : KeyboardType.DEFAULT;
+    const userNameType = System.OS === System.OSType.ANDROID ? KeyboardType.android.TEXTPERSONNAME : KeyboardType.DEFAULT;
 
     this.tbName.keyboardType = userNameType;
-    this.tbName.text = "Name";
+    this.tbName.text = 'Name';
     this.tbName.autoCapitalize = 1;
     this.tbName.cursorColor = Color.GREEN;
-    
-//  this.tbName.autoCapitalize = AutoCapitalize.WORDS;  // THIS TO BE TESTED AS WELL.
 
-    if(System.OS === System.OSType.IOS) {
-        this.tbName.ios.clearButtonEnabled = true;
-        this.tbName.ios.minimumFontSize = 20;
-        this.tbName.ios.keyboardAppearance = KeyboardAppearance.DARK;
-        this.tbPin.ios.textContentType = TextContentType.ONETIMECODE;
+    //  this.tbName.autoCapitalize = AutoCapitalize.WORDS;  // THIS TO BE TESTED AS WELL.
+
+    if (System.OS === System.OSType.IOS) {
+      this.tbName.ios.clearButtonEnabled = true;
+      this.tbName.ios.minimumFontSize = 20;
+      this.tbName.ios.keyboardAppearance = KeyboardAppearance.DARK;
+      this.tbPin.ios.textContentType = TextContentType.ONETIMECODE;
     }
-    if(System.OS === System.OSType.ANDROID) {
-       //  this.tbPin.android.maxLength = 4;
+    if (System.OS === System.OSType.ANDROID) {
+      //  this.tbPin.android.maxLength = 4;
     }
-    
+
     this.tbMail.keyboardType = KeyboardType.EMAILADDRESS;
-    this.tbMail.text = "Email Address";
+    this.tbMail.text = 'Email Address';
 
     this.tbPin.keyboardType = KeyboardType.NUMBER;
-    this.tbPin.text = "";
+    this.tbPin.text = '';
 
     // const keyboardLayouts = KeyboardLayout.init([
     //     this.tbName,
@@ -94,23 +90,22 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
   }
 
   initFontTest() {
-        if(System.OS === System.OSType.IOS) {
-            const fontNames = Font.ios.allFontNames();
-            for (const font in fontNames) {
-                console.log("iOS allFontNamesTest: ", fontNames[font]);
-            }
-        }
-        const newFont = Font.createFromFile('assets://FontAwesome5BrandsRegular.ttf', 30);
-        console.log("Size of the font that got created from a file ", newFont.size);
-        const { paddingLeft: pagePadding } = themeService.getNativeStyle('.sf-page');
-        console.log("SizeOfString test: ", this.tvMain.font.sizeOfString(this.tvMain.text, Screen.width - pagePadding * 2 ));
-
+    if (System.OS === System.OSType.IOS) {
+      const fontNames = Font.ios.allFontNames();
+      for (const font in fontNames) {
+        console.log('iOS allFontNamesTest: ', fontNames[font]);
+      }
+    }
+    const newFont = Font.createFromFile('assets://FontAwesome5BrandsRegular.ttf', 30);
+    console.log('Size of the font that got created from a file ', newFont.size);
+    const { paddingLeft: pagePadding } = themeService.getNativeStyle('.sf-page');
+    console.log('SizeOfString test: ', this.tvMain.font.sizeOfString(this.tvMain.text, Screen.width - pagePadding * 2));
   }
 
   initBadge() {
     const headerBarItem = new HeaderBarItem();
-    headerBarItem.title = "Badge";
-    headerBarItem.badge.text = "5";
+    headerBarItem.title = 'Badge';
+    headerBarItem.badge.text = '5';
     headerBarItem.badge.visible = true;
     headerBarItem.badge.move(0, 0);
     this.headerBar.setItems([headerBarItem]);
@@ -135,6 +130,6 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.initTextView();
     this.initFontTest();
     this.initBadge();
-    Application.statusBar.style = StatusBarStyle.DEFAULT
+    Application.statusBar.style = StatusBarStyle.DEFAULT;
   }
 }

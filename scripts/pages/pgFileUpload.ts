@@ -1,23 +1,23 @@
-import PgFileUploadDesign from "generated/pages/pgFileUpload";
-import Menu from "@smartface/native/ui/menu";
-import MenuItem from "@smartface/native/ui/menuitem";
-import System from "@smartface/native/device/system";
-import File from "@smartface/native/io/file";
-import Multimedia from "@smartface/native/device/multimedia";
-import Image from "@smartface/native/ui/image";
-import DocumentPicker from "@smartface/native/device/documentpicker";
-import FileStream from "@smartface/native/io/filestream";
-import Blob from "@smartface/native/global/blob";
-import View from "@smartface/native/ui/view";
-import Network from "@smartface/native/device/network";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
-import { IImage } from "@smartface/native/ui/image/image";
+import PgFileUploadDesign from 'generated/pages/pgFileUpload';
+import Menu from '@smartface/native/ui/menu';
+import MenuItem from '@smartface/native/ui/menuitem';
+import System from '@smartface/native/device/system';
+import File from '@smartface/native/io/file';
+import Multimedia from '@smartface/native/device/multimedia';
+import Image from '@smartface/native/ui/image';
+import DocumentPicker from '@smartface/native/device/documentpicker';
+import FileStream from '@smartface/native/io/filestream';
+import Blob from '@smartface/native/global/blob';
+import View from '@smartface/native/ui/view';
+import Network from '@smartface/native/device/network';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
+import { IImage } from '@smartface/native/ui/image/image';
 
 export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadDesign) {
   protected uploadMenu = new Menu();
-  protected currentBase64 = "";
+  protected currentBase64 = '';
   protected isUploading = false;
   constructor(private router?: Router, private route?: Route) {
     super({});
@@ -25,10 +25,10 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
 
   setVisible(view: StyleContextComponentWithDispatch<View>, visible: boolean) {
     view.dispatch({
-      type: "updateUserStyle",
+      type: 'updateUserStyle',
       userStyle: {
-        visible,
-      },
+        visible
+      }
     });
   }
 
@@ -49,11 +49,11 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
           this.currentBase64 = fileBlob.toBase64();
         } else {
           // Failed to read
-          this.currentBase64 = "";
+          this.currentBase64 = '';
         }
       }
     } else if (file instanceof Image) {
-      this.lblFileSelectorName.text = "image.png";
+      this.lblFileSelectorName.text = 'image.png';
       this.btnUpload.enabled = true;
       const imageBlob = file.toBlob();
       this.currentBase64 = imageBlob.toBase64();
@@ -61,11 +61,11 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
   }
 
   initMenu() {
-    this.uploadMenu.headerTitle = "Select a method to upload";
-    const menuItemCamera = new MenuItem({ title: "Take a Photo" });
-    const menuItemGallery = new MenuItem({ title: "Pick an Image From Gallery" });
-    const menuItemDocument = new MenuItem({ title: "Pick a File" });
-    const menuItemCancel = new MenuItem({ title: "Cancel" });
+    this.uploadMenu.headerTitle = 'Select a method to upload';
+    const menuItemCamera = new MenuItem({ title: 'Take a Photo' });
+    const menuItemGallery = new MenuItem({ title: 'Pick an Image From Gallery' });
+    const menuItemDocument = new MenuItem({ title: 'Pick a File' });
+    const menuItemCancel = new MenuItem({ title: 'Cancel' });
     menuItemCancel.ios.style = MenuItem.Styles.CANCEL;
     menuItemCamera.on('selected', () => {
       /**
@@ -74,14 +74,14 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
        */
       Multimedia.capturePhoto({
         onSuccess: ({ image }) => this.selectFileAction(image),
-        page: this,
+        page: this
       });
     });
     menuItemGallery.on('selected', () => {
       Multimedia.pickFromGallery({
         type: Multimedia.Type.IMAGE,
         onSuccess: ({ image }) => this.selectFileAction(image),
-        page: this,
+        page: this
       });
     });
     menuItemDocument.on('selected', () => {
@@ -90,7 +90,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
         onSuccess: (file) => this.selectFileAction(file),
         onCancel: () => {},
         onFailure: () => {},
-        page: this,
+        page: this
       });
     });
     const menuItems = [menuItemGallery, menuItemCamera, menuItemDocument];
@@ -113,7 +113,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
       return; // No internet
     } else if (Network.connectionType === Network.ConnectionType.MOBILE) {
       // Warn the user about the cellular situation
-      alert("You are on cellular connection, continue to upload? Charges may apply.");
+      alert('You are on cellular connection, continue to upload? Charges may apply.');
     }
     if (this.isUploading === true) {
       return; // Already uploading, don't do anything
@@ -125,7 +125,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     setTimeout(() => {
       // Use the converted base64 to upload your file
       console.info(fileBas64);
-      console.info("File size: ", this.getFileSizeInMebiBytes(fileBas64));
+      console.info('File size: ', this.getFileSizeInMebiBytes(fileBas64));
       this.toggleUpload(false);
     }, 2000);
   }
@@ -134,7 +134,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     this.isUploading = uploading;
     this.btnUpload.enabled = !uploading;
     this.setVisible(this.aiUploadIndicator, uploading);
-    this.lblUploadIndicator.text = uploading ? "Uploading..." : "Upload Complete.";
+    this.lblUploadIndicator.text = uploading ? 'Uploading...' : 'Upload Complete.';
   }
 
   /**
@@ -146,7 +146,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
 
   onShow() {
     super.onShow();
-    this.headerBar.title = "File Upload";
+    this.headerBar.title = 'File Upload';
     this.initBackButton(this.router);
   }
 

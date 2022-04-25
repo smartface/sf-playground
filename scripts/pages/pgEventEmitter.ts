@@ -1,7 +1,7 @@
-import PgEventEmitterDesign from "generated/pages/pgEventEmitter";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
+import PgEventEmitterDesign from 'generated/pages/pgEventEmitter';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
 
 export default class PgEventEmitter extends withDismissAndBackButton(PgEventEmitterDesign) {
   testEmitter: () => void;

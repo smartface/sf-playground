@@ -28,14 +28,12 @@ export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShim
     this.btnToggleShimmer.on('press', () => {
       if (this.shimmerLayout.isShimmering) {
         this.shimmerLayout.stopShimmering();
-        this.btnToggleShimmer.text = 'Start Shimmering'
-
-      }
-      else {
+        this.btnToggleShimmer.text = 'Start Shimmering';
+      } else {
         this.shimmerLayout.startShimmering();
-        this.btnToggleShimmer.text = 'Stop Shimmering'
+        this.btnToggleShimmer.text = 'Stop Shimmering';
       }
-    })
+    });
   }
 
   /**
@@ -45,8 +43,8 @@ export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShim
   onLoad() {
     super.onLoad();
     this.btnToggleShimmer.onPress = () => {
-      console.info(this.router.canGoBack())
+      console.info(this.router.canGoBack());
       // this.router.pushAndBack()
-    }
+    };
   }
 }

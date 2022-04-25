@@ -1,15 +1,15 @@
-import PgYogaTestDesign from "generated/pages/pgYogaTest";
-import FlexLayout from "@smartface/native/ui/flexlayout";
-import Screen from "@smartface/native/device/screen";
-import System from "@smartface/native/device/system";
-import View from "@smartface/native/ui/view";
-import { themeService } from "theme";
-import { Router, Route } from "@smartface/router";
-import { styleableContainerComponentMixin } from "@smartface/styling-context";
+import PgYogaTestDesign from 'generated/pages/pgYogaTest';
+import FlexLayout from '@smartface/native/ui/flexlayout';
+import Screen from '@smartface/native/device/screen';
+import System from '@smartface/native/device/system';
+import View from '@smartface/native/ui/view';
+import { themeService } from 'theme';
+import { Router, Route } from '@smartface/router';
+import { styleableContainerComponentMixin } from '@smartface/styling-context';
 
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
 
-const { paddingLeft, paddingRight, paddingTop, paddingBottom } = themeService.getStyle(".sf-page");
+const { paddingLeft, paddingRight, paddingTop, paddingBottom } = themeService.getStyle('.sf-page');
 
 const MAX_WIDTH = Screen.width - (paddingLeft + paddingRight);
 const MIN_WIDTH = MAX_WIDTH / 2;
@@ -26,41 +26,41 @@ export default class PgYogaTest extends PgYogaTestDesign {
   initLayout() {
     for (let i = 0; i < MAX_ITEM_LENGTH; i++) {
       const parentFlex = new StyleableFlexLayout();
-      this.svMain.addChild(parentFlex, `parent${i}`, ".sf-flexLayout #pgYogaTest-parent");
+      this.svMain.addChild(parentFlex, `parent${i}`, '.sf-flexLayout #pgYogaTest-parent');
       parentFlex.dispatch({
-        type: "updateUserStyle",
+        type: 'updateUserStyle',
         userStyle: {
           width: this.getRandomWidth(),
-          height: this.getRandomHeight(),
-        },
+          height: this.getRandomHeight()
+        }
       });
 
       const childFlex = new StyleableFlexLayout();
-      parentFlex.addChild(childFlex, `child${i}`, ".sf-flexLayout #pgYogaTest-child");
+      parentFlex.addChild(childFlex, `child${i}`, '.sf-flexLayout #pgYogaTest-child');
       childFlex.dispatch({
-        type: "updateUserStyle",
+        type: 'updateUserStyle',
         userStyle: {
           width: this.getRandomWidth(),
-          height: this.getRandomHeight(),
-        },
+          height: this.getRandomHeight()
+        }
       });
 
       System.OS === System.OSType.IOS ? this.svMain.layout.applyLayout() : this.applyLayoutToItems([parentFlex, childFlex]);
 
       setInterval(() => {
         parentFlex.dispatch({
-          type: "updateUserStyle",
+          type: 'updateUserStyle',
           userStyle: {
             width: this.getRandomWidth(),
-            height: this.getRandomHeight(),
-          },
+            height: this.getRandomHeight()
+          }
         });
         childFlex.dispatch({
-          type: "updateUserStyle",
+          type: 'updateUserStyle',
           userStyle: {
             width: this.getRandomWidth() / 2,
-            height: this.getRandomHeight() / 2,
-          },
+            height: this.getRandomHeight() / 2
+          }
         });
 
         System.OS === System.OSType.IOS ? this.svMain.layout.applyLayout() : this.applyLayoutToItems([parentFlex, childFlex]);

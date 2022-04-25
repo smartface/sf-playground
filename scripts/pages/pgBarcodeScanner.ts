@@ -1,8 +1,8 @@
-import PgBarcodeScannerDesign from "generated/pages/pgBarcodeScanner";
-import { BarcodeScanner } from "lib/BarcodeScanner";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import Router from "@smartface/router/lib/router/Router";
-import { Route } from "@smartface/router";
+import PgBarcodeScannerDesign from 'generated/pages/pgBarcodeScanner';
+import { BarcodeScanner } from 'lib/BarcodeScanner';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import Router from '@smartface/router/lib/router/Router';
+import { Route } from '@smartface/router';
 
 export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcodeScannerDesign) {
   constructor(private router?: Router, private route?: Route) {

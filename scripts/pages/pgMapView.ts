@@ -1,12 +1,11 @@
-import PgMapViewDesign from "generated/pages/pgMapView";
-import Pin from "@smartface/native/ui/mapview/pin";
-import Menu from "@smartface/native/ui/menu";
-import MenuItem from "@smartface/native/ui/menuitem";
-import System from "@smartface/native/device/system";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
-
+import PgMapViewDesign from 'generated/pages/pgMapView';
+import Pin from '@smartface/native/ui/mapview/pin';
+import Menu from '@smartface/native/ui/menu';
+import MenuItem from '@smartface/native/ui/menuitem';
+import System from '@smartface/native/device/system';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -20,15 +19,15 @@ interface MapPoint {
 }
 
 const CenterMapCoordinates: MapPoint = Object.freeze({
-  description: "2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301",
+  description: '2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301',
   lat: 37.4488259,
   lng: -122.1600047,
-  title: "Smartface Inc.",
+  title: 'Smartface Inc.'
 });
 
 enum MAPVIEW_CHOICES {
-  RADIUS = "Radius",
-  FOUR_REGIONS = "Four Regions",
+  RADIUS = 'Radius',
+  FOUR_REGIONS = 'Four Regions'
 }
 
 export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign) {
@@ -45,9 +44,9 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
       return new Pin({
         location: {
           latitude: randomized.lat,
-          longitude: randomized.lng,
+          longitude: randomized.lng
         },
-        title: randomized.title || "",
+        title: randomized.title || ''
       });
     });
     return randomizedArray;
@@ -59,7 +58,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     return {
       ...centerPoint,
       lat: randomLatitude,
-      lng: randomLongitude,
+      lng: randomLongitude
     };
   }
 
@@ -67,7 +66,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     this.map.setCenterLocationWithZoomLevel(
       {
         longitude: CenterMapCoordinates.lng,
-        latitude: CenterMapCoordinates.lat,
+        latitude: CenterMapCoordinates.lat
       },
       DEFAULT_ZOOM_LEVEL,
       true
@@ -78,10 +77,10 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
   }
 
   initMenu() {
-    this.menu.headerTitle = "Choose method to fill the map";
+    this.menu.headerTitle = 'Choose method to fill the map';
     const radius = new MenuItem({ title: MAPVIEW_CHOICES.RADIUS });
     const fourRegions = new MenuItem({ title: MAPVIEW_CHOICES.FOUR_REGIONS });
-    const cancel = new MenuItem({ title: "Cancel" });
+    const cancel = new MenuItem({ title: 'Cancel' });
     cancel.ios.style = MenuItem.Styles.CANCEL;
     const menuItems = [radius, fourRegions];
 
@@ -91,7 +90,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     menuItems.forEach((item) => {
       item.onSelected = () => {
         // Fill the texts and select the style
-        const currentSelection = item.title || "Select a Style";
+        const currentSelection = item.title || 'Select a Style';
         this.currentMapViewStyle = item.title as MAPVIEW_CHOICES;
         this.lblCurrentSelection.text = currentSelection;
 
@@ -103,7 +102,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
         this.map.setCenterLocationWithZoomLevel(
           {
             latitude: CenterMapCoordinates.lat,
-            longitude: CenterMapCoordinates.lng,
+            longitude: CenterMapCoordinates.lng
           },
           DEFAULT_ZOOM_LEVEL,
           true

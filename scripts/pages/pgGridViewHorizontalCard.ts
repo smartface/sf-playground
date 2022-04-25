@@ -33,16 +33,16 @@ export default class PgGridViewHorizontalCard extends withDismissAndBackButton(P
     this.gvMain.layoutManager.onItemLength = () => ITEM_WIDTH;
 
     this.gvMain.layoutManager.ios.targetContentOffset = (proposedContentOffset, velocity) => {
-        let positionX = this.gvMain.contentOffset.x / ITEM_WIDTH;
-        let decimalPositionX = positionX;
-        let precisionPositionX = positionX % 1;
-  
-        if (velocity.x == 0 && precisionPositionX >= 0.5) {
-          decimalPositionX = decimalPositionX + 1;
-        } else if (velocity.x > 0) {
-          decimalPositionX = decimalPositionX + 1;
-        }
-  
+      let positionX = this.gvMain.contentOffset.x / ITEM_WIDTH;
+      let decimalPositionX = positionX;
+      let precisionPositionX = positionX % 1;
+
+      if (velocity.x == 0 && precisionPositionX >= 0.5) {
+        decimalPositionX = decimalPositionX + 1;
+      } else if (velocity.x > 0) {
+        decimalPositionX = decimalPositionX + 1;
+      }
+
       return { x: decimalPositionX * ITEM_WIDTH, y: 0 };
     };
 
@@ -50,18 +50,16 @@ export default class PgGridViewHorizontalCard extends withDismissAndBackButton(P
     this.gvMain.refreshEnabled = true;
     this.gvMain.scrollBarEnabled = false;
     this.gvMain.onItemBind = (gridViewItem: GviTitle, index) => {
-        let { title, backgroundColor } = this.myDataset[this.myDataset.length - index - 1];
-        gridViewItem.lblTitle.text = title;
-        gridViewItem.lblTitle.backgroundColor = backgroundColor;
-        gridViewItem.applyLayout();
-    }
+      let { title, backgroundColor } = this.myDataset[this.myDataset.length - index - 1];
+      gridViewItem.lblTitle.text = title;
+      gridViewItem.lblTitle.backgroundColor = backgroundColor;
+      gridViewItem.applyLayout();
+    };
     this.gvMain.ios.decelerationRate = GridView.iOS.DecelerationRate.FAST;
     if (System.OS === System.OSType.ANDROID) {
-        this.gvMain.android.snapToAlignment =
-            GridView.Android.SnapAlignment.SNAPTO_START;
+      this.gvMain.android.snapToAlignment = GridView.Android.SnapAlignment.SNAPTO_START;
     }
     this.gvMain.layoutManager.contentInset = { top: 0, left: 0, bottom: 0, right: 20 };
-        
   }
 
   /**

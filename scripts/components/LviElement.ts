@@ -1,7 +1,7 @@
-import LviElementDesign from "generated/my-components/LviElement";
-import { themeService } from "theme";
+import LviElementDesign from 'generated/my-components/LviElement';
+import { themeService } from 'theme';
 
-const wrapperClassName = ".lviElement-wrapper";
+const wrapperClassName = '.lviElement-wrapper';
 
 export default class LviElement extends LviElementDesign {
   pageName?: string | undefined;
@@ -28,12 +28,12 @@ export default class LviElement extends LviElementDesign {
 
   toggleZebra(isZebra = false) {
     this.flElementWrapper.dispatch({
-      type: "pushClassNames",
+      type: 'pushClassNames',
       classNames: isZebra ? `${wrapperClassName}-zebra` : `${wrapperClassName}`
     });
   }
 
   static getHeight(): number {
-    return themeService.getStyle(".lviElement").height || 0;
+    return themeService.getStyle('.lviElement').height || 0;
   }
 }

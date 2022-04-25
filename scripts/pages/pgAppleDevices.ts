@@ -1,13 +1,13 @@
-import PgAppleDevicesDesign from "generated/pages/pgAppleDevices";
-import { getModelName } from "@smartface/extension-utils/lib/appleDevices";
-import LviPages from "components/LviPages";
-import deviceMappings from "@smartface/extension-utils/lib/appleDevices/deviceMapping.json";
-import copy from "@smartface/extension-utils/lib/copy";
-import { getOrientationOnchage } from "@smartface/extension-utils/lib/orientation";
-import { createAsyncTask } from "@smartface/extension-utils/lib/async";
-import Router from "@smartface/router/lib/router/Router";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
+import PgAppleDevicesDesign from 'generated/pages/pgAppleDevices';
+import { getModelName } from '@smartface/extension-utils/lib/appleDevices';
+import LviPages from 'components/LviPages';
+import deviceMappings from '@smartface/extension-utils/lib/appleDevices/deviceMapping.json';
+import copy from '@smartface/extension-utils/lib/copy';
+import { getOrientationOnchage } from '@smartface/extension-utils/lib/orientation';
+import { createAsyncTask } from '@smartface/extension-utils/lib/async';
+import Router from '@smartface/router/lib/router/Router';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
 
 export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevicesDesign) {
   dataSet: string[];

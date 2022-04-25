@@ -5,7 +5,7 @@ import Toast from '@smartface/native/ui/toast';
 import Color from '@smartface/native/ui/color';
 
 export default class PgToastMessage extends withDismissAndBackButton(PgToastMessageDesign) {
-  toast: Toast
+  toast: Toast;
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
@@ -18,18 +18,20 @@ export default class PgToastMessage extends withDismissAndBackButton(PgToastMess
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
     this.toast = new Toast({
-        message: "This is a toast message",
-        actionTextColor: Color.GREEN,
-        backgroundColor: Color.GRAY,
-        messageTextColor: Color.RED,
-        bottomOffset: 300,
-        onDismissed: () => console.log("test constructor event")
+      message: 'This is a toast message',
+      actionTextColor: Color.GREEN,
+      backgroundColor: Color.GRAY,
+      messageTextColor: Color.RED,
+      bottomOffset: 300,
+      onDismissed: () => console.log('test constructor event')
     });
-    this.toast.on("dismissed", () => {
-        console.log('test eventemitter');
-    })
-    this.toast.message = "This is a new toast message";
-    this.toast.createAction("Action Title", () => {console.log("Action Pressed!")});
+    this.toast.on('dismissed', () => {
+      console.log('test eventemitter');
+    });
+    this.toast.message = 'This is a new toast message';
+    this.toast.createAction('Action Title', () => {
+      console.log('Action Pressed!');
+    });
     this.toast.show();
   }
 

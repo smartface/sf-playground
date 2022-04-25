@@ -1,8 +1,7 @@
-import PgZoomableImageViewDesign from "generated/pages/pgZoomableImageView";
-import ZoomableImageView from "@smartface/extension-zoomable-imageview";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgZoomableImageViewDesign from 'generated/pages/pgZoomableImageView';
+import ZoomableImageView from '@smartface/extension-zoomable-imageview';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 export default class PgZoomableImageView extends withDismissAndBackButton(PgZoomableImageViewDesign) {
   zoomableImageView: InstanceType<typeof ZoomableImageView>;
@@ -13,9 +12,9 @@ export default class PgZoomableImageView extends withDismissAndBackButton(PgZoom
   initZoomableImageView() {
     this.zoomableImageView = new ZoomableImageView({
       width: 250,
-      height: 250,
+      height: 250
     });
-    this.zoomableImageView.image = "images://smartface.png";
+    this.zoomableImageView.image = 'images://smartface.png';
     this.zoomableImageView.minimumZoomScale = 1;
     this.zoomableImageView.android.mediumZoomScale = 2;
     this.zoomableImageView.maximumZoomScale = 3;

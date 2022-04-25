@@ -1,8 +1,7 @@
-import PgNoTouchDesign from "generated/pages/pgNoTouch";
-import System from "@smartface/native/device/system";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgNoTouchDesign from 'generated/pages/pgNoTouch';
+import System from '@smartface/native/device/system';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 export default class PgNoTouch extends withDismissAndBackButton(PgNoTouchDesign) {
   isPageTouchEnabled = true;
@@ -33,7 +32,7 @@ export default class PgNoTouch extends withDismissAndBackButton(PgNoTouchDesign)
   togglePageTouch(touchEnabled: boolean) {
     this.isPageTouchEnabled = touchEnabled;
     this.btnTimeout.enabled = this.isPageTouchEnabled;
-    this.lblTouchIndicator.text = `Current Touch Status : ${this.isPageTouchEnabled ? "Enabled" : "Disabled"}`;
+    this.lblTouchIndicator.text = `Current Touch Status : ${this.isPageTouchEnabled ? 'Enabled' : 'Disabled'}`;
     if (System.OS === System.OSType.IOS) {
       this.layout.touchEnabled = this.isPageTouchEnabled;
     } else {

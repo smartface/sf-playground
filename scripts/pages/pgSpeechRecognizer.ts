@@ -6,7 +6,7 @@ import TextArea from '@smartface/native/ui/textarea';
 import SpeechRecognizer from '@smartface/native/global/speechrecognizer';
 import Application from '@smartface/native/application';
 import System from '@smartface/native/device/system';
-import { styleableComponentMixin } from "@smartface/styling-context";
+import { styleableComponentMixin } from '@smartface/styling-context';
 
 class StyleableButton extends styleableComponentMixin(Button) {}
 class StyleableTextArea extends styleableComponentMixin(TextArea) {}
@@ -32,50 +32,48 @@ export default class PgSpeechRecognizer extends withDismissAndBackButton(PgSpeec
   onLoad() {
     super.onLoad();
     const myButton = new StyleableButton({
-                 height: 200,
-                 text: "Start Recording"
-              })
-             const myTextArea = new StyleableTextArea({
-                 height: 100
-              })
-             myButton.onPress = function() {
-                 if (!SpeechRecognizer.isRunning()) {
-                     myButton.text = "Stop Recording";
-                     if (System.OS === "iOS") {
-                         startSpeechRecognizer();
-                     }
-                     else if (System.OS === "Android") {
-                         const RECORD_AUDIO_CODE = 1002;
-                         Application.android.requestPermissions(RECORD_AUDIO_CODE, Application.Android.Permissions.RECORD_AUDIO);
-                         Application.android.onRequestPermissionsResult = function(e) {
-                             if (e.requestCode === RECORD_AUDIO_CODE && e.result) {
-                                 startSpeechRecognizer();
-                             }
-                         }
-                     }
-                 }
-                 else {
-                     myButton.text = "Start Recording";
-                     SpeechRecognizer.stop();
-                 }
-                }
-             this.addChild(myTextArea, "uniqueTextArea");
-             this.addChild(myButton, "uniqueButton")
-             function startSpeechRecognizer() {
-                 SpeechRecognizer.start({
-                     locale : "en_US",
-                     onResult: function(result) {
-                         myTextArea.text = result;
-                     },
-                     onFinish: function(result) {
-                         myButton.text = "Start Recording";
-                         alert("Finish : " + result);
-                     },
-                     onError: function(error) {
-                         myButton.text = "Start Recording";
-                         alert("Error : " + error);
-                     }
-                 });
+      height: 200,
+      text: 'Start Recording'
+    });
+    const myTextArea = new StyleableTextArea({
+      height: 100
+    });
+    myButton.onPress = function () {
+      if (!SpeechRecognizer.isRunning()) {
+        myButton.text = 'Stop Recording';
+        if (System.OS === 'iOS') {
+          startSpeechRecognizer();
+        } else if (System.OS === 'Android') {
+          const RECORD_AUDIO_CODE = 1002;
+          Application.android.requestPermissions(RECORD_AUDIO_CODE, Application.Android.Permissions.RECORD_AUDIO);
+          Application.android.onRequestPermissionsResult = function (e) {
+            if (e.requestCode === RECORD_AUDIO_CODE && e.result) {
+              startSpeechRecognizer();
+            }
+          };
+        }
+      } else {
+        myButton.text = 'Start Recording';
+        SpeechRecognizer.stop();
+      }
+    };
+    this.addChild(myTextArea, 'uniqueTextArea');
+    this.addChild(myButton, 'uniqueButton');
+    function startSpeechRecognizer() {
+      SpeechRecognizer.start({
+        locale: 'en_US',
+        onResult: function (result) {
+          myTextArea.text = result;
+        },
+        onFinish: function (result) {
+          myButton.text = 'Start Recording';
+          alert('Finish : ' + result);
+        },
+        onError: function (error) {
+          myButton.text = 'Start Recording';
+          alert('Error : ' + error);
+        }
+      });
     }
   }
 }

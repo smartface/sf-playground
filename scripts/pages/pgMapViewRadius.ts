@@ -1,10 +1,9 @@
-import PgMapViewRadiusDesign from "generated/pages/pgMapViewRadius";
-import MapView from "@smartface/native/ui/mapview";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
-import Pin from "@smartface/native/ui/mapview/pin";
-
+import PgMapViewRadiusDesign from 'generated/pages/pgMapViewRadius';
+import MapView from '@smartface/native/ui/mapview';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
+import Pin from '@smartface/native/ui/mapview/pin';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -18,10 +17,10 @@ interface MapPoint {
 }
 
 const CenterMapCoordinates: MapPoint = Object.freeze({
-  description: "2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301",
+  description: '2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301',
   lat: 37.4488259,
   lng: -122.1600047,
-  title: "Smartface Inc.",
+  title: 'Smartface Inc.'
 });
 
 export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewRadiusDesign) {
@@ -36,9 +35,9 @@ export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewR
       return new MapView.Pin({
         location: {
           latitude: randomized.lat,
-          longitude: randomized.lng,
+          longitude: randomized.lng
         },
-        title: randomized.title || "",
+        title: randomized.title || ''
       });
     });
     return randomizedArray;
@@ -50,7 +49,7 @@ export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewR
     return {
       ...centerPoint,
       lat: randomLatitude,
-      lng: randomLongitude,
+      lng: randomLongitude
     };
   }
 
@@ -58,7 +57,7 @@ export default class PgMapViewRadius extends withDismissAndBackButton(PgMapViewR
     this.map.setCenterLocationWithZoomLevel(
       {
         longitude: CenterMapCoordinates.lng,
-        latitude: CenterMapCoordinates.lat,
+        latitude: CenterMapCoordinates.lat
       },
       DEFAULT_ZOOM_LEVEL,
       true

@@ -1,4 +1,3 @@
-
 import PgListviewSwipeDesign from 'generated/pages/pgListviewSwipe';
 import { Route, Router } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
@@ -12,7 +11,7 @@ type DatasetType = { title: string };
 export default class PgListviewSwipe extends withDismissAndBackButton(PgListviewSwipeDesign) {
   private disposeables: (() => void)[] = [];
   myDataSet: DatasetType[] = Array.from({ length: 10 }).map((_, index: number) => ({
-    title: `Smartface Title ${index}`,
+    title: `Smartface Title ${index}`
   }));
   constructor(private router?: Router, private route?: Route) {
     super({});

@@ -1,7 +1,7 @@
-import PgChartDesign from "generated/pages/pgChart";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
+import PgChartDesign from 'generated/pages/pgChart';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
 
 export default class PgChart extends withDismissAndBackButton(PgChartDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -75,7 +75,7 @@ export default class PgChart extends withDismissAndBackButton(PgChartDesign) {
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
-    this.webView1.loadURL("https://az793023.vo.msecnd.net/examples/sf-core/webview/chart.html");
+    this.webView1.loadURL('https://az793023.vo.msecnd.net/examples/sf-core/webview/chart.html');
   }
   onLoad() {
     super.onLoad();

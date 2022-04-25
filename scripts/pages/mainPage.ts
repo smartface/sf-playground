@@ -1,11 +1,10 @@
-import MainPageDesign from "generated/pages/mainPage";
-import LviPages from "components/LviPages";
-import Router from "@smartface/router/lib/router/Router";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import Page from "@smartface/native/ui/page";
-import { ConstructorOf } from "@smartface/styling-context/lib/ConstructorOf";
-
+import MainPageDesign from 'generated/pages/mainPage';
+import LviPages from 'components/LviPages';
+import Router from '@smartface/router/lib/router/Router';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import Page from '@smartface/native/ui/page';
+import { ConstructorOf } from '@smartface/styling-context/lib/ConstructorOf';
 
 export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   pages: ConstructorOf<Page>[] = [];
@@ -28,7 +27,7 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   refreshListView() {
     this.lvPages.itemCount = this.pages.length;
     this.lvPages.refreshData();
-  } 
+  }
   onShow() {
     super.onShow();
     this.refreshListView();

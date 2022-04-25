@@ -1,19 +1,19 @@
-import PgListViewIndexDesign from "generated/pages/pgListViewIndex";
-import FlexLayout from "@smartface/native/ui/flexlayout";
-import ListView from "@smartface/native/ui/listview";
-import ListViewIndex from "@smartface/extension-listviewindex";
-import ListViewItem from "@smartface/native/ui/listviewitem";
-import Label from "@smartface/native/ui/label";
-import Color from "@smartface/native/ui/color";
-import Font from "@smartface/native/ui/font";
-import System from "@smartface/native/device/system";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
+import PgListViewIndexDesign from 'generated/pages/pgListViewIndex';
+import FlexLayout from '@smartface/native/ui/flexlayout';
+import ListView from '@smartface/native/ui/listview';
+import ListViewIndex from '@smartface/extension-listviewindex';
+import ListViewItem from '@smartface/native/ui/listviewitem';
+import Label from '@smartface/native/ui/label';
+import Color from '@smartface/native/ui/color';
+import Font from '@smartface/native/ui/font';
+import System from '@smartface/native/device/system';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
 
 export default class PgListViewIndex extends withDismissAndBackButton(PgListViewIndexDesign) {
   listViewItemArray: any[] = [];
-  listViewItemIndexItems = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+  listViewItemIndexItems = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
   myListView: ListView;
   headerIndex: number[] = [];
   listViewIndex = new ListViewIndex();
@@ -25,7 +25,7 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
   initListView() {
     var _rowData = [];
     for (var i = 0; i < this.listViewItemIndexItems.length; i++) {
-      _rowData.push(["#ff6c8f", "#ff85a2", "#ff9fb6", "#ffb8c9", "#ffd2dc", "#ffebf0"]);
+      _rowData.push(['#ff6c8f', '#ff85a2', '#ff9fb6', '#ffb8c9', '#ffd2dc', '#ffebf0']);
     }
 
     const pushDataToArray = (headerData, rowData) => {
@@ -41,7 +41,7 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
     this.myListView = new ListView({
       flexGrow: 1,
       marginLeft: 20,
-      itemCount: this.listViewItemArray.length,
+      itemCount: this.listViewItemArray.length
     });
 
     this.layout.addChild(this.myListView);
@@ -51,7 +51,7 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
       if (type == 1) {
         var myLabelTitle = new Label({
           flexGrow: 1,
-          margin: 10,
+          margin: 10
         });
         myLabelTitle.textColor = Color.WHITE;
         myLabelTitle.borderRadius = 10;
@@ -61,7 +61,7 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
         // Header
         var myLabelTitle = new Label({
           flexGrow: 1,
-          margin: 10,
+          margin: 10
         });
         myLabelTitle.font = Font.create(Font.DEFAULT, 30, Font.BOLD);
         myLabelTitle.backgroundColor = Color.WHITE;
@@ -84,7 +84,7 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
       var myLabelTitle = listViewItem.myLabelTitle;
 
       if (this.listViewItemArray[index].isHeader) {
-        myLabelTitle.text = typeof this.listViewItemArray[index].data === "string" ? this.listViewItemArray[index].data : "Image";
+        myLabelTitle.text = typeof this.listViewItemArray[index].data === 'string' ? this.listViewItemArray[index].data : 'Image';
       } else {
         myLabelTitle.backgroundColor = Color.create(this.listViewItemArray[index].data);
         myLabelTitle.text = this.listViewItemArray[index].data;

@@ -1,10 +1,10 @@
-import PgHeaderImageDesign from "generated/pages/pgHeaderImage";
-import HeaderBarItem from "@smartface/native/ui/headerbaritem";
-import Color from "@smartface/native/ui/color";
-import { themeService } from "theme";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import Router from "@smartface/router/lib/router/Router";
+import PgHeaderImageDesign from 'generated/pages/pgHeaderImage';
+import HeaderBarItem from '@smartface/native/ui/headerbaritem';
+import Color from '@smartface/native/ui/color';
+import { themeService } from 'theme';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import Router from '@smartface/router/lib/router/Router';
 
 export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImageDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -16,7 +16,7 @@ export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImag
   }
   addHeaderWithDirectImage() {
     const imageHeaderBarItem = new HeaderBarItem();
-    imageHeaderBarItem.image = "images://smartface.png";
+    imageHeaderBarItem.image = 'images://smartface.png';
     imageHeaderBarItem.color = Color.BLACK; // For Android
     /**
      * Alternative usage :
@@ -27,7 +27,7 @@ export default class PgHeaderImage extends withDismissAndBackButton(PgHeaderImag
 
   addHeaderWithGetNativeStyle() {
     const imageHeaderBarItem = new HeaderBarItem();
-    imageHeaderBarItem.image = themeService.getNativeStyle("#pgHeaderImage").image;
+    imageHeaderBarItem.image = themeService.getNativeStyle('#pgHeaderImage').image;
     this.headerBar.setItems([imageHeaderBarItem]);
   }
 

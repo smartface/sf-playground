@@ -1,8 +1,7 @@
-import PgMapViewRegionDesign from "generated/pages/pgMapViewRegion";
-import Pin from "@smartface/native/ui/mapview/pin";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgMapViewRegionDesign from 'generated/pages/pgMapViewRegion';
+import Pin from '@smartface/native/ui/mapview/pin';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -16,10 +15,10 @@ interface MapPoint {
 }
 
 const CenterMapCoordinates: MapPoint = Object.freeze({
-  description: "2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301",
+  description: '2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301',
   lat: 37.4488259,
   lng: -122.1600047,
-  title: "Smartface Inc.",
+  title: 'Smartface Inc.'
 });
 
 export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewRegionDesign) {
@@ -34,9 +33,9 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
       return new Pin({
         location: {
           latitude: randomized.lat,
-          longitude: randomized.lng,
+          longitude: randomized.lng
         },
-        title: randomized.title || "",
+        title: randomized.title || ''
       });
     });
     return randomizedArray;
@@ -48,7 +47,7 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
     return {
       ...centerPoint,
       lat: randomLatitude,
-      lng: randomLongitude,
+      lng: randomLongitude
     };
   }
 
@@ -56,7 +55,7 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
     this.map.setCenterLocationWithZoomLevel(
       {
         longitude: CenterMapCoordinates.lng,
-        latitude: CenterMapCoordinates.lat,
+        latitude: CenterMapCoordinates.lat
       },
       DEFAULT_ZOOM_LEVEL,
       true
@@ -101,7 +100,7 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
       pinLatitude: pin.location.latitude,
       pinLongitude: pin.location.longitude,
       isLatInside,
-      isLngInside,
+      isLngInside
     });
     return isLatInside && isLngInside;
   }

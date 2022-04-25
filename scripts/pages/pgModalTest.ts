@@ -1,9 +1,8 @@
-import PgModalTestDesign from "generated/pages/pgModalTest";
-import { NativeStackRouter } from "@smartface/router";
-import Router from "@smartface/router/lib/router/Router";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-
+import PgModalTestDesign from 'generated/pages/pgModalTest';
+import { NativeStackRouter } from '@smartface/router';
+import Router from '@smartface/router/lib/router/Router';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
 
 export default class PgModalTest extends withDismissAndBackButton(PgModalTestDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -11,13 +10,13 @@ export default class PgModalTest extends withDismissAndBackButton(PgModalTestDes
   }
   initButton() {
     this.btnOpenModal.on('press', () => {
-        this.router.push("modal");
+      this.router.push('modal');
     });
     this.btnDismiss.on('press', () => {
       if (Router.currentRouter instanceof NativeStackRouter) {
         Router.currentRouter.dismiss();
       } else {
-        alert("This page is not derived from modal.");
+        alert('This page is not derived from modal.');
       }
     });
   }

@@ -29,75 +29,75 @@ export default class PgGridViewFullSpan extends withDismissAndBackButton(PgGridV
   }
 
   initGridViewEvents() {
-      // We might want to test this with eventemitter as well.
+    // We might want to test this with eventemitter as well.
     this.gvMain.layoutManager.onFullSpan = (type) => {
-        if (type == 1) {
-            return 200;
-          } else if (type == 2) {
-            return 50;
-          }
-          return undefined;
+      if (type == 1) {
+        return 200;
+      } else if (type == 2) {
+        return 50;
+      }
+      return undefined;
     };
 
-     // We might want to test this with eventemitter as well.
+    // We might want to test this with eventemitter as well.
     this.gvMain.layoutManager.onItemLength = () => Screen.width / SPAN_COUNT;
 
-     // We might want to test this with eventemitter as well.
+    // We might want to test this with eventemitter as well.
     this.gvMain.onItemType = (index) => {
-        if (index === 0) {
-            return 1;
-          } else if (index === 1) {
-            return 2;
-          }
-        return 3;
-    }
-
-     // We might want to test this with eventemitter as well.
-    this.gvMain.onItemBind = (gridViewItem: GviTitle, index) => {
-        let { title, backgroundColor } = this.myDataset[index];
-        gridViewItem.lblTitle.text = title;
-        gridViewItem.lblTitle.backgroundColor = backgroundColor;
+      if (index === 0) {
+        return 1;
+      } else if (index === 1) {
+        return 2;
+      }
+      return 3;
     };
 
-    this.gvMain.on("itemSelected", (gridViewItem: GviTitle, index) => {
-        console.log(`Item title : ${gridViewItem.lblTitle.text}`);
-    })
-    this.gvMain.on("pullRefresh", () => {
-        console.log('Gridview onPullRefresh');
-    })
-    this.gvMain.on("scroll", () => {
-        console.log('Gridview onScroll');
-    })
-    this.gvMain.on("itemLongSelected", () => {
-        console.log('Gridview itemLongSelected');
+    // We might want to test this with eventemitter as well.
+    this.gvMain.onItemBind = (gridViewItem: GviTitle, index) => {
+      let { title, backgroundColor } = this.myDataset[index];
+      gridViewItem.lblTitle.text = title;
+      gridViewItem.lblTitle.backgroundColor = backgroundColor;
+    };
+
+    this.gvMain.on('itemSelected', (gridViewItem: GviTitle, index) => {
+      console.log(`Item title : ${gridViewItem.lblTitle.text}`);
     });
-    this.gvMain.on("attachedToWindow", () => {
-        console.log('Gridview attachedToWindow');
-    })
-    this.gvMain.on("detachedFromWindow", () => {
-        console.log('Gridview detachedFromWindow');
-    })
+    this.gvMain.on('pullRefresh', () => {
+      console.log('Gridview onPullRefresh');
+    });
+    this.gvMain.on('scroll', () => {
+      console.log('Gridview onScroll');
+    });
+    this.gvMain.on('itemLongSelected', () => {
+      console.log('Gridview itemLongSelected');
+    });
+    this.gvMain.on('attachedToWindow', () => {
+      console.log('Gridview attachedToWindow');
+    });
+    this.gvMain.on('detachedFromWindow', () => {
+      console.log('Gridview detachedFromWindow');
+    });
     // this.gvMain.on("gesture", () => {
     //     console.log('Gridview gesture'); // This needs to be tested as well
     // })
-    this.gvMain.on("scrollBeginDecelerating", () => {
-        console.log('Gridview scrollBeginDecelerating');
-    })
-    this.gvMain.on("scrollBeginDragging", () => {
-        console.log('Gridview scrollBeginDragging');
-    })
-    this.gvMain.on("scrollEndDecelerating", () => {
-        console.log('Gridview scrollEndDecelerating');
-    })
-    this.gvMain.on("scrollEndDraggingWillDecelerate", () => {
-        console.log('Gridview scrollEndDraggingWillDecelerate');
-    })
-    this.gvMain.on("scrollEndDraggingWithVelocityTargetContentOffset", () => {
-        console.log('Gridview scrollEndDraggingWithVelocityTargetContentOffset');
-    })
-    this.gvMain.on("scrollStateChanged", () => {
-        console.log('Gridview scrollStateChanged');
-    })
+    this.gvMain.on('scrollBeginDecelerating', () => {
+      console.log('Gridview scrollBeginDecelerating');
+    });
+    this.gvMain.on('scrollBeginDragging', () => {
+      console.log('Gridview scrollBeginDragging');
+    });
+    this.gvMain.on('scrollEndDecelerating', () => {
+      console.log('Gridview scrollEndDecelerating');
+    });
+    this.gvMain.on('scrollEndDraggingWillDecelerate', () => {
+      console.log('Gridview scrollEndDraggingWillDecelerate');
+    });
+    this.gvMain.on('scrollEndDraggingWithVelocityTargetContentOffset', () => {
+      console.log('Gridview scrollEndDraggingWithVelocityTargetContentOffset');
+    });
+    this.gvMain.on('scrollStateChanged', () => {
+      console.log('Gridview scrollStateChanged');
+    });
   }
 
   initGridView() {

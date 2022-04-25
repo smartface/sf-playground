@@ -26,10 +26,10 @@ export default class PgTouchHandling extends withDismissAndBackButton(PgTouchHan
       console.info('flexLayout1: ontouchended callback');
       alert('flexLayout1: ontouchended callback');
       return true;
-    }
+    };
     this.flexLayout1.on('touchEnded', () => {
       console.info('flexLayout1: ontouchended emitter');
-      alert('flexLayout1: ontouchended emitter')
-    })
+      alert('flexLayout1: ontouchended emitter');
+    });
   }
 }

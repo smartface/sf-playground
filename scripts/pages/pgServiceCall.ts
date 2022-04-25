@@ -1,10 +1,10 @@
-import PgServiceCallDesign from "generated/pages/pgServiceCall";
-import network from "@smartface/extension-utils/lib/network";
-import { getDogPic, dogApiData, getDogPicWithAxios } from "services/dogPic";
-import Network from "@smartface/native/device/network";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-import System from "@smartface/native/device/system";
+import PgServiceCallDesign from 'generated/pages/pgServiceCall';
+import network from '@smartface/extension-utils/lib/network';
+import { getDogPic, dogApiData, getDogPicWithAxios } from 'services/dogPic';
+import Network from '@smartface/native/device/network';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
+import System from '@smartface/native/device/system';
 
 export default class PgServiceCall extends withDismissAndBackButton(PgServiceCallDesign) {
   isConnected: boolean;
@@ -31,27 +31,27 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
                     })*/
         }
       } catch (err) {
-        alert("Service unavailable");
+        alert('Service unavailable');
       }
     };
     this.btnUseAxios.onPress = async () => {
-        this.checkAndSetNetworkStatus();
-        try {
-            if (this.isConnected) {
-                const response: dogApiData = await getDogPicWithAxios();
-                this.imgDogPic.loadFromUrl({ url: response.message });
-            }
-        } catch (err) {
-            alert("Service unavailable");
+      this.checkAndSetNetworkStatus();
+      try {
+        if (this.isConnected) {
+          const response: dogApiData = await getDogPicWithAxios();
+          this.imgDogPic.loadFromUrl({ url: response.message });
         }
-    }
+      } catch (err) {
+        alert('Service unavailable');
+      }
+    };
   }
 
   initIsEmulatorCheck() {
     if (System.isEmulator) {
-      this.lblIsEmulator.text = "Running on emulator environment";
+      this.lblIsEmulator.text = 'Running on emulator environment';
     } else {
-      this.lblIsEmulator.text = "Running on production environment";
+      this.lblIsEmulator.text = 'Running on production environment';
     }
   }
 
@@ -59,32 +59,31 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     network
       .isConnected()
       .then(() => {
-        this.lblNetworkStatus.text = "Connected to internet";
+        this.lblNetworkStatus.text = 'Connected to internet';
         this.lblNetworkStatus.dispatch({
-          type: "pushClassNames",
-          classNames: "#pgServiceCall-lblNetworkStatus-online"
+          type: 'pushClassNames',
+          classNames: '#pgServiceCall-lblNetworkStatus-online'
         });
         this.isConnected = true;
       })
       .catch(() => {
-        this.lblNetworkStatus.text = "Not connected to internet";
+        this.lblNetworkStatus.text = 'Not connected to internet';
         this.lblNetworkStatus.dispatch({
-          type: "removeClassName",
-          className: "#pgServiceCall-lblNetworkStatus-online"
+          type: 'removeClassName',
+          className: '#pgServiceCall-lblNetworkStatus-online'
         });
         this.isConnected = false;
       });
   }
 
   initNativeTypescriptTest() {
-      console.log('Network carrier test: ', Network.carrier);
-      console.log('Network connectionIP test: ', Network.connectionIP);
-      console.log('Network SMSEnabled test: ', Network.SMSEnabled);
-      console.log('Network IMSI test: ', Network.IMSI);
-      console.log('Network bluetoothMacAddress test: ', Network.bluetoothMacAddress);
-      console.log('Network wirelessMacAddress test: ', Network.wirelessMacAddress);
-      console.log('Network roamingEnabled test: ', Network.roamingEnabled);
-
+    console.log('Network carrier test: ', Network.carrier);
+    console.log('Network connectionIP test: ', Network.connectionIP);
+    console.log('Network SMSEnabled test: ', Network.SMSEnabled);
+    console.log('Network IMSI test: ', Network.IMSI);
+    console.log('Network bluetoothMacAddress test: ', Network.bluetoothMacAddress);
+    console.log('Network wirelessMacAddress test: ', Network.wirelessMacAddress);
+    console.log('Network roamingEnabled test: ', Network.roamingEnabled);
   }
 
   onShow() {

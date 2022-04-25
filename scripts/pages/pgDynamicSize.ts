@@ -1,5 +1,5 @@
-import PgDynamicSizeDesign from "generated/pages/pgDynamicSize";
-import { withDismissAndBackButton } from "@smartface/mixins";
+import PgDynamicSizeDesign from 'generated/pages/pgDynamicSize';
+import { withDismissAndBackButton } from '@smartface/mixins';
 
 export default class PgDynamicSize extends withDismissAndBackButton(PgDynamicSizeDesign) {
   constructor() {
@@ -14,7 +14,7 @@ export default class PgDynamicSize extends withDismissAndBackButton(PgDynamicSiz
   onShow() {
     super.onShow();
     const newText =
-      "Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines";
+      'Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines';
     setTimeout(() => {
       this.flDynamicSize.setText(newText, this);
     }, 1500);

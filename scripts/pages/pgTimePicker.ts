@@ -1,7 +1,7 @@
 import PgTimePickerDesign from 'generated/pages/pgTimePicker';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import TimePicker from "@smartface/native/ui/timepicker";
+import TimePicker from '@smartface/native/ui/timepicker';
 
 export default class PgTimePicker extends withDismissAndBackButton(PgTimePickerDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -25,7 +25,7 @@ export default class PgTimePicker extends withDismissAndBackButton(PgTimePickerD
     super.onLoad();
     const myTimePicker = new TimePicker();
     myTimePicker.on('selected', (time) => {
-        console.log('Hour: ' + time.hour + ' Minute: ' + time.minute);
+      console.log('Hour: ' + time.hour + ' Minute: ' + time.minute);
     });
 
     myTimePicker.is24HourFormat = true;

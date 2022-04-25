@@ -1,12 +1,12 @@
 import PgSoundDesign from 'generated/pages/pgSound';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import Button from "@smartface/native/ui/button";
-import Sound from "@smartface/native/device/sound";
+import Button from '@smartface/native/ui/button';
+import Sound from '@smartface/native/device/sound';
 
 export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
-    mySound: Sound;
-    myButton: Button;
+  mySound: Sound;
+  myButton: Button;
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
@@ -16,15 +16,15 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
   // use WYSIWYG editor to style your pages.
   centerizeTheChildrenLayout() {
     this.dispatch({
-        type: "updateUserStyle",
-        userStyle: {
-            flexProps: {
-              flexDirection: 'COLUMN',
-              justifyContent: 'CENTER',
-              alignItems: 'CENTER'
-            }
+      type: 'updateUserStyle',
+      userStyle: {
+        flexProps: {
+          flexDirection: 'COLUMN',
+          justifyContent: 'CENTER',
+          alignItems: 'CENTER'
         }
-    })
+      }
+    });
   }
 
   onShow() {
@@ -37,9 +37,9 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
 
     this.mySound = new Sound();
     this.mySound.isLooping = true;
-  
+
     this.myButton = new Button({
-      text: "Load URL",
+      text: 'Load URL',
       onPress: () => {
         this.mySound.onReady = () => {
           this.mySound.play();
@@ -47,19 +47,16 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
           console.log('volume: ', this.mySound.volume);
           console.log('totalDuration: ', this.mySound.totalDuration);
           console.log('currentDuration: ', this.mySound.currentDuration);
-      
         };
-        this.mySound.loadURL("https://www.rmp-streaming.com/media/bbb-360p.mp4");
-      },
+        this.mySound.loadURL('https://www.rmp-streaming.com/media/bbb-360p.mp4');
+      }
     });
-    
 
-    this.addChild(this.myButton, "myButton", ".sf-button", {
+    this.addChild(this.myButton, 'myButton', '.sf-button', {
       top: 100,
       width: 100,
       height: 80,
-      backgroundColor: "#FFFF00",
+      backgroundColor: '#FFFF00'
     });
   }
 }
-

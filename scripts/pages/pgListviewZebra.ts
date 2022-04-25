@@ -1,12 +1,12 @@
-import PgListviewZebraDesign from "generated/pages/pgListviewZebra";
-import LviElement from "components/LviElement";
-import { Route, Router } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
+import PgListviewZebraDesign from 'generated/pages/pgListviewZebra';
+import LviElement from 'components/LviElement';
+import { Route, Router } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
 
 export default class PgListviewZebra extends withDismissAndBackButton(PgListviewZebraDesign) {
   elements = [...Array(20)].map((_, index) => ({
     key: `Element${index}`,
-    value: `Element${index} Value`,
+    value: `Element${index} Value`
   }));
 
   constructor(private router?: Router, private route?: Route) {
@@ -30,7 +30,7 @@ export default class PgListviewZebra extends withDismissAndBackButton(PgListview
   onShow() {
     super.onShow();
     this.refreshListView();
-    this.headerBar.title = "Zebra ListView";
+    this.headerBar.title = 'Zebra ListView';
   }
 
   onLoad() {

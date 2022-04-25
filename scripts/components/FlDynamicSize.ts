@@ -1,6 +1,6 @@
-import System from "@smartface/native/device/system";
-import Page from "@smartface/native/ui/page";
-import FlDynamicSizeDesign from "generated/my-components/FlDynamicSize";
+import System from '@smartface/native/device/system';
+import Page from '@smartface/native/ui/page';
+import FlDynamicSizeDesign from 'generated/my-components/FlDynamicSize';
 
 export default class FlNoSize extends FlDynamicSizeDesign {
   pageName?: string | undefined;

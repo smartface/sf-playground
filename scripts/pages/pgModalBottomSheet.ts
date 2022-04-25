@@ -8,9 +8,9 @@ export default class PgModalBottomSheet extends withDismissAndBackButton(PgModal
   }
 
   initButton() {
-      this.btnOpen.on('press', () => {
-        this.router.push("bottomSheet");
-      })
+    this.btnOpen.on('press', () => {
+      this.router.push('bottomSheet');
+    });
   }
 
   /**
