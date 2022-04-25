@@ -4,34 +4,38 @@ import { Router, Route } from '@smartface/router';
 import { getPermission } from '@smartface/extension-utils/lib/permission';
 import Contacts from '@smartface/native/device/contacts';
 import Application from '@smartface/native/application';
-import { Contact } from '@smartface/native/device/contacts/contacts';
 
 export default class PgContacts extends withDismissAndBackButton(PgContactsDesign) {
     constructor(private router?: Router, private route?: Route) {
         super({});
     }
+
     getAllContacts() {
-        Contacts.fetchAll({
-            onSuccess: (contacts) => console.info(contacts),
-            onFailure: (error) => console.error('fetchAll Failed', error)
-        });
+        //@ts-ignore
+        getPermission({ permissionText: 'READ_CONTACTS', androidPermission: Application.Android.Permissions.READ_CONTACTS, permissionTitle: 'contacts permission' })
+            .then(() => Contacts.fetchAll({
+                onSuccess: (contacts) => console.info(contacts),
+                onFailure: (error) => console.error('fetchAll Failed', error)
+            }));
     }
 
     pickContact() {
-        Contacts.pickContact(this, {
-            onSuccess: (contact) => console.info(contact),
-            onFailure: () => console.error('pickContact Failed')
-        });
-
-
+        //@ts-ignore
+        getPermission({ permissionText: 'READ_CONTACTS', androidPermission: Application.Android.Permissions.READ_CONTACTS, permissionTitle: 'contacts permission' })
+            .then(() => Contacts.pickContact(this, {
+                onSuccess: (contact) => console.info(contact),
+                onFailure: () => console.error('pickContact Failed')
+            }));
     }
 
     addContact() {
-        Contacts.add({
-            contact: new Contacts.Contact({ firstName: 'Smartface', lastName: 'Mobile', phoneNumbers: ['0000'] }),
-            onSuccess: () => console.info('add Success'),
-            onFailure: () => console.error('add Failed')
-        })
+        //@ts-ignore
+        getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: Application.Android.Permissions.WRITE_CONTACTS, permissionTitle: 'contacts permission' })
+            .then(() => Contacts.add({
+                contact: new Contacts.Contact({ firstName: 'Smartface', lastName: 'Mobile', phoneNumbers: ['0000'] }),
+                onSuccess: () => console.info('add Success'),
+                onFailure: () => console.error('add Failed')
+            }));
     }
 
     initializeButtons() {
@@ -42,10 +46,6 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
 
     onShow() {
         super.onShow();
-        //@ts-ignore
-        getPermission({ permissionText: 'READ_CONTACTS', androidPermission: Application.Android.Permissions.READ_CONTACTS, permissionTitle: 'contacts permission' })
-            //@ts-ignore
-            .then(() => getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: Application.Android.Permissions.WRITE_CONTACTS, permissionTitle: 'contacts permission' }))
         this.initBackButton(this.router); //Addes a back button to the page headerbar.
         this.initializeButtons();
     }
