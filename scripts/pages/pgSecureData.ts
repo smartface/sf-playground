@@ -10,7 +10,7 @@ export default class PgSecureData extends withDismissAndBackButton(PgSecureDataD
     super({});
     this.mySecureData = new SecureData({
       ios: {
-        service: 'com.myapp.serviceparameter'
+        service: 'io.smartface.SmartfaceEnterpriseApp'
       },
       key: 'keyparamater'
     });
