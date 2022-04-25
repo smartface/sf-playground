@@ -9,5 +9,6 @@
         "**/.ui/**": true
     },
     "workspace.preserveWindow": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoSave": "off"
 }

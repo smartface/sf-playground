@@ -75,6 +75,7 @@ import PgContacts from 'pages/pgContacts';
 import PgMultimedia from 'pages/pgMultimedia';
 import PgBlob from 'pages/pgBlob';
 import PgSecureData from 'pages/pgSecureData';
+import PgShare from 'pages/pgShare';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -128,7 +129,8 @@ export const tab0: Tab = {
     PgContacts,
     PgMultimedia,
     PgBlob,
-    PgSecureData
+    PgSecureData,
+    PgShare
   ]
 };
 
