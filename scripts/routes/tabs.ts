@@ -76,6 +76,7 @@ import PgMultimedia from 'pages/pgMultimedia';
 import PgBlob from 'pages/pgBlob';
 import PgSecureData from 'pages/pgSecureData';
 import PgShare from 'pages/pgShare';
+import PgTimer from 'pages/pgTimer';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -130,7 +131,8 @@ export const tab0: Tab = {
     PgMultimedia,
     PgBlob,
     PgSecureData,
-    PgShare
+    PgShare,
+    PgTimer
   ]
 };
 
