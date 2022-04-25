@@ -73,6 +73,7 @@ import PgGridViewPagination from 'pages/pgGridViewRowRange';
 import PgTouchHandling from 'pages/pgTouchHandling';
 import PgContacts from 'pages/pgContacts';
 import PgMultimedia from 'pages/pgMultimedia';
+import PgBlob from 'pages/pgBlob';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -124,7 +125,8 @@ export const tab0: Tab = {
     PgGridViewRowRange,
     PgGridViewPagination,
     PgContacts,
-    PgMultimedia
+    PgMultimedia,
+    PgBlob
   ]
 };
 
