@@ -1,0 +1,11 @@
+{
+  "#pgTextBox": {
+    "&-btnKeyTypes": {
+      "marginLeft": 5,
+      "marginRight": 5,
+      "font": {
+        "size": 10
+      }
+    }
+  }
+}

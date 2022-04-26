@@ -2,7 +2,6 @@ import PgTextBoxDesign from 'generated/pages/pgTextBox';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import KeyboardType from '@smartface/native/ui/shared/keyboardtype';
-// import KeyboardLayout from "@smartface/component-keyboardlayout";
 import System from '@smartface/native/device/system';
 import Color from '@smartface/native/ui/color';
 import KeyboardAppearance from '@smartface/native/ui/shared/keyboardappearance';
@@ -14,7 +13,8 @@ import { themeService } from 'theme';
 import HeaderBarItem from '@smartface/native/ui/headerbaritem';
 import { StatusBarStyle } from '@smartface/native/application/statusbar/statusbar';
 import Application from '@smartface/native/application';
-import AutoCapitalize from '@smartface/native/ui/textbox/autocapitalize';
+import ActionKeyType from '@smartface/native/ui/shared/android/actionkeytype';
+import { TextBoxEvents } from '@smartface/native/ui/textbox/textbox-events';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -53,6 +53,19 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.tbPin.on('textChanged', () => {
       console.log('TextBox textChanged test');
     });
+  }
+
+  initActionKeyTypeButtons() {
+    this.btnActionKeyTypeDefault.on('press', () => this.changeActionKeyType(ActionKeyType.DEFAULT));
+    this.btnActionKeyTypeGo.on('press', () => this.changeActionKeyType(ActionKeyType.GO));
+    this.btnActionKeyTypeNext.on('press', () => this.changeActionKeyType(ActionKeyType.NEXT));
+    this.btnActionKeyTypeSearch.on('press', () => this.changeActionKeyType(ActionKeyType.SEARCH));
+    this.btnActionKeyTypeSend.on('press', () => this.changeActionKeyType(ActionKeyType.SEND));
+  }
+
+  changeActionKeyType(type: ActionKeyType) {
+    this.tbPin.actionKeyType = type;
+    this.tbPin.on(TextBoxEvents.ActionButtonPress, () => console.log('action button pressed'));
   }
 
   initTextBoxes() {
@@ -130,6 +143,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.initTextView();
     this.initFontTest();
     this.initBadge();
+    this.initActionKeyTypeButtons();
     Application.statusBar.style = StatusBarStyle.DEFAULT;
   }
 }
