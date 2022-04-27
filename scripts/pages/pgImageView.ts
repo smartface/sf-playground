@@ -32,7 +32,8 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
     this.imgFillTypes.fetchFromUrl({
       url: 'https://cdn.smartface.io/docs/logo.png',
       onFailure: () => console.error('couldnt fetchFromUrl'),
-      onSuccess: () => console.log('success fetchFromUrl')
+      onSuccess: () => console.log('success fetchFromUrl'),
+      placeholder: Image.createFromFile('imageview_preview.png')
     });
   }
 
@@ -46,7 +47,10 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
     this.imgFillTypes.loadFromUrl({
       url: 'https://cdn.smartface.io/docs/logo.png',
       onFailure: () => console.error('couldnt loadFromUrl'),
-      onSuccess: () => console.log('success loadFromUrl')
+      onSuccess: () => console.log('success loadFromUrl'),
+      fade: true,
+      placeholder: Image.createFromFile('imageview_preview.png'),
+      useHTTPCacheControl: true
     });
   }
 
