@@ -1,0 +1,14 @@
+{
+  "#pgScrollView": {
+    "&-btnContentInsets": {
+      "font": {
+        "size": 9
+      },
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  }
+}

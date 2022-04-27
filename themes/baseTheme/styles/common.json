@@ -1,25 +1,25 @@
 {
-	".card": {
-		"backgroundColor": "rgba(255,255,255,1)",
-		"borderRadius": 10,
-		"marginTop": 15,
-		"paddingLeft": 15,
-		"paddingRight": 15
-	},
-	".grow": {
-		"flexProps": {
-			"flexGrow": 1
-		},
-        "&-relative": {
-            "flexProps": {
-			    "flexGrow": 1,
-                "positionType": "RELATIVE"
-            }
-        }
-	},
-	".getCombinedStyleTest" : {
-		"backgroundColor": "rgba(0,0,0,1)"
-	},
+  ".card": {
+    "backgroundColor": "rgba(255,255,255,1)",
+    "borderRadius": 10,
+    "marginTop": 15,
+    "paddingLeft": 15,
+    "paddingRight": 15
+  },
+  ".grow": {
+    "flexProps": {
+      "flexGrow": 1
+    },
+    "&-relative": {
+      "flexProps": {
+        "flexGrow": 1,
+        "positionType": "RELATIVE"
+      }
+    }
+  },
+  ".getCombinedStyleTest": {
+    "backgroundColor": "rgba(0,0,0,1)"
+  },
   ".getNativeStyleTest": {
     "backgroundColor": "rgba(0,0,0,1)"
   },
@@ -42,5 +42,13 @@
     ".edit": {
       "backgroundColor": "#0000FF"
     }
+  },
+  ".marginHorizontal": {
+    "marginLeft": 15,
+    "marginRight": 15
+  },
+  ".marginVertical": {
+    "marginBottom": 15,
+    "marginTop": 15
   }
 }
