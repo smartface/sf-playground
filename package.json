@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@smartface/dispatcher": "^0.8.4",
-    "@smartface/image-processor": "^1.2.4",
+    "@smartface/image-processor": "^1.2.6",
     "@smartface/library-reader": "^0.8.4",
     "@smartface/tsc-watch": "^0.8.0",
     "@typescript-eslint/eslint-plugin": "^4.26.0",

@@ -79,6 +79,7 @@ import PgShare from 'pages/pgShare';
 import PgTimer from 'pages/pgTimer';
 import PgActivityIndicator from 'pages/pgActivityIndicator';
 import PgAlertView from 'pages/pgAlertView';
+import PgImageView from 'pages/pgImageView';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -136,7 +137,8 @@ export const tab0: Tab = {
     PgShare,
     PgTimer,
     PgActivityIndicator,
-    PgAlertView
+    PgAlertView,
+    PgImageView
   ]
 };
 

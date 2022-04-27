@@ -47,9 +47,9 @@
   integrity sha512-0gdecB6jyzGBvh7DqboA7XXi/uQJZfl+dJAQNnC12YQl4unJp/ZUwlCj3Is3SpfkHl9cczgTDjYmzenrmnHWxQ==
 
 "@smartface/extension-utils@^16.2.9":
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.4.0.tgz#1c332fd0ab18444fcea5f2e44a6dfea8150ecdcd"
-  integrity sha512-NCX7bA+VdMa784J9SMqAwVOxQ5IGfV5C6O+bDYW0NnlnN7BOhQo+Zpj2f3PGYAMcm1YoWexzaPxmdLJpXoguzQ==
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.4.1.tgz#958ca6eff13d23a02b6cbc40267e70f6fe292c45"
+  integrity sha512-D1n7VUKPyv+Pc+l8UN5pO+BSfQck5QSP8R8jewu5Ik6ntU4tBNcT8or3hUr3XCS+BuARLNQyn2vqsXL5zJb/iQ==
   dependencies:
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
@@ -80,9 +80,9 @@
     "@smartface/core" "^5.0.0-alpha.0"
 
 "@smartface/native@^5.0.0-alpha":
-  version "5.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-beta.4.tgz#6a4ceace2a72f4db5b88e38e95bc9f36b512f63e"
-  integrity sha512-Mm0bTyIQZ73GuN58IUGqEA17mS0cIZr7DKcEZDpOkILI1yeI6z1FOMGUOVePFECAnBw63OVe8bFdVaNw/uamow==
+  version "5.0.0-alpha.53"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.53.tgz#697896f8af6bda670ae9f3bb9f0685e2fe163faa"
+  integrity sha512-iZ8kgCaRwCdfoTKIK/9oPbzUOGM2wAtrLw68YhBrO48Il2QlQUjECHFzJcO68uEDaS6hnNk9l5D9k13aSnu4JA==
   dependencies:
     events "^3.3.0"
 
