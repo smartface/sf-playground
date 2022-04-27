@@ -5,6 +5,10 @@ import Image from '@smartface/native/ui/image';
 import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
 import { IImage } from '@smartface/native/ui/image/image';
 import { ButtonEvents } from '@smartface/native/ui/button/button-events';
+import Picker from '@smartface/native/ui/picker';
+import Color from '@smartface/native/ui/color';
+import File from '@smartface/native/io/file';
+import Path from '@smartface/native/io/path';
 const baseImage = 'images://smartface.png';
 
 export default class PgImageView extends withDismissAndBackButton(PgImageViewDesign) {
@@ -17,11 +21,55 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
     this.btnResize.on(ButtonEvents.Press, () => this.resize());
     this.btnRotate.on(ButtonEvents.Press, () => this.rotate());
     this.btnRound.on(ButtonEvents.Press, () => this.round());
+    this.btnFillType.on(ButtonEvents.Press, () => this.fillType());
+    this.btnTintColor.on(ButtonEvents.Press, () => this.setTintColor());
+    this.btnFetchFromUrl.on(ButtonEvents.Press, () => this.fetchFromUrl());
+    this.btnLoadFromFile.on(ButtonEvents.Press, () => this.loadFromFile());
+    this.btnLoadFromUrl.on(ButtonEvents.Press, () => this.loadFromUrl());
+  }
+
+  fetchFromUrl() {
+    this.imgFillTypes.fetchFromUrl({
+      url: 'https://cdn.smartface.io/docs/logo.png',
+      onFailure: () => console.error('couldnt fetchFromUrl'),
+      onSuccess: () => console.log('success fetchFromUrl')
+    });
+  }
+
+  loadFromFile() {
+    this.imgFillTypes.loadFromFile({
+      file: new File({ path: Path.AssetsUriScheme + 'icon.png' })
+    });
+  }
+
+  loadFromUrl() {
+    this.imgFillTypes.loadFromUrl({
+      url: 'https://cdn.smartface.io/docs/logo.png',
+      onFailure: () => console.error('couldnt loadFromUrl'),
+      onSuccess: () => console.log('success loadFromUrl')
+    });
   }
 
   workaround() {
     this.imgOriginal.dispatch({ type: 'updateUserStyle', userStyle: { imageFillType: 'ASPECTFILL' } });
     this.imgMain.dispatch({ type: 'updateUserStyle', userStyle: { imageFillType: 'ASPECTFILL' } });
+  }
+
+  setTintColor() {
+    this.imgFillTypes.tintColor = Color.RED;
+  }
+
+  fillType() {
+    const picker = new Picker();
+    const fills = ['ASPECTFILL', 'ASPECTFIT', 'BOTTOMCENTER', 'BOTTOMLEFT', 'BOTTOMRIGHT', 'MIDCENTER', 'MIDLEFT', 'MIDRIGHT', 'NORMAL', 'STRETCH', 'TOPCENTER', 'TOPLEFT', 'TOPRIGHT'];
+    picker.items = fills;
+    picker.on('selected', (index) => {
+      this.imgFillTypes.dispatch({
+        type: 'updateUserStyle',
+        userStyle: { imageFillType: fills[index] }
+      });
+    });
+    picker.show();
   }
 
   printReadonlyProps(image?: IImage) {

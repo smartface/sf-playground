@@ -63,7 +63,14 @@
 					"7624-a01a-5f95-ff14",
 					"69be-9e3b-cc2e-3333",
 					"fac4-58ef-e8fb-689e",
-					"d57b-9735-153a-d737"
+					"d57b-9735-153a-d737",
+					"2f3f-d117-4020-397b",
+					"e99d-d034-d147-052f",
+					"ee3b-0358-3498-263e",
+					"2424-e03c-9809-3773",
+					"bb1a-630e-9185-0f65",
+					"2c92-a500-fa3e-db8e",
+					"dee0-3c30-6f7c-b949"
 				],
 				"name": "svMain",
 				"parent": "6dbc-1135-d929-5416"
@@ -116,6 +123,7 @@
 		},
 		{
 			"className": ".sf-label",
+			"hiddenComponent": false,
 			"id": "6d67-34fc-4190-f0c6",
 			"oldName": "lblOriginal_1",
 			"props": {
@@ -324,6 +332,137 @@
 				"testId": "G8MPsgn7V",
 				"text": "Round (Android)",
 				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "2f3f-d117-4020-397b",
+			"oldName": "imgMain_1",
+			"props": {
+				"children": [],
+				"name": "imgFillTypes",
+				"parent": "3265-4632-8823-84ec",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderColor": "rgba( 0, 0, 0, 1 )",
+				"borderWidth": 1,
+				"height": 160,
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFILL",
+				"left": 0,
+				"testId": "6_UakgonT",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "e99d-d034-d147-052f",
+			"oldName": "lblAutoMirrored_1",
+			"props": {
+				"children": [],
+				"name": "lblFillTypes",
+				"parent": "3265-4632-8823-84ec",
+				"text": "Image Fill Types"
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "Image Fill Types",
+				"textAlignment": "MIDCENTER",
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "ee3b-0358-3498-263e",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnFillType",
+				"parent": "3265-4632-8823-84ec",
+				"text": "Set Fill Type",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "u7uUNsYkm",
+				"text": "Set Fill Type",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2424-e03c-9809-3773",
+			"oldName": "btnFillType_1",
+			"props": {
+				"children": [],
+				"name": "btnTintColor",
+				"parent": "3265-4632-8823-84ec",
+				"text": "Set Tint Color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "u7uUNsYkm",
+				"text": "Set Tint Color",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "bb1a-630e-9185-0f65",
+			"oldName": "btnTintColor_1",
+			"props": {
+				"children": [],
+				"name": "btnFetchFromUrl",
+				"parent": "3265-4632-8823-84ec",
+				"text": "Fetch From URL",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "u7uUNsYkm",
+				"text": "Fetch From URL",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2c92-a500-fa3e-db8e",
+			"oldName": "btnLoadFromUrl_1",
+			"props": {
+				"children": [],
+				"name": "btnLoadFromFile",
+				"parent": "3265-4632-8823-84ec",
+				"text": "Load From File",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "u7uUNsYkm",
+				"text": "Load From File",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "dee0-3c30-6f7c-b949",
+			"oldName": "btnFetchFromUrl_1",
+			"props": {
+				"children": [],
+				"name": "btnLoadFromUrl",
+				"parent": "3265-4632-8823-84ec",
+				"text": "Load From URL",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "u7uUNsYkm",
+				"text": "Load From URL",
 				"usePageVariable": true
 			}
 		}
