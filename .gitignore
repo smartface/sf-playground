@@ -20,3 +20,4 @@ scripts/generated
 dist
 yarn-error.log
 /libs
+.theia/compiler_status.json
