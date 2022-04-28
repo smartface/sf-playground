@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "df2a-1527-309d-ab7e",
+			"initialized": true,
+			"props": {
+				"children": [
+					"a668-8e81-434e-6681",
+					"95bf-507e-ec77-0a7a",
+					"5a00-8ca7-3153-0fbc"
+				],
+				"name": "pgLiveMediaPlayer",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "a668-8e81-434e-6681",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "df2a-1527-309d-ab7e"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "95bf-507e-ec77-0a7a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "df2a-1527-309d-ab7e",
+				"title": "pgLiveMediaPlayer"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgLiveMediaPlayer"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5a00-8ca7-3153-0fbc",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "flLiveMediaPlayer",
+				"parent": "df2a-1527-309d-ab7e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

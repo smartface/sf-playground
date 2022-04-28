@@ -81,6 +81,7 @@ import PgActivityIndicator from 'pages/pgActivityIndicator';
 import PgAlertView from 'pages/pgAlertView';
 import PgImageView from 'pages/pgImageView';
 import PgScrollView from 'pages/pgScrollView';
+import PgLiveMediaPlayer from 'pages/pgLiveMediaPlayer';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -140,7 +141,8 @@ export const tab0: Tab = {
     PgActivityIndicator,
     PgAlertView,
     PgImageView,
-    PgScrollView
+    PgScrollView,
+    PgLiveMediaPlayer
   ]
 };
 
