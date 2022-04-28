@@ -3,7 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import ContentInsetAdjustment from '@smartface/native/ui/shared/ios/contentinsetadjustment';
 import OverScrollMode from '@smartface/native/ui/shared/android/overscrollmode';
-import { ScrollViewEdge } from '@smartface/native/ui/scrollview/scrollview';
+import { ScrollViewEdge, ScrollViewAlign } from '@smartface/native/ui/scrollview/scrollview';
 import { ScrollViewEvents } from '@smartface/native/ui/scrollview/scrollview-events';
 
 /**
@@ -26,7 +26,7 @@ export default class PgScrollView extends withDismissAndBackButton(PgScrollViewD
     this.btnScrollToCoordinate.on('press', () => this.scrollToCoordinate());
     this.btnScrollToEdge.on('press', () => this.scrollToEdge());
 
-    this.svMain.on(ScrollViewEvents.Scroll, (params) => {
+    this.svMain.on('scroll', (params) => {
       if (!this._scrollLock) {
         console.log('on scroll', params);
         this._scrollLock = true;
