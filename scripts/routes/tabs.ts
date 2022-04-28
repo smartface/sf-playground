@@ -85,6 +85,7 @@ import PgLiveMediaPlayer from 'pages/pgLiveMediaPlayer';
 import PgTextArea from 'pages/pgTextArea';
 import PgFlexLayout from 'pages/pgFlexLayout';
 import PgMaterialTextBox from 'pages/pgMaterialTextBox';
+import PgQuickLook from 'pages/pgQuickLook';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -148,7 +149,8 @@ export const tab0: Tab = {
     PgLiveMediaPlayer,
     PgTextArea,
     PgFlexLayout,
-    PgMaterialTextBox
+    PgMaterialTextBox,
+    PgQuickLook
   ]
 };
 
