@@ -3,12 +3,14 @@ import BlurView from '@smartface/native/ui/blurview';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import ImageView from '@smartface/native/ui/imageview';
 import Screen from '@smartface/native/device/screen';
-import Image from '@smartface/native/ui/image';
 import Button from '@smartface/native/ui/button';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Route, Router } from '@smartface/router';
 import { styleableComponentMixin } from '@smartface/styling-context';
+import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 import System from '@smartface/native/device/system';
+import Picker from '@smartface/native/ui/picker';
+import { BlurViewEffectStyle } from '@smartface/native/ui/blurview/blurview';
 import Color from '@smartface/native/ui/color';
 
 class StyleableBlurView extends styleableComponentMixin(BlurView) {}
@@ -16,71 +18,64 @@ class StyleableButton extends styleableComponentMixin(Button) {}
 class StyleableImageView extends styleableComponentMixin(ImageView) {}
 
 export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesign) {
-  private imgSmartface: StyleableImageView;
-  private myButton: StyleableButton;
   private myBlurView: StyleableBlurView;
   private isShown = false;
+  private _blurRadius = 16;
+  private _effectStyle: BlurViewEffectStyle;
+  private _overlayColor: Color;
   constructor(private router?: Router, private route?: Route) {
     super({});
+    this.sliderRadius.on(SliderEvents.ValueChange, (value) => {
+      this._blurRadius = value;
+    });
+    this.btnEffectStyle.on('press', () => this.showPickerEffectStyle());
+    this.btnOverlayColor.on('press', () => this.setOverlayColor());
+    this.btnShowHide.on('press', () => this.showHideBlurView());
   }
 
-  // The page design has been made from the code for better
-  // showcase purposes. As a best practice, remove this and
-  // use WYSIWYG editor to style your pages.
-  centerizeTheChildrenLayout() {
-    this.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          flexDirection: 'ROW',
-          justifyContent: 'FLEX_END',
-          alignItems: 'FLEX_END'
-        }
-      }
-    });
+  setOverlayColor() {
+    const random = Math.round(Math.random() * 5);
+    const colors = [Color.BLUE, Color.CYAN, Color.GREEN, Color.MAGENTA, Color.YELLOW, Color.LIGHTGRAY];
+    this._overlayColor = colors[random];
   }
 
-  initImageView() {
-    const imgSmartface = new StyleableImageView({
-      top: 0,
-      right: 0,
-      left: 0,
-      bottom: Screen.height / 2,
-      positionType: FlexLayout.PositionType.ABSOLUTE,
-      imageFillType: ImageView.FillType.ASPECTFIT
+  showPickerEffectStyle() {
+    const picker = new Picker();
+    const items = Object.keys(BlurViewEffectStyle).filter((item) => {
+      return isNaN(Number(item));
     });
-    this.imgSmartface = imgSmartface;
-    this.addChild(imgSmartface);
-    imgSmartface.image = Image.createFromFile('images://smartface.png');
+    picker.items = items;
+    picker.on('selected', (index) => {
+      this._effectStyle = BlurViewEffectStyle[items[index]];
+    });
+    picker.show();
   }
+
   initBlurView() {
     const myBlurView = new StyleableBlurView({
       top: 0,
       right: 0,
       left: 0,
-      bottom: Screen.height / 2,
+      bottom: 0,
       positionType: FlexLayout.PositionType.ABSOLUTE
     });
-    myBlurView.android.rootView = this.layout;
+    myBlurView.android.rootView = this.flBlur;
+    // myBlurView.android.blurRadius = this._blurRadius;
+    this._effectStyle && (this.myBlurView.ios.effectStyle = this._effectStyle);
+    this._overlayColor && (this.myBlurView.android.overlayColor = this._overlayColor);
     this.myBlurView = myBlurView;
-    this.addChild(myBlurView, 'myBlurView');
+    this.flBlur.addChild(myBlurView, 'myBlurView');
   }
-  initButton() {
-    const myButton = new StyleableButton({
-      text: 'Show',
-      flexGrow: 1
-    });
-    this.myButton = myButton;
-    this.addChild(myButton, 'myButton', '.sf-button');
-    myButton.onPress = () => {
-      this.removeChild(this.myBlurView);
-      if (this.isShown) {
-        this.addChild(this.myBlurView, 'myBlurView');
-      }
-      this.myButton.text = this.isShown ? 'Show' : 'Hide';
-      this.isShown = !this.isShown;
-      this.layout.applyLayout();
-    };
+
+  showHideBlurView() {
+    this.flBlur.removeChild(this.myBlurView);
+    if (this.isShown) {
+      this.flBlur.addChild(this.myBlurView, 'myBlurView');
+    }
+    this.btnShowHide.text = this.isShown ? 'Show' : 'Hide';
+    this.isShown = !this.isShown;
+    this.flBlur.applyLayout();
+    System.OS === System.OSType.IOS && this.layout.applyLayout();
   }
 
   onShow() {
@@ -89,10 +84,6 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
 
   onLoad() {
     super.onLoad();
-    this.centerizeTheChildrenLayout();
-
-    this.initImageView();
     this.initBlurView();
-    this.initButton();
   }
 }
