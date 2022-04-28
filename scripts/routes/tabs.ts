@@ -48,7 +48,7 @@ import PgAsyncTask from 'pages/pgAsyncTask';
 import PgCrypto from 'pages/pgCrypto';
 import PgSpeechRecognizer from 'pages/pgSpeechRecognizer';
 import PgApplicationEvents from 'pages/pgApplicationEvents';
-import PgRangeSlider from 'pages/pgRangeSlider';
+import PgRangeSliderAndSlider from 'pages/pgRangeSliderAndSlider';
 import PgTimePicker from 'pages/pgTimePicker';
 import PgViewGroup from 'pages/pgViewGroup';
 import PgBlurView from 'pages/pgBlurView';
@@ -122,7 +122,7 @@ export const tab0: Tab = {
     PgFileIO,
     PgSound,
     PgAsyncTask,
-    PgRangeSlider,
+    PgRangeSliderAndSlider,
     PgListView,
     PgGridView,
     PgPicker,
