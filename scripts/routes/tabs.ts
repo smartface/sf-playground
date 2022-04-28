@@ -82,6 +82,8 @@ import PgAlertView from 'pages/pgAlertView';
 import PgImageView from 'pages/pgImageView';
 import PgScrollView from 'pages/pgScrollView';
 import PgLiveMediaPlayer from 'pages/pgLiveMediaPlayer';
+import PgTextArea from 'pages/pgTextArea';
+import PgFlexLayout from 'pages/pgFlexLayout';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -142,7 +144,9 @@ export const tab0: Tab = {
     PgAlertView,
     PgImageView,
     PgScrollView,
-    PgLiveMediaPlayer
+    PgLiveMediaPlayer,
+    PgTextArea,
+    PgFlexLayout
   ]
 };
 

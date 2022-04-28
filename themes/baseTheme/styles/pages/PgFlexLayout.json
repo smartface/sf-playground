@@ -1,0 +1,17 @@
+{
+  "#pgFlexLayout": {
+    "&-fl": {
+      "flexProps": {
+        "alignContent": "CENTER",
+        "alignItems": "AUTO",
+        "alignSelf": "AUTO",
+        "justifyContent": "CENTER",
+        "flexDirection": "COLUMN",
+        "direction": "LTR",
+        "flexWrap": "NOWRAP"
+      },
+      "borderWidth": 1,
+      "borderColor": "rgba( 0, 0, 0, 1 )"
+    }
+  }
+}

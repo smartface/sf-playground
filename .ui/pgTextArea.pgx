@@ -1,0 +1,82 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "7e72-5ff2-9252-0026",
+			"initialized": true,
+			"props": {
+				"children": [
+					"6267-ea2f-fcab-70f8",
+					"1331-abda-7681-760c",
+					"0a2a-9d18-215d-1aa4",
+					"3240-18d6-a46e-ee31"
+				],
+				"name": "pgTextArea",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "6267-ea2f-fcab-70f8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7e72-5ff2-9252-0026"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "1331-abda-7681-760c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7e72-5ff2-9252-0026",
+				"title": "pgTextArea"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTextArea"
+			}
+		},
+		{
+			"className": ".sf-textArea",
+			"id": "0a2a-9d18-215d-1aa4",
+			"oldName": "textArea1",
+			"props": {
+				"children": [],
+				"name": "ta",
+				"parent": "7e72-5ff2-9252-0026",
+				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti.",
+				"usePageVariable": true
+			},
+			"type": "TextArea",
+			"userProps": {
+				"text": "Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur. \n  Aliquam erat volutpat. Suspendisse potenti.",
+				"textAlignment": "TOPLEFT",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "3240-18d6-a46e-ee31",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "7e72-5ff2-9252-0026",
+				"text": "button1"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "button1"
+			}
+		}
+	]
+}
