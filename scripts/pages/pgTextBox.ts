@@ -15,10 +15,22 @@ import { StatusBarStyle } from '@smartface/native/application/statusbar/statusba
 import Application from '@smartface/native/application';
 import ActionKeyType from '@smartface/native/ui/shared/android/actionkeytype';
 import { TextBoxEvents } from '@smartface/native/ui/textbox/textbox-events';
+import Picker from '@smartface/native/ui/picker';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
+    this.btnTextAlignment.on('press', () => this.showPickerForTextAlignment());
+  }
+
+  showPickerForTextAlignment() {
+    const picker = new Picker();
+    const items = ['TOPLEFT', 'TOPCENTER', 'TOPRIGHT', 'MIDLEFT', 'MIDCENTER', 'MIDRIGHT', 'BOTTOMLEFT', 'BOTTOMCENTER', 'BOTTOMRIGHT'];
+    picker.items = items;
+    picker.on('selected', (index) => {
+      this.tvMain.textAlignment = TextAlignment[items[index]];
+    });
+    picker.show();
   }
 
   initTextView() {

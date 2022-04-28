@@ -14,6 +14,7 @@
 					"cf27-2af0-9f05-0d43",
 					"79c7-16b0-082b-a1ac",
 					"5b81-8195-a51d-021c",
+					"01d9-2f5e-49bb-c90e",
 					"eb9a-011f-d126-3782",
 					"c6fd-5c07-6dee-897d"
 				],
@@ -251,6 +252,23 @@
 			"userProps": {
 				"testId": "UvTrHtpj3C",
 				"text": "Send",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "01d9-2f5e-49bb-c90e",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnTextAlignment",
+				"parent": "f514-b2a5-80fd-2e93",
+				"text": "TextAlignment of TextView",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "TextAlignment of TextView",
 				"usePageVariable": true
 			}
 		},
