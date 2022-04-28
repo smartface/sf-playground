@@ -3,6 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Picker from '@smartface/native/ui/picker';
 import FlexLayout from '@smartface/native/ui/flexlayout';
+import System from '@smartface/native/device/system';
 
 export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -28,6 +29,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
+      this.applyFlLayout();
     });
     picker.show();
   }
@@ -44,6 +46,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
       }
     });
     this.btnFlexWrap.text = isWrap ? 'Change to Flex NoWrap' : 'Change to Flex Wrap';
+    this.applyFlLayout();
   }
 
   changeFlexDirection() {
@@ -59,6 +62,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
+      this.applyFlLayout();
     });
     picker.show();
   }
@@ -74,6 +78,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
         }
       }
     });
+    this.applyFlLayout();
     this.btnDirection.text = isLTR ? 'Change to RTL' : 'Change to LTR';
   }
 
@@ -90,6 +95,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
+      this.applyFlLayout();
     });
     picker.show();
   }
@@ -107,8 +113,13 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
+      this.applyFlLayout();
     });
     picker.show();
+  }
+
+  applyFlLayout() {
+    System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.fl.applyLayout();
   }
   /**
    * @event onShow
