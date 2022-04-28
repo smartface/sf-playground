@@ -7,7 +7,7 @@ import Page from '@smartface/native/ui/page';
 import { ConstructorOf } from '@smartface/styling-context/lib/ConstructorOf';
 
 export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
-  pages: ConstructorOf<Page>[] = [];
+  _pages: ConstructorOf<Page>[] = [];
 
   constructor(private router?: Router, private route?: Route, params?: any) {
     super({});
@@ -30,11 +30,25 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   }
   onShow() {
     super.onShow();
-    this.refreshListView();
   }
   onLoad() {
     super.onLoad();
     this.headerBar.leftItemEnabled = false;
     this.initListView();
+  }
+
+  set pages(value) {
+    this._pages = value.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
+    this.refreshListView();
+  }
+
+  get pages() {
+    return this._pages;
   }
 }
