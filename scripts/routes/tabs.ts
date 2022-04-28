@@ -84,6 +84,7 @@ import PgScrollView from 'pages/pgScrollView';
 import PgLiveMediaPlayer from 'pages/pgLiveMediaPlayer';
 import PgTextArea from 'pages/pgTextArea';
 import PgFlexLayout from 'pages/pgFlexLayout';
+import PgMaterialTextBox from 'pages/pgMaterialTextBox';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -146,7 +147,8 @@ export const tab0: Tab = {
     PgScrollView,
     PgLiveMediaPlayer,
     PgTextArea,
-    PgFlexLayout
+    PgFlexLayout,
+    PgMaterialTextBox
   ]
 };
 
