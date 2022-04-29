@@ -90,6 +90,7 @@ import PgGifImageView from 'pages/pgGifImageView';
 import PgWebBrowser from 'pages/pgWebBrowser';
 import PgView from 'pages/pgView';
 import PgSelectablePicker from 'pages/pgSelectablePicker';
+import PgCallDetection from 'pages/pgCallDetection';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -158,7 +159,8 @@ export const tab0: Tab = {
     PgGifImageView,
     PgWebBrowser,
     PgView,
-    PgSelectablePicker
+    PgSelectablePicker,
+    PgCallDetection
   ]
 };
 
