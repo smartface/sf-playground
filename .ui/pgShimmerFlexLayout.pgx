@@ -49,16 +49,21 @@
 		{
 			"className": ".sf-shimmerFlexLayout",
 			"id": "b6ae-08ce-c00a-3659",
+			"oldName": "shimmerFlexLayout1",
 			"props": {
 				"children": [
 					"65da-90cd-3503-48b2"
 				],
-				"name": "shimmerFlexLayout1",
-				"parent": "7428-985a-1805-4283"
+				"name": "sfl",
+				"parent": "7428-985a-1805-4283",
+				"usePageVariable": true
 			},
 			"ref": null,
 			"type": "ShimmerFlexLayout",
-			"userProps": {}
+			"userProps": {
+				"height": 200,
+				"usePageVariable": true
+			}
 		},
 		{
 			"className": ".sf-activityIndicator",
@@ -80,12 +85,14 @@
 				"children": [],
 				"name": "btnToggleShimmer",
 				"parent": "7428-985a-1805-4283",
-				"text": "button1"
+				"text": "Toggle Shimmer",
+				"usePageVariable": true
 			},
 			"ref": null,
 			"type": "Button",
 			"userProps": {
-				"text": "button1"
+				"text": "Toggle Shimmer",
+				"usePageVariable": true
 			}
 		}
 	]
