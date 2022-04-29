@@ -207,7 +207,8 @@
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
 				"marginBottom": null,
-				"marginTop": null
+				"marginTop": null,
+				"width": null
 			}
 		}
 	]

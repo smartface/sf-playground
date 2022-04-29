@@ -19,24 +19,25 @@ class StyleableImageView extends styleableComponentMixin(ImageView) {}
 
 export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesign) {
   private myBlurView: StyleableBlurView;
-  private isShown = false;
   private _blurRadius = 16;
-  private _effectStyle: BlurViewEffectStyle;
-  private _overlayColor: Color;
+  private _effectStyle: BlurViewEffectStyle = BlurViewEffectStyle.LIGHT;
+  private _overlayColor: Color = Color.BLACK;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.sliderRadius.on(SliderEvents.ValueChange, (value) => {
+    this.sliderRadius.on('valueChange', (value) => {
       this._blurRadius = value;
+      this.showHideBlurView(true);
     });
     this.btnEffectStyle.on('press', () => this.showPickerEffectStyle());
     this.btnOverlayColor.on('press', () => this.setOverlayColor());
-    this.btnShowHide.on('press', () => this.showHideBlurView());
+    this.btnShowHide.on('press', () => this.showHideBlurView(this.btnShowHide.text !== 'Show'));
   }
 
   setOverlayColor() {
     const random = Math.round(Math.random() * 5);
     const colors = [Color.BLUE, Color.CYAN, Color.GREEN, Color.MAGENTA, Color.YELLOW, Color.LIGHTGRAY];
     this._overlayColor = colors[random];
+    this.showHideBlurView(true);
   }
 
   showPickerEffectStyle() {
@@ -47,6 +48,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
     picker.items = items;
     picker.on('selected', (index) => {
       this._effectStyle = BlurViewEffectStyle[items[index]];
+      this.showHideBlurView(true);
     });
     picker.show();
   }
@@ -57,25 +59,27 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
       right: 0,
       left: 0,
       bottom: 0,
-      positionType: FlexLayout.PositionType.ABSOLUTE
+      positionType: FlexLayout.PositionType.ABSOLUTE,
+      backgroundColor: Color.BLACK
     });
-    myBlurView.android.rootView = this.flBlur;
+    // myBlurView.android.rootView = this.flBlur;
     // myBlurView.android.blurRadius = this._blurRadius;
-    this._effectStyle && (this.myBlurView.ios.effectStyle = this._effectStyle);
-    this._overlayColor && (this.myBlurView.android.overlayColor = this._overlayColor);
+    myBlurView.ios.effectStyle = this._effectStyle;
+    myBlurView.android.overlayColor = this._overlayColor;
     this.myBlurView = myBlurView;
     this.flBlur.addChild(myBlurView, 'myBlurView');
+    System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.flBlur.applyLayout();
   }
 
-  showHideBlurView() {
-    this.flBlur.removeChild(this.myBlurView);
-    if (this.isShown) {
-      this.flBlur.addChild(this.myBlurView, 'myBlurView');
+  showHideBlurView(toggle: boolean) {
+    if (!this.myBlurView) {
+      return;
     }
-    this.btnShowHide.text = this.isShown ? 'Show' : 'Hide';
-    this.isShown = !this.isShown;
-    this.flBlur.applyLayout();
-    System.OS === System.OSType.IOS && this.layout.applyLayout();
+    this.flBlur.removeChild(this.myBlurView);
+    if (toggle) {
+      this.initBlurView();
+    }
+    this.btnShowHide.text = toggle ? 'Show' : 'Hide';
   }
 
   onShow() {
@@ -83,7 +87,11 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
   }
 
   onLoad() {
-    super.onLoad();
-    this.initBlurView();
+    try {
+      super.onLoad();
+      this.initBlurView();
+    } catch (e) {
+      console.error(e.message, { stack: e.stack });
+    }
   }
 }
