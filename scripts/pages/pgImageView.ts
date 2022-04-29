@@ -32,7 +32,10 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
     this.imgFillTypes.fetchFromUrl({
       url: 'https://cdn.smartface.io/docs/logo.png',
       onFailure: () => console.error('couldnt fetchFromUrl'),
-      onSuccess: () => console.log('success fetchFromUrl'),
+      onSuccess: (image: Image) => {
+        console.info('success fetchFromUrl');
+        this.imgFillTypes.image = image;
+      },
       placeholder: Image.createFromFile('imageview_preview.png')
     });
   }
@@ -60,6 +63,12 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
   }
 
   setTintColor() {
+    this.imgFillTypes.dispatch({
+      type: 'updateUserStyle',
+      userStyle: {
+        tintColor: '#FF0000'
+      }
+    });
     this.imgFillTypes.tintColor = Color.RED;
   }
 

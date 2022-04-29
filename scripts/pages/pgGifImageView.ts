@@ -3,6 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
+import GifImage from '@smartface/native/ui/gifimage';
 
 export default class PgGifImageView extends withDismissAndBackButton(PgGifImageViewDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -10,6 +11,7 @@ export default class PgGifImageView extends withDismissAndBackButton(PgGifImageV
   }
 
   initGif() {
+    // this.giv.gifImage = GifImage.createFromFile('assets://countdown.gif');
     this.giv.loadFromFile({ file: new File({ path: Path.AssetsUriScheme + 'countdown.gif' }) });
   }
   /**
@@ -19,7 +21,7 @@ export default class PgGifImageView extends withDismissAndBackButton(PgGifImageV
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
-    // this.initGif();
+    this.initGif();
   }
 
   /**
