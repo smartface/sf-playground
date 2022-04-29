@@ -86,6 +86,7 @@ import PgTextArea from 'pages/pgTextArea';
 import PgFlexLayout from 'pages/pgFlexLayout';
 import PgMaterialTextBox from 'pages/pgMaterialTextBox';
 import PgQuickLook from 'pages/pgQuickLook';
+import PgGifImageView from 'pages/pgGifImageView';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -150,7 +151,8 @@ export const tab0: Tab = {
     PgTextArea,
     PgFlexLayout,
     PgMaterialTextBox,
-    PgQuickLook
+    PgQuickLook,
+    PgGifImageView
   ]
 };
 

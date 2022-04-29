@@ -1,0 +1,66 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "1b20-b339-01c2-626e",
+			"initialized": true,
+			"props": {
+				"children": [
+					"5548-c0e3-b9e9-718c",
+					"42f9-ea57-1351-54d1",
+					"507b-490a-3dd7-fdf3"
+				],
+				"name": "pgGifImageView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "5548-c0e3-b9e9-718c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "1b20-b339-01c2-626e"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "42f9-ea57-1351-54d1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "1b20-b339-01c2-626e",
+				"title": "pgGifImageView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgGifImageView"
+			}
+		},
+		{
+			"className": ".sf-gifImageView",
+			"id": "507b-490a-3dd7-fdf3",
+			"oldName": "gifImageView1",
+			"props": {
+				"children": [],
+				"name": "giv",
+				"parent": "1b20-b339-01c2-626e",
+				"usePageVariable": true
+			},
+			"type": "GifImageView",
+			"userProps": {
+				"height": 150,
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true
+			}
+		}
+	]
+}
