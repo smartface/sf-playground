@@ -21,6 +21,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.btnTextAlignment.on('press', () => this.showPickerForTextAlignment());
+    this.btnChangeKeyboardType.on('press', () => this.showPickerKeyboardType());
   }
 
   showPickerForTextAlignment() {
@@ -80,6 +81,17 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.tbPin.on(TextBoxEvents.ActionButtonPress, () => console.log('action button pressed'));
   }
 
+  showPickerKeyboardType() {
+    const picker = new Picker();
+    const items = ['DECIMAL', 'DEFAULT', 'EMAILADDRESS', 'NUMBER', 'PHONE', 'URL'];
+    picker.items = items;
+    picker.on('selected', (index) => {
+      console.log('Keyboard Type Selected: ', items[index]);
+      this.tbDynamic.keyboardType = KeyboardType[items[index]];
+    });
+    picker.show();
+  }
+
   initTextBoxes() {
     const userNameType = System.OS === System.OSType.ANDROID ? KeyboardType.android.TEXTPERSONNAME : KeyboardType.DEFAULT;
 
@@ -95,6 +107,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
       this.tbName.ios.minimumFontSize = 20;
       this.tbName.ios.keyboardAppearance = KeyboardAppearance.DARK;
       this.tbPin.ios.textContentType = TextContentType.ONETIMECODE;
+      this.tbPin.ios.keyboardAppearance = KeyboardAppearance.LIGHT;
     }
     if (System.OS === System.OSType.ANDROID) {
       //  this.tbPin.android.maxLength = 4;
@@ -105,6 +118,8 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
 
     this.tbPin.keyboardType = KeyboardType.NUMBER;
     this.tbPin.text = '';
+
+    this.tbDynamic.hint = 'Change keyboard types from button below';
 
     // const keyboardLayouts = KeyboardLayout.init([
     //     this.tbName,

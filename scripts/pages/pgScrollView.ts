@@ -3,8 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import ContentInsetAdjustment from '@smartface/native/ui/shared/ios/contentinsetadjustment';
 import OverScrollMode from '@smartface/native/ui/shared/android/overscrollmode';
-import { ScrollViewEdge, ScrollViewAlign } from '@smartface/native/ui/scrollview/scrollview';
-import { ScrollViewEvents } from '@smartface/native/ui/scrollview/scrollview-events';
+import { ScrollViewEdge } from '@smartface/native/ui/scrollview/scrollview';
 
 /**
  * TODO: SWITCH SVSECONDARY TO HORIZONTAL
