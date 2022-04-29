@@ -14,7 +14,7 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
     //@ts-ignore
     getPermission({ permissionText: 'READ_CONTACTS', androidPermission: Application.Android.Permissions.READ_CONTACTS, permissionTitle: 'contacts permission' }).then(() =>
       Contacts.fetchAll({
-        onSuccess: (contacts) => console.info(contacts),
+        onSuccess: (contacts) => console.info(contacts.map((contact) => Object.keys(contact))),
         onFailure: (error) => console.error('fetchAll Failed', error)
       })
     );
@@ -30,15 +30,18 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
     );
   }
 
-  addContact() {
-    //@ts-ignore
-    getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: Application.Android.Permissions.WRITE_CONTACTS, permissionTitle: 'contacts permission' }).then(() =>
+  async addContact() {
+    try {
+      //@ts-ignore
+      await getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: Application.Android.Permissions.WRITE_CONTACTS, permissionTitle: 'contacts permission' });
       Contacts.add({
         contact: new Contacts.Contact({ firstName: 'Smartface', lastName: 'Mobile', phoneNumbers: ['0000'] }),
         onSuccess: () => console.info('add Success'),
         onFailure: () => console.error('add Failed')
-      })
-    );
+      });
+    } catch (e) {
+      console.error(e.message, { stack: e.stack });
+    }
   }
 
   initializeButtons() {
@@ -50,10 +53,10 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
-    this.initializeButtons();
   }
 
   onLoad() {
     super.onLoad();
+    this.initializeButtons();
   }
 }

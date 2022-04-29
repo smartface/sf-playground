@@ -21,9 +21,6 @@ export default class PgRangeSliderAndSlider extends withDismissAndBackButton(PgR
     this.btnSetRandomValue.on('press', () => this.setRandomValue());
     this.sl.on(SliderEvents.ValueChange, (value) => console.log('Slider value changed: ', value));
     this.swEnabled.on(SwitchEvents.ToggleChanged, (toggle) => (this.sl.enabled = toggle));
-    this.sl.maxTrackColor = Color.RED;
-    this.sl.minTrackColor = Color.GREEN;
-    this.sl.thumbColor = Color.DARKGRAY;
   }
 
   setRandomValue() {
@@ -56,6 +53,9 @@ export default class PgRangeSliderAndSlider extends withDismissAndBackButton(PgR
 
   onLoad() {
     super.onLoad();
+    this.sl.maxTrackColor = Color.RED;
+    this.sl.minTrackColor = Color.GREEN;
+    this.sl.thumbColor = Color.DARKGRAY;
     this.myRangeSlider = new StyleableRangeSlider({
       trackColor: Color.create('#00A1F1'),
       outerTrackColor: Color.create('#eaedf2'),
