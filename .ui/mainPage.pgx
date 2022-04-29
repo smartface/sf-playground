@@ -54,14 +54,16 @@
 				"children": [],
 				"name": "lblDisclaimer",
 				"parent": "89e6-3f97-10a5-0ac9",
-				"text": "Select Your Page to Start Playing"
+				"text": "Select Your Page to Start Playing",
+				"usePageVariable": true
 			},
 			"type": "Label",
 			"userProps": {
 				"marginBottom": 16,
 				"testId": "K_pKFsNtt",
 				"text": "Select Your Page to Start Playing",
-				"textAlignment": "MIDCENTER"
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
 			}
 		},
 		{

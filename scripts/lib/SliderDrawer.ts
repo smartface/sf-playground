@@ -15,7 +15,15 @@ let myButton = new StyleableButton({
   text: 'Smartface Button'
 });
 
+myButton.on('press', () => {
+  console.info('sliderDrawer.state: ', Application.sliderDrawer.state);
+  Application.sliderDrawer.hide();
+});
+
 mySliderDrawer.drawerPosition = SliderDrawer.Position.LEFT;
+// mySliderDrawer.drawerPosition = SliderDrawer.Position.RIGHT;
+// mySliderDrawer.enabled = false;
+
 mySliderDrawer.addChild(myButton, 'myButton', '.sf-button', {
   height: 40,
   width: 100,
@@ -26,4 +34,5 @@ mySliderDrawer.addChild(myButton, 'myButton', '.sf-button', {
     positionType: 'ABSOLUTE'
   }
 });
+
 Application.sliderDrawer = mySliderDrawer;

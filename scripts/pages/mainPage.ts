@@ -5,12 +5,17 @@ import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import Page from '@smartface/native/ui/page';
 import { ConstructorOf } from '@smartface/styling-context/lib/ConstructorOf';
+import Application from '@smartface/native/application';
 
 export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   _pages: ConstructorOf<Page>[] = [];
 
   constructor(private router?: Router, private route?: Route, params?: any) {
     super({});
+    this.lblDisclaimer.on('touchEnded', () => {
+    //   console.info('sliderDrawer.state: ', Application.sliderDrawer.state);
+    //   Application.sliderDrawer.show();
+    });
   }
 
   initListView() {
