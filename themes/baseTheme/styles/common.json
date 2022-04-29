@@ -50,5 +50,21 @@
   ".marginVertical": {
     "marginBottom": 15,
     "marginTop": 15
+  },
+  ".gradient": {
+    "&-left": {
+      "backgroundColor": {
+        "startColor": "#340470",
+        "endColor": "#c6aee5",
+        "direction": "DIAGONAL_LEFT"
+      }
+    },
+    "&-vertical": {
+      "backgroundColor": {
+        "startColor": "#340470",
+        "endColor": "#c6aee5",
+        "direction": "VERTICAL"
+      }
+    }
   }
 }
