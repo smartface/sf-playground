@@ -26,6 +26,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
   addHeaderWithDirectImage() {
     console.log('addHeaderWithDirectImage');
     const imageHeaderBarItem = new HeaderBarItem();
+    imageHeaderBarItem.onPress = () => console.log('press imageHeaderBarItem');
     imageHeaderBarItem.image = 'images://smartface.png';
     imageHeaderBarItem.color = Color.BLACK; // For Android
     /**
@@ -38,6 +39,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
   addAttributedTitleToHeaderBarItem() {
     console.log('addAttributedTitleToHeaderBarItem');
     const attributedTitleToHeaderBarItem = new HeaderBarItem();
+    attributedTitleToHeaderBarItem.onPress = () => console.log('press attributedTitleToHeaderBarItem');
     this.headerBar.setItems([attributedTitleToHeaderBarItem]);
     attributedTitleToHeaderBarItem.android.attributedTitle = new AttributedString({
       string: 'click',
@@ -51,6 +53,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
   addHeaderWithGetNativeStyle() {
     console.log('addHeaderWithGetNativeStyle');
     const imageHeaderBarItem = new HeaderBarItem();
+    imageHeaderBarItem.onPress = () => console.log('press imageHeaderBarItem');
     imageHeaderBarItem.image = themeService.getNativeStyle('#pgHeaderImageAndItems').image;
     this.headerBar.setItems([imageHeaderBarItem]);
   }
@@ -58,6 +61,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
   addHeaderWithText() {
     console.log('addHeaderWithText');
     const textHeaderBarItem = new HeaderBarItem();
+    textHeaderBarItem.onPress = () => console.log('press textHeaderBarItem');
     textHeaderBarItem.title = 'Title';
     textHeaderBarItem.color = Color.BLUE;
     this.headerBar.setItems([textHeaderBarItem]);
@@ -74,6 +78,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
     label.height = 50;
     customView.addChild(label);
     customHeaderBarItem.customView = customView;
+    customHeaderBarItem.onPress = () => console.log('press customHeaderBarItem');
     this.headerBar.setItems([customHeaderBarItem]);
   }
 
@@ -81,6 +86,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
     console.log('addHeaderWithBadge');
     const badgeHeaderBarItem = new HeaderBarItem();
     this.headerBar.setItems([badgeHeaderBarItem]);
+    badgeHeaderBarItem.onPress = () => console.log('press badgeHeaderBarItem');
     badgeHeaderBarItem.badge.visible = true;
     badgeHeaderBarItem.badge.text = '3';
   }
