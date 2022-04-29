@@ -211,6 +211,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 189, 16, 224, 1 )",
+				"borderRadius": 25,
 				"height": 50,
 				"marginBottom": 5,
 				"marginLeft": 5,
