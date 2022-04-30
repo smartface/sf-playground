@@ -14,6 +14,7 @@ export default class PgHeaderImageAndItems extends withDismissAndBackButton(PgHe
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
+
   initButtonClicks() {
     this.btnDirectImage.onPress = () => this.addHeaderWithDirectImage();
     this.btnStyle.onPress = () => this.addHeaderWithGetNativeStyle();

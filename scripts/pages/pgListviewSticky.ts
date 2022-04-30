@@ -1,11 +1,8 @@
 import PgListviewStickyDesign from 'generated/pages/pgListviewSticky';
-import Application from '@smartface/native/application';
 import { Route, Router } from '@smartface/router';
 import { styleableContainerComponentMixin, styleableComponentMixin } from '@smartface/styling-context';
 import Label from '@smartface/native/ui/label';
 import Color from '@smartface/native/ui/color';
-import ListView from '@smartface/native/ui/listview';
-import PageTitleLayout from 'components/PageTitleLayout';
 import ListViewItem from '@smartface/native/ui/listviewitem';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import { withDismissAndBackButton } from '@smartface/mixins';

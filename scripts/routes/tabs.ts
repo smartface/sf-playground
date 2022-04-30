@@ -93,6 +93,7 @@ import PgSelectablePicker from 'pages/pgSelectablePicker';
 import PgCallDetection from 'pages/pgCallDetection';
 import PgVideoView from 'pages/pgVideoView';
 import PgStatusBar from 'pages/pgStatusBar';
+import PgHeaderBar from 'pages/pgHeaderBar';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -164,7 +165,8 @@ export const tab0: Tab = {
     PgSelectablePicker,
     PgCallDetection,
     PgVideoView,
-    PgStatusBar
+    PgStatusBar,
+    PgHeaderBar
   ]
 };
 

@@ -1,0 +1,454 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "0a15-1cff-ec1b-d2ec",
+			"initialized": true,
+			"props": {
+				"children": [
+					"8991-d33d-04ea-0b11",
+					"0518-ea25-1eea-6f4e",
+					"96ce-2a24-84a8-2478"
+				],
+				"name": "pgHeaderBar",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingTop": 32
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8991-d33d-04ea-0b11",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "0a15-1cff-ec1b-d2ec"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0518-ea25-1eea-6f4e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "0a15-1cff-ec1b-d2ec",
+				"title": "pgHeaderBar"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgHeaderBar"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "96ce-2a24-84a8-2478",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"5e8a-cacb-b6df-73e3",
+					"d885-288d-dc5d-40be",
+					"ddd1-6bbe-78cd-61ff",
+					"3ec1-4997-7148-871c",
+					"22c1-854c-48d7-86fb",
+					"e683-9d57-99f0-0ecd",
+					"118e-92bb-8217-ac50",
+					"3bc4-a318-6337-9474",
+					"80c8-5e71-d017-9723",
+					"0f83-6622-a81f-2d7d",
+					"3398-1a15-bd3d-9aec",
+					"9dfe-ddce-991d-3f1c",
+					"02dc-e850-742f-96a2",
+					"5fe6-f844-84fa-50aa",
+					"883b-0cf2-10f7-f5e0",
+					"0767-81bd-5516-b6ae"
+				],
+				"name": "sv",
+				"parent": "0a15-1cff-ec1b-d2ec"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5e8a-cacb-b6df-73e3",
+			"oldName": "btnSetItemColor_1",
+			"props": {
+				"children": [],
+				"name": "btnGetHeight",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Get Height",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Get Height",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "d885-288d-dc5d-40be",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnVisible",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Change visibility",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Change visibility",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "ddd1-6bbe-78cd-61ff",
+			"oldName": "btnVisible_1",
+			"props": {
+				"children": [],
+				"name": "btnTransparent",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Change transparent",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Change transparent",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "3ec1-4997-7148-871c",
+			"oldName": "btnTransparent_1",
+			"props": {
+				"children": [],
+				"name": "btnTranslucent",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Change translucent (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Change translucent (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "22c1-854c-48d7-86fb",
+			"oldName": "btnTranslucent_1",
+			"props": {
+				"children": [],
+				"name": "btnTitleLayout",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set a titlelayout",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set a titlelayout",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "e683-9d57-99f0-0ecd",
+			"oldName": "btnTitleLayout_1",
+			"props": {
+				"children": [],
+				"name": "btnTitleFont",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set titlefont & color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set titlefont & color",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "118e-92bb-8217-ac50",
+			"oldName": "btnTitleFont_1",
+			"props": {
+				"children": [],
+				"name": "btnSetSubtitle",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set subtitle (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set subtitle (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "3bc4-a318-6337-9474",
+			"oldName": "btnSetSubtitle_1",
+			"props": {
+				"children": [],
+				"name": "btnSetPadding",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set padding (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set padding (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "80c8-5e71-d017-9723",
+			"oldName": "btnSetPadding_1",
+			"props": {
+				"children": [],
+				"name": "btnSetLogo",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set logo (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set logo (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "0f83-6622-a81f-2d7d",
+			"oldName": "btnSetLogo_1",
+			"props": {
+				"children": [],
+				"name": "btnSetContentInset",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set ContentInset (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set ContentInset (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "3398-1a15-bd3d-9aec",
+			"oldName": "btnSetContentInset_1",
+			"props": {
+				"children": [],
+				"name": "btnSetAttributed",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set AttributedStrings (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set AttributedStrings (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9dfe-ddce-991d-3f1c",
+			"oldName": "btnSetLogo_1",
+			"props": {
+				"children": [],
+				"name": "btnSetItemColor",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set Item Color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Item Color",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "02dc-e850-742f-96a2",
+			"oldName": "btnSetItemColor_1",
+			"props": {
+				"children": [],
+				"name": "btnSetBorderVisibility",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set BorderVisibility",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set BorderVisibility",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5fe6-f844-84fa-50aa",
+			"oldName": "btnSetBorderVisibility_1",
+			"props": {
+				"children": [],
+				"name": "btnSetBackgroundImage",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set BackgroundImage",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set BackgroundImage",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "883b-0cf2-10f7-f5e0",
+			"oldName": "flElevation_1",
+			"props": {
+				"children": [
+					"ea20-629e-8299-5243",
+					"2dd9-5557-0820-7456"
+				],
+				"name": "flAlpha",
+				"parent": "96ce-2a24-84a8-2478"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER"
+				},
+				"height": 75
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "ea20-629e-8299-5243",
+			"oldName": "lblElevation",
+			"props": {
+				"children": [],
+				"name": "lblAlpha",
+				"parent": "883b-0cf2-10f7-f5e0",
+				"text": "Alpha"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Alpha",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-slider",
+			"id": "2dd9-5557-0820-7456",
+			"oldName": "slElevation",
+			"props": {
+				"children": [],
+				"name": "slAlpha",
+				"parent": "883b-0cf2-10f7-f5e0",
+				"usePageVariable": true
+			},
+			"type": "Slider",
+			"userProps": {
+				"usePageVariable": true,
+				"value": 100
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "0767-81bd-5516-b6ae",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"df24-9de1-8cdd-ab7b",
+					"9fa3-f892-2d83-e8b3"
+				],
+				"name": "flElevation",
+				"parent": "96ce-2a24-84a8-2478"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER"
+				},
+				"height": 75
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "df24-9de1-8cdd-ab7b",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblElevation",
+				"parent": "0767-81bd-5516-b6ae",
+				"text": "Elevation (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Elevation (Android)",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-slider",
+			"id": "9fa3-f892-2d83-e8b3",
+			"oldName": "slider1",
+			"props": {
+				"children": [],
+				"name": "slElevation",
+				"parent": "0767-81bd-5516-b6ae",
+				"usePageVariable": true
+			},
+			"type": "Slider",
+			"userProps": {
+				"usePageVariable": true,
+				"value": 0
+			}
+		}
+	]
+}
