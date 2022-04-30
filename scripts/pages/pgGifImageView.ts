@@ -18,7 +18,7 @@ export default class PgGifImageView extends withDismissAndBackButton(PgGifImageV
   }
 
   getInfo() {
-    setInterval(() => {
+    this._interval = setInterval(() => {
       console.info({
         currentFrame: this.giv.currentFrame,
         currentFrameIndex: this.giv.currentFrameIndex,
