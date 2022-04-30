@@ -94,11 +94,13 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
   }
 
   createAndShowAttributedTexts() {
+    console.log('createAndShowAttributedTexts');
     const attributedStrings = createAttributedTexts(this.taHtml.text);
     this.tvHtml.attributedText = attributedStrings;
   }
 
   createAndShowAttributedStrs() {
+    console.log('createAndShowAttributedStrs');
     const attributedStrings = createAttributedStrings(this.taHtml.text);
     this.tvHtml.attributedText = attributedStrings.map((s) => new AttributedString(propFactory(s)));
   }
@@ -111,7 +113,7 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
   initNativeTypescriptTest() {
     // AttributedString & Color TEST
     const attributeString = new AttributedString();
-    attributeString.string = ' Third';
+    attributeString.string = ' Third - AttributedString';
     attributeString.link = 'https://www.google.com/';
     attributeString.strikethrough = true;
     attributeString.backgroundColor = Color.RED;

@@ -97,6 +97,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"height": 245,
 				"testId": "_U7Ds0hea",
 				"usePageVariable": true
 			}
@@ -133,6 +134,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"height": 45,
 				"testId": "eI5zuPwS-"
 			}
 		},
