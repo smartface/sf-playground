@@ -8,7 +8,9 @@
 				"children": [
 					"5548-c0e3-b9e9-718c",
 					"42f9-ea57-1351-54d1",
-					"507b-490a-3dd7-fdf3"
+					"507b-490a-3dd7-fdf3",
+					"45a3-9693-c799-1b05",
+					"d6d4-b71c-2645-cb88"
 				],
 				"name": "pgGifImageView",
 				"orientation": "PORTRAIT",
@@ -59,6 +61,40 @@
 			"userProps": {
 				"height": 150,
 				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "45a3-9693-c799-1b05",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnStart",
+				"parent": "1b20-b339-01c2-626e",
+				"text": "Start Animating",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Start Animating",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "d6d4-b71c-2645-cb88",
+			"oldName": "btnStart_1",
+			"props": {
+				"children": [],
+				"name": "btnStop",
+				"parent": "1b20-b339-01c2-626e",
+				"text": "Stop Animating",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Stop Animating",
 				"usePageVariable": true
 			}
 		}
