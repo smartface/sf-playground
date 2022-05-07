@@ -7,14 +7,10 @@ export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShim
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
-
-  initShimmerFlexLayout() {
-    this.sfl.startShimmering();
-  }
-
   initButton() {
     this.btnToggleShimmer.on('press', () => {
-      if (this.sfl.isShimmering || false) {
+      console.info(this.sfl.isShimmering);
+      if (this.sfl.isShimmering) {
         this.sfl.stopShimmering();
         this.btnToggleShimmer.text = 'Start Shimmering';
       } else {
@@ -32,6 +28,5 @@ export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShim
   onLoad() {
     super.onLoad();
     this.initButton();
-    this.initShimmerFlexLayout();
   }
 }

@@ -7,28 +7,36 @@ import { ActivityIndicatorViewStyle } from '@smartface/native/ui/activityindicat
 export default class PgActivityIndicator extends withDismissAndBackButton(PgActivityIndicatorDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnRed.on('press', this.setColorRed);
-    this.btnBlue.on('press', this.setColorBlue);
-    this.btnDefault.on('press', this.setActivityIndicatorStyleDefault);
-    this.btnLarge.on('press', this.setActivityIndicatorStyleLarge);
+    this.btnRed.on('press', () => this.setColorRed());
+    this.btnBlue.on('press', () => this.setColorBlue());
+    this.btnDefault.on('press', () => this.setActivityIndicatorStyleDefault());
+    this.btnLarge.on('press', () => this.setActivityIndicatorStyleLarge());
   }
 
   setActivityIndicatorStyleDefault() {
-    //@ts-ignore
-    this.ai.activityIndicatorViewStyle = ActivityIndicatorViewStyle.NORMAL;
+    this.ai.ios.activityIndicatorViewStyle = ActivityIndicatorViewStyle.NORMAL;
   }
 
   setActivityIndicatorStyleLarge() {
-    //@ts-ignore
-    this.ai.activityIndicatorViewStyle = ActivityIndicatorViewStyle.LARGE;
+    this.ai.ios.activityIndicatorViewStyle = ActivityIndicatorViewStyle.LARGE;
   }
 
   setColorRed() {
-    this.ai.color = Color.RED;
+    this.ai.dispatch({
+      type: 'updateUserStyle',
+      userStyle: {
+        color: '#FF0000'
+      }
+    });
   }
 
   setColorBlue() {
-    this.ai.color = Color.BLUE;
+    this.ai.dispatch({
+      type: 'updateUserStyle',
+      userStyle: {
+        color: '#0000FF'
+      }
+    });
   }
 
   /**

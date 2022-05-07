@@ -52,7 +52,9 @@
 			"oldName": "shimmerFlexLayout1",
 			"props": {
 				"children": [
-					"65da-90cd-3503-48b2"
+					"e944-1446-40af-a72a",
+					"65da-90cd-3503-48b2",
+					"c567-c0c3-758c-f621"
 				],
 				"name": "sfl",
 				"parent": "7428-985a-1805-4283",
@@ -63,6 +65,22 @@
 			"userProps": {
 				"height": 200,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "e944-1446-40af-a72a",
+			"props": {
+				"children": [],
+				"name": "switch1",
+				"parent": "b6ae-08ce-c00a-3659",
+				"toggle": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"left": 0,
+				"toggle": true,
+				"top": 0
 			}
 		},
 		{
@@ -78,6 +96,20 @@
 			"userProps": {}
 		},
 		{
+			"className": ".sf-searchView",
+			"id": "c567-c0c3-758c-f621",
+			"props": {
+				"children": [],
+				"hint": "Search",
+				"name": "searchView1",
+				"parent": "b6ae-08ce-c00a-3659"
+			},
+			"type": "SearchView",
+			"userProps": {
+				"hint": "Search"
+			}
+		},
+		{
 			"className": ".sf-button",
 			"id": "49ea-9c17-b86a-e426",
 			"oldName": "btnToggle",
@@ -85,13 +117,13 @@
 				"children": [],
 				"name": "btnToggleShimmer",
 				"parent": "7428-985a-1805-4283",
-				"text": "Toggle Shimmer",
+				"text": "Start Shimmering",
 				"usePageVariable": true
 			},
 			"ref": null,
 			"type": "Button",
 			"userProps": {
-				"text": "Toggle Shimmer",
+				"text": "Start Shimmering",
 				"usePageVariable": true
 			}
 		}
