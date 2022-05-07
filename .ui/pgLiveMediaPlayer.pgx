@@ -8,7 +8,9 @@
 				"children": [
 					"a668-8e81-434e-6681",
 					"95bf-507e-ec77-0a7a",
-					"5a00-8ca7-3153-0fbc"
+					"5a00-8ca7-3153-0fbc",
+					"b55a-3417-25b5-1038",
+					"f594-152c-8a98-27bb"
 				],
 				"name": "pgLiveMediaPlayer",
 				"orientation": "PORTRAIT",
@@ -57,6 +59,40 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b55a-3417-25b5-1038",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnAction",
+				"parent": "df2a-1527-309d-ab7e",
+				"text": "Play",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Play",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "f594-152c-8a98-27bb",
+			"oldName": "btn",
+			"props": {
+				"children": [],
+				"name": "btnPause",
+				"parent": "df2a-1527-309d-ab7e",
+				"text": "Pause",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Pause",
 				"usePageVariable": true
 			}
 		}
