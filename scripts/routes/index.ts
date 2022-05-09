@@ -10,6 +10,7 @@ import PgPhotoCropper from 'pages/pgPhotoCropper';
 import { innerPages } from './innerPages';
 import PgModalBottomSheet from 'pages/pgModalBottomSheet';
 import Color from '@smartface/native/ui/color';
+import BottomTabbarController from '@smartface/native/ui/bottomtabbarcontroller';
 
 Application.on('backButtonPressed', () => {
   Router.getActiveRouter()?.goBack();
@@ -101,6 +102,15 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
   //   },
   routes: Object.keys(Tabs).map((tab: any) => generateTabRoute(`${ROOT_PATH}/btb`, Tabs[tab]))
 });
+
+//BottomTabbarControllerTesting
+
+const rootController = bottomTabBarRouter._renderer._rootController;
+// if (rootController instanceof BottomTabbarController) {
+//   rootController.tabBar.backgroundColor = Color.BLUE;
+//   rootController.tabBar.itemColor = { selected: Color.WHITE, normal: Color.BLACK };
+//   rootController.selectedIndex = 2;
+// }
 
 const router = Router.of({
   path: '/',
