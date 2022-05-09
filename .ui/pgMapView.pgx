@@ -8,6 +8,7 @@
 				"children": [
 					"3bb2-e6b4-ab5d-00ce",
 					"3cde-4967-a22a-b05d",
+					"c26f-b38e-1a32-b289",
 					"abcf-033c-13da-1f90",
 					"c1b5-8472-4b97-290e"
 				],
@@ -50,6 +51,23 @@
 			}
 		},
 		{
+			"className": ".sf-button",
+			"id": "c26f-b38e-1a32-b289",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnType",
+				"parent": "e01a-d643-2187-ec9e",
+				"text": "Set Map Type",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Map Type",
+				"usePageVariable": true
+			}
+		},
+		{
 			"className": ".sf-flexLayout #pgMapView-flSelector",
 			"id": "abcf-033c-13da-1f90",
 			"props": {
@@ -63,6 +81,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"height": 40,
 				"testId": "a6Qrb9fjw",
 				"usePageVariable": true
 			}
@@ -94,6 +113,7 @@
 			},
 			"type": "ImageView",
 			"userProps": {
+				"height": 40,
 				"testId": "h23XqLoBj"
 			}
 		},

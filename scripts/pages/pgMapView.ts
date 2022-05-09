@@ -6,6 +6,10 @@ import System from '@smartface/native/device/system';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
+import Color from '@smartface/native/ui/color';
+import Picker from '@smartface/native/ui/picker';
+import { MapViewType } from '@smartface/native/ui/mapview/mapview';
+import { MapViewEvents } from '@smartface/native/ui/mapview/mapview-events';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -37,9 +41,23 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
   currentMapViewStyle: MAPVIEW_CHOICES = null;
   constructor(private router?: Router, private route?: Route) {
     super({});
+    this.btnType.on('press', () => this.setMapType());
+    this.map.on(MapViewEvents.CameraMoveEnded, () => console.log('CameraMoveEnded'));
+    this.map.on(MapViewEvents.CameraMoveStarted, () => console.log('CameraMoveStarted'));
+    this.map.on(MapViewEvents.ClusterPress, () => console.log('ClusterPress'));
+    this.map.on(MapViewEvents.Create, () => console.log('Create'));
+  }
+  setMapType() {
+    const picker = new Picker();
+    const items = ['HYBRID', 'NORMAL', 'SATELLITE'];
+    picker.items = items;
+    picker.on('selected', (index) => {
+      this.map.type = MapViewType[items[index]];
+    });
+    picker.show();
   }
   generateMockMapData(): Pin[] {
-    const randomizedArray = Array.from({ length: 50 }).map(() => {
+    const randomizedArray = Array.from({ length: 100 }).map(() => {
       const randomized = this.randomizeCoordinates(CenterMapCoordinates);
       return new Pin({
         location: {
@@ -72,8 +90,19 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
       true
     );
     this.map.onCameraMoveEnded = () => this.addPinsWithLazyLoad(this.currentMapViewStyle);
-    this.map.minZoomLevel = DEFAULT_ZOOM_LEVEL - 1;
-    this.map.maxZoomLevel = DEFAULT_ZOOM_LEVEL + 1;
+    this.map.minZoomLevel = DEFAULT_ZOOM_LEVEL - 2;
+    this.map.maxZoomLevel = DEFAULT_ZOOM_LEVEL + 2;
+    // iOS CRASHES TODO
+    if (System.OS === System.OSType.ANDROID) {
+      this.map.clusterBorderColor = Color.RED;
+      this.map.clusterFillColor = Color.GREEN;
+      this.map.clusterTextColor = Color.BLACK;
+      this.map.clusterEnabled = true;
+    }
+    this.map.android.locationButtonVisible = true;
+    // this.map.rotateEnabled = false;
+    // this.map.scrollEnabled = false;
+    // this.map.userLocationEnabled = true;
   }
 
   initMenu() {
