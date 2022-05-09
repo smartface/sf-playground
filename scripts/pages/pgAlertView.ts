@@ -9,10 +9,10 @@ export default class PgAlertView extends withDismissAndBackButton(PgAlertViewDes
 
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnShow.on('press', this.alertView.show);
+    this.btnShow.on('press', () => this.alertView.show());
     this.btnIsShowing.on('press', () => {
-      console.log('currently: ' + this.alertView.isShowing);
-      setTimeout(() => console.log('timeout: ' + this.alertView.isShowing), 2500);
+      console.log('currently: ' + this.alertView.isShowing());
+      setTimeout(() => console.log('timeout: ' + this.alertView.isShowing()), 2500);
     });
     this.sw.onToggleChanged = (toggle) => (this.alertView.android.cancellable = toggle);
   }

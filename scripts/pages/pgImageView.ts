@@ -15,17 +15,17 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.svAutoMirror.on(SwitchEvents.ToggleChanged, (toggle) => this.setAutoMirrored(toggle));
-    this.btnCompress.on(ButtonEvents.Press, () => this.compress());
-    this.btnCreateSystemIcon.on(ButtonEvents.Press, () => this.createSystemIcon());
-    this.btnCrop.on(ButtonEvents.Press, () => this.crop());
-    this.btnResize.on(ButtonEvents.Press, () => this.resize());
-    this.btnRotate.on(ButtonEvents.Press, () => this.rotate());
-    this.btnRound.on(ButtonEvents.Press, () => this.round());
-    this.btnFillType.on(ButtonEvents.Press, () => this.fillType());
-    this.btnTintColor.on(ButtonEvents.Press, () => this.setTintColor());
-    this.btnFetchFromUrl.on(ButtonEvents.Press, () => this.fetchFromUrl());
-    this.btnLoadFromFile.on(ButtonEvents.Press, () => this.loadFromFile());
-    this.btnLoadFromUrl.on(ButtonEvents.Press, () => this.loadFromUrl());
+    this.btnCompress.on('press', () => this.compress());
+    this.btnCreateSystemIcon.on('press', () => this.createSystemIcon());
+    this.btnCrop.on('press', () => this.crop());
+    this.btnResize.on('press', () => this.resize());
+    this.btnRotate.on('press', () => this.rotate());
+    this.btnRound.on('press', () => this.round());
+    this.btnFillType.on('press', () => this.fillType());
+    this.btnTintColor.on('press', () => this.setTintColor());
+    this.btnFetchFromUrl.on('press', () => this.fetchFromUrl());
+    this.btnLoadFromFile.on('press', () => this.loadFromFile());
+    this.btnLoadFromUrl.on('press', () => this.loadFromUrl());
   }
 
   fetchFromUrl() {

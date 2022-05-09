@@ -16,6 +16,7 @@ import Application from '@smartface/native/application';
 import ActionKeyType from '@smartface/native/ui/shared/android/actionkeytype';
 import { TextBoxEvents } from '@smartface/native/ui/textbox/textbox-events';
 import Picker from '@smartface/native/ui/picker';
+import AutoCapitalize from '@smartface/native/ui/shared/autocapitalize';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -78,7 +79,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
 
   changeActionKeyType(type: ActionKeyType) {
     this.tbPin.actionKeyType = type;
-    this.tbPin.on(TextBoxEvents.ActionButtonPress, () => console.log('action button pressed'));
+    this.tbPin.on('actionButtonPress', () => console.log('action button pressed'));
   }
 
   showPickerKeyboardType() {
@@ -100,7 +101,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.tbName.autoCapitalize = 1;
     this.tbName.cursorColor = Color.GREEN;
 
-    //  this.tbName.autoCapitalize = AutoCapitalize.WORDS;  // THIS TO BE TESTED AS WELL.
+    this.tbName.autoCapitalize = AutoCapitalize.WORDS; // THIS TO BE TESTED AS WELL.
 
     if (System.OS === System.OSType.IOS) {
       this.tbName.ios.clearButtonEnabled = true;
@@ -171,6 +172,5 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     this.initFontTest();
     this.initBadge();
     this.initActionKeyTypeButtons();
-    Application.statusBar.style = StatusBarStyle.DEFAULT;
   }
 }
