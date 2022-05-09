@@ -1,98 +1,205 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".sf-page .grow",
 			"id": "1a8a-4ec3-93c7-3045",
-			"userProps": {},
-			"className": ".sf-page",
+			"initialized": true,
 			"props": {
-				"name": "pgLabel",
-				"parent": null,
 				"children": [
 					"8c8b-d602-bd2d-dd8f",
-					"ae91-dc45-957f-1851"
+					"ae91-dc45-957f-1851",
+					"4ac1-7647-501f-7c55",
+					"5b30-778f-5cc4-b633",
+					"ad7d-e339-1795-d0cc",
+					"6599-e72d-7957-0a5a"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "8c8b-d602-bd2d-dd8f",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "1a8a-4ec3-93c7-3045",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "ae91-dc45-957f-1851",
-			"userProps": {
-				"title": "pgLabel"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "1a8a-4ec3-93c7-3045",
-				"children": [],
-				"title": "pgLabel",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"e938-4ddb-0208-de58": {
-			"type": "Page",
-			"id": "1a8a-4ec3-93c7-3045",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgLabel",
-				"parent": null,
-				"children": [
-					"8c8b-d602-bd2d-dd8f",
-					"ae91-dc45-957f-1851"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		"3809-d117-a8de-c09a": {
-			"type": "StatusBar",
-			"id": "8c8b-d602-bd2d-dd8f",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "1a8a-4ec3-93c7-3045",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		"aebf-e6b8-627b-9b16": {
-			"type": "HeaderBar",
-			"id": "ae91-dc45-957f-1851",
+			"type": "Page",
 			"userProps": {
-				"title": "pgLabel"
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
 			},
-			"className": ".sf-headerBar",
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8c8b-d602-bd2d-dd8f",
 			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "1a8a-4ec3-93c7-3045"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "ae91-dc45-957f-1851",
+			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "1a8a-4ec3-93c7-3045",
+				"title": "Label"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Label"
+			}
+		},
+		{
+			"className": ".sf-flexLayout .grow",
+			"id": "4ac1-7647-501f-7c55",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"498e-293e-e111-d79d"
+				],
+				"name": "myFlexLayout",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 80, 227, 194, 0.23 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "498e-293e-e111-d79d",
+			"oldName": "label1",
+			"props": {
 				"children": [],
-				"title": "pgLabel",
-				"visible": true,
-				"isRemovable": false
+				"name": "myLabel",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5b30-778f-5cc4-b633",
+			"oldName": "myFlexLayout_1",
+			"props": {
+				"children": [
+					"8c18-93b7-916d-2a1c"
+				],
+				"name": "myFlexLayout2",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 126, 211, 33, 0.14 )",
+				"height": 50,
+				"usePageVariable": true,
+				"width": 240
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "8c18-93b7-916d-2a1c",
+			"oldName": "myLabel2",
+			"props": {
+				"children": [],
+				"name": "myLabel1",
+				"parent": "5b30-778f-5cc4-b633",
+				"text": "iOS",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "iOS",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .grow",
+			"id": "ad7d-e339-1795-d0cc",
+			"oldName": "myFlexLayout2_1",
+			"props": {
+				"children": [
+					"44dd-4692-0b87-1fd1"
+				],
+				"name": "myFlexLayout3",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 189, 16, 224, 0.13 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "44dd-4692-0b87-1fd1",
+			"oldName": "myLabel3",
+			"props": {
+				"children": [],
+				"name": "myLabel2",
+				"parent": "ad7d-e339-1795-d0cc",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "label1",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .grow",
+			"id": "6599-e72d-7957-0a5a",
+			"oldName": "myFlexLayout3_1",
+			"props": {
+				"children": [
+					"6e43-fab9-9079-bad0"
+				],
+				"name": "myFlexLayout4",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 74, 74, 74, 0.1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "6e43-fab9-9079-bad0",
+			"oldName": "myLabel3_1",
+			"props": {
+				"children": [],
+				"name": "textLabel",
+				"parent": "6599-e72d-7957-0a5a",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "label1",
+				"top": 0,
+				"usePageVariable": true
 			}
 		}
-	}
+	]
 }
