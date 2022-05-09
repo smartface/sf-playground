@@ -16,7 +16,12 @@
 				"parent": null
 			},
 			"type": "Page",
-			"userProps": {}
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			}
 		},
 		{
 			"className": ".sf-statusBar",
