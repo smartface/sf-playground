@@ -16,6 +16,15 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
       this.myMenu.show(this);
       return false;
     };
+
+    this.webView1.on('changedURL', (a) => console.info('changedURL', a));
+    this.webView1.on('consoleMessage', (a) => console.info('consoleMessage', a));
+    this.webView1.on('error', (a) => console.error('error', a));
+    this.webView1.on('load', (a) => console.info('load', a));
+    this.webView1.on('openNewWindow', (a) => console.info('openNewWindow', a));
+
+    this.btnBack.on('press', () => this.webView1.goBack());
+    this.btnForward.on('press', () => this.webView1.goForward());
   }
 
   renderChartData() {
@@ -136,6 +145,10 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     table.render();
   }
 
+  renderSmartface() {
+    this.webView1.loadURL('https://smartface.io');
+  }
+
   handleDataRender(item: string) {
     switch (item) {
       case 'Chart':
@@ -146,6 +159,9 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
         break;
       case 'Table':
         this.renderTableData();
+        break;
+      case 'Smartface':
+        this.renderSmartface();
         break;
     }
   }
@@ -158,7 +174,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
   onLoad() {
     super.onLoad();
     this.myMenu = new Menu();
-    ['Chart', 'Pdf', 'Table'].forEach((item) => {
+    ['Chart', 'Pdf', 'Table', 'Smartface'].forEach((item) => {
       const menuItem = new MenuItem({
         title: item,
         onSelected: () => {
