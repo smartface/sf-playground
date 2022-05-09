@@ -61,40 +61,6 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
     this.textBox1.ios.textContentType = TextContentType.ONETIMECODE;
   }
 
-  initDatePicker() {
-    this.datePicker = new DatePicker({
-      android: {
-        style: DatePicker.Android.Style.MATERIAL_DARK
-      }
-    });
-    if (System.OS === System.OSType.IOS) {
-      this.datePicker.ios.title = 'Datepicker Title';
-      this.datePicker.ios.titleColor = Color.WHITE;
-      this.datePicker.ios.titleFont = Font.create('Arial', 20, Font.BOLD);
-      this.datePicker.ios.cancelText = 'Cancel Action';
-      this.datePicker.ios.cancelColor = Color.RED;
-      this.datePicker.ios.cancelHighlightedColor = Color.MAGENTA;
-      this.datePicker.ios.cancelFont = Font.create('Arial', 14, Font.ITALIC);
-      this.datePicker.ios.okText = 'OK Action';
-      this.datePicker.ios.okColor = Color.BLUE;
-      this.datePicker.ios.okHighlightedColor = Color.CYAN;
-      this.datePicker.ios.okFont = Font.create('Arial', 14, Font.ITALIC);
-      this.datePicker.ios.datePickerMode = DatePicker.iOS.DatePickerMode.DATEANDTIME;
-      this.datePicker.ios.dialogBackgroundColor = Color.GRAY;
-      this.datePicker.ios.dialogLineColor = Color.BLACK;
-    }
-    this.datePicker.setDate(new Date());
-    this.datePicker.setMinDate(new Date(2015, 10, 10));
-    this.datePicker.setMaxDate(new Date(2024, 10, 10));
-    this.datePicker.on('cancelled', () => {
-      console.log('Datepicker onCancelled test');
-    });
-    this.datePicker.on('selected', () => {
-      console.log('Datepicker onSelected test');
-    });
-    this.datePicker.show();
-  }
-
   /**
    * This will be triggered when user leaves the page.
    */
@@ -106,7 +72,6 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
 
   onShow() {
     super.onShow();
-    this.initDatePicker();
     this.initBackButton(this.router);
   }
 

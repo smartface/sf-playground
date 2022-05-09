@@ -4,8 +4,6 @@ import { Router, Route } from '@smartface/router';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
 import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
-import DatePicker from '@smartface/native/ui/datepicker';
-import Switch from '@smartface/native/ui/switch';
 
 export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDesign) {
   private _loopEnabled = false;
