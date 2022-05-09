@@ -8,8 +8,7 @@
 				"children": [
 					"ffb6-aa13-a10c-aee3",
 					"d09d-435d-4261-0d5e",
-					"b6ae-08ce-c00a-3659",
-					"49ea-9c17-b86a-e426"
+					"5254-39d9-3da0-9e0e"
 				],
 				"name": "pgShimmerFlexLayout",
 				"orientation": "PORTRAIT",
@@ -47,33 +46,53 @@
 			}
 		},
 		{
+			"className": ".sf-scrollView .grow",
+			"id": "5254-39d9-3da0-9e0e",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"4646-8c0c-5c33-cb34",
+					"258e-48c0-d958-c48e",
+					"6694-b5ce-d11c-0cef",
+					"e263-d1e5-b035-1bd7",
+					"4d00-2c08-c992-81e0"
+				],
+				"name": "svMain",
+				"parent": "7428-985a-1805-4283"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
 			"className": ".sf-shimmerFlexLayout",
-			"id": "b6ae-08ce-c00a-3659",
+			"id": "4646-8c0c-5c33-cb34",
 			"oldName": "shimmerFlexLayout1",
 			"props": {
 				"children": [
-					"e944-1446-40af-a72a",
-					"65da-90cd-3503-48b2",
-					"c567-c0c3-758c-f621"
+					"67eb-0d20-926a-f090",
+					"02c8-dceb-205a-a5cc",
+					"2909-a62c-b19b-72a3"
 				],
 				"name": "sfl",
-				"parent": "7428-985a-1805-4283",
+				"parent": "5254-39d9-3da0-9e0e",
 				"usePageVariable": true
 			},
 			"ref": null,
 			"type": "ShimmerFlexLayout",
 			"userProps": {
 				"height": 200,
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-switch",
-			"id": "e944-1446-40af-a72a",
+			"id": "67eb-0d20-926a-f090",
 			"props": {
 				"children": [],
 				"name": "switch1",
-				"parent": "b6ae-08ce-c00a-3659",
+				"parent": "4646-8c0c-5c33-cb34",
 				"toggle": true
 			},
 			"type": "Switch",
@@ -85,11 +104,11 @@
 		},
 		{
 			"className": ".sf-activityIndicator",
-			"id": "65da-90cd-3503-48b2",
+			"id": "02c8-dceb-205a-a5cc",
 			"props": {
 				"children": [],
 				"name": "activityIndicator1",
-				"parent": "b6ae-08ce-c00a-3659"
+				"parent": "4646-8c0c-5c33-cb34"
 			},
 			"ref": null,
 			"type": "ActivityIndicator",
@@ -97,12 +116,12 @@
 		},
 		{
 			"className": ".sf-searchView",
-			"id": "c567-c0c3-758c-f621",
+			"id": "2909-a62c-b19b-72a3",
 			"props": {
 				"children": [],
 				"hint": "Search",
 				"name": "searchView1",
-				"parent": "b6ae-08ce-c00a-3659"
+				"parent": "4646-8c0c-5c33-cb34"
 			},
 			"type": "SearchView",
 			"userProps": {
@@ -111,19 +130,76 @@
 		},
 		{
 			"className": ".sf-button",
-			"id": "49ea-9c17-b86a-e426",
+			"id": "258e-48c0-d958-c48e",
 			"oldName": "btnToggle",
 			"props": {
 				"children": [],
 				"name": "btnToggleShimmer",
-				"parent": "7428-985a-1805-4283",
+				"parent": "5254-39d9-3da0-9e0e",
 				"text": "Start Shimmering",
 				"usePageVariable": true
 			},
 			"ref": null,
 			"type": "Button",
 			"userProps": {
+				"left": 0,
 				"text": "Start Shimmering",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "6694-b5ce-d11c-0cef",
+			"oldName": "lblAlpa",
+			"props": {
+				"children": [],
+				"name": "lblAlpha",
+				"parent": "5254-39d9-3da0-9e0e",
+				"text": "Change baseAlpha",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "Change baseAlpha",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-slider",
+			"id": "e263-d1e5-b035-1bd7",
+			"oldName": "slider1",
+			"props": {
+				"children": [],
+				"name": "slAlpha",
+				"parent": "5254-39d9-3da0-9e0e",
+				"usePageVariable": true
+			},
+			"type": "Slider",
+			"userProps": {
+				"usePageVariable": true,
+				"value": 100
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "4d00-2c08-c992-81e0",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnChangeDirection",
+				"parent": "5254-39d9-3da0-9e0e",
+				"text": "Change Shimmer Direction",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Change Shimmer Direction",
+				"top": 0,
 				"usePageVariable": true
 			}
 		}
