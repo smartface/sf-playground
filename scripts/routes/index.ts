@@ -11,6 +11,9 @@ import { innerPages } from './innerPages';
 import PgModalBottomSheet from 'pages/pgModalBottomSheet';
 import Color from '@smartface/native/ui/color';
 import BottomTabbarController from '@smartface/native/ui/bottomtabbarcontroller';
+import { ITabbarItem } from '@smartface/native/ui/tabbaritem/tabbaritem';
+import AttributedString from '@smartface/native/ui/attributedstring';
+import Font from '@smartface/native/ui/font';
 
 Application.on('backButtonPressed', () => {
   Router.getActiveRouter()?.goBack();
@@ -87,8 +90,28 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
   });
 }
 
-function generateTabItems() {
-  return Object.keys(Tabs).map((tab: any) => ({ title: Tabs[tab].name, icon: Image.createFromFile('images://arrowbottom.png') }));
+// const attributeString = new AttributedString();
+// attributeString.string = ' Third - AttributedString';
+// attributeString.link = 'https://www.google.com/';
+// attributeString.strikethrough = true;
+// attributeString.backgroundColor = Color.RED;
+// attributeString.foregroundColor = Color.GREEN;
+// attributeString.underline = true;
+// attributeString.font = Font.create('Times New Roman', 30, Font.NORMAL);
+// attributeString.ios.underlineColor = Color.BLUE;
+// attributeString.ios.strikethroughColor = Color.WHITE;
+
+function generateTabItems(): Partial<ITabbarItem>[] {
+  return Object.keys(Tabs).map((tab: any) => {
+    return {
+      title: Tabs[tab].name,
+      icon: Image.createFromFile(`images://${Tabs[tab].name.toLowerCase()}`)
+      //   android: {
+      //     attributedTitle: attributeString,
+      //     systemIcon: 17301545
+      //   }
+    } as Partial<ITabbarItem>;
+  });
 }
 
 const bottomTabBarRouter = BottomTabBarRouter.of({

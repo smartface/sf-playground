@@ -189,7 +189,7 @@ export const tab3: Tab = {
 };
 
 export const tab4: Tab = {
-  name: 'Miscellaneous',
+  name: 'Misc',
   tabIndex: 4,
   pages: [PageSample, PgYogaTest, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgApplicationEvents]
 };

@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "89e6-3f97-10a5-0ac9",
-				"title": "mainPage"
+				"title": "Smartface Playground"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "mainPage"
+				"title": "Smartface Playground"
 			}
 		},
 		{
