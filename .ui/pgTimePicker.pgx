@@ -1,98 +1,66 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "04e4-6cbb-1eec-03cd",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "04e4-6cbb-1eec-03cd",
+			"initialized": true,
 			"props": {
-				"name": "pgTimePicker",
-				"parent": null,
 				"children": [
 					"a22c-3d4f-2da8-8fd5",
-					"e296-4af4-27ba-2c49"
+					"e296-4af4-27ba-2c49",
+					"e7c6-478f-76a6-978b"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "a22c-3d4f-2da8-8fd5",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "04e4-6cbb-1eec-03cd",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "e296-4af4-27ba-2c49",
-			"userProps": {
-				"title": "pgTimePicker"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "04e4-6cbb-1eec-03cd",
-				"children": [],
-				"title": "pgTimePicker",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"7e80-9209-95b1-cfe9": {
-			"type": "Page",
-			"id": "04e4-6cbb-1eec-03cd",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgTimePicker",
-				"parent": null,
-				"children": [
-					"a22c-3d4f-2da8-8fd5",
-					"e296-4af4-27ba-2c49"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		"8f30-8975-3648-b491": {
-			"type": "StatusBar",
-			"id": "a22c-3d4f-2da8-8fd5",
+			"type": "Page",
 			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "04e4-6cbb-1eec-03cd",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+			"version": "0.0.1.a"
 		},
-		"1b11-1891-2632-c268": {
-			"type": "HeaderBar",
-			"id": "e296-4af4-27ba-2c49",
-			"userProps": {
-				"title": "pgTimePicker"
-			},
-			"className": ".sf-headerBar",
+		{
+			"className": ".sf-statusBar",
+			"id": "a22c-3d4f-2da8-8fd5",
 			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "04e4-6cbb-1eec-03cd"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "e296-4af4-27ba-2c49",
+			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "04e4-6cbb-1eec-03cd",
+				"title": "pgTimePicker"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTimePicker"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "e7c6-478f-76a6-978b",
+			"oldName": "button1",
+			"props": {
 				"children": [],
-				"title": "pgTimePicker",
-				"visible": true,
-				"isRemovable": false
+				"name": "btnShowPicker",
+				"parent": "04e4-6cbb-1eec-03cd",
+				"text": "Show Picker",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Show Picker",
+				"usePageVariable": true
 			}
 		}
-	}
+	]
 }
