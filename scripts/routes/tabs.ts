@@ -95,6 +95,7 @@ import PgVideoView from 'pages/pgVideoView';
 import PgStatusBar from 'pages/pgStatusBar';
 import PgHeaderBar from 'pages/pgHeaderBar';
 import PgSearchView from 'pages/pgSearchView';
+import PgEmailComposer from 'pages/pgEmailComposer';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -163,7 +164,8 @@ export const tab0: Tab = {
     PgCallDetection,
     PgVideoView,
     PgStatusBar,
-    PgHeaderBar
+    PgHeaderBar,
+    PgEmailComposer
   ]
 };
 
