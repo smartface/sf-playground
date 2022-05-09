@@ -10,6 +10,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import TextDirection from '@smartface/native/ui/shared/textdirection';
 import TextAlignment from '@smartface/native/ui/shared/textalignment';
 import Font from '@smartface/native/ui/font';
+import EllipsizeMode from '@smartface/native/ui/shared/ellipsizemode';
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 
@@ -35,6 +36,13 @@ export default class PgLabel extends withDismissAndBackButton(PgLabelDesign) {
     this.myLabel2.text = 'General Settings Overflow text multiline should be shown in screen. Here we go!';
     this.myLabel2.textAlignment = TextAlignment.MIDRIGHT;
     this.myLabel2.maxLines = 0;
+
+    this.ellipsizeLabelCharWrapping.ellipsizeMode = EllipsizeMode.CHARWRAPPING;
+    this.ellipsizeLabelEnd.ellipsizeMode = EllipsizeMode.END;
+    this.ellipsizeLabelMiddle.ellipsizeMode = EllipsizeMode.MIDDLE;
+    this.ellipsizeLabelNone.ellipsizeMode = EllipsizeMode.NONE;
+    this.ellipsizeLabelStart.ellipsizeMode = EllipsizeMode.START;
+    this.ellipsizeLabelWordWrapping.ellipsizeMode = EllipsizeMode.WORDWRAPPING;
   }
 
   onShow() {

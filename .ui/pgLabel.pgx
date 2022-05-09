@@ -59,7 +59,13 @@
 			"oldName": "flexLayout1",
 			"props": {
 				"children": [
-					"498e-293e-e111-d79d"
+					"498e-293e-e111-d79d",
+					"526b-9477-08f9-142c",
+					"1811-b35f-366f-bac6",
+					"eae8-a8ad-38c6-1e52",
+					"331e-6fce-07b9-f179",
+					"828a-ba84-dc20-6f58",
+					"3b95-7794-4bbd-32a1"
 				],
 				"name": "myFlexLayout",
 				"parent": "1a8a-4ec3-93c7-3045",
@@ -68,6 +74,9 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 80, 227, 194, 0.23 )",
+				"flexProps": {
+					"flexGrow": 2
+				},
 				"usePageVariable": true
 			}
 		},
@@ -84,7 +93,158 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"height": 40,
 				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "526b-9477-08f9-142c",
+			"oldName": "ellipsizeLabel",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelCharWrapping",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "CharWrapping Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "CharWrapping Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "1811-b35f-366f-bac6",
+			"oldName": "ellipsizeLabelCharWrapping_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelEnd",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "End Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "End Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "eae8-a8ad-38c6-1e52",
+			"oldName": "ellipsizeLabelEnd_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelMiddle",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "Middle Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "Middle Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "331e-6fce-07b9-f179",
+			"oldName": "ellipsizeLabelMiddle_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelNone",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "None Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "None Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "828a-ba84-dc20-6f58",
+			"oldName": "ellipsizeLabelNone_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelStart",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "Start Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "Mode One Two Three Start Ellipsize Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "3b95-7794-4bbd-32a1",
+			"oldName": "ellipsizeLabelStart_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelWordWrapping",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "Word Wrapping Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "Word WrappingEllipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
 				"usePageVariable": true
 			}
 		},
