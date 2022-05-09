@@ -17,6 +17,13 @@
 	<uses-permission android:name="android.permission.READ_CONTACTS"/>
 	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 	<!-- Allows an application to get information about the currently or recently running tasks. -->
 	<!--<uses-permission android:name="android.permission.GET_TASKS"/>-->
 	<!-- Required for camera functions. -->
@@ -31,6 +38,7 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
 	<!-- Required for receive sms. -->
 	<!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
 	<!-- Required for read sms. -->
