@@ -10,7 +10,8 @@
 					"95bf-507e-ec77-0a7a",
 					"5a00-8ca7-3153-0fbc",
 					"b55a-3417-25b5-1038",
-					"f594-152c-8a98-27bb"
+					"f594-152c-8a98-27bb",
+					"a224-4be9-25dd-81cb"
 				],
 				"name": "pgLiveMediaPlayer",
 				"orientation": "PORTRAIT",
@@ -93,6 +94,23 @@
 			"type": "Button",
 			"userProps": {
 				"text": "Pause",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a224-4be9-25dd-81cb",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnAudio",
+				"parent": "df2a-1527-309d-ab7e",
+				"text": "Disable Audio",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Disable Audio",
 				"usePageVariable": true
 			}
 		}

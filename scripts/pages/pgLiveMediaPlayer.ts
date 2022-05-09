@@ -11,6 +11,7 @@ class StyleableLiveMediaPlayer extends styleableComponentMixin(LiveMediaPlayer) 
 export default class PgLiveMediaPlayer extends withDismissAndBackButton(PgLiveMediaPlayerDesign) {
   private liveMediaPlayer: StyleableLiveMediaPlayer;
   private isPlaying = false;
+  private isAudioEnabled = true;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.btnAction.on('press', () => {
@@ -35,6 +36,13 @@ export default class PgLiveMediaPlayer extends withDismissAndBackButton(PgLiveMe
         this.isPlaying = true;
       }
     });
+    this.btnAudio.on('press', () => this.changeAudio());
+  }
+
+  changeAudio() {
+    this.isAudioEnabled = !this.isAudioEnabled;
+    this.liveMediaPlayer.audioEnabled = this.isAudioEnabled;
+    this.btnAudio.text = this.isAudioEnabled ? 'Disable Audio' : 'Enable Audio';
   }
 
   initLiveMediaPlayer() {
