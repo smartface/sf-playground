@@ -80,9 +80,9 @@
     "@smartface/core" "^5.0.0-alpha.0"
 
 "@smartface/native@^5.0.0-alpha":
-  version "5.0.0-alpha.58"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.58.tgz#7869b7f8f9c38861adceacfad8af597e9c8671c8"
-  integrity sha512-oawOzKCL0zJaoSo6p7vfF1EmAPqw7QXZmeRWZEngF0eiUt+n+S4YZjrS12rOCFu0xA0Ut2Or92RHErSJn5dxjw==
+  version "5.0.0-alpha.64"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.64.tgz#84d5816d1276857b077b46e4b95d93446b073736"
+  integrity sha512-sGBinEt9T0ngoVWXrN/73Ld8qTsb4McUw0xnXtHMDIAXP4C15QVeG6l0giXTTZSf1sii5ZCaog3WmLRVWDBPsg==
   dependencies:
     events "^3.3.0"
 
@@ -128,9 +128,9 @@
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
 apexcharts@^3.26.3:
-  version "3.35.0"
-  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.35.0.tgz#5571f4852747359b7ef76662998f3d6a8ffe923a"
-  integrity sha512-oipJRkaxt8DPGRmn1kur6aPzML1JSpf2M3ecu+gyw+8xiNmT2C0p1uuuqPZrk+Lr2hmDxzNBPR7TvxwRl3ozgw==
+  version "3.35.2"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.35.2.tgz#90faafffa055ce502f73b11008ba77238e94228f"
+  integrity sha512-VOSb25mrcSv/JjaWKjnasL8277cqnA0Gp20uV1+rlgE4U6j44fdTYW850Powl+S8RkXd/lPwzBB2jvKkEOHl0Q==
   dependencies:
     svg.draggable.js "^2.2.2"
     svg.easing.js "^2.0.0"
@@ -167,9 +167,9 @@ filtrex@^0.5.4:
   integrity sha1-mAddUY8GjE9Yt7WJoifZi9n2OV0=
 
 follow-redirects@^1.14.8:
-  version "1.14.9"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
-  integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.0.tgz#06441868281c86d0dda4ad8bdaead2d02dca89d4"
+  integrity sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ==
 
 for-in@^1.0.2:
   version "1.0.2"
