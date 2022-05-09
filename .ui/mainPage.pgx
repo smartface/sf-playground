@@ -12,11 +12,12 @@
 					"0266-2245-f3ca-9eed"
 				],
 				"name": "mainPage",
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"parent": null
 			},
 			"type": "Page",
 			"userProps": {
+				"orientation": "AUTO",
 				"paddingBottom": null,
 				"paddingLeft": null,
 				"paddingRight": null,

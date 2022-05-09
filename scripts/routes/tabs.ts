@@ -103,10 +103,6 @@ export const tab0: Tab = {
   tabIndex: 0,
   pages: [
     PgSearchView,
-    PgFileUpload,
-    PgBadgeAnimation,
-    PgTouchHandling,
-    PgComponentFromCode,
     PgButtonPress,
     PgMapView,
     PgMapViewRadius,
@@ -126,7 +122,6 @@ export const tab0: Tab = {
     PageHideShow,
     PgDynamicSize,
     PgNativeFunctions,
-    PgPhotoPicker,
     PgToastMessage,
     PgHttp,
     PgFileIO,
@@ -175,7 +170,7 @@ export const tab0: Tab = {
 export const tab1: Tab = {
   name: 'Utility',
   tabIndex: 1,
-  pages: [PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning]
+  pages: [PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning]
 };
 
 export const tab2: Tab = {
@@ -193,5 +188,24 @@ export const tab3: Tab = {
 export const tab4: Tab = {
   name: 'Misc',
   tabIndex: 4,
-  pages: [PageSample, PgYogaTest, Page1, Page2, PgLogin, PgHeaderSearch, PgNoTouch, PgSafeArea, PgWebView, PgOTP, PgGlide, PgTouchConfiguration, PgCrypto, PgApplicationEvents]
+  pages: [
+    PageSample,
+    PgYogaTest,
+    Page1,
+    Page2,
+    PgLogin,
+    PgHeaderSearch,
+    PgNoTouch,
+    PgSafeArea,
+    PgWebView,
+    PgOTP,
+    PgGlide,
+    PgTouchConfiguration,
+    PgCrypto,
+    PgApplicationEvents,
+    PgFileUpload,
+    PgBadgeAnimation,
+    PgTouchHandling,
+    PgComponentFromCode
+  ]
 };

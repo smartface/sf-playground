@@ -14,6 +14,7 @@ import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
 import { IImage } from '@smartface/native/ui/image/image';
+import Color from '@smartface/native/ui/color';
 
 export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadDesign) {
   protected uploadMenu = new Menu();
@@ -67,6 +68,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     const menuItemDocument = new MenuItem({ title: 'Pick a File' });
     const menuItemCancel = new MenuItem({ title: 'Cancel' });
     menuItemCancel.ios.style = MenuItem.Styles.CANCEL;
+    // menuItemDocument.ios.style = MenuItem.Styles.DESTRUCTIVE;
     menuItemCamera.on('selected', () => {
       /**
        * Don't forget to grant relevant permissions before calling this on your published app.
