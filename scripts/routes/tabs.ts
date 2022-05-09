@@ -10,7 +10,7 @@ import PgEventEmitter from 'pages/pgEventEmitter';
 import PgArt from 'pages/pgArt';
 import PgFileUpload from 'pages/pgFileUpload';
 import PgListViewIndex from 'pages/pgListViewIndex';
-import PgNativeSwitch from 'pages/pgNativeSwitch';
+import PgSwitch from 'pages/pgSwitch';
 import Page2 from 'pages/page2';
 import PageHideShow from 'pages/pageHideShow';
 import PgChart from 'pages/pgChart';
@@ -120,7 +120,7 @@ export const tab0: Tab = {
     PgMapViewRegion,
     PgHeaderImageAndItems,
     PgEventEmitter,
-    PgNativeSwitch,
+    PgSwitch,
     PageHideShow,
     PgDynamicSize,
     PgNativeFunctions,
