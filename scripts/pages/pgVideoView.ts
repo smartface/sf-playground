@@ -4,6 +4,8 @@ import { Router, Route } from '@smartface/router';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
 import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
+import DatePicker from '@smartface/native/ui/datepicker';
+import Switch from '@smartface/native/ui/switch';
 
 export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDesign) {
   private _loopEnabled = false;
@@ -16,7 +18,6 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
     this.btnCustomErrorMessage.on('press', () => this.customErrorMessage());
     this.btnSeekTo.on('press', () => this.seekTo45());
     this.btnLoopEnabled.on('press', () => this.switchLoopEnabled());
-
     this.swFastForward.on(SwitchEvents.ToggleChanged, (value) => this.changeFastForward(value));
     this.swLoadingIndicator.on(SwitchEvents.ToggleChanged, (value) => this.changeLoadingIndicator(value));
     this.swNextButtonEnabled.on(SwitchEvents.ToggleChanged, (value) => this.changeNextButtonEnabled(value));
@@ -45,7 +46,7 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
 
   loadFile() {
     console.log('loadFile');
-    this.video.loadFile(new File({ path: Path.AssetsUriScheme + 'file_example_WEBM_480_900KB.webm' }));
+    this.video.loadFile(new File({ path: Path.AssetsUriScheme + 'sample_960x540.mp4' }));
   }
 
   loadURL() {
@@ -92,16 +93,17 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
   initVideoView() {
     this.video.on('fullScreenModeChanged', (a) => console.log('fullScreenModeChanged', a));
     this.video.on('controllerVisibilityChange', (a) => console.log('controllerVisibilityChange', a));
-    this.video.on('failure', (a) => console.error('failure', a));
-    this.video.on('finish', (a) => console.log('finish', a));
+    this.video.on('failure', (a) => console.error('failure: ', a));
+    this.video.on('finish', (a) => console.log('finish: ', a));
     this.video.on('ready', () => {
       console.log('readyToPlay');
       this.video.play();
     });
     this.video.backgroundModeEnabled = true;
-    this.video.android.controllerShowTimeoutMs = 2000;
     this.video.ios.entersFullScreenWhenPlaybackBegins = true;
     this.video.ios.exitsFullScreenWhenPlaybackEnds = true;
+    this.video.page = this;
+    this.video.android.controllerShowTimeoutMs = 2000;
   }
 
   onHide(): void {

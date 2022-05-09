@@ -22,7 +22,7 @@ export default class PgGifImageView extends withDismissAndBackButton(PgGifImageV
       console.info({
         currentFrame: this.giv.currentFrame,
         currentFrameIndex: this.giv.currentFrameIndex,
-        isAnimating: this.giv.isAnimating
+        isAnimating: !!this.giv.isAnimating
       });
     }, 2000);
   }
