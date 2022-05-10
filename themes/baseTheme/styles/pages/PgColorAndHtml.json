@@ -38,7 +38,7 @@
       "height": 110
     },
     "&-HtmlArea": {
-      "height": 240
+      "height": 360
     },
     "&-txtAreaHtml": {
       "height": 50,
@@ -47,8 +47,9 @@
       }
     },
     "&-tvHtml": {
-      "height": 50,
-      "font": {}
+      "height": 100,
+      "font": {},
+      "ellipsizeMode": "END"
     },
     "&-flRowHtml": {
       "height": 50

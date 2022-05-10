@@ -94,14 +94,14 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
   }
 
   createAndShowAttributedTexts() {
-    console.log('createAndShowAttributedTexts');
     const attributedStrings = createAttributedTexts(this.taHtml.text);
+    console.log('createAndShowAttributedTexts: ', attributedStrings);
     this.tvHtml.attributedText = attributedStrings;
   }
 
   createAndShowAttributedStrs() {
-    console.log('createAndShowAttributedStrs');
     const attributedStrings = createAttributedStrings(this.taHtml.text);
+    console.log('createAndShowAttributedStrs: ', attributedStrings);
     this.tvHtml.attributedText = attributedStrings.map((s) => new AttributedString(propFactory(s)));
   }
 

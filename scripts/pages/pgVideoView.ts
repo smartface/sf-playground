@@ -4,6 +4,7 @@ import { Router, Route } from '@smartface/router';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
 import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
+import VideoView from '@smartface/native/ui/videoview';
 
 export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDesign) {
   private _loopEnabled = false;
@@ -49,7 +50,7 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
 
   loadURL() {
     console.log('loadURL');
-    this.video.loadURL('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4');
+    this.video.loadURL('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4');
   }
 
   changeShowController(value: boolean) {
@@ -97,7 +98,6 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
       console.log('readyToPlay');
       this.video.play();
     });
-    this.video.backgroundModeEnabled = true;
     this.video.ios.entersFullScreenWhenPlaybackBegins = true;
     this.video.ios.exitsFullScreenWhenPlaybackEnds = true;
     this.video.page = this;
