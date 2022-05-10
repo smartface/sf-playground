@@ -108,7 +108,6 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
       this.tbName.ios.minimumFontSize = 20;
       this.tbName.ios.keyboardAppearance = KeyboardAppearance.DARK;
       this.tbPin.ios.textContentType = TextContentType.ONETIMECODE;
-      this.tbPin.ios.keyboardAppearance = KeyboardAppearance.LIGHT;
     }
     if (System.OS === System.OSType.ANDROID) {
       //  this.tbPin.android.maxLength = 4;
