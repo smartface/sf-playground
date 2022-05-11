@@ -33,7 +33,7 @@ export default class PgSelectablePicker extends withDismissAndBackButton(PgSelec
     this._picker = new SelectablePicker({
       items: ['Hello', 'World', 'Smartface'],
       cancelable: this._cancelable,
-      backgroundColor: Color.GRAY,
+      backgroundColor: Color.WHITE,
       cancelButtonColor: Color.RED,
       cancelButtonFont: Font.create(Font.DEFAULT, 16, Font.BOLD),
       cancelButtonText: '-Cancel-',
