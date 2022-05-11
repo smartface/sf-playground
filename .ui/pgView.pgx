@@ -172,7 +172,8 @@
 				"borderWidth": 1,
 				"flexProps": {
 					"flexDirection": "ROW",
-					"flexWrap": "WRAP"
+					"flexWrap": "WRAP",
+					"alignContent": "STRETCH"
 				},
 				"height": 100,
 				"usePageVariable": true
