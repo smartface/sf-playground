@@ -18,8 +18,7 @@
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "0.0.1.a",
-			"degree": 0
+			"version": "0.0.1.a"
 		},
 		{
 			"className": ".sf-statusBar",
@@ -31,8 +30,7 @@
 				"parent": "7217-e1e8-2b27-3fd5"
 			},
 			"type": "StatusBar",
-			"userProps": {},
-			"degree": 1
+			"userProps": {}
 		},
 		{
 			"className": ".sf-headerBar",
@@ -42,13 +40,12 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7217-e1e8-2b27-3fd5",
-				"title": "pgLiveMediaPlayer"
+				"title": "pgLiveMediaPublisher"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgLiveMediaPlayer"
-			},
-			"degree": 1
+				"title": "pgLiveMediaPublisher"
+			}
 		},
 		{
 			"className": ".sf-flexLayout",
@@ -62,10 +59,9 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"usePageVariable": true,
-				"testId": "HTr6MvpkD"
-			},
-			"degree": 1
+				"testId": "HTr6MvpkD",
+				"usePageVariable": true
+			}
 		},
 		{
 			"className": ".sf-button",
@@ -80,11 +76,10 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"testId": "UZyRbzYL43",
 				"text": "Start Streaming",
-				"usePageVariable": true,
-				"testId": "UZyRbzYL43"
-			},
-			"degree": 1
+				"usePageVariable": true
+			}
 		},
 		{
 			"className": ".sf-button",
@@ -99,11 +94,10 @@
 			},
 			"type": "Button",
 			"userProps": {
+				"testId": "7pd13al_Wz",
 				"text": "Switch Camera",
-				"usePageVariable": true,
-				"testId": "7pd13al_Wz"
-			},
-			"degree": 1
+				"usePageVariable": true
+			}
 		}
 	]
 }
