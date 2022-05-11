@@ -23,7 +23,6 @@ export default class PgLiveMediaPublisher extends withDismissAndBackButton(PgLiv
 
   startStreaming() {
     this._streaming = !this._streaming;
-    //@ts-ignore
     this._streaming ? this.liveMediaPublisher?.start() : this.liveMediaPublisher?.stop();
     this.btnAction.text = this._streaming ? 'Stop Streaming' : 'Start Streaming';
   }

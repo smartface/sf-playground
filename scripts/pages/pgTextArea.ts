@@ -12,7 +12,6 @@ export default class PgTextArea extends withDismissAndBackButton(PgTextAreaDesig
   }
 
   changeBounces() {
-    //@ts-ignore
     this.ta.ios.bounces = !this._bounces;
     this._bounces = !this._bounces;
     this.btnBounces.text = this._bounces ? 'Set Bounces False (iOS)' : 'Set Bounces True (iOS)';

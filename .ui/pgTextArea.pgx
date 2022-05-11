@@ -55,13 +55,11 @@
 				"children": [],
 				"name": "ta",
 				"parent": "7e72-5ff2-9252-0026",
-				"text": " ",
 				"usePageVariable": true
 			},
 			"type": "TextArea",
 			"userProps": {
 				"height": 160,
-				"text": " ",
 				"textAlignment": "TOPLEFT",
 				"usePageVariable": true
 			}
