@@ -83,7 +83,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"borderWidth": 1,
-				"height": 130,
+				"height": 80,
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true

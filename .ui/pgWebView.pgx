@@ -8,7 +8,7 @@
 				"children": [
 					"88a3-99ac-0a9b-054d",
 					"98c6-9358-a727-23b9",
-					"30a0-95cb-76e9-61e2",
+					"fd9b-6f58-3c80-38d5",
 					"2f8f-ee38-0eb3-c777",
 					"1f16-d241-54f5-53cd"
 				],
@@ -56,20 +56,19 @@
 			}
 		},
 		{
-			"className": ".sf-label",
-			"id": "30a0-95cb-76e9-61e2",
+			"className": ".sf-button",
+			"id": "fd9b-6f58-3c80-38d5",
+			"oldName": "button1",
 			"props": {
 				"children": [],
-				"name": "lblMenu",
+				"name": "btnMenu",
 				"parent": "31f4-eeb3-63f7-db49",
 				"text": "Open the menu",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "Button",
 			"userProps": {
-				"testId": "qTgB4u1N2",
 				"text": "Open the menu",
-				"textAlignment": "MIDCENTER",
 				"usePageVariable": true
 			}
 		},

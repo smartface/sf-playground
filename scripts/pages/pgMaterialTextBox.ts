@@ -61,13 +61,11 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
       flexGrow: 1,
       backgroundColor: Color.BLUE
     });
-    //@ts-ignore
     this.mtbExample.ios.leftLayout = {
       view,
       width: 40,
       height: 20
     };
-    //@ts-ignore
     this.mtbExample.ios.leftLayoutRightPadding = 40;
   }
 
@@ -79,18 +77,15 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
   }
 
   changeCharacterRestriction() {
-    //@ts-ignore
-    const current = this.mtbExample.enableCharacterRestriction;
-    //@ts-ignore
-    this.mtbExample.enableCharacterRestriction = !current;
+    const current = this.mtbExample.android.enableCharacterRestriction;
+    this.mtbExample.android.enableCharacterRestriction = !current;
     this.btnSetEnableCharacterRestriction.text = !current ? 'Disable Character Restriction' : 'Enable Character Restriction';
   }
 
   setClearButtonColor() {
-    // const random = Math.round(Math.random() * 5);
-    // const colors = [Color.BLUE, Color.CYAN, Color.GREEN, Color.MAGENTA, Color.YELLOW, Color.LIGHTGRAY];
-    // //@ts-ignore
-    // this.mtbExample.ios.clearButtonColor = colors[random];
+    const random = Math.round(Math.random() * 5);
+    const colors = [Color.BLUE, Color.CYAN, Color.GREEN, Color.MAGENTA, Color.YELLOW, Color.LIGHTGRAY];
+    this.mtbExample.ios.clearButtonColor = colors[random];
   }
 
   setCharacterRestrictionColor() {
@@ -123,13 +118,9 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
 
     this.mtbExample.lineColor = { normal: Color.GRAY, selected: Color.DARKGRAY };
 
-    //@ts-ignore
     this.mtbExample.ios.lineHeight = 10;
-    //@ts-ignore
-    this.mtbExample.ios.expandsOnOverFlow = true;
-    //@ts-ignore
+    this.mtbExample.ios.expandsOnOverflow = true;
     this.mtbExample.ios.inlineHintFont = Font.create('Times New Roman', 4, Font.NORMAL);
-    //@ts-ignore
     this.mtbExample.ios.underlineLabelsFont = Font.create('Times New Roman', 4, Font.NORMAL);
 
     this.flMtbWrapper.addChild(this.mtbExample, 'mtbExample', '.sf-textBox .grow', materialtextboxOptions);

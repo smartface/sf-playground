@@ -12,17 +12,14 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
   myMenu: Menu;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.lblMenu.onTouch = () => {
-      this.myMenu.show(this);
-      return false;
-    };
-
+    this.webView1.android.page = this;
     this.webView1.on('changedURL', (a) => console.info('changedURL', a));
     this.webView1.on('consoleMessage', (a) => console.info('consoleMessage', a));
     this.webView1.on('error', (a) => console.error('error', a));
     this.webView1.on('load', (a) => console.info('load', a));
     this.webView1.on('openNewWindow', (a) => console.info('openNewWindow', a));
 
+    this.btnMenu.on('press', () => this.myMenu.show(this));
     this.btnBack.on('press', () => this.webView1.goBack());
     this.btnForward.on('press', () => this.webView1.goForward());
   }
