@@ -128,12 +128,26 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
 
 //BottomTabbarControllerTesting
 
-const rootController = bottomTabBarRouter._renderer._rootController;
-// if (rootController instanceof BottomTabbarController) {
+// setTimeout(() => {
+//   const rootController = bottomTabBarRouter._renderer._rootController;
+//   if (rootController instanceof BottomTabbarController) {
+//     rootController.didSelectByIndex = ({ index }) => {
+//       console.info('didSelectByIndex', index);
+//       setTimeout(() => {
+//         rootController.selectedIndex = 2;
+//       }, 5000);
+//     };
+// rootController.shouldSelectByIndex = ({ index }) => {
+//   console.info('shouldSelectByIndex', index);
+//   return index === 3;
+// };
 //   rootController.tabBar.backgroundColor = Color.BLUE;
 //   rootController.tabBar.itemColor = { selected: Color.WHITE, normal: Color.BLACK };
+// setTimeout(() => {
 //   rootController.selectedIndex = 2;
-// }
+// }, 3000);
+//   }
+// }, 5000);
 
 const router = Router.of({
   path: '/',
