@@ -106,7 +106,6 @@ export const tab0: Tab = {
   tabIndex: 0,
   pages: [
     PgSearchView,
-    PgButtonPress,
     PgMapView,
     PgMapViewRadius,
     PgMapRegion,
@@ -123,7 +122,6 @@ export const tab0: Tab = {
     PgEventEmitter,
     PgSwitch,
     PageHideShow,
-    PgDynamicSize,
     PgNativeFunctions,
     PgToastMessage,
     PgHttp,
@@ -169,7 +167,8 @@ export const tab0: Tab = {
     PgStatusBar,
     PgHeaderBar,
     PgEmailComposer,
-    PgDatePicker
+    PgDatePicker,
+    PgWebView
   ]
 };
 
@@ -203,7 +202,6 @@ export const tab4: Tab = {
     PgHeaderSearch,
     PgNoTouch,
     PgSafeArea,
-    PgWebView,
     PgOTP,
     PgGlide,
     PgTouchConfiguration,
@@ -212,6 +210,8 @@ export const tab4: Tab = {
     PgFileUpload,
     PgBadgeAnimation,
     PgTouchHandling,
-    PgComponentFromCode
+    PgComponentFromCode,
+    PgButtonPress,
+    PgDynamicSize
   ]
 };

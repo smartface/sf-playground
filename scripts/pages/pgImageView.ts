@@ -53,7 +53,11 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
       onSuccess: () => console.log('success loadFromUrl'),
       fade: true,
       placeholder: Image.createFromFile('imageview_preview.png'),
-      useHTTPCacheControl: true
+      useHTTPCacheControl: false,
+      android: {
+        useDiskCache: false,
+        useMemoryCache: false
+      }
     });
   }
 
