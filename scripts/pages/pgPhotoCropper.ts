@@ -36,6 +36,7 @@ export default class PgPhotoCropper extends PgPhotoCropperDesign {
       color: Color.WHITE,
       onPress: async () => {
         const asset = this.images[this.activeIndex];
+        console.log('launching cropper');
         Multimedia.launchCropper({
           page: this,
           aspectRatio: { x: asset.width / asset.height, y: 1 },
