@@ -28,8 +28,8 @@ export default class PgEmailComposer extends withDismissAndBackButton(PgEmailCom
           console.log('onClose');
         };
 
-        const imageFile = new File({ path: Path.AssetsUriScheme + 'smartface.png' });
-        const image = new Image({ path: Path.AssetsUriScheme + 'smartface.png' });
+        const imageFile = new File({ path: Path.ImagesUriScheme + 'smartface.png' });
+        const image = Image.createFromFile('images://smartface.png');
 
         if (System.OS === System.OSType.IOS) {
           emailcomposer.ios.addAttachmentForiOS(image.toBlob(), 'image/png', 'smartface.png');
