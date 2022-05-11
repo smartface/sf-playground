@@ -489,7 +489,9 @@
 				"parent": "e511-4598-ca6e-8a0c"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"height": 400
+			}
 		},
 		{
 			"className": ".sf-label",
@@ -586,6 +588,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"backgroundColor": "rgba( 253, 0, 0, 0.03 )",
+				"borderWidth": 1,
 				"html": "<br>",
 				"text": "\n",
 				"usePageVariable": true
@@ -605,6 +609,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"backgroundColor": "rgba( 14, 3, 252, 0.04 )",
+				"borderWidth": 1,
 				"html": "<br>",
 				"testId": "QVzcsI1XC",
 				"text": "\n",
