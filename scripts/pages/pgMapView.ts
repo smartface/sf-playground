@@ -92,17 +92,15 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     this.map.onCameraMoveEnded = () => this.addPinsWithLazyLoad(this.currentMapViewStyle);
     this.map.minZoomLevel = DEFAULT_ZOOM_LEVEL - 2;
     this.map.maxZoomLevel = DEFAULT_ZOOM_LEVEL + 2;
-    // iOS CRASHES TODO
-    if (System.OS === System.OSType.ANDROID) {
-      this.map.clusterBorderColor = Color.RED;
-      this.map.clusterFillColor = Color.GREEN;
-      this.map.clusterTextColor = Color.BLACK;
-      this.map.clusterEnabled = true;
-    }
+    this.map.clusterBorderColor = Color.RED;
+    this.map.clusterFillColor = Color.GREEN;
+    this.map.clusterTextColor = Color.BLACK;
+    this.map.clusterEnabled = true;
+
     this.map.android.locationButtonVisible = true;
-    // this.map.rotateEnabled = false;
-    // this.map.scrollEnabled = false;
-    // this.map.userLocationEnabled = true;
+    this.map.rotateEnabled = false;
+    this.map.scrollEnabled = false;
+    this.map.userLocationEnabled = true;
   }
 
   initMenu() {
