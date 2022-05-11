@@ -31,8 +31,8 @@ export default class PgEmailComposer extends withDismissAndBackButton(PgEmailCom
         const imageFile = new File({ path: Path.AssetsUriScheme + 'smartface.png' });
         const image = new Image({ path: Path.AssetsUriScheme + 'smartface.png' });
 
-        if (System.OS == 'iOS') {
-          emailcomposer.ios.addAttachmentForiOS(image.toBlob() as any, 'image/png', 'smartface.png');
+        if (System.OS === System.OSType.IOS) {
+          emailcomposer.ios.addAttachmentForiOS(image.toBlob(), 'image/png', 'smartface.png');
         } else {
           emailcomposer.android.addAttachmentForAndroid(imageFile);
         }
@@ -42,7 +42,7 @@ export default class PgEmailComposer extends withDismissAndBackButton(PgEmailCom
         throw new Error('Cant send mail');
       }
     } catch (error) {
-      console.error(error);
+      console.error(error.message, { stack: error.stack });
     }
   }
 
