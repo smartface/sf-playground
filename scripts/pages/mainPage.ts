@@ -9,7 +9,6 @@ import Application from '@smartface/native/application';
 
 export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   _pages: ConstructorOf<Page>[] = [];
-  _searchNames: string[] = [];
   constructor(private router?: Router, private route?: Route, params?: any) {
     super({});
     this.lblDisclaimer.on('touchEnded', () => {
@@ -43,7 +42,6 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   }
 
   set pages(value) {
-    this._searchNames = value.map((a) => (a.name?.includes('Pg') ? a.name.substr(2) : a.name));
     this._pages = value.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
