@@ -27,7 +27,24 @@ export default class PgLiveMediaPublisher extends withDismissAndBackButton(PgLiv
     this.btnAction.text = this._streaming ? 'Stop Streaming' : 'Start Streaming';
   }
 
+  /**
+   * To test media publisher we need to create a rtmp server in our local network.
+   * https://github.com/aler9/rtsp-simple-server
+   *
+   * Streaming
+   *
+   * Install the server above to your pc. Make sure your pc and phone is on the same network.
+   * Update the outputUrl below with your pc ip address
+   *
+   * Watching
+   *
+   * To watch it you can use VLC Media Player
+   * Open VLC Player, select Media on top left and click Open Network Stream
+   * Write down this address rtmp://localhost/mystream
+   * Make sure stream path is same as in outputUrl (mystream).
+   */
   initLiveMediaPublisher() {
+    this.liveMediaPublisher;
     this.liveMediaPublisher = new StyleableLiveMediaPublisher({
       flexGrow: 1,
       backgroundColor: Color.BLACK,
@@ -35,7 +52,7 @@ export default class PgLiveMediaPublisher extends withDismissAndBackButton(PgLiv
         console.info(params.message, params);
       },
       scaleType: ScaleType.ASPECTFILL,
-      outputUrl: 'rtmp://...'
+      outputUrl: 'rtmp://192.168.1.106/mystream'
     });
     this.flLiveMediaPublisher.addChild(this.liveMediaPublisher, 'liveMediaPublisher', '.grow-relative');
     this.liveMediaPublisher.startPreview();
