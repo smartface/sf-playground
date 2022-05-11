@@ -92,6 +92,7 @@
 			},
 			"type": "SearchView",
 			"userProps": {
+				"borderColor": "rgba( 0, 0, 0, 1 )",
 				"hint": "Search",
 				"left": 0,
 				"top": 0,
@@ -155,6 +156,7 @@
 			},
 			"type": "Slider",
 			"userProps": {
+				"maxValue": 200,
 				"usePageVariable": true,
 				"value": 100
 			}

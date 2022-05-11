@@ -41,7 +41,10 @@ export default class PgSearchView extends withDismissAndBackButton(PgSearchViewD
 
     this.slBorderWidth.on(SliderEvents.ValueChange, (value) => this.changeBorderWidth(value));
 
-    this.sv.on(SearchViewEvents.CancelButtonClicked, () => console.info('CancelButtonClicked'));
+    this.sv.on(SearchViewEvents.CancelButtonClicked, () => {
+      console.log('CancelButtonClicked');
+      this.sv.removeFocus();
+    });
     this.sv.on(SearchViewEvents.SearchBegin, () => console.log('SearchBegin'));
     this.sv.on(SearchViewEvents.SearchButtonClicked, () => console.info('SearchButtonClicked'));
     this.sv.on(SearchViewEvents.SearchEnd, () => console.log('SearchEnd'));
@@ -118,7 +121,7 @@ export default class PgSearchView extends withDismissAndBackButton(PgSearchViewD
   }
 
   setBackgroundImage() {
-    this.sv.backgroundImage = Image.createFromFile('images://native.png');
+    this.sv.ios.backgroundImage = Image.createFromFile('images://native.png');
   }
 
   cancelButtonAndText() {
