@@ -107,7 +107,7 @@
 				"children": [],
 				"name": "btnBackgroundImage",
 				"parent": "e10c-74ab-aa77-337b",
-				"text": "Set backgroundImage",
+				"text": "Set backgroundImage (iOS)",
 				"usePageVariable": true
 			},
 			"type": "Button",
@@ -121,7 +121,7 @@
 				},
 				"height": 35,
 				"left": 0,
-				"text": "Set backgroundImage",
+				"text": "Set backgroundImage (iOS)",
 				"top": 0,
 				"usePageVariable": true
 			}
