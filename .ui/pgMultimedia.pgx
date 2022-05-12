@@ -8,9 +8,11 @@
 				"children": [
 					"dbe1-ad1c-78c7-8866",
 					"bc62-12a6-3bc7-139d",
+					"2417-8ae8-29ff-0b33",
 					"7d14-945f-c56a-789d",
 					"3462-771f-ed32-bbc6",
-					"03d7-edde-247a-9d94"
+					"03d7-edde-247a-9d94",
+					"9fbe-b39d-f2a8-e51c"
 				],
 				"name": "pgMultimedia",
 				"orientation": "PORTRAIT",
@@ -45,6 +47,24 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "pgMultimedia"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2417-8ae8-29ff-0b33",
+			"oldName": "btnHasCamera_1",
+			"props": {
+				"children": [],
+				"name": "btnTakePhoto",
+				"parent": "1499-7088-a5cf-0e93",
+				"text": "Take Photo",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "_QPXiGSZA",
+				"text": "Take Photo",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -98,6 +118,24 @@
 			"userProps": {
 				"testId": "_QPXiGSZA",
 				"text": "convertToMp4()",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "9fbe-b39d-f2a8-e51c",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgv",
+				"parent": "1499-7088-a5cf-0e93",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 200,
+				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true
 			}
 		}

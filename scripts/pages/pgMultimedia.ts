@@ -16,6 +16,30 @@ export default class PgMultimedia extends withDismissAndBackButton(PgMultimediaD
     this.btnHasCamera.on(ButtonEvents.Press, () => alert(Multimedia.hasCameraFeature));
   }
 
+  initTakePhoto() {
+    this.btnTakePhoto.on('press', () => {
+      Multimedia.capturePhoto({
+        onSuccess: ({ image }) => {
+          console.info('image taken, size: ', image.toBlob().size);
+          this.imgv.image = image;
+        },
+        onFailure: (e) => console.error(e),
+        page: this,
+        android: {
+          cropShape: Multimedia.Android.CropShape.RECTANGLE,
+          fixOrientation: true,
+          maxImageSize: 2048
+        },
+        allowsEditing: true,
+        action: Multimedia.ActionType.IMAGE_CAPTURE,
+        type: Multimedia.Type.IMAGE,
+        ios: {
+          cameraDevice: Multimedia.iOS.CameraDevice.REAR
+        }
+      });
+    });
+  }
+
   initRecordVideo() {
     this.btnRecordVideo.on(ButtonEvents.Press, () =>
       Multimedia.recordVideo({
@@ -50,5 +74,6 @@ export default class PgMultimedia extends withDismissAndBackButton(PgMultimediaD
     this.initHasCamera();
     this.initRecordVideo();
     this.initConvertToMp4();
+    this.initTakePhoto();
   }
 }

@@ -9,9 +9,7 @@
 					"11d6-10e0-c104-ac41",
 					"73e5-9fbe-194a-dcab",
 					"254b-2029-77c7-7acf",
-					"7c68-868d-d82e-1dfb",
-					"c092-4454-edaa-b7ce",
-					"e5df-3cb3-4a87-103e"
+					"7c68-868d-d82e-1dfb"
 				],
 				"isRemovable": true,
 				"name": "pgOTP",
@@ -114,45 +112,6 @@
 				"text": "Page1",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
-				"usePageVariable": true
-			}
-		},
-		{
-			"className": ".sf-button",
-			"id": "c092-4454-edaa-b7ce",
-			"props": {
-				"autoHeight": 50.561797752808985,
-				"children": [],
-				"name": "btnNext",
-				"parent": "38bd-e95b-18d3-8a4f",
-				"text": "Next Page",
-				"usePageVariable": true
-			},
-			"type": "Button",
-			"userProps": {
-				"autoHeight": 50.561797752808985,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"testId": "ucEDBF6ZMB",
-				"text": "Next Page",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".sf-imageView",
-			"id": "e5df-3cb3-4a87-103e",
-			"props": {
-				"children": [],
-				"name": "imageView1",
-				"parent": "38bd-e95b-18d3-8a4f",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"testId": "gmGHZOq5w",
 				"usePageVariable": true
 			}
 		}

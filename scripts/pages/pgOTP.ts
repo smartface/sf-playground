@@ -15,28 +15,6 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
   datePicker: DatePicker;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnNext.onPress = () => {
-      this.capturePhoto();
-    };
-  }
-  capturePhoto() {
-    Multimedia.capturePhoto({
-      onSuccess: ({ image }) => {
-        this.imageView1.image = image;
-      },
-      page: this,
-      android: {
-        cropShape: Multimedia.Android.CropShape.RECTANGLE,
-        fixOrientation: true,
-        maxImageSize: 2048
-      },
-      allowsEditing: true,
-      action: Multimedia.ActionType.IMAGE_CAPTURE,
-      type: Multimedia.Type.IMAGE,
-      ios: {
-        cameraDevice: Multimedia.iOS.CameraDevice.REAR
-      }
-    });
   }
 
   requestSMSPermission() {
