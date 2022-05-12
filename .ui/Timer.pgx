@@ -1,0 +1,105 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "b3a7-3bc0-d465-d13c",
+			"initialized": false,
+			"props": {
+				"children": [
+					"ca03-b4eb-c8bd-a97c",
+					"a3a1-93b8-aba6-4fc2",
+					"6fc8-590a-8a59-aa8b",
+					"5842-4cb6-f692-80da",
+					"ec4e-c89e-1a62-14c4"
+				],
+				"name": "Timer",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "ca03-b4eb-c8bd-a97c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "b3a7-3bc0-d465-d13c"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "a3a1-93b8-aba6-4fc2",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "b3a7-3bc0-d465-d13c",
+				"title": "pgTimer"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTimer"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "6fc8-590a-8a59-aa8b",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnCreateInterval",
+				"parent": "b3a7-3bc0-d465-d13c",
+				"text": "Create a Interval",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "mVJeSfs3P",
+				"text": "Create a Interval",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5842-4cb6-f692-80da",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnCreateTimeout",
+				"parent": "b3a7-3bc0-d465-d13c",
+				"text": "Call log function with Timeout",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "zSDpXS3C6",
+				"text": "Call log function with Timeout",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "ec4e-c89e-1a62-14c4",
+			"oldName": "btnClearIntervals",
+			"props": {
+				"children": [],
+				"name": "btnClearAllTimers",
+				"parent": "b3a7-3bc0-d465-d13c",
+				"text": "Clear All Timers",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "b1mkfZE1G",
+				"text": "Clear All Timers",
+				"usePageVariable": true
+			}
+		}
+	]
+}

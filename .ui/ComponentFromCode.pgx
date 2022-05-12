@@ -1,0 +1,98 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "a7ae-6da9-37b5-c68a",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "ComponentFromCode",
+				"parent": null,
+				"children": [
+					"0070-1dc8-1a6d-ad4b",
+					"4c39-db79-b2f1-ca86"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "0070-1dc8-1a6d-ad4b",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "a7ae-6da9-37b5-c68a",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "4c39-db79-b2f1-ca86",
+			"userProps": {
+				"title": "pgComponentFromCode"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "a7ae-6da9-37b5-c68a",
+				"children": [],
+				"title": "pgComponentFromCode",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"7fad-a2db-3a57-ce5e": {
+			"type": "Page",
+			"id": "a7ae-6da9-37b5-c68a",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "ComponentFromCode",
+				"parent": null,
+				"children": [
+					"0070-1dc8-1a6d-ad4b",
+					"4c39-db79-b2f1-ca86"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"d3aa-79e1-706f-bfe9": {
+			"type": "StatusBar",
+			"id": "0070-1dc8-1a6d-ad4b",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "a7ae-6da9-37b5-c68a",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"c4a7-8d40-aa79-cee0": {
+			"type": "HeaderBar",
+			"id": "4c39-db79-b2f1-ca86",
+			"userProps": {
+				"title": "pgComponentFromCode"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "a7ae-6da9-37b5-c68a",
+				"children": [],
+				"title": "pgComponentFromCode",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

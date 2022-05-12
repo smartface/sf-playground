@@ -1,0 +1,98 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "0e36-9477-0bdf-e927",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "Sound",
+				"parent": null,
+				"children": [
+					"3013-679e-d3b2-caed",
+					"2517-4162-c58f-425f"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "3013-679e-d3b2-caed",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "0e36-9477-0bdf-e927",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "2517-4162-c58f-425f",
+			"userProps": {
+				"title": "pgSound"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "0e36-9477-0bdf-e927",
+				"children": [],
+				"title": "pgSound",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"c155-d23c-1c0f-98d6": {
+			"type": "Page",
+			"id": "0e36-9477-0bdf-e927",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "Sound",
+				"parent": null,
+				"children": [
+					"3013-679e-d3b2-caed",
+					"2517-4162-c58f-425f"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"cdb2-8106-c512-4a46": {
+			"type": "StatusBar",
+			"id": "3013-679e-d3b2-caed",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "0e36-9477-0bdf-e927",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"7816-035a-b7f0-be9e": {
+			"type": "HeaderBar",
+			"id": "2517-4162-c58f-425f",
+			"userProps": {
+				"title": "pgSound"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "0e36-9477-0bdf-e927",
+				"children": [],
+				"title": "pgSound",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "12bd-8b23-ce4b-8da2",
+			"initialized": false,
+			"props": {
+				"children": [
+					"cc54-512d-96ad-eb5c",
+					"d6bc-765e-b164-e714",
+					"199d-7c10-35c3-73bc",
+					"5d9e-8524-53dc-7fd8"
+				],
+				"name": "ApplicationEvents",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "cc54-512d-96ad-eb5c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "12bd-8b23-ce4b-8da2"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "d6bc-765e-b164-e714",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "12bd-8b23-ce4b-8da2",
+				"title": "pgApplicationEvents"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgApplicationEvents"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "199d-7c10-35c3-73bc",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnExit",
+				"parent": "12bd-8b23-ce4b-8da2",
+				"text": "Exit App",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"testId": "AUsaNygvs",
+				"text": "Exit App",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5d9e-8524-53dc-7fd8",
+			"oldName": "button2",
+			"props": {
+				"children": [],
+				"name": "btnRestart",
+				"parent": "12bd-8b23-ce4b-8da2",
+				"text": "Restart App",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"testId": "-4otLxr60E",
+				"text": "Restart App",
+				"usePageVariable": true
+			}
+		}
+	]
+}

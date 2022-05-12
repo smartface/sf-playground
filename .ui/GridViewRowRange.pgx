@@ -1,0 +1,165 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "eabe-73a1-586b-d5b0",
+			"initialized": false,
+			"props": {
+				"children": [
+					"ef18-7045-c841-73e0",
+					"e768-ed89-1bea-a813",
+					"77da-80b0-3a0a-c3e4",
+					"8270-aa11-1a2b-0da0",
+					"7715-f786-df98-63cd",
+					"a75f-9d5e-c2ee-fadc"
+				],
+				"name": "GridViewRowRange",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "ef18-7045-c841-73e0",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "eabe-73a1-586b-d5b0"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "e768-ed89-1bea-a813",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "eabe-73a1-586b-d5b0",
+				"title": "pgGridViewRowRange"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgGridViewRowRange"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "77da-80b0-3a0a-c3e4",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnInsert",
+				"parent": "eabe-73a1-586b-d5b0",
+				"text": "Insert Row",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"testId": "XtNQ9GPu4",
+				"text": "Insert Row",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "8270-aa11-1a2b-0da0",
+			"oldName": "button2",
+			"props": {
+				"children": [],
+				"name": "btnRefresh",
+				"parent": "eabe-73a1-586b-d5b0",
+				"text": "Refresh Row",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"testId": "KX1UqUPvO",
+				"text": "Refresh Row",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "7715-f786-df98-63cd",
+			"oldName": "button3",
+			"props": {
+				"children": [],
+				"name": "btnDelete",
+				"parent": "eabe-73a1-586b-d5b0",
+				"text": "Delete Row",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"marginBottom": 30,
+				"testId": "0yefrR4St",
+				"text": "Delete Row",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-gridView",
+			"id": "a75f-9d5e-c2ee-fadc",
+			"oldName": "gridView1",
+			"props": {
+				"children": [
+					"2f5a-7f10-2f50-c98c"
+				],
+				"name": "gvMain",
+				"parent": "eabe-73a1-586b-d5b0",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "GridView",
+			"userProps": {
+				"height": 200,
+				"layoutManager": {
+					"spanCount": 1,
+					"scrollDirection": "HORIZONTAL"
+				},
+				"left": 0,
+				"marginBottom": null,
+				"marginTop": null,
+				"testId": "_8X2VcUUO",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-gridViewItem",
+			"hiddenComponent": false,
+			"id": "2f5a-7f10-2f50-c98c",
+			"props": {
+				"children": [],
+				"name": "gviTitle",
+				"parent": "a75f-9d5e-c2ee-fadc"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "gviTitle",
+				"id": "c23a-58bd-e72b-1b7e"
+			},
+			"type": "GridViewItem",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0
+			}
+		}
+	]
+}

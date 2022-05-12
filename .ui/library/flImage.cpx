@@ -4,7 +4,7 @@
 			"className": ".sf-flexLayout",
 			"hiddenComponent": true,
 			"id": "2ca1-cb03-95f1-c455",
-			"initialized": true,
+			"initialized": false,
 			"props": {
 				"children": [
 					"e484-4e90-7ed1-3e83"

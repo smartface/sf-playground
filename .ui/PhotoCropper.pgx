@@ -1,0 +1,96 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #pgPhotoCropper",
+			"id": "59fc-aa30-b0ba-3c18",
+			"initialized": false,
+			"props": {
+				"children": [
+					"58d9-53f9-aac0-a875",
+					"ee8a-66b5-61a7-f9ca",
+					"52df-d577-d0e6-f137",
+					"d663-9cbe-3957-3391"
+				],
+				"name": "PhotoCropper",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "58d9-53f9-aac0-a875",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "59fc-aa30-b0ba-3c18"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar #pgPhotoCropper-headerBar",
+			"id": "ee8a-66b5-61a7-f9ca",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "59fc-aa30-b0ba-3c18"
+			},
+			"type": "HeaderBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #pgPhotoCropper-flex",
+			"id": "52df-d577-d0e6-f137",
+			"props": {
+				"children": [],
+				"name": "flex",
+				"parent": "59fc-aa30-b0ba-3c18",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "r2geeze9S",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-gridView #pgPhotoCropper-gvPhotos",
+			"id": "d663-9cbe-3957-3391",
+			"props": {
+				"children": [
+					"7925-9d41-5c2d-f594"
+				],
+				"name": "gvPhotos",
+				"parent": "59fc-aa30-b0ba-3c18",
+				"usePageVariable": true
+			},
+			"type": "GridView",
+			"userProps": {
+				"testId": "nqnPjl35Z",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-gridViewItem .gviMiniPhoto",
+			"hiddenComponent": false,
+			"id": "7925-9d41-5c2d-f594",
+			"props": {
+				"children": [],
+				"name": "gviMiniPhoto",
+				"parent": "d663-9cbe-3957-3391"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "gviMiniPhoto",
+				"id": "8417-61ca-c49a-4b9c"
+			},
+			"type": "GridViewItem",
+			"userProps": {}
+		}
+	]
+}

@@ -1,0 +1,66 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "8aa6-b8ed-e675-7c85",
+			"initialized": false,
+			"props": {
+				"children": [
+					"0f94-02c7-e7e5-6465",
+					"ddb8-d1ef-c1e6-013b",
+					"fc90-d49a-e3a0-6fd0"
+				],
+				"name": "DatePicker",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "0f94-02c7-e7e5-6465",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "8aa6-b8ed-e675-7c85"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "ddb8-d1ef-c1e6-013b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "8aa6-b8ed-e675-7c85",
+				"title": "pgDatePicker"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgDatePicker"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "fc90-d49a-e3a0-6fd0",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnShowPicker",
+				"parent": "8aa6-b8ed-e675-7c85",
+				"text": "Show Picker",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Show Picker",
+				"usePageVariable": true
+			}
+		}
+	]
+}

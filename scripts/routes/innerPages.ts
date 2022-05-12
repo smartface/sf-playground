@@ -1,23 +1,23 @@
-import PgGridViewFullSpan from 'pages/pgGridViewFullSpan';
-import PgGridViewHorizontalCard from 'pages/pgGridViewHorizontalCard';
-import PgGridViewPagination from 'pages/pgGridViewPagination';
-import PgGridViewRowRange from 'pages/pgGridViewRowRange';
-import PgListviewDragDrop from 'pages/pgListviewDragDrop';
-import PgListviewMultipleLvi from 'pages/pgListviewMultipleLvi';
-import PgListviewPagination from 'pages/pgListviewPagination';
-import PgListviewSticky from 'pages/pgListviewSticky';
-import PgListviewSwipe from 'pages/pgListviewSwipe';
-import PgListviewZebra from 'pages/pgListviewZebra';
+import GridViewFullSpan from 'pages/GridViewFullSpan';
+import GridViewHorizontalCard from 'pages/GridViewHorizontalCard';
+import GridViewPagination from 'pages/GridViewPagination';
+import GridViewRowRange from 'pages/GridViewRowRange';
+import ListviewDragDrop from 'pages/ListviewDragDrop';
+import ListviewMultipleLvi from 'pages/ListviewMultipleLvi';
+import ListviewPagination from 'pages/ListviewPagination';
+import ListviewSticky from 'pages/ListviewSticky';
+import ListviewSwipe from 'pages/ListviewSwipe';
+import ListviewZebra from 'pages/ListviewZebra';
 
 export const innerPages = [
-  PgListviewMultipleLvi,
-  PgListviewPagination,
-  PgListviewSticky,
-  PgListviewSwipe,
-  PgListviewDragDrop,
-  PgListviewZebra,
-  PgGridViewFullSpan,
-  PgGridViewHorizontalCard,
-  PgGridViewRowRange,
-  PgGridViewPagination
+  ListviewMultipleLvi,
+  ListviewPagination,
+  ListviewSticky,
+  ListviewSwipe,
+  ListviewDragDrop,
+  ListviewZebra,
+  GridViewFullSpan,
+  GridViewHorizontalCard,
+  GridViewRowRange,
+  GridViewPagination
 ];

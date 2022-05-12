@@ -1,0 +1,146 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "f99d-99ba-8097-ce17",
+			"initialized": false,
+			"props": {
+				"children": [
+					"50fe-01a5-9e6e-ba8e",
+					"01e1-fb84-7151-f28e",
+					"be40-0a46-ff34-a157",
+					"6044-a874-f497-deda",
+					"215f-2e93-2340-df8c",
+					"ec31-93f4-3d76-92f3",
+					"c654-c6a6-c569-d67e"
+				],
+				"name": "SecureData",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "50fe-01a5-9e6e-ba8e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "f99d-99ba-8097-ce17"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "01e1-fb84-7151-f28e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "f99d-99ba-8097-ce17",
+				"title": "pgSecureData"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgSecureData"
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "be40-0a46-ff34-a157",
+			"oldName": "textBox1",
+			"props": {
+				"children": [],
+				"name": "tv",
+				"parent": "f99d-99ba-8097-ce17",
+				"text": "Write something to save",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"testId": "c_Js1KsNW",
+				"text": "Write something to save",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "6044-a874-f497-deda",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnSave",
+				"parent": "f99d-99ba-8097-ce17",
+				"text": "Save",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "ZYZOnJIe46",
+				"text": "Save",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "215f-2e93-2340-df8c",
+			"oldName": "button2",
+			"props": {
+				"children": [],
+				"name": "btnLoad",
+				"parent": "f99d-99ba-8097-ce17",
+				"text": "Load",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "pr84tOh8UG",
+				"text": "Load",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "ec31-93f4-3d76-92f3",
+			"oldName": "btnLoad_1",
+			"props": {
+				"children": [],
+				"name": "btnDelete",
+				"parent": "f99d-99ba-8097-ce17",
+				"text": "Delete",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "pr84tOh8UG",
+				"text": "Delete",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "c654-c6a6-c569-d67e",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lbl",
+				"parent": "f99d-99ba-8097-ce17",
+				"text": "showcase",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"height": 500,
+				"maxLines": 99,
+				"testId": "w4laKqH9dK",
+				"text": "showcase",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		}
+	]
+}

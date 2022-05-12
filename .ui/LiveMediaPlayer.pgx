@@ -1,0 +1,118 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "df2a-1527-309d-ab7e",
+			"initialized": false,
+			"props": {
+				"children": [
+					"a668-8e81-434e-6681",
+					"95bf-507e-ec77-0a7a",
+					"5a00-8ca7-3153-0fbc",
+					"b55a-3417-25b5-1038",
+					"f594-152c-8a98-27bb",
+					"a224-4be9-25dd-81cb"
+				],
+				"name": "LiveMediaPlayer",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "a668-8e81-434e-6681",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "df2a-1527-309d-ab7e"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "95bf-507e-ec77-0a7a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "df2a-1527-309d-ab7e",
+				"title": "pgLiveMediaPlayer"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgLiveMediaPlayer"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5a00-8ca7-3153-0fbc",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "flLiveMediaPlayer",
+				"parent": "df2a-1527-309d-ab7e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b55a-3417-25b5-1038",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnAction",
+				"parent": "df2a-1527-309d-ab7e",
+				"text": "Play",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Play",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "f594-152c-8a98-27bb",
+			"oldName": "btn",
+			"props": {
+				"children": [],
+				"name": "btnPause",
+				"parent": "df2a-1527-309d-ab7e",
+				"text": "Pause",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Pause",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a224-4be9-25dd-81cb",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnAudio",
+				"parent": "df2a-1527-309d-ab7e",
+				"text": "Disable Audio",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Disable Audio",
+				"usePageVariable": true
+			}
+		}
+	]
+}

@@ -1,0 +1,312 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "b52b-b058-0de2-1778",
+			"initialized": false,
+			"props": {
+				"children": [
+					"fa7e-257f-c00b-08bc",
+					"6858-8137-cecc-636d",
+					"54a0-c172-ae5d-e1bf"
+				],
+				"name": "NativeFunctions",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "fa7e-257f-c00b-08bc",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "b52b-b058-0de2-1778"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "6858-8137-cecc-636d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "b52b-b058-0de2-1778",
+				"title": "pgNativeFunctions"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgNativeFunctions"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "54a0-c172-ae5d-e1bf",
+			"props": {
+				"children": [
+					"6d30-7e3d-afaa-ec61",
+					"a382-3a09-a5cc-7cb8",
+					"4718-e7c2-87bf-55d5",
+					"bbdb-e422-c1db-9b86",
+					"5432-9c96-1517-cc9f",
+					"a79a-5af5-5f1f-69a5",
+					"eaf8-58dc-8fb1-c452",
+					"c1a1-1557-6e2c-eee5",
+					"8cbb-2419-9018-f622",
+					"8b4c-ab87-d7ab-2b31",
+					"d7c7-a3e1-9b37-2f55",
+					"ddfe-5416-1a14-cf96",
+					"9a78-63d3-60ab-3064",
+					"5e2a-fc62-f78d-ae10"
+				],
+				"name": "svMain",
+				"parent": "b52b-b058-0de2-1778",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"testId": "J77D1vZI5",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "6d30-7e3d-afaa-ec61",
+			"props": {
+				"children": [],
+				"name": "lblLinking",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Linking"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "HH1W9fBpy",
+				"text": "Linking",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a382-3a09-a5cc-7cb8",
+			"props": {
+				"children": [],
+				"name": "btnOpenUrl",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Open URL",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Open URL",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "4718-e7c2-87bf-55d5",
+			"props": {
+				"children": [],
+				"name": "btnCanOpen",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Can Open URL",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Can Open URL",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "bbdb-e422-c1db-9b86",
+			"props": {
+				"children": [],
+				"name": "btnOpenSettings",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Open Settings",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Open Settings",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "5432-9c96-1517-cc9f",
+			"props": {
+				"children": [],
+				"name": "lblPermission",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Permission"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "HH1W9fBpy",
+				"text": "Permission",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a79a-5af5-5f1f-69a5",
+			"props": {
+				"children": [],
+				"name": "btnCameraPermission",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Request Camera Permission",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Request Camera Permission",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "eaf8-58dc-8fb1-c452",
+			"props": {
+				"children": [],
+				"name": "btnLocationPermission",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Request Location Permission",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Request Location Permission",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "c1a1-1557-6e2c-eee5",
+			"props": {
+				"children": [],
+				"name": "lblLocation",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Location"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "HH1W9fBpy",
+				"text": "Location",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "8cbb-2419-9018-f622",
+			"props": {
+				"children": [],
+				"name": "btnGetLocation",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Get Location",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Get Location",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "8b4c-ab87-d7ab-2b31",
+			"props": {
+				"children": [],
+				"name": "lblNetwork",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Network"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "HH1W9fBpy",
+				"text": "Network",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "d7c7-a3e1-9b37-2f55",
+			"props": {
+				"children": [],
+				"name": "btnCheckConnected",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Check Network",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Check Network",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "ddfe-5416-1a14-cf96",
+			"props": {
+				"children": [],
+				"name": "lblMaps",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Maps"
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "HH1W9fBpy",
+				"text": "Maps",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9a78-63d3-60ab-3064",
+			"props": {
+				"children": [],
+				"name": "btnOpenMaps",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Open Maps",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Open Maps",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5e2a-fc62-f78d-ae10",
+			"props": {
+				"children": [],
+				"name": "btnOpenNavigation",
+				"parent": "54a0-c172-ae5d-e1bf",
+				"text": "Open Navigation",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "yYwwuIwlP",
+				"text": "Open Navigation",
+				"usePageVariable": true
+			}
+		}
+	]
+}

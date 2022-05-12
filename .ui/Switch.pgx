@@ -1,0 +1,214 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "d2cd-0607-2822-249c",
+			"initialized": false,
+			"props": {
+				"children": [
+					"c746-e34a-4ed1-4aeb",
+					"1917-de0f-a0a3-f593",
+					"3111-2677-ec61-8c07",
+					"a024-1e02-1248-8c8a",
+					"5d7b-5476-7012-18ff",
+					"7f96-2307-82e5-9f47",
+					"86a4-4d76-40ea-6fc9",
+					"b236-a382-543b-1029",
+					"9d98-2d81-b12b-5b72",
+					"58a4-8e6b-6831-85d9",
+					"90df-8df4-a6be-6a48"
+				],
+				"name": "Switch",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "c746-e34a-4ed1-4aeb",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "d2cd-0607-2822-249c"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "1917-de0f-a0a3-f593",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "d2cd-0607-2822-249c",
+				"title": "pgSwitch"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgSwitch"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "3111-2677-ec61-8c07",
+			"oldName": "switch1",
+			"props": {
+				"children": [],
+				"name": "sw1",
+				"parent": "d2cd-0607-2822-249c",
+				"toggle": true,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"toggle": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a024-1e02-1248-8c8a",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnEnable",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Disable Switch",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Disable Switch",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5d7b-5476-7012-18ff",
+			"oldName": "btnEnable_1",
+			"props": {
+				"children": [],
+				"name": "btnThumbImage",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Thumb Image (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Thumb Image (Android)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "7f96-2307-82e5-9f47",
+			"oldName": "btnThumbImage_1",
+			"props": {
+				"children": [],
+				"name": "btnThumbOffColor",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Thumb Off Color (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Thumb Off Color (Android)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "86a4-4d76-40ea-6fc9",
+			"oldName": "btnThumbOffColor_1",
+			"props": {
+				"children": [],
+				"name": "btnThumbOnColor",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Thumb On Color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Thumb On Color",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b236-a382-543b-1029",
+			"oldName": "btnThumbOnColor_1",
+			"props": {
+				"children": [],
+				"name": "btnToggleImage",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Toggle Image (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Toggle Image (Android)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9d98-2d81-b12b-5b72",
+			"oldName": "btnThumbOffColor_1",
+			"props": {
+				"children": [],
+				"name": "btnToggleOffColor",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Toggle Off Color (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Toggle Off Color (Android)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "58a4-8e6b-6831-85d9",
+			"oldName": "btnThumbOnColor_1",
+			"props": {
+				"children": [],
+				"name": "btnToggleOnColor",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Toggle On Color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Toggle On Color",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "90df-8df4-a6be-6a48",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnToggleTrue",
+				"parent": "d2cd-0607-2822-249c",
+				"text": "Set Switch to True",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Switch to True",
+				"usePageVariable": true
+			}
+		}
+	]
+}

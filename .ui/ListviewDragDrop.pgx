@@ -1,0 +1,74 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "6a52-3e22-7b62-9856",
+			"initialized": false,
+			"props": {
+				"children": [
+					"3740-c56d-905f-c3e0",
+					"8e37-39ab-8080-ac93",
+					"5b94-6ea0-ea58-3216"
+				],
+				"name": "ListviewDragDrop",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "3740-c56d-905f-c3e0",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "6a52-3e22-7b62-9856"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "8e37-39ab-8080-ac93",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "6a52-3e22-7b62-9856",
+				"title": "pgListviewDragDrop"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgListviewDragDrop"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-listView",
+			"id": "5b94-6ea0-ea58-3216",
+			"oldName": "listView1",
+			"props": {
+				"children": [],
+				"name": "lvMain",
+				"parent": "6a52-3e22-7b62-9856",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "ListView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true,
+				"testId": "7LY3FCxzc"
+			},
+			"degree": 1
+		}
+	]
+}

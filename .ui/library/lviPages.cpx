@@ -4,7 +4,7 @@
 			"className": ".sf-listViewItem",
 			"hiddenComponent": true,
 			"id": "6489-e37f-2143-0faf",
-			"initialized": true,
+			"initialized": false,
 			"props": {
 				"children": [
 					"0596-82ca-47e0-3fea",

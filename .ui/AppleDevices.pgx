@@ -1,0 +1,102 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "62aa-58a4-2e1f-8cf3",
+			"initialized": false,
+			"props": {
+				"children": [
+					"9bcd-c46d-1936-ea35",
+					"0d12-9dd3-757e-986b",
+					"11e5-f515-07df-791f"
+				],
+				"name": "AppleDevices",
+				"orientation": "AUTO",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "AUTO",
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "9bcd-c46d-1936-ea35",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "62aa-58a4-2e1f-8cf3"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0d12-9dd3-757e-986b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "62aa-58a4-2e1f-8cf3",
+				"title": "gAppleDevices"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "gAppleDevices"
+			}
+		},
+		{
+			"className": ".sf-listView",
+			"id": "11e5-f515-07df-791f",
+			"props": {
+				"children": [
+					"2f9b-32d0-6ff1-708f"
+				],
+				"name": "lvAppleDevices",
+				"parent": "62aa-58a4-2e1f-8cf3",
+				"usePageVariable": true
+			},
+			"type": "ListView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"testId": "yyGkhBuBL",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-listViewItem",
+			"hiddenComponent": false,
+			"id": "2f9b-32d0-6ff1-708f",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "lviPages",
+				"parent": "11e5-f515-07df-791f"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "lviPages",
+				"id": "6489-e37f-2143-0faf"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"testId": "F-BBMEbNk",
+				"top": 0
+			}
+		}
+	]
+}

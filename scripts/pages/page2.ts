@@ -9,7 +9,7 @@ import Router from '@smartface/router/lib/router/Router';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 
-export default class Page2 extends withDismissAndBackButton(Page2Design) {
+export default class PgPage2 extends withDismissAndBackButton(Page2Design) {
   private routeData: any;
   constructor(private router?: Router, private route?: Route) {
     super({});

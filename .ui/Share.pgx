@@ -1,0 +1,151 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "9bb3-0724-fc91-e6cb",
+			"initialized": false,
+			"props": {
+				"children": [
+					"9a1e-01ba-d187-c74c",
+					"7175-4f84-702a-b7d8",
+					"9d9f-0d33-c399-cda2",
+					"1318-9e50-5b69-e975",
+					"38cf-d520-4cdb-e718",
+					"6fd2-a202-3c8c-aeda",
+					"1f97-cc03-400f-8747"
+				],
+				"name": "Share",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "9a1e-01ba-d187-c74c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "9bb3-0724-fc91-e6cb"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "7175-4f84-702a-b7d8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "9bb3-0724-fc91-e6cb",
+				"title": "pgShare"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgShare"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "9d9f-0d33-c399-cda2",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnShare",
+				"parent": "9bb3-0724-fc91-e6cb",
+				"text": "Share",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Share",
+				"usePageVariable": true,
+				"testId": "7yeE_tfu-"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "1318-9e50-5b69-e975",
+			"oldName": "btnShare_1",
+			"props": {
+				"children": [],
+				"name": "btnShareContacts",
+				"parent": "9bb3-0724-fc91-e6cb",
+				"text": "Share Contacts",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Share Contacts",
+				"usePageVariable": true,
+				"testId": "8uPxlCtJc4"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "38cf-d520-4cdb-e718",
+			"oldName": "btnShareContacts_1",
+			"props": {
+				"children": [],
+				"name": "btnShareFile",
+				"parent": "9bb3-0724-fc91-e6cb",
+				"text": "Share File",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Share File",
+				"usePageVariable": true,
+				"testId": "kgpklHHbOC"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "6fd2-a202-3c8c-aeda",
+			"oldName": "btnShareFile_1",
+			"props": {
+				"children": [],
+				"name": "btnShareImage",
+				"parent": "9bb3-0724-fc91-e6cb",
+				"text": "Share Image",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Share Image",
+				"usePageVariable": true,
+				"testId": "PT8Q-vOPze"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "1f97-cc03-400f-8747",
+			"oldName": "btnShareImage_1",
+			"props": {
+				"children": [],
+				"name": "btnShareText",
+				"parent": "9bb3-0724-fc91-e6cb",
+				"text": "Share Text",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Share Text",
+				"usePageVariable": true,
+				"testId": "xOXd5DeiHT"
+			},
+			"degree": 1
+		}
+	]
+}

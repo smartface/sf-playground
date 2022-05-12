@@ -1,0 +1,49 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "7913-786f-f8bd-81f8",
+			"initialized": false,
+			"props": {
+				"children": [
+					"2bec-1497-8fcc-0cbf",
+					"713d-b9e7-e105-e65f"
+				],
+				"name": "BarcodeScanner",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "2bec-1497-8fcc-0cbf",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7913-786f-f8bd-81f8"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "713d-b9e7-e105-e65f",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7913-786f-f8bd-81f8",
+				"title": "pgBarcodeScanner"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgBarcodeScanner"
+			}
+		}
+	]
+}
