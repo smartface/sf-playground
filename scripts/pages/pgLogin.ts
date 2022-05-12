@@ -16,7 +16,7 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
     this.mtbEmail.options = {
       hint: 'Email'
     };
-    this.mtbEmail.materialTextBox.textAlignment = TextAlignment.MIDCENTER;
+    this.mtbEmail.materialTextBox.textAlignment = TextAlignment.MIDLEFT;
     this.mtbEmail.materialTextBox.keyboardType = KeyboardType.EMAILADDRESS;
     this.mtbEmail.materialTextBox.actionKeyType = ActionKeyType.NEXT;
     this.mtbEmail.materialTextBox.onActionButtonPress = () => {
@@ -26,7 +26,7 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
     this.mtbPassword.options = {
       hint: 'Password'
     };
-    this.mtbPassword.materialTextBox.textAlignment = TextAlignment.MIDCENTER;
+    this.mtbPassword.materialTextBox.textAlignment = TextAlignment.MIDLEFT;
     this.mtbPassword.materialTextBox.isPassword = true;
     this.mtbPassword.materialTextBox.actionKeyType = ActionKeyType.GO;
     this.mtbPassword.materialTextBox.onActionButtonPress = () => {
