@@ -1,0 +1,68 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "327b-8058-27d5-6d77",
+			"initialized": true,
+			"props": {
+				"children": [
+					"cb8c-7519-d9cc-81ed",
+					"a65b-e5f6-aaca-3be1",
+					"eac6-95c9-f102-c8b0"
+				],
+				"name": "pgMapRegion",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "cb8c-7519-d9cc-81ed",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "327b-8058-27d5-6d77"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "a65b-e5f6-aaca-3be1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "327b-8058-27d5-6d77",
+				"title": "pgEmpty"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgEmpty"
+			}
+		},
+		{
+			"className": ".sf-mapView",
+			"id": "eac6-95c9-f102-c8b0",
+			"props": {
+				"children": [],
+				"name": "mapView1",
+				"parent": "327b-8058-27d5-6d77",
+				"usePageVariable": true
+			},
+			"type": "MapView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"testId": "PXwelXlcQ",
+				"usePageVariable": true
+			}
+		}
+	]
+}

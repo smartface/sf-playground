@@ -1,0 +1,107 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "28ff-c191-b033-01f6",
+			"initialized": true,
+			"props": {
+				"children": [
+					"4bf6-6894-814a-5f68",
+					"31f2-d738-1672-5ff4",
+					"11f2-fa8a-1a74-85b2"
+				],
+				"name": "pgAxios",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "4bf6-6894-814a-5f68",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "28ff-c191-b033-01f6"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "31f2-d738-1672-5ff4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "28ff-c191-b033-01f6",
+				"title": "pgAxios"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgAxios"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow-relative",
+			"id": "11f2-fa8a-1a74-85b2",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"c79b-0e79-3e1a-426c",
+					"01a2-e295-056b-f803"
+				],
+				"name": "sv",
+				"parent": "28ff-c191-b033-01f6"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "c79b-0e79-3e1a-426c",
+			"oldName": "textView1",
+			"props": {
+				"children": [],
+				"html": "<br>",
+				"name": "tvData",
+				"parent": "11f2-fa8a-1a74-85b2",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 200,
+				"html": "<br>",
+				"text": "\n",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "01a2-e295-056b-f803",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnGet",
+				"parent": "11f2-fa8a-1a74-85b2",
+				"text": "Get",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Get",
+				"usePageVariable": true
+			}
+		}
+	]
+}

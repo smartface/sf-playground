@@ -7,7 +7,7 @@ import Page from '@smartface/native/ui/page';
 import { ConstructorOf } from '@smartface/styling-context/lib/ConstructorOf';
 import Application from '@smartface/native/application';
 
-export default class PgMainPage extends withDismissAndBackButton(MainPageDesign) {
+export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   _pages: ConstructorOf<Page>[] = [];
   constructor(private router?: Router, private route?: Route, params?: any) {
     super({});

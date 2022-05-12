@@ -1,0 +1,207 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "7428-985a-1805-4283",
+			"initialized": true,
+			"props": {
+				"children": [
+					"ffb6-aa13-a10c-aee3",
+					"d09d-435d-4261-0d5e",
+					"5254-39d9-3da0-9e0e"
+				],
+				"name": "pgShimmerFlexLayout",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "ffb6-aa13-a10c-aee3",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7428-985a-1805-4283"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "d09d-435d-4261-0d5e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7428-985a-1805-4283",
+				"title": "pgShimmerFlexLayout"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgShimmerFlexLayout"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "5254-39d9-3da0-9e0e",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"4646-8c0c-5c33-cb34",
+					"258e-48c0-d958-c48e",
+					"6694-b5ce-d11c-0cef",
+					"e263-d1e5-b035-1bd7",
+					"4d00-2c08-c992-81e0"
+				],
+				"name": "svMain",
+				"parent": "7428-985a-1805-4283"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-shimmerFlexLayout",
+			"id": "4646-8c0c-5c33-cb34",
+			"oldName": "shimmerFlexLayout1",
+			"props": {
+				"children": [
+					"67eb-0d20-926a-f090",
+					"02c8-dceb-205a-a5cc",
+					"2909-a62c-b19b-72a3"
+				],
+				"name": "sfl",
+				"parent": "5254-39d9-3da0-9e0e",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "ShimmerFlexLayout",
+			"userProps": {
+				"height": 200,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "67eb-0d20-926a-f090",
+			"props": {
+				"children": [],
+				"name": "switch1",
+				"parent": "4646-8c0c-5c33-cb34",
+				"toggle": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"left": 0,
+				"toggle": true,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-activityIndicator",
+			"id": "02c8-dceb-205a-a5cc",
+			"props": {
+				"children": [],
+				"name": "activityIndicator1",
+				"parent": "4646-8c0c-5c33-cb34"
+			},
+			"ref": null,
+			"type": "ActivityIndicator",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-searchView",
+			"id": "2909-a62c-b19b-72a3",
+			"props": {
+				"children": [],
+				"hint": "Search",
+				"name": "searchView1",
+				"parent": "4646-8c0c-5c33-cb34"
+			},
+			"type": "SearchView",
+			"userProps": {
+				"hint": "Search"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "258e-48c0-d958-c48e",
+			"oldName": "btnToggle",
+			"props": {
+				"children": [],
+				"name": "btnToggleShimmer",
+				"parent": "5254-39d9-3da0-9e0e",
+				"text": "Start Shimmering",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Start Shimmering",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "6694-b5ce-d11c-0cef",
+			"oldName": "lblAlpa",
+			"props": {
+				"children": [],
+				"name": "lblAlpha",
+				"parent": "5254-39d9-3da0-9e0e",
+				"text": "Change baseAlpha",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "Change baseAlpha",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-slider",
+			"id": "e263-d1e5-b035-1bd7",
+			"oldName": "slider1",
+			"props": {
+				"children": [],
+				"name": "slAlpha",
+				"parent": "5254-39d9-3da0-9e0e",
+				"usePageVariable": true
+			},
+			"type": "Slider",
+			"userProps": {
+				"usePageVariable": true,
+				"value": 100
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "4d00-2c08-c992-81e0",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnChangeDirection",
+				"parent": "5254-39d9-3da0-9e0e",
+				"text": "Change Shimmer Direction",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Change Shimmer Direction",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

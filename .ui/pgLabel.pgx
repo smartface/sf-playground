@@ -1,0 +1,365 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .grow",
+			"id": "1a8a-4ec3-93c7-3045",
+			"initialized": true,
+			"props": {
+				"children": [
+					"8c8b-d602-bd2d-dd8f",
+					"ae91-dc45-957f-1851",
+					"4ac1-7647-501f-7c55",
+					"5b30-778f-5cc4-b633",
+					"ad7d-e339-1795-d0cc",
+					"6599-e72d-7957-0a5a"
+				],
+				"name": "pgLabel",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8c8b-d602-bd2d-dd8f",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "1a8a-4ec3-93c7-3045"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "ae91-dc45-957f-1851",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"title": "Label"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Label"
+			}
+		},
+		{
+			"className": ".sf-flexLayout .grow",
+			"id": "4ac1-7647-501f-7c55",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"498e-293e-e111-d79d",
+					"526b-9477-08f9-142c",
+					"1811-b35f-366f-bac6",
+					"eae8-a8ad-38c6-1e52",
+					"331e-6fce-07b9-f179",
+					"828a-ba84-dc20-6f58",
+					"3b95-7794-4bbd-32a1"
+				],
+				"name": "myFlexLayout",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 80, 227, 194, 0.23 )",
+				"flexProps": {
+					"flexGrow": 2
+				},
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "498e-293e-e111-d79d",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "myLabel",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"height": 40,
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "526b-9477-08f9-142c",
+			"oldName": "ellipsizeLabel",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelCharWrapping",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "CharWrapping Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "CharWrapping Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "1811-b35f-366f-bac6",
+			"oldName": "ellipsizeLabelCharWrapping_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelEnd",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "End Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "End Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "eae8-a8ad-38c6-1e52",
+			"oldName": "ellipsizeLabelEnd_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelMiddle",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "Middle Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "Middle Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "331e-6fce-07b9-f179",
+			"oldName": "ellipsizeLabelMiddle_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelNone",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "None Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "None Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "828a-ba84-dc20-6f58",
+			"oldName": "ellipsizeLabelNone_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelStart",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "Start Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "Mode One Two Three Start Ellipsize Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "3b95-7794-4bbd-32a1",
+			"oldName": "ellipsizeLabelStart_1",
+			"props": {
+				"children": [],
+				"name": "ellipsizeLabelWordWrapping",
+				"parent": "4ac1-7647-501f-7c55",
+				"text": "Word Wrapping Ellipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 30,
+				"text": "Word WrappingEllipsize Mode One Two Three Four Five Six Seven Eight Nine Ten LAST",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5b30-778f-5cc4-b633",
+			"oldName": "myFlexLayout_1",
+			"props": {
+				"children": [
+					"8c18-93b7-916d-2a1c"
+				],
+				"name": "myFlexLayout2",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 126, 211, 33, 0.14 )",
+				"height": 50,
+				"usePageVariable": true,
+				"width": 240
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "8c18-93b7-916d-2a1c",
+			"oldName": "myLabel2",
+			"props": {
+				"children": [],
+				"name": "myLabel1",
+				"parent": "5b30-778f-5cc4-b633",
+				"text": "iOS",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "iOS",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .grow",
+			"id": "ad7d-e339-1795-d0cc",
+			"oldName": "myFlexLayout2_1",
+			"props": {
+				"children": [
+					"44dd-4692-0b87-1fd1"
+				],
+				"name": "myFlexLayout3",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 189, 16, 224, 0.13 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "44dd-4692-0b87-1fd1",
+			"oldName": "myLabel3",
+			"props": {
+				"children": [],
+				"name": "myLabel2",
+				"parent": "ad7d-e339-1795-d0cc",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "label1",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .grow",
+			"id": "6599-e72d-7957-0a5a",
+			"oldName": "myFlexLayout3_1",
+			"props": {
+				"children": [
+					"6e43-fab9-9079-bad0"
+				],
+				"name": "myFlexLayout4",
+				"parent": "1a8a-4ec3-93c7-3045",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 74, 74, 74, 0.1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "6e43-fab9-9079-bad0",
+			"oldName": "myLabel3_1",
+			"props": {
+				"children": [],
+				"name": "textLabel",
+				"parent": "6599-e72d-7957-0a5a",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "label1",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

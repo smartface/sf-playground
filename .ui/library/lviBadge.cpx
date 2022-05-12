@@ -4,7 +4,7 @@
 			"className": ".sf-listViewItem",
 			"hiddenComponent": true,
 			"id": "ec6e-9daa-21e4-274e",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"8d92-d42a-c5d6-2f63"
@@ -55,7 +55,7 @@
 			"className": ".sf-flexLayout",
 			"hiddenComponent": false,
 			"id": "0a0b-b039-6c11-6f37",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "flImage",
@@ -90,7 +90,7 @@
 			"className": ".sf-flexLayout",
 			"hiddenComponent": false,
 			"id": "6dcc-977c-9027-2582",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "flImage1",
@@ -125,7 +125,7 @@
 			"className": ".sf-flexLayout",
 			"hiddenComponent": false,
 			"id": "a2c1-bda9-0d04-b0d3",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "flImage2",
@@ -160,7 +160,7 @@
 			"className": ".sf-flexLayout",
 			"hiddenComponent": false,
 			"id": "f3fa-7639-7215-9a51",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "flImage3",
@@ -195,7 +195,7 @@
 			"className": ".sf-flexLayout",
 			"hiddenComponent": false,
 			"id": "1187-81d0-5205-fe41",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "flImage4",

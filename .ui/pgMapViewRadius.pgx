@@ -1,0 +1,67 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "26aa-2013-c804-1039",
+			"initialized": true,
+			"props": {
+				"children": [
+					"916a-d435-5a18-6049",
+					"7c86-9e2f-1bb2-64f8",
+					"4027-f3ad-ec61-f079"
+				],
+				"name": "pgMapViewRadius",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "916a-d435-5a18-6049",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "26aa-2013-c804-1039"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "7c86-9e2f-1bb2-64f8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "26aa-2013-c804-1039",
+				"title": "pgMapViewRadius"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgMapViewRadius"
+			}
+		},
+		{
+			"className": ".sf-mapView",
+			"id": "4027-f3ad-ec61-f079",
+			"props": {
+				"children": [],
+				"name": "map",
+				"parent": "26aa-2013-c804-1039",
+				"usePageVariable": true
+			},
+			"type": "MapView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"testId": "oSfBffkl2",
+				"usePageVariable": true
+			}
+		}
+	]
+}

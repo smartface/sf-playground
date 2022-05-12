@@ -4,7 +4,7 @@
 			"className": ".sf-gridViewItem .sf-gridViewItem-simple",
 			"hiddenComponent": true,
 			"id": "aea8-55c1-833e-4baa",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"58e6-e69e-a1c1-d4b9",

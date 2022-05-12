@@ -1,0 +1,85 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "9682-fbab-fd91-28fd",
+			"initialized": true,
+			"props": {
+				"children": [
+					"8839-2b68-c669-6ca8",
+					"84d0-69f3-d6d1-cf90",
+					"7ca9-4eaa-ec16-f79d",
+					"0755-8884-dada-669a"
+				],
+				"name": "pgAsyncTask",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8839-2b68-c669-6ca8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "9682-fbab-fd91-28fd"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "84d0-69f3-d6d1-cf90",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "9682-fbab-fd91-28fd",
+				"title": "pgAsyncTask"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgAsyncTask"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "7ca9-4eaa-ec16-f79d",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnRun",
+				"parent": "9682-fbab-fd91-28fd",
+				"text": "Run Async Task",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Run Async Task",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "0755-8884-dada-669a",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblStatus",
+				"parent": "9682-fbab-fd91-28fd",
+				"text": "AsyncTask Status",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "AsyncTask Status",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		}
+	]
+}

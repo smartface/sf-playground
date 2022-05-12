@@ -2,13 +2,13 @@ import { NativeRouter as Router, NativeStackRouter as StackRouter, Route, Bottom
 import Image from '@smartface/native/ui/image';
 import Page from '@smartface/native/ui/page';
 import MainPage from 'pages/mainPage';
-import ModalTest from 'pages/ModalTest';
+import PgModalTest from 'pages/pgModalTest';
 import * as Tabs from 'routes/tabs';
 import { ConstructorOf } from '@smartface/styling-context/lib/ConstructorOf';
 import Application from '@smartface/native/application';
-import PhotoCropper from 'pages/PhotoCropper';
+import PgPhotoCropper from 'pages/pgPhotoCropper';
 import { innerPages } from './innerPages';
-import ModalBottomSheet from 'pages/ModalBottomSheet';
+import PgModalBottomSheet from 'pages/pgModalBottomSheet';
 import Color from '@smartface/native/ui/color';
 import BottomTabbarController from '@smartface/native/ui/bottomtabbarcontroller';
 import { ITabbarItem } from '@smartface/native/ui/tabbaritem/tabbaritem';
@@ -53,7 +53,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
         routes: [
           Route.of({
             path: `${path}/PgPhotoCropper/main`,
-            build: (router, route) => new PhotoCropper(router, route)
+            build: (router, route) => new PgPhotoCropper(router, route)
           })
         ]
       }),
@@ -64,7 +64,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
         routes: [
           Route.of({
             path: `${path}/modal/page`,
-            build: (router, route) => new ModalTest(router, route)
+            build: (router, route) => new PgModalTest(router, route)
           })
         ]
       }),
@@ -81,7 +81,7 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
         routes: [
           Route.of({
             path: `${path}/bottomSheet/page`,
-            build: (router, route) => new ModalBottomSheet(router, route)
+            build: (router, route) => new PgModalBottomSheet(router, route)
           })
         ]
       }),

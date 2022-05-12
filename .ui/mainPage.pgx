@@ -3,7 +3,7 @@
 		{
 			"className": ".sf-page .sf-page.nopadding",
 			"id": "89e6-3f97-10a5-0ac9",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"1e1d-0be5-8938-a0a2",
@@ -96,7 +96,7 @@
 			"className": ".sf-listViewItem",
 			"hiddenComponent": false,
 			"id": "2211-3416-bbe6-94cc",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "lviPages",

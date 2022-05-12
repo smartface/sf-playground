@@ -1,0 +1,170 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "dadf-0824-f8da-caf1",
+			"initialized": true,
+			"props": {
+				"children": [
+					"cc73-fab4-c5cc-9d9b",
+					"061f-121a-f40b-7297",
+					"68e5-b661-f462-96ee",
+					"c71c-1a25-3a48-3ba6",
+					"1217-0e63-1ffa-6eca",
+					"d9bb-bf65-b02f-dda9",
+					"cc85-5614-08dd-d89a",
+					"2a35-4450-7588-5cf1"
+				],
+				"name": "pgActivityIndicator",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "cc73-fab4-c5cc-9d9b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "dadf-0824-f8da-caf1"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "061f-121a-f40b-7297",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "dadf-0824-f8da-caf1",
+				"title": "pgActivityIndicator"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgActivityIndicator"
+			}
+		},
+		{
+			"className": ".sf-activityIndicator",
+			"id": "68e5-b661-f462-96ee",
+			"oldName": "a",
+			"props": {
+				"children": [],
+				"name": "ai",
+				"parent": "dadf-0824-f8da-caf1",
+				"usePageVariable": true
+			},
+			"type": "ActivityIndicator",
+			"userProps": {
+				"marginBottom": 15,
+				"marginTop": null,
+				"testId": "buq-fQ1Xm",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "c71c-1a25-3a48-3ba6",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnRed",
+				"parent": "dadf-0824-f8da-caf1",
+				"text": "Color RED",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 1 )",
+				"borderColor": "rgba( 208, 2, 27, 1 )",
+				"ios": {
+					"shadowColor": "rgba( 208, 2, 27, 1 )"
+				},
+				"testId": "uAUcab0MS",
+				"text": "Color RED",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "1217-0e63-1ffa-6eca",
+			"oldName": "btnRed_1",
+			"props": {
+				"children": [],
+				"name": "btnBlue",
+				"parent": "dadf-0824-f8da-caf1",
+				"text": "Color BLUE",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 74, 144, 226, 1 )",
+				"borderColor": "rgba( 208, 2, 27, 1 )",
+				"ios": {
+					"shadowColor": "rgba( 208, 2, 27, 1 )"
+				},
+				"testId": "uAUcab0MS",
+				"text": "Color BLUE",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "d9bb-bf65-b02f-dda9",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblActivityIndicatorStyles",
+				"parent": "dadf-0824-f8da-caf1",
+				"text": "Activity Indicator Styles (iOS)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Activity Indicator Styles (iOS)",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "cc85-5614-08dd-d89a",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnDefault",
+				"parent": "dadf-0824-f8da-caf1",
+				"text": "Normal",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "380rTCF-A",
+				"text": "Normal",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2a35-4450-7588-5cf1",
+			"oldName": "btnDefault_1",
+			"props": {
+				"children": [],
+				"name": "btnLarge",
+				"parent": "dadf-0824-f8da-caf1",
+				"text": "Large",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "380rTCF-A",
+				"text": "Large",
+				"usePageVariable": true
+			}
+		}
+	]
+}

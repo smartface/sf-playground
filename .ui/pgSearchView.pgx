@@ -1,0 +1,489 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "5b62-4c72-6295-b864",
+			"initialized": true,
+			"props": {
+				"children": [
+					"a4eb-dcc1-7de0-04ab",
+					"37b0-bd9d-5bee-278b",
+					"e10c-74ab-aa77-337b"
+				],
+				"name": "pgSearchView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "a4eb-dcc1-7de0-04ab",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "5b62-4c72-6295-b864"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "37b0-bd9d-5bee-278b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "5b62-4c72-6295-b864",
+				"title": "pgSearchView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgSearchView"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "e10c-74ab-aa77-337b",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"607b-cc9e-330f-e2b3",
+					"8f38-8edc-fad6-75e2",
+					"00a7-0677-0e67-02fe",
+					"2a09-dba0-1323-523c",
+					"2bec-8f81-e79d-5d86",
+					"8d07-14aa-fca6-2b89",
+					"ed4f-6ce0-7582-4179",
+					"237c-aaa8-1f9b-432d",
+					"d8a1-8c27-91b6-fa83",
+					"aae1-e445-ac0b-0da6",
+					"4a5f-9a17-8f95-5416",
+					"5e69-a009-0e1e-88a4",
+					"54f9-de17-09d0-1a99",
+					"03a1-1b0c-6b4f-f0b5",
+					"97e9-9ab2-540d-eaf1",
+					"bc18-b5b3-ee32-34b5"
+				],
+				"name": "svMain",
+				"parent": "5b62-4c72-6295-b864"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-searchView",
+			"id": "607b-cc9e-330f-e2b3",
+			"oldName": "searchView1",
+			"props": {
+				"children": [],
+				"hint": "Search",
+				"name": "sv",
+				"parent": "e10c-74ab-aa77-337b",
+				"usePageVariable": true
+			},
+			"type": "SearchView",
+			"userProps": {
+				"borderColor": "rgba( 0, 0, 0, 1 )",
+				"hint": "Search",
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "8f38-8edc-fad6-75e2",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnBackgroundImage",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set backgroundImage (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set backgroundImage (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "00a7-0677-0e67-02fe",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblBorderWidth",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "BorderWidth Slider",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "BorderWidth Slider",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-slider .marginHorizontal",
+			"id": "2a09-dba0-1323-523c",
+			"oldName": "slider1",
+			"props": {
+				"children": [],
+				"name": "slBorderWidth",
+				"parent": "e10c-74ab-aa77-337b",
+				"usePageVariable": true
+			},
+			"type": "Slider",
+			"userProps": {
+				"maxValue": 200,
+				"usePageVariable": true,
+				"value": 100
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "2bec-8f81-e79d-5d86",
+			"oldName": "btnBackgroundImage_1",
+			"props": {
+				"children": [],
+				"name": "btnCancelButton",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set cancelButton Color & Text (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set cancelButton Color & Text (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "8d07-14aa-fca6-2b89",
+			"oldName": "btnCancelButton_1",
+			"props": {
+				"children": [],
+				"name": "btnCloseIcon",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set closeIcon (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set closeIcon (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "ed4f-6ce0-7582-4179",
+			"oldName": "btnCloseIcon_1",
+			"props": {
+				"children": [],
+				"name": "btnCursorColor",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set cursorColor",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set cursorColor",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "237c-aaa8-1f9b-432d",
+			"oldName": "btnCloseIcon_2",
+			"props": {
+				"children": [],
+				"name": "btnFont",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set Font",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set Font",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "d8a1-8c27-91b6-fa83",
+			"oldName": "btnFont_1",
+			"props": {
+				"children": [],
+				"name": "btnIconified",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set iconifiedByDefault (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set iconifiedByDefault (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "aae1-e445-ac0b-0da6",
+			"oldName": "btnIconified_1",
+			"props": {
+				"children": [],
+				"name": "btnSetLeftItem",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set leftItem (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set leftItem (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "4a5f-9a17-8f95-5416",
+			"oldName": "btnSetLeftItem_1",
+			"props": {
+				"children": [],
+				"name": "btnLoadingColor",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set loadingColor (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set loadingColor (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "5e69-a009-0e1e-88a4",
+			"oldName": "btnShowCancelButton_1",
+			"props": {
+				"children": [],
+				"name": "btnShowLoading",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Show Loading (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Show Loading (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "54f9-de17-09d0-1a99",
+			"oldName": "btnLoadingColor_1",
+			"props": {
+				"children": [],
+				"name": "btnSearchButtonIcon",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set searchButtonIcon (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set searchButtonIcon (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "03a1-1b0c-6b4f-f0b5",
+			"oldName": "btnSearchButtonIcon_1",
+			"props": {
+				"children": [],
+				"name": "btnSearchIcon",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set searchIcon",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set searchIcon",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "97e9-9ab2-540d-eaf1",
+			"oldName": "btnSearchIcon_1",
+			"props": {
+				"children": [],
+				"name": "btnSearchViewStyle",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set searchViewStyle (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set searchViewStyle (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "bc18-b5b3-ee32-34b5",
+			"oldName": "btnSearchViewStyle_1",
+			"props": {
+				"children": [],
+				"name": "btnShowCancelButton",
+				"parent": "e10c-74ab-aa77-337b",
+				"text": "Set showsCancelButton True (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 35,
+				"left": 0,
+				"text": "Set showsCancelButton True (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

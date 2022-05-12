@@ -1,0 +1,180 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #pgFileUpload",
+			"id": "418e-8dda-507d-bdba",
+			"initialized": true,
+			"props": {
+				"children": [
+					"f689-e659-ceab-312a",
+					"8d2c-b2df-4dfd-43a4",
+					"d4a9-8d2e-9090-f2c4",
+					"d0a9-1c31-256c-1355",
+					"de3c-2eb9-1fb4-cd1d",
+					"1500-8a02-cea6-e802"
+				],
+				"name": "pgFileUpload",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "f689-e659-ceab-312a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "418e-8dda-507d-bdba"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "8d2c-b2df-4dfd-43a4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "418e-8dda-507d-bdba",
+				"title": "pgFileUpload"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgFileUpload"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgFileUpload-flFileSelector",
+			"id": "d4a9-8d2e-9090-f2c4",
+			"props": {
+				"children": [
+					"01f4-fc8d-64ff-c379",
+					"1b67-6c77-aee5-37d7"
+				],
+				"name": "flFileSelector",
+				"parent": "418e-8dda-507d-bdba",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "adX7X_arQ",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label #pgFileUpload-lblFileSelectorName",
+			"id": "01f4-fc8d-64ff-c379",
+			"props": {
+				"children": [],
+				"name": "lblFileSelectorName",
+				"parent": "d4a9-8d2e-9090-f2c4",
+				"text": "Select a File",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "lAE1zRhPv",
+				"text": "Select a File",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView #pgFileUpload-imgFileSelectorDownArrow",
+			"id": "1b67-6c77-aee5-37d7",
+			"props": {
+				"children": [],
+				"name": "imgFileSelectorDownArrow",
+				"parent": "d4a9-8d2e-9090-f2c4"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"testId": "vbJkgnXxc"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgFileUpload-flUploadIndicator",
+			"id": "d0a9-1c31-256c-1355",
+			"props": {
+				"children": [
+					"aa3a-0578-82da-177c",
+					"d176-450a-2e3c-39d5"
+				],
+				"name": "flUploadIndicator",
+				"parent": "418e-8dda-507d-bdba",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "CJa5lK9KY",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label #pgFileUpload-lblUploadIndicator",
+			"id": "aa3a-0578-82da-177c",
+			"props": {
+				"children": [],
+				"name": "lblUploadIndicator",
+				"parent": "d0a9-1c31-256c-1355",
+				"text": "Click 'Upload' to Upload",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"testId": "Wzsly-H1y",
+				"text": "Click 'Upload' to Upload",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-activityIndicator #pgFileUpload-aiUploadIndicator",
+			"id": "d176-450a-2e3c-39d5",
+			"props": {
+				"children": [],
+				"name": "aiUploadIndicator",
+				"parent": "d0a9-1c31-256c-1355",
+				"usePageVariable": true
+			},
+			"type": "ActivityIndicator",
+			"userProps": {
+				"testId": "kQD69A0jC",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgFileUpload-flSpacer",
+			"id": "de3c-2eb9-1fb4-cd1d",
+			"props": {
+				"children": [],
+				"name": "flSpacer",
+				"parent": "418e-8dda-507d-bdba"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "e7KzO0bfi"
+			}
+		},
+		{
+			"className": ".sf-button #pgFileUpload-btnUpload",
+			"id": "1500-8a02-cea6-e802",
+			"props": {
+				"children": [],
+				"name": "btnUpload",
+				"parent": "418e-8dda-507d-bdba",
+				"text": "Upload",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "hDTeKgPp9",
+				"text": "Upload",
+				"usePageVariable": true
+			}
+		}
+	]
+}

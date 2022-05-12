@@ -4,7 +4,7 @@
 			"className": ".flexLayout .materialTextBox-wrapper",
 			"hiddenComponent": true,
 			"id": "574a-10da-b765-48e5",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "materialTextBox",

@@ -1,0 +1,293 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "e052-4a64-6098-e54f",
+			"initialized": true,
+			"props": {
+				"children": [
+					"64c7-0576-5056-518a",
+					"3316-5227-0320-0b7c",
+					"fcd5-11c1-4a1d-910e"
+				],
+				"name": "pgMaterialTextBox",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "64c7-0576-5056-518a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e052-4a64-6098-e54f"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "3316-5227-0320-0b7c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e052-4a64-6098-e54f",
+				"title": "pgMaterialTextBox"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgMaterialTextBox"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "fcd5-11c1-4a1d-910e",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"a344-034d-97d0-34a7",
+					"dc28-91b8-288b-7a3e",
+					"ae30-e0f0-7603-67de",
+					"828f-6099-34c7-16a7",
+					"726c-ba8b-bad6-37e7",
+					"92ad-64c1-7962-f008",
+					"58bd-53c2-f63d-7e8f",
+					"3189-4794-42c0-b361",
+					"de3b-b3be-c4ae-81a3"
+				],
+				"name": "svMain",
+				"parent": "e052-4a64-6098-e54f"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"marginBottom": null,
+				"marginTop": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "a344-034d-97d0-34a7",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "flMtbWrapper",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 80,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "dc28-91b8-288b-7a3e",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"f253-8659-47c5-151c",
+					"30b6-31b2-92d6-b354"
+				],
+				"name": "flCharacterRestriction",
+				"parent": "fcd5-11c1-4a1d-910e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 55,
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "f253-8659-47c5-151c",
+			"oldName": "textBox1",
+			"props": {
+				"children": [],
+				"name": "tbCharacterRestriction",
+				"parent": "dc28-91b8-288b-7a3e",
+				"text": "4",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"height": 50,
+				"marginBottom": null,
+				"marginTop": null,
+				"text": "4",
+				"usePageVariable": true,
+				"width": 70
+			}
+		},
+		{
+			"className": ".sf-button .grow",
+			"id": "30b6-31b2-92d6-b354",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnSetCharacterRestriction",
+				"parent": "dc28-91b8-288b-7a3e",
+				"text": "Set Character Restriction Count",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"marginBottom": 5,
+				"marginLeft": 5,
+				"marginRight": 5,
+				"marginTop": 5,
+				"text": "Set Character Restriction Count",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "ae30-e0f0-7603-67de",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnSetCharacterRestrictionColor",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"text": "Set Character Restriction Color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Character Restriction Color",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "828f-6099-34c7-16a7",
+			"oldName": "btnSetCharacterRestrictionColor_1",
+			"props": {
+				"children": [],
+				"name": "btnSetClearButtonColor",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"text": "Set Clear Button Color (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Clear Button Color (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "726c-ba8b-bad6-37e7",
+			"oldName": "btnSetClearButtonColor_1",
+			"props": {
+				"children": [],
+				"name": "btnSetEnableCharacterRestriction",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"text": "Enable Character Restriction",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Enable Character Restriction",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "92ad-64c1-7962-f008",
+			"oldName": "btnSetEnableCharacterRestriction_1",
+			"props": {
+				"children": [],
+				"name": "btnSetErrorMessage",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"text": "Set Error Message & Color",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Error Message & Color",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "58bd-53c2-f63d-7e8f",
+			"oldName": "btnSetErrorMessage_1",
+			"props": {
+				"children": [],
+				"name": "btnSetLeftLayout",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"text": "Set Left Layout (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Left Layout (iOS)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "3189-4794-42c0-b361",
+			"oldName": "btnSetLeftLayout_1",
+			"props": {
+				"children": [],
+				"name": "btnSetRightLayout",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"text": "Set Right Layout",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Right Layout",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "de3b-b3be-c4ae-81a3",
+			"oldName": "flMtbWrapper_1",
+			"props": {
+				"children": [],
+				"name": "flMultilineMtbWrapper",
+				"parent": "fcd5-11c1-4a1d-910e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 130,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

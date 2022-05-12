@@ -4,7 +4,7 @@
 			"className": ".sf-listViewItem .lviElement",
 			"hiddenComponent": true,
 			"id": "1841-ff9a-b968-028d",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"24ca-f21f-dfb6-5dc9",
