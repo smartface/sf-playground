@@ -11,8 +11,8 @@ import System from '@smartface/native/device/system';
 Application.on('unhandledError', (e: UnhandledError) => {
   const error = errorStackBySourceMap(e);
   const message = {
-    message: System.OS === System.OSType.ANDROID ? error.stack : e.message,
-    stack: System.OS === System.OSType.IOS ? error.stack : undefined
+    message: System.OS === System.OSType.ANDROID ? error.message : e.message,
+    stack: error.stack
   };
   if (message.stack) {
     console.error('Unhandled Error: ', message);
