@@ -80,9 +80,9 @@
     "@smartface/core" "^5.0.0-alpha.0"
 
 "@smartface/native@^5.0.0-alpha":
-  version "5.0.0-alpha.72"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.72.tgz#85d4aed0db8e8892ab1caa95fbb5237f3f899c6a"
-  integrity sha512-fsiiSJGy1jN+a9F1fpixcnFgKG266IyPu3bZuqYOwu/fP5dn2VwG4gRmknsC3Do7YHyqbufXwnQuFPMnOr5/Ig==
+  version "5.0.0-alpha.73"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.73.tgz#51d12a91d5bd8943b3b9e68afbb5636df2461dce"
+  integrity sha512-lGJeIDQfqLSD6B3u1BC9SCEy1wYdhjwgnAMMrNUeC6UiTbttynAjPLdlK5Dxx82xBBtvdVG7bDIAW+u9HUgvCw==
   dependencies:
     events "^3.3.0"
 

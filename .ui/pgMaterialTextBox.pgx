@@ -83,7 +83,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"borderWidth": 1,
-				"height": 80,
+				"height": 110,
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true
@@ -202,13 +202,13 @@
 				"children": [],
 				"name": "btnSetEnableCharacterRestriction",
 				"parent": "fcd5-11c1-4a1d-910e",
-				"text": "Enable Character Restriction",
+				"text": "Enable Character Restriction (Android)",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
 				"left": 0,
-				"text": "Enable Character Restriction",
+				"text": "Enable Character Restriction (Android)",
 				"top": 0,
 				"usePageVariable": true
 			}
@@ -283,7 +283,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"borderWidth": 1,
-				"height": 130,
+				"height": 150,
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true

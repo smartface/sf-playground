@@ -107,6 +107,7 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
       lineCount: 2
     });
 
+    this.mtbMultiline.ios.expandsOnOverflow = true;
     this.flMultilineMtbWrapper.addChild(this.mtbMultiline, 'mtbMultiline', '.sf-textBox .grow', materialtextboxOptions);
   }
 
@@ -118,10 +119,9 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
 
     this.mtbExample.lineColor = { normal: Color.GRAY, selected: Color.DARKGRAY };
 
-    this.mtbExample.ios.lineHeight = 10;
-    this.mtbExample.ios.expandsOnOverflow = true;
-    this.mtbExample.ios.inlineHintFont = Font.create('Times New Roman', 4, Font.NORMAL);
-    this.mtbExample.ios.underlineLabelsFont = Font.create('Times New Roman', 4, Font.NORMAL);
+    this.mtbExample.ios.lineHeight = 6;
+    this.mtbExample.ios.inlineHintFont = Font.create(Font.DEFAULT, 4, Font.NORMAL);
+    this.mtbExample.ios.underlineLabelsFont = Font.create(Font.DEFAULT, 4, Font.NORMAL);
 
     this.flMtbWrapper.addChild(this.mtbExample, 'mtbExample', '.sf-textBox .grow', materialtextboxOptions);
   }
