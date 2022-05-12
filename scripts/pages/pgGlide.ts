@@ -106,24 +106,6 @@ export default class PgGlide extends PgGlideDesign {
     const screenshot = Screen.capture();
     console.log(screenshot);
 
-    //SYSTEM TESTS
-    console.log('Device.System.OS: ' + System.OS);
-    console.log('Device.System.OSVersion: ' + System.OSVersion);
-    console.log('Device.System.batteryLevel: ' + System.batteryLevel);
-    console.log('Device.System.isBatteryCharged: ' + System.isBatteryCharged);
-    console.log('Device.System.clipboard: ' + System.clipboard);
-    console.log('Device.System.language: ' + System.language);
-    console.log('Device.System.region: ' + System.region);
-    console.log('Device.System.vibrate(): ' + System.vibrate({ millisecond: 500 }));
-    console.log('Device.System.fingerPrintAvailable: ' + System.fingerPrintAvailable);
-    console.log('Device.System.isEmulator: ' + System.isEmulator);
-    console.log('Device.System.biometricsAvailable: ' + System.biometricsAvailable);
-    console.log('Device.System.biometricType: ' + System.biometricType);
-    if (System.OS === System.OSType.ANDROID) {
-      console.log('Device.System.android.apiLevel: ' + System.android.apiLevel);
-      console.log('Device.System.android.menuKeyAvaliable: ' + System.android.menuKeyAvaliable);
-    }
-
     // HARDWARE TESTS
     console.log('Device.Hardware.UID: ' + Hardware.UID);
     console.log('Device.Hardware.brandName: ' + Hardware.brandName);

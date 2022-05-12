@@ -98,6 +98,7 @@ import PgDatePicker from 'pages/pgDatePicker';
 import PgLiveMediaPublisher from 'pages/pgLiveMediaPublisher';
 import PgButton from 'pages/pgButton';
 import PgAxios from 'pages/pgAxios';
+import PgSystem from 'pages/pgSystem';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -129,6 +130,7 @@ export const tab0: Tab = {
     PgAsyncTask,
     PgRangeSliderAndSlider,
     PgListView,
+    PgSystem,
     PgGridView,
     PgPicker,
     PgTimePicker,

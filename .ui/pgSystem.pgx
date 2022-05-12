@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "b3c7-2548-b87a-8e76",
+			"initialized": true,
+			"props": {
+				"children": [
+					"9ce1-fa5f-d28f-85ad",
+					"8921-4c1b-c1d4-13d2",
+					"4c8b-e0d2-f3f2-53cc"
+				],
+				"name": "pgSystem",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "9ce1-fa5f-d28f-85ad",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "b3c7-2548-b87a-8e76"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "8921-4c1b-c1d4-13d2",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "b3c7-2548-b87a-8e76",
+				"title": "System"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "System"
+			}
+		},
+		{
+			"className": ".sf-label .grow #pgSystem-lblSystemDetails",
+			"id": "4c8b-e0d2-f3f2-53cc",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblSystemDetails",
+				"parent": "b3c7-2548-b87a-8e76",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}
