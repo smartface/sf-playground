@@ -88,7 +88,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".sf-button .marginHorizontal .marginVertical .grow",
 			"id": "32a0-2435-e9f4-9f5d",
 			"props": {
 				"children": [],
@@ -99,17 +99,12 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": 70,
-				"testId": "nOZpeoW_O",
 				"text": "Hide",
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".sf-button .marginVertical .marginHorizontal .grow",
 			"id": "1e5b-0adf-7131-ac69",
 			"props": {
 				"children": [],
@@ -120,11 +115,6 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": 70,
-				"testId": "Da1wDDoPp",
 				"text": "Show",
 				"usePageVariable": true
 			}
