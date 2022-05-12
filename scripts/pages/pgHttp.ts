@@ -1,54 +1,141 @@
-import PageSampleDesign from 'generated/pages/pgHttp';
-import Application from '@smartface/native/application';
-import ImageView from '@smartface/native/ui/imageview';
-import Http from '@smartface/native/net/http';
-import Image from '@smartface/native/ui/image';
+import PgHttpDesign from 'generated/pages/pgHttp';
+import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import { styleableComponentMixin } from '@smartface/styling-context';
+import { Http } from '@smartface/native/net';
+import Image from '@smartface/native/ui/image';
 
-class StyleableImageView extends styleableComponentMixin(ImageView) {}
-
-//You should create new Page from UI-Editor and extend with it.
-export default class PgHttp extends PageSampleDesign {
-  myImageView: StyleableImageView;
+export default class PgHttp extends withDismissAndBackButton(PgHttpDesign) {
   myHttp = new Http();
   constructor(private router?: Router, private route?: Route) {
     super({});
+
+    this.btnGetData.on('press', () => this.getData());
+    this.btnGetImage.on('press', () => this.getImage());
+    this.btnGetString.on('press', () => this.getString());
+    this.btnDelete.on('press', () => this.delete());
+    this.btnPost.on('press', () => this.post());
+    this.btnPatch.on('press', () => this.patch());
+    this.btnPut.on('press', () => this.put());
+    this.btnAll.on('press', () => {
+      this.getData();
+      this.getImage();
+      this.getString();
+      this.delete();
+      this.post();
+      this.patch();
+      this.put();
+    });
   }
 
-  requestImage(): void {
+  put() {
+    this.myHttp.requestJSON({
+      method: 'PUT',
+      url: 'https://httpbin.org/put',
+      onLoad: (e: { statusCode: number; headers?: Record<string, string>; body?: Record<string, any>; JSON?: { data?: string } }): void => {
+        console.log(`method: 'PUT' SUCCESSFUL`, e);
+      },
+      onError: (e: { message?: string; body?: any; statusCode?: number; headers?: Record<string, string> }) => {
+        console.error(`method: 'PUT' FAILURE`, e);
+      },
+      //@ts-ignore
+      body: '{ example: "putting"}'
+    });
+  }
+
+  patch() {
+    this.myHttp.requestJSON({
+      method: 'PATCH',
+      url: 'https://httpbin.org/patch',
+      onLoad: (e: { statusCode: number; headers?: Record<string, string>; body?: Record<string, any>; JSON?: { data?: string } }): void => {
+        console.log(`method: 'PATCH' SUCCESSFUL`, e);
+      },
+      onError: (e: { message?: string; body?: any; statusCode?: number; headers?: Record<string, string> }) => {
+        console.error(`method: 'PATCH' FAILURE`, e);
+      },
+      //@ts-ignore
+      body: '{ example: "patching"}'
+    });
+  }
+
+  post() {
+    this.myHttp.requestJSON({
+      method: 'POST',
+      url: 'https://httpbin.org/post',
+      onLoad: (e: { statusCode: number; headers?: Record<string, string>; body?: Record<string, any>; JSON?: { data?: string } }): void => {
+        console.log(`method: 'POST' SUCCESSFUL`, e);
+      },
+      onError: (e: { message?: string; body?: any; statusCode?: number; headers?: Record<string, string> }) => {
+        console.error(`method: 'POST' FAILURE`, e);
+      },
+      //@ts-ignore
+      body: '{ example: "posting"}'
+    });
+  }
+
+  delete() {
+    this.myHttp.requestJSON({
+      method: 'DELETE',
+      url: 'https://httpbin.org/delete',
+      onLoad: (e: { statusCode: number; headers?: Record<string, string>; body?: Record<string, any> }): void => {
+        console.log(`method: 'DELETE' SUCCESSFUL`, e);
+      },
+      onError: (e: { message?: string; body?: any; statusCode?: number; headers?: Record<string, string> }) => {
+        console.error(`method: 'DELETE' FAILURE`, e);
+      },
+      //@ts-ignore
+      body: '{ example: "deleting"}'
+    });
+  }
+
+  getString() {
+    this.myHttp.requestString({
+      method: 'GET',
+      url: 'https://httpbin.org/get',
+      onLoad: (e: { statusCode: number; headers?: Record<string, string>; body?: Record<string, any> }): void => {
+        console.log(`method: 'GET by requestString' SUCCESSFUL`, e);
+      },
+      onError: (e: { message?: string; body?: any; statusCode?: number; headers?: Record<string, string> }) => {
+        console.error(`method: 'GET by requestString' FAILURE`, e);
+      }
+    });
+  }
+
+  getImage() {
     this.myHttp.requestImage({
       method: 'GET',
       url: 'https://httpbin.org/image/png',
       onLoad: (e: { statusCode: number; headers: { [key: string]: string }; image: Image }): void => {
-        // Image loaded.
-        this.myImageView.image = e.image;
+        this.imgData.image = e.image;
       },
       onError: (e: { message: string; body: any; statusCode: number; headers: { [key: string]: string } }): void => {
-        // Http request image failed.
-        alert(e.message);
+        console.error(`method: 'GET by requestImage' FAILURE`, e);
       }
     });
+  }
 
-    this.myImageView = new StyleableImageView();
-    this.addChild(this.myImageView, 'myImageView', '.sf-imageView', {
-      width: 100,
-      height: 100,
-      flexProps: {
-        alignSelf: 'CENTER'
+  getData() {
+    this.myHttp.requestJSON({
+      method: 'GET',
+      url: 'https://httpbin.org/get',
+      onLoad: (e: { statusCode: number; headers?: Record<string, string>; body?: Record<string, any> }): void => {
+        console.log(`method: 'GET by requestJSON' SUCCESSFUL`, e);
       },
-      imageFillType: ImageView.FillType.STRETCH
+      onError: (e: { message?: string; body?: any; statusCode?: number; headers?: Record<string, string> }) => {
+        console.error(`method: 'GET by requestJSON' FAILURE`, e);
+      }
     });
   }
+
   onShow() {
     super.onShow();
-    const { headerBar } = this;
-    Application.statusBar.visible = false;
-    headerBar.visible = false;
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
+  /**
+   * @event onLoad
+   * This event is called once when the page is created.
+   */
   onLoad() {
     super.onLoad();
-    this.requestImage();
   }
 }
