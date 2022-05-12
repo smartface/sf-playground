@@ -50,11 +50,5 @@ export default class PgApplicationEvents extends withDismissAndBackButton(PgAppl
     this.btnRestart.on('press', () => {
       Application.restart();
     });
-    this.btnExit.on('longPress', () => {
-      console.log('Button longPressEvent test');
-    });
-    this.btnRestart.on('longPress', () => {
-      console.log('Button longPressEvent test');
-    });
   }
 }

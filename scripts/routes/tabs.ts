@@ -97,6 +97,7 @@ import PgSearchView from 'pages/pgSearchView';
 import PgEmailComposer from 'pages/pgEmailComposer';
 import PgDatePicker from 'pages/pgDatePicker';
 import PgLiveMediaPublisher from 'pages/pgLiveMediaPublisher';
+import PgButton from 'pages/pgButton';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -167,7 +168,8 @@ export const tab0: Tab = {
     PgHeaderBar,
     PgEmailComposer,
     PgDatePicker,
-    PgWebView
+    PgWebView,
+    PgButton
   ]
 };
 
