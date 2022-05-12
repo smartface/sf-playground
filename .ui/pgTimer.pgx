@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "b3a7-3bc0-d465-d13c",
-				"title": "pgTimer"
+				"title": "Timer"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTimer"
+				"title": "Timer"
 			}
 		},
 		{

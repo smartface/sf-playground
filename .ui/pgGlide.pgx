@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "63e9-18c5-a89c-83cb",
-				"title": "pgGlide"
+				"title": "Glide"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgGlide"
+				"title": "Glide"
 			}
 		},
 		{

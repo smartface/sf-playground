@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "12bd-8b23-ce4b-8da2",
-				"title": "pgApplicationEvents"
+				"title": "ApplicationEvents"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgApplicationEvents"
+				"title": "ApplicationEvents"
 			}
 		},
 		{

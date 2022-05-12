@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "b52b-b058-0de2-1778",
-				"title": "pgNativeFunctions"
+				"title": "NativeFunctions"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgNativeFunctions"
+				"title": "NativeFunctions"
 			}
 		},
 		{

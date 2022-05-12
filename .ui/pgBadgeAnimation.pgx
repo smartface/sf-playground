@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "9fb4-4b97-2e3b-2be8",
-				"title": "pgBadgeAnimation"
+				"title": "BadgeAnimation"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgBadgeAnimation"
+				"title": "BadgeAnimation"
 			}
 		},
 		{

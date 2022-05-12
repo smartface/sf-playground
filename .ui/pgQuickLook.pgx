@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "a207-24b6-232a-9810",
-				"title": "pgQuickLook"
+				"title": "QuickLook"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgQuickLook"
+				"title": "QuickLook"
 			}
 		},
 		{

@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "00de-508a-7628-31a3",
-				"title": "pgHeaderImageAndItems"
+				"title": "HeaderImageAndItems"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgHeaderImageAndItems"
+				"title": "HeaderImageAndItems"
 			}
 		},
 		{

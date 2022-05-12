@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e01a-d643-2187-ec9e",
-				"title": "pgMapView"
+				"title": "MapView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgMapView"
+				"title": "MapView"
 			}
 		},
 		{

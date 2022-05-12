@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "0a15-1cff-ec1b-d2ec",
-				"title": "pgHeaderBar"
+				"title": "HeaderBar"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgHeaderBar"
+				"title": "HeaderBar"
 			}
 		},
 		{

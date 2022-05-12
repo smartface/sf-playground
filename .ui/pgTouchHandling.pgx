@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "f08d-28da-6661-cb3d",
-				"title": "pgTouchHandling"
+				"title": "TouchHandling"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTouchHandling"
+				"title": "TouchHandling"
 			}
 		},
 		{

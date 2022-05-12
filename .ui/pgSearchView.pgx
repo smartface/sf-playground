@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "5b62-4c72-6295-b864",
-				"title": "pgSearchView"
+				"title": "SearchView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgSearchView"
+				"title": "SearchView"
 			}
 		},
 		{

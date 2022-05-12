@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e052-4a64-6098-e54f",
-				"title": "pgMaterialTextBox"
+				"title": "MaterialTextBox"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgMaterialTextBox"
+				"title": "MaterialTextBox"
 			}
 		},
 		{

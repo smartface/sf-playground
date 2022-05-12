@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "4d60-5b4d-c051-0073",
-				"title": "pgPicker"
+				"title": "Picker"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgPicker"
+				"title": "Picker"
 			}
 		}
 	]

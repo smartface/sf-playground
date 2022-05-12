@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "9bb3-0724-fc91-e6cb",
-				"title": "pgShare"
+				"title": "Share"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgShare"
+				"title": "Share"
 			},
 			"degree": 1
 		},

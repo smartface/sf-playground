@@ -48,11 +48,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "31f4-eeb3-63f7-db49",
-				"title": "pgWebView"
+				"title": "WebView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgWebView"
+				"title": "WebView"
 			}
 		},
 		{

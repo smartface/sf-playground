@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "f441-d32e-f412-1d7b",
 			"userProps": {
-				"title": "pgToastMessage"
+				"title": "ToastMessage"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "f39d-b1a6-919c-5663",
 				"children": [],
-				"title": "pgToastMessage",
+				"title": "ToastMessage",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "f441-d32e-f412-1d7b",
 			"userProps": {
-				"title": "pgToastMessage"
+				"title": "ToastMessage"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "f39d-b1a6-919c-5663",
 				"children": [],
-				"title": "pgToastMessage",
+				"title": "ToastMessage",
 				"visible": true,
 				"isRemovable": false
 			}

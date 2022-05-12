@@ -42,11 +42,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "4807-daeb-cce7-d542",
-				"title": "pgLocationManagment"
+				"title": "LocationManagment"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgLocationManagment"
+				"title": "LocationManagment"
 			}
 		},
 		{

@@ -47,11 +47,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "d2cd-0607-2822-249c",
-				"title": "pgSwitch"
+				"title": "Switch"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgSwitch"
+				"title": "Switch"
 			}
 		},
 		{

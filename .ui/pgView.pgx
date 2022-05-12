@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "6030-9a20-5bfa-ca13",
-				"title": "pgView"
+				"title": "View"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgView"
+				"title": "View"
 			}
 		},
 		{

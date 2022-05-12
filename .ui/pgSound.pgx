@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "2517-4162-c58f-425f",
 			"userProps": {
-				"title": "pgSound"
+				"title": "Sound"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "0e36-9477-0bdf-e927",
 				"children": [],
-				"title": "pgSound",
+				"title": "Sound",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "2517-4162-c58f-425f",
 			"userProps": {
-				"title": "pgSound"
+				"title": "Sound"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "0e36-9477-0bdf-e927",
 				"children": [],
-				"title": "pgSound",
+				"title": "Sound",
 				"visible": true,
 				"isRemovable": false
 			}

@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "04e4-6cbb-1eec-03cd",
-				"title": "pgTimePicker"
+				"title": "TimePicker"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTimePicker"
+				"title": "TimePicker"
 			}
 		},
 		{

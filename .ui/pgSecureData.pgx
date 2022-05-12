@@ -42,11 +42,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "f99d-99ba-8097-ce17",
-				"title": "pgSecureData"
+				"title": "SecureData"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgSecureData"
+				"title": "SecureData"
 			}
 		},
 		{

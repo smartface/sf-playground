@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "4277-ea6f-12e7-6d1a",
-				"title": "pgAlertView"
+				"title": "AlertView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgAlertView"
+				"title": "AlertView"
 			},
 			"degree": 1
 		},

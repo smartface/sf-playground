@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7105-57b3-8a5a-b429",
-				"title": "pgTest"
+				"title": "Test"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTest"
+				"title": "Test"
 			}
 		}
 	]

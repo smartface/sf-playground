@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "709e-31ea-a0a8-7bfe",
-				"title": "pgSelectablePicker"
+				"title": "SelectablePicker"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgSelectablePicker"
+				"title": "SelectablePicker"
 			}
 		},
 		{

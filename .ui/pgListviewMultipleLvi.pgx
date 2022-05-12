@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "8396-9625-24de-9f96",
-				"title": "pgMultipleLvi"
+				"title": "MultipleLvi"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgMultipleLvi"
+				"title": "MultipleLvi"
 			},
 			"degree": 1
 		},

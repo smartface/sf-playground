@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "1089-3f6c-f87f-a283",
-				"title": "pgListviewZebra"
+				"title": "ListviewZebra"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListviewZebra"
+				"title": "ListviewZebra"
 			}
 		},
 		{

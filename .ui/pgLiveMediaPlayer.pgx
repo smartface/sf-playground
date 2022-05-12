@@ -41,11 +41,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "df2a-1527-309d-ab7e",
-				"title": "pgLiveMediaPlayer"
+				"title": "LiveMediaPlayer"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgLiveMediaPlayer"
+				"title": "LiveMediaPlayer"
 			}
 		},
 		{

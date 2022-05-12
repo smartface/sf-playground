@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "f514-b2a5-80fd-2e93",
-				"title": "pgTextBox"
+				"title": "TextBox"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTextBox"
+				"title": "TextBox"
 			}
 		},
 		{

@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "f7f9-f337-4ee5-c255",
-				"title": "pgFlexLayout"
+				"title": "FlexLayout"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgFlexLayout"
+				"title": "FlexLayout"
 			}
 		},
 		{

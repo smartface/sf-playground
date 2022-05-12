@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "2336-6255-d816-f739",
 			"userProps": {
-				"title": "pgSpeechRecognizer"
+				"title": "SpeechRecognizer"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "2e48-370e-365b-a2de",
 				"children": [],
-				"title": "pgSpeechRecognizer",
+				"title": "SpeechRecognizer",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "2336-6255-d816-f739",
 			"userProps": {
-				"title": "pgSpeechRecognizer"
+				"title": "SpeechRecognizer"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "2e48-370e-365b-a2de",
 				"children": [],
-				"title": "pgSpeechRecognizer",
+				"title": "SpeechRecognizer",
 				"visible": true,
 				"isRemovable": false
 			}

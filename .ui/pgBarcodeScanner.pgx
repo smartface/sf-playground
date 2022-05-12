@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7913-786f-f8bd-81f8",
-				"title": "pgBarcodeScanner"
+				"title": "BarcodeScanner"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgBarcodeScanner"
+				"title": "BarcodeScanner"
 			}
 		}
 	]

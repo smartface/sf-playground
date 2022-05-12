@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "a527-d7bf-8d47-0b95",
-				"title": "pgContacts"
+				"title": "Contacts"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgContacts"
+				"title": "Contacts"
 			}
 		},
 		{

@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "8514-4c4b-f076-4754",
-				"title": "pgGridViewHorizontalCard"
+				"title": "GridViewHorizontalCard"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgGridViewHorizontalCard"
+				"title": "GridViewHorizontalCard"
 			}
 		},
 		{

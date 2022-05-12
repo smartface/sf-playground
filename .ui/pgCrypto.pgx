@@ -37,11 +37,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "91bf-c225-6916-5275",
-				"title": "pgCrypto"
+				"title": "Crypto"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgCrypto"
+				"title": "Crypto"
 			}
 		}
 	]

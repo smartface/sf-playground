@@ -42,11 +42,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "1499-7088-a5cf-0e93",
-				"title": "pgMultimedia"
+				"title": "Multimedia"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgMultimedia"
+				"title": "Multimedia"
 			}
 		},
 		{

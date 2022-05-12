@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e57d-5ee3-e397-876f",
-				"title": "pgGridViewFullSpan"
+				"title": "GridViewFullSpan"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgGridViewFullSpan"
+				"title": "GridViewFullSpan"
 			}
 		},
 		{

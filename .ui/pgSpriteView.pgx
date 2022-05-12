@@ -36,11 +36,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "3047-46a3-0a98-ee48",
-				"title": "pgSpriteView"
+				"title": "SpriteView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgSpriteView"
+				"title": "SpriteView"
 			}
 		}
 	]

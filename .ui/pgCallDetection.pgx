@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "e61d-70b6-6871-edaf",
 			"userProps": {
-				"title": "pgCallDetection"
+				"title": "CallDetection"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "1188-6ea7-44ad-7023",
 				"children": [],
-				"title": "pgCallDetection",
+				"title": "CallDetection",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "e61d-70b6-6871-edaf",
 			"userProps": {
-				"title": "pgCallDetection"
+				"title": "CallDetection"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "1188-6ea7-44ad-7023",
 				"children": [],
-				"title": "pgCallDetection",
+				"title": "CallDetection",
 				"visible": true,
 				"isRemovable": false
 			}

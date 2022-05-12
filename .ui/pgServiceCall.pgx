@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "5df5-b816-2e3a-906b",
-				"title": "pgServiceCall"
+				"title": "ServiceCall"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgServiceCall"
+				"title": "ServiceCall"
 			},
 			"degree": 1
 		},

@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "0e0b-d7f0-7994-d28a",
-				"title": "pgButton"
+				"title": "Button"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgButton"
+				"title": "Button"
 			}
 		},
 		{

@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "a942-5f6e-5595-3cde",
-				"title": "pgGridViewPagination"
+				"title": "GridViewPagination"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgGridViewPagination"
+				"title": "GridViewPagination"
 			}
 		},
 		{

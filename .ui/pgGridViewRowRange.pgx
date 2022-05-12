@@ -41,11 +41,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "eabe-73a1-586b-d5b0",
-				"title": "pgGridViewRowRange"
+				"title": "GridViewRowRange"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgGridViewRowRange"
+				"title": "GridViewRowRange"
 			}
 		},
 		{

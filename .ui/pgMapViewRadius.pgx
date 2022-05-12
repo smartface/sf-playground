@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "26aa-2013-c804-1039",
-				"title": "pgMapViewRadius"
+				"title": "MapViewRadius"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgMapViewRadius"
+				"title": "MapViewRadius"
 			}
 		},
 		{

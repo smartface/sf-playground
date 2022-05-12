@@ -46,11 +46,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "df51-0744-7734-390f",
-				"title": "pgHttp"
+				"title": "Http"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgHttp"
+				"title": "Http"
 			}
 		},
 		{

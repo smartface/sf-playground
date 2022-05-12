@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7e72-5ff2-9252-0026",
-				"title": "pgTextArea"
+				"title": "TextArea"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTextArea"
+				"title": "TextArea"
 			}
 		},
 		{

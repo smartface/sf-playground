@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "61ce-2b7a-62de-187c",
-				"title": "pgDynamicSize"
+				"title": "DynamicSize"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgDynamicSize"
+				"title": "DynamicSize"
 			}
 		},
 		{

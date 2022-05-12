@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e99c-939f-54f2-2614",
-				"title": "pgListviewSticky"
+				"title": "ListviewSticky"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListviewSticky"
+				"title": "ListviewSticky"
 			},
 			"degree": 1
 		},

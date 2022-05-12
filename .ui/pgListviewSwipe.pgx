@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "c807-c64d-c7b3-5ded",
-				"title": "pgListviewSwipe"
+				"title": "ListviewSwipe"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListviewSwipe"
+				"title": "ListviewSwipe"
 			}
 		},
 		{

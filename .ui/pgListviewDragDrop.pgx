@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "6a52-3e22-7b62-9856",
-				"title": "pgListviewDragDrop"
+				"title": "ListviewDragDrop"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListviewDragDrop"
+				"title": "ListviewDragDrop"
 			},
 			"degree": 1
 		},

@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "c0a8-f074-e3d3-fe88",
-				"title": "pgArt"
+				"title": "Art"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgArt"
+				"title": "Art"
 			}
 		},
 		{

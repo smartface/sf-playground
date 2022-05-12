@@ -41,11 +41,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "59ae-5eb2-b7e9-b48f",
-				"title": "pgNoTouch"
+				"title": "NoTouch"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgNoTouch"
+				"title": "NoTouch"
 			}
 		},
 		{

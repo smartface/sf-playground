@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "a0c7-3b5c-7370-42b0",
-				"title": "pgStatusBar"
+				"title": "StatusBar"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgStatusBar"
+				"title": "StatusBar"
 			}
 		},
 		{

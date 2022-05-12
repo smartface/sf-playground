@@ -41,11 +41,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "b226-ea77-66b2-d26d",
-				"title": "pgWebSocket"
+				"title": "WebSocket"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgWebSocket"
+				"title": "WebSocket"
 			}
 		},
 		{

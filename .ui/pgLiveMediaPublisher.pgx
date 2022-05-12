@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7217-e1e8-2b27-3fd5",
-				"title": "pgLiveMediaPublisher"
+				"title": "LiveMediaPublisher"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgLiveMediaPublisher"
+				"title": "LiveMediaPublisher"
 			}
 		},
 		{

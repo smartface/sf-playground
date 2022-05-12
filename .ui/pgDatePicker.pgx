@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "8aa6-b8ed-e675-7c85",
-				"title": "pgDatePicker"
+				"title": "DatePicker"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgDatePicker"
+				"title": "DatePicker"
 			}
 		},
 		{

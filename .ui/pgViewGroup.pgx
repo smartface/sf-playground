@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "9955-6603-1862-1bd3",
-				"title": "pgViewGroup"
+				"title": "ViewGroup"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgViewGroup"
+				"title": "ViewGroup"
 			},
 			"degree": 1
 		},

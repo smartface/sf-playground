@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "ae7c-7479-420b-29a0",
 			"userProps": {
-				"title": "pgFileIO"
+				"title": "FileIO"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "542b-30ce-aa2e-f770",
 				"children": [],
-				"title": "pgFileIO",
+				"title": "FileIO",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "ae7c-7479-420b-29a0",
 			"userProps": {
-				"title": "pgFileIO"
+				"title": "FileIO"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "542b-30ce-aa2e-f770",
 				"children": [],
-				"title": "pgFileIO",
+				"title": "FileIO",
 				"visible": true,
 				"isRemovable": false
 			}

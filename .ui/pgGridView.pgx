@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "29a1-15f0-d80e-1301",
-				"title": "pgGridView"
+				"title": "GridView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgGridView"
+				"title": "GridView"
 			},
 			"degree": 1
 		},

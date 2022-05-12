@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "6dbc-1135-d929-5416",
-				"title": "pgImageView"
+				"title": "ImageView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgImageView"
+				"title": "ImageView"
 			}
 		},
 		{

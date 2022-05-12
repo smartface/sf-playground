@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "14c3-7146-4080-0958",
-				"title": "pgEmailComposer"
+				"title": "EmailComposer"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgEmailComposer"
+				"title": "EmailComposer"
 			}
 		},
 		{

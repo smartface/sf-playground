@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7569-9586-0a14-d487",
-				"title": "pgWebBrowser"
+				"title": "WebBrowser"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgWebBrowser"
+				"title": "WebBrowser"
 			}
 		},
 		{

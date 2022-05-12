@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "c0c4-4076-0dd8-1cdc",
-				"title": "pgVideoView"
+				"title": "VideoView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgVideoView"
+				"title": "VideoView"
 			}
 		},
 		{

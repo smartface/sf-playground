@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "9682-fbab-fd91-28fd",
-				"title": "pgAsyncTask"
+				"title": "AsyncTask"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgAsyncTask"
+				"title": "AsyncTask"
 			}
 		},
 		{

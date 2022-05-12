@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "beed-009e-bdf2-bb74",
-				"title": "pgColorAndHtml"
+				"title": "ColorAndHtml"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgColorAndHtml"
+				"title": "ColorAndHtml"
 			}
 		},
 		{

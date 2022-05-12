@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "524a-8a2f-2e0a-28d1",
-				"title": "pgModalBottomSheet"
+				"title": "ModalBottomSheet"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgModalBottomSheet"
+				"title": "ModalBottomSheet"
 			},
 			"degree": 1
 		},

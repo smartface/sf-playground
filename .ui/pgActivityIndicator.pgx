@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "dadf-0824-f8da-caf1",
-				"title": "pgActivityIndicator"
+				"title": "ActivityIndicator"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgActivityIndicator"
+				"title": "ActivityIndicator"
 			}
 		},
 		{

@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "b2c6-bce1-1d14-7362",
-				"title": "pgScrollView"
+				"title": "ScrollView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgScrollView"
+				"title": "ScrollView"
 			}
 		},
 		{

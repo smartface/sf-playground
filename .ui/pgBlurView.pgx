@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "3938-1b66-2b76-aa90",
-				"title": "pgBlurView"
+				"title": "BlurView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgBlurView"
+				"title": "BlurView"
 			}
 		},
 		{

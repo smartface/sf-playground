@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "eef3-d562-8140-8a88",
-				"title": "pgListViewMaterial"
+				"title": "ListViewMaterial"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListViewMaterial"
+				"title": "ListViewMaterial"
 			}
 		},
 		{

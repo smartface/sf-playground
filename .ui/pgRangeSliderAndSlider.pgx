@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "a435-a572-c7f4-5436",
-				"title": "pgRangeSlider"
+				"title": "RangeSlider"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgRangeSlider"
+				"title": "RangeSlider"
 			}
 		},
 		{

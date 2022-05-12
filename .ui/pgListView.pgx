@@ -44,11 +44,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "0e7e-af23-8304-9e8d",
-				"title": "pgListView"
+				"title": "ListView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListView"
+				"title": "ListView"
 			}
 		},
 		{

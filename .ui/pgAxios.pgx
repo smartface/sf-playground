@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "28ff-c191-b033-01f6",
-				"title": "pgAxios"
+				"title": "Axios"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgAxios"
+				"title": "Axios"
 			}
 		},
 		{

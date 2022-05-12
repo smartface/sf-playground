@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7bae-92f7-eed4-40e1",
-				"title": "pgListviewPagination"
+				"title": "ListviewPagination"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgListviewPagination"
+				"title": "ListviewPagination"
 			},
 			"degree": 1
 		},

@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7428-985a-1805-4283",
-				"title": "pgShimmerFlexLayout"
+				"title": "ShimmerFlexLayout"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgShimmerFlexLayout"
+				"title": "ShimmerFlexLayout"
 			}
 		},
 		{
