@@ -9,7 +9,8 @@
 					"1e1d-0be5-8938-a0a2",
 					"5ea3-0ed0-d993-b3bf",
 					"f503-10f0-ea93-0a47",
-					"0266-2245-f3ca-9eed"
+					"0266-2245-f3ca-9eed",
+					"27dc-460a-04eb-dbd1"
 				],
 				"name": "mainPage",
 				"orientation": "AUTO",
@@ -118,6 +119,26 @@
 				"left": 0,
 				"testId": "F-BBMEbNk",
 				"top": 0
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flListViewIndex",
+			"hiddenComponent": false,
+			"id": "27dc-460a-04eb-dbd1",
+			"props": {
+				"children": [],
+				"name": "flListViewIndex",
+				"parent": "89e6-3f97-10a5-0ac9",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flListViewIndex",
+				"id": "a0b6-0ec3-4011-9736"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
 			}
 		}
 	]
