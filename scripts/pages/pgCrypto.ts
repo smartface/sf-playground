@@ -8,6 +8,7 @@ import Button from '@smartface/native/ui/button';
 import TextBox from '@smartface/native/ui/textbox';
 import { styleableComponentMixin, styleableContainerComponentMixin } from '@smartface/styling-context';
 import FlexLayout from '@smartface/native/ui/flexlayout';
+import { withDismissAndBackButton } from '@smartface/mixins';
 
 class StyleableButton extends styleableComponentMixin(Button) {}
 class StyleableTextBox extends styleableComponentMixin(TextBox) {}
@@ -22,7 +23,7 @@ const PRIVATE_KEY_DEVICE_KEY = 'privateKey'; //The key to save to the device dat
 type KeyPairType = { publicKey: string; privateKey: string };
 
 //You should create new Page from UI-Editor and extend with it.
-export default class PgCrypto extends PgCryptoDesign {
+export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
   myLabel: StyleableLabel;
   encryptButton: StyleableButton;
   decryptButton: StyleableButton;
@@ -130,6 +131,7 @@ export default class PgCrypto extends PgCryptoDesign {
 
   onShow() {
     super.onShow();
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
   onLoad() {

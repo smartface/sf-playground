@@ -35,7 +35,6 @@ import PgSSLPinning from 'pages/pgSSLPinning';
 import PgListViewMaterial from 'pages/pgListViewMaterial';
 import PgPhotoPicker from 'pages/pgPhotoPicker';
 import PgDynamicSize from 'pages/pgDynamicSize';
-import PageSample from 'pages/pageSample';
 import PgComponentFromCode from 'pages/pgComponentFromCode';
 import PgGlide from 'pages/pgGlide';
 import PgNativeFunctions from 'pages/pgNativeFunctions';
@@ -194,7 +193,6 @@ export const tab4: Tab = {
   name: 'Misc',
   tabIndex: 4,
   pages: [
-    PageSample,
     PgYogaTest,
     Page1,
     Page2,
