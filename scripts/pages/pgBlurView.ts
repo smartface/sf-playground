@@ -84,6 +84,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
 
   onShow() {
     super.onShow();
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
   onLoad() {

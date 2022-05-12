@@ -6,7 +6,6 @@ import PgMapViewRadius from 'pages/pgMapViewRadius';
 import PgZoomableImageView from 'pages/pgZoomableImageView';
 import PgMapViewRegion from 'pages/pgMapViewRegion';
 import PgHeaderImageAndItems from 'pages/pgHeaderImageAndItems';
-import PgEventEmitter from 'pages/pgEventEmitter';
 import PgArt from 'pages/pgArt';
 import PgFileUpload from 'pages/pgFileUpload';
 import PgListViewIndex from 'pages/pgListViewIndex';
@@ -120,7 +119,6 @@ export const tab0: Tab = {
     PgListViewMultiple,
     PgMapViewRegion,
     PgHeaderImageAndItems,
-    PgEventEmitter,
     PgSwitch,
     PageHideShow,
     PgNativeFunctions,
