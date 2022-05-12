@@ -92,7 +92,7 @@ export default class PgPhotoCropper extends PgPhotoCropperDesign {
         this.initializePhotoGridView();
         this.initialized = true;
       } catch (err) {
-        console.error(err);
+        console.error(err.message, { stack: err.stack });
       }
     }
   }
