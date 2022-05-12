@@ -98,6 +98,7 @@ import PgEmailComposer from 'pages/pgEmailComposer';
 import PgDatePicker from 'pages/pgDatePicker';
 import PgLiveMediaPublisher from 'pages/pgLiveMediaPublisher';
 import PgButton from 'pages/pgButton';
+import PgAxios from 'pages/pgAxios';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -176,7 +177,7 @@ export const tab0: Tab = {
 export const tab1: Tab = {
   name: 'Utility',
   tabIndex: 1,
-  pages: [PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning]
+  pages: [PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios]
 };
 
 export const tab2: Tab = {

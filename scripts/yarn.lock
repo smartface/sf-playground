@@ -80,9 +80,9 @@
     "@smartface/core" "^5.0.0-alpha.0"
 
 "@smartface/native@^5.0.0-alpha":
-  version "5.0.0-alpha.69"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.69.tgz#7772ca8655a8daa089ba99a393bab63b59f674db"
-  integrity sha512-SkNZaFAyWLtPrbn/L67BfUsxxxKez+CkcVivEI/xSv1Be51hu9U9LzDZ/pN3XxNpLkJ69avJ2lBsiJasHGWCJg==
+  version "5.0.0-alpha.72"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-alpha.72.tgz#85d4aed0db8e8892ab1caa95fbb5237f3f899c6a"
+  integrity sha512-fsiiSJGy1jN+a9F1fpixcnFgKG266IyPu3bZuqYOwu/fP5dn2VwG4gRmknsC3Do7YHyqbufXwnQuFPMnOr5/Ig==
   dependencies:
     events "^3.3.0"
 
@@ -139,7 +139,7 @@ apexcharts@^3.26.3:
     svg.resize.js "^1.4.3"
     svg.select.js "^3.0.1"
 
-axios@^0.26.1:
+axios@0.26.1:
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
   integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
