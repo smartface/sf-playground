@@ -34,8 +34,8 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     this.v1.ios.exclusiveTouch = true;
     this.v2.flexBasis = System.OS === System.OSType.IOS ? 60 : 140;
     this.v2.maskedBorders = [View.Border.BOTTOM_LEFT];
-    this.vRipple.android.rippleColor = Color.BLUE;
     this.vRipple.android.rippleEnabled = true;
+    this.vRipple.android.rippleColor = Color.BLUE;
     this.v3.rotation = 10;
     this.v5.rotationX = 50;
     this.v6.rotationY = 50;
