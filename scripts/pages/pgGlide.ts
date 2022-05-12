@@ -94,18 +94,6 @@ export default class PgGlide extends PgGlideDesign {
   }
 
   initNativeTypescriptTest() {
-    // SCREEN TESTS
-    console.log('Screen module test: ', {
-      orientation: Screen.orientation,
-      height: Screen.height,
-      width: Screen.width,
-      touchSupported: Screen.touchSupported,
-      dpi: Screen.dpi,
-      iosForceTouchAvaliable: Screen.ios.forceTouchAvaliable
-    });
-    const screenshot = Screen.capture();
-    console.log(screenshot);
-
     // HARDWARE TESTS
     console.log('Device.Hardware.UID: ' + Hardware.UID);
     console.log('Device.Hardware.brandName: ' + Hardware.brandName);
