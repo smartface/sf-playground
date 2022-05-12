@@ -10,44 +10,26 @@ export default class PgAsyncTask extends withDismissAndBackButton(PgAsyncTaskDes
 
   constructor(private router?: Router, private route?: Route) {
     super({});
+    this.btnRun.on('press', () => this.runAsyncTask());
   }
 
-  // The page design has been made from the code for better
-  // showcase purposes. As a best practice, remove this and
-  // use WYSIWYG editor to style your pages.
-  centerizeTheChildrenLayout() {
-    this.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          flexDirection: 'ROW',
-          justifyContent: 'CENTER',
-          alignItems: 'CENTER'
-        }
-      }
-    });
-  }
-
-  onShow() {
-    super.onShow();
-  }
-
-  onLoad() {
-    super.onLoad();
-    this.centerizeTheChildrenLayout();
-
+  runAsyncTask() {
+    const label = this.lblStatus;
+    label.text = 'AsyncTask will be starting...';
     this.http.request({
       url: 'https://api.github.com/repos/smartface/contxjs',
       method: 'GET',
       onLoad: (response: { statusCode: number; headers: { [key: string]: string }; body: Blob }): void => {
         let result = response.body.toString();
         let parsedObject;
+        label.text = 'AsyncTask Created';
         // Run new task
         var asyncTask = new AsyncTask();
         asyncTask.task = function () {
           parsedObject = JSON.parse(result);
         };
         asyncTask.onComplete = function () {
+          label.text = 'AsyncTask Completed';
           console.log('parsedObject ', parsedObject);
         };
         asyncTask.run();
@@ -56,5 +38,14 @@ export default class PgAsyncTask extends withDismissAndBackButton(PgAsyncTaskDes
         // Handle error
       }
     });
+  }
+
+  onShow() {
+    super.onShow();
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
+  }
+
+  onLoad() {
+    super.onLoad();
   }
 }
