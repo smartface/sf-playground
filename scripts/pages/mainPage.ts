@@ -21,7 +21,9 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
     this.lvPages.refreshEnabled = false;
     this.lvPages.rowHeight = 54;
     this.lvPages.onRowBind = (listViewItem: LviPages, index) => {
-      listViewItem.lblPageName.text = this.pages[index].name;
+      const name = this.pages[index].name;
+      const textWithoutPrefix = name.substring(0, 2) === 'Pg' ? name.slice(2) : name;
+      listViewItem.lblPageName.text = textWithoutPrefix;
     };
     this.lvPages.onRowSelected = (listViewItem: LviPages, index) => {
       this.router.push(`${this.pages[index].name}`);
