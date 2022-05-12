@@ -93,29 +93,6 @@ export default class PgGlide extends PgGlideDesign {
     return `https://picsum.photos/id/${index}/${imageOptions.size.width}/${imageOptions.size.height}`;
   }
 
-  initNativeTypescriptTest() {
-    // HARDWARE TESTS
-    console.log('Device.Hardware.UID: ' + Hardware.UID);
-    console.log('Device.Hardware.brandName: ' + Hardware.brandName);
-    console.log('Device.Hardware.brandModel: ' + Hardware.brandModel);
-    // console.log("Device.Hardware.deviceType: "   + Hardware.deviceType); //TODO: Check after devicetype fix
-    if (System.OS === System.OSType.ANDROID) {
-      console.log('Device.Hardware.vendorID: ' + Hardware.android.vendorID);
-    }
-    if (System.OS === System.OSType.IOS) {
-      console.log('Device.Hardware.ios.modelName: ' + Hardware.ios.modelName);
-    }
-
-    // Accelerometer TESTS
-    Accelerometer.start();
-    Accelerometer.on('accelerate', (e) => {
-      console.log('x: ' + e.x + '  y : ' + e.y + '  z : ' + e.z);
-      if (e.z > 9) {
-        Accelerometer.stop();
-      }
-    });
-  }
-
   onShow() {
     super.onShow();
   }
@@ -124,6 +101,5 @@ export default class PgGlide extends PgGlideDesign {
     super.onLoad();
     this.initButtons();
     this.initDialog();
-    this.initNativeTypescriptTest();
   }
 }

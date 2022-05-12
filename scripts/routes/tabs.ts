@@ -101,6 +101,7 @@ import PgAxios from 'pages/pgAxios';
 import PgSystem from 'pages/pgSystem';
 import PgScreen from 'pages/pgScreen';
 import PgHardware from 'pages/pgHardware';
+import PgAccelerometer from 'pages/pgAccelerometer';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -125,6 +126,7 @@ export const tab0: Tab = {
     PgSwitch,
     PageHideShow,
     PgNativeFunctions,
+    PgAccelerometer,
     PgToastMessage,
     PgHardware,
     PgHttp,
