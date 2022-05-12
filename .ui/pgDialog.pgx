@@ -1,0 +1,200 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "f41f-1e33-ca9b-03a2",
+			"initialized": true,
+			"props": {
+				"children": [
+					"00a9-d824-6955-2ceb",
+					"d12c-24e3-e8a2-5be9",
+					"295c-2bc0-4730-5168",
+					"01b6-b83b-d9c5-991e",
+					"76d5-c4f6-0623-b9c9",
+					"d7be-20e0-e83a-fe06"
+				],
+				"name": "pgDialog",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "00a9-d824-6955-2ceb",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "f41f-1e33-ca9b-03a2"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "d12c-24e3-e8a2-5be9",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "f41f-1e33-ca9b-03a2",
+				"title": "Dialog"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Dialog"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "295c-2bc0-4730-5168",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnShow",
+				"parent": "f41f-1e33-ca9b-03a2",
+				"text": "Show Dialog (Auto closes after 3sec)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Show Dialog (Auto closes after 3sec)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "01b6-b83b-d9c5-991e",
+			"oldName": "btnShow_1",
+			"props": {
+				"children": [],
+				"name": "btnHide",
+				"parent": "f41f-1e33-ca9b-03a2",
+				"text": "Hide Dialog",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Hide Dialog",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "76d5-c4f6-0623-b9c9",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"2545-6f9b-b17d-796c",
+					"e352-bb4a-a491-9b6b"
+				],
+				"name": "flTransparent",
+				"parent": "f41f-1e33-ca9b-03a2"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignContent": "CENTER"
+				},
+				"height": 70
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "2545-6f9b-b17d-796c",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblTransparent",
+				"parent": "76d5-c4f6-0623-b9c9",
+				"text": "Is Transparent (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Is Transparent (Android)"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "e352-bb4a-a491-9b6b",
+			"oldName": "switch1",
+			"props": {
+				"children": [],
+				"name": "swTransparent",
+				"parent": "76d5-c4f6-0623-b9c9",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"toggle": false,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "d7be-20e0-e83a-fe06",
+			"oldName": "flTransparent_1",
+			"props": {
+				"children": [
+					"6435-3be7-4488-7b07",
+					"ddfe-dc88-35e3-24d5"
+				],
+				"name": "flCancelable",
+				"parent": "f41f-1e33-ca9b-03a2"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignContent": "CENTER"
+				},
+				"height": 70
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "6435-3be7-4488-7b07",
+			"oldName": "lblTransparent",
+			"props": {
+				"children": [],
+				"name": "lblCancelable",
+				"parent": "d7be-20e0-e83a-fe06",
+				"text": "Cancelable (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Cancelable (Android)"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "ddfe-dc88-35e3-24d5",
+			"oldName": "swTransparent",
+			"props": {
+				"children": [],
+				"name": "swCancelable",
+				"parent": "d7be-20e0-e83a-fe06",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"toggle": false,
+				"usePageVariable": true
+			}
+		}
+	]
+}
