@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "429f-c98f-3a09-cd18",
+			"initialized": true,
+			"props": {
+				"children": [
+					"ccf9-3ee6-fdb7-11d4",
+					"c766-8eb7-a18e-d5e6",
+					"6ca3-8b31-6c49-4de9"
+				],
+				"name": "pgHardware",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "ccf9-3ee6-fdb7-11d4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "429f-c98f-3a09-cd18"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "c766-8eb7-a18e-d5e6",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "429f-c98f-3a09-cd18",
+				"title": "Hardware"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Hardware"
+			}
+		},
+		{
+			"className": ".sf-label .grow #pgHardware-lblHardwareStatus",
+			"id": "6ca3-8b31-6c49-4de9",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblHardwareStatus",
+				"parent": "429f-c98f-3a09-cd18",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}
