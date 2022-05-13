@@ -56,7 +56,6 @@ export default class FlListViewIndex extends FlListViewIndexDesign {
     values.forEach((value, index) => {
       const label = new Label({ ...labelLayoutStyles, ...labelStyles });
       label.text = value;
-      //@ts-ignore
       this.addChild(label, `${value}/${index}`);
       label.applyLayout();
       this.labels.push(label);
