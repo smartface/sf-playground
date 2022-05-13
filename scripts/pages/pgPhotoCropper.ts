@@ -9,6 +9,7 @@ import PgPhotoCropperDesign from 'generated/pages/pgPhotoCropper';
 import PgPhotoViewer from './pgPhotoViewer';
 import { Router, Route } from '@smartface/router';
 import { IImage } from '@smartface/native/ui/image/image';
+import Page from '@smartface/native/ui/page';
 
 export default class PgPhotoCropper extends PgPhotoCropperDesign {
   images: IImage[];
@@ -67,8 +68,7 @@ export default class PgPhotoCropper extends PgPhotoCropperDesign {
     this.swipeView = new SwipeView({
       page: this,
       flexGrow: 1,
-      // @ts-ignore
-      pages: this.swipeViewPages
+      pages: this.swipeViewPages as unknown as Page[]
     });
     // THIS IS NOT WORKING ON NTVE-BETA-2 for Android, To be tested after the TS migration.
     this.swipeView.on('pageSelected', (index) => {
