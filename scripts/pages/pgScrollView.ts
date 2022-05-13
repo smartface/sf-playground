@@ -4,6 +4,7 @@ import { Router, Route } from '@smartface/router';
 import ContentInsetAdjustment from '@smartface/native/ui/shared/ios/contentinsetadjustment';
 import OverScrollMode from '@smartface/native/ui/shared/android/overscrollmode';
 import { ScrollViewEdge } from '@smartface/native/ui/scrollview/scrollview';
+import System from '@smartface/native/device/system';
 
 /**
  * TODO: SWITCH SVSECONDARY TO HORIZONTAL
@@ -32,6 +33,13 @@ export default class PgScrollView extends withDismissAndBackButton(PgScrollViewD
         setTimeout(() => (this._scrollLock = false), 2000);
       }
     });
+
+    if (System.OS === System.OSType.ANDROID) {
+      this.svMain.onTouchMoved = () => {
+        this.svOuter.layout.android.requestDisallowInterceptTouchEvent(true);
+        return false;
+      };
+    }
   }
 
   scrollToCoordinate() {

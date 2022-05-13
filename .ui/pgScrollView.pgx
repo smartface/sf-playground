@@ -53,6 +53,7 @@
 		{
 			"className": ".sf-scrollView",
 			"id": "32bb-62c5-372f-2713",
+			"oldName": "scrollView1",
 			"props": {
 				"children": [
 					"eb39-7317-9d79-27fd",
@@ -65,15 +66,17 @@
 					"095f-9af7-9bf9-2be8",
 					"aadb-24c4-8629-d83d"
 				],
-				"name": "scrollView1",
-				"parent": "b2c6-bce1-1d14-7362"
+				"name": "svOuter",
+				"parent": "b2c6-bce1-1d14-7362",
+				"usePageVariable": true
 			},
 			"type": "ScrollView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
 				},
-				"height": null
+				"height": null,
+				"usePageVariable": true
 			}
 		},
 		{
@@ -297,7 +300,8 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 250, 47, 47, 1 )"
+				"backgroundColor": "rgba( 250, 47, 47, 1 )",
+				"height": 150
 			}
 		},
 		{
@@ -311,7 +315,8 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 241, 250, 47, 1 )"
+				"backgroundColor": "rgba( 241, 250, 47, 1 )",
+				"height": 150
 			}
 		},
 		{
@@ -325,7 +330,8 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 24, 22, 219, 1 )"
+				"backgroundColor": "rgba( 24, 22, 219, 1 )",
+				"height": 150
 			}
 		},
 		{
@@ -389,10 +395,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 24, 22, 219, 1 )",
-				"height": 343,
-				"left": 0,
-				"top": 0,
-				"width": 400
+				"width": 150
 			}
 		},
 		{
@@ -407,9 +410,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 241, 250, 47, 1 )",
-				"left": 0,
-				"top": 0,
-				"width": 400
+				"width": 150
 			}
 		},
 		{
@@ -424,9 +425,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 250, 47, 47, 1 )",
-				"left": 0,
-				"top": 0,
-				"width": 400
+				"width": 150
 			}
 		}
 	]
