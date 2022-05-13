@@ -103,6 +103,7 @@ import PgScreen from 'pages/pgScreen';
 import PgHardware from 'pages/pgHardware';
 import PgAccelerometer from 'pages/pgAccelerometer';
 import PgDialog from 'pages/pgDialog';
+import PgXHR from 'pages/pgXHR';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -185,7 +186,7 @@ export const tab0: Tab = {
 export const tab1: Tab = {
   name: 'Utility',
   tabIndex: 1,
-  pages: [PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios]
+  pages: [PgXHR, PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios]
 };
 
 export const tab2: Tab = {

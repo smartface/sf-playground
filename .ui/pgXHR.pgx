@@ -1,0 +1,175 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "478f-72b4-e905-ccaa",
+			"initialized": true,
+			"props": {
+				"children": [
+					"e94c-a3d4-eb53-bc5a",
+					"6f6f-ce5c-1942-5b2e",
+					"5206-a7e1-0164-34de"
+				],
+				"name": "pgXHR",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "e94c-a3d4-eb53-bc5a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "478f-72b4-e905-ccaa"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "6f6f-ce5c-1942-5b2e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "478f-72b4-e905-ccaa",
+				"title": "XHR"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "XHR"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow-relative",
+			"id": "5206-a7e1-0164-34de",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"f222-5b36-42ad-5504",
+					"ad43-97cb-bf0d-1b80",
+					"9647-db8d-06c1-6d1c",
+					"2e14-1578-57f0-1bb3",
+					"2ec0-d296-68d7-39ea",
+					"744e-698b-1282-9bae"
+				],
+				"name": "sv",
+				"parent": "478f-72b4-e905-ccaa"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "f222-5b36-42ad-5504",
+			"oldName": "textView1",
+			"props": {
+				"children": [],
+				"html": "<br>",
+				"name": "tvData",
+				"parent": "5206-a7e1-0164-34de",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 140,
+				"html": "<br>",
+				"maxLines": 0,
+				"text": "\n",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "ad43-97cb-bf0d-1b80",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnGet",
+				"parent": "5206-a7e1-0164-34de",
+				"text": "Get",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Get",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "9647-db8d-06c1-6d1c",
+			"oldName": "btnGet_1",
+			"props": {
+				"children": [],
+				"name": "btnPost",
+				"parent": "5206-a7e1-0164-34de",
+				"text": "Post",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Post",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "2e14-1578-57f0-1bb3",
+			"oldName": "btnPost_1",
+			"props": {
+				"children": [],
+				"name": "btnPut",
+				"parent": "5206-a7e1-0164-34de",
+				"text": "Put",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Put",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "2ec0-d296-68d7-39ea",
+			"oldName": "btnPut_1",
+			"props": {
+				"children": [],
+				"name": "btnPatch",
+				"parent": "5206-a7e1-0164-34de",
+				"text": "Patch",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Patch",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "744e-698b-1282-9bae",
+			"oldName": "btnPatch_1",
+			"props": {
+				"children": [],
+				"name": "btnDelete",
+				"parent": "5206-a7e1-0164-34de",
+				"text": "Delete",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Delete",
+				"usePageVariable": true
+			}
+		}
+	]
+}
