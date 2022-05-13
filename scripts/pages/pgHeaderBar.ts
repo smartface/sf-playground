@@ -10,6 +10,7 @@ import Image from '@smartface/native/ui/image';
 import getRandomColor from 'lib/getRandomColor';
 import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 import AttributedString from '@smartface/native/ui/attributedstring';
+import Screen from '@smartface/native/device/screen';
 
 export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDesign) {
   private _visible = true;
@@ -62,13 +63,13 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
 
   setAttributedStrings() {
     console.info('setAttributedStrings');
-    this.headerBar.android.attributedSubtitle = this.generateAttributedString('subtitle');
-    this.headerBar.android.attributedTitle = this.generateAttributedString('title');
+    this.getHeaderBar().android.attributedSubtitle = this.generateAttributedString('subtitle');
+    this.getHeaderBar().android.attributedTitle = this.generateAttributedString('title');
   }
 
   changeElevation(value) {
     console.info('changeElevation');
-    this.headerBar.android.elevation = value;
+    this.getHeaderBar().android.elevation = value;
   }
 
   changeBorderVisibility() {
@@ -89,7 +90,7 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
 
   setContentInset() {
     console.info('setContentInset');
-    this.headerBar.android.contentInset = { left: 30, right: 30 };
+    this.getHeaderBar().android.contentInset = { left: 45, right: 30 };
   }
 
   setItemColor() {
@@ -100,31 +101,35 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
 
   setLogo() {
     console.info('setLogo');
-    this.headerBar.android.logoEnabled = true;
-    this.headerBar.android.logo = Image.createFromFile('images://icon.png');
+    this.getHeaderBar().android.logoEnabled = true;
+    this.getHeaderBar().android.logo = Image.createFromFile('images://icon.png');
   }
 
   setPadding() {
     console.info('setPadding');
-    this.headerBar.android.padding = { top: 0, left: 32, right: 16, bottom: 0 };
+    this.getHeaderBar().android.padding = { top: 0, left: 32, right: 16, bottom: 0 };
   }
 
   setSubtitle() {
     console.info('setSubtitle');
-    this.headerBar.android.subtitle = 'Subtitle';
-    this.headerBar.android.subtitleColor = Color.BLUE;
-    this.headerBar.android.subtitleFont = Font.create(Font.DEFAULT, 3);
+    this.getHeaderBar().android.subtitle = 'Subtitle';
+    this.getHeaderBar().android.subtitleColor = Color.BLUE;
+    this.getHeaderBar().android.subtitleFont = Font.create(Font.DEFAULT, 3);
   }
 
   setTitleAndColor() {
     console.info('setTitleAndColor');
-    this.headerBar.title = 'ExampleTitle';
-    this.headerBar.ios.titleFont = Font.create(Font.DEFAULT, 3);
+    this.getHeaderBar().title = 'ExampleTitle';
+    this.getHeaderBar().ios.titleFont = Font.create(Font.DEFAULT, 3);
     this.getHeaderBar().titleColor = Color.DARKGRAY;
   }
 
   setTitleLayout() {
     const customView = new FlexLayout();
+    // Necessary for iOS
+    customView.height = this.getHeaderBar().height;
+    customView.width = Screen.width;
+    // Necessary for iOS
     customView.justifyContent = FlexLayout.JustifyContent.CENTER;
     customView.alignItems = FlexLayout.AlignItems.STRETCH;
     customView.alignContent = FlexLayout.AlignContent.STRETCH;

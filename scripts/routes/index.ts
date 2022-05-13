@@ -118,14 +118,13 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
   path: `${ROOT_PATH}/btb`,
   items: generateTabItems(),
   onTabChangedByUser: () => {},
-  //@ts-ignore
-  //   itemColor: { normal: Color.GRAY, selected: Color.MAGENTA },
-  //@ts-ignore
+  // tabbarParams: () => ({
+  //   itemColor: { normal: Color.GRAY, selected: Color.BLUE },
   //   backgroundColor: Color.YELLOW,
-  //@ts-ignore
   //   ios: {
   //     translucent: true
-  //   },
+  //   }
+  // }),
   routes: Object.keys(Tabs).map((tab: any) => generateTabRoute(`${ROOT_PATH}/btb`, Tabs[tab]))
 });
 
