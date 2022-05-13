@@ -21,12 +21,11 @@
       "font": {
         "family": "SFProText",
         "style": "Medium",
-        "size": 16,
+        "size": 15,
         "bold": false,
         "italic": false
       },
       "textColor": "#000000"
-    },
-    "backgroundColor": "rgba( 219, 219, 219, 1 )"
+    }
   }
 }

@@ -22,7 +22,7 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
 
   initListViewIndex() {
     const statusBarHeight = System.OS === System.OSType.ANDROID ? Application.statusBar.height : 0;
-    this.flListViewIndex.topMargin = System.OSType.ANDROID ? this.headerBar.height : 40 + statusBarHeight;
+    this.flListViewIndex.topMargin = System.OSType.ANDROID ? this.headerBar.height : 20 + statusBarHeight;
     this.flListViewIndex.indexes = this._searchKeys;
     this.flListViewIndex.onItemSelect = (selectedLabel: string) => {
       const indexToScroll = this._searchStrings.findIndex((ss) => ss[0] === selectedLabel);
@@ -30,14 +30,6 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
         this.lvPages.scrollTo(indexToScroll, false);
       }
     };
-    this.flListViewIndex.top = this.flListViewIndex.topToDispatch() - this.flListViewIndex.topMargin;
-    // TODO: dispatch crashes this
-    // this.flListViewIndex.dispatch({
-    //   type: 'updateUserStyle',
-    //   userStyle: {
-    //     top: this.flListViewIndex.topToDispatch() - this.flListViewIndex.topMargin
-    //   }
-    // });
   }
 
   initListView() {
@@ -59,6 +51,12 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
 
   onShow() {
     super.onShow();
+    this.flListViewIndex.dispatch({
+      type: 'updateUserStyle',
+      userStyle: {
+        top: this.flListViewIndex.topToDispatch() - this.flListViewIndex.topMargin
+      }
+    });
   }
 
   onLoad() {
@@ -67,18 +65,24 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
     this.initListView();
   }
 
+  cutPgFromPageName(pageName: string) {
+    return pageName.substring(0, 2) === 'Pg' ? pageName.slice(2) : pageName;
+  }
+
   set pages(value) {
     this._searchKeys = [];
     this._searchStrings = [];
     this._pages = value.sort((a, b) => {
-      if (a.name < b.name) {
+      const aTextWithoutPrefix = this.cutPgFromPageName(a.name);
+      const bTextWithoutPrefix = this.cutPgFromPageName(b.name);
+      if (aTextWithoutPrefix < bTextWithoutPrefix) {
         return -1;
       } else {
         return 1;
       }
     });
     this._pages.forEach((a) => {
-      const textWithoutPrefix = a.name.substring(0, 2) === 'Pg' ? a.name.slice(2) : a.name;
+      const textWithoutPrefix = this.cutPgFromPageName(a.name);
       this._searchStrings.push(textWithoutPrefix);
       const firstCharacter = textWithoutPrefix.slice(0, 1);
       if (!this._searchKeys.includes(firstCharacter)) {
