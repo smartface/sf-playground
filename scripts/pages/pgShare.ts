@@ -11,11 +11,11 @@ import Image from '@smartface/native/ui/image';
 export default class PgShare extends withDismissAndBackButton(PgShareDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnShare.on(ButtonEvents.Press, this.share);
-    this.btnShareContacts.on(ButtonEvents.Press, this.shareContact);
-    this.btnShareFile.on(ButtonEvents.Press, this.shareFile);
-    this.btnShareImage.on(ButtonEvents.Press, this.shareImage);
-    this.btnShareText.on(ButtonEvents.Press, this.share);
+    this.btnShare.on(ButtonEvents.Press, () => this.share());
+    this.btnShareContacts.on(ButtonEvents.Press, () => this.shareContact());
+    this.btnShareFile.on(ButtonEvents.Press, () => this.shareFile());
+    this.btnShareImage.on(ButtonEvents.Press, () => this.shareImage());
+    this.btnShareText.on(ButtonEvents.Press, () => this.shareText());
   }
 
   share() {
@@ -39,7 +39,7 @@ export default class PgShare extends withDismissAndBackButton(PgShareDesign) {
   }
 
   shareImage() {
-    Share.shareImage(new Image({ path: Path.AssetsUriScheme + 'icon.png' }), this, []);
+    Share.shareImage(new Image({ path: Path.ImagesUriScheme + 'smartpace.png' }), this, []);
   }
 
   shareText() {
