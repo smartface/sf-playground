@@ -1,24 +1,38 @@
 import PgWebBrowserDesign from 'generated/pages/pgWebBrowser';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import WebBrowser from '@smartface/native/ui/webbrowser';
 import Color from '@smartface/native/ui/color';
-import { ButtonType } from '@smartface/native/ui/alertview/alertview';
+import { IWebBrowserOptions } from '@smartface/native/ui/webbrowser/webbrowser';
+import WebBrowser from '@smartface/native/ui/webbrowser';
 
 export default class PgWebBrowser extends withDismissAndBackButton(PgWebBrowserDesign) {
-  private webOptions;
+  private _setItemColor = false;
+  private _setBarColor = false;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnShowBrowser.on('press', () => this.initWebBrowser());
+    this.btnShowBrowser.on('press', () => this.showBrowser());
+    this.swItemColor.on('toggleChanged', (value) => {
+      this._setItemColor = value;
+    });
+    this.swTabColor.on('toggleChanged', (value) => {
+      this._setBarColor = value;
+    });
   }
 
-  initWebBrowser() {
-    this.webOptions = new WebBrowser.Options();
-    this.webOptions.url = 'https://smartface.io';
-    this.webOptions.barColor = Color.create('#00A1F1');
-    this.webOptions.ios.itemColor = Color.WHITE;
-    this.webOptions.ios.statusBarVisible = true;
-    WebBrowser.show(this, this.webOptions);
+  showBrowser() {
+    let options = {
+      url: 'https://smartface.io',
+      ios: {}
+    } as Partial<IWebBrowserOptions>;
+    if (this._setBarColor) {
+      options.barColor = Color.RED;
+    }
+    if (this._setItemColor) {
+      options.ios = { itemColor: Color.BLUE };
+    }
+    console.info('options', options);
+    const webBrowser = new WebBrowser(options);
+    webBrowser.show(this);
   }
 
   onShow() {
