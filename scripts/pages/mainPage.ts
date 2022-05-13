@@ -22,7 +22,7 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
 
   initListViewIndex() {
     const statusBarHeight = System.OS === System.OSType.ANDROID ? Application.statusBar.height : 0;
-    this.flListViewIndex.topMargin = System.OSType.ANDROID ? this.headerBar.height : 20 + statusBarHeight;
+    this.flListViewIndex.topMargin = (System.OSType.ANDROID ? this.headerBar.height : 20) + statusBarHeight;
     this.flListViewIndex.indexes = this._searchKeys;
     this.flListViewIndex.onItemSelect = (selectedLabel: string) => {
       const indexToScroll = this._searchStrings.findIndex((ss) => ss[0] === selectedLabel);
