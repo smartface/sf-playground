@@ -57,7 +57,11 @@
 			"props": {
 				"children": [
 					"c79b-0e79-3e1a-426c",
-					"01a2-e295-056b-f803"
+					"01a2-e295-056b-f803",
+					"2bb3-4c55-bcea-f617",
+					"e129-8f39-6f5e-d591",
+					"847b-1ee6-c6bd-00f2",
+					"5753-0c43-95ff-5d86"
 				],
 				"name": "sv",
 				"parent": "28ff-c191-b033-01f6"
@@ -80,14 +84,15 @@
 			"type": "TextView",
 			"userProps": {
 				"borderWidth": 1,
-				"height": 200,
+				"height": 140,
 				"html": "<br>",
+				"maxLines": 0,
 				"text": "\n",
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".sf-button .marginHorizontal .marginVertical",
 			"id": "01a2-e295-056b-f803",
 			"oldName": "button1",
 			"props": {
@@ -100,6 +105,74 @@
 			"type": "Button",
 			"userProps": {
 				"text": "Get",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "2bb3-4c55-bcea-f617",
+			"oldName": "btnGet_1",
+			"props": {
+				"children": [],
+				"name": "btnPost",
+				"parent": "11f2-fa8a-1a74-85b2",
+				"text": "Post",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Post",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "e129-8f39-6f5e-d591",
+			"oldName": "btnPost_1",
+			"props": {
+				"children": [],
+				"name": "btnPut",
+				"parent": "11f2-fa8a-1a74-85b2",
+				"text": "Put",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Put",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "847b-1ee6-c6bd-00f2",
+			"oldName": "btnPut_1",
+			"props": {
+				"children": [],
+				"name": "btnPatch",
+				"parent": "11f2-fa8a-1a74-85b2",
+				"text": "Patch",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Patch",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal .marginVertical",
+			"id": "5753-0c43-95ff-5d86",
+			"oldName": "btnPatch_1",
+			"props": {
+				"children": [],
+				"name": "btnDelete",
+				"parent": "11f2-fa8a-1a74-85b2",
+				"text": "Delete",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Delete",
 				"usePageVariable": true
 			}
 		}
