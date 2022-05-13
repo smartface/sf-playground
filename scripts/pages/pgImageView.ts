@@ -61,11 +61,6 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
     });
   }
 
-  workaround() {
-    this.imgOriginal.dispatch({ type: 'updateUserStyle', userStyle: { imageFillType: 'ASPECTFILL' } });
-    this.imgMain.dispatch({ type: 'updateUserStyle', userStyle: { imageFillType: 'ASPECTFILL' } });
-  }
-
   setTintColor() {
     this.imgFillTypes.dispatch({
       type: 'updateUserStyle',
@@ -184,7 +179,6 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
-    this.workaround();
   }
 
   /**
