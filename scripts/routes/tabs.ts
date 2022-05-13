@@ -40,7 +40,7 @@ import PgNativeFunctions from 'pages/pgNativeFunctions';
 import PgTouchConfiguration from 'pages/pgTouchConfiguration';
 import PgToastMessage from 'pages/pgToastMessage';
 import PgHttp from 'pages/pgHttp';
-import PgFileIO from 'pages/pgFileIO';
+import PgFile from 'pages/pgFile';
 import PgSound from 'pages/pgSound';
 import PgAsyncTask from 'pages/pgAsyncTask';
 import PgCrypto from 'pages/pgCrypto';
@@ -132,7 +132,7 @@ export const tab0: Tab = {
     PgToastMessage,
     PgHardware,
     PgHttp,
-    PgFileIO,
+    PgFile,
     PgSound,
     PgAsyncTask,
     PgRangeSliderAndSlider,
