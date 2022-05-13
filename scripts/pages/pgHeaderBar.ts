@@ -128,6 +128,9 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
     customView.justifyContent = FlexLayout.JustifyContent.CENTER;
     customView.alignItems = FlexLayout.AlignItems.STRETCH;
     customView.alignContent = FlexLayout.AlignContent.STRETCH;
+    customView.backgroundColor = Color.GRAY;
+    customView.height = 45;
+    customView.width = 300;
     const label = new Label({ text: 'TitleLayout', textColor: Color.BLACK, height: 50, width: 100, backgroundColor: Color.RED });
     customView.addChild(label);
     this.headerBar.titleLayout = customView;
