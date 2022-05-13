@@ -9,11 +9,15 @@ export default class PgBlob extends withDismissAndBackButton(PgBlobDesign) {
   }
 
   tester() {
-    const smartfaceBlob = Blob.createFromUTF8String('Smartface');
-    console.info('Smartface string into blob into base64: ' + smartfaceBlob.toBase64());
-    console.info('Smartface string into blob into string: ' + smartfaceBlob.toString());
-    console.info('Smartface Blob Size: ' + smartfaceBlob.size);
-    console.info('Smartface Blob sliced [0-4] into string: ' + smartfaceBlob.slice(0, 4).toString());
+    const smartfaceBlob = Blob.createFromUTF8String('Smartface Hello World');
+    try {
+      console.info('Smartface string into blob into base64: ' + smartfaceBlob.toBase64());
+      console.info('Smartface string into blob into string: ' + smartfaceBlob.toString());
+      console.info('Smartface Blob Size: ' + smartfaceBlob.size);
+      console.info('Smartface Blob sliced [2-8] into string: ' + smartfaceBlob.android.slice(2, 8).toString());
+    } catch (error) {
+      console.error(error.message, { stack: error.stack });
+    }
   }
 
   onShow() {
