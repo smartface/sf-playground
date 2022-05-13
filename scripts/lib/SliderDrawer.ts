@@ -22,7 +22,6 @@ myButton.on('press', () => {
 
 mySliderDrawer.drawerPosition = SliderDrawer.Position.LEFT;
 // mySliderDrawer.drawerPosition = SliderDrawer.Position.RIGHT;
-mySliderDrawer.enabled = false;
 
 mySliderDrawer.addChild(myButton, 'myButton', '.sf-button', {
   height: 40,
@@ -36,3 +35,4 @@ mySliderDrawer.addChild(myButton, 'myButton', '.sf-button', {
 });
 
 Application.sliderDrawer = mySliderDrawer;
+// mySliderDrawer.enabled = false;
