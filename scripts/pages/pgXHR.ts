@@ -18,16 +18,16 @@ export default class PgXHR extends withDismissAndBackButton(PgXHRDesign) {
 
   deleteRequest() {
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = (e) => {
+    xhr.onreadystatechange = () => {
       if (xhr.readyState !== 4) {
         return;
       }
 
-      if (xhr.status === 200) {
-        console.log('DELETE', e);
-        this.tvData.text = JSON.stringify(e?.data);
+      if (String(xhr.status).startsWith('2')) {
+        console.log('DELETE', xhr);
+        this.tvData.text = xhr.responseText;
       } else {
-        console.warn('error', e);
+        console.warn('error', xhr);
       }
       this._requestNumber += 1;
     };
@@ -38,16 +38,16 @@ export default class PgXHR extends withDismissAndBackButton(PgXHRDesign) {
 
   patchRequest() {
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = (e) => {
+    xhr.onreadystatechange = () => {
       if (xhr.readyState !== 4) {
         return;
       }
 
-      if (xhr.status === 200) {
-        console.log('PATCH', e);
-        this.tvData.text = JSON.stringify(e?.data);
+      if (String(xhr.status).startsWith('2')) {
+        console.log('PATCH', xhr);
+        this.tvData.text = xhr.responseText;
       } else {
-        console.warn('error', e);
+        console.warn('error', xhr);
       }
       this._requestNumber += 1;
     };
@@ -62,16 +62,15 @@ export default class PgXHR extends withDismissAndBackButton(PgXHRDesign) {
 
   putRequest() {
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = (e) => {
+    xhr.onreadystatechange = () => {
       if (xhr.readyState !== 4) {
         return;
       }
-
-      if (xhr.status === 200) {
-        console.log('PUT', e);
-        this.tvData.text = JSON.stringify(e?.data);
+      if (String(xhr.status).startsWith('2')) {
+        console.log('PUT', xhr);
+        this.tvData.text = xhr.responseText;
       } else {
-        console.warn('error', e);
+        console.warn('error', xhr);
       }
       this._requestNumber += 1;
     };
@@ -89,16 +88,16 @@ export default class PgXHR extends withDismissAndBackButton(PgXHRDesign) {
 
   postRequest() {
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = (e) => {
+    xhr.onreadystatechange = () => {
       if (xhr.readyState !== 4) {
         return;
       }
 
-      if (xhr.status === 200) {
-        console.log('POST', e);
-        this.tvData.text = JSON.stringify(e?.data);
+      if (String(xhr.status).startsWith('2')) {
+        console.log('POST', xhr);
+        this.tvData.text = xhr.responseText;
       } else {
-        console.warn('error', e);
+        console.warn('error', xhr);
       }
       this._requestNumber += 1;
     };
@@ -115,16 +114,16 @@ export default class PgXHR extends withDismissAndBackButton(PgXHRDesign) {
 
   getRequest() {
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = (e) => {
+    xhr.onreadystatechange = () => {
       if (xhr.readyState !== 4) {
         return;
       }
 
-      if (xhr.status === 200) {
-        console.log('GET', e);
-        this.tvData.text = JSON.stringify(e?.data);
+      if (String(xhr.status).startsWith('2')) {
+        console.log('GET', xhr);
+        this.tvData.text = xhr.responseText;
       } else {
-        console.warn('error', e);
+        console.warn('error', xhr);
       }
       this._requestNumber += 1;
     };

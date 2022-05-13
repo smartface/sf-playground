@@ -10,5 +10,6 @@
     },
     "workspace.preserveWindow": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.autoSave": "off"
+    "editor.autoSave": "off",
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
