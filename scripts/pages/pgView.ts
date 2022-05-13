@@ -156,6 +156,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     const items = ['AUTO', 'CENTER', 'FLEX_START', 'FLEX_END', 'STRETCH'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       [this.v1, this.v2, this.v3].forEach((v) => {
         v.dispatch({
           type: 'updateUserStyle',

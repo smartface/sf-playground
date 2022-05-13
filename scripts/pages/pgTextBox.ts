@@ -30,6 +30,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
     const items = ['TOPLEFT', 'TOPCENTER', 'TOPRIGHT', 'MIDLEFT', 'MIDCENTER', 'MIDRIGHT', 'BOTTOMLEFT', 'BOTTOMCENTER', 'BOTTOMRIGHT'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.tvMain.textAlignment = TextAlignment[items[index]];
     });
     picker.show();

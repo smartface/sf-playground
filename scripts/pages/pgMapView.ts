@@ -52,6 +52,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     const items = ['HYBRID', 'NORMAL', 'SATELLITE'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.map.type = MapViewType[items[index]];
     });
     picker.show();

@@ -17,6 +17,7 @@ export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShim
     const fills = ['DOWN', 'LEFT', 'RIGHT', 'UP'];
     picker.items = fills;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.sfl.shimmeringDirection = ShimmeringDirection[fills[index]];
     });
     picker.show();

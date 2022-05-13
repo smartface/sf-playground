@@ -81,6 +81,7 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
     const fills = ['ASPECTFILL', 'ASPECTFIT', 'BOTTOMCENTER', 'BOTTOMLEFT', 'BOTTOMRIGHT', 'MIDCENTER', 'MIDLEFT', 'MIDRIGHT', 'NORMAL', 'STRETCH', 'TOPCENTER', 'TOPLEFT', 'TOPRIGHT'];
     picker.items = fills;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.imgFillTypes.dispatch({
         type: 'updateUserStyle',
         userStyle: { imageFillType: fills[index] }

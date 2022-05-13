@@ -21,6 +21,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     const items = ['CENTER', 'FLEX_START', 'FLEX_END', 'SPACE_AROUND', 'SPACE_BETWEEN'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
@@ -54,6 +55,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     const items = ['COLUMN', 'COLUMN_REVERSE', 'ROW', 'ROW_REVERSE'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
@@ -87,6 +89,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     const items = ['AUTO', 'CENTER', 'FLEX_START', 'FLEX_END', 'STRETCH'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
@@ -105,6 +108,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     const items = ['AUTO', 'CENTER', 'FLEX_START', 'FLEX_END', 'STRETCH'];
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {

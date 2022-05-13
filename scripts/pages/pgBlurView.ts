@@ -47,6 +47,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
     });
     picker.items = items;
     picker.on('selected', (index) => {
+      console.info('selected: ', index);
       this._effectStyle = BlurViewEffectStyle[items[index]];
       this.showHideBlurView(true);
     });
