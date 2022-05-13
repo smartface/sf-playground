@@ -661,10 +661,10 @@
     shortid "^2.2.16"
     text "^0.1.0"
 
-"@smartface/dispatcher@^0.8.4":
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.8.4.tgz#9db7e04a41bc03963315c550191da25294ca3930"
-  integrity sha512-ENfYX2Zue8KBv6Lf6II95iarkptiFRjTF/MnF0soT17pN2oUUoXBawpRNl3eL0Vuv4Pvia/ec8qNcFxB0P/G3w==
+"@smartface/dispatcher@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.9.0.tgz#b5ac5d742fa07350e13bf1ee1494a7ca8744ca3d"
+  integrity sha512-PeyffLWnCSf9i3PSLNzIjCoAfbniHX7B0xbyMKkLR7TGnn/70YdQkuznqWz3wsHbPTreiR7bkUli8FH/xqTwQQ==
   dependencies:
     cors "^2.8.5"
     crc-32 "^1.2.0"
@@ -710,6 +710,13 @@
   dependencies:
     async "^2.6.1"
 
+"@smartface/library-reader@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.9.0.tgz#435522b573a02dcbf38fdf2820a47f4bdc85cbdb"
+  integrity sha512-GdogucZs3+4HBALg0TQeqvQi84V+riPDxH+DOQv3+2xehntNOOh/9qNI/8qpY+OA75urHSEvt4LXID/sYIQxyQ==
+  dependencies:
+    async "^2.6.1"
+
 "@smartface/marketplace-service@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@smartface/marketplace-service/-/marketplace-service-1.2.0.tgz#336332332287d75cca9f5b52f1f1b9c3fdd9d69c"
@@ -732,10 +739,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-1.3.16.tgz#7c8ddd1e044a28cf01c7bdb0cdf726467f9ce508"
   integrity sha512-WlHAJnAiXgKmT/4qh8Rx3TO9Y4sejDo2Xe/M25s4ClECWNB+RY132KDq0LPi2ZnmmCOASRg6Qbp7QZ24WYQdTA==
 
-"@smartface/tsc-watch@^0.8.0":
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.8.6.tgz#de53588c7bd2e2c6a906856d9d699973d75355db"
-  integrity sha512-/REU5MQgxg03xuW2PAzSrsvnK4NPXreSgjPjMl12reCcmZAcIb9UnF/Ss/ItBCK8n6XtLWrYBnVQ2CBFoDtghQ==
+"@smartface/tsc-watch@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.9.0.tgz#2fc734a4697e3fd1e01f84a6977ae83ad539a57b"
+  integrity sha512-v/hubHMwzCD5v8jUCoFjeqrRncVl7MHgOdoQfx4UFhZl0D5NiIk6QRncQFm1psm00jwlrsAKeWLVo/ChZ2ShrA==
   dependencies:
     chalk "^4.1.2"
     tsc-watch "^4.6.0"
