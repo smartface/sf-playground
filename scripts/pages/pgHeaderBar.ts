@@ -89,6 +89,8 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
   }
 
   setContentInset() {
+    //You need to test this onShow or onLoad
+    //Call this function there
     console.info('setContentInset');
     this.getHeaderBar().android.contentInset = { left: 45, right: 30 };
   }
