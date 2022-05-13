@@ -71,12 +71,12 @@
 				"children": [],
 				"name": "btn2",
 				"parent": "0e0b-d7f0-7994-d28a",
-				"text": "Long Press",
+				"text": "Long Press (Android)",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"text": "Long Press",
+				"text": "Long Press (Android)",
 				"usePageVariable": true
 			}
 		}
