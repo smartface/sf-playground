@@ -1,7 +1,6 @@
 import PgShareDesign from 'generated/pages/pgShare';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import { ButtonEvents } from '@smartface/native/ui/button/button-events';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
 import Contacts from '@smartface/native/device/contacts';
@@ -11,11 +10,11 @@ import Image from '@smartface/native/ui/image';
 export default class PgShare extends withDismissAndBackButton(PgShareDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnShare.on(ButtonEvents.Press, () => this.share());
-    this.btnShareContacts.on(ButtonEvents.Press, () => this.shareContact());
-    this.btnShareFile.on(ButtonEvents.Press, () => this.shareFile());
-    this.btnShareImage.on(ButtonEvents.Press, () => this.shareImage());
-    this.btnShareText.on(ButtonEvents.Press, () => this.shareText());
+    this.btnShare.on('press', () => this.share());
+    this.btnShareContacts.on('press', () => this.shareContact());
+    this.btnShareFile.on('press', () => this.shareFile());
+    this.btnShareImage.on('press', () => this.shareImage());
+    this.btnShareText.on('press', () => this.shareText());
   }
 
   share() {
@@ -39,7 +38,7 @@ export default class PgShare extends withDismissAndBackButton(PgShareDesign) {
   }
 
   shareImage() {
-    Share.shareImage(new Image({ path: Path.ImagesUriScheme + 'smartpace.png' }), this, []);
+    Share.shareImage(new Image({ path: Path.ImagesUriScheme + 'smartface.png' }), this, []);
   }
 
   shareText() {
