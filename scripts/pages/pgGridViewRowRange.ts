@@ -4,11 +4,11 @@ import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import GviTitle from 'components/GviTitle';
 import System from '@smartface/native/device/system';
+import Screen from '@smartface/native/device/screen';
 
 type DatasetType = { title: string; backgroundColor: Color };
-const SPAN_COUNT: number = 2;
 const COLORS: string[] = ['#ffffff', '#e6f7ff', '#cceeff', '#b3e6ff', '#99ddff', '#80d4ff', '#66ccff', '#4dc3ff', '#33bbff', '#1ab2ff', '#00aaff', '#0099e6', '#0088cc', '#0077b3', '#006699'];
-const ITEM_WIDTH: number = 150;
+
 export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridViewRowRangeDesign) {
   myDataset: DatasetType[] = this.generateDataset();
   refreshCount = 0;
@@ -56,7 +56,7 @@ export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridV
   }
 
   initGridView() {
-    this.gvMain.layoutManager.onItemLength = () => ITEM_WIDTH;
+    this.gvMain.layoutManager.onItemLength = () => Screen.width;
     this.gvMain.itemCount = this.myDataset.length;
     this.gvMain.refreshEnabled = false;
     this.gvMain.scrollBarEnabled = false;

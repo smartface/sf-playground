@@ -3,12 +3,14 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import GviTitle from 'components/GviTitle';
+import System from '@smartface/native/device/system';
 import GridView from '@smartface/native/ui/gridview';
+import Screen from '@smartface/native/device/screen';
 
 type DatasetType = { title: string; backgroundColor: Color };
 const SPAN_COUNT: number = 1;
 const COLORS: string[] = ['#ffffff', '#e6f7ff', '#cceeff', '#b3e6ff', '#99ddff', '#80d4ff', '#66ccff', '#4dc3ff', '#33bbff', '#1ab2ff', '#00aaff', '#0099e6', '#0088cc', '#0077b3', '#006699'];
-const ITEM_WIDTH: number = 150;
+
 export default class PgGridViewPagination extends withDismissAndBackButton(PgGridViewPaginationDesign) {
   index: number = 0;
   myDataset: DatasetType[] = this.generateDataset();
@@ -28,9 +30,10 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
   }
 
   initGridView() {
-    this.gvMain.layoutManager.onItemLength = () => ITEM_WIDTH;
+    this.gvMain.layoutManager.onItemLength = () => Screen.width;
+
     this.gvMain.layoutManager.ios.targetContentOffset = (proposedContentOffset, velocity) => {
-      let positionX = this.gvMain.contentOffset.x / ITEM_WIDTH;
+      let positionX = this.gvMain.contentOffset.x / Screen.width;
       let decimalPositionX = positionX;
       let precisionPositionX = positionX % 1;
 
@@ -40,9 +43,8 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
         decimalPositionX = decimalPositionX + 1;
       }
 
-      return { x: decimalPositionX * ITEM_WIDTH, y: 0 };
+      return { x: decimalPositionX * Screen.width, y: 0 };
     };
-
     this.gvMain.backgroundColor = Color.TRANSPARENT;
     this.gvMain.android.paginationEnabled = true;
     this.gvMain.scrollBarEnabled = false;
@@ -54,24 +56,15 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
       gridViewItem.lblTitle.backgroundColor = backgroundColor;
       gridViewItem.applyLayout();
     };
-
     this.gvMain.ios.decelerationRate = GridView.iOS.DecelerationRate.FAST;
     this.gvMain.layoutManager.contentInset = { top: 0, left: 0, bottom: 0, right: 20 };
   }
 
-  /**
-   * @event onShow
-   * This event is called when the page appears on the screen (everytime).
-   */
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
-  /**
-   * @event onLoad
-   * This event is called once when the page is created.
-   */
   onLoad() {
     super.onLoad();
     this.initGridView();

@@ -18,7 +18,12 @@
 				"parent": null
 			},
 			"type": "Page",
-			"userProps": {},
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
 			"version": "0.0.1.a"
 		},
 		{
@@ -49,7 +54,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".sf-button .marginHorizontal .marginVertical",
 			"id": "77da-80b0-3a0a-c3e4",
 			"oldName": "button1",
 			"props": {
@@ -68,7 +73,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".sf-button .marginHorizontal .marginVertical",
 			"id": "8270-aa11-1a2b-0da0",
 			"oldName": "button2",
 			"props": {
@@ -87,7 +92,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".sf-button .marginHorizontal .marginVertical",
 			"id": "7715-f786-df98-63cd",
 			"oldName": "button3",
 			"props": {
