@@ -60,13 +60,12 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
       right: 0,
       left: 0,
       bottom: 0,
-      positionType: FlexLayout.PositionType.ABSOLUTE,
-      backgroundColor: Color.BLACK
+      positionType: FlexLayout.PositionType.ABSOLUTE
     });
-    // myBlurView.android.rootView = this.flBlur;
-    // myBlurView.android.blurRadius = this._blurRadius;
+    myBlurView.android.rootView = this.flBlur;
+    myBlurView.android.blurRadius = this._blurRadius;
     myBlurView.ios.effectStyle = this._effectStyle;
-    myBlurView.android.overlayColor = this._overlayColor;
+    myBlurView.android.overlayColor = Color.TRANSPARENT; //This needs to be changed afterwards
     this.myBlurView = myBlurView;
     this.flBlur.addChild(myBlurView, 'myBlurView');
     System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.flBlur.applyLayout();
