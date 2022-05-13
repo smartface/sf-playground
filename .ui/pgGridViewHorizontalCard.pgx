@@ -15,7 +15,12 @@
 				"parent": null
 			},
 			"type": "Page",
-			"userProps": {},
+			"userProps": {
+				"paddingBottom": 0,
+				"paddingLeft": 0,
+				"paddingRight": 0,
+				"paddingTop": 0
+			},
 			"version": "0.0.1.a"
 		},
 		{
@@ -89,16 +94,7 @@
 				"id": "c23a-58bd-e72b-1b7e"
 			},
 			"type": "GridViewItem",
-			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0
-			}
+			"userProps": {}
 		}
 	]
 }
