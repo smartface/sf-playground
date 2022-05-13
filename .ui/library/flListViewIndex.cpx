@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-flexLayout .flListViewIndex",
+			"hiddenComponent": true,
 			"id": "a0b6-0ec3-4011-9736",
 			"initialized": false,
 			"props": {
