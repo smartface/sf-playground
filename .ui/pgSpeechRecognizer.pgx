@@ -1,98 +1,94 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "2e48-370e-365b-a2de",
-			"userProps": {},
 			"className": ".sf-page",
+			"id": "2e48-370e-365b-a2de",
+			"initialized": true,
 			"props": {
-				"name": "pgSpeechRecognizer",
-				"parent": null,
 				"children": [
 					"a4ff-2c81-f467-bbe0",
-					"2336-6255-d816-f739"
+					"2336-6255-d816-f739",
+					"2769-7247-2fd7-cede",
+					"1271-bc83-317a-6e5d"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "a4ff-2c81-f467-bbe0",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "2e48-370e-365b-a2de",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "2336-6255-d816-f739",
-			"userProps": {
-				"title": "SpeechRecognizer"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "2e48-370e-365b-a2de",
-				"children": [],
-				"title": "SpeechRecognizer",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"1df3-28df-e52f-615a": {
-			"type": "Page",
-			"id": "2e48-370e-365b-a2de",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgSpeechRecognizer",
-				"parent": null,
-				"children": [
-					"a4ff-2c81-f467-bbe0",
-					"2336-6255-d816-f739"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		"6eb0-c83a-9afc-2d9b": {
-			"type": "StatusBar",
-			"id": "a4ff-2c81-f467-bbe0",
+			"type": "Page",
 			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "2e48-370e-365b-a2de",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+			"version": "0.0.1.a"
 		},
-		"b1cb-c9d8-7eee-6712": {
-			"type": "HeaderBar",
-			"id": "2336-6255-d816-f739",
-			"userProps": {
-				"title": "SpeechRecognizer"
-			},
-			"className": ".sf-headerBar",
+		{
+			"className": ".sf-statusBar",
+			"id": "a4ff-2c81-f467-bbe0",
 			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "2e48-370e-365b-a2de"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "2336-6255-d816-f739",
+			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "2e48-370e-365b-a2de",
+				"title": "SpeechRecognizer"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "SpeechRecognizer"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "2769-7247-2fd7-cede",
+			"oldName": "label1",
+			"props": {
 				"children": [],
-				"title": "SpeechRecognizer",
-				"visible": true,
-				"isRemovable": false
+				"name": "lbl",
+				"parent": "2e48-370e-365b-a2de",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 150,
+				"maxLines": 0,
+				"text": "label1",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "1271-bc83-317a-6e5d",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnStartStop",
+				"parent": "2e48-370e-365b-a2de",
+				"text": "Start Recording",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Start Recording",
+				"usePageVariable": true
 			}
 		}
-	}
+	]
 }

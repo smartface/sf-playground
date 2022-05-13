@@ -7,73 +7,61 @@ import SpeechRecognizer from '@smartface/native/global/speechrecognizer';
 import Application from '@smartface/native/application';
 import System from '@smartface/native/device/system';
 import { styleableComponentMixin } from '@smartface/styling-context';
-
-class StyleableButton extends styleableComponentMixin(Button) {}
-class StyleableTextArea extends styleableComponentMixin(TextArea) {}
+import { getPermission } from '@smartface/extension-utils/lib/permission';
 
 export default class PgSpeechRecognizer extends withDismissAndBackButton(PgSpeechRecognizerDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
+    this.btnStartStop.on('press', () => {
+      console.info('SpeechRecognizer.isRunning(): ', SpeechRecognizer.isRunning());
+      if (!SpeechRecognizer.isRunning()) {
+        this.btnStartStop.text = 'Stop Recording';
+        if (System.OS === System.OSType.IOS) {
+          this.startSpeechRecognizer();
+        } else {
+          getPermission({
+            permissionText: 'RECORD_AUDIO_CODE',
+            //@ts-ignore
+            androidPermission: Application.Android.Permissions.RECORD_AUDIO,
+            permissionTitle: 'RECORD_AUDIO permission'
+          })
+            .then(() => {
+              this.startSpeechRecognizer();
+            })
+            .catch((error) => console.error(error.message, { stack: error.stack }));
+        }
+      } else {
+        this.btnStartStop.text = 'Start Recording';
+        SpeechRecognizer.stop();
+      }
+    });
   }
 
-  /**
-   * @event onShow
-   * This event is called when the page appears on the screen (everytime).
-   */
+  startSpeechRecognizer() {
+    console.log('startSpeechRecognizer');
+    SpeechRecognizer.start({
+      locale: 'en_US',
+      onResult: (result) => {
+        console.info('onResult ', result);
+        this.lbl.text = result;
+      },
+      onFinish: (result) => {
+        console.info('onFinish ', result);
+        this.btnStartStop.text = 'Start Recording';
+      },
+      onError: (error) => {
+        console.info('onError ', error);
+        this.btnStartStop.text = 'Start Recording';
+      }
+    });
+  }
+
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
-  /**
-   * @event onLoad
-   * This event is called once when the page is created.
-   */
   onLoad() {
     super.onLoad();
-    const myButton = new StyleableButton({
-      height: 200,
-      text: 'Start Recording'
-    });
-    const myTextArea = new StyleableTextArea({
-      height: 100
-    });
-    myButton.onPress = function () {
-      if (!SpeechRecognizer.isRunning()) {
-        myButton.text = 'Stop Recording';
-        if (System.OS === 'iOS') {
-          startSpeechRecognizer();
-        } else if (System.OS === 'Android') {
-          const RECORD_AUDIO_CODE = 1002;
-          Application.android.requestPermissions(RECORD_AUDIO_CODE, Application.Android.Permissions.RECORD_AUDIO);
-          Application.android.onRequestPermissionsResult = function (e) {
-            if (e.requestCode === RECORD_AUDIO_CODE && e.result) {
-              startSpeechRecognizer();
-            }
-          };
-        }
-      } else {
-        myButton.text = 'Start Recording';
-        SpeechRecognizer.stop();
-      }
-    };
-    this.addChild(myTextArea, 'uniqueTextArea');
-    this.addChild(myButton, 'uniqueButton');
-    function startSpeechRecognizer() {
-      SpeechRecognizer.start({
-        locale: 'en_US',
-        onResult: function (result) {
-          myTextArea.text = result;
-        },
-        onFinish: function (result) {
-          myButton.text = 'Start Recording';
-          alert('Finish : ' + result);
-        },
-        onError: function (error) {
-          myButton.text = 'Start Recording';
-          alert('Error : ' + error);
-        }
-      });
-    }
   }
 }
