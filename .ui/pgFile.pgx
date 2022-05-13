@@ -206,7 +206,7 @@
 					"family": "SFProText",
 					"style": "Semibold"
 				},
-				"height": 200,
+				"height": 100,
 				"maxLines": 0,
 				"text": "label1",
 				"usePageVariable": true
@@ -232,7 +232,7 @@
 					"family": "SFProText",
 					"style": "Semibold"
 				},
-				"height": 200,
+				"height": 100,
 				"maxLines": 0,
 				"text": "File content",
 				"usePageVariable": true
