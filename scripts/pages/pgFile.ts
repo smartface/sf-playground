@@ -133,15 +133,15 @@ export default class PgFile extends withDismissAndBackButton(PgFileDesign) {
       dataDirectory: Path.DataDirectory,
       assets: Path.AssetsUriScheme,
       separator: Path.Separator,
-      images: Path.ImagesUriScheme
-      //   storages: Path?.android?.storages
+      images: Path.ImagesUriScheme,
+      storages: Path.android.storages
     });
     this.lblPathDetails.text = `
         dataDirectory: ${Path.DataDirectory}
         assets: ${Path.AssetsUriScheme}
         separator: ${Path.Separator}
         images: ${Path.ImagesUriScheme}
-        storages: Path?.android?.storages
+        storages: ${Path.android.storages}
     `;
   }
 

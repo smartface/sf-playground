@@ -17,12 +17,12 @@ export default class PgListView extends withDismissAndBackButton(PgListViewDesig
   }
 
   initPressEvents() {
-    this.flMultipleLvi.imgRightArrow.on('touch', () => this.router.push('PgListviewMultipleLvi'));
-    this.flPagination.imgRightArrow.on('touch', () => this.router.push('PgListviewPagination'));
-    this.flStickyItem.imgRightArrow.on('touch', () => this.router.push('PgListviewSticky'));
-    this.flSwipeItem.imgRightArrow.on('touch', () => this.router.push('PgListviewSwipe'));
-    this.flDragDrop.imgRightArrow.on('touch', () => this.router.push('PgListviewDragDrop'));
-    this.flZebra.imgRightArrow.on('touch', () => this.router.push('PgListviewZebra'));
+    this.flMultipleLvi.on('touch', () => this.router.push('PgListviewMultipleLvi'));
+    this.flPagination.on('touch', () => this.router.push('PgListviewPagination'));
+    this.flStickyItem.on('touch', () => this.router.push('PgListviewSticky'));
+    this.flSwipeItem.on('touch', () => this.router.push('PgListviewSwipe'));
+    this.flDragDrop.on('touch', () => this.router.push('PgListviewDragDrop'));
+    this.flZebra.on('touch', () => this.router.push('PgListviewZebra'));
   }
 
   /**

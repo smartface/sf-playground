@@ -121,7 +121,7 @@ export default class PgListviewSticky extends withDismissAndBackButton(PgListvie
       }
     };
 
-    this.lvMain.onScroll = (params: any): void => {
+    this.lvMain.on('scroll', (params) => {
       if (params.contentOffset.y >= 240) {
         headerSticky.visible = true;
       } else {
@@ -133,7 +133,7 @@ export default class PgListviewSticky extends withDismissAndBackButton(PgListvie
       } else {
         footerSticky.visible = true;
       }
-    };
+    });
 
     let headerSticky = new StyleableFlexLayout();
 

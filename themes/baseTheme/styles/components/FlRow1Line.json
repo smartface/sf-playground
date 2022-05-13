@@ -1,6 +1,6 @@
 {
   ".flRow1Line": {
-    "height": 40,
+    "height": 50,
     "flexProps": {
       "flexDirection": "COLUMN"
     },
@@ -20,8 +20,8 @@
         "positionType": "ABSOLUTE"
       },
       "bottom": 0,
-      "left": 15,
-      "backgroundColor": "rgba( 70, 70, 70, 1 )",
+      "left": 0,
+      "backgroundColor": "rgba( 70, 70, 70, 0.3 )",
       "right": 0
     }
   }

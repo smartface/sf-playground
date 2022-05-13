@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-gridViewItem",
+			"hiddenComponent": true,
 			"id": "c23a-58bd-e72b-1b7e",
 			"props": {
 				"children": [
