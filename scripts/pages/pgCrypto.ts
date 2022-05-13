@@ -3,17 +3,7 @@ import { Route, Router } from '@smartface/router';
 import Crypto from '@smartface/native/global/crypto';
 import Data from '@smartface/native/global/data';
 import System from '@smartface/native/device/system';
-import Label from '@smartface/native/ui/label';
-import Button from '@smartface/native/ui/button';
-import TextBox from '@smartface/native/ui/textbox';
-import { styleableComponentMixin, styleableContainerComponentMixin } from '@smartface/styling-context';
-import FlexLayout from '@smartface/native/ui/flexlayout';
 import { withDismissAndBackButton } from '@smartface/mixins';
-
-class StyleableButton extends styleableComponentMixin(Button) {}
-class StyleableTextBox extends styleableComponentMixin(TextBox) {}
-class StyleableLabel extends styleableComponentMixin(Label) {}
-class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
 
 const ENCRYPT_KEY_SIZE = 1024;
 const ENCRYPT_CIPHER_TYPE = 'RSA/ECB/PKCS1Padding';
@@ -22,20 +12,31 @@ const PRIVATE_KEY_DEVICE_KEY = 'privateKey'; //The key to save to the device dat
 
 type KeyPairType = { publicKey: string; privateKey: string };
 
-//You should create new Page from UI-Editor and extend with it.
 export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
-  myLabel: StyleableLabel;
-  encryptButton: StyleableButton;
-  decryptButton: StyleableButton;
-  tbEncrypt: StyleableTextBox;
   keyPair: KeyPairType;
+  aesKey: string;
+  iv: string;
   private encryptedText = '';
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.myLabel = new StyleableLabel();
-    this.encryptButton = new StyleableButton();
-    this.decryptButton = new StyleableButton();
-    this.tbEncrypt = new StyleableTextBox();
+    this.btnEncryptRSA.on('press', () => {
+      this.encryptedText = this.encryptRSA(this.tbRSA.text || '', this.keyPair.publicKey);
+      this.lblRsaOutput.text = this.encryptedText;
+    });
+    this.btnDecryptRSA.on('press', () => {
+      const decryptedObjectText = this.decryptRSA(this.encryptedText, this.keyPair.privateKey);
+      const decrpytedObject = JSON.parse(decryptedObjectText);
+      this.lblRsaOutput.text = decrpytedObject.secretText;
+    });
+    this.btnEncryptAES.on('press', async () => {
+      const encryptedText = await this.encryptAES(this.tbRSA.text || '');
+      this.encryptedText = encryptedText;
+      this.lblAesOutput.text = this.encryptedText;
+    });
+    this.btnDecryptAES.on('press', async () => {
+      const decryptedText = await this.decryptAES(this.encryptedText);
+      this.lblAesOutput.text = decryptedText;
+    });
   }
 
   generateKeyPair(): KeyPairType {
@@ -59,7 +60,43 @@ export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
     };
   }
 
-  encrypt(text: string, key: string): string {
+  encryptAES(text: string): Promise<string> {
+    this.aesKey = Crypto.AES.generateKey(32);
+    return new Promise((resolve, reject) =>
+      Crypto.AES.encryptGCMAsync({
+        plainText: text,
+        ivSize: 12,
+        key: this.aesKey,
+        onComplete: (encryptedText: string, iv: string) => {
+          this.iv = iv;
+          resolve(encryptedText);
+        },
+        onFailure: (err) => {
+          console.error(err);
+          reject(err);
+        }
+      })
+    );
+  }
+
+  decryptAES(text: string): Promise<string> {
+    return new Promise((resolve, reject) =>
+      Crypto.AES.decryptGCMAsync({
+        encryptedText: text,
+        iv: this.iv,
+        key: this.aesKey,
+        onComplete: (decryptedText) => {
+          resolve(decryptedText);
+        },
+        onFailure: (err) => {
+          console.error(err);
+          reject(err);
+        }
+      })
+    );
+  }
+
+  encryptRSA(text: string, key: string): string {
     const keyBody = {
       text: 'Smartface Inc.',
       secretText: text
@@ -72,7 +109,7 @@ export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
     });
   }
 
-  decrypt(encryptedText: string, key: string): string {
+  decryptRSA(encryptedText: string, key: string): string {
     return Crypto.RSA.decrypt({
       encryptedText: encryptedText,
       key,
@@ -81,66 +118,13 @@ export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
     });
   }
 
-  initLabel() {
-    this.myLabel.text = 'Decrpyted text will go here';
-    this.addChild(this.myLabel, 'myLabel', '.sf-label');
-  }
-
-  initButtons() {
-    this.keyPair = this.generateKeyPair();
-    const buttonWrapper = new StyleableFlexLayout();
-    this.addChild(buttonWrapper, 'buttonWrapper', '.sf-flexlayout', {
-      heigth: 120
-    });
-    this.encryptButton.text = 'Encrypt';
-    this.encryptButton.onPress = () => {
-      this.encryptedText = this.encrypt(this.tbEncrypt.text || '', this.keyPair.publicKey);
-      this.myLabel.text = this.encryptedText;
-    };
-    this.decryptButton.text = 'Decrypt';
-    this.decryptButton.onPress = () => {
-      const decryptedObjectText = this.decrypt(this.encryptedText, this.keyPair.privateKey);
-      const decrpytedObject = JSON.parse(decryptedObjectText);
-      this.myLabel.text = decrpytedObject.secretText;
-    };
-    buttonWrapper.addChild(this.encryptButton, 'encryptButton', '.sf-button');
-    buttonWrapper.addChild(this.decryptButton, 'decryptButton', '.sf-button');
-  }
-
-  initTextBox() {
-    this.tbEncrypt.hint = 'Enter text to encrypt';
-    this.addChild(this.tbEncrypt, 'tbEncrypt', '.sf-textbox');
-  }
-
-  // The page design has been made from the code for better
-  // showcase purposes. As a best practice, remove this and
-  // use WYSIWYG editor to style your pages.
-  centerizeTheChildrenLayout() {
-    this.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          flexDirection: 'ROW',
-          justifyContent: 'CENTER',
-          alignItems: 'CENTER',
-          flexWrap: 'WRAP'
-        }
-      }
-    });
-  }
-
   onShow() {
     super.onShow();
+    this.keyPair = this.generateKeyPair();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
   onLoad() {
     super.onLoad();
-    this.centerizeTheChildrenLayout();
-
-    this.initTextBox();
-    this.initLabel();
-    this.initButtons();
-    this.layout.applyLayout();
   }
 }
