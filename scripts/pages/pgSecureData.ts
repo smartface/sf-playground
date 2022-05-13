@@ -14,23 +14,33 @@ export default class PgSecureData extends withDismissAndBackButton(PgSecureDataD
       },
       key: 'keyparamater'
     });
-    this.btnSave.on(ButtonEvents.Press, this.saveToSecureData);
-    this.btnLoad.on(ButtonEvents.Press, this.readFromSecureData);
-    this.btnDelete.on(ButtonEvents.Press, this.deleteSecureData);
+    this.btnSave.on('press', () => this.saveToSecureData());
+    this.btnLoad.on('press', () => this.readFromSecureData());
+    this.btnDelete.on('press', () => this.deleteSecureData());
   }
 
   deleteSecureData() {
-    this.mySecureData.delete();
+    this.mySecureData
+      .delete()
+      .then(() => (this.lbl.text = 'DELETED'))
+      .catch((error) => console.error(error.message, { stack: error.stack }));
   }
 
   readFromSecureData() {
-    this.mySecureData.read().then((value) => {
-      this.lbl.text = 'READ: ' + value;
-    });
+    this.mySecureData
+      .read()
+      .then((value) => {
+        this.lbl.text = 'READ: ' + value;
+      })
+      .catch((error) => {
+        if (!error) {
+          this.lbl.text = 'NOT_FOUND';
+        }
+      });
   }
 
   saveToSecureData() {
-    this.mySecureData.save({ value: this.tv.text });
+    this.mySecureData.save({ value: this.tv.text }).then(() => (this.lbl.text = 'SAVED'));
   }
 
   onShow() {
