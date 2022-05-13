@@ -17,6 +17,7 @@ import ActionKeyType from '@smartface/native/ui/shared/android/actionkeytype';
 import { TextBoxEvents } from '@smartface/native/ui/textbox/textbox-events';
 import Picker from '@smartface/native/ui/picker';
 import AutoCapitalize from '@smartface/native/ui/shared/autocapitalize';
+import KeyboardLayout from '@smartface/component-keyboardlayout';
 
 export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -122,11 +123,7 @@ export default class PgTextBox extends withDismissAndBackButton(PgTextBoxDesign)
 
     this.tbDynamic.hint = 'Change keyboard types from button below';
 
-    // const keyboardLayouts = KeyboardLayout.init([
-    //     this.tbName,
-    //     this.tbMail,
-    //     this.tbPin
-    // ]);
+    const keyboardLayouts = KeyboardLayout.init([this.tbName, this.tbMail, this.tbPin]);
     this.initTextBoxEvents();
   }
 
