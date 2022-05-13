@@ -2,7 +2,6 @@ import PgWebBrowserDesign from 'generated/pages/pgWebBrowser';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
-import { IWebBrowserOptions } from '@smartface/native/ui/webbrowser/webbrowser';
 import WebBrowser from '@smartface/native/ui/webbrowser';
 
 export default class PgWebBrowser extends withDismissAndBackButton(PgWebBrowserDesign) {
@@ -20,18 +19,13 @@ export default class PgWebBrowser extends withDismissAndBackButton(PgWebBrowserD
   }
 
   showBrowser() {
-    let options = {
+    const webBrowser = new WebBrowser({
       url: 'https://smartface.io',
-      ios: {}
-    } as Partial<IWebBrowserOptions>;
-    if (this._setBarColor) {
-      options.barColor = Color.RED;
-    }
-    if (this._setItemColor) {
-      options.ios = { itemColor: Color.BLUE };
-    }
-    console.info('options', options);
-    const webBrowser = new WebBrowser(options);
+      barColor: this._setBarColor ? Color.RED : null,
+      ios: {
+        itemColor: this._setItemColor ? Color.BLUE : null
+      }
+    });
     webBrowser.show(this);
   }
 
