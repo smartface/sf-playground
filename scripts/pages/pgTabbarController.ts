@@ -21,7 +21,6 @@ export default class PgTabbarController extends TabBarController {
   }
 
   updateStyles() {
-    this.barHeight = 22;
     this.android.dividerColor = Color.RED;
     this.android.dividerPadding = 2;
     this.android.dividerWidth = 11;
@@ -40,11 +39,8 @@ export default class PgTabbarController extends TabBarController {
   }
 
   onShow() {
-    super.onShow();
     this.updateStyles();
   }
 
-  onLoad() {
-    super.onLoad();
-  }
+  onLoad() {}
 }
