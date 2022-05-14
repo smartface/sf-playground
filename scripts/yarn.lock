@@ -60,11 +60,6 @@
     tinycolor2 "^1.4.1"
     wolfy87-eventemitter "^5.2.9"
 
-"@smartface/extension-zoomable-imageview@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-zoomable-imageview/-/extension-zoomable-imageview-4.0.1.tgz#1969daba0384e8095365dfbbc6c109a87275153a"
-  integrity sha512-VgOt4aHZCxLPoAbsDPqDsyAkZzRXgx++3u42Nv6G+KDDqLvTWVY7tIbxyW8zwFVLr+mNn2wvhNKdxHfViRWppg==
-
 "@smartface/html-to-text@^1.0.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@smartface/html-to-text/-/html-to-text-1.2.0.tgz#463cf8c60e30af0db96c9e136bcabbc7a37d764d"
