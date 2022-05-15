@@ -6,11 +6,11 @@
     "@smartface/extension-listviewindex": "^3.0.0",
     "@smartface/extension-sms-receiver": "^4.0.0",
     "@smartface/extension-utils": "^16.2.9",
-    "@smartface/mixins": "^5.0.0-beta",
-    "@smartface/native": "^5.0.0-alpha",
+    "@smartface/mixins": "^5.0.0",
+    "@smartface/native": "^5.0.0",
     "@smartface/router": "^2.3.1",
-    "@smartface/source-map": "^5.0.0-beta",
-    "@smartface/styling-context": "^5.0.0-beta",
+    "@smartface/source-map": "^5.0.0",
+    "@smartface/styling-context": "^5.0.0",
     "@smartface/webviewbridge": "1.0.4",
     "axios": "0.26.1"
   }
