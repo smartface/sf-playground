@@ -9,7 +9,7 @@
 					"0ac2-0a2e-330c-b8b4",
 					"4146-0501-c7de-998c",
 					"3d4c-a7eb-87ae-1234",
-					"59ed-dd51-f486-4075",
+					"e6f3-d09c-3653-56a2",
 					"7f61-3b03-0f51-021b",
 					"1807-6bff-7394-9e3f",
 					"7ee9-5ee5-5497-8fbf"
@@ -42,11 +42,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "4807-daeb-cce7-d542",
-				"title": "pgLocationManagment"
+				"title": "LocationManagment"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgLocationManagment"
+				"title": "LocationManagment"
 			}
 		},
 		{
@@ -67,19 +67,58 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "59ed-dd51-f486-4075",
+			"className": ".sf-flexLayout #pgLocationManagment-flWrap",
+			"id": "e6f3-d09c-3653-56a2",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"cba9-173e-dddb-405e",
+					"ce7c-a3de-e210-1624"
+				],
+				"name": "flWrap",
+				"parent": "4807-daeb-cce7-d542"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button .grow-relative",
+			"id": "cba9-173e-dddb-405e",
 			"props": {
 				"children": [],
 				"name": "btnNavigate",
-				"parent": "4807-daeb-cce7-d542",
+				"parent": "e6f3-d09c-3653-56a2",
 				"text": "Navigate",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"testId": "sHwEY8FGV",
+				"marginBottom": null,
+				"marginRight": 5,
+				"marginTop": null,
+				"testId": "zpb1Y2hQw",
 				"text": "Navigate",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .grow-relative",
+			"id": "ce7c-a3de-e210-1624",
+			"oldName": "btnNavigate_1",
+			"props": {
+				"children": [],
+				"name": "btnLastKnownLocation",
+				"parent": "e6f3-d09c-3653-56a2",
+				"text": "Get Last Location",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"marginBottom": null,
+				"marginLeft": 5,
+				"marginTop": null,
+				"testId": "Kmz3s6Bhom",
+				"text": "Get Last Location",
 				"usePageVariable": true
 			}
 		},

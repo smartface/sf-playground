@@ -1,26 +1,70 @@
 {
-	".card": {
-		"backgroundColor": "rgba(255,255,255,1)",
-		"borderRadius": 10,
-		"marginTop": 15,
-		"paddingLeft": 15,
-		"paddingRight": 15
-	},
-	".grow": {
-		"flexProps": {
-			"flexGrow": 1
-		},
-        "&-relative": {
-            "flexProps": {
-			    "flexGrow": 1,
-                "positionType": "RELATIVE"
-            }
-        }
-	},
-	".getCombinedStyleTest" : {
-		"backgroundColor": "rgba(0,0,0,1)"
-	},
+  ".card": {
+    "backgroundColor": "rgba(255,255,255,1)",
+    "borderRadius": 10,
+    "marginTop": 15,
+    "paddingLeft": 15,
+    "paddingRight": 15
+  },
+  ".grow": {
+    "flexProps": {
+      "flexGrow": 1
+    },
+    "&-relative": {
+      "flexProps": {
+        "flexGrow": 1,
+        "positionType": "RELATIVE"
+      }
+    }
+  },
+  ".getCombinedStyleTest": {
+    "backgroundColor": "rgba(0,0,0,1)"
+  },
   ".getNativeStyleTest": {
     "backgroundColor": "rgba(0,0,0,1)"
+  },
+  ".swipeItem": {
+    "textColor": "#FFFFFF",
+    "font": {
+      "family": "SFProText",
+      "style": "Regular",
+      "bold": false,
+      "italic": false,
+      "size": 14
+    },
+    "ios": {
+      "iconTextSpacing": 5,
+      "padding": 30
+    },
+    ".delete": {
+      "backgroundColor": "#FF0000"
+    },
+    ".edit": {
+      "backgroundColor": "#0000FF"
+    }
+  },
+  ".marginHorizontal": {
+    "marginLeft": 15,
+    "marginRight": 15
+  },
+  ".marginVertical": {
+    "marginBottom": 15,
+    "marginTop": 15
+  },
+  ".gradient": {
+    "&-left": {
+      "backgroundColor": {
+        "startColor": "#340470",
+        "endColor": "#c6aee5",
+        "direction": "DIAGONAL_LEFT"
+      }
+    },
+    "&-vertical": {
+      "backgroundColor": {
+        "startColor": "#340470",
+        "endColor": "#c6aee5",
+        "direction": "VERTICAL"
+      }
+    }
   }
 }

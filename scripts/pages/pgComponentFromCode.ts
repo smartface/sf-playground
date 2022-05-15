@@ -1,9 +1,9 @@
-import PgComponentFromCodeDesign from "generated/pages/pgComponentFromCode";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Route, Router } from "@smartface/router";
-import { styleableContainerComponentMixin } from "@smartface/styling-context";
-import FlexLayout from "@smartface/native/ui/flexlayout";
-import Color from "@smartface/native/ui/color";
+import PgComponentFromCodeDesign from 'generated/pages/pgComponentFromCode';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Route, Router } from '@smartface/router';
+import { styleableContainerComponentMixin } from '@smartface/styling-context';
+import FlexLayout from '@smartface/native/ui/flexlayout';
+import Color from '@smartface/native/ui/color';
 
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
 
@@ -15,17 +15,17 @@ export default class PgComponentFromCode extends withDismissAndBackButton(PgComp
   initComponentFromCode() {
     const flexParent = new StyleableFlexLayout({ backgroundColor: Color.RED });
     const flexChild = new StyleableFlexLayout({ backgroundColor: Color.GREEN });
-    this.addChild(flexParent, "flexParent", ".sf-flexLayout");
+    this.addChild(flexParent, 'flexParent', '.sf-flexLayout');
 
-    flexParent.addChild(flexChild, "flexChild", ".sf-flexLayout"); //Necessary
+    flexParent.addChild(flexChild, 'flexChild', '.sf-flexLayout'); //Necessary
 
     flexChild.dispatch({
-      type: "updateUserStyle",
+      type: 'updateUserStyle',
       userStyle: {
-        backgroundColor: "#00FF00",
+        backgroundColor: '#00FF00',
         flexGrow: 1
       }
-    })
+    });
   }
 
   onShow() {
@@ -35,6 +35,6 @@ export default class PgComponentFromCode extends withDismissAndBackButton(PgComp
   }
 
   onLoad() {
-      super.onLoad();
+    super.onLoad();
   }
 }

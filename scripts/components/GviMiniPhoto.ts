@@ -1,8 +1,9 @@
-import GviMiniPhotoDesign from "generated/my-components/GviMiniPhoto";
-import Image from "@smartface/native/ui/image";
-import { themeService } from "theme";
-const { borderWidth: activeBorder, borderColor } = themeService.getNativeStyle(".gviMiniPhoto-flex-active");
-const width = themeService.getNativeStyle(".gviMiniPhoto").width;
+import GviMiniPhotoDesign from 'generated/my-components/GviMiniPhoto';
+import Image from '@smartface/native/ui/image';
+import { themeService } from 'theme';
+import { IImage } from '@smartface/native/ui/image/image';
+const { borderWidth: activeBorder, borderColor } = themeService.getNativeStyle('.gviMiniPhoto-flex-active');
+const width = themeService.getNativeStyle('.gviMiniPhoto').width;
 
 export default class GviMiniPhoto extends GviMiniPhotoDesign {
   pageName?: string | undefined;
@@ -11,7 +12,7 @@ export default class GviMiniPhoto extends GviMiniPhotoDesign {
     this.pageName = pageName;
     this.flex.borderColor = borderColor;
   }
-  set image(image: Image) {
+  set image(image: IImage) {
     this.img.image = image;
   }
   set active(value: boolean) {

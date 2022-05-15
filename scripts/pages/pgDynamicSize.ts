@@ -1,8 +1,9 @@
-import PgDynamicSizeDesign from "generated/pages/pgDynamicSize";
-import { withDismissAndBackButton } from "@smartface/mixins";
+import PgDynamicSizeDesign from 'generated/pages/pgDynamicSize';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Route, Router } from '@smartface/router';
 
 export default class PgDynamicSize extends withDismissAndBackButton(PgDynamicSizeDesign) {
-  constructor() {
+  constructor(private router?: Router, private route?: Route) {
     super({});
   }
 
@@ -14,10 +15,11 @@ export default class PgDynamicSize extends withDismissAndBackButton(PgDynamicSiz
   onShow() {
     super.onShow();
     const newText =
-      "Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines";
+      'Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines, Some really long text that will overflow into more lines';
     setTimeout(() => {
       this.flDynamicSize.setText(newText, this);
-    }, 1500);
+    }, 2500);
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
   /**

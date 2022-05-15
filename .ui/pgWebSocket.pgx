@@ -8,7 +8,9 @@
 				"children": [
 					"301d-7ec3-4bb8-3b9d",
 					"7ec5-e244-5446-1424",
-					"480c-123b-d704-2854"
+					"480c-123b-d704-2854",
+					"255d-171a-233a-b38e",
+					"2e97-81f5-a629-220e"
 				],
 				"name": "pgWebSocket",
 				"orientation": "PORTRAIT",
@@ -39,11 +41,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "b226-ea77-66b2-d26d",
-				"title": "pgWebSocket"
+				"title": "WebSocket"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgWebSocket"
+				"title": "WebSocket"
 			}
 		},
 		{
@@ -61,6 +63,40 @@
 					"flexGrow": 1
 				},
 				"testId": "8a_fliabq",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "255d-171a-233a-b38e",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnReconnect",
+				"parent": "b226-ea77-66b2-d26d",
+				"text": "Reconnect",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Reconnect",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2e97-81f5-a629-220e",
+			"oldName": "btnReconnect_1",
+			"props": {
+				"children": [],
+				"name": "btnDisconnect",
+				"parent": "b226-ea77-66b2-d26d",
+				"text": "Disconnect",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Disconnect",
 				"usePageVariable": true
 			}
 		}

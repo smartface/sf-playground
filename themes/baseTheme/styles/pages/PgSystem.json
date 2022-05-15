@@ -1,0 +1,11 @@
+{
+  "#pgSystem": {
+    "&-lblSystemDetails": {
+      "maxLines": 0,
+      "font": {
+        "style": "Medium",
+        "size": 15
+      }
+    }
+  }
+}

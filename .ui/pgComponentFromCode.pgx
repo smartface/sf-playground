@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "4c39-db79-b2f1-ca86",
 			"userProps": {
-				"title": "pgComponentFromCode"
+				"title": "ComponentFromCode"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "a7ae-6da9-37b5-c68a",
 				"children": [],
-				"title": "pgComponentFromCode",
+				"title": "ComponentFromCode",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "4c39-db79-b2f1-ca86",
 			"userProps": {
-				"title": "pgComponentFromCode"
+				"title": "ComponentFromCode"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "a7ae-6da9-37b5-c68a",
 				"children": [],
-				"title": "pgComponentFromCode",
+				"title": "ComponentFromCode",
 				"visible": true,
 				"isRemovable": false
 			}

@@ -1,0 +1,48 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "80bd-3eda-065c-3aa0",
+			"initialized": true,
+			"props": {
+				"children": [
+					"801c-288e-c948-15dc",
+					"0006-f5ad-b9ff-b15a"
+				],
+				"name": "pgAccelerometer",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "801c-288e-c948-15dc",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "80bd-3eda-065c-3aa0"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0006-f5ad-b9ff-b15a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "80bd-3eda-065c-3aa0",
+				"title": "Accelerometer"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Accelerometer"
+			}
+		}
+	]
+}

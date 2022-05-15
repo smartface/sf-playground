@@ -1,0 +1,582 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "c0c4-4076-0dd8-1cdc",
+			"initialized": true,
+			"props": {
+				"children": [
+					"13ae-bf65-4564-ec64",
+					"e660-ffcb-fdc4-3051",
+					"043a-c3ab-f7c6-5b5b"
+				],
+				"name": "pgVideoView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "13ae-bf65-4564-ec64",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "c0c4-4076-0dd8-1cdc"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "e660-ffcb-fdc4-3051",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "c0c4-4076-0dd8-1cdc",
+				"title": "VideoView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "VideoView"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "043a-c3ab-f7c6-5b5b",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"3efa-11cd-3aaa-4a7b",
+					"985b-0064-cb81-e2cc",
+					"abb3-c21d-0ac6-eac0",
+					"0473-2b49-bc9e-5cf1",
+					"9b2f-f9cf-31e5-11a3",
+					"5f82-cfe5-aacf-07e0",
+					"9fcd-52ee-ee53-1cd3",
+					"0d99-c797-680c-c1ff",
+					"2af9-4daa-81e9-18a3",
+					"f30c-fc01-8971-420a",
+					"2a19-1a57-1728-fe8f",
+					"2e05-5e25-5e6b-797d"
+				],
+				"name": "sv",
+				"parent": "c0c4-4076-0dd8-1cdc"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "3efa-11cd-3aaa-4a7b",
+			"oldName": "flFastForward_1",
+			"props": {
+				"children": [
+					"d12b-a078-8bbc-0ce9",
+					"e030-fd14-0e0b-e3a3"
+				],
+				"name": "flLoad",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50
+			}
+		},
+		{
+			"className": ".sf-button .grow .marginHorizontal",
+			"id": "d12b-a078-8bbc-0ce9",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnLoadFile",
+				"parent": "3efa-11cd-3aaa-4a7b",
+				"text": "Load File",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Load File",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .grow .marginHorizontal",
+			"id": "e030-fd14-0e0b-e3a3",
+			"oldName": "btnLoadFile_1",
+			"props": {
+				"children": [],
+				"name": "btnLoadURL",
+				"parent": "3efa-11cd-3aaa-4a7b",
+				"text": "Load URL",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Load URL",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-videoView",
+			"id": "985b-0064-cb81-e2cc",
+			"oldName": "videoView1",
+			"props": {
+				"children": [],
+				"name": "video",
+				"parent": "043a-c3ab-f7c6-5b5b",
+				"usePageVariable": true
+			},
+			"type": "VideoView",
+			"userProps": {
+				"backgroundColor": "rgba( 1, 58, 11, 1 )",
+				"height": 300,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "abb3-c21d-0ac6-eac0",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnGetInfo",
+				"parent": "043a-c3ab-f7c6-5b5b",
+				"text": "Get Video Info",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Get Video Info",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "0473-2b49-bc9e-5cf1",
+			"oldName": "btnGetInfo_1",
+			"props": {
+				"children": [],
+				"name": "btnSeekTo",
+				"parent": "043a-c3ab-f7c6-5b5b",
+				"text": "Seek To +45",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Seek To +45",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9b2f-f9cf-31e5-11a3",
+			"oldName": "btnSeekTo_1",
+			"props": {
+				"children": [],
+				"name": "btnLoopEnabled",
+				"parent": "043a-c3ab-f7c6-5b5b",
+				"text": "Enable Loop",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Enable Loop",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5f82-cfe5-aacf-07e0",
+			"oldName": "btnGetInfo_1",
+			"props": {
+				"children": [],
+				"name": "btnCustomErrorMessage",
+				"parent": "043a-c3ab-f7c6-5b5b",
+				"text": "Set Custom Error Message (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Set Custom Error Message (Android)",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "9fcd-52ee-ee53-1cd3",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"1cbb-08c0-f934-0733",
+					"e393-777d-8768-dec7"
+				],
+				"name": "flFastForward",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "1cbb-08c0-f934-0733",
+			"oldName": "switch1",
+			"props": {
+				"children": [],
+				"name": "swFastForward",
+				"parent": "9fcd-52ee-ee53-1cd3",
+				"toggle": true,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"toggle": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "e393-777d-8768-dec7",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblFastForward",
+				"parent": "9fcd-52ee-ee53-1cd3",
+				"text": "Fast Forward Button (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Fast Forward Button (Android)"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "0d99-c797-680c-c1ff",
+			"oldName": "flnextButtonEnabled",
+			"props": {
+				"children": [
+					"fc4a-ae07-6ba8-fe1a",
+					"a862-7c15-a0f2-949c"
+				],
+				"name": "flNextButtonEnabled",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "fc4a-ae07-6ba8-fe1a",
+			"oldName": "swLoadingIndicator",
+			"props": {
+				"children": [],
+				"name": "swNextButtonEnabled",
+				"parent": "0d99-c797-680c-c1ff",
+				"toggle": true,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"toggle": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "a862-7c15-a0f2-949c",
+			"oldName": "lblLoadingIndicator",
+			"props": {
+				"children": [],
+				"name": "lblNextButtonEnabled",
+				"parent": "0d99-c797-680c-c1ff",
+				"text": "Next Button Enabled (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Next Button Enabled (Android)"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "2af9-4daa-81e9-18a3",
+			"oldName": "flNextButtonEnabled_1",
+			"props": {
+				"children": [
+					"573c-6475-83ab-6a2a",
+					"6719-d164-6510-62f7"
+				],
+				"name": "flPreviousButtonEnabled",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "573c-6475-83ab-6a2a",
+			"oldName": "swNextButtonEnabled",
+			"props": {
+				"children": [],
+				"name": "swPreviousButtonEnabled",
+				"parent": "2af9-4daa-81e9-18a3",
+				"toggle": true,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"toggle": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "6719-d164-6510-62f7",
+			"oldName": "lblNextButtonEnabled",
+			"props": {
+				"children": [],
+				"name": "lblPreviousButtonEnabled",
+				"parent": "2af9-4daa-81e9-18a3",
+				"text": "Previous Button Enabled (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Previous Button Enabled (Android)"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "f30c-fc01-8971-420a",
+			"oldName": "flRewindButtonEnabled_1",
+			"props": {
+				"children": [
+					"5da7-4324-62ac-5ad4",
+					"a74d-b129-fe9e-b74d"
+				],
+				"name": "flShowController",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "5da7-4324-62ac-5ad4",
+			"oldName": "swflShowController",
+			"props": {
+				"children": [],
+				"name": "swShowController",
+				"parent": "f30c-fc01-8971-420a",
+				"toggle": true,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"toggle": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "a74d-b129-fe9e-b74d",
+			"oldName": "lblRewindButtonEnabled",
+			"props": {
+				"children": [],
+				"name": "lblShowController",
+				"parent": "f30c-fc01-8971-420a",
+				"text": "Show Controller (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Show Controller (Android)"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "2a19-1a57-1728-fe8f",
+			"oldName": "flPreviousButtonEnabled_1",
+			"props": {
+				"children": [
+					"ab93-4a8c-ce13-cd96",
+					"523e-f708-825f-5e4b"
+				],
+				"name": "flRewindButtonEnabled",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "ab93-4a8c-ce13-cd96",
+			"oldName": "swPreviousButtonEnabled",
+			"props": {
+				"children": [],
+				"name": "swRewindButtonEnabled",
+				"parent": "2a19-1a57-1728-fe8f",
+				"toggle": true,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"toggle": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "523e-f708-825f-5e4b",
+			"oldName": "lblPreviousButtonEnabled",
+			"props": {
+				"children": [],
+				"name": "lblRewindButtonEnabled",
+				"parent": "2a19-1a57-1728-fe8f",
+				"text": "Rewind Button Enabled (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Rewind Button Enabled (Android)"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "2e05-5e25-5e6b-797d",
+			"oldName": "flFastForward_1",
+			"props": {
+				"children": [
+					"c799-c417-eb3a-c3d7",
+					"a20e-59cb-6e5c-65d3"
+				],
+				"name": "flLoadingIndicator",
+				"parent": "043a-c3ab-f7c6-5b5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": 50
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "c799-c417-eb3a-c3d7",
+			"oldName": "swFastForward",
+			"props": {
+				"children": [],
+				"name": "swLoadingIndicator",
+				"parent": "2e05-5e25-5e6b-797d",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"toggle": false,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "a20e-59cb-6e5c-65d3",
+			"oldName": "lblFastForward",
+			"props": {
+				"children": [],
+				"name": "lblLoadingIndicator",
+				"parent": "2e05-5e25-5e6b-797d",
+				"text": "Loading Indicator (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Loading Indicator (Android)"
+			}
+		}
+	]
+}

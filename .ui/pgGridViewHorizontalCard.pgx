@@ -1,0 +1,100 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "8514-4c4b-f076-4754",
+			"initialized": true,
+			"props": {
+				"children": [
+					"4e70-860e-3423-52ff",
+					"9251-b205-d7f9-62b8",
+					"758d-d588-c22f-10cb"
+				],
+				"name": "pgGridViewHorizontalCard",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": 0,
+				"paddingLeft": 0,
+				"paddingRight": 0,
+				"paddingTop": 0
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "4e70-860e-3423-52ff",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "8514-4c4b-f076-4754"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "9251-b205-d7f9-62b8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "8514-4c4b-f076-4754",
+				"title": "GridViewHorizontalCard"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "GridViewHorizontalCard"
+			}
+		},
+		{
+			"className": ".sf-gridView",
+			"id": "758d-d588-c22f-10cb",
+			"oldName": "gridView1",
+			"props": {
+				"children": [
+					"7188-8404-7272-0c2b"
+				],
+				"name": "gvMain",
+				"parent": "8514-4c4b-f076-4754",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "GridView",
+			"userProps": {
+				"height": 200,
+				"layoutManager": {
+					"spanCount": 1,
+					"scrollDirection": "HORIZONTAL"
+				},
+				"left": 0,
+				"marginBottom": null,
+				"marginTop": null,
+				"testId": "_8X2VcUUO",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-gridViewItem",
+			"hiddenComponent": false,
+			"id": "7188-8404-7272-0c2b",
+			"props": {
+				"children": [],
+				"name": "gviTitle",
+				"parent": "758d-d588-c22f-10cb"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "gviTitle",
+				"id": "c23a-58bd-e72b-1b7e"
+			},
+			"type": "GridViewItem",
+			"userProps": {}
+		}
+	]
+}

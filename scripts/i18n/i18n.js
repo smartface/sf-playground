@@ -9,37 +9,36 @@
 global.lang = {};
 
 SMF.i18n = {
-	currentLang: null,
-	defaultLang: 'en',
-	languageKV: {},
-	get: function(key, languageCode) {
-		languageCode = languageCode || this.currentLang;
-		if (typeof this.languageKV[languageCode] === 'undefined') {
-			return '';
-		}
-		return this.languageKV[languageCode][key];
-	},
-	defineLanguage: function(languageCode, obj) {
-		this.languageKV[languageCode] = obj;
-	},
-	switchLanguage: function(languageCode) {
-		if (typeof this.languageKV[languageCode] === 'undefined') {
-			if (typeof this.languageKV[this.defaultLang] === 'undefined') {
-				var languageCodes = Object.keys(this.languageKV);
-				if (languageCodes.length === 0) {
-					return;
-				}
-				// In case default options did not work, pick the first one.
-				this.switchLanguage(languageCodes[0]);
-			} else {
-				this.switchLanguage(this.defaultLang);
-			}
-		}
-		else {
-			this.currentLang = languageCode;
-			global.lang = this.languageKV[languageCode];
-		}
-	}
+  currentLang: null,
+  defaultLang: 'en',
+  languageKV: {},
+  get: function (key, languageCode) {
+    languageCode = languageCode || this.currentLang;
+    if (typeof this.languageKV[languageCode] === 'undefined') {
+      return '';
+    }
+    return this.languageKV[languageCode][key];
+  },
+  defineLanguage: function (languageCode, obj) {
+    this.languageKV[languageCode] = obj;
+  },
+  switchLanguage: function (languageCode) {
+    if (typeof this.languageKV[languageCode] === 'undefined') {
+      if (typeof this.languageKV[this.defaultLang] === 'undefined') {
+        var languageCodes = Object.keys(this.languageKV);
+        if (languageCodes.length === 0) {
+          return;
+        }
+        // In case default options did not work, pick the first one.
+        this.switchLanguage(languageCodes[0]);
+      } else {
+        this.switchLanguage(this.defaultLang);
+      }
+    } else {
+      this.currentLang = languageCode;
+      global.lang = this.languageKV[languageCode];
+    }
+  }
 };
 
 require('i18n/de.js');

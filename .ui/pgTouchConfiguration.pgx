@@ -40,11 +40,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "aa26-2d29-3351-758b",
-				"title": "pgTouchConfiguration"
+				"title": "TouchConfiguration"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgTouchConfiguration"
+				"title": "TouchConfiguration"
 			}
 		},
 		{

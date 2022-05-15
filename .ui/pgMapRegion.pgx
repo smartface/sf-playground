@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "327b-8058-27d5-6d77",
-				"title": "pgEmpty"
+				"title": "Empty"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgEmpty"
+				"title": "Empty"
 			}
 		},
 		{

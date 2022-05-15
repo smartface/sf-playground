@@ -1,0 +1,111 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "a527-d7bf-8d47-0b95",
+			"initialized": true,
+			"props": {
+				"children": [
+					"e793-9b08-c38b-750a",
+					"bb71-f67f-0cd4-7ea5",
+					"dda5-f6e9-dea6-ed8f",
+					"b635-f3de-80ca-c862",
+					"651a-d603-5bc9-9701"
+				],
+				"name": "pgContacts",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "e793-9b08-c38b-750a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "a527-d7bf-8d47-0b95"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "bb71-f67f-0cd4-7ea5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "a527-d7bf-8d47-0b95",
+				"title": "Contacts"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Contacts"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "dda5-f6e9-dea6-ed8f",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnFetchAll",
+				"parent": "a527-d7bf-8d47-0b95",
+				"text": "Fetch All",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"marginBottom": 15,
+				"marginTop": 15,
+				"testId": "MeYTBzrDK",
+				"text": "Fetch All",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b635-f3de-80ca-c862",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnPickContact",
+				"parent": "a527-d7bf-8d47-0b95",
+				"text": "PickContact",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"marginBottom": 15,
+				"marginTop": 15,
+				"testId": "_S9I5etZ7",
+				"text": "PickContact",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "651a-d603-5bc9-9701",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnAdd",
+				"parent": "a527-d7bf-8d47-0b95",
+				"text": "Add",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"marginBottom": 15,
+				"marginTop": 15,
+				"testId": "Xa_nsOkFk",
+				"text": "Add",
+				"usePageVariable": true
+			}
+		}
+	]
+}

@@ -1,11 +1,11 @@
-import PgNativeFunctionsDesign from "generated/pages/pgNativeFunctions";
-import { Router, Route } from "@smartface/router";
-import Button from "@smartface/native/ui/button";
+import PgNativeFunctionsDesign from 'generated/pages/pgNativeFunctions';
+import { Router, Route } from '@smartface/router';
+import Button from '@smartface/native/ui/button';
 // import Linking from "@smartface/native/application/linking";
 // import Permission from "@smartface/native/device/permission";
-import Application from "@smartface/native/application";
-import Location from "@smartface/native/device/location";
-import Network from "@smartface/native/device/network";
+import Application from '@smartface/native/application';
+import Location from '@smartface/native/device/location';
+import Network from '@smartface/native/device/network';
 // import "@smartface/native/core/base";
 // import { openMaps, openNavigation } from "@smartface/native/application/maps";
 // import { TransportTypes } from "@smartface/native/application/linking/shared/map";
@@ -105,15 +105,15 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
   }
 
   onShow() {
-      super.onShow();
+    super.onShow();
   }
-  
+
   onLoad() {
-      super.onLoad();
-      this.initLinking();
-      this.initPermission();
-      this.initLocation();
-      this.initNetwork();
-      this.initMaps();
+    super.onLoad();
+    this.initLinking();
+    this.initPermission();
+    this.initLocation();
+    this.initNetwork();
+    this.initMaps();
   }
 }

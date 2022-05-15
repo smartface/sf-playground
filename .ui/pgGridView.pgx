@@ -1,0 +1,202 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "29a1-15f0-d80e-1301",
+			"initialized": false,
+			"props": {
+				"children": [
+					"9157-54e1-d8bb-c3e7",
+					"86c7-69ad-8662-8746",
+					"2dae-12ba-9b1c-c9b2",
+					"5fde-3868-cb8d-d27b",
+					"08d8-0d34-9587-a02b",
+					"c053-2c1a-e234-8294",
+					"4d6b-e008-4bf5-924c"
+				],
+				"name": "pgGridView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "9157-54e1-d8bb-c3e7",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "29a1-15f0-d80e-1301"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "86c7-69ad-8662-8746",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "29a1-15f0-d80e-1301",
+				"title": "GridView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "GridView"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-label",
+			"id": "2dae-12ba-9b1c-c9b2",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "29a1-15f0-d80e-1301",
+				"text": "GRIDVIEW SAMPLES"
+			},
+			"ref": null,
+			"type": "Label",
+			"userProps": {
+				"text": "GRIDVIEW SAMPLES",
+				"textAlignment": "MIDCENTER"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout .flRow1Line",
+			"hiddenComponent": false,
+			"id": "5fde-3868-cb8d-d27b",
+			"oldName": "flRow1Line",
+			"props": {
+				"children": [],
+				"name": "flFullSpan",
+				"parent": "29a1-15f0-d80e-1301",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "flRow1Line",
+				"id": "3541-f1d3-c335-9e7c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"testId": "mJbTFSjsg"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout .flRow1Line",
+			"hiddenComponent": false,
+			"id": "08d8-0d34-9587-a02b",
+			"oldName": "flRow1Line_4",
+			"props": {
+				"children": [],
+				"name": "flHorizontalCard",
+				"parent": "29a1-15f0-d80e-1301",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "flRow1Line",
+				"id": "3541-f1d3-c335-9e7c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"testId": "CT3HE-ZtqL"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout .flRow1Line",
+			"hiddenComponent": false,
+			"id": "c053-2c1a-e234-8294",
+			"oldName": "flRow1Line_3",
+			"props": {
+				"children": [],
+				"name": "flRowRange",
+				"parent": "29a1-15f0-d80e-1301",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "flRow1Line",
+				"id": "3541-f1d3-c335-9e7c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"testId": "uN1YpcFXZf"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout .flRow1Line",
+			"hiddenComponent": false,
+			"id": "4d6b-e008-4bf5-924c",
+			"oldName": "flRow1Line_2",
+			"props": {
+				"children": [],
+				"name": "flPagination",
+				"parent": "29a1-15f0-d80e-1301",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "flRow1Line",
+				"id": "3541-f1d3-c335-9e7c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"testId": "qHmqVk_BvA"
+			},
+			"degree": 1
+		}
+	]
+}

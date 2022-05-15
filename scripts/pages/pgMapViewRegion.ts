@@ -1,8 +1,7 @@
-import PgMapViewRegionDesign from "generated/pages/pgMapViewRegion";
-import MapView from "@smartface/native/ui/mapview";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgMapViewRegionDesign from 'generated/pages/pgMapViewRegion';
+import Pin from '@smartface/native/ui/mapview/pin';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -16,27 +15,27 @@ interface MapPoint {
 }
 
 const CenterMapCoordinates: MapPoint = Object.freeze({
-  description: "2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301",
+  description: '2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301',
   lat: 37.4488259,
   lng: -122.1600047,
-  title: "Smartface Inc.",
+  title: 'Smartface Inc.'
 });
 
 export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewRegionDesign) {
-  allPins: MapView.Pin[] = this.generateMockMapData();
-  addedPins: MapView.Pin[] = []; // This is for duplicate prevention
+  allPins: Pin[] = this.generateMockMapData();
+  addedPins: Pin[] = []; // This is for duplicate prevention
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
-  generateMockMapData(): MapView.Pin[] {
+  generateMockMapData(): Pin[] {
     const randomizedArray = Array.from({ length: 50 }).map(() => {
       const randomized = this.randomizeCoordinates(CenterMapCoordinates);
-      return new MapView.Pin({
+      return new Pin({
         location: {
           latitude: randomized.lat,
-          longitude: randomized.lng,
+          longitude: randomized.lng
         },
-        title: randomized.title || "",
+        title: randomized.title || ''
       });
     });
     return randomizedArray;
@@ -48,7 +47,7 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
     return {
       ...centerPoint,
       lat: randomLatitude,
-      lng: randomLongitude,
+      lng: randomLongitude
     };
   }
 
@@ -56,7 +55,7 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
     this.map.setCenterLocationWithZoomLevel(
       {
         longitude: CenterMapCoordinates.lng,
-        latitude: CenterMapCoordinates.lat,
+        latitude: CenterMapCoordinates.lat
       },
       DEFAULT_ZOOM_LEVEL,
       true
@@ -77,14 +76,14 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
       }
     });
   }
-  checkForDuplicate(pin: MapView.Pin): boolean {
+  checkForDuplicate(pin: Pin): boolean {
     const doesCurrentPinAdded = this.addedPins.find((addedPin) => {
       return pin.location.latitude === addedPin.location.latitude && pin.location.longitude === addedPin.location.longitude;
     });
     return !!doesCurrentPinAdded;
   }
 
-  checkIfInsideRegion(pin: MapView.Pin): boolean {
+  checkIfInsideRegion(pin: Pin): boolean {
     const xCoordinateLower = this.map.visibleRegion.bottomLeft.latitude;
     const xCoordinateHigher = this.map.visibleRegion.topRight.latitude;
     const yCoordinateLower = this.map.visibleRegion.bottomLeft.longitude;
@@ -101,7 +100,7 @@ export default class PgMapViewRegion extends withDismissAndBackButton(PgMapViewR
       pinLatitude: pin.location.latitude,
       pinLongitude: pin.location.longitude,
       isLatInside,
-      isLngInside,
+      isLngInside
     });
     return isLatInside && isLngInside;
   }

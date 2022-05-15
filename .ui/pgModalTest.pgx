@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "2d94-2ddc-20f9-7d8a",
-				"title": "pgModalTest"
+				"title": "ModalTest"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgModalTest"
+				"title": "ModalTest"
 			}
 		},
 		{

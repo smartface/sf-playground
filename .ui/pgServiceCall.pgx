@@ -10,7 +10,8 @@
 					"a2d7-7558-5031-4462",
 					"f290-07ff-ac40-cfcc",
 					"054b-01e7-19e8-cb20",
-					"6ba4-5982-040a-1f0c",
+					"adaf-cd66-e9b5-eb9d",
+					"eb5d-fbed-c979-e6e4",
 					"40e3-5b5b-8344-11aa"
 				],
 				"name": "pgServiceCall",
@@ -19,7 +20,8 @@
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "0.0.1.a"
+			"version": "0.0.1.a",
+			"degree": 0
 		},
 		{
 			"className": ".sf-statusBar",
@@ -31,7 +33,8 @@
 				"parent": "5df5-b816-2e3a-906b"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {},
+			"degree": 1
 		},
 		{
 			"className": ".sf-headerBar",
@@ -41,12 +44,13 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "5df5-b816-2e3a-906b",
-				"title": "pgServiceCall"
+				"title": "ServiceCall"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgServiceCall"
-			}
+				"title": "ServiceCall"
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-label",
@@ -63,7 +67,8 @@
 				"testId": "YE2aPUft7",
 				"text": "label1",
 				"usePageVariable": true
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-label #pgServiceCall-lblNetworkStatus-offline #pgServiceCall-lblNetworkStatus-online",
@@ -80,24 +85,47 @@
 				"testId": "iqqwBcfZM",
 				"text": "Connected to internet",
 				"usePageVariable": true
-			}
+			},
+			"degree": 1
 		},
 		{
-			"className": ".sf-button",
-			"id": "6ba4-5982-040a-1f0c",
+			"className": ".sf-label",
+			"id": "adaf-cd66-e9b5-eb9d",
 			"props": {
 				"children": [],
-				"name": "btnRequest",
+				"name": "label1",
 				"parent": "5df5-b816-2e3a-906b",
-				"text": "Get a random dog pic!",
-				"usePageVariable": true
+				"text": "Get a random dog pic!"
 			},
-			"type": "Button",
+			"type": "Label",
 			"userProps": {
-				"testId": "DuLe3m5TN",
 				"text": "Get a random dog pic!",
-				"usePageVariable": true
-			}
+				"textAlignment": "MIDCENTER"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "eb5d-fbed-c979-e6e4",
+			"props": {
+				"children": [
+					"743e-d6dd-ab27-1a5d",
+					"5aa1-d02d-c0f2-5801"
+				],
+				"name": "flexLayout1",
+				"parent": "5df5-b816-2e3a-906b"
+			},
+			"ref": null,
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"paddingLeft": 10,
+				"paddingRight": 10
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-imageView",
@@ -113,7 +141,57 @@
 				"imageFillType": "ASPECTFIT",
 				"testId": "c5rnvWggs",
 				"usePageVariable": true
-			}
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-button",
+			"id": "743e-d6dd-ab27-1a5d",
+			"oldName": "btnRequest",
+			"props": {
+				"children": [],
+				"name": "btnUseServiceCall",
+				"parent": "eb5d-fbed-c979-e6e4",
+				"text": "Use Service Call",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 50,
+				"left": 0,
+				"marginRight": 10,
+				"testId": "DuLe3m5TN",
+				"text": "Use Service Call",
+				"top": 0,
+				"usePageVariable": true
+			},
+			"degree": 2
+		},
+		{
+			"className": ".sf-button",
+			"id": "5aa1-d02d-c0f2-5801",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnUseAxios",
+				"parent": "eb5d-fbed-c979-e6e4",
+				"text": "Use Axios",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"marginLeft": 10,
+				"text": "Use Axios",
+				"usePageVariable": true,
+				"testId": "cwnOV5L8q"
+			},
+			"degree": 2
 		}
 	]
 }

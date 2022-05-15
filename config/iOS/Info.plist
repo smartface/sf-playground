@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+        <key>UIBackgroundModes</key>
+        <array>
+        <string>audio</string>
+        </array>
 		<key>NSAppTransportSecurity</key>
 		<dict>
 			<key>NSAllowsArbitraryLoads</key>
@@ -16,13 +20,13 @@
 		<key>NSBluetoothPeripheralUsageDescription</key>
 		<string>Your NSBluetoothPeripheralUsageDescription</string>
 		<key>NSCameraUsageDescription</key>
-		<string>Your NSCameraUsageDescription</string>
+		<string>Camera usage description</string>
 		<key>NSAppleMusicUsageDescription</key>
 		<string>Your NSAppleMusicUsageDescription</string>
 		<key>NSMotionUsageDescription</key>
 		<string>Your NSMotionUsageDescription</string>
 		<key>NSMicrophoneUsageDescription</key>
-		<string>Your NSMicrophoneUsageDescription</string>
+		<string>Microphone usage description</string>
 		<key>NSSpeechRecognitionUsageDescription</key>
 		<string>Your NSSpeechRecognitionUsageDescription </string>
 		<key>CFBundleDevelopmentRegion</key>

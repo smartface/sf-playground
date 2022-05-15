@@ -1,0 +1,31 @@
+{
+  ".flListViewIndex": {
+    "width": 30,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "height": null,
+    "flexProps": {
+      "alignItems": "STRETCH",
+      "justifyContent": "FLEX_START",
+      "positionType": "ABSOLUTE"
+    },
+    "&-label": {
+      "width": null,
+      "flexProps": {
+        "flexGrow": null,
+        "alignSelf": "STRETCH"
+      },
+      "height": 24,
+      "textAlignment": "MIDCENTER",
+      "font": {
+        "family": "SFProText",
+        "style": "Medium",
+        "size": 15,
+        "bold": false,
+        "italic": false
+      },
+      "textColor": "#000000"
+    }
+  }
+}

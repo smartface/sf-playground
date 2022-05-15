@@ -1,10 +1,9 @@
-import PgSSLPinningDesign from "generated/pages/pgSSLPinning";
-import FlexLayout from "@smartface/native/ui/flexlayout";
-import Application from "@smartface/native/application";
-import WebView from "@smartface/native/ui/webview";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgSSLPinningDesign from 'generated/pages/pgSSLPinning';
+import FlexLayout from '@smartface/native/ui/flexlayout';
+import Application from '@smartface/native/application';
+import WebView from '@smartface/native/ui/webview';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 //You should create new Page from UI-Editor and extend with it.
 export default class PgSSLPinning extends withDismissAndBackButton(PgSSLPinningDesign) {
@@ -30,45 +29,45 @@ export default class PgSSLPinning extends withDismissAndBackButton(PgSSLPinningD
       ios: {
         sslPinning: [
           {
-            host: "httpbin.org",
+            host: 'httpbin.org',
             certificates: [],
             validateCertificateChain: true,
-            validateHost: true,
-          },
-        ],
+            validateHost: true
+          }
+        ]
       },
       onChangedURL: function (event: any) {
-        console.log("Event Change URL: " + event.url);
+        console.log('Event Change URL: ' + event.url);
         return true;
       },
       onError: function (event: any) {
-        console.error("Event Error : " + event.message + ", URL: " + event.url);
+        console.error('Event Error : ' + event.message + ', URL: ' + event.url);
       },
       onLoad: function (event: any) {
-        console.info("Event Load: " + event.url);
+        console.info('Event Load: ' + event.url);
       },
       onShow: function (event: any) {
-        console.warn("Event Show: " + event.url);
-      },
+        console.warn('Event Show: ' + event.url);
+      }
     });
 
     this.myWebView.android.page = this;
 
-    this.myWebView.loadURL("https://httpbin.org");
+    this.myWebView.loadURL('https://httpbin.org');
 
     setTimeout(() => {
       this.myWebView.ios.sslPinning = undefined;
-      this.myWebView.loadURL("https://www.smartface.io");
+      this.myWebView.loadURL('https://www.smartface.io');
     }, 5000);
 
-    this.addChild(this.myWebView, "myWebView", ".sf-webView", {
+    this.addChild(this.myWebView, 'myWebView', '.sf-webView', {
       left: 10,
       top: 10,
       right: 10,
       bottom: 10,
       flexProps: {
-        positionType: "ABSOLUTE",
-      },
+        positionType: 'ABSOLUTE'
+      }
     });
   }
 }

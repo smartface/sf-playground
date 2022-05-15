@@ -1,0 +1,84 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "a207-24b6-232a-9810",
+			"initialized": true,
+			"props": {
+				"children": [
+					"6980-b024-0fe3-041b",
+					"ca8b-6ca1-bdf8-54d5",
+					"d6e3-dd9c-c197-f92a",
+					"37a3-3809-75fa-fac0"
+				],
+				"name": "pgQuickLook",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "6980-b024-0fe3-041b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "a207-24b6-232a-9810"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "ca8b-6ca1-bdf8-54d5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "a207-24b6-232a-9810",
+				"title": "QuickLook"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "QuickLook"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "d6e3-dd9c-c197-f92a",
+			"oldName": "btnLook",
+			"props": {
+				"children": [],
+				"name": "btnLookImage",
+				"parent": "a207-24b6-232a-9810",
+				"text": "QuickLook Image",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "QuickLook Image",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "37a3-3809-75fa-fac0",
+			"oldName": "btnLookImage_1",
+			"props": {
+				"children": [],
+				"name": "btnLookPDF",
+				"parent": "a207-24b6-232a-9810",
+				"text": "QuickLook PDF",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "QuickLook PDF",
+				"usePageVariable": true
+			}
+		}
+	]
+}

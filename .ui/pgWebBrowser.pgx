@@ -1,0 +1,182 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "7569-9586-0a14-d487",
+			"initialized": true,
+			"props": {
+				"children": [
+					"7262-20fa-d3dc-6da8",
+					"b6c1-f8b0-ebcb-3c36",
+					"7272-64e5-4158-9d8b",
+					"e426-e323-2e61-0d8f",
+					"1161-eb9d-618c-1381"
+				],
+				"name": "pgWebBrowser",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "7262-20fa-d3dc-6da8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7569-9586-0a14-d487"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "b6c1-f8b0-ebcb-3c36",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7569-9586-0a14-d487",
+				"title": "WebBrowser"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "WebBrowser"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "7272-64e5-4158-9d8b",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnShowBrowser",
+				"parent": "7569-9586-0a14-d487",
+				"text": "Show Browser",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Show Browser",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "e426-e323-2e61-0d8f",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"b7e4-e066-0d25-cadf",
+					"ef44-5a00-fe50-41e2"
+				],
+				"name": "flTabColor",
+				"parent": "7569-9586-0a14-d487"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 70
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "b7e4-e066-0d25-cadf",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblTabColor",
+				"parent": "e426-e323-2e61-0d8f",
+				"text": "Set Bar Color: ",
+				"usePageVariable": false
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Set Bar Color: ",
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "ef44-5a00-fe50-41e2",
+			"oldName": "switch1",
+			"props": {
+				"children": [],
+				"name": "swTabColor",
+				"parent": "e426-e323-2e61-0d8f",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"toggle": false,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "1161-eb9d-618c-1381",
+			"oldName": "flTabColor_1",
+			"props": {
+				"children": [
+					"5348-0220-7e35-e5c2",
+					"6466-3818-8fb0-c966"
+				],
+				"name": "flItemColor",
+				"parent": "7569-9586-0a14-d487"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 70
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "5348-0220-7e35-e5c2",
+			"oldName": "lblTabColor",
+			"props": {
+				"children": [],
+				"name": "lblItemColor",
+				"parent": "1161-eb9d-618c-1381",
+				"text": "Set Item Color (iOS): ",
+				"usePageVariable": false
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Set Item Color (iOS): ",
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "6466-3818-8fb0-c966",
+			"oldName": "swTabColor",
+			"props": {
+				"children": [],
+				"name": "swItemColor",
+				"parent": "1161-eb9d-618c-1381",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"toggle": false,
+				"usePageVariable": true
+			}
+		}
+	]
+}

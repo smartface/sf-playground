@@ -1,0 +1,215 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "3938-1b66-2b76-aa90",
+			"initialized": true,
+			"props": {
+				"children": [
+					"b787-a89e-948c-98fb",
+					"251d-c285-f266-8430",
+					"f380-1f4a-a0b4-182c",
+					"759b-d6ad-58d6-2db2",
+					"4bc7-c258-c336-22c3",
+					"c3e1-e33f-68a0-0db9",
+					"1ce6-e781-5798-894e",
+					"1119-5723-17ff-bc11",
+					"a47d-0540-6850-4d31"
+				],
+				"name": "pgBlurView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "b787-a89e-948c-98fb",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "3938-1b66-2b76-aa90"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "251d-c285-f266-8430",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "3938-1b66-2b76-aa90",
+				"title": "BlurView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "BlurView"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "f380-1f4a-a0b4-182c",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblInfo",
+				"parent": "3938-1b66-2b76-aa90",
+				"text": "Remeber to do show/hide on every change"
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"text": "Remeber to do show/hide on every change",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "759b-d6ad-58d6-2db2",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnShowHide",
+				"parent": "3938-1b66-2b76-aa90",
+				"text": "Show",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Show",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "4bc7-c258-c336-22c3",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnEffectStyle",
+				"parent": "3938-1b66-2b76-aa90",
+				"text": "Set Effect Style (iOS)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Effect Style (iOS)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "c3e1-e33f-68a0-0db9",
+			"oldName": "btnEffectStyle_1",
+			"props": {
+				"children": [],
+				"name": "btnOverlayColor",
+				"parent": "3938-1b66-2b76-aa90",
+				"text": "Set Overlay Color (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Overlay Color (Android)",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "1ce6-e781-5798-894e",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblRadius",
+				"parent": "3938-1b66-2b76-aa90",
+				"text": "Blur Radius (Android)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Blur Radius (Android)",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-slider",
+			"id": "1119-5723-17ff-bc11",
+			"oldName": "slider1",
+			"props": {
+				"children": [],
+				"name": "sliderRadius",
+				"parent": "3938-1b66-2b76-aa90",
+				"usePageVariable": true
+			},
+			"type": "Slider",
+			"userProps": {
+				"maxValue": 25,
+				"minValue": 1,
+				"usePageVariable": true,
+				"value": 16
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "a47d-0540-6850-4d31",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"7ea0-9cbd-d47c-3869"
+				],
+				"name": "flBlur",
+				"parent": "3938-1b66-2b76-aa90",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"bottom": 0,
+				"deltaX": 0,
+				"deltaY": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 300,
+				"lastX": 0,
+				"lastY": 537.25,
+				"left": 0,
+				"marginBottom": null,
+				"marginTop": null,
+				"node": null,
+				"right": 0,
+				"usePageVariable": true,
+				"x": 0,
+				"y": 537.25
+			}
+		},
+		{
+			"className": ".sf-imageView .grow",
+			"id": "7ea0-9cbd-d47c-3869",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgView",
+				"parent": "a47d-0540-6850-4d31"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 300,
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT",
+				"marginBottom": null,
+				"marginTop": null,
+				"width": null
+			}
+		}
+	]
+}

@@ -42,11 +42,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "61fc-48c2-c60a-7934",
-				"title": "pgPhotoPicker"
+				"title": "PhotoPicker"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgPhotoPicker"
+				"title": "PhotoPicker"
 			},
 			"degree": 1
 		},

@@ -1,81 +1,87 @@
-import PgWebViewDesign from "generated/pages/pgWebView";
-import Menu from "@smartface/native/ui/menu";
-import MenuItem from "@smartface/native/ui/menuitem";
-import pdf from "@smartface/extension-utils/lib/pdf";
-import WebViewBridge from "@smartface/webviewbridge";
-import Chart from "@smartface/extension-utils/lib/chart";
-import Table from "@smartface/extension-utils/lib/table";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgWebViewDesign from 'generated/pages/pgWebView';
+import Menu from '@smartface/native/ui/menu';
+import MenuItem from '@smartface/native/ui/menuitem';
+import pdf from '@smartface/extension-utils/lib/pdf';
+import WebViewBridge from '@smartface/webviewbridge';
+import Chart from '@smartface/extension-utils/lib/chart';
+import Table from '@smartface/extension-utils/lib/table';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
 export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign) {
   myMenu: Menu;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.lblMenu.onTouch = () => {
-      this.myMenu.show(this);
-    };
+    this.webView1.android.page = this;
+    this.webView1.on('changedURL', (a) => console.info('changedURL', a));
+    this.webView1.on('consoleMessage', (a) => console.info('consoleMessage', a));
+    this.webView1.on('error', (a) => console.error('error', a));
+    this.webView1.on('load', (a) => console.info('load', a));
+    this.webView1.on('openNewWindow', (a) => console.info('openNewWindow', a));
+
+    this.btnMenu.on('press', () => this.myMenu.show(this));
+    this.btnBack.on('press', () => this.webView1.goBack());
+    this.btnForward.on('press', () => this.webView1.goForward());
   }
 
   renderChartData() {
     const wvb = new WebViewBridge({
-      webView: this.webView1,
+      webView: this.webView1
     });
 
-    wvb.on("markerClick", function (event) {
-      console.log("Clicked to a marker on Smartface");
+    wvb.on('markerClick', function (event) {
+      console.log('Clicked to a marker on Smartface');
     });
 
     const chart = new Chart({
-        // @ts-ignore
+      // @ts-ignore
       webViewBridge: wvb,
       apexOptions: {
         barOptions: {
-          percent: 0.75,
+          percent: 0.75
         },
         series: [
           {
-            name: "Desktops",
-            data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-          },
+            name: 'Desktops',
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+          }
         ],
         chart: {
           height: 350,
-          type: "line",
+          type: 'line',
           zoom: {
-            enabled: false,
+            enabled: false
           },
           events: {
             markerClick: () => {
               //@ts-ignore
-              window.boubleEvent("EVENT_CHART_EVENTS_markerClick");
-            },
-          },
+              window.boubleEvent('EVENT_CHART_EVENTS_markerClick');
+            }
+          }
         },
         dataLabels: {
           enabled: false,
           formatter: function (val, opt) {
             return 100 / opt?.w?.config?.percent;
-          },
+          }
         },
         stroke: {
-          curve: "straight",
+          curve: 'straight'
         },
         title: {
-          text: "Product Trends by Month",
-          align: "left",
+          text: 'Product Trends by Month',
+          align: 'left'
         },
         grid: {
           row: {
-            colors: ["#f3f3f3", "transparent"],
-            opacity: 0.5,
-          },
+            colors: ['#f3f3f3', 'transparent'],
+            opacity: 0.5
+          }
         },
         xaxis: {
-          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
-        },
-      },
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+        }
+      }
     });
     chart.render();
   }
@@ -84,31 +90,31 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     pdf.render({
       webView: this.webView1,
       base64pdf:
-        "JVBERi0xLjcKCjEgMCBvYmogICUgZW50cnkgcG9pbnQKPDwKICAvVHlwZSAvQ2F0YWxvZwog" +
-        "IC9QYWdlcyAyIDAgUgo+PgplbmRvYmoKCjIgMCBvYmoKPDwKICAvVHlwZSAvUGFnZXMKICAv" +
-        "TWVkaWFCb3ggWyAwIDAgMjAwIDIwMCBdCiAgL0NvdW50IDEKICAvS2lkcyBbIDMgMCBSIF0K" +
-        "Pj4KZW5kb2JqCgozIDAgb2JqCjw8CiAgL1R5cGUgL1BhZ2UKICAvUGFyZW50IDIgMCBSCiAg" +
-        "L1Jlc291cmNlcyA8PAogICAgL0ZvbnQgPDwKICAgICAgL0YxIDQgMCBSIAogICAgPj4KICA+" +
-        "PgogIC9Db250ZW50cyA1IDAgUgo+PgplbmRvYmoKCjQgMCBvYmoKPDwKICAvVHlwZSAvRm9u" +
-        "dAogIC9TdWJ0eXBlIC9UeXBlMQogIC9CYXNlRm9udCAvVGltZXMtUm9tYW4KPj4KZW5kb2Jq" +
-        "Cgo1IDAgb2JqICAlIHBhZ2UgY29udGVudAo8PAogIC9MZW5ndGggNDQKPj4Kc3RyZWFtCkJU" +
-        "CjcwIDUwIFRECi9GMSAxMiBUZgooSGVsbG8sIHdvcmxkISkgVGoKRVQKZW5kc3RyZWFtCmVu" +
-        "ZG9iagoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDEwIDAwMDAwIG4g" +
-        "CjAwMDAwMDAwNzkgMDAwMDAgbiAKMDAwMDAwMDE3MyAwMDAwMCBuIAowMDAwMDAwMzAxIDAw" +
-        "MDAwIG4gCjAwMDAwMDAzODAgMDAwMDAgbiAKdHJhaWxlcgo8PAogIC9TaXplIDYKICAvUm9v" +
-        "dCAxIDAgUgo+PgpzdGFydHhyZWYKNDkyCiUlRU9G",
-      zoomEnabled: true,
+        'JVBERi0xLjcKCjEgMCBvYmogICUgZW50cnkgcG9pbnQKPDwKICAvVHlwZSAvQ2F0YWxvZwog' +
+        'IC9QYWdlcyAyIDAgUgo+PgplbmRvYmoKCjIgMCBvYmoKPDwKICAvVHlwZSAvUGFnZXMKICAv' +
+        'TWVkaWFCb3ggWyAwIDAgMjAwIDIwMCBdCiAgL0NvdW50IDEKICAvS2lkcyBbIDMgMCBSIF0K' +
+        'Pj4KZW5kb2JqCgozIDAgb2JqCjw8CiAgL1R5cGUgL1BhZ2UKICAvUGFyZW50IDIgMCBSCiAg' +
+        'L1Jlc291cmNlcyA8PAogICAgL0ZvbnQgPDwKICAgICAgL0YxIDQgMCBSIAogICAgPj4KICA+' +
+        'PgogIC9Db250ZW50cyA1IDAgUgo+PgplbmRvYmoKCjQgMCBvYmoKPDwKICAvVHlwZSAvRm9u' +
+        'dAogIC9TdWJ0eXBlIC9UeXBlMQogIC9CYXNlRm9udCAvVGltZXMtUm9tYW4KPj4KZW5kb2Jq' +
+        'Cgo1IDAgb2JqICAlIHBhZ2UgY29udGVudAo8PAogIC9MZW5ndGggNDQKPj4Kc3RyZWFtCkJU' +
+        'CjcwIDUwIFRECi9GMSAxMiBUZgooSGVsbG8sIHdvcmxkISkgVGoKRVQKZW5kc3RyZWFtCmVu' +
+        'ZG9iagoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDEwIDAwMDAwIG4g' +
+        'CjAwMDAwMDAwNzkgMDAwMDAgbiAKMDAwMDAwMDE3MyAwMDAwMCBuIAowMDAwMDAwMzAxIDAw' +
+        'MDAwIG4gCjAwMDAwMDAzODAgMDAwMDAgbiAKdHJhaWxlcgo8PAogIC9TaXplIDYKICAvUm9v' +
+        'dCAxIDAgUgo+PgpzdGFydHhyZWYKNDkyCiUlRU9G',
+      zoomEnabled: true
     });
   }
 
   renderTableData() {
-    const headerColumns = ["First name", "Last name"];
+    const headerColumns = ['First name', 'Last name'];
     const bodyColumns = [
-      { first: "Shmi", last: "Skywalker" },
-      { first: "Anakin", last: "Skywalker" },
-      { first: "Luke", last: "Skywalker" },
-      { first: "Leia", last: "Organa" },
-      { first: "Han", last: "Solo" },
+      { first: 'Shmi', last: 'Skywalker' },
+      { first: 'Anakin', last: 'Skywalker' },
+      { first: 'Luke', last: 'Skywalker' },
+      { first: 'Leia', last: 'Organa' },
+      { first: 'Han', last: 'Solo' }
     ];
 
     const table = new Table({
@@ -117,35 +123,42 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
         rows: [
           {
             rowStyles: {
-              color: "#fff",
-              fontWeight: "bold",
-              backgroundColor: "#000",
+              color: '#fff',
+              fontWeight: 'bold',
+              backgroundColor: '#000'
             },
-            columns: headerColumns.map((key) => ({ key })),
+            columns: headerColumns.map((key) => ({ key }))
           },
           ...bodyColumns.map((column) => ({
             rowStyles: {
-              padding: "10px 0",
-              borderBottom: "1px solid #000",
+              padding: '10px 0',
+              borderBottom: '1px solid #000'
             },
-            columns: [{ key: column.first }, { key: column.last }],
-          })),
-        ],
-      },
+            columns: [{ key: column.first }, { key: column.last }]
+          }))
+        ]
+      }
     });
     table.render();
   }
 
+  renderSmartface() {
+    this.webView1.loadURL('https://smartface.io');
+  }
+
   handleDataRender(item: string) {
     switch (item) {
-      case "Chart":
+      case 'Chart':
         this.renderChartData();
         break;
-      case "Pdf":
+      case 'Pdf':
         this.renderPdfData();
         break;
-      case "Table":
+      case 'Table':
         this.renderTableData();
+        break;
+      case 'Smartface':
+        this.renderSmartface();
         break;
     }
   }
@@ -158,12 +171,12 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
   onLoad() {
     super.onLoad();
     this.myMenu = new Menu();
-    ["Chart", "Pdf", "Table"].forEach((item) => {
+    ['Chart', 'Pdf', 'Table', 'Smartface'].forEach((item) => {
       const menuItem = new MenuItem({
         title: item,
         onSelected: () => {
           this.handleDataRender(item);
-        },
+        }
       });
       this.myMenu.items.push(menuItem);
     });

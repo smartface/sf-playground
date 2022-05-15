@@ -33,14 +33,14 @@
 			"type": "HeaderBar",
 			"id": "1456-630b-ed95-5d4b",
 			"userProps": {
-				"title": "pgListViewIndex"
+				"title": "ListViewIndex"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "547b-de76-e208-cc8a",
 				"children": [],
-				"title": "pgListViewIndex",
+				"title": "ListViewIndex",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -80,14 +80,14 @@
 			"type": "HeaderBar",
 			"id": "1456-630b-ed95-5d4b",
 			"userProps": {
-				"title": "pgListViewIndex"
+				"title": "ListViewIndex"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "547b-de76-e208-cc8a",
 				"children": [],
-				"title": "pgListViewIndex",
+				"title": "ListViewIndex",
 				"visible": true,
 				"isRemovable": false
 			}

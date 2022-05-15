@@ -4,6 +4,14 @@
       "flexDirection": "ROW",
       "alignItems": "CENTER",
       "justifyContent": "CENTER"
+    },
+    "&-All": {
+      "flexProps": {
+        "positionType": "ABSOLUTE"
+      },
+      "bottom": 30,
+      "left": 15,
+      "right": 15
     }
   }
 }

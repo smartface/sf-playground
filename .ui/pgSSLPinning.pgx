@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "30e8-c581-756b-bb2e",
 			"userProps": {
-				"title": "pgSSLPinning"
+				"title": "SSLPinning"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "ace5-0083-94bd-412a",
 				"children": [],
-				"title": "pgSSLPinning",
+				"title": "SSLPinning",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "30e8-c581-756b-bb2e",
 			"userProps": {
-				"title": "pgSSLPinning"
+				"title": "SSLPinning"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "ace5-0083-94bd-412a",
 				"children": [],
-				"title": "pgSSLPinning",
+				"title": "SSLPinning",
 				"visible": true,
 				"isRemovable": false
 			}

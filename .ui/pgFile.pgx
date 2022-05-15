@@ -1,0 +1,242 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "6439-bea3-5242-7b69",
+			"initialized": true,
+			"props": {
+				"children": [
+					"53f0-40e0-470e-e132",
+					"e63c-7be0-5bd9-db37",
+					"dff2-511c-0e56-e1fb"
+				],
+				"name": "pgFile",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "53f0-40e0-470e-e132",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "6439-bea3-5242-7b69"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "e63c-7be0-5bd9-db37",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "6439-bea3-5242-7b69",
+				"title": "FileIO"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "FileIO"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "dff2-511c-0e56-e1fb",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"d84e-3130-7b10-e258",
+					"af1c-f20d-9975-dfb8",
+					"b5cb-1636-5274-bd7c",
+					"a2a1-97a3-9acd-628d",
+					"0caf-81ea-c24a-d09d",
+					"bd98-4fdd-f736-0b02",
+					"16e7-4f6e-b965-6440",
+					"9692-3cd3-fded-49a2",
+					"70dd-3532-80f8-7c98"
+				],
+				"name": "sv",
+				"parent": "6439-bea3-5242-7b69"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button",
+			"id": "d84e-3130-7b10-e258",
+			"oldName": "btnReadFile_1",
+			"props": {
+				"children": [],
+				"name": "btnCreateFile",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Create File",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Create File",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "af1c-f20d-9975-dfb8",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnWriteFile",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Write File",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Write File",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b5cb-1636-5274-bd7c",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnReadFile",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Read File",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Read File",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a2a1-97a3-9acd-628d",
+			"oldName": "btnWriteFile_1",
+			"props": {
+				"children": [],
+				"name": "btnGetFiles",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Get Files",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Get Files",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "0caf-81ea-c24a-d09d",
+			"oldName": "btnGetFiles_1",
+			"props": {
+				"children": [],
+				"name": "btnCopy",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Copy",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Copy",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "bd98-4fdd-f736-0b02",
+			"oldName": "btnCopy_1",
+			"props": {
+				"children": [],
+				"name": "btnMove",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Move",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Move",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "16e7-4f6e-b965-6440",
+			"oldName": "btnMove_1",
+			"props": {
+				"children": [],
+				"name": "btnDelete",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "Delete",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Delete",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "9692-3cd3-fded-49a2",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblPathDetails",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 12,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 100,
+				"maxLines": 0,
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "70dd-3532-80f8-7c98",
+			"oldName": "lblPathDetails_1",
+			"props": {
+				"children": [],
+				"name": "lblFileContent",
+				"parent": "dff2-511c-0e56-e1fb",
+				"text": "File content",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 12,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 100,
+				"maxLines": 0,
+				"text": "File content",
+				"usePageVariable": true
+			}
+		}
+	]
+}

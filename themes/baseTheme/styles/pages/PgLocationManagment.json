@@ -1,43 +1,49 @@
 {
-	"#pgLocationManagment": {
-		"&-flCoordinateArea": {
-			"flexProps": {
-				"flexDirection": "COLUMN"
-			},
-			"height": 100,
-			"marginTop": 10,
-			"marginBottom": 10,
-			"&-lbl": {
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"&-leftlbl": {
-				"width": 100
-			}
-		},
-		"&-flLatitude": {
-			"flexProps": {
-				"flexGrow": 1,
-				"flexDirection": "ROW"
-			},
-			"height": 50
-		},
-		"&-flLongitude": {
-			"flexProps": {
-				"flexGrow": 1,
-				"flexDirection": "ROW"
-			},
-			"height": 50
-		},
-		"&-mapView": {
-			"flexProps": {
-				"flexGrow": 1
-			},
-			"marginBottom": 10
-		},
-		"&-btn": {
-			"marginBottom": 10
-		}
-	}
+  "#pgLocationManagment": {
+    "&-flCoordinateArea": {
+      "flexProps": {
+        "flexDirection": "COLUMN"
+      },
+      "height": 100,
+      "marginTop": 10,
+      "marginBottom": 10,
+      "&-lbl": {
+        "flexProps": {
+          "flexGrow": 1
+        }
+      },
+      "&-leftlbl": {
+        "width": 100
+      }
+    },
+    "&-flLatitude": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "ROW"
+      },
+      "height": 50
+    },
+    "&-flLongitude": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "ROW"
+      },
+      "height": 50
+    },
+    "&-mapView": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "marginBottom": 10
+    },
+    "&-btn": {
+      "marginBottom": 10
+    },
+    "&-flWrap": {
+      "height": 50,
+      "flexProps": {
+        "flexDirection": "ROW"
+      }
+    }
+  }
 }

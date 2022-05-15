@@ -39,11 +39,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "fb98-d27f-d144-77f6",
-				"title": "pgButtonPress"
+				"title": "ButtonPress"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgButtonPress"
+				"title": "ButtonPress"
 			}
 		},
 		{

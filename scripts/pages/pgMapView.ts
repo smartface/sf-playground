@@ -1,12 +1,15 @@
-import PgMapViewDesign from "generated/pages/pgMapView";
-import MapView from "@smartface/native/ui/mapview";
-import Menu from "@smartface/native/ui/menu";
-import MenuItem from "@smartface/native/ui/menuitem";
-import System from "@smartface/native/device/system";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
-
+import PgMapViewDesign from 'generated/pages/pgMapView';
+import Pin from '@smartface/native/ui/mapview/pin';
+import Menu from '@smartface/native/ui/menu';
+import MenuItem from '@smartface/native/ui/menuitem';
+import System from '@smartface/native/device/system';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
+import Color from '@smartface/native/ui/color';
+import Picker from '@smartface/native/ui/picker';
+import { MapViewType } from '@smartface/native/ui/mapview/mapview';
+import { MapViewEvents } from '@smartface/native/ui/mapview/mapview-events';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -20,34 +23,49 @@ interface MapPoint {
 }
 
 const CenterMapCoordinates: MapPoint = Object.freeze({
-  description: "2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301",
+  description: '2nd Floor, 530 Lytton Ave, Palo Alto, CA 94301',
   lat: 37.4488259,
   lng: -122.1600047,
-  title: "Smartface Inc.",
+  title: 'Smartface Inc.'
 });
 
 enum MAPVIEW_CHOICES {
-  RADIUS = "Radius",
-  FOUR_REGIONS = "Four Regions",
+  RADIUS = 'Radius',
+  FOUR_REGIONS = 'Four Regions'
 }
 
 export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign) {
   menu: Menu = new Menu();
-  allPins: MapView.Pin[] = this.generateMockMapData();
-  addedPins: MapView.Pin[] = []; // This is for duplicate prevention
+  allPins: Pin[] = this.generateMockMapData();
+  addedPins: Pin[] = []; // This is for duplicate prevention
   currentMapViewStyle: MAPVIEW_CHOICES = null;
   constructor(private router?: Router, private route?: Route) {
     super({});
+    this.btnType.on('press', () => this.setMapType());
+    this.map.on(MapViewEvents.CameraMoveEnded, () => console.log('CameraMoveEnded'));
+    this.map.on(MapViewEvents.CameraMoveStarted, () => console.log('CameraMoveStarted'));
+    this.map.on(MapViewEvents.ClusterPress, () => console.log('ClusterPress'));
+    this.map.on(MapViewEvents.Create, () => console.log('Create'));
   }
-  generateMockMapData(): MapView.Pin[] {
-    const randomizedArray = Array.from({ length: 50 }).map(() => {
+  setMapType() {
+    const picker = new Picker();
+    const items = ['HYBRID', 'NORMAL', 'SATELLITE'];
+    picker.items = items;
+    picker.on('selected', (index) => {
+      console.info('selected: ', index);
+      this.map.type = MapViewType[items[index]];
+    });
+    picker.show();
+  }
+  generateMockMapData(): Pin[] {
+    const randomizedArray = Array.from({ length: 100 }).map(() => {
       const randomized = this.randomizeCoordinates(CenterMapCoordinates);
-      return new MapView.Pin({
+      return new Pin({
         location: {
           latitude: randomized.lat,
-          longitude: randomized.lng,
+          longitude: randomized.lng
         },
-        title: randomized.title || "",
+        title: randomized.title || ''
       });
     });
     return randomizedArray;
@@ -59,7 +77,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     return {
       ...centerPoint,
       lat: randomLatitude,
-      lng: randomLongitude,
+      lng: randomLongitude
     };
   }
 
@@ -67,22 +85,31 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     this.map.setCenterLocationWithZoomLevel(
       {
         longitude: CenterMapCoordinates.lng,
-        latitude: CenterMapCoordinates.lat,
+        latitude: CenterMapCoordinates.lat
       },
       DEFAULT_ZOOM_LEVEL,
       true
     );
     this.map.onCameraMoveEnded = () => this.addPinsWithLazyLoad(this.currentMapViewStyle);
-    this.map.minZoomLevel = DEFAULT_ZOOM_LEVEL - 1;
-    this.map.maxZoomLevel = DEFAULT_ZOOM_LEVEL + 1;
+    this.map.minZoomLevel = DEFAULT_ZOOM_LEVEL - 2;
+    this.map.maxZoomLevel = DEFAULT_ZOOM_LEVEL + 2;
+    this.map.clusterBorderColor = Color.RED;
+    this.map.clusterFillColor = Color.GREEN;
+    this.map.clusterTextColor = Color.BLACK;
+    this.map.clusterEnabled = true;
+
+    this.map.android.locationButtonVisible = true;
+    this.map.rotateEnabled = false;
+    this.map.scrollEnabled = false;
+    this.map.userLocationEnabled = true;
   }
 
   initMenu() {
-    this.menu.headerTitle = "Choose method to fill the map";
+    this.menu.headerTitle = 'Choose method to fill the map';
     const radius = new MenuItem({ title: MAPVIEW_CHOICES.RADIUS });
     const fourRegions = new MenuItem({ title: MAPVIEW_CHOICES.FOUR_REGIONS });
-    const cancel = new MenuItem({ title: "Cancel" });
-    cancel.ios.style = MenuItem.ios.Style.CANCEL;
+    const cancel = new MenuItem({ title: 'Cancel' });
+    cancel.ios.style = MenuItem.Styles.CANCEL;
     const menuItems = [radius, fourRegions];
 
     /**
@@ -91,7 +118,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     menuItems.forEach((item) => {
       item.onSelected = () => {
         // Fill the texts and select the style
-        const currentSelection = item.title || "Select a Style";
+        const currentSelection = item.title || 'Select a Style';
         this.currentMapViewStyle = item.title as MAPVIEW_CHOICES;
         this.lblCurrentSelection.text = currentSelection;
 
@@ -103,7 +130,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
         this.map.setCenterLocationWithZoomLevel(
           {
             latitude: CenterMapCoordinates.lat,
-            longitude: CenterMapCoordinates.lng,
+            longitude: CenterMapCoordinates.lng
           },
           DEFAULT_ZOOM_LEVEL,
           true
@@ -112,7 +139,10 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     });
     System.OS === System.OSType.IOS && menuItems.push(cancel); // Android doesn't need this
     this.menu.items = menuItems;
-    this.flSelector.onTouchEnded = () => this.menu.show(this);
+    this.flSelector.onTouchEnded = () => {
+      this.menu.show(this);
+      return true;
+    };
   }
 
   addPinsWithLazyLoad(lazyLoadType: MAPVIEW_CHOICES) {
@@ -137,7 +167,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     } else if (lazyLoadType === MAPVIEW_CHOICES.FOUR_REGIONS) {
     }
   }
-  checkForDuplicate(pin: MapView.Pin) {
+  checkForDuplicate(pin: Pin) {
     const doesCurrentPinAdded = this.addedPins.find((addedPin) => {
       return pin.location.latitude === addedPin.location.latitude && pin.location.longitude === addedPin.location.longitude;
     });

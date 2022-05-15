@@ -8,8 +8,9 @@
 				"children": [
 					"88a3-99ac-0a9b-054d",
 					"98c6-9358-a727-23b9",
-					"30a0-95cb-76e9-61e2",
-					"2f8f-ee38-0eb3-c777"
+					"fd9b-6f58-3c80-38d5",
+					"2f8f-ee38-0eb3-c777",
+					"1f16-d241-54f5-53cd"
 				],
 				"name": "pgWebView",
 				"orientation": "PORTRAIT",
@@ -18,8 +19,12 @@
 			"type": "Page",
 			"userProps": {
 				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
-				}
+					"justifyContent": "FLEX_START"
+				},
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
 			},
 			"version": "0.0.1.a"
 		},
@@ -43,32 +48,32 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "31f4-eeb3-63f7-db49",
-				"title": "pgWebView"
+				"title": "WebView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgWebView"
+				"title": "WebView"
 			}
 		},
 		{
-			"className": ".sf-label",
-			"id": "30a0-95cb-76e9-61e2",
+			"className": ".sf-button",
+			"id": "fd9b-6f58-3c80-38d5",
+			"oldName": "button1",
 			"props": {
 				"children": [],
-				"name": "lblMenu",
+				"name": "btnMenu",
 				"parent": "31f4-eeb3-63f7-db49",
 				"text": "Open the menu",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "Button",
 			"userProps": {
-				"testId": "qTgB4u1N2",
 				"text": "Open the menu",
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-webView",
+			"className": ".sf-webView .grow",
 			"id": "2f8f-ee38-0eb3-c777",
 			"props": {
 				"children": [],
@@ -78,7 +83,81 @@
 			},
 			"type": "WebView",
 			"userProps": {
+				"height": null,
 				"testId": "wvs2eJOv5",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "1f16-d241-54f5-53cd",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"ea3c-1915-db76-6d3e",
+					"fc02-7e2a-56de-91cb"
+				],
+				"name": "flButtons",
+				"parent": "31f4-eeb3-63f7-db49"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "FLEX_END",
+					"alignContent": "FLEX_END",
+					"alignItems": "FLEX_END"
+				},
+				"height": 80
+			}
+		},
+		{
+			"className": ".sf-button .grow",
+			"id": "ea3c-1915-db76-6d3e",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnBack",
+				"parent": "1f16-d241-54f5-53cd",
+				"text": "<",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"borderRadius": null,
+				"font": {
+					"size": 32,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"text": "<",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button .grow",
+			"id": "fc02-7e2a-56de-91cb",
+			"oldName": "btnBack_1",
+			"props": {
+				"children": [],
+				"name": "btnForward",
+				"parent": "1f16-d241-54f5-53cd",
+				"text": ">",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"borderRadius": null,
+				"font": {
+					"size": 32,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"text": ">",
 				"usePageVariable": true
 			}
 		}

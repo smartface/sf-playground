@@ -41,11 +41,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "418e-8dda-507d-bdba",
-				"title": "pgFileUpload"
+				"title": "FileUpload"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgFileUpload"
+				"title": "FileUpload"
 			}
 		},
 		{

@@ -1,0 +1,7 @@
+{
+  "#pgHardware": {
+    "&-lblHardwareStatus": {
+      "maxLines": 0
+    }
+  }
+}

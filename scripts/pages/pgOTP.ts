@@ -1,41 +1,20 @@
-import PgOTPDesign from "generated/pages/pgOTP";
-import Multimedia from "@smartface/native/device/multimedia";
-import Permission from "@smartface/extension-utils/lib/permission";
-import Application from "@smartface/native/application";
-import SMSReceiver from "@smartface/extension-sms-receiver";
-import TextContentType from "@smartface/native/ui/textcontenttype";
-import DatePicker from "@smartface/native/ui/datepicker";
-import System from "@smartface/native/device/system";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router, Route } from "@smartface/router";
-
+import PgOTPDesign from 'generated/pages/pgOTP';
+import Multimedia from '@smartface/native/device/multimedia';
+import Permission from '@smartface/extension-utils/lib/permission';
+import Application from '@smartface/native/application';
+import SMSReceiver from '@smartface/extension-sms-receiver';
+import TextContentType from '@smartface/native/ui/shared/textcontenttype';
+import DatePicker from '@smartface/native/ui/datepicker';
+import System from '@smartface/native/device/system';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
+import Color from '@smartface/native/ui/color';
+import Font from '@smartface/native/ui/font';
 
 export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
   datePicker: DatePicker;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnNext.onPress = () => {
-      this.capturePhoto();
-    };
-  }
-  capturePhoto() {
-    Multimedia.capturePhoto({
-      onSuccess: ({ image }) => {
-        this.imageView1.image = image;
-      },
-      page: this,
-      android: {
-        cropShape: Multimedia.Android.CropShape.RECTANGLE,
-        fixOrientation: true,
-        maxImageSize: 2048,
-      },
-      allowsEditing: true,
-      action: Multimedia.ActionType.IMAGE_CAPTURE,
-      type: Multimedia.Type.IMAGE,
-      ios: {
-        cameraDevice: Multimedia.iOS.CameraDevice.REAR,
-      },
-    });
   }
 
   requestSMSPermission() {
@@ -43,14 +22,14 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
       return; // Only works on Android
     }
     Permission.getPermission({
-      androidPermission: Application.Android.Permissions.RECEIVE_SMS,
-      permissionText: "Requesting to Receive SMS to do awesome stuff",
-      permissionTitle: "Permission Required",
+      androidPermission: Application.Android.Permissions.RECEIVE_SMS as any, //TODO: Fix after util-to-native
+      permissionText: 'Requesting to Receive SMS to do awesome stuff',
+      permissionTitle: 'Permission Required'
     }).then(() => {
       SMSReceiver.registerReceiver();
       SMSReceiver.callback = (e) => {
         console.info(e);
-        alert("SMS IS RECEIVED");
+        alert('SMS IS RECEIVED');
         SMSReceiver.unRegisterReceiver();
       };
     });
@@ -58,11 +37,6 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
 
   initOTP() {
     this.textBox1.ios.textContentType = TextContentType.ONETIMECODE;
-  }
-
-  initDatePicker() {
-    this.datePicker = new DatePicker();
-    this.datePicker.show();
   }
 
   /**
@@ -76,7 +50,6 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
 
   onShow() {
     super.onShow();
-    this.initDatePicker();
     this.initBackButton(this.router);
   }
 

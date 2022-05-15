@@ -34,14 +34,14 @@
 			"type": "HeaderBar",
 			"id": "55e2-ed59-0bdf-e4e7",
 			"userProps": {
-				"title": "pgZoomableImageView"
+				"title": "ZoomableImageView"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "eae6-6ace-e86b-fe2e",
 				"children": [],
-				"title": "pgZoomableImageView",
+				"title": "ZoomableImageView",
 				"visible": true,
 				"isRemovable": false
 			}
@@ -82,14 +82,14 @@
 			"type": "HeaderBar",
 			"id": "55e2-ed59-0bdf-e4e7",
 			"userProps": {
-				"title": "pgZoomableImageView"
+				"title": "ZoomableImageView"
 			},
 			"className": ".sf-headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "eae6-6ace-e86b-fe2e",
 				"children": [],
-				"title": "pgZoomableImageView",
+				"title": "ZoomableImageView",
 				"visible": true,
 				"isRemovable": false
 			}

@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "17a5-b2f6-f2a4-2fbf",
+			"initialized": true,
+			"props": {
+				"children": [
+					"84d1-7703-687c-b322",
+					"094c-07f7-6e07-8f77",
+					"d54e-2fb9-ae1b-1606"
+				],
+				"name": "pgScreen",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "84d1-7703-687c-b322",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "17a5-b2f6-f2a4-2fbf"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "094c-07f7-6e07-8f77",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "17a5-b2f6-f2a4-2fbf",
+				"title": "Screen"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Screen"
+			}
+		},
+		{
+			"className": ".sf-label .grow #pgScreen-lblScreenDetails",
+			"id": "d54e-2fb9-ae1b-1606",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblScreenDetails",
+				"parent": "17a5-b2f6-f2a4-2fbf",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

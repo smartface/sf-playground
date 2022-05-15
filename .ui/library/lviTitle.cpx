@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviTitle",
+			"hiddenComponent": true,
+			"id": "f28b-5ba3-f19a-a488",
+			"props": {
+				"children": [
+					"2e3b-d746-a01d-e029",
+					"c6fa-4ef6-0965-78f6"
+				],
+				"name": "lviTitle",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": 2,
+				"top": 12.67
+			}
+		},
+		{
+			"className": ".sf-label .lviTitle-lblTitle",
+			"id": "2e3b-d746-a01d-e029",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblTitle",
+				"parent": "f28b-5ba3-f19a-a488",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .lviTitle-separator",
+			"id": "c6fa-4ef6-0965-78f6",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "f28b-5ba3-f19a-a488"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

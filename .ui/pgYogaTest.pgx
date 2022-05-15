@@ -38,11 +38,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "8acd-5e73-3014-d9af",
-				"title": "pgYogaTest"
+				"title": "YogaTest"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgYogaTest"
+				"title": "YogaTest"
 			}
 		},
 		{

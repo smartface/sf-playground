@@ -1,11 +1,10 @@
-import PgLoginDesign from "generated/pages/pgLogin";
-import ActionKeyType from "@smartface/native/ui/actionkeytype";
-import KeyboardType from "@smartface/native/ui/keyboardtype";
-import TextAlignment from "@smartface/native/ui/textalignment";
-import { Route } from "@smartface/router";
-import { withDismissAndBackButton } from "@smartface/mixins";
-import { Router } from "@smartface/router";
-
+import PgLoginDesign from 'generated/pages/pgLogin';
+import ActionKeyType from '@smartface/native/ui/shared/android/actionkeytype';
+import KeyboardType from '@smartface/native/ui/shared/keyboardtype';
+import TextAlignment from '@smartface/native/ui/shared/textalignment';
+import { Route } from '@smartface/router';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router } from '@smartface/router';
 
 export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -15,9 +14,9 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
 
   initMaterialTextBoxes() {
     this.mtbEmail.options = {
-      hint: "Email",
+      hint: 'Email'
     };
-    this.mtbEmail.materialTextBox.textAlignment = TextAlignment.MIDCENTER;
+    this.mtbEmail.materialTextBox.textAlignment = TextAlignment.MIDLEFT;
     this.mtbEmail.materialTextBox.keyboardType = KeyboardType.EMAILADDRESS;
     this.mtbEmail.materialTextBox.actionKeyType = ActionKeyType.NEXT;
     this.mtbEmail.materialTextBox.onActionButtonPress = () => {
@@ -25,9 +24,9 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
     };
 
     this.mtbPassword.options = {
-      hint: "Password",
+      hint: 'Password'
     };
-    this.mtbPassword.materialTextBox.textAlignment = TextAlignment.MIDCENTER;
+    this.mtbPassword.materialTextBox.textAlignment = TextAlignment.MIDLEFT;
     this.mtbPassword.materialTextBox.isPassword = true;
     this.mtbPassword.materialTextBox.actionKeyType = ActionKeyType.GO;
     this.mtbPassword.materialTextBox.onActionButtonPress = () => {
@@ -39,9 +38,9 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
     if (!(this.mtbEmail.materialTextBox.text.length && this.mtbPassword.materialTextBox.text.length)) {
       return;
     }
-    this.router.push("profile", {
+    this.router.push('profile', {
       email: this.mtbEmail.materialTextBox.text,
-      password: this.mtbEmail.materialTextBox.text,
+      password: this.mtbEmail.materialTextBox.text
     });
   }
 

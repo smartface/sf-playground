@@ -1,0 +1,228 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "91bf-c225-6916-5275",
+			"initialized": true,
+			"props": {
+				"children": [
+					"0899-0c41-668b-9b66",
+					"0df1-6e5f-ac89-23d4",
+					"f88e-82e2-b735-1c90",
+					"1739-4d23-cf03-174f",
+					"6b09-d4a2-c008-8f99",
+					"5013-731e-1daf-6990",
+					"4581-022c-03e0-d973",
+					"fca0-a461-e92b-9efe",
+					"8be2-3c85-6bc7-3e1d",
+					"d58b-804c-ce0c-580c",
+					"61b1-f67b-6647-ae13"
+				],
+				"name": "pgCrypto",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "0899-0c41-668b-9b66",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "91bf-c225-6916-5275"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0df1-6e5f-ac89-23d4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "91bf-c225-6916-5275",
+				"title": "Crypto"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Crypto"
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "f88e-82e2-b735-1c90",
+			"oldName": "textBox1",
+			"props": {
+				"children": [],
+				"name": "tbRSA",
+				"parent": "91bf-c225-6916-5275",
+				"text": "Write something to encrypt",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"text": "Write something to encrypt",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "1739-4d23-cf03-174f",
+			"oldName": "btnEncrypt",
+			"props": {
+				"children": [],
+				"name": "btnEncryptRSA",
+				"parent": "91bf-c225-6916-5275",
+				"text": "Encrypt RSA",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Encrypt RSA",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "6b09-d4a2-c008-8f99",
+			"oldName": "btnEncrypt_1",
+			"props": {
+				"children": [],
+				"name": "btnDecryptRSA",
+				"parent": "91bf-c225-6916-5275",
+				"text": "Decrypt RSA",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Decrypt RSA",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "5013-731e-1daf-6990",
+			"oldName": "btnEncryptRSA_1",
+			"props": {
+				"children": [],
+				"name": "btnEncryptAES",
+				"parent": "91bf-c225-6916-5275",
+				"text": "Encrypt AES",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Encrypt AES",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "4581-022c-03e0-d973",
+			"oldName": "btnDecryptRSA_1",
+			"props": {
+				"children": [],
+				"name": "btnDecryptAES",
+				"parent": "91bf-c225-6916-5275",
+				"text": "Decrypt AES",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Decrypt AES",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "fca0-a461-e92b-9efe",
+			"oldName": "lblRsaOutput",
+			"props": {
+				"children": [],
+				"name": "lblRsaOutputInfo",
+				"parent": "91bf-c225-6916-5275",
+				"text": "RSA Output"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "RSA Output",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "8be2-3c85-6bc7-3e1d",
+			"oldName": "lblRsaOutputInfo_1",
+			"props": {
+				"children": [],
+				"name": "lblRsaOutput",
+				"parent": "91bf-c225-6916-5275",
+				"text": "<>",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 100,
+				"maxLines": 0,
+				"text": "<>",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "d58b-804c-ce0c-580c",
+			"oldName": "lblRsaOutputInfo_1",
+			"props": {
+				"children": [],
+				"name": "lblAesOutputInfo",
+				"parent": "91bf-c225-6916-5275",
+				"text": "AES Output"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "AES Output",
+				"textAlignment": "MIDCENTER"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "61b1-f67b-6647-ae13",
+			"oldName": "lblRsaOutput_1",
+			"props": {
+				"children": [],
+				"name": "lblAesOutput",
+				"parent": "91bf-c225-6916-5275",
+				"text": "<>",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 14,
+					"bold": true,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Semibold"
+				},
+				"height": 100,
+				"maxLines": 0,
+				"text": "<>",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		}
+	]
+}

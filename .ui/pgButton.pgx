@@ -1,0 +1,84 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "0e0b-d7f0-7994-d28a",
+			"initialized": true,
+			"props": {
+				"children": [
+					"bee4-bb72-6184-54d9",
+					"be0d-e5a6-e338-59c5",
+					"9933-2c56-024b-321b",
+					"b351-ebc1-5645-d550"
+				],
+				"name": "pgButton",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "bee4-bb72-6184-54d9",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "0e0b-d7f0-7994-d28a"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "be0d-e5a6-e338-59c5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "0e0b-d7f0-7994-d28a",
+				"title": "Button"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Button"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "9933-2c56-024b-321b",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btn1",
+				"parent": "0e0b-d7f0-7994-d28a",
+				"text": "Press",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Press",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b351-ebc1-5645-d550",
+			"oldName": "btn1_1",
+			"props": {
+				"children": [],
+				"name": "btn2",
+				"parent": "0e0b-d7f0-7994-d28a",
+				"text": "Long Press (Android)",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Long Press (Android)",
+				"usePageVariable": true
+			}
+		}
+	]
+}
