@@ -5,7 +5,6 @@
     "@smartface/extension-barcode": "^5.0.0",
     "@smartface/extension-listviewindex": "^3.0.0",
     "@smartface/extension-sms-receiver": "^4.0.0",
-    "@smartface/extension-spriteview": "^3.0.0",
     "@smartface/extension-utils": "^16.2.9",
     "@smartface/mixins": "^5.0.0-beta",
     "@smartface/native": "^5.0.0-alpha",
