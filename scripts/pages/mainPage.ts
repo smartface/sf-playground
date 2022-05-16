@@ -18,6 +18,10 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
       //   console.info('sliderDrawer.state: ', Application.sliderDrawer.state);
       //   Application.sliderDrawer.show();
     });
+    //@ts-ignore
+    // this.testing.on('touchEnded', () => {
+    //   console.log('selamlar');
+    // });
   }
 
   initListViewIndex() {
