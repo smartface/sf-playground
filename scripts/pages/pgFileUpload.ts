@@ -15,6 +15,9 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
 import { IImage } from '@smartface/native/ui/image/image';
 import Color from '@smartface/native/ui/color';
+import { styleableComponentMixin } from '@smartface/styling-context';
+
+class StyleableView extends styleableComponentMixin(View) {}
 
 export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadDesign) {
   protected uploadMenu = new Menu();
@@ -24,7 +27,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     super({});
   }
 
-  setVisible(view: StyleContextComponentWithDispatch<View>, visible: boolean) {
+  setVisible(view: StyleableView, visible: boolean) {
     view.dispatch({
       type: 'updateUserStyle',
       userStyle: {
