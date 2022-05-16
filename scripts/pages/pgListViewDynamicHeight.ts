@@ -21,6 +21,7 @@ export default class PgListViewDynamicHeight extends withDismissAndBackButton(Pg
     this.lv.onRowHeight = (index) => LviDynamicLine.getHeight(this._data[index]);
     this.lv.onRowBind = (listViewItem: LviDynamicLine, index) => {
       listViewItem.text = this._data[index];
+      listViewItem.separatorVisible = this._data.length - 1 !== index;
     };
   }
 

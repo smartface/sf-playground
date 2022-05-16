@@ -14,6 +14,14 @@ export default class LviDynamicLine extends LviDynamicLineDesign {
   set text(value: string) {
     this.lblLine.text = value;
   }
+  set separatorVisible(value: boolean) {
+    this.separator.dispatch({
+      type: 'updateUserStyle',
+      userStyle: {
+        visible: value
+      }
+    });
+  }
   static getHeight(text: string) {
     /**
      * Below is our listview item's blueprint
