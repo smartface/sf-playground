@@ -14,6 +14,7 @@ export default class PgListView extends withDismissAndBackButton(PgListViewDesig
     this.flSwipeItem.lblTitle.text = 'ListviewItem Swipe';
     this.flDragDrop.lblTitle.text = 'ListviewItem Drag&Drop';
     this.flZebra.lblTitle.text = 'Listview Zebra Design';
+    this.flExtendShrink.lblTitle.text = 'Listview Extend Shrink Item';
   }
 
   initPressEvents() {
@@ -23,21 +24,14 @@ export default class PgListView extends withDismissAndBackButton(PgListViewDesig
     this.flSwipeItem.on('touch', () => this.router.push('PgListviewSwipe'));
     this.flDragDrop.on('touch', () => this.router.push('PgListviewDragDrop'));
     this.flZebra.on('touch', () => this.router.push('PgListviewZebra'));
+    this.flExtendShrink.on('touch', () => this.router.push('PgListViewExtendShrink'));
   }
 
-  /**
-   * @event onShow
-   * This event is called when the page appears on the screen (everytime).
-   */
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
-  /**
-   * @event onLoad
-   * This event is called once when the page is created.
-   */
   onLoad() {
     super.onLoad();
     this.initLabels();

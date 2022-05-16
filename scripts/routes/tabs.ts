@@ -125,6 +125,7 @@ export const tab0: Tab = {
     PgListViewSwipe,
     PgListViewPagination,
     PgListViewMultiple,
+    PgListViewExtendShrink,
     PgMapViewRegion,
     PgHeaderImageAndItems,
     PgCrypto,

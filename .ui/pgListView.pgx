@@ -14,7 +14,8 @@
 					"b692-73b8-f2fd-b20c",
 					"373a-852a-f79d-6a77",
 					"8ed3-078e-dee7-5835",
-					"98be-1488-7712-700a"
+					"98be-1488-7712-700a",
+					"dc71-efbb-0e2a-1ff4"
 				],
 				"name": "pgListView",
 				"orientation": "PORTRAIT",
@@ -232,6 +233,37 @@
 			"props": {
 				"children": [],
 				"name": "flZebra",
+				"parent": "0e7e-af23-8304-9e8d",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "flRow1Line",
+				"id": "3541-f1d3-c335-9e7c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"testId": "WF1BQbSel-",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flRow1Line",
+			"hiddenComponent": false,
+			"id": "dc71-efbb-0e2a-1ff4",
+			"oldName": "flZebra_1",
+			"props": {
+				"children": [],
+				"name": "flExtendShrink",
 				"parent": "0e7e-af23-8304-9e8d",
 				"usePageVariable": true
 			},
