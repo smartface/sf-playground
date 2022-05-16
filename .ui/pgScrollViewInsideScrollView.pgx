@@ -1,0 +1,304 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "8c02-b5be-c343-bc28",
+			"initialized": true,
+			"props": {
+				"children": [
+					"f7c6-611c-c81e-82a5",
+					"5e68-71c5-bcf9-01ce",
+					"76ff-7f67-093f-a2a1"
+				],
+				"name": "pgScrollViewInsideScrollView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "f7c6-611c-c81e-82a5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "8c02-b5be-c343-bc28"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "5e68-71c5-bcf9-01ce",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "8c02-b5be-c343-bc28",
+				"title": "pgScrollViewInsideScrollView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgScrollViewInsideScrollView"
+			}
+		},
+		{
+			"className": ".sf-scrollView .grow",
+			"id": "76ff-7f67-093f-a2a1",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"0aba-0371-3010-0324",
+					"59e3-1fb2-3214-4d7c",
+					"0f8a-d137-c1b2-345e",
+					"dae1-39a1-5c57-5aa6",
+					"22f1-6b10-e72a-7f2e",
+					"f893-baae-ac84-d746",
+					"ec4b-5f59-307c-56f4"
+				],
+				"name": "svOuter",
+				"parent": "8c02-b5be-c343-bc28",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "0aba-0371-3010-0324",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "76ff-7f67-093f-a2a1",
+				"text": "Example Label 1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Label 1"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "59e3-1fb2-3214-4d7c",
+			"oldName": "label1_1",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "76ff-7f67-093f-a2a1",
+				"text": "Example Label 2"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Label 2"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "0f8a-d137-c1b2-345e",
+			"oldName": "label2_1",
+			"props": {
+				"children": [],
+				"name": "label3",
+				"parent": "76ff-7f67-093f-a2a1",
+				"text": "Example Label 3"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Label 3"
+			}
+		},
+		{
+			"className": ".sf-scrollView",
+			"id": "dae1-39a1-5c57-5aa6",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"18b6-61ab-1b26-23bf",
+					"1f2f-951c-bd8b-cf42",
+					"8cd6-a9e8-2d13-5b81",
+					"dbab-aeab-2018-81a6",
+					"935b-3340-6537-4527",
+					"fe9a-e010-ad0c-663f",
+					"0180-eb51-dcab-d025"
+				],
+				"name": "svInner",
+				"parent": "76ff-7f67-093f-a2a1",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"height": 200,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "18b6-61ab-1b26-23bf",
+			"oldName": "label3",
+			"props": {
+				"children": [],
+				"name": "innerlabel1",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "Example Inner Label 1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Inner Label 1"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "1f2f-951c-bd8b-cf42",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"name": "innerlabel2",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "Example Inner Label 2"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Inner Label 2"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "8cd6-a9e8-2d13-5b81",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "innerlabel3",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "Example Inner Label 3"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Inner Label 3"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "dbab-aeab-2018-81a6",
+			"oldName": "innerlabel3_1",
+			"props": {
+				"children": [],
+				"name": "innerlabel4",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "Example Inner Label 4"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Inner Label 4"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "935b-3340-6537-4527",
+			"oldName": "innerlabel4_1",
+			"props": {
+				"children": [],
+				"name": "innerlabel5",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "Example Inner Label 5"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Inner Label 5"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "fe9a-e010-ad0c-663f",
+			"oldName": "innerlabel5_1",
+			"props": {
+				"children": [],
+				"name": "innerlabel6",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "Example Inner Label 6"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Example Inner Label 6"
+			}
+		},
+		{
+			"className": ".sf-label .grow",
+			"id": "0180-eb51-dcab-d025",
+			"oldName": "innerlabel6_1",
+			"props": {
+				"children": [],
+				"name": "innerLabelInfo",
+				"parent": "dae1-39a1-5c57-5aa6",
+				"text": "This is a scrollview inside a scrollview"
+			},
+			"type": "Label",
+			"userProps": {
+				"alpha": 0.15,
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"left": 0,
+				"right": 0,
+				"text": "This is a scrollview inside a scrollview",
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "22f1-6b10-e72a-7f2e",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "fl1",
+				"parent": "76ff-7f67-093f-a2a1"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 65, 117, 5, 1 )",
+				"height": 300
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "f893-baae-ac84-d746",
+			"oldName": "fl1_1",
+			"props": {
+				"children": [],
+				"name": "fl2",
+				"parent": "76ff-7f67-093f-a2a1"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 1 )",
+				"height": 300
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "ec4b-5f59-307c-56f4",
+			"oldName": "fl2_1",
+			"props": {
+				"children": [],
+				"name": "fl3",
+				"parent": "76ff-7f67-093f-a2a1"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 144, 19, 254, 1 )",
+				"height": 300
+			}
+		}
+	]
+}
