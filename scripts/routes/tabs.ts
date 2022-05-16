@@ -106,6 +106,7 @@ import PgDialog from 'pages/pgDialog';
 import PgXHR from 'pages/pgXHR';
 import PgScrollViewInsideScrollView from 'pages/pgScrollViewInsideScrollView';
 import PgListViewExtendShrink from 'pages/pgListViewExtendShrink';
+import PgListViewDynamicHeight from 'pages/pgListViewDynamicHeight';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -126,6 +127,7 @@ export const tab0: Tab = {
     PgListViewPagination,
     PgListViewMultiple,
     PgListViewExtendShrink,
+    PgListViewDynamicHeight,
     PgMapViewRegion,
     PgHeaderImageAndItems,
     PgCrypto,

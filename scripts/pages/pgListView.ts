@@ -15,6 +15,7 @@ export default class PgListView extends withDismissAndBackButton(PgListViewDesig
     this.flDragDrop.lblTitle.text = 'ListviewItem Drag&Drop';
     this.flZebra.lblTitle.text = 'Listview Zebra Design';
     this.flExtendShrink.lblTitle.text = 'Listview Extend Shrink Item';
+    this.flDynamicLine.lblTitle.text = 'Listview Dynamic Height';
   }
 
   initPressEvents() {
@@ -25,6 +26,7 @@ export default class PgListView extends withDismissAndBackButton(PgListViewDesig
     this.flDragDrop.on('touch', () => this.router.push('PgListviewDragDrop'));
     this.flZebra.on('touch', () => this.router.push('PgListviewZebra'));
     this.flExtendShrink.on('touch', () => this.router.push('PgListViewExtendShrink'));
+    this.flDynamicLine.on('touch', () => this.router.push('PgListViewDynamicHeight'));
   }
 
   onShow() {

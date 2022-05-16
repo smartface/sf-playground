@@ -1,0 +1,24 @@
+{
+  ".lviDynamicLine": {
+    "height": 60,
+    "paddingLeft": 15,
+    "paddingRight": 15,
+    "paddingBottom": 15,
+    "paddingTop": 15,
+    "&-lblLine": {
+      "maxLines": 0,
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "width": null,
+      "height": null,
+      "font": {
+        "bold": false,
+        "style": "Regular",
+        "family": "SFProText",
+        "italic": false,
+        "size": 12
+      }
+    }
+  }
+}

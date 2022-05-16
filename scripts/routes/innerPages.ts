@@ -3,6 +3,7 @@ import PgGridViewHorizontalCard from 'pages/pgGridViewHorizontalCard';
 import PgGridViewPagination from 'pages/pgGridViewPagination';
 import PgGridViewRowRange from 'pages/pgGridViewRowRange';
 import PgListviewDragDrop from 'pages/pgListviewDragDrop';
+import PgListViewDynamicHeight from 'pages/pgListViewDynamicHeight';
 import PgListViewExtendShrink from 'pages/pgListViewExtendShrink';
 import PgListviewMultipleLvi from 'pages/pgListviewMultipleLvi';
 import PgListviewPagination from 'pages/pgListviewPagination';
@@ -20,6 +21,7 @@ export const innerPages = [
   PgListViewExtendShrink,
   PgGridViewFullSpan,
   PgGridViewHorizontalCard,
+  PgListViewDynamicHeight,
   PgGridViewRowRange,
   PgGridViewPagination
 ];

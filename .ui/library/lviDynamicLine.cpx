@@ -1,0 +1,60 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviDynamicLine",
+			"id": "ff27-1cb1-7e29-36d7",
+			"props": {
+				"children": [
+					"ccdd-7f58-42be-fde4",
+					"a72d-02c8-021b-97ab"
+				],
+				"name": "lviDynamicLine",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": 25.86,
+				"top": 177.59
+			}
+		},
+		{
+			"className": ".sf-label .lviDynamicLine-lblLine",
+			"id": "ccdd-7f58-42be-fde4",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblLine",
+				"parent": "ff27-1cb1-7e29-36d7",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .separator",
+			"id": "a72d-02c8-021b-97ab",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "ff27-1cb1-7e29-36d7",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}
