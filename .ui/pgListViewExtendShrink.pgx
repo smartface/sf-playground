@@ -1,0 +1,86 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "bf83-8c12-1334-7dfd",
+			"initialized": true,
+			"props": {
+				"children": [
+					"1b61-4dc5-6936-3503",
+					"01bc-5f1e-8b74-5b57",
+					"07bb-0b1b-f518-e71c",
+					"89d2-ce00-7042-0cda"
+				],
+				"name": "pgListViewExtendShrink",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "1b61-4dc5-6936-3503",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "bf83-8c12-1334-7dfd"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "01bc-5f1e-8b74-5b57",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "bf83-8c12-1334-7dfd",
+				"title": "ListViewExtendShrink"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "ListViewExtendShrink"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "07bb-0b1b-f518-e71c",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "bf83-8c12-1334-7dfd",
+				"text": "button1",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "button1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-listView .grow",
+			"id": "89d2-ce00-7042-0cda",
+			"oldName": "listView1",
+			"props": {
+				"children": [],
+				"name": "lv",
+				"parent": "bf83-8c12-1334-7dfd",
+				"usePageVariable": true
+			},
+			"type": "ListView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

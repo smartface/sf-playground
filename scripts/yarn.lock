@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@faker-js/faker@^6.3.1":
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-6.3.1.tgz#1ae963dd40405450a2945408cba553e1afa3e0fb"
+  integrity sha512-8YXBE2ZcU/pImVOHX7MWrSR/X5up7t6rPWZlk34RwZEcdr3ua6X+32pSd6XuOQRN+vbuvYNfA6iey8NbrjuMFQ==
+
 "@smartface/component-keyboardlayout@^5.0.0":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-5.0.3.tgz#453b321ec799fcfe9dbbe4de210abf4053cce4d2"
@@ -106,6 +111,10 @@
   dependencies:
     "@types/events" "^3.0.0"
     events "^3.3.0"
+
+"@types/@faker-js/faker":
+  version "6.3.1"
+  resolved "https://codeload.github.com/faker-js/faker/tar.gz/7373a22f33f38d29ff53e4f4588f0137a35132b8"
 
 "@types/events@^3.0.0":
   version "3.0.0"

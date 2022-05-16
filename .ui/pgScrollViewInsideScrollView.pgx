@@ -43,11 +43,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "8c02-b5be-c343-bc28",
-				"title": "pgScrollViewInsideScrollView"
+				"title": "ScrollViewInsideScrollView"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgScrollViewInsideScrollView"
+				"title": "ScrollViewInsideScrollView"
 			}
 		},
 		{

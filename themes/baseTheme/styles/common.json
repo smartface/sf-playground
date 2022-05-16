@@ -66,5 +66,15 @@
         "direction": "VERTICAL"
       }
     }
+  },
+  ".separator": {
+    "height": 1,
+    "left": 0,
+    "right": 0,
+    "flexProps": {
+      "positionType": "ABSOLUTE"
+    },
+    "bottom": 0,
+    "backgroundColor": "rgba( 0, 0, 0, 0.1 )"
   }
 }

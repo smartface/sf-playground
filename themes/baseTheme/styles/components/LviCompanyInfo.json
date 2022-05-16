@@ -1,0 +1,50 @@
+{
+  ".lviCompanyInfo": {
+    "height": 60,
+    "&-companyName": {
+      "font": {
+        "size": 14
+      },
+      "flexProps": {},
+      "height": 30
+    },
+    "&-companySection": {
+      "font": {
+        "size": 10,
+        "bold": false,
+        "style": "Regular"
+      },
+      "flexProps": {},
+      "height": 30
+    },
+    "flexProps": {
+      "flexDirection": "ROW"
+    },
+    "&-rightLayout": {
+      "width": 50,
+      "flexProps": {
+        "justifyContent": "CENTER"
+      },
+      "height": null,
+      "&-imgDownArrow": {
+        "flexProps": {
+          "flexGrow": null,
+          "alignSelf": "CENTER"
+        },
+        "image": "keyboardlayout_down.png",
+        "imageFillType": "ASPECTFIT",
+        "tintColor": "rgba( 74, 144, 226, 1 )",
+        "height": 30,
+        "width": 30
+      }
+    },
+    "&-wrapper": {
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      }
+    },
+    "paddingLeft": 15,
+    "paddingRight": 15
+  }
+}

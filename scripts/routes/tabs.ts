@@ -105,6 +105,7 @@ import PgAccelerometer from 'pages/pgAccelerometer';
 import PgDialog from 'pages/pgDialog';
 import PgXHR from 'pages/pgXHR';
 import PgScrollViewInsideScrollView from 'pages/pgScrollViewInsideScrollView';
+import PgListViewExtendShrink from 'pages/pgListViewExtendShrink';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
 
@@ -224,6 +225,7 @@ export const tab4: Tab = {
     PgComponentFromCode,
     PgButtonPress,
     PgDynamicSize,
-    PgScrollViewInsideScrollView
+    PgScrollViewInsideScrollView,
+    PgListViewExtendShrink
   ]
 };

@@ -1,0 +1,63 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .flWaitingIndicator",
+			"hiddenComponent": true,
+			"id": "e2c4-b7c4-7c63-c444",
+			"props": {
+				"children": [
+					"8823-f001-a984-b5ce"
+				],
+				"name": "flWaitingIndicator",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"deltaX": 0,
+				"deltaY": 0,
+				"flexProps": {},
+				"height": 300,
+				"lastX": 64,
+				"lastY": 100,
+				"left": 64,
+				"node": null,
+				"top": 100,
+				"width": 300,
+				"x": 64,
+				"y": 100
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWaitingIndicator-wrapper",
+			"id": "8823-f001-a984-b5ce",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"97f9-8827-4f08-a60f"
+				],
+				"name": "flGiv",
+				"parent": "e2c4-b7c4-7c63-c444"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-gifImageView .flWaitingIndicator-giv",
+			"id": "97f9-8827-4f08-a60f",
+			"oldName": "gifImageView1",
+			"props": {
+				"children": [],
+				"name": "giv",
+				"parent": "8823-f001-a984-b5ce"
+			},
+			"type": "GifImageView",
+			"userProps": {}
+		}
+	]
+}

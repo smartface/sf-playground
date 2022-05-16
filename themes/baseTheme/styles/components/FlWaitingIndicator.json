@@ -1,0 +1,34 @@
+{
+  ".flWaitingIndicator": {
+    "height": null,
+    "width": null,
+    "&-giv": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "width": null,
+      "height": null,
+      "gifImage": "loading.gif",
+      "imageFillType": "ASPECTFIT"
+    },
+    "flexProps": {
+      "alignSelf": "CENTER",
+      "flexGrow": 1,
+      "alignContent": "CENTER",
+      "justifyContent": "CENTER",
+      "alignItems": "CENTER"
+    },
+    "&-wrapper": {
+      "height": 120,
+      "width": 120,
+      "paddingBottom": 15,
+      "paddingLeft": 15,
+      "paddingRight": 15,
+      "paddingTop": 15,
+      "backgroundColor": "rgba(255,255,255,1)",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "borderColor": "rgba( 0, 0, 0, 1 )"
+    }
+  }
+}

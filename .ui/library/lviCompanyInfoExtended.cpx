@@ -1,0 +1,153 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviCompanyInfoExtended",
+			"hiddenComponent": true,
+			"id": "06e0-47b3-b20a-bcf6",
+			"props": {
+				"children": [
+					"5584-f9f3-b477-9af6",
+					"fb16-2161-fcc6-a322",
+					"3b18-662d-84ba-f1b9"
+				],
+				"name": "lviCompanyInfoExtended",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": 45.33,
+				"top": 428
+			}
+		},
+		{
+			"className": ".sf-flexLayout .lviCompanyInfoExtended-wrapper",
+			"id": "5584-f9f3-b477-9af6",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"a840-343c-2a19-a2d3",
+					"a766-5be7-40e1-5d48",
+					"a92d-769e-f551-db81"
+				],
+				"name": "flMain",
+				"parent": "06e0-47b3-b20a-bcf6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .lviCompanyInfoExtended-companyName",
+			"id": "a840-343c-2a19-a2d3",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblCompanyName",
+				"parent": "5584-f9f3-b477-9af6",
+				"text": "Smartface",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Smartface",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .lviCompanyInfoExtended-companySection",
+			"id": "a766-5be7-40e1-5d48",
+			"oldName": "lblCompanyName_1",
+			"props": {
+				"children": [],
+				"name": "lblCompanySection",
+				"parent": "5584-f9f3-b477-9af6",
+				"text": "Mobile",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Mobile",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .lviCompanyInfoExtended-companyInfo",
+			"id": "a92d-769e-f551-db81",
+			"oldName": "lblCompanySection_1",
+			"props": {
+				"children": [],
+				"name": "lblCompanyInfo",
+				"parent": "5584-f9f3-b477-9af6",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis risus tincidunt, vehicula ipsum ac, ultricies velit. Nunc mollis libero ac aliquam maximus. Pellentesque sodales sem nec dolor placerat rhoncus.",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis risus tincidunt, vehicula ipsum ac, ultricies velit. Nunc mollis libero ac aliquam maximus. Pellentesque sodales sem nec dolor placerat rhoncus.",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .lviCompanyInfoExtended-rightLayout",
+			"id": "fb16-2161-fcc6-a322",
+			"oldName": "flMain_1",
+			"props": {
+				"children": [
+					"0ee7-b23b-bf9d-af60"
+				],
+				"name": "flRightLayout",
+				"parent": "06e0-47b3-b20a-bcf6",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .lviCompanyInfoExtended-rightLayout-imgUpArrow",
+			"id": "0ee7-b23b-bf9d-af60",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgDownArrow",
+				"parent": "fb16-2161-fcc6-a322",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".sf-flexLayout .separator",
+			"id": "3b18-662d-84ba-f1b9",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "06e0-47b3-b20a-bcf6",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

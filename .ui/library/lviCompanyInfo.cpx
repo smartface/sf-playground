@@ -1,0 +1,135 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviCompanyInfo",
+			"hiddenComponent": true,
+			"id": "6414-61b0-5f7a-08f0",
+			"props": {
+				"children": [
+					"483a-9591-d883-8c04",
+					"4bf2-d7fc-2219-64ae",
+					"b2bb-3334-204f-381d"
+				],
+				"name": "lviCompanyInfo",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": 22.73,
+				"top": 200
+			}
+		},
+		{
+			"className": ".sf-flexLayout .lviCompanyInfo-wrapper",
+			"id": "483a-9591-d883-8c04",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"c5c9-d9a9-2ceb-2a69",
+					"d5a4-0a3d-e22e-850d"
+				],
+				"name": "flMain",
+				"parent": "6414-61b0-5f7a-08f0"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .lviCompanyInfo-companyName",
+			"id": "c5c9-d9a9-2ceb-2a69",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblCompanyName",
+				"parent": "483a-9591-d883-8c04",
+				"text": "Smartface",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Smartface",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .lviCompanyInfo-companySection",
+			"id": "d5a4-0a3d-e22e-850d",
+			"oldName": "lblCompanyName_1",
+			"props": {
+				"children": [],
+				"name": "lblCompanySection",
+				"parent": "483a-9591-d883-8c04",
+				"text": "Mobile",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Mobile",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .lviCompanyInfo-rightLayout",
+			"id": "4bf2-d7fc-2219-64ae",
+			"oldName": "flMain_1",
+			"props": {
+				"children": [
+					"18b0-c7b5-ef4d-8fba"
+				],
+				"name": "flRightLayout",
+				"parent": "6414-61b0-5f7a-08f0",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .lviCompanyInfo-rightLayout-imgDownArrow",
+			"id": "18b0-c7b5-ef4d-8fba",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgDownArrow",
+				"parent": "4bf2-d7fc-2219-64ae",
+				"usePageVariable": false
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"usePageVariable": false
+			}
+		},
+		{
+			"className": ".sf-flexLayout .separator",
+			"id": "b2bb-3334-204f-381d",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "6414-61b0-5f7a-08f0",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

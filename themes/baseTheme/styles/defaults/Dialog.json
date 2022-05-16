@@ -1,0 +1,11 @@
+{
+  ".dialog": {
+    "backgroundColor": "rgba(0,0,0,0.0)",
+    "flexProps": {
+      "alignItems": "CENTER",
+      "justifyContent": "CENTER",
+      "alignContent": "CENTER",
+      "flexDirection": "COLUMN"
+    }
+  }
+}
