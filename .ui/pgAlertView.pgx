@@ -11,7 +11,11 @@
 					"0050-f964-6986-3ba7",
 					"2373-8174-b769-dc23",
 					"57f9-17bb-d6e9-a5fb",
-					"7076-5620-03fe-ae1a"
+					"7076-5620-03fe-ae1a",
+					"af59-3091-0b4c-c4b3",
+					"b6b6-24c8-ff30-0d5c",
+					"2b76-51a6-675b-14f6",
+					"8b3a-ff89-b01d-c6b4"
 				],
 				"name": "pgAlertView",
 				"orientation": "PORTRAIT",
@@ -19,8 +23,7 @@
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "0.0.1.a",
-			"degree": 0
+			"version": "0.0.1.a"
 		},
 		{
 			"className": ".sf-statusBar",
@@ -32,8 +35,7 @@
 				"parent": "4277-ea6f-12e7-6d1a"
 			},
 			"type": "StatusBar",
-			"userProps": {},
-			"degree": 1
+			"userProps": {}
 		},
 		{
 			"className": ".sf-headerBar",
@@ -48,8 +50,7 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "AlertView"
-			},
-			"degree": 1
+			}
 		},
 		{
 			"className": ".sf-button",
@@ -67,8 +68,7 @@
 				"testId": "lukKj89gr",
 				"text": "Show AlertView",
 				"usePageVariable": true
-			},
-			"degree": 1
+			}
 		},
 		{
 			"className": ".sf-button",
@@ -86,8 +86,7 @@
 				"testId": "lukKj89gr",
 				"text": "Print isShowing",
 				"usePageVariable": true
-			},
-			"degree": 1
+			}
 		},
 		{
 			"className": ".sf-label",
@@ -103,8 +102,7 @@
 			"userProps": {
 				"text": "Cancelable (Android)",
 				"textAlignment": "MIDCENTER"
-			},
-			"degree": 1
+			}
 		},
 		{
 			"className": ".sf-switch",
@@ -123,12 +121,75 @@
 					"alignSelf": "CENTER"
 				},
 				"height": 43.4,
+				"testId": "-RKfaml1X",
 				"toggle": true,
 				"usePageVariable": true,
-				"width": 66.04,
-				"testId": "-RKfaml1X"
+				"width": 66.04
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "af59-3091-0b4c-c4b3",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "4277-ea6f-12e7-6d1a"
 			},
-			"degree": 1
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 155, 155, 155, 1 )",
+				"height": 1
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "b6b6-24c8-ff30-0d5c",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "4277-ea6f-12e7-6d1a",
+				"text": "Alert Javascript Impl -> alert()"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Alert Javascript Impl -> alert()"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2b76-51a6-675b-14f6",
+			"oldName": "btnShow_1",
+			"props": {
+				"children": [],
+				"name": "btnShowJSAlert",
+				"parent": "4277-ea6f-12e7-6d1a",
+				"text": "Show JS Alert",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "lukKj89gr",
+				"text": "Show JS Alert",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "8b3a-ff89-b01d-c6b4",
+			"oldName": "btnIsShowing_1",
+			"props": {
+				"children": [],
+				"name": "btnIsShowingJSAlert",
+				"parent": "4277-ea6f-12e7-6d1a",
+				"text": "Print JSAlert isShowing",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "lukKj89gr",
+				"text": "Print JSAlert isShowing",
+				"usePageVariable": true
+			}
 		}
 	]
 }

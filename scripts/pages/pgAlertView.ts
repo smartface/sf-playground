@@ -6,15 +6,33 @@ import { ButtonType } from '@smartface/native/ui/alertview/alertview';
 
 export default class PgAlertView extends withDismissAndBackButton(PgAlertViewDesign) {
   alertView: AlertView;
-
+  jsAlertView: AlertView;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.btnShow.on('press', () => this.alertView.show());
     this.btnIsShowing.on('press', () => {
       console.log('currently: ' + this.alertView.isShowing());
-      setTimeout(() => console.log('timeout: ' + this.alertView.isShowing()), 2500);
+      setTimeout(() => console.log('isShowing after timeout: ' + this.alertView.isShowing()), 2500);
     });
     this.sw.onToggleChanged = (toggle) => (this.alertView.android.cancellable = toggle);
+    this.btnShowJSAlert.on('press', () => {
+      this.jsAlertView = alert({
+        message: 'JS AlertView',
+        title: 'JS AlertView Shown',
+        buttons: [
+          {
+            text: 'Cancel',
+            type: AlertView.Android.ButtonType.NEGATIVE,
+            onClick: () => console.info('js alert negative click')
+          },
+          {
+            text: 'Okay',
+            type: AlertView.Android.ButtonType.POSITIVE,
+            onClick: () => console.info('js alert positive click')
+          }
+        ]
+      });
+    });
   }
 
   initAlertView() {
@@ -24,7 +42,14 @@ export default class PgAlertView extends withDismissAndBackButton(PgAlertViewDes
     });
     this.alertView.addTextBox({ text: '', hint: 'example textbox', isPassword: false, android: {} });
     this.alertView.onDismiss = () => console.log('dismissed');
-    this.alertView.addButton({ type: ButtonType.NEUTRAL, text: 'close', onClick: () => this.alertView.dismiss() });
+    this.alertView.addButton({
+      type: ButtonType.NEUTRAL,
+      text: 'close',
+      onClick: () => {
+        this.alertView.dismiss();
+        console.info('onclick');
+      }
+    });
   }
 
   onShow() {
