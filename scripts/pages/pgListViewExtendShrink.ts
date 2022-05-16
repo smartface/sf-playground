@@ -38,14 +38,16 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
   private _extendedIndexes: number[] = [];
   private _maxCount = 0;
   private _page = 1;
+  private _paginating = false;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.button1.on('press', () => this.fakeRequest());
   }
 
   async fakeRequest(page = 1): Promise<void> {
+    console.info('fakeRequest: ', page);
     return new Promise((resolve) => {
       showWaitDialog();
+      this._paginating = true;
       setTimeout(() => {
         resolve(
           new Array(10).fill(0).map(() => {
@@ -59,15 +61,20 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
       }, 1000);
     })
       .then((companies: Companies[]) => {
+        this._maxCount = 50;
+        this._page = page;
         if (page === 1) {
           this._serviceData = companies;
         } else {
           this._serviceData = this._serviceData.concat(companies);
+          this.mapListViewData();
+          this.refreshListView();
         }
-        this._maxCount = 50;
-        this._page = page;
       })
-      .finally(() => hideWaitDialog());
+      .finally(() => {
+        hideWaitDialog();
+        this._paginating = false;
+      });
   }
 
   mapListViewData() {
@@ -122,6 +129,9 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
       }
       listViewItem.separatorVisible = this._listViewData.length - 1 !== index; //If not last item
       listViewItem.onImageClick = this._listViewData[index].properties.onImageClick;
+      if (index === this._listViewData.length - 1 && !this._paginating && this._listViewData.length < this._maxCount) {
+        this.fakeRequest(this._page + 1);
+      }
     };
   }
 

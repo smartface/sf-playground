@@ -8,7 +8,6 @@
 				"children": [
 					"1b61-4dc5-6936-3503",
 					"01bc-5f1e-8b74-5b57",
-					"07bb-0b1b-f518-e71c",
 					"89d2-ce00-7042-0cda"
 				],
 				"name": "pgListViewExtendShrink",
@@ -49,22 +48,6 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "ListViewExtendShrink"
-			}
-		},
-		{
-			"className": ".sf-button",
-			"id": "07bb-0b1b-f518-e71c",
-			"props": {
-				"children": [],
-				"name": "button1",
-				"parent": "bf83-8c12-1334-7dfd",
-				"text": "button1",
-				"usePageVariable": true
-			},
-			"type": "Button",
-			"userProps": {
-				"text": "button1",
-				"usePageVariable": true
 			}
 		},
 		{
