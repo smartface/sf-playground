@@ -13,8 +13,8 @@ export default class PgModalTest extends withDismissAndBackButton(PgModalTestDes
       this.router.push('modal');
     });
     this.btnDismiss.on('press', () => {
-      if (Router.currentRouter instanceof NativeStackRouter) {
-        Router.currentRouter.dismiss();
+      if (this.router instanceof NativeStackRouter) {
+        this.router.dismiss();
       } else {
         alert('This page is not derived from modal.');
       }
@@ -23,7 +23,7 @@ export default class PgModalTest extends withDismissAndBackButton(PgModalTestDes
 
   onShow() {
     super.onShow();
-    this.initBackButton(this.router);
+    this.initDismissButton(this.router);
   }
 
   onLoad() {

@@ -10,6 +10,7 @@ import PgPhotoViewer from './pgPhotoViewer';
 import { Router, Route } from '@smartface/router';
 import { IImage } from '@smartface/native/ui/image/image';
 import Page from '@smartface/native/ui/page';
+import { themeService } from 'theme';
 
 export default class PgPhotoCropper extends PgPhotoCropperDesign {
   images: IImage[];
