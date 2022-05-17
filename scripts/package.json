@@ -12,7 +12,6 @@
     "@smartface/source-map": "^5.0.0",
     "@smartface/styling-context": "^5.0.0",
     "@smartface/webviewbridge": "1.0.4",
-    "@types/": "faker-js/faker",
     "axios": "0.26.1"
   }
 }
