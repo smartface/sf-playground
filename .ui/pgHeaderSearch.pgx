@@ -8,14 +8,13 @@
 				"children": [
 					"42b807d1",
 					"b7d28cff",
-					"980522a9",
-					"9e49-7873-afba-472b"
+					"b13e-6ba6-b197-2f84"
 				],
 				"isRemovable": true,
 				"name": "pgHeaderSearch",
 				"orientation": "PORTRAIT",
 				"parent": null,
-				"safeAreaEnabled": true
+				"safeAreaEnabled": false
 			},
 			"type": "Page",
 			"userProps": {
@@ -24,10 +23,11 @@
 					"alignItems": "STRETCH"
 				},
 				"orientation": "PORTRAIT",
-				"paddingBottom": 20,
-				"paddingLeft": 16,
-				"paddingRight": 16,
-				"safeAreaEnabled": true
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null,
+				"safeAreaEnabled": false
 			},
 			"version": "6.15.1"
 		},
@@ -52,74 +52,54 @@
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "e891b86d",
-				"title": "Page1"
+				"parent": "e891b86d"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "Page1",
 				"visible": true
 			}
 		},
 		{
-			"className": ".sf-label",
-			"id": "980522a9",
+			"className": ".sf-listView .grow",
+			"id": "b13e-6ba6-b197-2f84",
+			"oldName": "listView1",
 			"props": {
-				"autoHeight": 39.325842696629216,
-				"children": [],
-				"name": "lbl",
+				"children": [
+					"ba0b-e5eb-1abc-150c"
+				],
+				"name": "lv",
 				"parent": "e891b86d",
-				"text": "Page1",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "ListView",
 			"userProps": {
-				"autoHeight": 39.325842696629216,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20,
-					"alignSelf": "STRETCH",
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 32,
-					"bold": false,
-					"italic": false,
-					"family": "SFProText",
-					"style": "Regular"
-				},
-				"height": 600,
-				"multiline": true,
-				"testId": "L-42gAben",
-				"text": "Page1",
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 210, 210, 210, 1 )",
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "9e49-7873-afba-472b",
+			"className": ".sf-listViewItem .lviDynamicLine",
+			"hiddenComponent": false,
+			"id": "ba0b-e5eb-1abc-150c",
 			"props": {
-				"autoHeight": 50.561797752808985,
 				"children": [],
-				"name": "btnNext",
-				"parent": "e891b86d",
-				"text": "Next Page",
-				"usePageVariable": true
+				"name": "lviDynamicLine",
+				"parent": "b13e-6ba6-b197-2f84"
 			},
-			"type": "Button",
+			"source": {
+				"page": "__library__",
+				"type": "lviDynamicLine",
+				"id": "ff27-1cb1-7e29-36d7"
+			},
+			"type": "ListViewItem",
 			"userProps": {
-				"autoHeight": 50.561797752808985,
+				"flex": {
+					"positionType": 0
+				},
 				"flexProps": {
-					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"testId": "ucEDBF6ZMB",
-				"text": "Next Page",
-				"usePageVariable": true,
-				"width": null
+				"left": 0,
+				"top": 0
 			}
 		}
 	]

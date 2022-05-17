@@ -129,7 +129,6 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
 });
 
 //BottomTabbarControllerTesting
-
 // setTimeout(() => {
 //   const rootController = bottomTabBarRouter._renderer._rootController;
 //   if (rootController instanceof BottomTabbarController) {
@@ -149,6 +148,12 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
 //   rootController.selectedIndex = 2;
 // }, 3000);
 //   }
+// }, 5000);
+
+//BottomTabbarBadgeTesting
+// setTimeout(() => {
+//   const rootController = bottomTabBarRouter._renderer._rootController;
+//   rootController.tabBar.items[0].badge.text = '5';
 // }, 5000);
 
 const router = Router.of({
