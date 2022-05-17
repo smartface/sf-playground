@@ -49,6 +49,7 @@ export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design
     if (visible) {
       //Same child can't be added to different parents, so if its added somewhere we have to remove it first.
       this.mySearchView?.getParent()?.removeChild?.(this.mySearchView);
+      this.initSearchView();
       const titleLayout = new FlexLayout({ flexGrow: 1 });
       if (!isAndroid) {
         titleLayout.height = this.getHeaderBar().height;
