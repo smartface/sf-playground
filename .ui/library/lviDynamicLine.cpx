@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-listViewItem .lviDynamicLine",
+            "hiddenComponent": true,
 			"id": "ff27-1cb1-7e29-36d7",
 			"props": {
 				"children": [
