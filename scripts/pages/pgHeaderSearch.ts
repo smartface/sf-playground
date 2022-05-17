@@ -53,7 +53,7 @@ export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design
       const titleLayout = new FlexLayout({ flexGrow: 1 });
       if (!isAndroid) {
         titleLayout.height = this.getHeaderBar().height;
-        titleLayout.width = Screen.width - 110;
+        titleLayout.width = Screen.width - 125;
       }
       titleLayout.addChild(this.mySearchView);
       this.headerBar.titleLayout = titleLayout;
@@ -88,13 +88,19 @@ export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design
 
   setHeaderBar() {
     this.myHeaderBarItem = new HeaderBarItem();
-    this.myHeaderBarItem.image = this._searchActive ? Image.createFromFile('images://icon_close.png') : Image.createFromFile('images://icon_search.png');
+    if (!this._searchActive) {
+      this.myHeaderBarItem.image = Image.createFromFile('images://icon_search.png');
+    } else {
+      this.myHeaderBarItem.title = 'Cancel';
+    }
     this.myHeaderBarItem.color = Color.WHITE;
     this.myHeaderBarItem.onPress = () => {
       if (this._searchActive) {
         this.setHeaderSearch(false);
         this.mySearchView.text = '';
         this.mySearchView.removeFocus();
+        this._data = this._original;
+        this.refreshListView();
       } else {
         this.setHeaderSearch(true);
         this.mySearchView.requestFocus();
