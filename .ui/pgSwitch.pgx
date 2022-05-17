@@ -8,15 +8,7 @@
 				"children": [
 					"c746-e34a-4ed1-4aeb",
 					"1917-de0f-a0a3-f593",
-					"3111-2677-ec61-8c07",
-					"a024-1e02-1248-8c8a",
-					"5d7b-5476-7012-18ff",
-					"7f96-2307-82e5-9f47",
-					"86a4-4d76-40ea-6fc9",
-					"b236-a382-543b-1029",
-					"9d98-2d81-b12b-5b72",
-					"58a4-8e6b-6831-85d9",
-					"90df-8df4-a6be-6a48"
+					"eaee-66a6-65c3-4ef0"
 				],
 				"name": "pgSwitch",
 				"orientation": "PORTRAIT",
@@ -55,13 +47,35 @@
 			}
 		},
 		{
+			"className": ".sf-scrollView .grow",
+			"id": "eaee-66a6-65c3-4ef0",
+			"oldName": "scrollView1",
+			"props": {
+				"children": [
+					"800c-ba2a-0ec9-6f35",
+					"8bf8-2712-a643-77c0",
+					"5382-c2b6-c15f-4839",
+					"f6df-0b99-42d3-6bf9",
+					"15f6-96a8-3002-c067",
+					"ee18-e8aa-21cc-61d2",
+					"f497-6421-cd37-fdb5",
+					"3080-b3ae-e19c-d2b6",
+					"682b-9a47-e6b0-1ab6"
+				],
+				"name": "sv",
+				"parent": "d2cd-0607-2822-249c"
+			},
+			"type": "ScrollView",
+			"userProps": {}
+		},
+		{
 			"className": ".sf-switch",
-			"id": "3111-2677-ec61-8c07",
+			"id": "800c-ba2a-0ec9-6f35",
 			"oldName": "switch1",
 			"props": {
 				"children": [],
 				"name": "sw1",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"toggle": true,
 				"usePageVariable": true
 			},
@@ -75,13 +89,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "a024-1e02-1248-8c8a",
+			"className": ".sf-button .marginVertical",
+			"id": "8bf8-2712-a643-77c0",
 			"oldName": "button1",
 			"props": {
 				"children": [],
 				"name": "btnEnable",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Disable Switch",
 				"usePageVariable": true
 			},
@@ -92,13 +106,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "5d7b-5476-7012-18ff",
+			"className": ".sf-button .marginVertical",
+			"id": "5382-c2b6-c15f-4839",
 			"oldName": "btnEnable_1",
 			"props": {
 				"children": [],
 				"name": "btnThumbImage",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Set Thumb Image (Android)",
 				"usePageVariable": true
 			},
@@ -109,13 +123,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "7f96-2307-82e5-9f47",
+			"className": ".sf-button .marginVertical",
+			"id": "f6df-0b99-42d3-6bf9",
 			"oldName": "btnThumbImage_1",
 			"props": {
 				"children": [],
 				"name": "btnThumbOffColor",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Set Thumb Off Color (Android)",
 				"usePageVariable": true
 			},
@@ -126,13 +140,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "86a4-4d76-40ea-6fc9",
+			"className": ".sf-button .marginVertical",
+			"id": "15f6-96a8-3002-c067",
 			"oldName": "btnThumbOffColor_1",
 			"props": {
 				"children": [],
 				"name": "btnThumbOnColor",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Set Thumb On Color",
 				"usePageVariable": true
 			},
@@ -143,13 +157,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "b236-a382-543b-1029",
+			"className": ".sf-button .marginVertical",
+			"id": "ee18-e8aa-21cc-61d2",
 			"oldName": "btnThumbOnColor_1",
 			"props": {
 				"children": [],
 				"name": "btnToggleImage",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Set Toggle Image (Android)",
 				"usePageVariable": true
 			},
@@ -160,13 +174,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "9d98-2d81-b12b-5b72",
+			"className": ".sf-button .marginVertical",
+			"id": "f497-6421-cd37-fdb5",
 			"oldName": "btnThumbOffColor_1",
 			"props": {
 				"children": [],
 				"name": "btnToggleOffColor",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Set Toggle Off Color (Android)",
 				"usePageVariable": true
 			},
@@ -177,13 +191,13 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "58a4-8e6b-6831-85d9",
+			"className": ".sf-button .marginVertical",
+			"id": "3080-b3ae-e19c-d2b6",
 			"oldName": "btnThumbOnColor_1",
 			"props": {
 				"children": [],
 				"name": "btnToggleOnColor",
-				"parent": "d2cd-0607-2822-249c",
+				"parent": "eaee-66a6-65c3-4ef0",
 				"text": "Set Toggle On Color",
 				"usePageVariable": true
 			},
@@ -194,19 +208,19 @@
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "90df-8df4-a6be-6a48",
+			"className": ".sf-button .marginVertical",
+			"id": "682b-9a47-e6b0-1ab6",
 			"oldName": "button1",
 			"props": {
 				"children": [],
 				"name": "btnToggleTrue",
-				"parent": "d2cd-0607-2822-249c",
-				"text": "Set Switch to True",
+				"parent": "eaee-66a6-65c3-4ef0",
+				"text": "Set Switch to False",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"text": "Set Switch to True",
+				"text": "Set Switch to False",
 				"usePageVariable": true
 			}
 		}
