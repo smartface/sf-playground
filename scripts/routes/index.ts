@@ -105,7 +105,7 @@ function generateTabItems(): Partial<ITabbarItem>[] {
   return Object.keys(Tabs).map((tab: any) => {
     return {
       title: Tabs[tab].name,
-      icon: Image.createFromFile(`images://${Tabs[tab].name.toLowerCase()}`)
+      icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`)
       //   android: {
       //     attributedTitle: attributeString,
       //     systemIcon: 17301545

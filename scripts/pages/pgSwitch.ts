@@ -43,7 +43,7 @@ export default class PgSwitch extends withDismissAndBackButton(PgSwitchDesign) {
   }
 
   toggleImage() {
-    this.sw1.android.toggleImage = 'images://native.png';
+    this.sw1.android.toggleImage = 'images://sfnative.png';
   }
 
   setToggleOffColor() {

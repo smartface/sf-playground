@@ -108,10 +108,11 @@ import PgScrollViewInsideScrollView from 'pages/pgScrollViewInsideScrollView';
 import PgListViewExtendShrink from 'pages/pgListViewExtendShrink';
 import PgListViewDynamicHeight from 'pages/pgListViewDynamicHeight';
 
-type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[] };
+type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
 export const tab0: Tab = {
   name: 'Native',
+  imageName: 'sfnative.png',
   tabIndex: 0,
   pages: [
     PgSearchView,
@@ -191,24 +192,28 @@ export const tab0: Tab = {
 
 export const tab1: Tab = {
   name: 'Utility',
+  imageName: 'utility.png',
   tabIndex: 1,
   pages: [PgXHR, PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios]
 };
 
 export const tab2: Tab = {
   name: 'Modules',
+  imageName: 'modules.png',
   tabIndex: 2,
   pages: [PgListViewMaterial, PgZoomableImageView, PgListViewIndex, PgSpriteView]
 };
 
 export const tab3: Tab = {
   name: 'Router',
+  imageName: 'router.png',
   tabIndex: 3,
   pages: [PgModalTest, PgModalBottomSheet]
 };
 
 export const tab4: Tab = {
   name: 'Misc',
+  imageName: 'misc.png',
   tabIndex: 4,
   pages: [
     PgYogaTest,

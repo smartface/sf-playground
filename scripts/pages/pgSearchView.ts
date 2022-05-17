@@ -122,7 +122,7 @@ export default class PgSearchView extends withDismissAndBackButton(PgSearchViewD
   }
 
   setBackgroundImage() {
-    this.sv.ios.backgroundImage = Image.createFromFile('images://native.png');
+    this.sv.ios.backgroundImage = Image.createFromFile('images://sfnative.png');
   }
 
   cancelButtonAndText() {
