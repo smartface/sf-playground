@@ -1,4 +1,4 @@
-SMF.i18n.defineLanguage('en', {
+export default {
   cancel: 'Cancel',
   copy: 'Copy',
   done: 'Done',
@@ -43,5 +43,43 @@ SMF.i18n.defineLanguage('en', {
   useFaceIDMessage: 'Would you like to use FaceID login on your future logins?',
   scanFaceIDTitle: 'Login with FaceID',
   scanFaceIDMessage: 'Scan your face',
-  chooseNavigationApp: 'Choose Navigation App'
-});
+  chooseNavigationApp: 'Choose Navigation App',
+
+  //i18n keys
+  myKey: 'My Value',
+  interpolationKey: '{{what}} is great!',
+  dataModelInterpolationKey: 'I am {{author.name}}',
+  customFormatter: 'Lowercase and underscore: {{LOWER_VALUE, lowercase, underscore}}',
+  intlNumber: 'Number: {{val, number}}',
+  intlNumberWithOptions: 'Number with fraction digits: {{val, number(minimumFractionDigits: 2)}}',
+  intlCurrencyWithOptionsSimplified: 'The value is {{val, currency(USD)}}',
+  intlCurrencyWithOptions: 'The value is {{val, currency(currency: USD)}}',
+  twoIntlCurrencyWithUniqueFormatOptions: 'The value is {{localValue, currency}} or {{altValue, currency}}',
+  intlDateTime: 'On the {{- val, datetime}}',
+  intlRelativeTime: 'Relative Time: {{val, relativetime}}',
+  intlRelativeTimeWithOptions: 'Relative Time: {{val, relativetime(quarter)}}',
+  intlRelativeTimeWithOptionsExplicit: 'Relative Time: {{val, relativetime(range: quarter; style: narrow;)}}',
+  intlList: 'List: {{val, list}}',
+  key_one: 'item',
+  key_other: 'items',
+  keyWithCount_one: '{{count}} item',
+  keyWithCount_other: '{{count}} items',
+  nesting1: '1 $t(nesting2)',
+  nesting2: '2 $t(nesting3)',
+  nesting3: '3',
+  girlsAndBoys: 'They have $t(girls, {"count": {{girls}} }) and $t(boys, {"count": {{boys}} })',
+  boys: '{{count}} boy',
+  boys_other: '{{count}} boys',
+  girls: '{{count}} girl',
+  girls_other: '{{count}} girls',
+  friend: 'A friend',
+  friend_male: 'A boyfriend',
+  friend_female: 'A girlfriend',
+  tree: {
+    res: 'added {{something}}'
+  },
+  array: ['a', 'b', 'c'],
+  arrayJoin: ['line1', 'line2', 'line3'],
+  arrayJoinWithInterpolation: ['you', 'can', '{{myVar}}'],
+  arrayOfObjects: [{ name: 'tom' }, { name: 'steve' }]
+};

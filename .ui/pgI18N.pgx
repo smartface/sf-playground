@@ -1,0 +1,99 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "709b-2db3-db1e-384d",
+			"initialized": true,
+			"props": {
+				"children": [
+					"5c98-757a-3c31-a00d",
+					"d2e1-ff81-a014-cf6f",
+					"15c8-4c85-b3f6-516b",
+					"ea56-5bc0-0986-05c8"
+				],
+				"name": "pgI18N",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "5c98-757a-3c31-a00d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "709b-2db3-db1e-384d"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "d2e1-ff81-a014-cf6f",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "709b-2db3-db1e-384d",
+				"title": "I18N"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "I18N"
+			}
+		},
+		{
+			"className": ".sf-button .marginHorizontal",
+			"id": "15c8-4c85-b3f6-516b",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnSetLanguage",
+				"parent": "709b-2db3-db1e-384d",
+				"text": "Set Language",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Language",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView .grow .marginHorizontal",
+			"id": "ea56-5bc0-0986-05c8",
+			"oldName": "textView1",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tv",
+				"parent": "709b-2db3-db1e-384d",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"font": {
+					"name": "",
+					"family": "",
+					"style": "",
+					"size": 14
+				},
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"maxLines": 0,
+				"textAlignment": "TOPLEFT",
+				"textColor": "rgba( 74, 74, 74, 1 )",
+				"usePageVariable": true
+			}
+		}
+	]
+}

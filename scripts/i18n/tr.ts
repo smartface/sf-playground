@@ -1,4 +1,4 @@
-SMF.i18n.defineLanguage('tr', {
+export default {
   cancel: 'İptal',
   copy: 'Kopyala',
   done: 'Yapıldı',
@@ -41,5 +41,43 @@ SMF.i18n.defineLanguage('tr', {
   useFaceIDMessage: 'Gelecekteki oturum açmalarında FaceID kullanmak ister misin?',
   scanFaceIDTitle: 'FaceID ile oturum aç',
   scanFaceIDMessage: 'Yüzünü tarat',
-  chooseNavigationApp: 'Navigasyon uygulaması seç'
-});
+  chooseNavigationApp: 'Navigasyon uygulaması seç',
+
+  //i18n keys
+  myKey: 'Benim Değerim',
+  interpolationKey: '{{what}} harika!',
+  dataModelInterpolationKey: 'Ben {{author.name}}',
+  customFormatter: 'Küçük Harf ve alt çizgi: {{LOWER_VALUE, lowercase, underscore}}',
+  intlNumber: 'Sayi: {{val, number}}',
+  intlNumberWithOptions: 'Devirli Sayi: {{val, number(minimumFractionDigits: 2)}}',
+  intlCurrencyWithOptionsSimplified: 'Değer: {{val, currency(USD)}}',
+  intlCurrencyWithOptions: 'Değer: {{val, currency(currency: USD)}}',
+  twoIntlCurrencyWithUniqueFormatOptions: 'Değer: {{localValue, currency}} ya da {{altValue, currency}}',
+  intlDateTime: '{{- val, datetime}} tarihinde',
+  intlRelativeTime: 'Geçmiş Zaman: {{val, relativetime}}',
+  intlRelativeTimeWithOptions: 'Geçmiş Zaman: {{val, relativetime(quarter)}}',
+  intlRelativeTimeWithOptionsExplicit: 'Geçmiş Zaman: {{val, relativetime(range: quarter; style: narrow;)}}',
+  intlList: 'Liste: {{val, list}}',
+  key_one: 'eşya',
+  key_other: 'eşyalar',
+  keyWithCount_one: '{{count}} eşya',
+  keyWithCount_other: '{{count}} eşya',
+  nesting1: '1 $t(nesting2)',
+  nesting2: '2 $t(nesting3)',
+  nesting3: '3',
+  girlsAndBoys: 'Bu aile $t(girls, {"count": {{girls}} }) and $t(boys, {"count": {{boys}} }) sahipler',
+  boys: '{{count}} erkek çocuk',
+  boys_other: '{{count}} erkek çocuklar',
+  girls: '{{count}} kız',
+  girls_other: '{{count}} kız çocuklar',
+  friend: 'Arkadaş',
+  friend_male: 'Erkek arkadaş',
+  friend_female: 'Kız arkadaş',
+  tree: {
+    res: '{{something}} eklendi'
+  },
+  array: ['a', 'b', 'c'],
+  arrayJoin: ['satir1', 'satir2', 'satir3'],
+  arrayJoinWithInterpolation: ['sen', 'yapabilirsin', '{{myVar}}'],
+  arrayOfObjects: [{ name: 'tom' }, { name: 'steve' }]
+};

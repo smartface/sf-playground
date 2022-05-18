@@ -67,16 +67,16 @@ export class BarcodeScanner {
   private async askUserForPermission(): Promise<void> {
     return new Promise((resolve, reject) => {
       const alertView = new AlertView({
-        title: global.lang.needCameraPermission
+        title: 'needCameraPermission'
       });
       alertView.addButton({
         type: AlertView.Android.ButtonType.NEGATIVE,
-        text: global.lang.doNotAllow,
+        text: 'doNotAllow',
         onClick: () => Promise.reject()
       });
       alertView.addButton({
         type: AlertView.Android.ButtonType.NEGATIVE,
-        text: global.lang.allow,
+        text: 'allow',
         onClick: () => Promise.resolve()
       });
       alertView.show();
