@@ -63,7 +63,7 @@ export default class PgSearchView extends withDismissAndBackButton(PgSearchViewD
     picker.items = items;
     picker.on('selected', (index) => {
       console.info('selected: ', index);
-      this.sv.ios.searchViewStyle = SearchViewStyle[items[index]];
+      this.sv.ios.searchViewStyle = 1;
     });
     picker.show();
   }

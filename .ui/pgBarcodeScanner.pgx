@@ -7,7 +7,14 @@
 			"props": {
 				"children": [
 					"2bec-1497-8fcc-0cbf",
-					"713d-b9e7-e105-e65f"
+					"713d-b9e7-e105-e65f",
+					"bd6a-a093-1ad0-8ab1",
+					"7944-8f14-47fe-5ed1",
+					"5036-68eb-70ad-2534",
+					"bdb1-b68e-2c11-bb6b",
+					"eee4-a405-acb8-69cd",
+					"0dbe-5bfd-d65a-57e4",
+					"b43d-5ba2-fe80-78d2"
 				],
 				"name": "pgBarcodeScanner",
 				"orientation": "PORTRAIT",
@@ -43,6 +50,132 @@
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "BarcodeScanner"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "bd6a-a093-1ad0-8ab1",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "flBarcode",
+				"parent": "7913-786f-f8bd-81f8",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderColor": "rgba( 0, 0, 0, 1 )",
+				"borderWidth": 0,
+				"height": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "7944-8f14-47fe-5ed1",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnShowBarcode",
+				"parent": "7913-786f-f8bd-81f8",
+				"text": "Show Barcode Scanner",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"marginTop": 5,
+				"text": "Show Barcode Scanner",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "5036-68eb-70ad-2534",
+			"oldName": "lblBarcodeText",
+			"props": {
+				"children": [],
+				"name": "lblBarcodeTextDisclaimer",
+				"parent": "7913-786f-f8bd-81f8",
+				"text": "Barcode Text (Tap to Copy when filled)"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Barcode Text (Tap to Copy when filled)"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "bdb1-b68e-2c11-bb6b",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblBarcodeText",
+				"parent": "7913-786f-f8bd-81f8",
+				"text": "(Scan Barcode or QR to fill this area)",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 100,
+				"maxLines": 0,
+				"text": "(Scan Barcode or QR to fill this area)",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "eee4-a405-acb8-69cd",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "7913-786f-f8bd-81f8"
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 155, 155, 155, 1 )",
+				"height": 1,
+				"marginTop": 10
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "0dbe-5bfd-d65a-57e4",
+			"oldName": "lblBarcodeTextDisclaimer_1",
+			"props": {
+				"children": [],
+				"name": "lblBarcodeFormatDisclaimer",
+				"parent": "7913-786f-f8bd-81f8",
+				"text": "Barcode Format: "
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Barcode Format: "
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "b43d-5ba2-fe80-78d2",
+			"oldName": "lblBarcodeText_1",
+			"props": {
+				"children": [],
+				"name": "lblBarcodeFormat",
+				"parent": "7913-786f-f8bd-81f8",
+				"text": "(Scan Barcode or QR to fill this area)",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"borderWidth": 1,
+				"height": 100,
+				"maxLines": 0,
+				"text": "(Scan Barcode or QR to fill this area)",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
 			}
 		}
 	]

@@ -108,6 +108,7 @@ import PgScrollViewInsideScrollView from 'pages/pgScrollViewInsideScrollView';
 import PgListViewExtendShrink from 'pages/pgListViewExtendShrink';
 import PgListViewDynamicHeight from 'pages/pgListViewDynamicHeight';
 import PgI18N from 'pages/pgI18N';
+import PgBarcodeScanner from 'pages/pgBarcodeScanner';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -202,7 +203,7 @@ export const tab2: Tab = {
   name: 'Modules',
   imageName: 'modules.png',
   tabIndex: 2,
-  pages: [PgListViewMaterial, PgZoomableImageView, PgListViewIndex, PgSpriteView, PgI18N]
+  pages: [PgListViewMaterial, PgBarcodeScanner, PgZoomableImageView, PgListViewIndex, PgSpriteView, PgI18N]
 };
 
 export const tab3: Tab = {
