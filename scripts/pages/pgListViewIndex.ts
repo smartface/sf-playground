@@ -1,7 +1,6 @@
 import PgListViewIndexDesign from 'generated/pages/pgListViewIndex';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import ListView from '@smartface/native/ui/listview';
-import ListViewIndex from '@smartface/extension-listviewindex';
 import ListViewItem from '@smartface/native/ui/listviewitem';
 import Label from '@smartface/native/ui/label';
 import Color from '@smartface/native/ui/color';
@@ -10,6 +9,7 @@ import System from '@smartface/native/device/system';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
+import ListViewIndex from '@smartface/native/ui/listview/listviewindex';
 
 export default class PgListViewIndex extends withDismissAndBackButton(PgListViewIndexDesign) {
   listViewItemArray: any[] = [];
