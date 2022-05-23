@@ -1,0 +1,64 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "dbd4-4058-ffa3-c636",
+			"initialized": true,
+			"props": {
+				"children": [
+					"3eab-a287-025a-c277",
+					"14db-c1b9-7d00-73e1",
+					"8a06-dd2c-4ae5-f9e6"
+				],
+				"name": "pgCalendar",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "3eab-a287-025a-c277",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "dbd4-4058-ffa3-c636"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "14db-c1b9-7d00-73e1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "dbd4-4058-ffa3-c636",
+				"title": "Calendar"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Calendar"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "8a06-dd2c-4ae5-f9e6",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [],
+				"name": "flCalendarWrapper",
+				"parent": "dbd4-4058-ffa3-c636",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}
