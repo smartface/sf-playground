@@ -107,6 +107,10 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
       lineCount: 2
     });
 
+    this.mtbMultiline.on('textChanged', () => {
+      console.info('textChanged: ', this.mtbMultiline.text);
+    });
+
     this.mtbMultiline.ios.expandsOnOverflow = true;
     this.flMultilineMtbWrapper.addChild(this.mtbMultiline, 'mtbMultiline', '.sf-textBox .grow', materialtextboxOptions);
   }
@@ -115,6 +119,22 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
     this.mtbExample = new StyleableMaterialTextBox({
       hint: 'Example',
       selectedHintTextColor: Color.BLUE
+    });
+
+    this.mtbExample.on('actionButtonPress', () => {
+      console.log('mtbExample actionButtonPress');
+    });
+    this.mtbExample.on('clearButtonPress', () => {
+      console.log('mtbExample clearButtonPress');
+    });
+    this.mtbExample.on('editBegins', () => {
+      console.log('mtbExample editBegins');
+    });
+    this.mtbExample.on('editEnds', () => {
+      console.log('mtbExample editEnds');
+    });
+    this.mtbExample.on('textChanged', (e) => {
+      console.log('mtbExample textChanged', e);
     });
 
     this.mtbExample.lineColor = { normal: Color.GRAY, selected: Color.DARKGRAY };
