@@ -38,16 +38,6 @@
   resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.0.0.tgz#86878626f65b4d523edeee7cc420935f4c017e16"
   integrity sha512-8gLF/jiIudv8wlOfLIVurMdYt7829TEYf0eDgfy0aNaI0pfGHXKgyUvUrfYFCif9ixBmBd/ajfq1GRH01Jc6dQ==
 
-"@smartface/extension-barcode@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-barcode/-/extension-barcode-5.0.0.tgz#9f8248589aa70850fe31620108120ed0e3147954"
-  integrity sha512-zUM7Us566y/jRYE1YsNP5AuNl1m9k10Fj2wmQKWiX+ZTJCWttftLJo5x2Oc6U5NUJuykRrRSHyO+LuvPe+qZvg==
-
-"@smartface/extension-listviewindex@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-listviewindex/-/extension-listviewindex-3.0.0.tgz#f0f8e2f27e035d3587e686ac345706adc940af6e"
-  integrity sha512-0Oj8S2txoUGZgT1yg20fpqEHBcyEHNNHzeOyo/B1zzGqHCjzU5b6UaI7VG6CDkI/hGHg4MwnY1+OzHSqkE6IPA==
-
 "@smartface/extension-utils@^16.2.9":
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.4.1.tgz#958ca6eff13d23a02b6cbc40267e70f6fe292c45"
