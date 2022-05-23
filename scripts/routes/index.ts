@@ -131,26 +131,28 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
 //BottomTabbarControllerTesting
 // setTimeout(() => {
 //   const rootController = bottomTabBarRouter._renderer._rootController;
+//   const oldDidSelect = rootController.didSelectByIndex;
 //   if (rootController instanceof BottomTabbarController) {
 //     rootController.didSelectByIndex = ({ index }) => {
+//       // oldDidSelect({ index });
 //       console.info('didSelectByIndex', index);
 //       setTimeout(() => {
 //         rootController.selectedIndex = 2;
 //       }, 5000);
 //     };
-// rootController.shouldSelectByIndex = ({ index }) => {
-//   console.info('shouldSelectByIndex', index);
-//   return index === 3;
-// };
-//   rootController.tabBar.backgroundColor = Color.BLUE;
-//   rootController.tabBar.itemColor = { selected: Color.WHITE, normal: Color.BLACK };
-// setTimeout(() => {
-//   rootController.selectedIndex = 2;
-// }, 3000);
+//     rootController.shouldSelectByIndex = ({ index }) => {
+//       console.info('shouldSelectByIndex', index);
+//       return index === 3;
+//     };
+//     rootController.tabBar.backgroundColor = Color.BLUE;
+//     rootController.tabBar.itemColor = { selected: Color.WHITE, normal: Color.BLACK };
+//     setTimeout(() => {
+//       rootController.selectedIndex = 2;
+//     }, 3000);
 //   }
 // }, 5000);
 
-//BottomTabbarBadgeTesting
+// BottomTabbarBadgeTesting
 // setTimeout(() => {
 //   const rootController = bottomTabBarRouter._renderer._rootController;
 //   rootController.tabBar.items[0].badge.text = '5';
