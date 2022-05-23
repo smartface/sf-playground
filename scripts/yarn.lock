@@ -91,10 +91,10 @@
   dependencies:
     events "^3.3.0"
 
-"@smartface/native@^5.0.1-alpha":
-  version "5.0.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.1-beta.0.tgz#da41ec1444aeaef29b8a7ac814a86e3e82324cc0"
-  integrity sha512-ICxVuK1niL8gMHNvnAuhqGc3OHPhqrd0bfmiQC0slD3UBnP1T4Yyfgt8Rxyyxbl2B6e3Q0RmVsvfPfB6C+3GcA==
+"@smartface/native@alpha":
+  version "5.0.1-alpha.18"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.1-alpha.18.tgz#704cab0fd80df1f012e57b41182a408fb1970c85"
+  integrity sha512-C5+fjmDKcUe9EkVz598AuM38RAeR4e0i6IEZMPeE99UMquvRJr2giGjdfE0umppT+0iWyIYy3yU9acGwcAaPKg==
   dependencies:
     events "^3.3.0"
 
