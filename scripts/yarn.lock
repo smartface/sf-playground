@@ -84,17 +84,17 @@
   dependencies:
     "@smartface/core" "^5.0.0"
 
+"@smartface/native@5.0.1-alpha.19":
+  version "5.0.1-alpha.19"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.1-alpha.19.tgz#a3195cba6572f7c7e24d70a897cf42bd4571b827"
+  integrity sha512-qC0P6yXt4RQcCrkQJkJ5e96fn6B/9ii9pLR8RJxAYCwzYrv81UJk9xc8WPLHMTRTgEKGWUDnc/+Z4FyrHNnSeQ==
+  dependencies:
+    events "^3.3.0"
+
 "@smartface/native@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0.tgz#1f1390f88d0065a1cb026c6ad4ccfaaaa7344c12"
   integrity sha512-l+pxcPhaPD7nXHZjd59t7K/tOYOWqaHb8YZgfRNn97e8qLNwc3QDQ6uhsfQqOYLBFRH0+6OKU0AVRCX80TLHqw==
-  dependencies:
-    events "^3.3.0"
-
-"@smartface/native@alpha":
-  version "5.0.1-alpha.18"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.1-alpha.18.tgz#704cab0fd80df1f012e57b41182a408fb1970c85"
-  integrity sha512-C5+fjmDKcUe9EkVz598AuM38RAeR4e0i6IEZMPeE99UMquvRJr2giGjdfE0umppT+0iWyIYy3yU9acGwcAaPKg==
   dependencies:
     events "^3.3.0"
 

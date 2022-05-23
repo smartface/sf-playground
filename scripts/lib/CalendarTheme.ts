@@ -5,7 +5,7 @@ export function calendarThemeGenerator(): any {
   const mainText50 = 'rgba(19,41,84,0.5)';
   const iconsSecondary = 'rgba(183,196,221,1)';
   const separator = 'rgba(237,243,253,1)';
-  return {
+  const theme = {
     '#calendar': {
       flexProps: {
         direction: 'LTR'
@@ -256,6 +256,10 @@ export function calendarThemeGenerator(): any {
     },
     '.specialDay': {
       backgroundColor: 'rgba(222,222,222,1)'
+    },
+    '.specialDay2': {
+      backgroundColor: '#ad7feb'
     }
   };
+  return theme;
 }
