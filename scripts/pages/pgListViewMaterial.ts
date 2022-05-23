@@ -6,15 +6,9 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
 
 export default class PgListViewMaterial extends withDismissAndBackButton(PgListViewMaterialDesign) {
-  data: ReturnType<PgListViewMaterial['generateMaterialWrapper']>[] = Array.from(Array(30), () => this.generateMaterialWrapper());
+  data: ReturnType<PgListViewMaterial['generateMaterialData']>[] = Array.from(Array(30), () => this.generateMaterialData());
   constructor(private router?: Router, private route?: Route) {
     super({});
-  }
-
-  private generateMaterialWrapper(): Partial<FlMaterialTextBox> {
-    return {
-      options: this.generateMaterialData()
-    };
   }
 
   private generateMaterialData(): FlMaterialTextBox['options'] {
@@ -30,7 +24,9 @@ export default class PgListViewMaterial extends withDismissAndBackButton(PgListV
     this.lvMain.onRowBind = (item: LviMaterialTextBox, index: number) => {
       const currentData = this.data[index];
       console.log('curr ', currentData);
-      item.materialTextBox.options = currentData.options;
+      item.mtb.hint = index + ': ' + currentData.hint;
+      item.mtb.text = currentData.text;
+      Object.assign(item, currentData);
     };
   }
 

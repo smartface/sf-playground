@@ -13,34 +13,29 @@ export default class PgLogin extends withDismissAndBackButton(PgLoginDesign) {
   }
 
   initMaterialTextBoxes() {
-    this.mtbEmail.options = {
-      hint: 'Email'
+    this.mtbEmail.hint = 'Email';
+    this.mtbEmail.textAlignment = TextAlignment.MIDLEFT;
+    this.mtbEmail.keyboardType = KeyboardType.EMAILADDRESS;
+    this.mtbEmail.actionKeyType = ActionKeyType.NEXT;
+    this.mtbEmail.onActionButtonPress = () => {
+      this.mtbPassword.requestFocus();
     };
-    this.mtbEmail.materialTextBox.textAlignment = TextAlignment.MIDLEFT;
-    this.mtbEmail.materialTextBox.keyboardType = KeyboardType.EMAILADDRESS;
-    this.mtbEmail.materialTextBox.actionKeyType = ActionKeyType.NEXT;
-    this.mtbEmail.materialTextBox.onActionButtonPress = () => {
-      this.mtbPassword.materialTextBox.requestFocus();
-    };
-
-    this.mtbPassword.options = {
-      hint: 'Password'
-    };
-    this.mtbPassword.materialTextBox.textAlignment = TextAlignment.MIDLEFT;
-    this.mtbPassword.materialTextBox.isPassword = true;
-    this.mtbPassword.materialTextBox.actionKeyType = ActionKeyType.GO;
-    this.mtbPassword.materialTextBox.onActionButtonPress = () => {
+    this.mtbPassword.hint = 'Password';
+    this.mtbPassword.textAlignment = TextAlignment.MIDLEFT;
+    this.mtbPassword.isPassword = true;
+    this.mtbPassword.actionKeyType = ActionKeyType.GO;
+    this.mtbPassword.onActionButtonPress = () => {
       this.btnLogin.onPress();
     };
   }
 
   login() {
-    if (!(this.mtbEmail.materialTextBox.text.length && this.mtbPassword.materialTextBox.text.length)) {
+    if (!(this.mtbEmail.text.length && this.mtbPassword.text.length)) {
       return;
     }
     this.router.push('profile', {
-      email: this.mtbEmail.materialTextBox.text,
-      password: this.mtbEmail.materialTextBox.text
+      email: this.mtbEmail.text,
+      password: this.mtbEmail.text
     });
   }
 

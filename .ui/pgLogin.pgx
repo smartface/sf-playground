@@ -99,8 +99,8 @@
 			"id": "0d4c-27a1-23d4-ca76",
 			"props": {
 				"children": [
-					"9c82-6a79-6f4a-affc",
-					"76c4-0851-c56f-5f3a"
+					"4e3a-d7cd-1dca-aef0",
+					"31ab-6c1d-991b-63ba"
 				],
 				"name": "flInputs",
 				"parent": "4fad-7bea-ac6e-08c8"
@@ -115,62 +115,32 @@
 			}
 		},
 		{
-			"className": ".flexLayout .materialTextBox-wrapper",
-			"hiddenComponent": false,
-			"id": "9c82-6a79-6f4a-affc",
-			"initialized": false,
+			"className": ".sf-materialTextBox",
+			"id": "4e3a-d7cd-1dca-aef0",
+			"oldName": "materialTextBox1",
 			"props": {
 				"children": [],
 				"name": "mtbEmail",
 				"parent": "0d4c-27a1-23d4-ca76",
 				"usePageVariable": true
 			},
-			"source": {
-				"page": "__library__",
-				"type": "materialTextBox",
-				"id": "574a-10da-b765-48e5"
-			},
-			"type": "FlexLayout",
+			"type": "MaterialTextBox",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"testId": "5gYC8uV44",
-				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".flexLayout .materialTextBox-wrapper",
-			"hiddenComponent": false,
-			"id": "76c4-0851-c56f-5f3a",
-			"initialized": false,
+			"className": ".sf-materialTextBox",
+			"id": "31ab-6c1d-991b-63ba",
+			"oldName": "mtbEmail_1",
 			"props": {
 				"children": [],
 				"name": "mtbPassword",
 				"parent": "0d4c-27a1-23d4-ca76",
 				"usePageVariable": true
 			},
-			"source": {
-				"page": "__library__",
-				"type": "materialTextBox",
-				"id": "574a-10da-b765-48e5"
-			},
-			"type": "FlexLayout",
+			"type": "MaterialTextBox",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"testId": "-8_YApEnM",
-				"top": 0,
 				"usePageVariable": true
 			}
 		},

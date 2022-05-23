@@ -1,0 +1,11 @@
+{
+  ".lviMaterialTextBox": {
+    "height": 60,
+    "&-mtb": {
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      }
+    }
+  }
+}

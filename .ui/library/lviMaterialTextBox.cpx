@@ -2,11 +2,10 @@
 	"components": [
 		{
 			"className": ".sf-listViewItem .lviMaterialTextBox",
-			"hiddenComponent": true,
-			"id": "8e62-e3ee-fda5-da76",
+			"id": "6d9e-90b9-8a2b-6ad8",
 			"props": {
 				"children": [
-					"18e4-d358-7a27-dd3e"
+					"ecd2-f74b-8cd1-e3b1"
 				],
 				"name": "lviMaterialTextBox",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -17,38 +16,25 @@
 			"type": "ListViewItem",
 			"userProps": {
 				"flexProps": {},
-				"left": "-0.90",
-				"testId": "ptpapVReN",
-				"top": "181.98"
+				"left": 27.87,
+				"top": 101.64
 			}
 		},
 		{
-			"className": ".flexLayout .materialTextBox-wrapper",
-			"hiddenComponent": false,
-			"id": "18e4-d358-7a27-dd3e",
-			"initialized": true,
+			"className": ".sf-materialTextBox .lviMaterialTextBox-mtb",
+			"id": "ecd2-f74b-8cd1-e3b1",
+			"oldName": "materialTextBox1",
 			"props": {
 				"children": [],
-				"name": "materialTextBox",
-				"parent": "8e62-e3ee-fda5-da76",
+				"name": "mtb",
+				"parent": "6d9e-90b9-8a2b-6ad8",
 				"usePageVariable": true
 			},
 			"source": {
-				"page": "__library__",
-				"type": "materialTextBox",
-				"id": "574a-10da-b765-48e5"
+				"page": "__library__"
 			},
-			"type": "FlexLayout",
+			"type": "MaterialTextBox",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"testId": "Q3aX4IFPZ",
-				"top": 0,
 				"usePageVariable": true
 			}
 		}
