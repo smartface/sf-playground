@@ -59,6 +59,7 @@
 			},
 			"type": "GifImageView",
 			"userProps": {
+				"gifImage": "countdown.gif",
 				"height": 150,
 				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true

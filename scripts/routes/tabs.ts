@@ -110,6 +110,7 @@ import PgListViewDynamicHeight from 'pages/pgListViewDynamicHeight';
 import PgI18N from 'pages/pgI18N';
 import PgBarcodeScanner from 'pages/pgBarcodeScanner';
 import PgCalendar from 'pages/pgCalendar';
+import PgForm from 'pages/pgForm';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -237,6 +238,7 @@ export const tab4: Tab = {
     PgButtonPress,
     PgDynamicSize,
     PgScrollViewInsideScrollView,
-    PgListViewExtendShrink
+    PgListViewExtendShrink,
+    PgForm
   ]
 };

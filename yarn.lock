@@ -661,15 +661,16 @@
     shortid "^2.2.16"
     text "^0.1.0"
 
-"@smartface/dispatcher@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.9.0.tgz#b5ac5d742fa07350e13bf1ee1494a7ca8744ca3d"
-  integrity sha512-PeyffLWnCSf9i3PSLNzIjCoAfbniHX7B0xbyMKkLR7TGnn/70YdQkuznqWz3wsHbPTreiR7bkUli8FH/xqTwQQ==
+"@smartface/dispatcher@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.9.1.tgz#799821ce4c1225cb975f049757b1d74e268451c2"
+  integrity sha512-4TE4UkI4lGch6sFNfhr/IulGUIik6ky2DvTMP3ImaR1qlApOZRAEZlyL8EfMvq+dNv9Z8DTeOdGmDpt7sQkgow==
   dependencies:
     cors "^2.8.5"
     crc-32 "^1.2.0"
     express "^4.17.1"
     filequeue "^0.5.0"
+    fs-extra "^10.1.0"
     gif-frames "^1.0.1"
     gifsicle "^5.2.0"
     global-modules "^2.0.0"
@@ -2297,6 +2298,15 @@ fs-extra@^1.0.0:
     graceful-fs "^4.1.2"
     jsonfile "^2.1.0"
     klaw "^1.0.0"
+
+fs-extra@^10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
+  integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
 
 fs-extra@^5.0.0:
   version "5.0.0"

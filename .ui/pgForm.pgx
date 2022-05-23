@@ -1,0 +1,69 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "0f8d-da74-58d8-f411",
+			"initialized": true,
+			"props": {
+				"children": [
+					"3277-afcb-f6d9-110b",
+					"b2b1-facc-d6b3-d3f0",
+					"c610-1e3a-9cf7-a0f4"
+				],
+				"name": "pgForm",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "3277-afcb-f6d9-110b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "0f8d-da74-58d8-f411"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "b2b1-facc-d6b3-d3f0",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "0f8d-da74-58d8-f411",
+				"title": "pgForm"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgForm"
+			}
+		},
+		{
+			"className": ".sf-listView .grow",
+			"id": "c610-1e3a-9cf7-a0f4",
+			"oldName": "listView1",
+			"props": {
+				"children": [],
+				"name": "lv",
+				"parent": "0f8d-da74-58d8-f411",
+				"usePageVariable": true
+			},
+			"type": "ListView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-listViewItem .lviMaterialTextBox",
+            "hiddenComponent": true,
 			"id": "6d9e-90b9-8a2b-6ad8",
 			"props": {
 				"children": [

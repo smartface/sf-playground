@@ -8,6 +8,9 @@ export default class LviMaterialTextBox extends LviMaterialTextBoxDesign {
     super(props);
     this.pageName = pageName;
   }
+  get materialTextBox() {
+    return this.mtb;
+  }
   static getHeight() {
     return themeService.getStyle('.lviMaterialTextBox').height || 60;
   }
