@@ -1,8 +1,8 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviMaterialTextBox",
-            "hiddenComponent": true,
+			"className": ".sf-listViewItem .lviMaterialTextBox .paddingHorizontal",
+			"hiddenComponent": true,
 			"id": "6d9e-90b9-8a2b-6ad8",
 			"props": {
 				"children": [

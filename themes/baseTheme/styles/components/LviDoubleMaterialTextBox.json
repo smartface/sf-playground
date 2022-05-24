@@ -1,0 +1,17 @@
+{
+  ".lviDoubleMaterialTextBox": {
+    "height": 86,
+    "flexProps": {
+      "flexDirection": "ROW"
+    },
+    "&-mtb": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "height": null,
+      "marginRight": 5
+    },
+    "paddingTop": 5,
+    "paddingBottom": 5
+  }
+}

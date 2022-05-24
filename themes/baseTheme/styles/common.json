@@ -51,6 +51,14 @@
     "marginBottom": 15,
     "marginTop": 15
   },
+  ".paddingHorizontal": {
+    "paddingLeft": 15,
+    "paddingRight": 15
+  },
+  ".paddingVertical": {
+    "paddingBottom": 15,
+    "paddingTop": 15
+  },
   ".gradient": {
     "&-left": {
       "backgroundColor": {
@@ -76,5 +84,11 @@
     },
     "bottom": 0,
     "backgroundColor": "rgba( 0, 0, 0, 0.1 )"
+  },
+  ".contentInset": {
+    "contentInset": {
+      "bottom": 15,
+      "top": 15
+    }
   }
 }

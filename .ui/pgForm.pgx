@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-listView .grow",
+			"className": ".sf-listView .grow .contentInset",
 			"id": "c610-1e3a-9cf7-a0f4",
 			"oldName": "listView1",
 			"props": {
