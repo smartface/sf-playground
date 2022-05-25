@@ -12,6 +12,7 @@ export default class PgPhotoPicker extends withDismissAndBackButton(PgPhotoPicke
         type: Multimedia.Type.IMAGE,
         page: this,
         onSuccess: ({ assets }) => {
+          console.log('photo picker successful');
           const images = assets.map((asset) => asset.image);
           this.router.push('PgPhotoCropper', { images, activeIndex: Math.min(parseInt(this.tbIndex.text) || 0, assets.length - 1) });
         }

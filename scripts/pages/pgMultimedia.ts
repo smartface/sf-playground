@@ -13,7 +13,7 @@ export default class PgMultimedia extends withDismissAndBackButton(PgMultimediaD
   }
 
   initHasCamera() {
-    this.btnHasCamera.on(ButtonEvents.Press, () => alert(Multimedia.hasCameraFeature));
+    this.btnHasCamera.on('press', () => alert(Multimedia.hasCameraFeature));
   }
 
   initTakePhoto() {
@@ -41,7 +41,7 @@ export default class PgMultimedia extends withDismissAndBackButton(PgMultimediaD
   }
 
   initRecordVideo() {
-    this.btnRecordVideo.on(ButtonEvents.Press, () =>
+    this.btnRecordVideo.on('press', () =>
       Multimedia.recordVideo({
         page: this,
         ios: { cameraDevice: CameraDevice.REAR },
@@ -54,7 +54,7 @@ export default class PgMultimedia extends withDismissAndBackButton(PgMultimediaD
   }
 
   initConvertToMp4() {
-    this.btnConvertToMp4.on(ButtonEvents.Press, () =>
+    this.btnConvertToMp4.on('press', () =>
       Multimedia.convertToMp4({
         videoFile: new File({ path: Path.AssetsUriScheme + 'file_example_WEBM_480_900KB.webm' }),
         onCompleted: (params) => console.info(params),

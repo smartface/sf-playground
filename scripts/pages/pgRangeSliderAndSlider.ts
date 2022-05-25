@@ -5,8 +5,6 @@ import { styleableComponentMixin } from '@smartface/styling-context';
 import RangeSlider from '@smartface/native/ui/rangeslider';
 import Color from '@smartface/native/ui/color';
 import Image from '@smartface/native/ui/image';
-import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
-import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 
 class StyleableRangeSlider extends styleableComponentMixin(RangeSlider) {}
 
@@ -19,8 +17,8 @@ export default class PgRangeSliderAndSlider extends withDismissAndBackButton(PgR
     this.btnSetMinMax.on('press', () => this.setMinMax());
     this.btnSetThumb.on('press', () => this.setThumb());
     this.btnSetRandomValue.on('press', () => this.setRandomValue());
-    this.sl.on(SliderEvents.ValueChange, (value) => console.log('Slider value changed: ', value));
-    this.swEnabled.on(SwitchEvents.ToggleChanged, (toggle) => (this.sl.enabled = toggle));
+    this.sl.on('valueChange', (value) => console.log('Slider value changed: ', value));
+    this.swEnabled.on('toggleChanged', (toggle) => (this.sl.enabled = toggle));
   }
 
   setRandomValue() {

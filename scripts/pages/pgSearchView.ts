@@ -5,7 +5,6 @@ import Color from '@smartface/native/ui/color';
 import TextAlignment from '@smartface/native/ui/shared/textalignment';
 import Image from '@smartface/native/ui/image';
 import Slider from '@smartface/native/ui/slider';
-import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 import Font from '@smartface/native/ui/font';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import Label from '@smartface/native/ui/label';
@@ -39,16 +38,16 @@ export default class PgSearchView extends withDismissAndBackButton(PgSearchViewD
     this.btnSearchViewStyle.on('press', () => this.setSearchViewStyle());
     this.btnShowCancelButton.on('press', () => this.setShowsCancelButton());
 
-    this.slBorderWidth.on(SliderEvents.ValueChange, (value) => this.changeBorderWidth(value));
+    this.slBorderWidth.on('valueChange', (value) => this.changeBorderWidth(value));
 
-    this.sv.on(SearchViewEvents.CancelButtonClicked, () => {
+    this.sv.on('cancelButtonClicked', () => {
       console.log('CancelButtonClicked');
       this.sv.removeFocus();
     });
-    this.sv.on(SearchViewEvents.SearchBegin, () => console.log('SearchBegin'));
-    this.sv.on(SearchViewEvents.SearchButtonClicked, () => console.info('SearchButtonClicked'));
-    this.sv.on(SearchViewEvents.SearchEnd, () => console.log('SearchEnd'));
-    this.sv.on(SearchViewEvents.TextChanged, () => console.log('TextChanged'));
+    this.sv.on('searchBegin', () => console.log('SearchBegin'));
+    this.sv.on('searchButtonClicked', () => console.info('SearchButtonClicked'));
+    this.sv.on('searchEnd', () => console.log('SearchEnd'));
+    this.sv.on('textChanged', () => console.log('TextChanged'));
   }
 
   setShowsCancelButton() {

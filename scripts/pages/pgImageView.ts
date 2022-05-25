@@ -2,9 +2,7 @@ import PgImageViewDesign from 'generated/pages/pgImageView';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Image from '@smartface/native/ui/image';
-import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
 import { IImage } from '@smartface/native/ui/image/image';
-import { ButtonEvents } from '@smartface/native/ui/button/button-events';
 import Picker from '@smartface/native/ui/picker';
 import Color from '@smartface/native/ui/color';
 import File from '@smartface/native/io/file';
@@ -14,7 +12,7 @@ const baseImage = 'images://smartface.png';
 export default class PgImageView extends withDismissAndBackButton(PgImageViewDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.svAutoMirror.on(SwitchEvents.ToggleChanged, (toggle) => this.setAutoMirrored(toggle));
+    this.svAutoMirror.on('toggleChanged', (toggle) => this.setAutoMirrored(toggle));
     this.btnCompress.on('press', () => this.compress());
     this.btnCreateSystemIcon.on('press', () => this.createSystemIcon());
     this.btnCrop.on('press', () => this.crop());
@@ -73,7 +71,21 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
 
   fillType() {
     const picker = new Picker();
-    const fills = ['ASPECTFILL', 'ASPECTFIT', 'BOTTOMCENTER', 'BOTTOMLEFT', 'BOTTOMRIGHT', 'MIDCENTER', 'MIDLEFT', 'MIDRIGHT', 'NORMAL', 'STRETCH', 'TOPCENTER', 'TOPLEFT', 'TOPRIGHT'];
+    const fills = [
+      'ASPECTFILL',
+      'ASPECTFIT',
+      'BOTTOMCENTER',
+      'BOTTOMLEFT',
+      'BOTTOMRIGHT',
+      'MIDCENTER',
+      'MIDLEFT',
+      'MIDRIGHT',
+      'NORMAL',
+      'STRETCH',
+      'TOPCENTER',
+      'TOPLEFT',
+      'TOPRIGHT'
+    ];
     picker.items = fills;
     picker.on('selected', (index) => {
       console.info('selected: ', index);

@@ -3,8 +3,6 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
-import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
-import VideoView from '@smartface/native/ui/videoview';
 
 export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDesign) {
   private _loopEnabled = false;
@@ -17,12 +15,12 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
     this.btnCustomErrorMessage.on('press', () => this.customErrorMessage());
     this.btnSeekTo.on('press', () => this.seekTo45());
     this.btnLoopEnabled.on('press', () => this.switchLoopEnabled());
-    this.swFastForward.on(SwitchEvents.ToggleChanged, (value) => this.changeFastForward(value));
-    this.swLoadingIndicator.on(SwitchEvents.ToggleChanged, (value) => this.changeLoadingIndicator(value));
-    this.swNextButtonEnabled.on(SwitchEvents.ToggleChanged, (value) => this.changeNextButtonEnabled(value));
-    this.swPreviousButtonEnabled.on(SwitchEvents.ToggleChanged, (value) => this.changePreviousButtonEnabled(value));
-    this.swRewindButtonEnabled.on(SwitchEvents.ToggleChanged, (value) => this.changeRewindButtonEnabled(value));
-    this.swShowController.on(SwitchEvents.ToggleChanged, (value) => this.changeShowController(value));
+    this.swFastForward.on('toggleChanged', (value) => this.changeFastForward(value));
+    this.swLoadingIndicator.on('toggleChanged', (value) => this.changeLoadingIndicator(value));
+    this.swNextButtonEnabled.on('toggleChanged', (value) => this.changeNextButtonEnabled(value));
+    this.swPreviousButtonEnabled.on('toggleChanged', (value) => this.changePreviousButtonEnabled(value));
+    this.swRewindButtonEnabled.on('toggleChanged', (value) => this.changeRewindButtonEnabled(value));
+    this.swShowController.on('toggleChanged', (value) => this.changeShowController(value));
   }
 
   switchLoopEnabled() {

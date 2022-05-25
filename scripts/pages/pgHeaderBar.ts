@@ -8,7 +8,6 @@ import Color from '@smartface/native/ui/color';
 import Font from '@smartface/native/ui/font';
 import Image from '@smartface/native/ui/image';
 import getRandomColor from 'lib/getRandomColor';
-import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 import AttributedString from '@smartface/native/ui/attributedstring';
 import Screen from '@smartface/native/device/screen';
 
@@ -34,8 +33,8 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
     this.btnSetBackgroundImage.on('press', () => this.setBackgroundImage());
     this.btnSetAttributed.on('press', () => this.setAttributedStrings());
 
-    this.slElevation.on(SliderEvents.ValueChange, (value) => this.changeElevation(value));
-    this.slAlpha.on(SliderEvents.ValueChange, (value) => this.changeAlpha(value));
+    this.slElevation.on('valueChange', (value) => this.changeElevation(value));
+    this.slAlpha.on('valueChange', (value) => this.changeAlpha(value));
   }
 
   getHeaderBar() {

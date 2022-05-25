@@ -42,10 +42,10 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.btnType.on('press', () => this.setMapType());
-    this.map.on(MapViewEvents.CameraMoveEnded, () => console.log('CameraMoveEnded'));
-    this.map.on(MapViewEvents.CameraMoveStarted, () => console.log('CameraMoveStarted'));
-    this.map.on(MapViewEvents.ClusterPress, () => console.log('ClusterPress'));
-    this.map.on(MapViewEvents.Create, () => console.log('Create'));
+    this.map.on('cameraMoveEnded', () => console.log('CameraMoveEnded'));
+    this.map.on('cameraMoveStarted', () => console.log('CameraMoveStarted'));
+    this.map.on('clusterPress', () => console.log('ClusterPress'));
+    this.map.on('create', () => console.log('Create'));
   }
   setMapType() {
     const picker = new Picker();

@@ -16,7 +16,7 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
   }
   initLinking() {
     // const url = "tg://";
-    // this.btnOpenUrl.on(Button.Events.Press, () => {
+    // this.btnOpenUrl.on('press', () => {
     //   Linking.openURL({
     //     uriScheme: url,
     //     onSuccess: () => {
@@ -28,18 +28,18 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
     //     },
     //   });
     // });
-    // this.btnCanOpen.on(Button.Events.Press, () => {
+    // this.btnCanOpen.on('press', () => {
     //   const canOpen = Linking.canOpenURL(url);
     //   alert("Can Open URL: " + canOpen);
     // });
-    // this.btnOpenSettings.on(Button.Events.Press, () => {
+    // this.btnOpenSettings.on('press', () => {
     //   Linking.openSettings()
     //     .then(() => alert("Settings opened"))
     //     .catch(() => alert("Settings couldn't open"));
     // });
   }
   initPermission() {
-    // this.btnCameraPermission.on(Button.Events.Press, () => {
+    // this.btnCameraPermission.on('press', () => {
     //   Permission.getPermission({
     //     permissionTitle: "Hey! I want your Camera permission",
     //     permissionText: "Keep and Calm! I will use your camera for test only",
@@ -50,7 +50,7 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
     //     .then((res) => alert("Permission Success: " + res))
     //     .catch((err) => alert("Permission failed " + JSON.stringify(err)));
     // });
-    // this.btnLocationPermission.on(Button.Events.Press, () => {
+    // this.btnLocationPermission.on('press', () => {
     //   Permission.getPermission({
     //     permissionTitle: "Hey! I want your Location permission",
     //     permissionText: "Keep and Calm! I will use your location for test only",
@@ -63,21 +63,21 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
     // });
   }
   initLocation() {
-    // this.btnGetLocation.on(Button.Events.Press, () => {
+    // this.btnGetLocation.on('press', () => {
     //   Location.getLocation()
     //     .then((res) => alert("Location Success: " + res))
     //     .catch((err) => alert("Location failed " + JSON.stringify(err)));
     // });
   }
   initNetwork() {
-    // this.btnCheckConnected.on(Button.Events.Press, () => {
+    // this.btnCheckConnected.on('press', () => {
     //   Network.isConnected()
     //     .then((res) => alert("Is connected: " + res))
     //     .catch((err) => alert("Is Connected failed " + JSON.stringify(err)));
     // });
   }
   initMaps() {
-    // this.btnOpenMaps.on(Button.Events.Press, () => {
+    // this.btnOpenMaps.on('press', () => {
     //   openMaps({
     //     mapType: "GOOGLE_MAPS",
     //     name: "Smartface Inc.",
@@ -89,7 +89,7 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
     //     .then(() => alert("Maps opened"))
     //     .catch(() => alert("Maps failed"));
     // });
-    // this.btnOpenNavigation.on(Button.Events.Press, () => {
+    // this.btnOpenNavigation.on('press', () => {
     //   openNavigation({
     //     mapType: "YANDEX_MAPS",
     //     name: "Smartface Inc.",

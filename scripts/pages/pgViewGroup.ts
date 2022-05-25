@@ -4,6 +4,7 @@ import { Router, Route } from '@smartface/router';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import { styleableComponentMixin, styleableContainerComponentMixin } from '@smartface/styling-context';
 import Label from '@smartface/native/ui/label';
+import Color from '@smartface/native/ui/color';
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
@@ -62,7 +63,7 @@ export default class PgViewGroup extends withDismissAndBackButton(PgViewGroupDes
       text: 'Remove Me',
       width: 100,
       height: 50,
-      textColor: '#FFFFFF'
+      textColor: Color.WHITE
     });
 
     this.btnAdd.on('press', () => {

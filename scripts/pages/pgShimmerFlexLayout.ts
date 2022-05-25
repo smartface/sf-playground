@@ -1,14 +1,13 @@
 import PgShimmerFlexLayoutDesign from 'generated/pages/pgShimmerFlexLayout';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 import Picker from '@smartface/native/ui/picker';
 import { ShimmeringDirection } from '@smartface/native/ui/shimmerflexlayout/shimmerflexlayout';
 
 export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShimmerFlexLayoutDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.slAlpha.on(SliderEvents.ValueChange, (value) => this.alphaChange(value));
+    this.slAlpha.on('valueChange', (value) => this.alphaChange(value));
     this.btnChangeDirection.on('press', () => this.directionPicker());
   }
 

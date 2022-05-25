@@ -51,7 +51,6 @@ export default class PgLiveMediaPublisher extends withDismissAndBackButton(PgLiv
       onChange: (params) => {
         console.info(params.message, params);
       },
-      scaleType: ScaleType.ASPECTFILL,
       outputUrl: 'rtmp://192.168.1.106/mystream'
     });
     this.flLiveMediaPublisher.addChild(this.liveMediaPublisher, 'liveMediaPublisher', '.grow-relative');

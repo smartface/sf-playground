@@ -2,7 +2,6 @@ import PgSwitchDesign from 'generated/pages/pgSwitch';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
-import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
 
 export default class PgSwitch extends withDismissAndBackButton(PgSwitchDesign) {
   private _enabled = true;
@@ -17,7 +16,7 @@ export default class PgSwitch extends withDismissAndBackButton(PgSwitchDesign) {
     this.btnToggleOffColor.on('press', () => this.setToggleOffColor());
     this.btnToggleOnColor.on('press', () => this.setToggleOnColor());
     this.btnToggleTrue.on('press', () => this.setSwitchTrue());
-    this.sw1.on(SwitchEvents.ToggleChanged, (value) => {
+    this.sw1.on('toggleChanged', (value) => {
       console.info('Switch Toggled, New Value: ', value);
       this._toggled = value;
       this.btnToggleTrue.text = value ? 'Set Switch to False' : 'Set Switch to True';

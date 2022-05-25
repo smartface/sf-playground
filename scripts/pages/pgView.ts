@@ -3,7 +3,6 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Picker from '@smartface/native/ui/picker';
 import System from '@smartface/native/device/system';
-import { SliderEvents } from '@smartface/native/ui/slider/slider-events';
 import { FlexLayoutEvents } from '@smartface/native/ui/flexlayout/flexlayout-events';
 import { ViewEvents } from '@smartface/native/ui/view/view-events';
 import View from '@smartface/native/ui/view';
@@ -48,10 +47,10 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
   }
 
   viewEvents() {
-    this.vEvents.on(ViewEvents.Touch, () => console.info('View1 Touch'));
-    this.vEvents.on(ViewEvents.TouchCancelled, () => console.info('View1 TouchCancelled'));
-    this.vEvents.on(ViewEvents.TouchEnded, () => console.info('View1 TouchEnded'));
-    this.vEvents.on(ViewEvents.TouchMoved, () => {
+    this.vEvents.on('touch', () => console.info('View1 Touch'));
+    this.vEvents.on('touchCancelled', () => console.info('View1 TouchCancelled'));
+    this.vEvents.on('touchEnded', () => console.info('View1 TouchEnded'));
+    this.vEvents.on('touchMoved', () => {
       if (!this._vEventLock) {
         console.info('View1 TouchMoved');
         this._vEventLock = true;
@@ -63,10 +62,10 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
   initEvents() {
     this.btnAlignSelf.on('press', () => this.showPickerForAlignSelf());
     this.btnAspectRatio.on('press', () => this.setAspectRatio());
-    this.slAlpha.on(SliderEvents.ValueChange, (value) => this.updateAlpha(value));
-    this.slElevation.on(SliderEvents.ValueChange, (value) => this.updateElevation(value));
-    this.flWrapper.on(FlexLayoutEvents.Touch, () => console.info('FlexLayout Touch'));
-    this.v1.on(ViewEvents.Touch, () => console.info('v1 Touch'));
+    this.slAlpha.on('valueChange', (value) => this.updateAlpha(value));
+    this.slElevation.on('valueChange', (value) => this.updateElevation(value));
+    this.flWrapper.on('touch', () => console.info('FlexLayout Touch'));
+    this.v1.on('touch', () => console.info('v1 Touch'));
     this.btnSetMinMaxWidth.on('press', () => this.setMinAndMaxWidth());
     this.btnTouchEnabled.on('press', () => this.disableTouch());
     this.btnVisibility.on('press', () => this.changeVisibility());

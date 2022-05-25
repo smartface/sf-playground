@@ -5,7 +5,6 @@ import SelectablePicker from '@smartface/native/ui/selectablepicker';
 import System from '@smartface/native/device/system';
 import Color from '@smartface/native/ui/color';
 import Font from '@smartface/native/ui/font';
-import { SwitchEvents } from '@smartface/native/ui/switch/switch-events';
 
 export default class PgSelectablePicker extends withDismissAndBackButton(PgSelectablePickerDesign) {
   private _picker: SelectablePicker;
@@ -15,7 +14,7 @@ export default class PgSelectablePicker extends withDismissAndBackButton(PgSelec
   }
 
   initEvents() {
-    this.swCancelable.on(SwitchEvents.ToggleChanged, (value) => {
+    this.swCancelable.on('toggleChanged', (value) => {
       this._cancelable = value;
       this.initPicker();
     });

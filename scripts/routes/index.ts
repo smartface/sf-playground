@@ -15,6 +15,7 @@ import { ITabbarItem } from '@smartface/native/ui/tabbaritem/tabbaritem';
 import AttributedString from '@smartface/native/ui/attributedstring';
 import Font from '@smartface/native/ui/font';
 import TabbarItem from '@smartface/native/ui/tabbaritem';
+import Badge from '@smartface/native/ui/badge';
 
 Application.on('backButtonPressed', () => {
   Router.getActiveRouter()?.goBack();
@@ -91,43 +92,57 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
   });
 }
 
-// const attributeString = new AttributedString();
-// attributeString.string = ' Third - AttributedString';
-// attributeString.link = 'https://www.google.com/';
-// attributeString.strikethrough = true;
-// attributeString.backgroundColor = Color.RED;
-// attributeString.foregroundColor = Color.GREEN;
-// attributeString.underline = true;
-// attributeString.font = Font.create('Times New Roman', 30, Font.NORMAL);
-// attributeString.ios.underlineColor = Color.BLUE;
-// attributeString.ios.strikethroughColor = Color.WHITE;
-
 function generateTabItems(): Partial<ITabbarItem>[] {
   return Object.keys(Tabs).map((tab: any, index: number) => {
-    // const tabbarItem = new TabbarItem({
-    //   title: Tabs[tab].name,
-    //   icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`)
-    // });
-    // tabbarItem.badge.text = String(index);
-    // tabbarItem.badge.visible = true;
-    // tabbarItem.badge.backgroundColor = Color.RED;
-    // tabbarItem.badge.textColor = Color.WHITE;
-    // return tabbarItem;
-    return {
-      title: Tabs[tab].name,
-      icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`),
-      badge: {
-        text: String(index),
-        visible: true,
-        backgroundColor: Color.RED,
-        textColor: Color.WHITE
-      }
-      //   android: {
-      //     attributedTitle: attributeString,
-      //     systemIcon: 17301545
-      //   }
-    } as Partial<ITabbarItem>;
+    // return badgeWithObject(tab, index);
+    return badgeWithTabbarItem(tab, index);
   });
+}
+
+function badgeWithTabbarItem(tab: any, index: number) {
+  const tabbarItem = new TabbarItem({
+    title: Tabs[tab].name,
+    icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`)
+  });
+  // tabbarItem.badge = new Badge({
+  //   nativeObject: tabbarItem.nativeObject,
+  //   text: String(index),
+  //   visible: true,
+  //   backgroundColor: Color.RED,
+  //   textColor: Color.WHITE
+  // });
+  tabbarItem.badge.text = String(index);
+  tabbarItem.badge.visible = true;
+  tabbarItem.badge.backgroundColor = Color.RED;
+  tabbarItem.badge.textColor = Color.WHITE;
+  return tabbarItem;
+}
+
+function badgeWithObject(tab: any, index: number) {
+  const attributeString = new AttributedString();
+  attributeString.string = ' Third - AttributedString';
+  attributeString.link = 'https://www.google.com/';
+  attributeString.strikethrough = true;
+  attributeString.backgroundColor = Color.RED;
+  attributeString.foregroundColor = Color.GREEN;
+  attributeString.underline = true;
+  attributeString.font = Font.create('Times New Roman', 30, Font.NORMAL);
+  attributeString.ios.underlineColor = Color.BLUE;
+  attributeString.ios.strikethroughColor = Color.WHITE;
+  return {
+    title: Tabs[tab].name,
+    icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`),
+    badge: {
+      text: String(index),
+      visible: true,
+      backgroundColor: Color.RED,
+      textColor: Color.WHITE
+    },
+    android: {
+      attributedTitle: attributeString,
+      systemIcon: 17301545
+    }
+  } as Partial<ITabbarItem>;
 }
 
 const bottomTabBarRouter = BottomTabBarRouter.of({

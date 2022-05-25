@@ -28,7 +28,7 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
   initButtons() {
     this.btnGetLocation.onPress = async () => await this.getLocation();
     this.btnNavigate.onPress = () => this.navigateToLocation(this.location);
-    this.btnLastKnownLocation.on(ButtonEvents.Press, () => this.getLastKnownLocation());
+    this.btnLastKnownLocation.on('press', () => this.getLastKnownLocation());
     this.btnNavigate.enabled = false;
     this.btnOpenApplicationSettings.onPress = () => openApplicationSettings();
   }
@@ -64,7 +64,11 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
 
   getLastKnownLocation() {
     //@ts-ignore
-    getPermission({ permissionText: 'ACCESS_FINE_LOCATION', androidPermission: Application.Android.Permissions.ACCESS_FINE_LOCATION, permissionTitle: 'location permission' }).then(() =>
+    getPermission({
+      permissionText: 'ACCESS_FINE_LOCATION',
+      androidPermission: Application.Android.Permissions.ACCESS_FINE_LOCATION,
+      permissionTitle: 'location permission'
+    }).then(() =>
       Location.getLastKnownLocation(
         (e) => {
           alert('Last location: ' + e.latitude + ' ' + e.longitude);

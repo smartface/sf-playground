@@ -9,9 +9,9 @@ export default class PgTimer extends withDismissAndBackButton(PgTimerDesign) {
   interval: TimerBase;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnCreateInterval.on(ButtonEvents.Press, this.createInterval);
-    this.btnCreateTimeout.on(ButtonEvents.Press, this.callWithTimeout);
-    this.btnClearAllTimers.on(ButtonEvents.Press, this.clearAllTimers);
+    this.btnCreateInterval.on('press', this.createInterval);
+    this.btnCreateTimeout.on('press', this.callWithTimeout);
+    this.btnClearAllTimers.on('press', this.clearAllTimers);
   }
 
   clearAllTimers() {
