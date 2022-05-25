@@ -14,6 +14,7 @@ import BottomTabbarController from '@smartface/native/ui/bottomtabbarcontroller'
 import { ITabbarItem } from '@smartface/native/ui/tabbaritem/tabbaritem';
 import AttributedString from '@smartface/native/ui/attributedstring';
 import Font from '@smartface/native/ui/font';
+import TabbarItem from '@smartface/native/ui/tabbaritem';
 
 Application.on('backButtonPressed', () => {
   Router.getActiveRouter()?.goBack();
@@ -102,10 +103,25 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
 // attributeString.ios.strikethroughColor = Color.WHITE;
 
 function generateTabItems(): Partial<ITabbarItem>[] {
-  return Object.keys(Tabs).map((tab: any) => {
+  return Object.keys(Tabs).map((tab: any, index: number) => {
+    // const tabbarItem = new TabbarItem({
+    //   title: Tabs[tab].name,
+    //   icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`)
+    // });
+    // tabbarItem.badge.text = String(index);
+    // tabbarItem.badge.visible = true;
+    // tabbarItem.badge.backgroundColor = Color.RED;
+    // tabbarItem.badge.textColor = Color.WHITE;
+    // return tabbarItem;
     return {
       title: Tabs[tab].name,
-      icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`)
+      icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`),
+      badge: {
+        text: String(index),
+        visible: true,
+        backgroundColor: Color.RED,
+        textColor: Color.WHITE
+      }
       //   android: {
       //     attributedTitle: attributeString,
       //     systemIcon: 17301545
@@ -156,6 +172,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
 // setTimeout(() => {
 //   const rootController = bottomTabBarRouter._renderer._rootController;
 //   rootController.tabBar.items[0].badge.text = '5';
+//   rootController.tabBar.items[0].badge.move(0, 0);
 // }, 5000);
 
 const router = Router.of({
