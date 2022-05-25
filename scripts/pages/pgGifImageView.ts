@@ -12,8 +12,7 @@ export default class PgGifImageView extends withDismissAndBackButton(PgGifImageV
   }
 
   initGif() {
-    //@ts-ignore
-    this.giv.ios.loopCompletionCallback = () => console.info('loopCompletionCallback');
+    this.giv.loopCompletionCallback = () => console.info('loopCompletionCallback');
     this.giv.gifImage = GifImage.createFromFile('assets://countdown.gif');
   }
 

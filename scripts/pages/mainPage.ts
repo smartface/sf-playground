@@ -18,7 +18,6 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
       //   console.info('sliderDrawer.state: ', Application.sliderDrawer.state);
       //   Application.sliderDrawer.show();
     });
-    //@ts-ignore
     // this.testing.on('touchEnded', () => {
     //   console.log('selamlar');
     // });
@@ -54,7 +53,8 @@ export default class MainPage extends withDismissAndBackButton(MainPageDesign) {
   onShow() {
     super.onShow();
     const statusBarHeight = System.OS === System.OSType.ANDROID ? Application.statusBar.height : 0;
-    this.flListViewIndex.topMargin = (System.OS === System.OSType.ANDROID ? this.headerBar.height : this.parentController.headerBar.height || 0) + statusBarHeight;
+    this.flListViewIndex.topMargin =
+      (System.OS === System.OSType.ANDROID ? this.headerBar.height : this.parentController.headerBar.height || 0) + statusBarHeight;
     this.flListViewIndex.dispatch({
       type: 'updateUserStyle',
       userStyle: {

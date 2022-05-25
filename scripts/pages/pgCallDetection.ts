@@ -14,8 +14,7 @@ export default class PgCallDetection extends withDismissAndBackButton(PgCallDete
     try {
       await getPermission({
         permissionText: 'CallPerm',
-        //@ts-ignore
-        androidPermission: Application.Android.Permissions.READ_PHONE_STATE,
+        androidPermission: 'READ_PHONE_STATE',
         permissionTitle: 'CallPermTitle',
         showSettingsAlert: false
       });

@@ -96,9 +96,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
           textAlignment: 'MIDCENTER'
         });
 
-        //@ts-ignore
         myListViewItem.myLabelTitle = myLabelTitle;
-        //@ts-ignore
         myListViewItem.myEditableLbl = myEditableLbl;
       } else {
         // Header
@@ -113,7 +111,6 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
           textAlignment: 'MIDCENTER'
         });
 
-        //@ts-ignore
         myListViewItem.myLabelTitle = myLabelTitle;
       }
       myListViewItem.dispatch({
@@ -134,8 +131,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
       }
       return 40;
     };
-    this.lvMain.onRowBind = (listViewItem: ListViewItem, index: number) => {
-      //@ts-ignore
+    this.lvMain.onRowBind = (listViewItem: ListViewItem & { myLabelTitle?: Label; myEditableLbl: Label }, index: number) => {
       const { myLabelTitle, myEditableLbl } = listViewItem;
 
       if (this.dataArray[index].isHeader) {

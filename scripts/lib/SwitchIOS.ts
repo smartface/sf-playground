@@ -4,11 +4,9 @@ import View from '@smartface/native/ui/view';
 export default class SwitchIOS extends View {
   constructor(params?: any) {
     super();
-    if (System.OS === 'iOS') {
-      //@ts-ignore
-      const NativeSwitch = SF.requireClass('UISwitch');
-      //@ts-ignore
-      const SwitchController = SF.defineClass('SwitchController : NSObject', {
+    if (System.OS === System.OSType.IOS) {
+      const NativeSwitch = requireClass('UISwitch');
+      const SwitchController = defineClass('SwitchController : NSObject', {
         switchAction: function () {
           if (typeof this.onToggle === 'function') {
             this.onToggle.call(this, this);
@@ -16,7 +14,6 @@ export default class SwitchIOS extends View {
         }.bind(this)
       });
       const controllerInstance = SwitchController.new();
-      //@ts-ignore
       this.nativeObject = NativeSwitch.new();
       this.nativeObject.addTargetActionForControlEvents(controllerInstance, 'switchAction', 1 << 12);
     }

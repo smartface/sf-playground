@@ -70,7 +70,6 @@ export default class PgListviewSticky extends withDismissAndBackButton(PgListvie
           borderRadius: 10,
           margin: 10
         });
-        //@ts-ignore
         myListViewItem.myLabelTitle = myLabelTitle;
       } else {
         // Header
@@ -89,7 +88,6 @@ export default class PgListviewSticky extends withDismissAndBackButton(PgListvie
             style: 'Semibold'
           }
         });
-        //@ts-ignore
         myListViewItem.myLabelTitle = myLabelTitle;
       }
       return myListViewItem;

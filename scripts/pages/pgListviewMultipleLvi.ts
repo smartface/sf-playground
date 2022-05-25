@@ -72,7 +72,6 @@ export default class PgListviewMultipleLvi extends withDismissAndBackButton(PgLi
           borderRadius: 10,
           margin: 10
         });
-        //@ts-ignore
         myListViewItem.myLabelTitle = myLabelTitle;
       } else {
         // Header
@@ -92,7 +91,6 @@ export default class PgListviewMultipleLvi extends withDismissAndBackButton(PgLi
             style: 'Semibold'
           }
         });
-        //@ts-ignore
         myListViewItem.myLabelTitle = myLabelTitle;
       }
       return myListViewItem;
@@ -105,8 +103,7 @@ export default class PgListviewMultipleLvi extends withDismissAndBackButton(PgLi
       return 70;
     };
 
-    this.lvMain.onRowBind = function (listViewItem, index) {
-      // @ts-ignore
+    this.lvMain.onRowBind = function (listViewItem: ListViewItem & { myLabelTitle: Label }, index) {
       const { myLabelTitle } = listViewItem;
 
       if (dataArray[index].isHeader) {

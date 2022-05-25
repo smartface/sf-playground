@@ -79,8 +79,8 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
       return 70;
     };
 
-    this.myListView.onRowBind = (listViewItem, index) => {
-      //@ts-ignore
+    this.myListView.onRowBind = (listViewItem: ListViewItem & { myLabelTitle?: Label }, index) => {
+      //
       var myLabelTitle = listViewItem.myLabelTitle;
 
       if (this.listViewItemArray[index].isHeader) {

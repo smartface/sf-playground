@@ -34,8 +34,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     });
 
     const chart = new Chart({
-      // @ts-ignore
-      webViewBridge: wvb,
+      webViewBridge: wvb as any, // TODO: Remove this after util-to-native is over
       apexOptions: {
         barOptions: {
           percent: 0.75
@@ -54,8 +53,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
           },
           events: {
             markerClick: () => {
-              //@ts-ignore
-              window.boubleEvent('EVENT_CHART_EVENTS_markerClick');
+              global.boubleEvent('EVENT_CHART_EVENTS_markerClick');
             }
           }
         },

@@ -21,7 +21,23 @@ type DatasetType = {
   backgroundColor?: Color;
 };
 
-const COLORS: string[] = ['#ffffff', '#e6f7ff', '#cceeff', '#b3e6ff', '#99ddff', '#80d4ff', '#66ccff', '#4dc3ff', '#33bbff', '#1ab2ff', '#00aaff', '#0099e6', '#0088cc', '#0077b3', '#006699'];
+const COLORS: string[] = [
+  '#ffffff',
+  '#e6f7ff',
+  '#cceeff',
+  '#b3e6ff',
+  '#99ddff',
+  '#80d4ff',
+  '#66ccff',
+  '#4dc3ff',
+  '#33bbff',
+  '#1ab2ff',
+  '#00aaff',
+  '#0099e6',
+  '#0088cc',
+  '#0077b3',
+  '#006699'
+];
 
 //You should create new Page from UI-Editor and extend with it.
 export default class PgListviewPagination extends withDismissAndBackButton(PgListviewPaginationDesign) {
@@ -71,7 +87,6 @@ export default class PgListviewPagination extends withDismissAndBackButton(PgLis
       if (type == 2) {
         // Loading
         let loadingIndicator = new StyleableActivityIndicator();
-        //@ts-ignore
         myListViewItem.loadingIndicator = loadingIndicator;
         myListViewItem.addChild(loadingIndicator, `loadingIndicator${this.index}`, '.sf-activityIndicator', {
           width: 35,
@@ -106,7 +121,6 @@ export default class PgListviewPagination extends withDismissAndBackButton(PgLis
           flexGrow: 1,
           textColor: '#FFFFFF'
         });
-        //@ts-ignore
         titleLayout.titleLabel = titleLabel;
 
         titleLayout.addChild(subtitleLabel, `subtitleLabel${this.index}`, 'sf-label', {
@@ -114,24 +128,19 @@ export default class PgListviewPagination extends withDismissAndBackButton(PgLis
           flexGrow: 1,
           textColor: '#FFFFFF'
         });
-        //@ts-ignore
         titleLayout.subtitleLabel = subtitleLabel;
 
-        //@ts-ignore
         myListViewItem.titleLayout = titleLayout;
       }
 
       return myListViewItem;
     };
 
-    this.lvMain.onRowBind = (listViewItem, index) => {
+    this.lvMain.onRowBind = (listViewItem: any, index) => {
       if (index === myDataSet.length) {
-        // @ts-ignore
         listViewItem.loadingIndicator.visible = true;
       } else {
-        // @ts-ignore
         listViewItem.titleLayout.titleLabel.text = myDataSet[index % myDataSet.length].title;
-        // @ts-ignore
         listViewItem.titleLayout.subtitleLabel.text = myDataSet[index % myDataSet.length].subtitle;
       }
 

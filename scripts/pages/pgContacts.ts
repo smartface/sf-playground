@@ -11,8 +11,7 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
   }
 
   getAllContacts() {
-    //@ts-ignore
-    getPermission({ permissionText: 'READ_CONTACTS', androidPermission: Application.Android.Permissions.READ_CONTACTS, permissionTitle: 'contacts permission' }).then(() =>
+    getPermission({ permissionText: 'READ_CONTACTS', androidPermission: 'READ_CONTACTS', permissionTitle: 'contacts permission' }).then(() =>
       Contacts.fetchAll({
         onSuccess: (contacts) => console.info(contacts.map((contact) => Object.keys(contact))),
         onFailure: (error) => console.error('fetchAll Failed', error)
@@ -21,8 +20,7 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
   }
 
   pickContact() {
-    //@ts-ignore
-    getPermission({ permissionText: 'READ_CONTACTS', androidPermission: Application.Android.Permissions.READ_CONTACTS, permissionTitle: 'contacts permission' }).then(() =>
+    getPermission({ permissionText: 'READ_CONTACTS', androidPermission: 'READ_CONTACTS', permissionTitle: 'contacts permission' }).then(() =>
       Contacts.pickContact(this, {
         onSuccess: (contact) => console.info(contact),
         onFailure: () => console.error('pickContact Failed')
@@ -32,8 +30,7 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
 
   async addContact() {
     try {
-      //@ts-ignore
-      await getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: Application.Android.Permissions.WRITE_CONTACTS, permissionTitle: 'contacts permission' });
+      await getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: 'WRITE_CONTACTS', permissionTitle: 'contacts permission' });
       Contacts.add({
         contact: new Contacts.Contact({ firstName: 'Smartface', lastName: 'Mobile', phoneNumbers: ['0000'] }),
         onSuccess: () => console.info('add Success'),

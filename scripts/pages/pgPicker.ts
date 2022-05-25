@@ -31,7 +31,6 @@ export default class PgPicker extends withDismissAndBackButton(PgPickerDesign) {
   }
   btnPickOnPress(): void {
     console.log(`Showing the picker with index ${++this.index}`);
-    //@ts-ignore
     this.itemPicker.show(this.okCallback.bind(this), this.cancelCallback.bind(this));
   }
 

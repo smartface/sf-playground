@@ -21,8 +21,7 @@ export default class PgSpeechRecognizer extends withDismissAndBackButton(PgSpeec
         } else {
           getPermission({
             permissionText: 'RECORD_AUDIO_CODE',
-            //@ts-ignore
-            androidPermission: Application.Android.Permissions.RECORD_AUDIO,
+            androidPermission: 'RECORD_AUDIO',
             permissionTitle: 'RECORD_AUDIO permission'
           })
             .then(() => {

@@ -104,7 +104,6 @@ export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
     return Crypto.RSA.encrypt({
       key,
       plainText: JSON.stringify(keyBody),
-      // @ts-ignore
       cipherType: ENCRYPT_CIPHER_TYPE
     });
   }
@@ -113,7 +112,6 @@ export default class PgCrypto extends withDismissAndBackButton(PgCryptoDesign) {
     return Crypto.RSA.decrypt({
       encryptedText: encryptedText,
       key,
-      // @ts-ignore
       cipherType: ENCRYPT_CIPHER_TYPE
     });
   }
