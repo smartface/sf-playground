@@ -93,17 +93,19 @@ function generateTabRoute(basePath: string, tab: typeof Tabs['tab0']) {
 }
 
 function generateTabItems(): Partial<ITabbarItem>[] {
-  return Object.keys(Tabs).map((tab: any, index: number) => {
-    // return badgeWithObject(tab, index);
-    return badgeWithTabbarItem(tab, index);
+  return Object.keys(Tabs).map((key: string, index: number) => {
+    const tab: typeof Tabs['tab0'] = Tabs[key];
+    const tabbarItem = new TabbarItem({
+      title: tab.name,
+      icon: Image.createFromFile(`images://${tab.imageName.toLowerCase()}`)
+    });
+    return tabbarItem;
+    return tabWithObjectAndBadge(tab, index);
+    return badgeWithTabbarItem(tabbarItem, index);
   });
 }
 
-function badgeWithTabbarItem(tab: any, index: number) {
-  const tabbarItem = new TabbarItem({
-    title: Tabs[tab].name,
-    icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`)
-  });
+function badgeWithTabbarItem(tabbarItem: ITabbarItem, index: number) {
   // tabbarItem.badge = new Badge({
   //   nativeObject: tabbarItem.nativeObject,
   //   text: String(index),
@@ -118,7 +120,7 @@ function badgeWithTabbarItem(tab: any, index: number) {
   return tabbarItem;
 }
 
-function badgeWithObject(tab: any, index: number) {
+function tabWithObjectAndBadge(tab: typeof Tabs['tab0'], index: number) {
   const attributeString = new AttributedString();
   attributeString.string = ' Third - AttributedString';
   attributeString.link = 'https://www.google.com/';
@@ -130,8 +132,8 @@ function badgeWithObject(tab: any, index: number) {
   attributeString.ios.underlineColor = Color.BLUE;
   attributeString.ios.strikethroughColor = Color.WHITE;
   return {
-    title: Tabs[tab].name,
-    icon: Image.createFromFile(`images://${Tabs[tab].imageName.toLowerCase()}`),
+    title: tab.name,
+    icon: Image.createFromFile(`images://${tab.imageName.toLowerCase()}`),
     badge: {
       text: String(index),
       visible: true,

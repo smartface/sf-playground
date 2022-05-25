@@ -63,10 +63,9 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
   }
 
   getLastKnownLocation() {
-    //@ts-ignore
     getPermission({
-      permissionText: 'ACCESS_FINE_LOCATION',
-      androidPermission: Application.Android.Permissions.ACCESS_FINE_LOCATION,
+      permissionText: 'Do you allow to access the location?',
+      androidPermission: 'ACCESS_FINE_LOCATION',
       permissionTitle: 'location permission'
     }).then(() =>
       Location.getLastKnownLocation(
