@@ -1,38 +1,11 @@
 import PgMaterialTextBoxDesign from 'generated/pages/pgMaterialTextBox';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import MaterialTextBox from '@smartface/native/ui/materialtextbox';
-import { styleableComponentMixin } from '@smartface/styling-context';
-import System from '@smartface/native/device/system';
 import Color from '@smartface/native/ui/color';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import Font from '@smartface/native/ui/font';
-class StyleableMaterialTextBox extends styleableComponentMixin(MaterialTextBox) {}
-
-const NORMAL_FONT = {
-  font: {
-    size: 16,
-    bold: false,
-    italic: false,
-    family: 'SFProText',
-    style: 'Semibold'
-  }
-};
-const TB_HEIGHT_ANDROID = 85;
-const isIOS = System.OS === System.OSType.IOS;
-
-const materialtextboxOptions = Object.assign(
-  {
-    font: NORMAL_FONT,
-    labelsFont: NORMAL_FONT,
-    borderWidth: 0
-  },
-  isIOS ? {} : { height: TB_HEIGHT_ANDROID }
-);
 
 export default class PgMaterialTextBox extends withDismissAndBackButton(PgMaterialTextBoxDesign) {
-  private mtbExample: StyleableMaterialTextBox;
-  private mtbMultiline: StyleableMaterialTextBox;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.btnSetCharacterRestrictionColor.on('press', () => this.setCharacterRestrictionColor());
@@ -100,27 +73,16 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
   }
 
   initMultilineMtb() {
-    this.mtbMultiline = new StyleableMaterialTextBox({
-      hint: 'Multiline',
-      multiline: true,
-      android: { maxLines: 2 },
-      lineCount: 2
-    });
-
+    this.mtbMultiline.multiline = true;
+    this.mtbMultiline.lineCount = 2;
     this.mtbMultiline.on('textChanged', () => {
       console.info('textChanged: ', this.mtbMultiline.text);
     });
 
     this.mtbMultiline.ios.expandsOnOverflow = true;
-    this.flMultilineMtbWrapper.addChild(this.mtbMultiline, 'mtbMultiline', '.sf-textBox .grow', materialtextboxOptions);
   }
 
   initNormalMtb() {
-    this.mtbExample = new StyleableMaterialTextBox({
-      hint: 'Example',
-      selectedHintTextColor: Color.BLUE
-    });
-
     this.mtbExample.on('actionButtonPress', () => {
       console.log('mtbExample actionButtonPress');
     });
@@ -142,8 +104,6 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
     this.mtbExample.ios.lineHeight = 6;
     this.mtbExample.ios.inlineHintFont = Font.create(Font.DEFAULT, 4, Font.NORMAL);
     this.mtbExample.ios.underlineLabelsFont = Font.create(Font.DEFAULT, 4, Font.NORMAL);
-
-    this.flMtbWrapper.addChild(this.mtbExample, 'mtbExample', '.sf-textBox .grow', materialtextboxOptions);
   }
   /**
    * @event onShow

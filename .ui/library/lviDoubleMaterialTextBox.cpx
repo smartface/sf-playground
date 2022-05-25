@@ -1,0 +1,62 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .lviDoubleMaterialTextBox .paddingHorizontal",
+			"hiddenComponent": true,
+			"id": "53cd-102b-bdc1-fac4",
+			"props": {
+				"children": [
+					"2ccc-81cd-ccbb-eb66",
+					"8339-96cb-a057-4e1f"
+				],
+				"name": "lviDoubleMaterialTextBox",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {},
+				"left": 37.870000000000005,
+				"top": 111.64
+			}
+		},
+		{
+			"className": ".sf-materialTextBox .lviDoubleMaterialTextBox-mtb",
+			"id": "2ccc-81cd-ccbb-eb66",
+			"oldName": "mtb",
+			"props": {
+				"children": [],
+				"name": "mtb1",
+				"parent": "53cd-102b-bdc1-fac4",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "MaterialTextBox",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-materialTextBox .lviDoubleMaterialTextBox-mtb",
+			"id": "8339-96cb-a057-4e1f",
+			"oldName": "mtb1_1",
+			"props": {
+				"children": [],
+				"name": "mtb2",
+				"parent": "53cd-102b-bdc1-fac4",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "MaterialTextBox",
+			"userProps": {
+				"usePageVariable": true
+			}
+		}
+	]
+}

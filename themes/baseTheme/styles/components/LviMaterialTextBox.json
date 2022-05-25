@@ -1,11 +1,13 @@
 {
   ".lviMaterialTextBox": {
-    "height": 60,
+    "height": 86,
     "&-mtb": {
       "height": null,
       "flexProps": {
         "flexGrow": 1
       }
-    }
+    },
+    "paddingBottom": 5,
+    "paddingTop": 5
   }
 }

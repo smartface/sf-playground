@@ -4,9 +4,11 @@ import { themeService } from 'theme';
 export default class LviMaterialTextBox extends LviMaterialTextBoxDesign {
   pageName?: string | undefined;
   constructor(props?: any, pageName?: string) {
-    // Initalizes super class for this scope
     super(props);
     this.pageName = pageName;
+  }
+  get materialTextBox() {
+    return this.mtb;
   }
   static getHeight() {
     return themeService.getStyle('.lviMaterialTextBox').height || 60;
