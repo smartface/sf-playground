@@ -70,7 +70,7 @@ export default class PgListviewSticky extends withDismissAndBackButton(PgListvie
           borderRadius: 10,
           margin: 10
         });
-        myListViewItem.myLabelTitle = myLabelTitle;
+        myListViewItem['myLabelTitle'] = myLabelTitle;
       } else {
         // Header
         let myLabelTitle = new StyleableLabel();
@@ -88,7 +88,7 @@ export default class PgListviewSticky extends withDismissAndBackButton(PgListvie
             style: 'Semibold'
           }
         });
-        myListViewItem.myLabelTitle = myLabelTitle;
+        myListViewItem['myLabelTitle'] = myLabelTitle;
       }
       return myListViewItem;
     };

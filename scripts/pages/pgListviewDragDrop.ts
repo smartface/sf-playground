@@ -56,6 +56,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
 
   onShow() {
     super.onShow();
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
   onLoad() {
@@ -96,8 +97,8 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
           textAlignment: 'MIDCENTER'
         });
 
-        myListViewItem.myLabelTitle = myLabelTitle;
-        myListViewItem.myEditableLbl = myEditableLbl;
+        myListViewItem['myLabelTitle'] = myLabelTitle;
+        myListViewItem['myEditableLbl'] = myEditableLbl;
       } else {
         // Header
         let myLabelTitle = new StyleableLabel();
@@ -111,7 +112,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
           textAlignment: 'MIDCENTER'
         });
 
-        myListViewItem.myLabelTitle = myLabelTitle;
+        myListViewItem['myLabelTitle'] = myLabelTitle;
       }
       myListViewItem.dispatch({
         type: 'updateUserStyle',

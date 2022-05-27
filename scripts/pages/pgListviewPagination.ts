@@ -87,7 +87,7 @@ export default class PgListviewPagination extends withDismissAndBackButton(PgLis
       if (type == 2) {
         // Loading
         let loadingIndicator = new StyleableActivityIndicator();
-        myListViewItem.loadingIndicator = loadingIndicator;
+        myListViewItem['loadingIndicator'] = loadingIndicator;
         myListViewItem.addChild(loadingIndicator, `loadingIndicator${this.index}`, '.sf-activityIndicator', {
           width: 35,
           height: 35,
@@ -121,16 +121,16 @@ export default class PgListviewPagination extends withDismissAndBackButton(PgLis
           flexGrow: 1,
           textColor: '#FFFFFF'
         });
-        titleLayout.titleLabel = titleLabel;
+        titleLayout['titleLabel'] = titleLabel;
 
         titleLayout.addChild(subtitleLabel, `subtitleLabel${this.index}`, 'sf-label', {
           textAlignment: 'MIDCENTER',
           flexGrow: 1,
           textColor: '#FFFFFF'
         });
-        titleLayout.subtitleLabel = subtitleLabel;
+        titleLayout['subtitleLabel'] = subtitleLabel;
 
-        myListViewItem.titleLayout = titleLayout;
+        myListViewItem['titleLayout'] = titleLayout;
       }
 
       return myListViewItem;

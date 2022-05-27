@@ -72,7 +72,7 @@ export default class PgListviewMultipleLvi extends withDismissAndBackButton(PgLi
           borderRadius: 10,
           margin: 10
         });
-        myListViewItem.myLabelTitle = myLabelTitle;
+        myListViewItem['myLabelTitle'] = myLabelTitle;
       } else {
         // Header
         let myLabelTitle = new Label();
@@ -91,7 +91,7 @@ export default class PgListviewMultipleLvi extends withDismissAndBackButton(PgLi
             style: 'Semibold'
           }
         });
-        myListViewItem.myLabelTitle = myLabelTitle;
+        myListViewItem['myLabelTitle'] = myLabelTitle;
       }
       return myListViewItem;
     };
