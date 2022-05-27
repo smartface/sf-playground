@@ -1,0 +1,18 @@
+{
+	"components": [
+		{
+			"className": ".sf-listView .grow",
+			"id": "d15b-453b-59d7-5823",
+			"props": {
+				"children": [],
+				"name": "lvExtend",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListView",
+			"userProps": {}
+		}
+	]
+}

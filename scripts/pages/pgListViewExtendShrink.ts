@@ -1,24 +1,9 @@
 import PgListViewExtendShrinkDesign from 'generated/pages/pgListViewExtendShrink';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import LviCompanyInfo from 'components/LviCompanyInfo';
-import LviCompanyInfoExtended from 'components/LviCompanyInfoExtended';
-import { addChild } from '@smartface/styling-context';
 import { faker } from '@faker-js/faker';
 import { hideWaitDialog, showWaitDialog } from 'lib/LoadingIndicator';
-import { RowAnimation } from '@smartface/native/ui/listview/listview';
-
-let currentIndex = -1;
-
-enum ListViewTypes {
-  EXTENDED,
-  SHRINKED
-}
-
-const LviClasses = {
-  [ListViewTypes.EXTENDED]: LviCompanyInfoExtended,
-  [ListViewTypes.SHRINKED]: LviCompanyInfo
-};
+import { getLviCompanyInfo, getLviCompanyInfoExtended } from 'components/LvExtend';
 
 type Companies = {
   name: string;
@@ -26,15 +11,8 @@ type Companies = {
   info: string;
 };
 
-type ListViewData = {
-  type: ListViewTypes;
-  height: number;
-  properties: Partial<LviCompanyInfo> | Partial<LviCompanyInfoExtended>;
-};
-
 export default class PgListViewExtendShrink extends withDismissAndBackButton(PgListViewExtendShrinkDesign) {
   private _serviceData: Companies[] = [];
-  private _listViewData: ListViewData[] = [];
   private _extendedIndexes: number[] = [];
   private _maxCount = 0;
   private _page = 1;
@@ -67,9 +45,8 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
           this._serviceData = companies;
         } else {
           this._serviceData = this._serviceData.concat(companies);
-          this.mapListViewData();
-          this.refreshListView();
         }
+        this.lvg.refreshData();
       })
       .finally(() => {
         hideWaitDialog();
@@ -77,59 +54,37 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
       });
   }
 
-  mapListViewData() {
-    this._listViewData = this._serviceData.map((v, index) => {
-      const isExtended = this._extendedIndexes.includes(index);
-      return {
-        height: isExtended ? LviCompanyInfoExtended.getHeight() : LviCompanyInfo.getHeight(),
-        type: isExtended ? ListViewTypes.EXTENDED : ListViewTypes.SHRINKED,
-        properties: {
-          info: v.info,
-          name: v.name,
-          section: v.section,
-          onImageClick: () => {
-            if (isExtended) {
-              this._extendedIndexes = this._extendedIndexes.filter((v, _internalIndex) => v !== index);
-            } else {
-              this._extendedIndexes.push(index);
-            }
-            this.mapListViewData();
-            this.lv.refreshRowRange({ positionStart: index, itemCount: 1, ios: { animation: RowAnimation.AUTOMATIC } });
-          }
-        }
-      };
-    });
-  }
-
-  refreshListView() {
-    this.mapListViewData();
-    this.lv.itemCount = this._listViewData.length;
-    this.lv.refreshData();
-  }
-
   initListView() {
-    this.lv.refreshEnabled = false;
-    this.lv.onRowCreate = (type: ListViewTypes) => {
-      const LviClass = LviClasses[type];
-      const listViewItem = new LviClass();
-      this.lv.dispatch(addChild(`listViewItem${++currentIndex}`, listViewItem));
-      return listViewItem;
+    this.lvg.processor = () => {
+      this.lvg.items = this._serviceData.map((v, index) => {
+        const isExtended = this._extendedIndexes.includes(index);
+        return isExtended
+          ? getLviCompanyInfoExtended({
+              info: v.info,
+              name: v.name,
+              section: v.section,
+              separatorVisible: this._serviceData.length - 1 !== index,
+              onImageClick: () => {
+                this._extendedIndexes = this._extendedIndexes.filter((v, _internalIndex) => v !== index);
+                this.lvg.refreshData({ index });
+              }
+            })
+          : getLviCompanyInfo({
+              name: v.name,
+              section: v.section,
+              separatorVisible: this._serviceData.length - 1 !== index,
+              onImageClick: () => {
+                this._extendedIndexes.push(index);
+                this.lvg.refreshData({ index });
+              }
+            });
+      });
     };
-    this.lv.onRowHeight = (index) => {
-      return this._listViewData[index].height;
-    };
-    this.lv.onRowType = (index) => {
-      return this._listViewData[index].type;
-    };
-    this.lv.onRowBind = (listViewItem: LviCompanyInfo | LviCompanyInfoExtended, index) => {
-      listViewItem.name = this._listViewData[index].properties.name;
-      listViewItem.section = this._listViewData[index].properties.section;
-      if (listViewItem instanceof LviCompanyInfoExtended) {
-        listViewItem.info = (this._listViewData[index].properties as LviCompanyInfoExtended).info;
-      }
-      listViewItem.separatorVisible = this._listViewData.length - 1 !== index; //If not last item
-      listViewItem.onImageClick = this._listViewData[index].properties.onImageClick;
-      if (index === this._listViewData.length - 1 && !this._paginating && this._listViewData.length < this._maxCount) {
+    this.lvg.swipeEnabled = true;
+    this.lvg.refreshEnabled = false;
+    this.lvg.onRowBind = (item, index) => {
+      Object.assign(item, this.lvg.items[index].properties);
+      if (index === this.lvg.items.length - 1 && !this._paginating && this.lvg.items.length < this._maxCount) {
         this.fakeRequest(this._page + 1);
       }
     };
@@ -138,7 +93,7 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
   onShow() {
     super.onShow();
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
-    this.fakeRequest().then(() => this.refreshListView());
+    this.fakeRequest();
   }
 
   onLoad() {
