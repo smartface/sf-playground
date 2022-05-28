@@ -1,63 +1,72 @@
 import LvExtendDesign from 'generated/my-components/LvExtend';
-import { addChild } from '@smartface/styling-context';
-import LviCompanyInfo from './LviCompanyInfo';
-import LviCompanyInfoExtended from './LviCompanyInfoExtended';
+import { addChild, styleableComponentMixin } from '@smartface/styling-context';
 import { RowAnimation } from '@smartface/native/ui/listview/listview';
 import ListView from '@smartface/native/ui/listview';
 import SwipeItem, { SwipeDirection } from '@smartface/native/ui/swipeitem';
 import { themeService } from 'theme';
-import LviTitle from './LviTitle';
+import ListViewItem from '@smartface/native/ui/listviewitem';
 
 let currentIndex = -1;
+let currenType = 1;
+let swipeItemCount = 0;
 
-const deleteItem = new ListView.SwipeItem() as StyleContextComponentType<SwipeItem>;
-themeService.addGlobalComponent(deleteItem as any, `deleteItem`);
-deleteItem.text = 'Delete';
-deleteItem.dispatch({
-  type: 'pushClassNames',
-  classNames: '.swipeItem.delete'
-});
+interface SwipeActions {
+  swipeOnEdit?: SwipeItem['onPress'];
+  swipeOnDelete?: SwipeItem['onPress'];
+};
 
-const editItem = new ListView.SwipeItem() as StyleContextComponentType<SwipeItem>;
-themeService.addGlobalComponent(editItem as any, `editItem`);
-editItem.text = 'Edit';
-editItem.dispatch({
-  type: 'pushClassNames',
-  classNames: '.swipeItem.edit'
-});
+/**
+ * Properties which might be needed&implemented on various different listviewitems.
+ */
+interface GenericProperties {
+  borders?: string[];
+  swipeable?: boolean;
+  className?: string;
+  maxWidthMargin?: number;
+  height?: number;
+};
 
-export enum ListViewItemTypes {
-  LVI_COMPANY_INFO_EXTENDED,
-  LVI_COMPANY_INFO,
-  LVI_TITLE
+interface IProcessed<T> {
+  type: number;
+  height?: number;
+  properties: Partial<T> & GenericProperties & SwipeActions;
 }
 
-export const LviClasses = {
-  [ListViewItemTypes.LVI_COMPANY_INFO_EXTENDED]: LviCompanyInfoExtended,
-  [ListViewItemTypes.LVI_COMPANY_INFO]: LviCompanyInfo,
-  [ListViewItemTypes.LVI_TITLE]: LviTitle
-};
+class StyleableSwipeItem extends styleableComponentMixin(SwipeItem) { }
 
-export type ListViewData = {
-  type: ListViewItemTypes;
-  height?: number;
-  properties: PartialListViewItems;
-};
 
-export type PartialListViewItems = Partial<LviCompanyInfo> | Partial<LviCompanyInfoExtended> | Partial<LviTitle>;
-export type ListViewItems = LviCompanyInfo | LviCompanyInfoExtended | LviTitle;
+const listViewTypeMapping: Map<number, typeof ListViewItem> = new Map();
+
+/**
+ * TODO: Also add icon or other various parameters.
+ */
+function createSwipeAction(text: string, className?: string) {
+  const swipeItem = new StyleableSwipeItem();
+  themeService.addGlobalComponent(swipeItem as any, `listView-swipeItem${++swipeItemCount}`);
+  swipeItem.text = text;
+  swipeItem.dispatch({
+    type: 'pushClassNames',
+    classNames: [className]
+  })
+  return swipeItem;
+}
+
+const deleteItem = createSwipeAction('Delete', '.swipeItem.delete');
+const editItem = createSwipeAction('Edit', '.swipeItem.edit');
 
 export default class LvExtend extends LvExtendDesign {
   pageName?: string | undefined;
   public items: IProcessed<ListViewData>[] = [];
-  processor: () => void = () => {
-    throw new Error('Not implemented');
-  };
+
   constructor(props?: any, pageName?: string) {
     super(props);
     this.pageName = pageName;
+    this.listViewTypeMapping = new Map();
     this.initListView();
   }
+  processor: () => void = () => {
+    throw new Error('Processor not implemented');
+  };
   refreshData(opts: { index?: number } = { index: -1 }) {
     try {
       this.processor();
@@ -79,7 +88,7 @@ export default class LvExtend extends LvExtendDesign {
     this.swipeEnabled = (this.items || []).some((i) => i.properties?.swipeOnDelete || i.properties?.swipeOnEdit);
   }
   initListView() {
-    this.onRowCreate = (type: ListViewItemTypes) => {
+    this.onRowCreate = (type: number) => {
       const LviClass = LviClasses[type];
       const listViewItem = new LviClass();
       this.dispatch(addChild(`listViewItem${++currentIndex}`, listViewItem));
@@ -120,38 +129,39 @@ export default class LvExtend extends LvExtendDesign {
   }
 }
 
-type SwipeAction = (...args: any[]) => Promise<void> | void;
+/**
+ * This function will add the given class to the mapping. It checks for duplicates
+ */
+function getListView(classType: any) {
+  if(listViewTypeMapping.has(currenType)) {
 
-type SwipeActions = {
-  swipeOnEdit?: SwipeAction;
-  swipeOnDelete?: SwipeAction;
-};
-
-type GenericProperties = {
-  borders?: string[];
-  swipeable?: boolean;
-  className?: string;
-  maxWidthMargin?: number;
-  height?: number;
-};
-
-interface IProcessed<T> {
-  type: ListViewItemTypes;
-  height?: number;
-  properties: Partial<T> & GenericProperties & SwipeActions;
-  [key: string]: any;
+  }
+  else {
+    // Check for duplicates
+    listViewTypeMapping.forEach((klass, type) => {
+      if(klass.constructor.name === classType.constructor.name) {
+        
+      }
+    })
+    listViewTypeMapping.set(currenType++, classType);
+  }
 }
 
-export namespace ProcessorTypes {
-  export interface ILviCompanyInfo extends IProcessed<LviCompanyInfo> {}
-  export interface ILviCompanyInfoExtended extends IProcessed<LviCompanyInfoExtended> {}
-  export interface ILviTitle extends IProcessed<LviTitle> {}
-}
+getProcessedListViewItem<LviCompanyInfo>(LviCompanyInfo)
 
-export function getLviCompanyInfo(
-  item: Partial<LviCompanyInfo>,
-  opts?: { optionalHeight?: number; swipeActions?: SwipeActions }
-): ProcessorTypes.ILviCompanyInfo {
+
+export function getProcessedListViewItem<T extends ListViewItem>(ListViewItemClass: new () => T, item?: Partial<T>, opts?: { optionalHeight: number; swipeActions?: SwipeActions }): IProcessed<T> {
+  if (listViewTypeMapping.has(currenType)) {
+
+    const currentListViewItem = listViewTypeMapping.get(currenType);
+
+    if (currentListViewItem.constructor.name === pseudoListViewItem.constructor.name) {
+
+    }
+    else {
+
+    }
+  }
   return {
     type: ListViewItemTypes.LVI_COMPANY_INFO,
     properties: {
@@ -159,30 +169,5 @@ export function getLviCompanyInfo(
       ...opts?.swipeActions
     },
     height: opts?.optionalHeight || LviCompanyInfo.getHeight()
-  };
-}
-
-export function getLviCompanyInfoExtended(
-  item: Partial<LviCompanyInfoExtended>,
-  opts?: { optionalHeight?: number; swipeActions?: SwipeActions }
-): ProcessorTypes.ILviCompanyInfoExtended {
-  return {
-    type: ListViewItemTypes.LVI_COMPANY_INFO_EXTENDED,
-    properties: {
-      ...item,
-      ...opts?.swipeActions
-    },
-    height: opts?.optionalHeight || LviCompanyInfoExtended.getHeight()
-  };
-}
-
-export function getLviTitle(item: Partial<LviTitle>, opts?: { optionalHeight?: number; swipeActions?: SwipeActions }): ProcessorTypes.ILviTitle {
-  return {
-    type: ListViewItemTypes.LVI_TITLE,
-    properties: {
-      ...item,
-      ...opts?.swipeActions
-    },
-    height: opts?.optionalHeight || LviCompanyInfoExtended.getHeight()
-  };
+  }
 }
