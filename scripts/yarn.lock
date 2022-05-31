@@ -84,12 +84,21 @@
   dependencies:
     "@smartface/core" "^5.0.3"
 
-"@smartface/native@^5.0.0", "@smartface/native@^5.0.1":
+"@smartface/native@^5.0.0":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.1.tgz#f7087f2581e04b16781375d99e8b1ae8e0ba29d2"
   integrity sha512-MAbFr6zCWJDHZ9vE0bDqc9rEEo0IIvkoM5XeehLDIJ8BFJBkUWtFrSaJh4FoX4RPCDI9FtU03jKlNcixLvIe8w==
   dependencies:
     events "^3.3.0"
+
+"@smartface/native@alpha":
+  version "5.0.2-alpha.14"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2-alpha.14.tgz#c49b65b84de576dfe1ed07be0c66260f26326ea7"
+  integrity sha512-fg4wwpg+IH8Uvro8MtEat1LYCFzXHf5AfdEGcq7TTLLHr6/DLGYDwepa7NPqQ9/Z+fN4SS4oOUryy2B6mrAHhg==
+  dependencies:
+    abort-controller "^3.0.0"
+    events "^3.3.0"
+    whatwg-fetch "^3.6.2"
 
 "@smartface/router@^2.3.1":
   version "2.3.1"
@@ -139,6 +148,13 @@
   dependencies:
     moment ">=2.14.0"
 
+abort-controller@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
+  integrity sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
+  dependencies:
+    event-target-shim "^5.0.0"
+
 apexcharts@^3.26.3:
   version "3.35.2"
   resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.35.2.tgz#90faafffa055ce502f73b11008ba77238e94228f"
@@ -162,6 +178,11 @@ decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
 events@^3.3.0:
   version "3.3.0"
@@ -355,6 +376,11 @@ void-elements@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-1.0.0.tgz#6e5db1e35d591f5ac690ce1a340f793a817b2c2a"
   integrity sha1-bl2x411ZH1rGkM4aNA95OoF7LCo=
+
+whatwg-fetch@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
+  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
 
 wolfy87-eventemitter@^5.2.9:
   version "5.2.9"
