@@ -7,7 +7,7 @@ import { themeService } from 'theme';
 import ListViewItem from '@smartface/native/ui/listviewitem';
 
 let currentIndex = -1;
-let currenType = 0; //For UI editor, we should start from 1 instead of 0
+let currentType = 0; //For UI editor, we should start from 1 instead of 0
 const listViewTypeMapping: Map<number, typeof ListViewItem> = new Map();
 
 let swipeItemCount = 0;
@@ -123,8 +123,8 @@ export default class LvExtend extends LvExtendDesign {
     });
     // Couldn't find any, add to the class
     if (!currentMap) {
-      listViewTypeMapping.set(++currenType, classType);
-      return currenType;
+      listViewTypeMapping.set(++currentType, classType);
+      return currentType;
     } else {
       return currentMap[0];
     }
