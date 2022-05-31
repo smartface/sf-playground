@@ -7,13 +7,21 @@ import { themeService } from 'theme';
 import ListViewItem from '@smartface/native/ui/listviewitem';
 
 let currentIndex = -1;
-let currenType = 1;
+let currenType = 0; //For UI editor, we should start from 1 instead of 0
+const listViewTypeMapping: Map<number, typeof ListViewItem> = new Map();
+
 let swipeItemCount = 0;
 
 interface SwipeActions {
   swipeOnEdit?: SwipeItem['onPress'];
   swipeOnDelete?: SwipeItem['onPress'];
-};
+}
+
+class StyleableSwipeItem extends styleableComponentMixin(SwipeItem) {}
+
+// Add your other swipe items like this
+const deleteItem = createSwipeAction('Delete', '.swipeItem.delete');
+const editItem = createSwipeAction('Edit', '.swipeItem.edit');
 
 /**
  * Properties which might be needed&implemented on various different listviewitems.
@@ -24,7 +32,7 @@ interface GenericProperties {
   className?: string;
   maxWidthMargin?: number;
   height?: number;
-};
+}
 
 interface IProcessed<T> {
   type: number;
@@ -32,36 +40,13 @@ interface IProcessed<T> {
   properties: Partial<T> & GenericProperties & SwipeActions;
 }
 
-class StyleableSwipeItem extends styleableComponentMixin(SwipeItem) { }
-
-
-const listViewTypeMapping: Map<number, typeof ListViewItem> = new Map();
-
-/**
- * TODO: Also add icon or other various parameters.
- */
-function createSwipeAction(text: string, className?: string) {
-  const swipeItem = new StyleableSwipeItem();
-  themeService.addGlobalComponent(swipeItem as any, `listView-swipeItem${++swipeItemCount}`);
-  swipeItem.text = text;
-  swipeItem.dispatch({
-    type: 'pushClassNames',
-    classNames: [className]
-  })
-  return swipeItem;
-}
-
-const deleteItem = createSwipeAction('Delete', '.swipeItem.delete');
-const editItem = createSwipeAction('Edit', '.swipeItem.edit');
-
 export default class LvExtend extends LvExtendDesign {
   pageName?: string | undefined;
-  public items: IProcessed<ListViewData>[] = [];
+  items: IProcessed<ListViewItem>[] = [];
 
   constructor(props?: any, pageName?: string) {
     super(props);
     this.pageName = pageName;
-    this.listViewTypeMapping = new Map();
     this.initListView();
   }
   processor: () => void = () => {
@@ -89,7 +74,7 @@ export default class LvExtend extends LvExtendDesign {
   }
   initListView() {
     this.onRowCreate = (type: number) => {
-      const LviClass = LviClasses[type];
+      const LviClass = listViewTypeMapping.get(type);
       const listViewItem = new LviClass();
       this.dispatch(addChild(`listViewItem${++currentIndex}`, listViewItem));
       return listViewItem;
@@ -100,7 +85,7 @@ export default class LvExtend extends LvExtendDesign {
     this.onRowType = (index) => {
       return this.items[index].type;
     };
-    this.onRowBind = (listViewItem: ListViewItems, index) => {
+    this.onRowBind = (listViewItem, index) => {
       Object.assign(listViewItem, this.items[index].properties);
     };
     this.onRowSwipe = (opts) => {
@@ -127,47 +112,51 @@ export default class LvExtend extends LvExtendDesign {
       return directions;
     };
   }
+
+  /**
+   * Will loop through listviewitems in order to get the type.
+   * If it doesn't find any, it will add to the list and return the type anyways.
+   */
+  private getTypeOfListviewClass(classType: typeof ListViewItem) {
+    const currentMap = Array.from(listViewTypeMapping).find(([key, value]) => {
+      return value.name === classType.name;
+    });
+    // Couldn't find any, add to the class
+    if (!currentMap) {
+      listViewTypeMapping.set(++currenType, classType);
+      return currenType;
+    } else {
+      return currentMap[0];
+    }
+  }
+
+  getProcessedListViewItem<T extends ListViewItem>(
+    klass: typeof ListViewItem & { getHeight: () => number },
+    item?: Partial<T>,
+    opts?: { height?: number; swipeActions?: SwipeActions }
+  ): IProcessed<T> {
+    const type = this.getTypeOfListviewClass(klass);
+    return {
+      type: type,
+      properties: {
+        ...item,
+        ...opts?.swipeActions
+      },
+      height: opts?.height ?? klass.getHeight?.()
+    };
+  }
 }
 
 /**
- * This function will add the given class to the mapping. It checks for duplicates
+ * TODO: Also add icon or other various parameters.
  */
-function getListView(classType: any) {
-  if(listViewTypeMapping.has(currenType)) {
-
-  }
-  else {
-    // Check for duplicates
-    listViewTypeMapping.forEach((klass, type) => {
-      if(klass.constructor.name === classType.constructor.name) {
-        
-      }
-    })
-    listViewTypeMapping.set(currenType++, classType);
-  }
-}
-
-getProcessedListViewItem<LviCompanyInfo>(LviCompanyInfo)
-
-
-export function getProcessedListViewItem<T extends ListViewItem>(ListViewItemClass: new () => T, item?: Partial<T>, opts?: { optionalHeight: number; swipeActions?: SwipeActions }): IProcessed<T> {
-  if (listViewTypeMapping.has(currenType)) {
-
-    const currentListViewItem = listViewTypeMapping.get(currenType);
-
-    if (currentListViewItem.constructor.name === pseudoListViewItem.constructor.name) {
-
-    }
-    else {
-
-    }
-  }
-  return {
-    type: ListViewItemTypes.LVI_COMPANY_INFO,
-    properties: {
-      ...item,
-      ...opts?.swipeActions
-    },
-    height: opts?.optionalHeight || LviCompanyInfo.getHeight()
-  }
+function createSwipeAction(text: string, className?: string) {
+  const swipeItem = new StyleableSwipeItem();
+  themeService.addGlobalComponent(swipeItem as any, `listView-swipeItem${++swipeItemCount}`);
+  swipeItem.text = text;
+  swipeItem.dispatch({
+    type: 'pushClassNames',
+    classNames: [className]
+  });
+  return swipeItem;
 }
