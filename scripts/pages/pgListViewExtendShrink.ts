@@ -3,7 +3,8 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import { faker } from '@faker-js/faker';
 import { hideWaitDialog, showWaitDialog } from 'lib/LoadingIndicator';
-import { getLviCompanyInfo, getLviCompanyInfoExtended } from 'components/LvExtend';
+import LviCompanyInfoExtended from 'components/LviCompanyInfoExtended';
+import LviCompanyInfo from 'components/LviCompanyInfo';
 
 type Companies = {
   name: string;
@@ -59,7 +60,7 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
       this.lvg.items = this._serviceData.map((v, index) => {
         const isExtended = this._extendedIndexes.includes(index);
         return isExtended
-          ? getLviCompanyInfoExtended({
+          ? this.lvg.getProcessedListViewItem<LviCompanyInfoExtended>(LviCompanyInfoExtended, {
               info: v.info,
               name: v.name,
               section: v.section,
@@ -69,7 +70,7 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
                 this.lvg.refreshData({ index });
               }
             })
-          : getLviCompanyInfo({
+          : this.lvg.getProcessedListViewItem<LviCompanyInfo>(LviCompanyInfo, {
               name: v.name,
               section: v.section,
               separatorVisible: this._serviceData.length - 1 !== index,

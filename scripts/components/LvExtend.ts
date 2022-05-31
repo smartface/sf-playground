@@ -1,63 +1,57 @@
 import LvExtendDesign from 'generated/my-components/LvExtend';
-import { addChild } from '@smartface/styling-context';
-import LviCompanyInfo from './LviCompanyInfo';
-import LviCompanyInfoExtended from './LviCompanyInfoExtended';
+import { addChild, styleableComponentMixin } from '@smartface/styling-context';
 import { RowAnimation } from '@smartface/native/ui/listview/listview';
 import ListView from '@smartface/native/ui/listview';
 import SwipeItem, { SwipeDirection } from '@smartface/native/ui/swipeitem';
 import { themeService } from 'theme';
-import LviTitle from './LviTitle';
+import ListViewItem from '@smartface/native/ui/listviewitem';
 
 let currentIndex = -1;
+let currentType = 0; //For UI editor, we should start from 1 instead of 0
+const listViewTypeMapping: Map<number, typeof ListViewItem> = new Map();
 
-const deleteItem = new ListView.SwipeItem() as StyleContextComponentType<SwipeItem>;
-themeService.addGlobalComponent(deleteItem as any, `deleteItem`);
-deleteItem.text = 'Delete';
-deleteItem.dispatch({
-  type: 'pushClassNames',
-  classNames: '.swipeItem.delete'
-});
+let swipeItemCount = 0;
 
-const editItem = new ListView.SwipeItem() as StyleContextComponentType<SwipeItem>;
-themeService.addGlobalComponent(editItem as any, `editItem`);
-editItem.text = 'Edit';
-editItem.dispatch({
-  type: 'pushClassNames',
-  classNames: '.swipeItem.edit'
-});
-
-export enum ListViewItemTypes {
-  LVI_COMPANY_INFO_EXTENDED,
-  LVI_COMPANY_INFO,
-  LVI_TITLE
+interface SwipeActions {
+  swipeOnEdit?: SwipeItem['onPress'];
+  swipeOnDelete?: SwipeItem['onPress'];
 }
 
-export const LviClasses = {
-  [ListViewItemTypes.LVI_COMPANY_INFO_EXTENDED]: LviCompanyInfoExtended,
-  [ListViewItemTypes.LVI_COMPANY_INFO]: LviCompanyInfo,
-  [ListViewItemTypes.LVI_TITLE]: LviTitle
-};
+class StyleableSwipeItem extends styleableComponentMixin(SwipeItem) {}
 
-export type ListViewData = {
-  type: ListViewItemTypes;
+// Add your other swipe items like this
+const deleteItem = createSwipeAction('Delete', '.swipeItem.delete');
+const editItem = createSwipeAction('Edit', '.swipeItem.edit');
+
+/**
+ * Properties which might be needed&implemented on various different listviewitems.
+ */
+interface GenericProperties {
+  borders?: string[];
+  swipeable?: boolean;
+  className?: string;
+  maxWidthMargin?: number;
   height?: number;
-  properties: PartialListViewItems;
-};
+}
 
-export type PartialListViewItems = Partial<LviCompanyInfo> | Partial<LviCompanyInfoExtended> | Partial<LviTitle>;
-export type ListViewItems = LviCompanyInfo | LviCompanyInfoExtended | LviTitle;
+interface IProcessed<T> {
+  type: number;
+  height?: number;
+  properties: Partial<T> & GenericProperties & SwipeActions;
+}
 
 export default class LvExtend extends LvExtendDesign {
   pageName?: string | undefined;
-  public items: IProcessed<ListViewData>[] = [];
-  processor: () => void = () => {
-    throw new Error('Not implemented');
-  };
+  items: IProcessed<ListViewItem>[] = [];
+
   constructor(props?: any, pageName?: string) {
     super(props);
     this.pageName = pageName;
     this.initListView();
   }
+  processor: () => void = () => {
+    throw new Error('Processor not implemented');
+  };
   refreshData(opts: { index?: number } = { index: -1 }) {
     try {
       this.processor();
@@ -79,8 +73,8 @@ export default class LvExtend extends LvExtendDesign {
     this.swipeEnabled = (this.items || []).some((i) => i.properties?.swipeOnDelete || i.properties?.swipeOnEdit);
   }
   initListView() {
-    this.onRowCreate = (type: ListViewItemTypes) => {
-      const LviClass = LviClasses[type];
+    this.onRowCreate = (type: number) => {
+      const LviClass = listViewTypeMapping.get(type);
       const listViewItem = new LviClass();
       this.dispatch(addChild(`listViewItem${++currentIndex}`, listViewItem));
       return listViewItem;
@@ -91,7 +85,7 @@ export default class LvExtend extends LvExtendDesign {
     this.onRowType = (index) => {
       return this.items[index].type;
     };
-    this.onRowBind = (listViewItem: ListViewItems, index) => {
+    this.onRowBind = (listViewItem, index) => {
       Object.assign(listViewItem, this.items[index].properties);
     };
     this.onRowSwipe = (opts) => {
@@ -118,71 +112,51 @@ export default class LvExtend extends LvExtendDesign {
       return directions;
     };
   }
+
+  /**
+   * Will loop through listviewitems in order to get the type.
+   * If it doesn't find any, it will add to the list and return the type anyways.
+   */
+  private getTypeOfListviewClass(classType: typeof ListViewItem) {
+    const currentMap = Array.from(listViewTypeMapping).find(([key, value]) => {
+      return value.name === classType.name;
+    });
+    // Couldn't find any, add to the class
+    if (!currentMap) {
+      listViewTypeMapping.set(++currentType, classType);
+      return currentType;
+    } else {
+      return currentMap[0];
+    }
+  }
+
+  getProcessedListViewItem<T extends ListViewItem>(
+    klass: typeof ListViewItem & { getHeight: () => number },
+    item?: Partial<T>,
+    opts?: { height?: number; swipeActions?: SwipeActions }
+  ): IProcessed<T> {
+    const type = this.getTypeOfListviewClass(klass);
+    return {
+      type: type,
+      properties: {
+        ...item,
+        ...opts?.swipeActions
+      },
+      height: opts?.height ?? klass.getHeight?.()
+    };
+  }
 }
 
-type SwipeAction = (...args: any[]) => Promise<void> | void;
-
-type SwipeActions = {
-  swipeOnEdit?: SwipeAction;
-  swipeOnDelete?: SwipeAction;
-};
-
-type GenericProperties = {
-  borders?: string[];
-  swipeable?: boolean;
-  className?: string;
-  maxWidthMargin?: number;
-  height?: number;
-};
-
-interface IProcessed<T> {
-  type: ListViewItemTypes;
-  height?: number;
-  properties: Partial<T> & GenericProperties & SwipeActions;
-  [key: string]: any;
-}
-
-export namespace ProcessorTypes {
-  export interface ILviCompanyInfo extends IProcessed<LviCompanyInfo> {}
-  export interface ILviCompanyInfoExtended extends IProcessed<LviCompanyInfoExtended> {}
-  export interface ILviTitle extends IProcessed<LviTitle> {}
-}
-
-export function getLviCompanyInfo(
-  item: Partial<LviCompanyInfo>,
-  opts?: { optionalHeight?: number; swipeActions?: SwipeActions }
-): ProcessorTypes.ILviCompanyInfo {
-  return {
-    type: ListViewItemTypes.LVI_COMPANY_INFO,
-    properties: {
-      ...item,
-      ...opts?.swipeActions
-    },
-    height: opts?.optionalHeight || LviCompanyInfo.getHeight()
-  };
-}
-
-export function getLviCompanyInfoExtended(
-  item: Partial<LviCompanyInfoExtended>,
-  opts?: { optionalHeight?: number; swipeActions?: SwipeActions }
-): ProcessorTypes.ILviCompanyInfoExtended {
-  return {
-    type: ListViewItemTypes.LVI_COMPANY_INFO_EXTENDED,
-    properties: {
-      ...item,
-      ...opts?.swipeActions
-    },
-    height: opts?.optionalHeight || LviCompanyInfoExtended.getHeight()
-  };
-}
-
-export function getLviTitle(item: Partial<LviTitle>, opts?: { optionalHeight?: number; swipeActions?: SwipeActions }): ProcessorTypes.ILviTitle {
-  return {
-    type: ListViewItemTypes.LVI_TITLE,
-    properties: {
-      ...item,
-      ...opts?.swipeActions
-    },
-    height: opts?.optionalHeight || LviCompanyInfoExtended.getHeight()
-  };
+/**
+ * TODO: Also add icon or other various parameters.
+ */
+function createSwipeAction(text: string, className?: string) {
+  const swipeItem = new StyleableSwipeItem();
+  themeService.addGlobalComponent(swipeItem as any, `listView-swipeItem${++swipeItemCount}`);
+  swipeItem.text = text;
+  swipeItem.dispatch({
+    type: 'pushClassNames',
+    classNames: [className]
+  });
+  return swipeItem;
 }

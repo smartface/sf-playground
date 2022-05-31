@@ -1,8 +1,8 @@
 import PgListviewSwipeDesign from 'generated/pages/pgListviewSwipe';
 import { Route, Router } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
-import { getLviTitle } from 'components/LvExtend';
 import { RowAnimation } from '@smartface/native/ui/listview/listview';
+import LviTitle from 'components/LviTitle';
 
 type DatasetType = { title: string };
 export default class PgListviewSwipe extends withDismissAndBackButton(PgListviewSwipeDesign) {
@@ -16,7 +16,8 @@ export default class PgListviewSwipe extends withDismissAndBackButton(PgListview
   initListView() {
     this.lvg.processor = () => {
       this.lvg.items = this.myDataSet.map((v) => {
-        return getLviTitle(
+        return this.lvg.getProcessedListViewItem<LviTitle>(
+          LviTitle,
           {
             title: v.title
           },
