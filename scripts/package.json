@@ -13,5 +13,8 @@
     "@smartface/styling-context": "^5.0.4-alpha",
     "@smartface/webviewbridge": "1.0.4",
     "axios": "0.26.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.38"
   }
 }
