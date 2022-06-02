@@ -1,0 +1,115 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "b621-4951-a004-f97c",
+			"initialized": true,
+			"props": {
+				"children": [
+					"38ab-c64a-4430-f91e",
+					"40d9-b939-d860-0d22",
+					"8f94-c4c5-d2af-f99d"
+				],
+				"name": "pgPageComplexLayout",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "38ab-c64a-4430-f91e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "b621-4951-a004-f97c"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "40d9-b939-d860-0d22",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "b621-4951-a004-f97c",
+				"title": "pgPageComplexLayout"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgPageComplexLayout"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "8f94-c4c5-d2af-f99d",
+			"props": {
+				"children": [
+					"ded5-60e9-c109-30d3"
+				],
+				"name": "flexLayout1",
+				"parent": "b621-4951-a004-f97c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 400
+			}
+		},
+		{
+			"className": ".sf-listView",
+			"id": "ded5-60e9-c109-30d3",
+			"props": {
+				"children": [
+					"6eb4-ed42-0e9a-15c6"
+				],
+				"name": "listView1",
+				"parent": "8f94-c4c5-d2af-f99d",
+				"usePageVariable": true
+			},
+			"type": "ListView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-listViewItem",
+			"hiddenComponent": false,
+			"id": "6eb4-ed42-0e9a-15c6",
+			"oldName": "listViewItem1",
+			"props": {
+				"children": [],
+				"name": "complexListViewItem",
+				"parent": "ded5-60e9-c109-30d3"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "complexListViewItem",
+				"id": "e64b-a856-413b-0c00"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0
+			}
+		}
+	]
+}

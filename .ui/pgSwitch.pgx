@@ -12,10 +12,17 @@
 				],
 				"name": "pgSwitch",
 				"orientation": "PORTRAIT",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
-			"userProps": {}
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null,
+				"safeAreaEnabled": true
+			}
 		},
 		{
 			"className": ".sf-statusBar",

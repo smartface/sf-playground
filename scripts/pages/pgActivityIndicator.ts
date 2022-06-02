@@ -13,6 +13,11 @@ export default class PgActivityIndicator extends withDismissAndBackButton(PgActi
     this.btnLarge.on('press', () => this.setActivityIndicatorStyleLarge());
   }
 
+
+  addCustomView() {
+      
+  }
+
   setActivityIndicatorStyleDefault() {
     this.ai.ios.activityIndicatorViewStyle = ActivityIndicatorViewStyle.NORMAL;
   }

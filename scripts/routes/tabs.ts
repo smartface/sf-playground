@@ -10,6 +10,9 @@ import PgArt from 'pages/pgArt';
 import PgFileUpload from 'pages/pgFileUpload';
 import PgListViewIndex from 'pages/pgListViewIndex';
 import PgSwitch from 'pages/pgSwitch';
+import PgPageComplexLayout from 'pages/pgPageComplexLayout';
+import PgPage3 from 'pages/pgPage3';
+import PgPageScrollView from 'pages/pgPageScrollView';
 import Page2 from 'pages/page2';
 import PageHideShow from 'pages/pageHideShow';
 import PgChart from 'pages/pgChart';
@@ -111,6 +114,7 @@ import PgI18N from 'pages/pgI18N';
 import PgBarcodeScanner from 'pages/pgBarcodeScanner';
 import PgCalendar from 'pages/pgCalendar';
 import PgForm from 'pages/pgForm';
+import PgRelatedFlexLayouts from 'pages/pgRelatedFlexLayouts';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -119,6 +123,7 @@ export const tab0: Tab = {
   imageName: 'sfnative.png',
   tabIndex: 0,
   pages: [
+    PgRelatedFlexLayouts,
     PgSearchView,
     PgMapView,
     PgMapViewRadius,
@@ -137,6 +142,9 @@ export const tab0: Tab = {
     PgHeaderImageAndItems,
     PgCrypto,
     PgSwitch,
+    PgPageComplexLayout,
+    PgPage3,
+    PgPageScrollView,
     PageHideShow,
     PgNativeFunctions,
     PgAccelerometer,

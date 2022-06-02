@@ -66,7 +66,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
     myBlurView.android.overlayColor = Color.TRANSPARENT; //This needs to be changed afterwards
     this.myBlurView = myBlurView;
     this.flBlur.addChild(myBlurView, 'myBlurView');
-    System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.flBlur.applyLayout();
+    // System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.flBlur.applyLayout();
   }
 
   showHideBlurView(toggle: boolean) {
@@ -74,8 +74,10 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
       return;
     }
     this.flBlur.removeChild(this.myBlurView);
+    // this.layout.nativeObject.setNeedsLayout();
     if (toggle) {
       this.initBlurView();
+    //   this.layout.nativeObject.setNeedsLayout();
     }
     this.btnShowHide.text = toggle ? 'Show' : 'Hide';
   }

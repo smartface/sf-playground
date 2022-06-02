@@ -1,0 +1,175 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "ca7b-ab5c-2a8d-d86f",
+			"initialized": true,
+			"props": {
+				"children": [
+					"8583-5c22-99a5-8cc2",
+					"9bbc-0471-2281-6e12",
+					"7e5c-4fa7-ed45-5510"
+				],
+				"name": "pgPage3",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8583-5c22-99a5-8cc2",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "ca7b-ab5c-2a8d-d86f"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "9bbc-0471-2281-6e12",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "ca7b-ab5c-2a8d-d86f",
+				"title": "pgPage3"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgPage3"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "7e5c-4fa7-ed45-5510",
+			"props": {
+				"children": [
+					"2738-afc0-a656-2866",
+					"c2f3-b97a-cfd6-6339",
+					"2931-c2c9-8b2a-b2f1",
+					"e016-a7b7-f38c-1ced",
+					"bc52-5b37-87a8-a9ba"
+				],
+				"name": "flexLayout1",
+				"parent": "ca7b-ab5c-2a8d-d86f"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				}
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2738-afc0-a656-2866",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "adım2",
+				"parent": "7e5c-4fa7-ed45-5510",
+				"text": "adım2",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "adım2",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "c2f3-b97a-cfd6-6339",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "parentChild",
+				"parent": "7e5c-4fa7-ed45-5510",
+				"text": "Parent-Child",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Parent-Child",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "2931-c2c9-8b2a-b2f1",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "updateParentChild",
+				"parent": "7e5c-4fa7-ed45-5510",
+				"text": "Update Parent Child",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Update Parent Child",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "e016-a7b7-f38c-1ced",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "textView1",
+				"parent": "7e5c-4fa7-ed45-5510",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "bc52-5b37-87a8-a9ba",
+			"props": {
+				"children": [
+					"4684-c587-3b46-4517"
+				],
+				"name": "flexLayout3",
+				"parent": "7e5c-4fa7-ed45-5510",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 189, 16, 224, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "4684-c587-3b46-4517",
+			"oldName": "flexLayout2",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "bc52-5b37-87a8-a9ba",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": null,
+				"usePageVariable": true
+			}
+		}
+	]
+}

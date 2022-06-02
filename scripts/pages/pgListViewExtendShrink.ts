@@ -80,6 +80,7 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
               }
             });
       });
+      console.log(this.lvg.items)
     };
     this.lvg.swipeEnabled = true;
     this.lvg.refreshEnabled = false;

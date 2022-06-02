@@ -93,7 +93,8 @@
 				"left": 0,
 				"testId": "ccogG2QQQ",
 				"top": 0,
-				"usePageVariable": true
+				"usePageVariable": true,
+				"width": 300
 			}
 		}
 	]

@@ -8,6 +8,7 @@
 			"props": {
 				"children": [
 					"24ca-f21f-dfb6-5dc9",
+					"af4f-39c0-0d20-178b",
 					"8474-887d-3102-405e",
 					"bd8f-5e00-4110-7fd7"
 				],
@@ -44,6 +45,24 @@
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
 				"text": "ListView Cell Title"
+			}
+		},
+		{
+			"className": ".sf-gridView",
+			"id": "af4f-39c0-0d20-178b",
+			"props": {
+				"children": [],
+				"name": "gridView1",
+				"parent": "1841-ff9a-b968-028d"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "GridView",
+			"userProps": {
+				"layoutManager": {
+					"spanCount": 2
+				}
 			}
 		},
 		{
