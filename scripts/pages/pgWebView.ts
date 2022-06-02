@@ -53,6 +53,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
           },
           events: {
             markerClick: () => {
+              //@ts-ignore
               global.boubleEvent('EVENT_CHART_EVENTS_markerClick');
             }
           }

@@ -2,6 +2,9 @@ import Dialog from '@smartface/native/ui/dialog';
 import FlWaitingIndicator from 'components/FlWaitingIndicator';
 import { themeService } from 'theme';
 import FlexLayout from '@smartface/native/ui/flexlayout';
+import { styleableContainerComponentMixin } from '@smartface/styling-context';
+
+class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
 
 var waitDialog = null;
 var activeDialogCounter = 0;
@@ -17,7 +20,7 @@ function initWaitDialog(opts?: { closeOnTouch: boolean }) {
   });
   themeService.addGlobalComponent(dialog.layout, 'genericDialog');
   themeService.addGlobalComponent(component, 'genericWaitingIndicator');
-  (dialog.layout as StyleContextComponentWithDispatch<FlexLayout>).dispatch({
+  (dialog.layout as StyleableFlexLayout).dispatch({
     type: 'pushClassNames',
     classNames: '.dialog'
   });

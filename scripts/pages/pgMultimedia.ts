@@ -13,7 +13,7 @@ export default class PgMultimedia extends withDismissAndBackButton(PgMultimediaD
   }
 
   initHasCamera() {
-    this.btnHasCamera.on('press', () => alert(Multimedia.hasCameraFeature));
+    this.btnHasCamera.on('press', () => alert(String(Multimedia.hasCameraFeature)));
   }
 
   initTakePhoto() {
