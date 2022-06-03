@@ -130,12 +130,12 @@
 				"children": [],
 				"name": "btnThumbOffColor",
 				"parent": "eaee-66a6-65c3-4ef0",
-				"text": "Set Thumb Off Color (Android)",
+				"text": "Set Thumb Off Color",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"text": "Set Thumb Off Color (Android)",
+				"text": "Set Thumb Off Color",
 				"usePageVariable": true
 			}
 		},
@@ -181,12 +181,12 @@
 				"children": [],
 				"name": "btnToggleOffColor",
 				"parent": "eaee-66a6-65c3-4ef0",
-				"text": "Set Toggle Off Color (Android)",
+				"text": "Set Toggle Off Color",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"text": "Set Toggle Off Color (Android)",
+				"text": "Set Toggle Off Color",
 				"usePageVariable": true
 			}
 		},

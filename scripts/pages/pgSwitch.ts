@@ -34,7 +34,7 @@ export default class PgSwitch extends withDismissAndBackButton(PgSwitchDesign) {
   }
 
   setThumbOffColor() {
-    this.sw1.android.thumbOffColor = Color.GREEN;
+    this.sw1.thumbOffColor = Color.GREEN;
   }
 
   setThumbOnColor() {
@@ -46,7 +46,7 @@ export default class PgSwitch extends withDismissAndBackButton(PgSwitchDesign) {
   }
 
   setToggleOffColor() {
-    this.sw1.android.toggleOffColor = Color.DARKGRAY;
+    this.sw1.toggleOffColor = Color.DARKGRAY;
   }
 
   setToggleOnColor() {
