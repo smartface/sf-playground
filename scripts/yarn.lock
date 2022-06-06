@@ -77,7 +77,7 @@
     "@smartface/native" "^5.0.0"
     i18next "21.6.15"
 
-"@smartface/mixins@^5.0.0":
+"@smartface/mixins@^5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-5.0.3.tgz#25326de44559577ade5cafe9dc1df71af13fb1b4"
   integrity sha512-hpwJkGlgf45ssx6zu7+OBrTltZtf8YkVuyOQyCx+ojGQ33xBakcraOTCoa98tS2kqvxyQRq/fBKvcCVzs4CvvQ==
@@ -91,14 +91,13 @@
   dependencies:
     events "^3.3.0"
 
-"@smartface/native@alpha":
-  version "5.0.2-alpha.14"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2-alpha.14.tgz#c49b65b84de576dfe1ed07be0c66260f26326ea7"
-  integrity sha512-fg4wwpg+IH8Uvro8MtEat1LYCFzXHf5AfdEGcq7TTLLHr6/DLGYDwepa7NPqQ9/Z+fN4SS4oOUryy2B6mrAHhg==
+"@smartface/native@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2.tgz#f49a434fa0f7ff21777799edc4506e5ccd5136d9"
+  integrity sha512-eg8sa1QKMH6rQiEZ/H0NyjMvE7hlWD7TbTIBmIkJBxmVNqgV8m4M34JBnQevLTQfWDi0ETAE85aObUI6D3TZ/A==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
-    whatwg-fetch "^3.6.2"
 
 "@smartface/router@^2.3.1":
   version "2.3.1"
@@ -108,7 +107,7 @@
     path-to-regexp "^2.4.0"
     resolve-pathname "^2.2.0"
 
-"@smartface/source-map@^5.0.0":
+"@smartface/source-map@^5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.0.3.tgz#5d885f4cf671472402017b09156a17726f66168f"
   integrity sha512-qk2kzmqire+98T+19lePA7vgGL1F6nLibZE+spaK1O1s7TM5o2yeXvX4uPZvguQ2hrg1NXeYn7afa3fQ8y8aRg==
@@ -120,10 +119,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-2.0.3.tgz#e144b4054faeffa4fa0432af0d84f48664dddee2"
   integrity sha512-GNYwWDQamYd6Qka9sI1kjZTsWbxEjPSRKlHOYLBaGT/CJfRXt7BOPyZS5yO8/6J/2LAdZE5VOko9By3fuJ+bWA==
 
-"@smartface/styling-context@^5.0.4-alpha":
-  version "5.0.4-alpha.1"
-  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.4-alpha.1.tgz#87a606e021711cc3c1df539a8ff059184cbc7046"
-  integrity sha512-SQSXumvjsy7usREH8MDfBbh+EUqy+qlr8hvh3LWmDKO1fqmNwImZCJ1cyNKwHoOp/Or0INUnU2Tez0rtCEiIEQ==
+"@smartface/styling-context@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.3.tgz#7e954115ea55c0e8606c1560b7ae27b14313a5d3"
+  integrity sha512-aZcnTkH2rd1ifC+x3MPGQXU/Ya0eQxEmVNEo0OCIasa1bJMYU7+XerucGS401Yl3ZPBRf62KzaDpGkxdgWh/Pg==
   dependencies:
     "@smartface/contx" "^4.2.0"
     "@smartface/styler" "^2.0.0"
@@ -381,11 +380,6 @@ void-elements@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-1.0.0.tgz#6e5db1e35d591f5ac690ce1a340f793a817b2c2a"
   integrity sha1-bl2x411ZH1rGkM4aNA95OoF7LCo=
-
-whatwg-fetch@^3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
-  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
 
 wolfy87-eventemitter@^5.2.9:
   version "5.2.9"
