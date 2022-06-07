@@ -5,7 +5,7 @@
     "@smartface/component-keyboardlayout": "^5.0.0",
     "@smartface/component-materialtextbox": "^7.0.2",
     "@smartface/extension-utils": "^16.2.9",
-    "@smartface/i18n": "^5.0.2",
+    "@smartface/i18n": "^5.0.3-beta",
     "@smartface/mixins": "^5.0.3",
     "@smartface/native": "^5.0.3-beta.0",
     "@smartface/router": "^2.3.1",

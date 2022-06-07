@@ -69,12 +69,11 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/i18n@^5.0.2":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.3.tgz#ccdedd15016ecb2045fdfdd81e72564ed05d9319"
-  integrity sha512-ZXB5+LNDxc83QFVsqnBm4Be8zFZ81tU0OHMV/IfZSiAMiaOMkZ5B/8o6d3LrQzuSkjjt4WOABUKJhJbGGliucg==
+"@smartface/i18n@^5.0.3-beta":
+  version "5.0.3-beta.0"
+  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.3-beta.0.tgz#dbbff996b3b04c51b1fcb916ce6659a1ee483e72"
+  integrity sha512-Y6x5xR6ucXCA37ELa9P9uVButS/BOI1qjPiRJv9MuNBiTUnX27Use/9y2UUVebhpaXvlodXD/n3jG2goiixwsA==
   dependencies:
-    "@smartface/native" "^5.0.0"
     i18next "21.6.15"
 
 "@smartface/mixins@^5.0.3":
@@ -83,14 +82,6 @@
   integrity sha512-hpwJkGlgf45ssx6zu7+OBrTltZtf8YkVuyOQyCx+ojGQ33xBakcraOTCoa98tS2kqvxyQRq/fBKvcCVzs4CvvQ==
   dependencies:
     "@smartface/core" "^5.0.3"
-
-"@smartface/native@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2.tgz#f49a434fa0f7ff21777799edc4506e5ccd5136d9"
-  integrity sha512-eg8sa1QKMH6rQiEZ/H0NyjMvE7hlWD7TbTIBmIkJBxmVNqgV8m4M34JBnQevLTQfWDi0ETAE85aObUI6D3TZ/A==
-  dependencies:
-    abort-controller "^3.0.0"
-    events "^3.3.0"
 
 "@smartface/native@^5.0.3-beta.0":
   version "5.0.3-beta.0"
