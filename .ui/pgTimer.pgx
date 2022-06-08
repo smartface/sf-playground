@@ -55,13 +55,13 @@
 				"children": [],
 				"name": "btnCreateInterval",
 				"parent": "b3a7-3bc0-d465-d13c",
-				"text": "Create a Interval",
+				"text": "Create an Interval",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
 				"testId": "mVJeSfs3P",
-				"text": "Create a Interval",
+				"text": "Create an Interval",
 				"usePageVariable": true
 			}
 		},
@@ -73,13 +73,13 @@
 				"children": [],
 				"name": "btnCreateTimeout",
 				"parent": "b3a7-3bc0-d465-d13c",
-				"text": "Call log function with Timeout",
+				"text": "Create a Timeout",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
 				"testId": "zSDpXS3C6",
-				"text": "Call log function with Timeout",
+				"text": "Create a Timeout",
 				"usePageVariable": true
 			}
 		},

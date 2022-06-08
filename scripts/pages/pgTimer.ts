@@ -2,16 +2,16 @@ import PgTimerDesign from 'generated/pages/pgTimer';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import { ButtonEvents } from '@smartface/native/ui/button/button-events';
-import { Timer } from '@smartface/native/global';
-import { TimerBase } from '@smartface/native/global/timer/timer';
+import Timer from '@smartface/native/global/timer';
 
 export default class PgTimer extends withDismissAndBackButton(PgTimerDesign) {
-  interval: TimerBase;
+  intervalID: number;
+  timeoutID: number;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.btnCreateInterval.on('press', this.createInterval);
-    this.btnCreateTimeout.on('press', this.callWithTimeout);
-    this.btnClearAllTimers.on('press', this.clearAllTimers);
+    this.btnCreateInterval.on('press', () => this.createInterval());
+    this.btnCreateTimeout.on('press', () => this.callWithTimeout());
+    this.btnClearAllTimers.on('press', () => this.clearAllTimers());
   }
 
   clearAllTimers() {
@@ -19,11 +19,23 @@ export default class PgTimer extends withDismissAndBackButton(PgTimerDesign) {
   }
 
   callWithTimeout() {
-    this.interval = Timer.setTimeout({ task: () => console.info('timeout'), delay: 2000 });
+    this.timeoutID = Timer.setTimeout({
+      task: () => {
+        console.info('timeout');
+        alert('timeout');
+      },
+      delay: 2000
+    });
   }
 
   createInterval() {
-    this.interval = Timer.setInterval({ task: () => console.info('interval'), delay: 2000 });
+    this.intervalID = Timer.setInterval({
+      task: () => {
+        alert('interval');
+        console.info('interval');
+      },
+      delay: 2000
+    });
   }
 
   onShow() {
