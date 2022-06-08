@@ -3,6 +3,7 @@ import FlWaitingIndicator from 'components/FlWaitingIndicator';
 import { themeService } from 'theme';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import { styleableContainerComponentMixin } from '@smartface/styling-context';
+import { DialogStyle } from '@smartface/native/ui/dialog/dialog';
 
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) {}
 
@@ -13,7 +14,7 @@ function initWaitDialog(opts?: { closeOnTouch: boolean }) {
   const component = new FlWaitingIndicator();
   let dialog = new Dialog({
     android: {
-      themeStyle: Dialog.Android.Style.ThemeDefault,
+      themeStyle: DialogStyle.ThemeDefault,
       cancelable: false,
       isTransparent: true
     }
