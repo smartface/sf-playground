@@ -19,7 +19,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
   private myBlurView: StyleableBlurView;
   private _blurRadius = 16;
   private _effectStyle: BlurViewEffectStyle = BlurViewEffectStyle.LIGHT;
-  private _overlayColor: Color = Color.BLACK;
+  private _overlayColor = Color.BLACK;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.sliderRadius.on('valueChange', (value) => {
