@@ -6,27 +6,10 @@ import GviTitle from 'components/GviTitle';
 import System from '@smartface/native/device/system';
 import GridView from '@smartface/native/ui/gridview';
 import Screen from '@smartface/native/device/screen';
-import { IColor } from '@smartface/native/ui/color/color';
 
-type DatasetType = { title: string; backgroundColor: IColor };
+type DatasetType = { title: string; backgroundColor: Color };
 const SPAN_COUNT: number = 1;
-const COLORS: string[] = [
-  '#ffffff',
-  '#e6f7ff',
-  '#cceeff',
-  '#b3e6ff',
-  '#99ddff',
-  '#80d4ff',
-  '#66ccff',
-  '#4dc3ff',
-  '#33bbff',
-  '#1ab2ff',
-  '#00aaff',
-  '#0099e6',
-  '#0088cc',
-  '#0077b3',
-  '#006699'
-];
+const COLORS: string[] = ['#ffffff', '#e6f7ff', '#cceeff', '#b3e6ff', '#99ddff', '#80d4ff', '#66ccff', '#4dc3ff', '#33bbff', '#1ab2ff', '#00aaff', '#0099e6', '#0088cc', '#0077b3', '#006699'];
 
 export default class PgGridViewHorizontalCard extends withDismissAndBackButton(PgGridViewHorizontalCardDesign) {
   index: number = 0;

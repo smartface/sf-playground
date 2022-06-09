@@ -5,7 +5,6 @@ import DatePicker from '@smartface/native/ui/datepicker';
 import System from '@smartface/native/device/system';
 import Color from '@smartface/native/ui/color';
 import Font from '@smartface/native/ui/font';
-import { DatePickerMode, DatePickerStyle } from '@smartface/native/ui/datepicker/datepicker';
 
 export default class PgDatePicker extends withDismissAndBackButton(PgDatePickerDesign) {
   datePicker: DatePicker;
@@ -17,7 +16,7 @@ export default class PgDatePicker extends withDismissAndBackButton(PgDatePickerD
   initDatePicker() {
     this.datePicker = new DatePicker({
       android: {
-        style: DatePickerStyle.MATERIAL_DARK
+        style: DatePicker?.Android?.Style?.MATERIAL_DARK
       }
     });
     if (System.OS === System.OSType.IOS) {
@@ -32,7 +31,7 @@ export default class PgDatePicker extends withDismissAndBackButton(PgDatePickerD
       this.datePicker.ios.okColor = Color.BLUE;
       this.datePicker.ios.okHighlightedColor = Color.CYAN;
       this.datePicker.ios.okFont = Font.create('Arial', 14, Font.ITALIC);
-      this.datePicker.ios.datePickerMode = DatePickerMode.DATEANDTIME;
+      this.datePicker.ios.datePickerMode = DatePicker.iOS.DatePickerMode.DATEANDTIME;
       this.datePicker.ios.dialogBackgroundColor = Color.WHITE;
       this.datePicker.ios.dialogLineColor = Color.BLACK;
     }

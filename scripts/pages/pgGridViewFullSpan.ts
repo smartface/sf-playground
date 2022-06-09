@@ -5,26 +5,9 @@ import Color from '@smartface/native/ui/color';
 import Screen from '@smartface/native/device/screen';
 import GviTitle from 'components/GviTitle';
 import GridView from '@smartface/native/ui/gridview';
-import { IColor } from '@smartface/native/ui/color/color';
 
-type DatasetType = { title: string; backgroundColor: IColor };
-const COLORS: string[] = [
-  '#ffffff',
-  '#e6f7ff',
-  '#cceeff',
-  '#b3e6ff',
-  '#99ddff',
-  '#80d4ff',
-  '#66ccff',
-  '#4dc3ff',
-  '#33bbff',
-  '#1ab2ff',
-  '#00aaff',
-  '#0099e6',
-  '#0088cc',
-  '#0077b3',
-  '#006699'
-];
+type DatasetType = { title: string; backgroundColor: Color };
+const COLORS: string[] = ['#ffffff', '#e6f7ff', '#cceeff', '#b3e6ff', '#99ddff', '#80d4ff', '#66ccff', '#4dc3ff', '#33bbff', '#1ab2ff', '#00aaff', '#0099e6', '#0088cc', '#0077b3', '#006699'];
 const SPAN_COUNT: number = 2;
 
 export default class PgGridViewFullSpan extends withDismissAndBackButton(PgGridViewFullSpanDesign) {

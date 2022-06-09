@@ -11,7 +11,6 @@ import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
 import Font from '@smartface/native/ui/font';
-import { IColor } from '@smartface/native/ui/color/color';
 
 const exampleHtml =
   '<span style="font-size: 24px; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);"><span style="font-family: Nunito-LightItalic; font-size: 24px; background-color: transparent; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);">Your </span><font face="ios-Default-Bold" style="font-size: 24px; font-family: ios-Default-Regular; background-color: transparent; color: rgb(0, 0, 0); text-decoration-color: rgb(0, 0, 0);">attributed </font><span style="text-decoration-line: underline; color: rgb(139, 87, 42); font-size: 24px; font-family: ios-Default-Regular; background-color: transparent; text-decoration-color: rgb(0, 0, 0);">Stri<span style="color: rgb(139, 87, 42); text-decoration-line: underline ; text-decoration-color: rgb(0, 0, 0); font-size: 24px; font-family: ios-Default-Regular; background-color: transparent;">ngs</span></span></span><div><span style="font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; text-decoration-color: rgb(0, 0, 0); font-size: 24px; font-family: ios-Default-Regular; background-color: rgb(189, 16, 224);">second</span></span></span></div><div><span style="font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; font-size: 16px; font-family: ios-Default-Regular; text-decoration-color: rgb(0, 0, 0);"><span style="text-decoration-line: underline; text-decoration-color: rgb(0, 0, 0); font-size: 16px; font-family: ios-Default-Regular; background-color: rgb(189, 16, 224); color: rgb(248, 231, 28);">Third</span></span></span></div>';
@@ -42,11 +41,11 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     this.updateRgbLabels(colorValues);
   }
 
-  getColorValues(color: IColor) {
-    const rgb = colorUtil.rgb(color as any);
-    const rgba = colorUtil.rgba(color as any);
-    const argb = colorUtil.argb(color as any);
-    const tinycolor = colorUtil.tinycolor(color as any);
+  getColorValues(color: Color) {
+    const rgb = colorUtil.rgb(color);
+    const rgba = colorUtil.rgba(color);
+    const argb = colorUtil.argb(color);
+    const tinycolor = colorUtil.tinycolor(color);
     return {
       rgb,
       rgba,
@@ -127,11 +126,7 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     this.tvAttrString.on('linkClick', () => {
       console.log('Textview LinkClick test');
     });
-    this.btnGradientColor.backgroundColor = Color.createGradient({
-      direction: Color.GradientDirection.DIAGONAL_LEFT,
-      startColor: Color.RED,
-      endColor: Color.BLACK
-    });
+    this.btnGradientColor.backgroundColor = Color.createGradient({ direction: Color.GradientDirection.DIAGONAL_LEFT, startColor: Color.RED, endColor: Color.BLACK });
   }
 
   onShow() {

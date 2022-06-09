@@ -13,21 +13,20 @@ export default class PgHardware extends withDismissAndBackButton(PgHardwareDesig
     console.log('Hardware.UID: ' + Hardware.UID);
     console.log('Hardware.brandName: ' + Hardware.brandName);
     console.log('Hardware.brandModel: ' + Hardware.brandModel);
-    console.log('Hardware.deviceType: ' + Hardware.deviceType);
+    console.log('Hardware.deviceType: ' + Hardware.deviceType); //TODO: Check after devicetype fix
     if (System.OS === System.OSType.ANDROID) {
       console.log('Hardware.android.vendorID: ' + Hardware.android.vendorID);
-      console.log('Hardware.manufacturer: ' + Hardware.manufacturer);
     }
-    console.log('Hardware.ios.modelName: ' + Hardware.modelName);
-
+    if (System.OS === System.OSType.IOS) {
+      console.log('Hardware.ios.modelName: ' + Hardware.ios.modelName);
+    }
     this.lblHardwareStatus.text = `
     Hardware.UID: ${Hardware.UID}
     Hardware.brandName: ${Hardware.brandName}
     Hardware.brandModel: ${Hardware.brandModel}
     Hardware.deviceType: ${Hardware.deviceType}
     Hardware.android.vendorID: ${Hardware.android?.vendorID}
-    Hardware.manufacturer: ${Hardware.manufacturer}
-    Hardware.modelName: ${Hardware.modelName}
+    Hardware.ios.modelName: ${Hardware.ios?.modelName}
     `;
   }
 

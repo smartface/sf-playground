@@ -12,13 +12,13 @@ export default class PgTabbarController extends TabBarController {
     super({});
   }
 
-  onSelected = (index: number) => {
+  onSelected(index: number) {
     console.info('onSelected: ', index);
-  };
+  }
 
-  onPageCreate = (index: number) => {
+  onPageCreate(index: number) {
     return new this.pages[index](this.router, this.route);
-  };
+  }
 
   updateStyles() {
     this.android.dividerColor = Color.RED;
