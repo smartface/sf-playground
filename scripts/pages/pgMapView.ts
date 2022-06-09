@@ -10,7 +10,6 @@ import Color from '@smartface/native/ui/color';
 import Picker from '@smartface/native/ui/picker';
 import { MapViewType } from '@smartface/native/ui/mapview/mapview';
 import { MapViewEvents } from '@smartface/native/ui/mapview/mapview-events';
-import { MenuItemStyle } from '@smartface/native/ui/menuitem/menuitem';
 
 const MAP_RANDOM_RANGE = 1;
 const DEFAULT_ZOOM_LEVEL = 8;
@@ -110,7 +109,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     const radius = new MenuItem({ title: MAPVIEW_CHOICES.RADIUS });
     const fourRegions = new MenuItem({ title: MAPVIEW_CHOICES.FOUR_REGIONS });
     const cancel = new MenuItem({ title: 'Cancel' });
-    cancel.ios.style = MenuItemStyle.CANCEL;
+    cancel.ios.style = MenuItem.Styles.CANCEL;
     const menuItems = [radius, fourRegions];
 
     /**

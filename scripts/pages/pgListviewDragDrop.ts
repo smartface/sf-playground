@@ -7,7 +7,6 @@ import Color from '@smartface/native/ui/color';
 import ListView from '@smartface/native/ui/listview';
 import ListViewItem from '@smartface/native/ui/listviewitem';
 import { withDismissAndBackButton } from '@smartface/mixins';
-import { RowAnimation } from '@smartface/native/ui/listview/listview';
 
 class StyleableLabel extends styleableComponentMixin(Label) {}
 class StyleableListViewItem extends styleableContainerComponentMixin(ListViewItem) {}
@@ -154,7 +153,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: index,
               itemCount: 1,
               ios: {
-                animation: RowAnimation.FADE
+                animation: ListView.iOS.RowAnimation.FADE
               }
             });
             this.dataArray.splice(this.indexOfSecondHeader(), 0, prevData);
@@ -163,7 +162,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: this.indexOfSecondHeader() - 1,
               itemCount: 1,
               ios: {
-                animation: RowAnimation.FADE
+                animation: ListView.iOS.RowAnimation.FADE
               }
             });
             return false;
@@ -180,7 +179,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: index,
               itemCount: 1,
               ios: {
-                animation: RowAnimation.FADE
+                animation: ListView.iOS.RowAnimation.FADE
               }
             });
             this.dataArray.splice(this.indexOfSecondHeader() + 1, 0, prevData);
@@ -189,7 +188,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: this.indexOfSecondHeader() + 1,
               itemCount: 1,
               ios: {
-                animation: RowAnimation.FADE
+                animation: ListView.iOS.RowAnimation.FADE
               }
             });
             return false;

@@ -5,7 +5,6 @@ import Dialog from '@smartface/native/ui/dialog';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import { styleableComponentMixin, StyleContextComponentType } from '@smartface/styling-context';
 import ActivityIndicator from '@smartface/native/ui/activityindicator';
-import { DialogStyle } from '@smartface/native/ui/dialog/dialog';
 class StyleableActivityIndicator extends styleableComponentMixin(ActivityIndicator) {}
 
 export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
@@ -35,7 +34,7 @@ export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
     console.log('dialog initializing | isTransparent: ', this._isTransparent, ' cancelable: ', this._cancelable);
     this.dialog = new Dialog({
       android: {
-        themeStyle: DialogStyle.ThemeNoHeaderBar,
+        themeStyle: Dialog.Android.Style.ThemeNoHeaderBar,
         isTransparent: this._isTransparent,
         cancelable: this._cancelable
       }

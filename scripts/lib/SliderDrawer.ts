@@ -3,7 +3,6 @@ import Button from '@smartface/native/ui/button';
 import { themeService } from 'theme';
 import { styleableContainerComponentMixin, styleableComponentMixin } from '@smartface/styling-context';
 import Application from '@smartface/native/application';
-import { SliderDrawerPosition } from '@smartface/native/ui/sliderdrawer/sliderdrawer';
 
 class StyleableSliderDrawer extends styleableContainerComponentMixin(SliderDrawer) {}
 class StyleableButton extends styleableComponentMixin(Button) {}
@@ -21,7 +20,7 @@ myButton.on('press', () => {
   Application.sliderDrawer.hide();
 });
 
-mySliderDrawer.drawerPosition = SliderDrawerPosition.LEFT;
+mySliderDrawer.drawerPosition = SliderDrawer.Position.LEFT;
 // mySliderDrawer.drawerPosition = SliderDrawer.Position.RIGHT;
 
 mySliderDrawer.addChild(myButton, 'myButton', '.sf-button', {

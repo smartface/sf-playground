@@ -105,9 +105,9 @@ export default class LvExtend extends LvExtendDesign {
     this.onRowCanSwipe = (index) => {
       const directions: SwipeDirection[] = [];
       if (this.items[index].properties.swipeOnEdit) {
-        directions.push(SwipeDirection.LEFTTORIGHT);
+        directions.push(ListView.SwipeDirection.LEFTTORIGHT);
       } else if (this.items[index].properties.swipeOnDelete) {
-        directions.push(SwipeDirection.RIGHTTOLEFT);
+        directions.push(ListView.SwipeDirection.RIGHTTOLEFT);
       }
       return directions;
     };
