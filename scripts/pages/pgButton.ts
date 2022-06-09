@@ -5,7 +5,7 @@ import { Router, Route } from '@smartface/router';
 export default class PgButton extends withDismissAndBackButton(PgButtonDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-
+    
     this.btn1.on('press', () => {
       console.log('btn1 press event test');
     });
