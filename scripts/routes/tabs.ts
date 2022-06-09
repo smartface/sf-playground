@@ -111,6 +111,7 @@ import PgI18N from 'pages/pgI18N';
 import PgBarcodeScanner from 'pages/pgBarcodeScanner';
 import PgCalendar from 'pages/pgCalendar';
 import PgForm from 'pages/pgForm';
+import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -190,7 +191,8 @@ export const tab0: Tab = {
     PgEmailComposer,
     PgDatePicker,
     PgWebView,
-    PgButton
+    PgButton,
+    PgLabelFlexShrink
   ]
 };
 
