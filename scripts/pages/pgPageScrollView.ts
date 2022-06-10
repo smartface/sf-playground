@@ -17,6 +17,8 @@ export default class PgPageScrollView extends withDismissAndBackButton(PgPageScr
                 }
             })
 
+            
+
             // console.log('sc2 instance parent: ', this.scrollView2.getParent().constructor.name);
             // console.log('sc2 layout instance parent: ', this.scrollView2.layout.getParent().constructor.name);
 
@@ -35,6 +37,8 @@ export default class PgPageScrollView extends withDismissAndBackButton(PgPageScr
 
 
             this.label1.textAlignment = TextAlignment.TOPLEFT
+
+            this.layout.applyLayout()
 
             // console.log('is sc instance: ', this.scrollView1 instanceof ScrollView);
 

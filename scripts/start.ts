@@ -4,6 +4,7 @@ import router from 'routes';
 // router.push('/root/btb/tab0/mainpage');
 
 
+// router.push('/root/btb/tab0/pgLabelListView');
 router.push('/root/btb/tab0/pgPageComplexLayout');
 
 // router.push('/root/btb/tab0/pgTest');

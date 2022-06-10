@@ -1,9 +1,8 @@
-import PgRelatedFlexLayoutsDesign from 'generated/pages/pgRelatedFlexLayouts';
+import PgNestedFlexesDesign from 'generated/pages/pgNestedFlexes';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import FlexLayout from '@smartface/native/ui/flexlayout';
 
-export default class PgRelatedFlexLayouts extends withDismissAndBackButton(PgRelatedFlexLayoutsDesign) {
+export default class PgNestedFlexes extends withDismissAndBackButton(PgNestedFlexesDesign) {
     constructor(private router?: Router, private route?: Route) {
         super({});
     }
@@ -25,15 +24,15 @@ export default class PgRelatedFlexLayouts extends withDismissAndBackButton(PgRel
         super.onLoad();
 
         setTimeout(() => {
-            this.label1.dispatch({ type: 'updateUserStyle', userStyle: { height: 300 } })
-            this.flexLayout3.dispatch({ type: 'updateUserStyle', userStyle: { paddingLeft: 20 } })
+            this.flexLayout1.dispatch({ type: 'updateUserStyle', userStyle: { height: 150 } })
+            this.label1.dispatch({ type: 'updateUserStyle', userStyle: { height: 200 } })
 
-            this.layout.applyLayout()
+            // this.flexLayout2.nativeObject.setNeedsLayout()
 
+            this.layout.nativeObject.setNeedsLayout()
 
+            console.log('');
 
         }, 1500);
-
-
     }
 }

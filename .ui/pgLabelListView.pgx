@@ -1,0 +1,124 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "71c6-6423-f64a-24ba",
+			"initialized": true,
+			"props": {
+				"children": [
+					"eaa5-01e6-0090-d417",
+					"5d41-f7f0-e81b-4e8b",
+					"8f9e-6742-8b2f-ba23"
+				],
+				"name": "pgLabelListView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "eaa5-01e6-0090-d417",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "71c6-6423-f64a-24ba"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "5d41-f7f0-e81b-4e8b",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "71c6-6423-f64a-24ba",
+				"title": "pgLabelListView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgLabelListView"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "8f9e-6742-8b2f-ba23",
+			"props": {
+				"children": [
+					"afe4-a583-f16e-903b"
+				],
+				"name": "flexLayout1",
+				"parent": "71c6-6423-f64a-24ba",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-listView",
+			"id": "afe4-a583-f16e-903b",
+			"props": {
+				"children": [
+					"e72c-558d-dbf2-6bdb"
+				],
+				"name": "listView1",
+				"parent": "8f9e-6742-8b2f-ba23",
+				"usePageVariable": true
+			},
+			"type": "ListView",
+			"userProps": {
+				"backgroundColor": "rgba( 126, 211, 33, 1 )",
+				"flexProps": {
+					"flexGrow": 0.5
+				},
+				"height": null,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-listViewItem .lviTitle",
+			"hiddenComponent": false,
+			"id": "e72c-558d-dbf2-6bdb",
+			"props": {
+				"children": [],
+				"name": "lviTitle",
+				"parent": "afe4-a583-f16e-903b"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "lviTitle",
+				"id": "f28b-5ba3-f19a-a488"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"paddingLeft": null,
+				"top": 0
+			}
+		}
+	]
+}

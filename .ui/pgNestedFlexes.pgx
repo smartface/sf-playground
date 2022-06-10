@@ -1,0 +1,112 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "d1d6-1dd8-df9d-364c",
+			"initialized": true,
+			"props": {
+				"children": [
+					"8204-5564-b185-2123",
+					"b22e-54e7-bb2f-90ef",
+					"ece5-6578-dcac-e78d"
+				],
+				"name": "pgNestedFlexes",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8204-5564-b185-2123",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "d1d6-1dd8-df9d-364c"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "b22e-54e7-bb2f-90ef",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "d1d6-1dd8-df9d-364c",
+				"title": "pgNestedFlexes"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgNestedFlexes"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "ece5-6578-dcac-e78d",
+			"props": {
+				"children": [
+					"1e2c-5162-d53a-e23c"
+				],
+				"name": "flexLayout1",
+				"parent": "d1d6-1dd8-df9d-364c",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 1 )",
+				"height": 400,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "1e2c-5162-d53a-e23c",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"1b5d-17e0-f8c9-8da9"
+				],
+				"name": "flexLayout2",
+				"parent": "ece5-6578-dcac-e78d",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 245, 166, 35, 1 )",
+				"borderWidth": 10,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "1b5d-17e0-f8c9-8da9",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "1e2c-5162-d53a-e23c",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"backgroundColor": "rgba( 139, 87, 42, 1 )",
+				"text": "label1",
+				"usePageVariable": true
+			}
+		}
+	]
+}

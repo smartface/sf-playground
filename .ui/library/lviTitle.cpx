@@ -40,6 +40,7 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"backgroundColor": "rgba( 248, 231, 28, 1 )",
 				"text": "label1",
 				"usePageVariable": true
 			}

@@ -44,6 +44,17 @@ export default class PgPageComplexLayout extends withDismissAndBackButton(PgPage
         gvMain.onItemBind = (gridViewItem: GridViewItem1, index) => {
             gridViewItem.title = 'title';
             gridViewItem.label1.backgroundColor = Color.RED;
+
+            setTimeout(() => {
+
+                gridViewItem.label1.dispatch({
+                    'type': 'updateUserStyle', userStyle: {
+                        height: 100
+                    }
+                })
+
+                // this.layout.applyLayout()
+            }, 2000);
         };
     }
 
@@ -53,6 +64,10 @@ export default class PgPageComplexLayout extends withDismissAndBackButton(PgPage
         gvMain.itemCount = 3;
         gvMain.scrollBarEnabled = false;
         this.initGridViewEvents(gvMain);
+
+        // setTimeout(() => {
+        //     gvMain.layoutManager.nativeObject.invalidateLayout()
+        // }, 4000);
     }
 
     initListView() {
@@ -63,8 +78,9 @@ export default class PgPageComplexLayout extends withDismissAndBackButton(PgPage
 
         this.listView1.onRowBind = (listViewItem: ComplexListViewItem, index) => {
             this.initGridView(listViewItem.gridView1)
-            this.layout.nativeObject.setNeedsLayout()
         };
+
+
     }
 
     onLoad() {
@@ -73,9 +89,8 @@ export default class PgPageComplexLayout extends withDismissAndBackButton(PgPage
         this.initListView()
         this.refreshListView()
 
-        // setTimeout(() => {
-        //     this.layout.nativeObject.setNeedsLayout()
 
-        // }, 3000);
+
+
     }
 }
