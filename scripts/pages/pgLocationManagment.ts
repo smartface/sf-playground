@@ -8,9 +8,7 @@ import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
 import Location from '@smartface/native/device/location';
-import { ButtonEvents } from '@smartface/native/ui/button/button-events';
-import Application from '@smartface/native/application';
-import { getPermission } from '@smartface/extension-utils/lib/permission';
+import Permission from '@smartface/native/device/permission';
 
 const CURRENT_LOCATION = 'Current Location';
 type LocationType = { latitude: number; longitude: number };
@@ -63,18 +61,14 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
   }
 
   getLastKnownLocation() {
-    getPermission({
-      permissionText: 'Do you allow to access the location?',
-      androidPermission: 'ACCESS_FINE_LOCATION',
-      permissionTitle: 'location permission'
-    }).then(() =>
+    Permission.requestPermission('LOCATION').then(() => {
       Location.getLastKnownLocation(
         (e) => {
           alert('Last location: ' + e.latitude + ' ' + e.longitude);
         },
         () => alert('Could not get last known location')
-      )
-    );
+      );
+    });
   }
 
   _showMapsMenu(location: LocationType) {

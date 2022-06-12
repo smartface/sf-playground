@@ -7,7 +7,8 @@ import SpeechRecognizer from '@smartface/native/global/speechrecognizer';
 import Application from '@smartface/native/application';
 import System from '@smartface/native/device/system';
 import { styleableComponentMixin } from '@smartface/styling-context';
-import { getPermission } from '@smartface/extension-utils/lib/permission';
+import Permission from '@smartface/native/device/permission';
+import { Permissions } from '@smartface/native/device/permission/permission';
 
 export default class PgSpeechRecognizer extends withDismissAndBackButton(PgSpeechRecognizerDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -19,11 +20,8 @@ export default class PgSpeechRecognizer extends withDismissAndBackButton(PgSpeec
         if (System.OS === System.OSType.IOS) {
           this.startSpeechRecognizer();
         } else {
-          getPermission({
-            permissionText: 'RECORD_AUDIO_CODE',
-            androidPermission: 'RECORD_AUDIO',
-            permissionTitle: 'RECORD_AUDIO permission'
-          })
+          Permission.android
+            .requestPermissions(Permissions.ANDROID.RECORD_AUDIO)
             .then(() => {
               this.startSpeechRecognizer();
             })
