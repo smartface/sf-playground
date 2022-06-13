@@ -67,8 +67,10 @@
 			"className": ".sf-scrollView",
 			"id": "366e-98d9-00b6-7964",
 			"props": {
+				"autoSizeEnabled": false,
 				"children": [
-					"6edc-edba-de09-aada"
+					"6edc-edba-de09-aada",
+					"964a-bb45-9530-bd5d"
 				],
 				"name": "scrollView2",
 				"parent": "2f94-c069-1333-bb18",
@@ -76,8 +78,13 @@
 			},
 			"type": "ScrollView",
 			"userProps": {
+				"autoSizeEnabled": false,
 				"backgroundColor": "rgba( 155, 155, 155, 1 )",
 				"height": 200,
+				"layout": {
+					"height": 2000
+				},
+				"scrollBarEnabled": true,
 				"usePageVariable": true
 			}
 		},
@@ -96,6 +103,20 @@
 				"backgroundColor": "rgba( 126, 211, 33, 1 )",
 				"text": "label1",
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "964a-bb45-9530-bd5d",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "366e-98d9-00b6-7964"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 248, 231, 28, 1 )",
+				"height": 1500
 			}
 		}
 	]
