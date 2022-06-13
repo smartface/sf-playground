@@ -48,11 +48,12 @@
   resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.0.3.tgz#8b63e5fb4551c147351a53dada6a8420cc3fc36d"
   integrity sha512-obOGFpJeO4CcK/rIaZpw82/DaT2FHreVqeW61S8mKjPHuTsZfgkTnwxU8r0nQDgWPes82ZrkMAMqjwNkW7vzTQ==
 
-"@smartface/extension-utils@^16.2.9":
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-16.4.1.tgz#958ca6eff13d23a02b6cbc40267e70f6fe292c45"
-  integrity sha512-D1n7VUKPyv+Pc+l8UN5pO+BSfQck5QSP8R8jewu5Ik6ntU4tBNcT8or3hUr3XCS+BuARLNQyn2vqsXL5zJb/iQ==
+"@smartface/extension-utils@^17.0.0-rc":
+  version "17.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-17.0.0-rc.6.tgz#eb086ade4513000fefd384c9fddf2e4787881271"
+  integrity sha512-/d2uSlCOJruztmnGUtjlTj0U04s9DIoe9ZWU84UOBEt9dQDEAVxewNforhpk++dpvubzjC9EJiXDQeF6xt6r0Q==
   dependencies:
+    "@smartface/webviewbridge" "^5.0.3-beta.2"
     apexcharts "^3.26.3"
     html-parse-stringify "1.0.2"
     mixin-deep "^1.3.1"
@@ -60,7 +61,6 @@
     semver "^5.7.1"
     squel "^5.13.0"
     tinycolor2 "^1.4.1"
-    wolfy87-eventemitter "^5.2.9"
 
 "@smartface/html-to-text@^1.0.0":
   version "1.2.0"
@@ -70,9 +70,9 @@
     html-parse-stringify "1.0.2"
 
 "@smartface/i18n@^5.0.3-beta":
-  version "5.0.3-beta.0"
-  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.3-beta.0.tgz#dbbff996b3b04c51b1fcb916ce6659a1ee483e72"
-  integrity sha512-Y6x5xR6ucXCA37ELa9P9uVButS/BOI1qjPiRJv9MuNBiTUnX27Use/9y2UUVebhpaXvlodXD/n3jG2goiixwsA==
+  version "5.0.3-beta.2"
+  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.3-beta.2.tgz#4dfca3f221b01234fc7519fc0d32712a0cf7d301"
+  integrity sha512-L4zVIsjHaYRc1g4luuk9TPxW/287+fNY6Maq8P71zLRHMUzYuL3UwqVjMwZpni8pqLl42sh25uM26qO2lBpyXA==
   dependencies:
     i18next "21.6.15"
 
@@ -83,10 +83,10 @@
   dependencies:
     "@smartface/core" "^5.0.3"
 
-"@smartface/native@alpha":
-  version "5.0.3-alpha.4"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-alpha.4.tgz#145bba412d921d01c28a23765f106b17014eebd7"
-  integrity sha512-Snhxxdd5cAyePRKhm+vkXmkTOC4qiogTwDS2aZrdzshqsB0b8EWSqXY/44VkF30JCEaHOmdd+nT6FKJWnYjwbA==
+"@smartface/native@^5.0.3-alpha.15":
+  version "5.0.3-alpha.15"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-alpha.15.tgz#e2f369856bf277add2f60da840132bccf950e349"
+  integrity sha512-EngcmzfbuFMn/Pfc1ZGHcVcMdPy4pEQhjHmsnPOul4KjHruy1eXvIa170ZKiM2ALqgrFHRJSu0lXcv6k02Retg==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
@@ -125,6 +125,13 @@
   integrity sha512-sK0b9w8YNnZNOvPCYTcR+Qbld7bF18yCxJh9PR/xzR/YbrcK6zZxQvLPzTTT9PhnB4mPIMeC9DxrZsNFjbS40Q==
   dependencies:
     "@types/events" "^3.0.0"
+    events "^3.3.0"
+
+"@smartface/webviewbridge@^5.0.3-beta.2":
+  version "5.0.3-beta.2"
+  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.0.3-beta.2.tgz#c051bec02b8863ef9822ce8c7f111b1ce67960fc"
+  integrity sha512-w8ICgYajxPAttVBl3XGcwwiJp4yygQf/HZml153RUO0l9wHUHN234dAYbXZZqNca/o4nbvZA7sAIu06DTGSJCQ==
+  dependencies:
     events "^3.3.0"
 
 "@types/events@^3.0.0":
@@ -301,7 +308,7 @@ squel@^5.13.0:
 strict-uri-encode@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
-  integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
+  integrity sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==
 
 svg.draggable.js@^2.2.2:
   version "2.2.2"
@@ -313,14 +320,14 @@ svg.draggable.js@^2.2.2:
 svg.easing.js@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/svg.easing.js/-/svg.easing.js-2.0.0.tgz#8aa9946b0a8e27857a5c40a10eba4091e5691f12"
-  integrity sha1-iqmUawqOJ4V6XEChDrpAkeVpHxI=
+  integrity sha512-//ctPdJMGy22YoYGV+3HEfHbm6/69LJUTAqI2/5qBvaNHZ9uUFVC82B0Pl299HzgH13rKrBgi4+XyXXyVWWthA==
   dependencies:
     svg.js ">=2.3.x"
 
 svg.filter.js@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/svg.filter.js/-/svg.filter.js-2.0.2.tgz#91008e151389dd9230779fcbe6e2c9a362d1c203"
-  integrity sha1-kQCOFROJ3ZIwd5/L5uLJo2LRwgM=
+  integrity sha512-xkGBwU+dKBzqg5PtilaTb0EYPqPfJ9Q6saVldX+5vCRy31P6TlRCP3U9NxH3HEufkKkpNgdTLBJnmhDHeTqAkw==
   dependencies:
     svg.js "^2.2.5"
 
@@ -366,9 +373,4 @@ tinycolor2@^1.4.1:
 void-elements@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-1.0.0.tgz#6e5db1e35d591f5ac690ce1a340f793a817b2c2a"
-  integrity sha1-bl2x411ZH1rGkM4aNA95OoF7LCo=
-
-wolfy87-eventemitter@^5.2.9:
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/wolfy87-eventemitter/-/wolfy87-eventemitter-5.2.9.tgz#e879f770b30fbb6512a8afbb330c388591099c2a"
-  integrity sha512-P+6vtWyuDw+MB01X7UeF8TaHBvbCovf4HPEMF/SV7BdDc1SMTiBy13SRD71lQh4ExFTG1d/WNzDGDCyOKSMblw==
+  integrity sha512-Ypv2nBd59g63ouzrZaojQXHdRbnLhT1uuZtEXISmymV3MSiA5Qdwn4YxDlhBZoCYTninng14Y2J7pSrg9zq1/g==

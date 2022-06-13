@@ -2,12 +2,12 @@ import PgLocationManagmentDesign from 'generated/pages/pgLocationManagment';
 import MapView from '@smartface/native/ui/mapview';
 import { showMapsMenu } from '@smartface/extension-utils/lib/maps';
 import { showNavigationMenu } from '@smartface/extension-utils/lib/navigation';
-import { openApplicationSettings } from '@smartface/extension-utils/lib/settings';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
 import Location from '@smartface/native/device/location';
 import Permission from '@smartface/native/device/permission';
+import Linking from '@smartface/native/global/linking';
 
 const CURRENT_LOCATION = 'Current Location';
 
@@ -28,7 +28,7 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
     this.btnNavigate.onPress = () => this.navigateToLocation(this.location);
     this.btnLastKnownLocation.on('press', () => this.getLastKnownLocation());
     this.btnNavigate.enabled = false;
-    this.btnOpenApplicationSettings.onPress = () => openApplicationSettings();
+    this.btnOpenApplicationSettings.onPress = () => Linking.openSettings();
   }
 
   initLabels() {
