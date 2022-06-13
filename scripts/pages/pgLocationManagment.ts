@@ -1,6 +1,5 @@
 import PgLocationManagmentDesign from 'generated/pages/pgLocationManagment';
 import MapView from '@smartface/native/ui/mapview';
-import location from '@smartface/extension-utils/lib/location';
 import { showMapsMenu } from '@smartface/extension-utils/lib/maps';
 import { showNavigationMenu } from '@smartface/extension-utils/lib/navigation';
 import { openApplicationSettings } from '@smartface/extension-utils/lib/settings';
@@ -11,7 +10,8 @@ import Location from '@smartface/native/device/location';
 import Permission from '@smartface/native/device/permission';
 
 const CURRENT_LOCATION = 'Current Location';
-type LocationType = { latitude: number; longitude: number };
+
+type LocationType = Awaited<ReturnType<typeof Location.getCurrentLocation>>;
 
 /**
  * Testing location, maps, navigation, settings and locaiton permission
@@ -37,12 +37,17 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
   }
 
   async getLocation() {
-    this.location = await location.getLocation();
-    const _location = this.location;
-    this.setCoordinateText(_location);
-    this.markLocation(_location);
-    this.btnNavigate.enabled = true;
-    alert('Touch the pin!');
+    try {
+      this.location = await Location.getCurrentLocation();
+      console.info('Location is granted: ', this.location);
+      const _location = this.location;
+      this.setCoordinateText(_location);
+      this.markLocation(_location);
+      this.btnNavigate.enabled = true;
+      alert('Touch the pin!');
+    } catch (e) {
+      console.warn('Location is denied: ', e);
+    }
   }
 
   setCoordinateText(coordinate: LocationType) {
@@ -53,11 +58,11 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
 
   markLocation(location: LocationType) {
     this.mapView1.removeAllPins();
-    const params = { location, title: CURRENT_LOCATION };
+    const params = { location: { latitude: location.latitude, longitude: location.longitude }, title: CURRENT_LOCATION };
     const currentLocationPin = new MapView.Pin(params);
     currentLocationPin.onPress = () => this._showMapsMenu(location);
     this.mapView1.addPin(currentLocationPin);
-    this.mapView1.setCenterLocationWithZoomLevel(location, 12, true);
+    this.mapView1.setCenterLocationWithZoomLevel({ latitude: location.latitude, longitude: location.longitude }, 12, true);
   }
 
   getLastKnownLocation() {
