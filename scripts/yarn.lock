@@ -48,10 +48,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.0.3.tgz#8b63e5fb4551c147351a53dada6a8420cc3fc36d"
   integrity sha512-obOGFpJeO4CcK/rIaZpw82/DaT2FHreVqeW61S8mKjPHuTsZfgkTnwxU8r0nQDgWPes82ZrkMAMqjwNkW7vzTQ==
 
-"@smartface/extension-utils@^17.0.0-rc":
-  version "17.0.0-rc.6"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-17.0.0-rc.6.tgz#eb086ade4513000fefd384c9fddf2e4787881271"
-  integrity sha512-/d2uSlCOJruztmnGUtjlTj0U04s9DIoe9ZWU84UOBEt9dQDEAVxewNforhpk++dpvubzjC9EJiXDQeF6xt6r0Q==
+"@smartface/extension-utils@17.0.0-rc.9":
+  version "17.0.0-rc.9"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-17.0.0-rc.9.tgz#ee9a3bd53a000b3f493a5790b71ab4c7f20bbc5b"
+  integrity sha512-Qvmh7QTbVB9OrtHW7v3GCLFVEY7SYVi+94782A7epDR9kKiWPkFAdErh1uHk5a/cqLmnQ1S8I3x19/nf49ayew==
   dependencies:
     "@smartface/webviewbridge" "^5.0.3-beta.2"
     apexcharts "^3.26.3"

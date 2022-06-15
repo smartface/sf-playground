@@ -1,7 +1,6 @@
 import PgLocationManagmentDesign from 'generated/pages/pgLocationManagment';
 import MapView from '@smartface/native/ui/mapview';
-import { showMapsMenu } from '@smartface/extension-utils/lib/maps';
-import { showNavigationMenu } from '@smartface/extension-utils/lib/navigation';
+import { MapTypes, showMapsMenu, showNavigationMenu, TransportTypes } from '@smartface/extension-utils/lib/maps';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
@@ -38,7 +37,7 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
 
   async getLocation() {
     try {
-      this.location = await Location.getCurrentLocation();
+      this.location = await Location.getCurrentLocation(true);
       console.info('Location is granted: ', this.location);
       const _location = this.location;
       this.setCoordinateText(_location);
@@ -76,24 +75,32 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
     });
   }
 
-  _showMapsMenu(location: LocationType) {
+  _showMapsMenu(location) {
     const page = this;
     const options = {
-      page,
-      location,
-      name: CURRENT_LOCATION
+        page,
+        location,
+        name: CURRENT_LOCATION,
+        locationName:'',
+        isNavigation: false,
+        mapType: MapTypes.GOOGLE_MAPS
     };
-    showMapsMenu(options);
+    showMapsMenu({
+        mapOptions: options,
+        page: this
+      })
   }
 
-  navigateToLocation(location: LocationType) {
+  navigateToLocation(location) {
     const page = this;
     const options = {
-      page,
       location,
-      transportType: 'd'
+      transportType: TransportTypes.WALKING
     };
-    showNavigationMenu(options);
+    showNavigationMenu({
+        navigationOptions: options,
+        page
+    });
   }
 
   onShow() {

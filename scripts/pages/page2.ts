@@ -1,5 +1,4 @@
 import HeaderBarItem = require('@smartface/native/ui/headerbaritem');
-import touch = require('@smartface/extension-utils/lib/touch');
 import Image = require('@smartface/native/ui/image');
 import PageTitleLayout from 'components/PageTitleLayout';
 import Color = require('@smartface/native/ui/color');
@@ -13,9 +12,9 @@ export default class Page2 extends withDismissAndBackButton(Page2Design) {
   private routeData: any;
   constructor(private router?: Router, private route?: Route) {
     super({});
-    touch.addPressEvent(this.btnSayHello, () => {
-      alert('Hello World!');
-    });
+    this.btnSayHello.on('touch', ()=>{
+        alert('Hello World!')
+    })
     this.routeData = route?.getState().routeData || {};
   }
 

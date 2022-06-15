@@ -1,10 +1,9 @@
 import PgAppleDevicesDesign from 'generated/pages/pgAppleDevices';
-import { getModelName } from '@smartface/extension-utils/lib/appleDevices';
+import Hardware from '@smartface/native/device/hardware';
 import LviPages from 'components/LviPages';
-import deviceMappings from '@smartface/extension-utils/lib/appleDevices/deviceMapping.json';
+import deviceMappings from '@smartface/native/device/hardware/deviceMapping.json';
 import copy from '@smartface/extension-utils/lib/copy';
-import { getOrientationOnchage } from '@smartface/extension-utils/lib/orientation';
-import { createAsyncTask } from '@smartface/extension-utils/lib/async';
+import AsyncTask from '@smartface/native/global/asynctask'
 import Router from '@smartface/router/lib/router/Router';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
@@ -13,14 +12,22 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
   dataSet: string[];
   constructor(private router?: Router, private route?: Route) {
     super({});
+    const ali = this.scrambleDatasetOnOrientationChange;
     this.onOrientationChange = () => {
-      const orientation = getOrientationOnchage();
-      createAsyncTask(() => {
-        this.scrambleDatasetOnOrientationChange();
-      }, {}).then(() => this.refreshListView());
-    };
-  }
+        this.runAsyncTask();
+    }
 
+  }
+  runAsyncTask(){
+    const asyncTask = new AsyncTask();
+    asyncTask.task =  () => {
+        this.scrambleDatasetOnOrientationChange();
+    };
+    asyncTask.onComplete =  () => {
+        this.refreshListView();
+    };
+    asyncTask.run();
+  }
   scrambleDatasetOnOrientationChange() {
     this.dataSet.sort(() => 0.5 - Math.random());
   }
@@ -49,7 +56,7 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
-    this.headerBar.title = getModelName();
+    this.headerBar.title = Hardware.modelName;
     this.refreshListView();
   }
 

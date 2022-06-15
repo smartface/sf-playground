@@ -1,5 +1,4 @@
 import PgServiceCallDesign from 'generated/pages/pgServiceCall';
-import network from '@smartface/extension-utils/lib/network';
 import { getDogPic, dogApiData, getDogPicWithAxios } from 'services/dogPic';
 import Network from '@smartface/native/device/network';
 import { withDismissAndBackButton } from '@smartface/mixins';
@@ -56,7 +55,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
   }
 
   checkAndSetNetworkStatus() {
-    network
+    Network
       .isConnected()
       .then(() => {
         this.lblNetworkStatus.text = 'Connected to internet';
@@ -80,7 +79,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     console.log('Network carrier test: ', Network.carrier);
     console.log('Network connectionIP test: ', Network.connectionIP);
     console.log('Network SMSEnabled test: ', Network.SMSEnabled);
-    console.log('Network IMSI test: ', Network.IMSI);
+    //console.log('Network IMSI test: ', Network.IMSI);
     console.log('Network bluetoothMacAddress test: ', Network.bluetoothMacAddress);
     console.log('Network wirelessMacAddress test: ', Network.wirelessMacAddress);
     console.log('Network roamingEnabled test: ', Network.roamingEnabled);

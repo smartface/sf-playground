@@ -1,7 +1,6 @@
 import PgColorAndHtmlDesign from 'generated/pages/pgColorAndHtml';
 import Color from '@smartface/native/ui/color';
 import colorUtil from '@smartface/extension-utils/lib/color';
-import touch from '@smartface/extension-utils/lib/touch';
 import generateGuid from '@smartface/extension-utils/lib/guid';
 import { createAttributedStrings, createAttributedTexts } from '@smartface/extension-utils/lib/html-to-text';
 import AttributedString from '@smartface/native/ui/attributedstring';
@@ -22,7 +21,9 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
   }
 
   initTouchButton() {
-    touch.addPressEvent(this.flTouch, () => console.log('Pressed'));
+      this.flTouch.on("touch",()=>{
+          console.log("Pressed");
+      })
   }
 
   initTextBoxes() {

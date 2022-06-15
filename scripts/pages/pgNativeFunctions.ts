@@ -76,21 +76,22 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
   }
   initMaps() {
     this.btnOpenMaps.on('press', () => {
-      showMapsMenu({
-        mapOptions: {
-          isNavigation: false,
-          locationName: '',
-          mapType: MapTypes.GOOGLE_MAPS,
-          name: 'Smartface Inc.',
-          location: {
-            latitude: 37.4488259,
-            longitude: -122.1600047
-          }
-        },
-        page: this
-      })
-        .then(() => alert('Maps opened'))
-        .catch(() => alert('Maps failed'));
+       showMapsMenu({
+         mapOptions: {
+           isNavigation: false,
+           locationName: '',
+           mapType: MapTypes.GOOGLE_MAPS,
+           name: 'Smartface Inc.',
+           location: {
+             latitude: 37.4488259,
+             longitude: -122.1600047
+           },
+           page:this
+         },
+         page: this
+       })
+         .then(() => alert('Maps opened'))
+         .catch(() => alert('Maps failed'));
     });
     this.btnOpenNavigation.on('press', () => {
       showNavigationMenu({

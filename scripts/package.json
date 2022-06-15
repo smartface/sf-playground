@@ -4,7 +4,7 @@
     "@smartface/component-calendar": "^5.0.0",
     "@smartface/component-keyboardlayout": "^5.0.0",
     "@smartface/component-materialtextbox": "^7.0.2",
-    "@smartface/extension-utils": "^17.0.0-rc",
+    "@smartface/extension-utils": "17.0.0-rc.9",
     "@smartface/i18n": "^5.0.3-beta",
     "@smartface/mixins": "^5.0.3",
     "@smartface/native": "^5.0.3-alpha.15",
