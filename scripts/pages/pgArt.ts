@@ -39,6 +39,7 @@ export default class PgArt extends withDismissAndBackButton(PgArtDesign) {
 
   toggleBetweenArt(toggle: boolean) {
     this.lbArtType.text = toggle ? ArtTypes.EMOJI_ANIMATION : ArtTypes.CIRCULAR_PROGRESS_BAR;
+    // @ts-ignore
     this.emojiIntervalCode && clearTimeout(this.emojiIntervalCode);
     toggle ? this.initEmojiAnimation() : this.initCircularProgressBar();
   }

@@ -10,6 +10,7 @@ function initWaitDialog(opts?: { closeOnTouch: boolean }) {
   const component = new FlWaitingIndicator();
   let dialog = new Dialog({
     android: {
+        // @ts-ignore
       themeStyle: Dialog.Android.Style.ThemeDefault,
       cancelable: false,
       isTransparent: true

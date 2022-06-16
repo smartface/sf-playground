@@ -19,6 +19,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
   private myBlurView: StyleableBlurView;
   private _blurRadius = 16;
   private _effectStyle: BlurViewEffectStyle = BlurViewEffectStyle.LIGHT;
+  // @ts-ignore
   private _overlayColor: Color = Color.BLACK;
   constructor(private router?: Router, private route?: Route) {
     super({});
@@ -34,6 +35,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
   setOverlayColor() {
     const random = Math.round(Math.random() * 5);
     const colors = [Color.BLUE, Color.CYAN, Color.GREEN, Color.MAGENTA, Color.YELLOW, Color.LIGHTGRAY];
+    // @ts-ignore
     this._overlayColor = colors[random];
     this.showHideBlurView(true);
   }

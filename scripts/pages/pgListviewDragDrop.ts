@@ -153,6 +153,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: index,
               itemCount: 1,
               ios: {
+                  // @ts-ignore
                 animation: ListView.iOS.RowAnimation.FADE
               }
             });
@@ -162,6 +163,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: this.indexOfSecondHeader() - 1,
               itemCount: 1,
               ios: {
+                  // @ts-ignore
                 animation: ListView.iOS.RowAnimation.FADE
               }
             });
@@ -179,6 +181,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: index,
               itemCount: 1,
               ios: {
+                  // @ts-ignore
                 animation: ListView.iOS.RowAnimation.FADE
               }
             });
@@ -188,6 +191,7 @@ export default class PgListviewDragDrop extends withDismissAndBackButton(PgListv
               positionStart: this.indexOfSecondHeader() + 1,
               itemCount: 1,
               ios: {
+                  // @ts-ignore
                 animation: ListView.iOS.RowAnimation.FADE
               }
             });

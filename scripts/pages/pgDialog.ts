@@ -55,6 +55,7 @@ export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
     console.log('dialog initializing | isTransparent: ', this._isTransparent, ' cancelable: ', this._cancelable);
     this.dialog = new Dialog({
       android: {
+          // @ts-ignore
         themeStyle: Dialog.Android.Style.ThemeNoHeaderBar,
         isTransparent: this._isTransparent,
         cancelable: this._cancelable

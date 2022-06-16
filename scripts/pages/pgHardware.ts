@@ -18,6 +18,7 @@ export default class PgHardware extends withDismissAndBackButton(PgHardwareDesig
       console.log('Hardware.android.vendorID: ' + Hardware.android.vendorID);
     }
     if (System.OS === System.OSType.IOS) {
+        // @ts-ignore
       console.log('Hardware.ios.modelName: ' + Hardware.ios.modelName);
     }
     this.lblHardwareStatus.text = `
@@ -26,8 +27,8 @@ export default class PgHardware extends withDismissAndBackButton(PgHardwareDesig
     Hardware.brandModel: ${Hardware.brandModel}
     Hardware.deviceType: ${Hardware.deviceType}
     Hardware.android.vendorID: ${Hardware.android?.vendorID}
-    Hardware.ios.modelName: ${Hardware.ios?.modelName}
     `;
+    // Hardware.ios.modelName: ${Hardware.ios?.modelName}
   }
 
   onShow() {

@@ -23,6 +23,7 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
     for (let i = 0; i < 12; ++i) {
       dataset.push({
         title: `Smartface Title ${i}`,
+        // @ts-ignore
         backgroundColor: Color.create(COLORS[i % COLORS.length])
       });
     }

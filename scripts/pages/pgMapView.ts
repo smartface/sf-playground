@@ -109,6 +109,7 @@ export default class PgMapView extends withDismissAndBackButton(PgMapViewDesign)
     const radius = new MenuItem({ title: MAPVIEW_CHOICES.RADIUS });
     const fourRegions = new MenuItem({ title: MAPVIEW_CHOICES.FOUR_REGIONS });
     const cancel = new MenuItem({ title: 'Cancel' });
+    // @ts-ignore
     cancel.ios.style = MenuItem.Styles.CANCEL;
     const menuItems = [radius, fourRegions];
 

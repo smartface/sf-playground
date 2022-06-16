@@ -23,6 +23,7 @@ export default class PgGridViewHorizontalCard extends withDismissAndBackButton(P
     for (let i = 0; i < 12; ++i) {
       dataset.push({
         title: `Smartface Title ${i}`,
+        // @ts-ignore
         backgroundColor: Color.create(COLORS[i % COLORS.length])
       });
     }

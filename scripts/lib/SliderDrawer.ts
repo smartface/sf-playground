@@ -20,6 +20,7 @@ myButton.on('press', () => {
   Application.sliderDrawer.hide();
 });
 
+// @ts-ignore
 mySliderDrawer.drawerPosition = SliderDrawer.Position.LEFT;
 // mySliderDrawer.drawerPosition = SliderDrawer.Position.RIGHT;
 

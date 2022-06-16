@@ -21,6 +21,7 @@ export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridV
     for (let i = 0; i < 12; ++i) {
       dataset.push({
         title: `Smartface Title ${i}`,
+        // @ts-ignore
         backgroundColor: Color.create(COLORS[i % COLORS.length])
       });
     }
@@ -52,6 +53,7 @@ export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridV
   }
 
   insertRowToDataset() {
+      // @ts-ignore
     this.myDataset.unshift({ title: 'New Item', backgroundColor: Color.RED });
   }
 

@@ -71,7 +71,9 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     const menuItemDocument = new MenuItem({ title: 'Pick a File' });
     const menuItemCancel = new MenuItem({ title: 'Cancel' });
     menuItemCamera.android.titleColor = Color.RED;
+    // @ts-ignore
     menuItemCancel.ios.style = MenuItem.Styles.CANCEL;
+    // @ts-ignore
     menuItemDocument.ios.style = MenuItem.Styles.DESTRUCTIVE;
     menuItemCamera.on('selected', () => {
       /**

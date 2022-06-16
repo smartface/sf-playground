@@ -36,6 +36,7 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     const g = parseInt(this.tbG.text) || 0;
     const b = parseInt(this.tbB.text) || 0;
     const color = Color.create(r, g, b);
+    // @ts-ignore
     const colorValues = this.getColorValues(color);
     this.updateRgbTextBoxes(r, g, b);
     this.updateRgbLabels(colorValues);

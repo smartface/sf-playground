@@ -16,6 +16,7 @@ export default class PgDatePicker extends withDismissAndBackButton(PgDatePickerD
   initDatePicker() {
     this.datePicker = new DatePicker({
       android: {
+          // @ts-ignore
         style: DatePicker?.Android?.Style?.MATERIAL_DARK
       }
     });
@@ -31,6 +32,7 @@ export default class PgDatePicker extends withDismissAndBackButton(PgDatePickerD
       this.datePicker.ios.okColor = Color.BLUE;
       this.datePicker.ios.okHighlightedColor = Color.CYAN;
       this.datePicker.ios.okFont = Font.create('Arial', 14, Font.ITALIC);
+      // @ts-ignore
       this.datePicker.ios.datePickerMode = DatePicker.iOS.DatePickerMode.DATEANDTIME;
       this.datePicker.ios.dialogBackgroundColor = Color.WHITE;
       this.datePicker.ios.dialogLineColor = Color.BLACK;

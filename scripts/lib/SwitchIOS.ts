@@ -5,7 +5,9 @@ export default class SwitchIOS extends View {
   constructor(params?: any) {
     super();
     if (System.OS === System.OSType.IOS) {
+        // @ts-ignore
       const NativeSwitch = requireClass('UISwitch');
+      // @ts-ignore
       const SwitchController = defineClass('SwitchController : NSObject', {
         switchAction: function () {
           if (typeof this.onToggle === 'function') {

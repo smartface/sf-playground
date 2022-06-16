@@ -6,6 +6,7 @@ export default class SwitchAndroid extends View {
     super();
     if (System.OS === 'Android') {
       const AndroidConfig = require('@smartface/native/util/Android/androidconfig').default;
+      // @ts-ignore
       const NativeSwitch = requireClass('android.widget.Switch');
       this.nativeObject = new NativeSwitch(AndroidConfig.activity);
     }

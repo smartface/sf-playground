@@ -75,6 +75,7 @@ export default class PgGlide extends PgGlideDesign {
   initDialog() {
     this.dialog = new Dialog({
       android: {
+          // @ts-ignore
         themeStyle: Dialog.Android.Style.ThemeNoHeaderBar // Show StatusBar
         // isTransparent: true,
         // cancelable: true
