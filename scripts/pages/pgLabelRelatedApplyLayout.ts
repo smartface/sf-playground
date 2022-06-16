@@ -38,12 +38,12 @@ export default class PgLabelRelatedApplyLayout extends withDismissAndBackButton(
         textColor: "#000000",
       });
 
-      setTimeout(() => {
-        // this.myLabel.borderWidth = 5
-        this.myLabel.font = Font.create('Times New Roman', 30, Font.NORMAL);
-      }, 5000);
-      // this.myLabel.padding = 50
+      this.layout.applyLayout()
 
+      setTimeout(() => {
+        this.myLabel.borderWidth = 5
+        // this.myLabel.font = Font.create('Times New Roman', 30, Font.NORMAL);
+      }, 2500);
     })
   }
 
