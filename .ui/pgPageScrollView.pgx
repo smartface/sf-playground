@@ -9,6 +9,7 @@
 					"7120-ce62-4da7-5cf4",
 					"4cb1-d3b1-e414-3e4d",
 					"f2f5-2780-aba0-787a",
+					"a8d5-3061-43d5-8616",
 					"366e-98d9-00b6-7964"
 				],
 				"name": "pgPageScrollView",
@@ -60,6 +61,23 @@
 			"type": "Button",
 			"userProps": {
 				"text": "updateLabelHeight",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a8d5-3061-43d5-8616",
+			"oldName": "button1_1",
+			"props": {
+				"children": [],
+				"name": "visibleToggle",
+				"parent": "2f94-c069-1333-bb18",
+				"text": "Toggle Visibility",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Toggle Visibility",
 				"usePageVariable": true
 			}
 		},

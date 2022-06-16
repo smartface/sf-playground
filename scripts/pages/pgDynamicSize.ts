@@ -23,8 +23,6 @@ export default class PgDynamicSize extends withDismissAndBackButton(PgDynamicSiz
 
       this.flDynamicSize.borderWidth = 10
       this.flDynamicSize.borderColor = Color.RED
-
-      this.layout.applyLayout()
     }, 2500);
     this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }

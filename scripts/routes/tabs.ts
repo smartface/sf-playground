@@ -14,6 +14,7 @@ import PgNestedFlexes from 'pages/pgNestedFlexes';
 import PgPageComplexLayout from 'pages/pgPageComplexLayout';
 import PgPage3 from 'pages/pgPage3';
 import PgPageScrollView from 'pages/pgPageScrollView';
+import PgLabelRelatedApplyLayout from 'pages/pgLabelRelatedApplyLayout';
 import Page2 from 'pages/page2';
 import PageHideShow from 'pages/pageHideShow';
 import PgChart from 'pages/pgChart';
@@ -150,6 +151,7 @@ export const tab0: Tab = {
         PgPageComplexLayout,
         PgPage3,
         PgPageScrollView,
+        PgLabelRelatedApplyLayout,
         PageHideShow,
         PgNativeFunctions,
         PgAccelerometer,

@@ -1,9 +1,9 @@
 {
   ".sf-label": {
     "masksToBounds": true,
-    "height": 50,
+    
     "width": null,
-    "maxLines": 1,
+    
     "ellipsizeMode": "END",
     "textColor": "#00a1f1",
     "textAlignment": "MIDLEFT",

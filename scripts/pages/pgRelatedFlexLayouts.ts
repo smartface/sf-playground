@@ -27,11 +27,6 @@ export default class PgRelatedFlexLayouts extends withDismissAndBackButton(PgRel
         setTimeout(() => {
             this.label1.dispatch({ type: 'updateUserStyle', userStyle: { height: 300 } })
             this.flexLayout3.dispatch({ type: 'updateUserStyle', userStyle: { paddingLeft: 20 } })
-
-            this.layout.applyLayout()
-
-
-
         }, 1500);
 
 

@@ -25,7 +25,6 @@ export default class PgSpriteView extends withDismissAndBackButton(PgSpriteViewD
       frameCount: 27 // Frame count of the image
     });
     this.layout.addChild(this.spriteView);
-    this.layout.applyLayout();
   }
 
   onShow() {

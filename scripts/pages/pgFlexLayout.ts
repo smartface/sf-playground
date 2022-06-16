@@ -30,7 +30,6 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
-    //   this.applyFlLayout();
     });
     picker.show();
   }
@@ -47,7 +46,6 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
       }
     });
     this.btnFlexWrap.text = isWrap ? 'Change to Flex NoWrap' : 'Change to Flex Wrap';
-    // this.applyFlLayout();
   }
 
   changeFlexDirection() {
@@ -64,8 +62,6 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
-    //   this.applyFlLayout();
-    this.layout.nativeObject.setNeedsLayout()
     });
     picker.show();
   }
@@ -81,8 +77,6 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
         }
       }
     });
-    // this.applyFlLayout();
-    this.layout.nativeObject.setNeedsLayout()
     this.btnDirection.text = isLTR ? 'Change to RTL' : 'Change to LTR';
   }
 
@@ -100,7 +94,6 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
-    //   this.applyFlLayout();
     });
     picker.show();
   }
@@ -119,14 +112,10 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
           }
         }
       });
-    //   this.applyFlLayout();
     });
     picker.show();
   }
 
-  applyFlLayout() {
-    System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.fl.applyLayout();
-  }
   /**
    * @event onShow
    * This event is called when the page appears on the screen (everytime).
@@ -142,5 +131,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
    */
   onLoad() {
     super.onLoad();
+
+    
   }
 }

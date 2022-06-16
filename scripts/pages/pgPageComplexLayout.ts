@@ -52,8 +52,6 @@ export default class PgPageComplexLayout extends withDismissAndBackButton(PgPage
                         height: 100
                     }
                 })
-
-                // this.layout.applyLayout()
             }, 2000);
         };
     }

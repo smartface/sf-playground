@@ -1,0 +1,127 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "7716-275a-87d5-2a9a",
+			"initialized": true,
+			"props": {
+				"children": [
+					"6f4d-54a1-c03e-b760",
+					"d2a5-7877-9a70-9fa4",
+					"5140-a828-129c-7315"
+				],
+				"name": "pgLabelRelatedApplyLayout",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "0.0.1.a"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "6f4d-54a1-c03e-b760",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7716-275a-87d5-2a9a"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "d2a5-7877-9a70-9fa4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7716-275a-87d5-2a9a",
+				"title": "pgLabelRelatedApplyLayout"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgLabelRelatedApplyLayout"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5140-a828-129c-7315",
+			"props": {
+				"children": [
+					"f32d-bd82-e065-9aa1",
+					"45ae-f308-ed61-5e62",
+					"48f1-9fa1-b4c5-d0a2"
+				],
+				"name": "flexLayout1",
+				"parent": "7716-275a-87d5-2a9a",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "f32d-bd82-e065-9aa1",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "addLabelChild",
+				"parent": "5140-a828-129c-7315",
+				"text": "addLabelChild",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "addLabelChild",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "45ae-f308-ed61-5e62",
+			"oldName": "margin",
+			"props": {
+				"children": [],
+				"name": "btnMargin",
+				"parent": "5140-a828-129c-7315",
+				"text": "btnMargin",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "btnMargin",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "48f1-9fa1-b4c5-d0a2",
+			"oldName": "flexLayout2",
+			"props": {
+				"children": [],
+				"name": "labelWrapper",
+				"parent": "5140-a828-129c-7315",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 245, 166, 35, 1 )",
+				"height": 250,
+				"usePageVariable": true
+			}
+		}
+	]
+}

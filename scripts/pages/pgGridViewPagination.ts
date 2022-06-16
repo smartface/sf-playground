@@ -54,7 +54,6 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
       let { title, backgroundColor } = this.myDataset[this.myDataset.length - index - 1];
       gridViewItem.lblTitle.text = title;
       gridViewItem.lblTitle.backgroundColor = backgroundColor;
-      gridViewItem.applyLayout();
     };
     this.gvMain.ios.decelerationRate = GridView.iOS.DecelerationRate.FAST;
     this.gvMain.layoutManager.contentInset = { top: 0, left: 0, bottom: 0, right: 20 };

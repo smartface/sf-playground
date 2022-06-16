@@ -3,15 +3,24 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Dialog from '@smartface/native/ui/dialog';
 import FlexLayout from '@smartface/native/ui/flexlayout';
-import { styleableComponentMixin, StyleContextComponentType } from '@smartface/styling-context';
+import { styleableComponentMixin, StyleContextComponentType, styleableContainerComponentMixin } from '@smartface/styling-context';
 import ActivityIndicator from '@smartface/native/ui/activityindicator';
-class StyleableActivityIndicator extends styleableComponentMixin(ActivityIndicator) {}
+class StyleableActivityIndicator extends styleableComponentMixin(ActivityIndicator) { }
+
+
+import View from "@smartface/native/ui/view";
+import Color from '@smartface/native/ui/color';
+class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) { }
+class StyleableView extends styleableComponentMixin(View) { }
+
 
 export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
   dialog: Dialog;
   private _isTransparent = false;
   private _cancelable = false;
   activityIndicator: StyleableActivityIndicator;
+
+  myView: StyleableView;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.swTransparent.on('toggleChanged', (value) => {
@@ -24,9 +33,21 @@ export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
     });
     this.btnShow.on('press', () => {
       this.dialog.show();
+
+      setTimeout(() => {
+        const view = new StyleableView({
+          width: 250,
+          // flexGrow: 1,
+          height: 200,
+          backgroundColor: Color.create("#00A1F1")
+        });
+  
+        this.dialog.layout.addChild(view);
+      }, 3000);
+
       setTimeout(() => {
         this.dialog.hide();
-      }, 3000);
+      }, 8000);
     });
     this.btnHide.on('press', () => this.dialog.hide());
   }
@@ -45,8 +66,21 @@ export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
     this.dialog.layout.justifyContent = FlexLayout.JustifyContent.CENTER;
     this.activityIndicator = new StyleableActivityIndicator();
     this.activityIndicator.on('touch', () => this.dialog.hide());
+
+
     this.dialog.layout.addChild(this.activityIndicator);
-    this.dialog.layout.applyLayout();
+
+    // setTimeout(() => {
+
+    //   const view = new StyleableView({
+    //     width: 250,
+    //     // flexGrow: 1,
+    //     height: 200,
+    //     backgroundColor: Color.create("#00A1F1")
+    //   });
+
+    //   this.dialog.layout.addChild(view);
+    // }, 3000);
   }
 
   onShow() {
