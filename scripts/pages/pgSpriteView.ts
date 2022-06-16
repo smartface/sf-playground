@@ -1,6 +1,7 @@
 import PgSpriteViewDesign from 'generated/pages/pgSpriteView';
 import Image from '@smartface/native/ui/image';
 import ImageView from '@smartface/native/ui/imageview';
+import {ImageFillType} from '@smartface/native/ui/imageview/imageview';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import SpriteView from '@smartface/native/ui/spriteview';
@@ -14,7 +15,7 @@ export default class PgSpriteView extends withDismissAndBackButton(PgSpriteViewD
     this.spriteView = new SpriteView({
       width: 100,
       height: 125,
-      imageFillType: ImageView.FillType.ASPECTFIT
+      imageFillType: ImageFillType.ASPECTFIT
     });
     const sheet = Image.createFromFile('assets://braid.png');
 

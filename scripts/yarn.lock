@@ -93,10 +93,11 @@
     events "^3.3.0"
 
 "@smartface/native@^5.0.0":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.1.tgz#f7087f2581e04b16781375d99e8b1ae8e0ba29d2"
-  integrity sha512-MAbFr6zCWJDHZ9vE0bDqc9rEEo0IIvkoM5XeehLDIJ8BFJBkUWtFrSaJh4FoX4RPCDI9FtU03jKlNcixLvIe8w==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2.tgz#f49a434fa0f7ff21777799edc4506e5ccd5136d9"
+  integrity sha512-eg8sa1QKMH6rQiEZ/H0NyjMvE7hlWD7TbTIBmIkJBxmVNqgV8m4M34JBnQevLTQfWDi0ETAE85aObUI6D3TZ/A==
   dependencies:
+    abort-controller "^3.0.0"
     events "^3.3.0"
 
 "@smartface/router@^2.3.1":
@@ -309,7 +310,7 @@ squel@^5.13.0:
 strict-uri-encode@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
-  integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
+  integrity sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==
 
 svg.draggable.js@^2.2.2:
   version "2.2.2"
@@ -321,14 +322,14 @@ svg.draggable.js@^2.2.2:
 svg.easing.js@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/svg.easing.js/-/svg.easing.js-2.0.0.tgz#8aa9946b0a8e27857a5c40a10eba4091e5691f12"
-  integrity sha1-iqmUawqOJ4V6XEChDrpAkeVpHxI=
+  integrity sha512-//ctPdJMGy22YoYGV+3HEfHbm6/69LJUTAqI2/5qBvaNHZ9uUFVC82B0Pl299HzgH13rKrBgi4+XyXXyVWWthA==
   dependencies:
     svg.js ">=2.3.x"
 
 svg.filter.js@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/svg.filter.js/-/svg.filter.js-2.0.2.tgz#91008e151389dd9230779fcbe6e2c9a362d1c203"
-  integrity sha1-kQCOFROJ3ZIwd5/L5uLJo2LRwgM=
+  integrity sha512-xkGBwU+dKBzqg5PtilaTb0EYPqPfJ9Q6saVldX+5vCRy31P6TlRCP3U9NxH3HEufkKkpNgdTLBJnmhDHeTqAkw==
   dependencies:
     svg.js "^2.2.5"
 
@@ -374,7 +375,7 @@ tinycolor2@^1.4.1:
 void-elements@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-1.0.0.tgz#6e5db1e35d591f5ac690ce1a340f793a817b2c2a"
-  integrity sha1-bl2x411ZH1rGkM4aNA95OoF7LCo=
+  integrity sha512-Ypv2nBd59g63ouzrZaojQXHdRbnLhT1uuZtEXISmymV3MSiA5Qdwn4YxDlhBZoCYTninng14Y2J7pSrg9zq1/g==
 
 wolfy87-eventemitter@^5.2.9:
   version "5.2.9"

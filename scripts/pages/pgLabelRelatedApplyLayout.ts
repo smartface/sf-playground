@@ -5,6 +5,7 @@ import { Router, Route } from '@smartface/router';
 import { styleableContainerComponentMixin, styleableComponentMixin } from '@smartface/styling-context';
 import Label from "@smartface/native/ui/label";
 import Font from '@smartface/native/ui/font';
+import TextAlignment from '@smartface/native/ui/shared/textalignment';
 class StyleableLabel extends styleableComponentMixin(Label) { }
 
 export default class PgLabelRelatedApplyLayout extends withDismissAndBackButton(PgLabelRelatedApplyLayoutDesign) {
@@ -38,10 +39,12 @@ export default class PgLabelRelatedApplyLayout extends withDismissAndBackButton(
         textColor: "#000000",
       });
 
-      this.layout.applyLayout()
+      
 
       setTimeout(() => {
         this.myLabel.borderWidth = 5
+        this.myLabel.height = 300
+        this.myLabel.textAlignment = TextAlignment.BOTTOMLEFT
         // this.myLabel.font = Font.create('Times New Roman', 30, Font.NORMAL);
       }, 2500);
     })
