@@ -1,33 +1,28 @@
 import PgAppleDevicesDesign from 'generated/pages/pgAppleDevices';
-import { getModelName } from '@smartface/extension-utils/lib/appleDevices';
 import LviPages from 'components/LviPages';
-import deviceMappings from '@smartface/extension-utils/lib/appleDevices/deviceMapping.json';
 import copy from '@smartface/extension-utils/lib/copy';
-import { getOrientationOnchage } from '@smartface/extension-utils/lib/orientation';
-import { createAsyncTask } from '@smartface/extension-utils/lib/async';
 import Router from '@smartface/router/lib/router/Router';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
+import Hardware from '@smartface/native/device/hardware';
+import AsyncTask from '@smartface/native/global/asynctask';
 
 export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevicesDesign) {
   dataSet: string[];
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.onOrientationChange = () => {
-      const orientation = getOrientationOnchage();
-      createAsyncTask(() => {
+    this.onOrientationChange = (e) => {
+      const asyncTask = new AsyncTask();
+      asyncTask.once('complete', () => {
         this.scrambleDatasetOnOrientationChange();
-      }, {}).then(() => this.refreshListView());
+        this.refreshListView();
+      });
+      asyncTask.run();
     };
   }
 
   scrambleDatasetOnOrientationChange() {
     this.dataSet.sort(() => 0.5 - Math.random());
-  }
-
-  initCopyDeviceMapping() {
-    const copiedJSONFile = copy(deviceMappings);
-    this.dataSet = Object.values(copiedJSONFile);
   }
   initListView() {
     this.lvAppleDevices.refreshEnabled = false;
@@ -49,7 +44,7 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
   onShow() {
     super.onShow();
     this.initBackButton(this.router);
-    this.headerBar.title = getModelName();
+    this.headerBar.title = Hardware.modelName;
     this.refreshListView();
   }
 
@@ -59,7 +54,6 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
    */
   onLoad() {
     super.onLoad();
-    this.initCopyDeviceMapping();
     this.initListView();
   }
 }

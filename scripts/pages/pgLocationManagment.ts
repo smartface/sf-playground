@@ -1,7 +1,6 @@
 import PgLocationManagmentDesign from 'generated/pages/pgLocationManagment';
 import MapView from '@smartface/native/ui/mapview';
-import { showMapsMenu } from '@smartface/extension-utils/lib/maps';
-import { showNavigationMenu } from '@smartface/extension-utils/lib/navigation';
+import { MapTypes, showMapsMenu, showNavigationMenu, TransportTypes } from '@smartface/extension-utils/lib/maps';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
@@ -78,22 +77,35 @@ export default class PgLocationManagment extends withDismissAndBackButton(PgLoca
 
   _showMapsMenu(location: LocationType) {
     const page = this;
-    const options = {
+    showMapsMenu({
       page,
-      location,
-      name: CURRENT_LOCATION
-    };
-    showMapsMenu(options);
+      mapOptions: {
+        page,
+        location: {
+          latitude: location.latitude,
+          longitude: location.longitude
+        },
+        name: CURRENT_LOCATION,
+        locationName: '',
+        mapType: MapTypes.GOOGLE_MAPS,
+        isNavigation: false
+      }
+    });
   }
 
   navigateToLocation(location: LocationType) {
     const page = this;
-    const options = {
-      page,
-      location,
-      transportType: 'd'
-    };
-    showNavigationMenu(options);
+    const options = {};
+    showNavigationMenu({
+      navigationOptions: {
+        location: {
+          latitude: location.latitude,
+          longitude: location.longitude
+        },
+        transportType: TransportTypes.DRIVING
+      },
+      page
+    });
   }
 
   onShow() {

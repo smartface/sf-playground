@@ -1,5 +1,4 @@
 import PgServiceCallDesign from 'generated/pages/pgServiceCall';
-import network from '@smartface/extension-utils/lib/network';
 import { getDogPic, dogApiData, getDogPicWithAxios } from 'services/dogPic';
 import Network from '@smartface/native/device/network';
 import { withDismissAndBackButton } from '@smartface/mixins';
@@ -56,8 +55,7 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
   }
 
   checkAndSetNetworkStatus() {
-    network
-      .isConnected()
+    Network.isConnected()
       .then(() => {
         this.lblNetworkStatus.text = 'Connected to internet';
         this.lblNetworkStatus.dispatch({

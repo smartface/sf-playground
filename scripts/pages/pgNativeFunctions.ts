@@ -79,6 +79,7 @@ export default class PgNativeFunctions extends PgNativeFunctionsDesign {
       showMapsMenu({
         mapOptions: {
           isNavigation: false,
+          page: this,
           locationName: '',
           mapType: MapTypes.GOOGLE_MAPS,
           name: 'Smartface Inc.',
