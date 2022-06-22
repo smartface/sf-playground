@@ -48,10 +48,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.0.3.tgz#8b63e5fb4551c147351a53dada6a8420cc3fc36d"
   integrity sha512-obOGFpJeO4CcK/rIaZpw82/DaT2FHreVqeW61S8mKjPHuTsZfgkTnwxU8r0nQDgWPes82ZrkMAMqjwNkW7vzTQ==
 
-"@smartface/extension-utils@^17.0.0-rc":
-  version "17.0.0-rc.9"
-  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-17.0.0-rc.9.tgz#ee9a3bd53a000b3f493a5790b71ab4c7f20bbc5b"
-  integrity sha512-Qvmh7QTbVB9OrtHW7v3GCLFVEY7SYVi+94782A7epDR9kKiWPkFAdErh1uHk5a/cqLmnQ1S8I3x19/nf49ayew==
+"@smartface/extension-utils@^17.0.0":
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/@smartface/extension-utils/-/extension-utils-17.0.0.tgz#d27035df322e228b15ce4aa2dc5467b313c56877"
+  integrity sha512-Bfs7HxzpiTKodmTu688O1YFP7wEYtLeIZtj73ds+tkedTOpsX2ktdxH81Knv/Z9E3W0ryXTCpPrSNLEKyT++Bw==
   dependencies:
     "@smartface/webviewbridge" "^5.0.3-beta.2"
     apexcharts "^3.26.3"
@@ -69,11 +69,12 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/i18n@^5.0.3-beta":
-  version "5.0.3-beta.2"
-  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.3-beta.2.tgz#4dfca3f221b01234fc7519fc0d32712a0cf7d301"
-  integrity sha512-L4zVIsjHaYRc1g4luuk9TPxW/287+fNY6Maq8P71zLRHMUzYuL3UwqVjMwZpni8pqLl42sh25uM26qO2lBpyXA==
+"@smartface/i18n@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.3.tgz#ccdedd15016ecb2045fdfdd81e72564ed05d9319"
+  integrity sha512-ZXB5+LNDxc83QFVsqnBm4Be8zFZ81tU0OHMV/IfZSiAMiaOMkZ5B/8o6d3LrQzuSkjjt4WOABUKJhJbGGliucg==
   dependencies:
+    "@smartface/native" "^5.0.0"
     i18next "21.6.15"
 
 "@smartface/mixins@^5.0.3":
@@ -83,10 +84,18 @@
   dependencies:
     "@smartface/core" "^5.0.3"
 
-"@smartface/native@^5.0.3-alpha.15":
-  version "5.0.3-beta.0"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-beta.0.tgz#e2f9d0aef14c16310debb6574824ec2d7623d877"
-  integrity sha512-Wk8XurQ6LdqPWnPuKo2MtZMyXdjRxoE8dIEy/BY+esOpA76mFJaZVfBpTrZAxWHXUWWRYoVVYF4Oxq+eWhSLcg==
+"@smartface/native@^5.0.0":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2.tgz#f49a434fa0f7ff21777799edc4506e5ccd5136d9"
+  integrity sha512-eg8sa1QKMH6rQiEZ/H0NyjMvE7hlWD7TbTIBmIkJBxmVNqgV8m4M34JBnQevLTQfWDi0ETAE85aObUI6D3TZ/A==
+  dependencies:
+    abort-controller "^3.0.0"
+    events "^3.3.0"
+
+"@smartface/native@alpha":
+  version "5.0.3-alpha.29"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-alpha.29.tgz#194f29d87628af65336d8599a3d8d8641fa96d25"
+  integrity sha512-jE9YGeo1K/UeHM2selBMGjILQNXcD36FDgqqz2t2hlBt1rTX3usVIrkic2ufoIsy4J3TpvsToc47CopZvk3mTg==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
