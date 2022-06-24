@@ -1,3 +1,4 @@
 <resources>
     <color name="colorSplashScreenBackground">#000000</color>
+    <color name="colorSplashIconBackground">#000000</color>
 </resources>
