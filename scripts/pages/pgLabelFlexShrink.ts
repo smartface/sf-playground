@@ -33,8 +33,6 @@ export default class PgLabelFlexShrink extends withDismissAndBackButton(PgLabelF
                 this.lblLorem.text = "Hellow Word!";
                 i = 0;
             }
-            this.lblLorem.dirty();
-            this.lblLorem.applyLayout();
         });
     }
 }
