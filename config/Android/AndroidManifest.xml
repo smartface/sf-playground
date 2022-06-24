@@ -111,14 +111,6 @@
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 		</activity>
-		<service android:name="com.geniem.sprat.billing.BillingService" />
-		<receiver android:name="com.geniem.sprat.billing.BillingReceiver">
-			<intent-filter>
-				<action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
-				<action android:name="com.android.vending.billing.RESPONSE_CODE" />
-				<action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
-			</intent-filter>
-		</receiver>
 		<!-- Restrict the app direction or make it automatic -->
 		<meta-data android:name="locale"  android:value="auto" />
 		<!--
