@@ -80,7 +80,6 @@ export default class PgPhotoCropper extends PgPhotoCropperDesign {
     this.flex.addChild(this.swipeView, 'swipeView', '.grow-relative');
     this.flex.addStyleableChild(this.swipeView, 'swipeView', '.grow-relative');
     if (System.OS === System.OSType.IOS) {
-      this.layout.applyLayout();
     }
   }
 

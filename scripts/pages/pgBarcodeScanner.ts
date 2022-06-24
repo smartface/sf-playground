@@ -90,7 +90,6 @@ export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcode
         height: toggle ? this.wrapperOldHeight : 0
       }
     });
-    System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.flBarcode.applyLayout();
   }
 
   private async askUserForPermission(): Promise<void> {

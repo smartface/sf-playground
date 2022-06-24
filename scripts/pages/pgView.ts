@@ -26,7 +26,6 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
         maxWidth: max
       }
     });
-    this.v4.applyLayout();
   }
 
   initProps() {
@@ -123,9 +122,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     });
   }
 
-  applyFlLayout() {
-    System.OS === System.OSType.IOS ? this.sv.layout.applyLayout() : this.flWrapper.applyLayout();
-  }
+ 
 
   setAspectRatio() {
     [this.v1, this.v2, this.v3].forEach((v) => {
@@ -136,7 +133,6 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
         }
       });
     });
-    this.applyFlLayout();
   }
 
   updateAlpha(alpha: number) {
@@ -166,7 +162,6 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
           }
         });
       });
-      this.applyFlLayout();
     });
     picker.show();
   }

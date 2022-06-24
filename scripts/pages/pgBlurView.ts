@@ -66,7 +66,6 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
     myBlurView.android.overlayColor = Color.TRANSPARENT; //This needs to be changed afterwards
     this.myBlurView = myBlurView;
     this.flBlur.addChild(myBlurView, 'myBlurView');
-    System.OS === System.OSType.IOS ? this.layout.applyLayout() : this.flBlur.applyLayout();
   }
 
   showHideBlurView(toggle: boolean) {

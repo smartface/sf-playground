@@ -51,7 +51,6 @@ export default class PgGlide extends PgGlideDesign {
       });
       i++;
     }
-    this.flOptions.applyLayout();
   }
   initImages(type: CacheTypes) {
     this.dialog.show();
@@ -72,7 +71,6 @@ export default class PgGlide extends PgGlideDesign {
         }
       });
     }
-    this.layout.applyLayout();
     setTimeout(() => this.dialog.hide(), 500);
   }
   initDialog() {
@@ -88,7 +86,6 @@ export default class PgGlide extends PgGlideDesign {
 
     this.activityIndicator = new StyleableActivityIndicator();
     this.dialog.layout.addChild(this.activityIndicator);
-    this.dialog.layout.applyLayout();
   }
   getImageEndpoint(index: number) {
     return `https://picsum.photos/id/${index}/${imageOptions.size.width}/${imageOptions.size.height}`;

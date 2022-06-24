@@ -57,7 +57,6 @@ export default class FlListViewIndex extends FlListViewIndexDesign {
       const label = new Label({ ...labelLayoutStyles, ...labelStyles });
       label.text = value;
       this.addChild(label, `${value}/${index}`);
-      label.applyLayout();
       this.labels.push(label);
     });
   }

@@ -84,18 +84,18 @@
   dependencies:
     "@smartface/core" "^5.0.3"
 
-"@smartface/native@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2.tgz#f49a434fa0f7ff21777799edc4506e5ccd5136d9"
-  integrity sha512-eg8sa1QKMH6rQiEZ/H0NyjMvE7hlWD7TbTIBmIkJBxmVNqgV8m4M34JBnQevLTQfWDi0ETAE85aObUI6D3TZ/A==
+"@smartface/native@5.0.3-beta.1":
+  version "5.0.3-beta.1"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-beta.1.tgz#20947620e0a08bdf4066519e00488fda6e77c276"
+  integrity sha512-ciyM7AE1QgdGuz74varT/1/QHQ6M0aJh3kSiQl1eGDZiHFYzPrV3GYrQlNFUXN12TMRMDXu+ire4n/nAkyYiFQ==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
 
-"@smartface/native@alpha":
-  version "5.0.3-alpha.29"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-alpha.29.tgz#194f29d87628af65336d8599a3d8d8641fa96d25"
-  integrity sha512-jE9YGeo1K/UeHM2selBMGjILQNXcD36FDgqqz2t2hlBt1rTX3usVIrkic2ufoIsy4J3TpvsToc47CopZvk3mTg==
+"@smartface/native@^5.0.0":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.2.tgz#f49a434fa0f7ff21777799edc4506e5ccd5136d9"
+  integrity sha512-eg8sa1QKMH6rQiEZ/H0NyjMvE7hlWD7TbTIBmIkJBxmVNqgV8m4M34JBnQevLTQfWDi0ETAE85aObUI6D3TZ/A==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"

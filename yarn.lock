@@ -635,10 +635,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@smartface/builder@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.9.1.tgz#ccd4bfa922a523ffddd60836e1ae1e71d6ce24bb"
-  integrity sha512-RQDGY7W+HsA6qTQ0bU6r/oM1ei02F6akzOjKpdGrva9rKsxb4cyWlk2RxZc+bLIARuiAWcP0EISLcOztMZ4kBA==
+"@smartface/builder@0.9.2":
+  version "0.9.2-rc.0"
+  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.9.2-rc.0.tgz#d9934a9d3796687964f448cd2d9d66d28ac4e03e"
+  integrity sha512-jUNqVkF9l3lpCl2JfpvtBP9vP+IuBUdoHT2UPys9FjSFiqculrhqxErnnbGwgSbAuh/ampnVev9MFFeC2gGIjQ==
   dependencies:
     "@smartface/html-to-text" "^1.0.5"
     "@smartface/library-reader" "^0.8.4"
