@@ -93,6 +93,7 @@
 					android:windowSoftInputMode="adjustPan"
 					android:screenOrientation="${Orientation}"
 					android:theme="@style/defaultTheme" 
+                    android:exported="true"
                     android:resizeableActivity="false"
                     >
                     
