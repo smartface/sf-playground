@@ -112,6 +112,7 @@ import PgBarcodeScanner from 'pages/pgBarcodeScanner';
 import PgCalendar from 'pages/pgCalendar';
 import PgForm from 'pages/pgForm';
 import PgFetch from 'pages/pgFetch';
+import PgOrientation from 'pages/pgOrientation';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -235,6 +236,7 @@ export const tab4: Tab = {
     PgFileUpload,
     PgBadgeAnimation,
     PgTouchHandling,
+    PgOrientation,
     PgComponentFromCode,
     PgButtonPress,
     PgDynamicSize,

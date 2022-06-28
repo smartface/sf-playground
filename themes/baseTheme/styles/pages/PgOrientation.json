@@ -1,0 +1,16 @@
+{
+  "#pgOrientation": {
+    "&-textWrapper": {
+      "height": 50,
+      "marginTop": 20,
+      "flexProps": {
+        "flexDirection": "ROW"
+      }
+    },
+    "&-text": {
+      "flexProps": {
+        "flexGrow": 1
+      }
+    }
+  }
+}
