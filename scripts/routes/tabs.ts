@@ -112,6 +112,7 @@ import PgBarcodeScanner from 'pages/pgBarcodeScanner';
 import PgCalendar from 'pages/pgCalendar';
 import PgForm from 'pages/pgForm';
 import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
+import PgFetch from 'pages/pgFetch';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -191,8 +192,7 @@ export const tab0: Tab = {
     PgEmailComposer,
     PgDatePicker,
     PgWebView,
-    PgButton,
-    PgLabelFlexShrink
+    PgButton
   ]
 };
 
@@ -200,7 +200,7 @@ export const tab1: Tab = {
   name: 'Utility',
   imageName: 'utility.png',
   tabIndex: 1,
-  pages: [PgXHR, PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios]
+  pages: [PgXHR, PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios, PgFetch]
 };
 
 export const tab2: Tab = {
@@ -241,6 +241,7 @@ export const tab4: Tab = {
     PgDynamicSize,
     PgScrollViewInsideScrollView,
     PgListViewExtendShrink,
-    PgForm
+    PgForm,
+    PgLabelFlexShrink
   ]
 };
