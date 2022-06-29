@@ -11,8 +11,5 @@ export default class FlNoSize extends FlDynamicSizeDesign {
   setText(value: string, page: Page) {
     this.lblDynamicSize.dirty();
     this.lblDynamicSize.text = value;
-    if (System.OS === System.OSType.IOS) {
-      page.layout.applyLayout();
-    }
   }
 }

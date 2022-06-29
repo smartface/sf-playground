@@ -47,7 +47,6 @@ export default class PgDialog extends withDismissAndBackButton(PgDialogDesign) {
     this.activityIndicator = new StyleableActivityIndicator();
     this.activityIndicator.on('touch', () => this.dialog.hide());
     this.dialog.layout.addChild(this.activityIndicator);
-    this.dialog.layout.applyLayout();
   }
 
   onShow() {

@@ -36,7 +36,6 @@ function initWaitDialog(opts?: { closeOnTouch: boolean }) {
     };
   }
   dialog.layout.addChild(component);
-  dialog.layout.applyLayout();
   return dialog;
 }
 

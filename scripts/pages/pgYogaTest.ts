@@ -45,8 +45,6 @@ export default class PgYogaTest extends PgYogaTestDesign {
         }
       });
 
-      System.OS === System.OSType.IOS ? this.svMain.layout.applyLayout() : this.applyLayoutToItems([parentFlex, childFlex]);
-
       setInterval(() => {
         parentFlex.dispatch({
           type: 'updateUserStyle',
@@ -62,20 +60,12 @@ export default class PgYogaTest extends PgYogaTestDesign {
             height: this.getRandomHeight() / 2
           }
         });
-
-        System.OS === System.OSType.IOS ? this.svMain.layout.applyLayout() : this.applyLayoutToItems([parentFlex, childFlex]);
       }, this.getRandomDuration());
     }
-    this.svMain.layout.applyLayout();
   }
   getRandomWidth = () => Math.floor(Math.random() * (MAX_WIDTH - MIN_WIDTH + 1) + MIN_WIDTH);
   getRandomHeight = () => Math.floor(Math.random() * (MAX_HEIGHT - MIN_HEIGHT + 1) + MIN_HEIGHT);
   getRandomDuration = () => Math.floor(Math.random() * (MAX_DURATION - MIN_DURATION + 1) + MIN_DURATION);
-  applyLayoutToItems(views: View[]) {
-    for (let view of views) {
-      view.applyLayout();
-    }
-  }
 
   onShow() {
     super.onShow();

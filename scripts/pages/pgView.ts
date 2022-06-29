@@ -26,7 +26,6 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
         maxWidth: max
       }
     });
-    this.v4.applyLayout();
   }
 
   initProps() {
@@ -39,11 +38,10 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     this.v5.rotationX = 50;
     this.v6.rotationY = 50;
     this.v7.scale = { x: 0.5, y: 0.75 };
-    this.v4.ios.masksToBounds = false;
-    this.v4.ios.shadowColor = Color.BLACK;
-    this.v4.ios.shadowOffset = { x: 2, y: 2 };
-    this.v4.ios.shadowOpacity = 0.75;
-    this.v4.ios.shadowRadius = 4;
+    // this.v4.ios.shadowColor = Color.BLACK;
+    // this.v4.ios.shadowOffset = { x: 2 };
+    // this.v4.ios.shadowOpacity = 0.75;
+    // this.v4.ios.shadowRadius = 4;
   }
 
   viewEvents() {
@@ -123,9 +121,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     });
   }
 
-  applyFlLayout() {
-    System.OS === System.OSType.IOS ? this.sv.layout.applyLayout() : this.flWrapper.applyLayout();
-  }
+  applyFlLayout() {}
 
   setAspectRatio() {
     [this.v1, this.v2, this.v3].forEach((v) => {

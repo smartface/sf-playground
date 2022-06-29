@@ -81,7 +81,6 @@ export default class PgGridViewRowRange extends withDismissAndBackButton(PgGridV
       let { title, backgroundColor } = this.myDataset[index];
       gridViewItem.lblTitle.text = title;
       gridViewItem.lblTitle.backgroundColor = backgroundColor;
-      gridViewItem.applyLayout();
     };
   }
 
