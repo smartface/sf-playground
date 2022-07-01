@@ -7,7 +7,7 @@
     "@smartface/extension-utils": "^17.0.0",
     "@smartface/i18n": "^5.0.3",
     "@smartface/mixins": "^5.0.3",
-    "@smartface/native": "alpha",
+    "@smartface/native": "^5.0.3-alpha.43",
     "@smartface/router": "^2.3.1",
     "@smartface/source-map": "^5.0.3",
     "@smartface/styling-context": "^5.0.3",
