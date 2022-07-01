@@ -52,6 +52,7 @@
 			"props": {
 				"autoSizeEnabled": false,
 				"children": [
+					"298a-d74b-127a-c768",
 					"4bb0-184a-2c84-ef2a",
 					"294f-4c49-0903-b54c",
 					"6d67-34fc-4190-f0c6",
@@ -79,6 +80,17 @@
 			"userProps": {
 				"autoSizeEnabled": false
 			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "298a-d74b-127a-c768",
+			"props": {
+				"children": [],
+				"name": "imageView1",
+				"parent": "3265-4632-8823-84ec"
+			},
+			"type": "ImageView",
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label",

@@ -199,5 +199,6 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
    */
   onLoad() {
     super.onLoad();
+    this.imageView1.image = Image.createFromFile('assets://icon.png');
   }
 }
