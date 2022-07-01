@@ -10,6 +10,7 @@ import Image from '@smartface/native/ui/image';
 import getRandomColor from 'lib/getRandomColor';
 import AttributedString from '@smartface/native/ui/attributedstring';
 import Screen from '@smartface/native/device/screen';
+import HeaderBarItem from '@smartface/native/ui/headerbaritem';
 
 export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDesign) {
   private _visible = true;
@@ -27,6 +28,7 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
     this.btnSetPadding.on('press', () => this.setPadding());
     this.btnSetLogo.on('press', () => this.setLogo());
     this.btnSetItemColor.on('press', () => this.setItemColor());
+    this.btnItems.on('press', () => this.setItems());
     this.btnGetHeight.on('press', () => this.getHeight());
     this.btnSetContentInset.on('press', () => this.setContentInset());
     this.btnSetBorderVisibility.on('press', () => this.changeBorderVisibility());
@@ -44,6 +46,12 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
   changeAlpha(value) {
     console.info('changeAlpha');
     this.getHeaderBar().alpha = value;
+  }
+
+  setItems() {
+    console.info('setItems');
+    const headerBarItem = new HeaderBarItem({ image: 'images://close_icon.png' });
+    this.headerBar.setItems([headerBarItem]);
   }
 
   generateAttributedString(str: string) {
@@ -97,7 +105,6 @@ export default class PgHeaderBar extends withDismissAndBackButton(PgHeaderBarDes
   setItemColor() {
     console.info('setItemColor');
     this.getHeaderBar().itemColor = getRandomColor();
-    this.getHeaderBar().backgroundColor = getRandomColor();
   }
 
   setLogo() {
