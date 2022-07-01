@@ -9,12 +9,17 @@
 					"23c1-aa21-38ff-148e",
 					"76f4-a7ec-36e9-a444"
 				],
+				"itemCount": 5,
+				"itemLength": 227,
 				"name": "__library__",
 				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
-			"userProps": {},
+			"userProps": {
+				"itemCount": 5,
+				"itemLength": 227
+			},
 			"version": "6.15.1"
 		},
 		{

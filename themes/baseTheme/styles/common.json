@@ -90,5 +90,17 @@
       "bottom": 15,
       "top": 15
     }
+  },
+  ".flShadow": {
+    "flexProps": {
+      "flexGrow": 1,
+      "alignItems": "CENTER",
+      "justifyContent": "CENTER",
+      "alignContent": "CENTER"
+    }
+  },
+  ".flLabel": {
+    "width": 50,
+    "textColor": "rgba( 155, 155, 155, 1 )"
   }
 }

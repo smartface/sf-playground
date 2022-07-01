@@ -1,15 +1,16 @@
 {
     "application.confirmExit": "ifRequired",
     "files.watcherExclude": {
-      "**/.git/objects/**": true,
-      "**/.git/subtree-cache/**": true,
-      "**/node_modules/**": true,
-      "**/dist/**": true,
-      "**/scripts/generated/**": true,
-      "**/.ui/**": true
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/dist/**": true,
+        "**/scripts/generated/**": true,
+        "**/.ui/**": true
     },
     "workspace.preserveWindow": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.autoSave": "off",
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "explorer.autoReveal": true
 }
