@@ -61,13 +61,18 @@
 					"3b1a-e7e4-043c-9a63",
 					"3549-84e6-5372-fa4f",
 					"727d-c9ed-405d-c3b5",
-					"f131-1066-b1af-9422"
+					"f131-1066-b1af-9422",
+					"986a-9e36-8802-cec0",
+					"8a11-0c62-5386-cf13"
 				],
+				"hint": "Click here to test Snappiness",
 				"name": "svMain",
 				"parent": "f514-b2a5-80fd-2e93"
 			},
 			"type": "ScrollView",
-			"userProps": {}
+			"userProps": {
+				"hint": "Click here to test Snappiness"
+			}
 		},
 		{
 			"className": ".sf-label",
@@ -359,7 +364,7 @@
 			}
 		},
 		{
-			"className": ".sf-textView .grow-relative",
+			"className": ".sf-textView",
 			"id": "f131-1066-b1af-9422",
 			"oldName": "textView1",
 			"props": {
@@ -377,6 +382,39 @@
 				"testId": "tH9DFQr8x",
 				"top": 0,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "986a-9e36-8802-cec0",
+			"oldName": "lblTextView_1",
+			"props": {
+				"children": [],
+				"name": "lblTextBoxKeyboard",
+				"parent": "5cc7-98e2-ea6e-4784",
+				"text": "TEXTBOX KEYBOARD SNAP"
+			},
+			"type": "Label",
+			"userProps": {
+				"left": 0,
+				"text": "TEXTBOX KEYBOARD SNAP",
+				"textAlignment": "MIDCENTER",
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"id": "8a11-0c62-5386-cf13",
+			"oldName": "textBox1",
+			"props": {
+				"children": [],
+				"name": "tbKeyboardSnapTest",
+				"parent": "5cc7-98e2-ea6e-4784",
+				"text": "textBox1"
+			},
+			"type": "TextBox",
+			"userProps": {
+				"text": "textBox1"
 			}
 		}
 	]

@@ -3,9 +3,9 @@
 
 
 "@babel/runtime@^7.17.2":
-  version "7.18.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
-  integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
+  version "7.18.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
+  integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -93,9 +93,9 @@
     events "^3.3.0"
 
 "@smartface/native@alpha":
-  version "5.0.3-alpha.29"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-alpha.29.tgz#194f29d87628af65336d8599a3d8d8641fa96d25"
-  integrity sha512-jE9YGeo1K/UeHM2selBMGjILQNXcD36FDgqqz2t2hlBt1rTX3usVIrkic2ufoIsy4J3TpvsToc47CopZvk3mTg==
+  version "5.0.3-alpha.52"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3-alpha.52.tgz#ddb6b04e3c3b9479ebe0e72f00d82d7efda70f88"
+  integrity sha512-5CX2ER+rh3+EcVPVioz+M+XZSY8RitAMoUQ5NNVcy/yTCGwLNhXFGz6/ppClZH9sznLROWQaWibfg/LBc730ZA==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
@@ -116,9 +116,9 @@
     source-map "0.6.1"
 
 "@smartface/styler@^2.0.0":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-2.0.3.tgz#e144b4054faeffa4fa0432af0d84f48664dddee2"
-  integrity sha512-GNYwWDQamYd6Qka9sI1kjZTsWbxEjPSRKlHOYLBaGT/CJfRXt7BOPyZS5yO8/6J/2LAdZE5VOko9By3fuJ+bWA==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-2.1.0.tgz#a4d200f80c391352af52c5b9fce3035939af2619"
+  integrity sha512-c/SAF3eelLmA/k19Y1frDb+Vauw0OHV27gl1S0DwINA5saz1kN6InYYYmmxc4SJMX4lCeMNgCJZMK2X57vzEfg==
 
 "@smartface/styling-context@^5.0.3":
   version "5.0.3"
@@ -137,10 +137,11 @@
     events "^3.3.0"
 
 "@smartface/webviewbridge@^5.0.3-beta.2":
-  version "5.0.3-beta.2"
-  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.0.3-beta.2.tgz#c051bec02b8863ef9822ce8c7f111b1ce67960fc"
-  integrity sha512-w8ICgYajxPAttVBl3XGcwwiJp4yygQf/HZml153RUO0l9wHUHN234dAYbXZZqNca/o4nbvZA7sAIu06DTGSJCQ==
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.0.3.tgz#81937cca6a3a0d353790eaf4df5ddd66b23d415e"
+  integrity sha512-Er/ReoZKqOcwwQGxkgirAA3n7JtiN/OafS4gCJZX1oz9EIZLus+2dlTsLITAUk9S1vZPwxZkFqxy3Q7me2gb4g==
   dependencies:
+    "@types/events" "^3.0.0"
     events "^3.3.0"
 
 "@types/events@^3.0.0":
@@ -265,9 +266,9 @@ moment-hijri@2.1.2:
     moment "^2.24.0"
 
 moment@>=2.14.0, moment@^2.24.0, moment@^2.28.0:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 path-to-regexp@^2.4.0:
   version "2.4.0"
