@@ -1,0 +1,48 @@
+{
+  "#pgShadow": {
+    "&-lvMain": {
+      "flexProps": {
+        "flexGrow": 1
+      }
+    },
+    "&-lviCompanyInfoExtended": {
+      "flexProps": {
+        "positionType": "RELATIVE"
+      },
+      "flex": {
+        "positionType": 0
+      }
+    },
+    "&-gridView1": {
+      "layoutManager": {
+        "spanCount": 2
+      }
+    },
+    "&-gvMain": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "layoutManager": {
+        "scrollDirection": "VERTICAL",
+        "spanCount": 2
+      }
+    },
+    "&-gviTitle": {
+      "paddingLeft": 16,
+      "flexProps": {
+        "positionType": "RELATIVE"
+      },
+      "flex": {
+        "positionType": 0
+      }
+    },
+    "&-gviShadow": {
+      "flexProps": {
+        "positionType": "RELATIVE"
+      },
+      "flex": {
+        "positionType": 0
+      }
+    }
+  }
+}
