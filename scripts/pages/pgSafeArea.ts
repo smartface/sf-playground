@@ -15,7 +15,6 @@ export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesig
           paddingTop: padding.top
         }
       });
-      this.layout.applyLayout();
     };
     this.onOrientationChange = () => {
       console.info('orientation changed');

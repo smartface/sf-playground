@@ -55,6 +55,7 @@
 				"children": [
 					"5e8a-cacb-b6df-73e3",
 					"d885-288d-dc5d-40be",
+					"c4c1-1e7e-38fd-d1d0",
 					"ddd1-6bbe-78cd-61ff",
 					"3ec1-4997-7148-871c",
 					"22c1-854c-48d7-86fb",
@@ -112,6 +113,21 @@
 				"text": "Change visibility",
 				"top": 0,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "c4c1-1e7e-38fd-d1d0",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnItems",
+				"parent": "96ce-2a24-84a8-2478",
+				"text": "Set Right Items"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Set Right Items"
 			}
 		},
 		{

@@ -1,5 +1,5 @@
 import PgButtonPressDesign from 'generated/pages/pgButtonPress';
-import WebViewBridge from '@smartface/extension-utils/lib/webviewbridge';
+import WebViewBridge from '@smartface/webviewbridge';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';

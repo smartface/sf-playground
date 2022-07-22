@@ -1,0 +1,184 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "bbf1-b3c9-b1a8-81df",
+			"initialized": true,
+			"props": {
+				"children": [
+					"5999-4e03-1e9d-1954",
+					"5596-19f2-b1e1-6ce5",
+					"96f9-aa2d-b925-350c",
+					"a323-2aaa-6349-05b7",
+					"fbe9-0099-febc-4fd4",
+					"47b0-a2c2-ec48-5cbb",
+					"dcae-6151-b53b-77e8"
+				],
+				"name": "pgOrientation",
+				"orientation": "AUTO",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"version": "0.10.0-rc.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "5999-4e03-1e9d-1954",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "bbf1-b3c9-b1a8-81df"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "5596-19f2-b1e1-6ce5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "bbf1-b3c9-b1a8-81df",
+				"title": "pgOrientation"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgOrientation"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "96f9-aa2d-b925-350c",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnOrientationPortrait",
+				"parent": "bbf1-b3c9-b1a8-81df",
+				"text": "Portrait"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Portrait"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a323-2aaa-6349-05b7",
+			"oldName": "button2",
+			"props": {
+				"children": [],
+				"name": "btnOrientationLandscape",
+				"parent": "bbf1-b3c9-b1a8-81df",
+				"text": "Landscape"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Landscape"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "fbe9-0099-febc-4fd4",
+			"oldName": "button3",
+			"props": {
+				"children": [],
+				"name": "btnOrientationAuto",
+				"parent": "bbf1-b3c9-b1a8-81df",
+				"text": "Auto"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Auto"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgOrientation-textWrapper",
+			"id": "47b0-a2c2-ec48-5cbb",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"f920-0d59-ead9-0a2d",
+					"edaf-c1cb-14e4-83fe"
+				],
+				"name": "flOrientationTextWrapper",
+				"parent": "bbf1-b3c9-b1a8-81df"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgOrientation-text",
+			"id": "f920-0d59-ead9-0a2d",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblOrientationText",
+				"parent": "47b0-a2c2-ec48-5cbb",
+				"text": "Current Orientation: "
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Current Orientation: "
+			}
+		},
+		{
+			"className": ".sf-label #pgOrientation-text",
+			"id": "edaf-c1cb-14e4-83fe",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"name": "lblOrientation",
+				"parent": "47b0-a2c2-ec48-5cbb"
+			},
+			"type": "Label",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #pgOrientation-textWrapper",
+			"id": "dcae-6151-b53b-77e8",
+			"oldName": "flOrientationTextWrapper_1",
+			"props": {
+				"children": [
+					"75f8-c839-57f7-c953",
+					"ccb5-1f51-3da5-449a"
+				],
+				"name": "flOrientationModeWrapper",
+				"parent": "bbf1-b3c9-b1a8-81df"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgOrientation-text",
+			"id": "75f8-c839-57f7-c953",
+			"oldName": "lblOrientationText_1",
+			"props": {
+				"children": [],
+				"name": "lblOrientationMode",
+				"parent": "dcae-6151-b53b-77e8",
+				"text": "Orientation Mode: "
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Orientation Mode: "
+			}
+		},
+		{
+			"className": ".sf-label #pgOrientation-text",
+			"id": "ccb5-1f51-3da5-449a",
+			"oldName": "lblOrientation_1",
+			"props": {
+				"children": [],
+				"name": "lblOrientationModeText",
+				"parent": "dcae-6151-b53b-77e8"
+			},
+			"type": "Label",
+			"userProps": {}
+		}
+	]
+}

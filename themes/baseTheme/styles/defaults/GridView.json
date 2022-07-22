@@ -1,0 +1,9 @@
+{
+  ".sf": {
+    "&-gridView": {
+      "layoutManager": {
+        "scrollDirection": "HORIZONTAL"
+      }
+    }
+  }
+}

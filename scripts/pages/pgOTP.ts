@@ -1,5 +1,5 @@
 import PgOTPDesign from 'generated/pages/pgOTP';
-import Permission from '@smartface/extension-utils/lib/permission';
+import Permission from '@smartface/native/device/permission';
 import Application from '@smartface/native/application';
 import SMSReceiver from '@smartface/native/device/smsreceiver';
 import TextContentType from '@smartface/native/ui/shared/textcontenttype';
@@ -9,6 +9,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import Font from '@smartface/native/ui/font';
+import { PermissionResult, Permissions } from '@smartface/native/device/permission/permission';
 
 export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
   datePicker: DatePicker;
@@ -20,17 +21,16 @@ export default class PgOTP extends withDismissAndBackButton(PgOTPDesign) {
     if (System.OS === System.OSType.IOS) {
       return; // Only works on Android
     }
-    Permission.getPermission({
-      androidPermission: Application.Android.Permissions.RECEIVE_SMS as any, //TODO: Fix after util-to-native
-      permissionText: 'Requesting to Receive SMS to do awesome stuff',
-      permissionTitle: 'Permission Required'
-    }).then(() => {
-      SMSReceiver.registerReceiver();
-      SMSReceiver.callback = (e) => {
-        console.info(e);
-        alert('SMS IS RECEIVED');
-        SMSReceiver.unRegisterReceiver();
-      };
+    Permission.android.requestPermissions(Permissions.ANDROID.RECEIVE_SMS).then((e) => {
+      const result = e[0];
+      if (result === PermissionResult.GRANTED) {
+        SMSReceiver.registerReceiver();
+        SMSReceiver.callback = (e) => {
+          console.info(e);
+          alert('SMS IS RECEIVED');
+          SMSReceiver.unRegisterReceiver();
+        };
+      }
     });
   }
 

@@ -1,9 +1,10 @@
 import PgCallDetectionDesign from 'generated/pages/pgCallDetection';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import { getPermission } from '@smartface/extension-utils/lib/permission';
 import Application from '@smartface/native/application';
 import CallDetection from '@smartface/native/device/calldetection';
+import Permission from '@smartface/native/device/permission';
+import { PermissionResult, Permissions } from '@smartface/native/device/permission/permission';
 
 export default class PgCallDetection extends withDismissAndBackButton(PgCallDetectionDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -11,16 +12,9 @@ export default class PgCallDetection extends withDismissAndBackButton(PgCallDete
   }
 
   async initCallStateListener() {
-    try {
-      await getPermission({
-        permissionText: 'CallPerm',
-        androidPermission: 'READ_PHONE_STATE',
-        permissionTitle: 'CallPermTitle',
-        showSettingsAlert: false
-      });
+    const results = await Permission.android.requestPermissions(Permissions.ANDROID.READ_PHONE_STATE);
+    if (results[0] === PermissionResult.GRANTED) {
       CallDetection.on('callStateChanged', (a) => console.info(a));
-    } catch (e) {
-      console.error(e.message, { stack: e.stack });
     }
   }
 

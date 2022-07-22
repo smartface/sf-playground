@@ -13,12 +13,12 @@
 					"27dc-460a-04eb-dbd1"
 				],
 				"name": "mainPage",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
 			"userProps": {
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"paddingBottom": null,
 				"paddingLeft": null,
 				"paddingRight": null,

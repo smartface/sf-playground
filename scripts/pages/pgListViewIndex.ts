@@ -115,7 +115,6 @@ export default class PgListViewIndex extends withDismissAndBackButton(PgListView
     // this.listViewIndex.listViewIndexMinimumWidth = 40;
 
     this.layout.addChild(this.listViewIndex);
-    this.layout.applyLayout();
   }
 
   onShow() {

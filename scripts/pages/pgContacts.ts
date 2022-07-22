@@ -1,9 +1,10 @@
 import PgContactsDesign from 'generated/pages/pgContacts';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import { getPermission } from '@smartface/extension-utils/lib/permission';
+import Permission from '@smartface/native/device/permission';
 import Contacts from '@smartface/native/device/contacts';
 import Application from '@smartface/native/application';
+import { PermissionResult, Permissions } from '@smartface/native/device/permission/permission';
 
 export default class PgContacts extends withDismissAndBackButton(PgContactsDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -11,26 +12,26 @@ export default class PgContacts extends withDismissAndBackButton(PgContactsDesig
   }
 
   getAllContacts() {
-    getPermission({ permissionText: 'READ_CONTACTS', androidPermission: 'READ_CONTACTS', permissionTitle: 'contacts permission' }).then(() =>
+    Permission.android.requestPermissions(Permissions.ANDROID.READ_CONTACTS).then((e) => {
       Contacts.fetchAll({
         onSuccess: (contacts) => console.info(contacts.map((contact) => Object.keys(contact))),
         onFailure: (error) => console.error('fetchAll Failed', error)
-      })
-    );
+      });
+    });
   }
 
   pickContact() {
-    getPermission({ permissionText: 'READ_CONTACTS', androidPermission: 'READ_CONTACTS', permissionTitle: 'contacts permission' }).then(() =>
+    Permission.android.requestPermissions(Permissions.ANDROID.READ_CONTACTS).then((e) => {
       Contacts.pickContact(this, {
         onSuccess: (contact) => console.info(contact),
         onFailure: () => console.error('pickContact Failed')
-      })
-    );
+      });
+    });
   }
 
   async addContact() {
     try {
-      await getPermission({ permissionText: 'WRITE_CONTACTS', androidPermission: 'WRITE_CONTACTS', permissionTitle: 'contacts permission' });
+      await Permission.android.requestPermissions(Permissions.ANDROID.WRITE_CONTACTS);
       Contacts.add({
         contact: new Contacts.Contact({ firstName: 'Smartface', lastName: 'Mobile', phoneNumbers: ['0000'] }),
         onSuccess: () => console.info('add Success'),
