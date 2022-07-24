@@ -65,14 +65,10 @@
 					"986a-9e36-8802-cec0",
 					"8a11-0c62-5386-cf13"
 				],
-				"hint": "Click here to test Snappiness",
 				"name": "svMain",
 				"parent": "f514-b2a5-80fd-2e93"
 			},
-			"type": "ScrollView",
-			"userProps": {
-				"hint": "Click here to test Snappiness"
-			}
+			"type": "ScrollView"
 		},
 		{
 			"className": ".sf-label",
