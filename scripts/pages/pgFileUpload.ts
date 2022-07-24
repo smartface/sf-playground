@@ -16,6 +16,7 @@ import { Router } from '@smartface/router';
 import { IImage } from '@smartface/native/ui/image/image';
 import Color from '@smartface/native/ui/color';
 import { styleableComponentMixin } from '@smartface/styling-context';
+import { MenuItemStyle } from '@smartface/native/ui/menuitem/menuitem';
 
 class StyleableView extends styleableComponentMixin(View) {}
 
@@ -71,8 +72,8 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
     const menuItemDocument = new MenuItem({ title: 'Pick a File' });
     const menuItemCancel = new MenuItem({ title: 'Cancel' });
     menuItemCamera.android.titleColor = Color.RED;
-    menuItemCancel.ios.style = MenuItem.Styles.CANCEL;
-    menuItemDocument.ios.style = MenuItem.Styles.DESTRUCTIVE;
+    menuItemCancel.ios.style = MenuItemStyle.CANCEL;
+    menuItemDocument.ios.style = MenuItemStyle.DESTRUCTIVE;
     menuItemCamera.on('selected', () => {
       /**
        * Don't forget to grant relevant permissions before calling this on your published app.

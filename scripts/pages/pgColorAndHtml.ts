@@ -35,7 +35,7 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     const g = parseInt(this.tbG.text) || 0;
     const b = parseInt(this.tbB.text) || 0;
     const color = Color.create(r, g, b);
-    const colorValues = this.getColorValues(color);
+    const colorValues = this.getColorValues(color as any);
     this.updateRgbTextBoxes(r, g, b);
     this.updateRgbLabels(colorValues);
   }
@@ -125,7 +125,11 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
     this.tvAttrString.on('linkClick', () => {
       console.log('Textview LinkClick test');
     });
-    this.btnGradientColor.backgroundColor = Color.createGradient({ direction: Color.GradientDirection.DIAGONAL_LEFT, startColor: Color.RED, endColor: Color.BLACK });
+    this.btnGradientColor.backgroundColor = Color.createGradient({
+      direction: Color.GradientDirection.DIAGONAL_LEFT,
+      startColor: Color.RED,
+      endColor: Color.BLACK
+    });
   }
 
   onShow() {

@@ -10,6 +10,7 @@ import System from '@smartface/native/device/system';
 import Picker from '@smartface/native/ui/picker';
 import { BlurViewEffectStyle } from '@smartface/native/ui/blurview/blurview';
 import Color from '@smartface/native/ui/color';
+import { IColor } from '@smartface/native/ui/color/color';
 
 class StyleableBlurView extends styleableComponentMixin(BlurView) {}
 class StyleableButton extends styleableComponentMixin(Button) {}
@@ -19,7 +20,7 @@ export default class PgBlurView extends withDismissAndBackButton(PgBlurViewDesig
   private myBlurView: StyleableBlurView;
   private _blurRadius = 16;
   private _effectStyle: BlurViewEffectStyle = BlurViewEffectStyle.LIGHT;
-  private _overlayColor: Color = Color.BLACK;
+  private _overlayColor: IColor = Color.BLACK;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.sliderRadius.on('valueChange', (value) => {

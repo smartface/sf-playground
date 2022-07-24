@@ -10,6 +10,7 @@ import { styleableComponentMixin } from '@smartface/styling-context';
 import System from '@smartface/native/device/system';
 import Hardware from '@smartface/native/device/hardware';
 import Accelerometer from '@smartface/native/device/accelerometer';
+import { DialogStyle } from '@smartface/native/ui/dialog/dialog';
 
 class StyleableActivityIndicator extends styleableComponentMixin(ActivityIndicator) {}
 class StyleableImageView extends styleableComponentMixin(ImageView) {}
@@ -79,7 +80,7 @@ export default class PgGlide extends PgGlideDesign {
   initDialog() {
     this.dialog = new Dialog({
       android: {
-        themeStyle: Dialog.Android.Style.ThemeNoHeaderBar // Show StatusBar
+        themeStyle: DialogStyle.ThemeNoHeaderBar // Show StatusBar
         // isTransparent: true,
         // cancelable: true
       }

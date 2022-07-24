@@ -3,10 +3,10 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import { ButtonEvents } from '@smartface/native/ui/button/button-events';
 import { Timer } from '@smartface/native/global';
-import { TimerBase } from '@smartface/native/global/timer/timer';
+import { ITimer } from '@smartface/native/global/timer/timer';
 
 export default class PgTimer extends withDismissAndBackButton(PgTimerDesign) {
-  interval: TimerBase;
+  interval: number;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.btnCreateInterval.on('press', this.createInterval);
