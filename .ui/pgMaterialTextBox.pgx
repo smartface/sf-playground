@@ -90,7 +90,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout #pgMaterialTextBox-characterRestrictionWrapper",
 			"id": "dc28-91b8-288b-7a3e",
 			"oldName": "flexLayout1",
 			"props": {
@@ -102,17 +102,7 @@
 				"parent": "fcd5-11c1-4a1d-910e"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "CENTER",
-					"alignContent": "CENTER",
-					"alignItems": "CENTER"
-				},
-				"height": 55,
-				"left": 0,
-				"top": 0
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-textBox",

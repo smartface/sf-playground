@@ -1,0 +1,15 @@
+{
+  "#pgMaterialTextBox": {
+    "&-characterRestrictionWrapper": {
+      "height": 55,
+      "flexProps": {
+        "flexDirection": "ROW",
+        "justifyContent": "CENTER",
+        "alignContent": "STRETCH",
+        "alignItems": "CENTER",
+        "flexWrap": "NOWRAP",
+        "direction": "INHERIT"
+      }
+    }
+  }
+}

@@ -32,9 +32,9 @@
     regenerator-runtime "^0.13.4"
 
 "@babel/runtime@^7.7.2":
-  version "7.18.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
-  integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
+  version "7.18.9"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.9.tgz#b4fcfce55db3d2e5e080d2490f608a3b9f407f4a"
+  integrity sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -636,9 +636,9 @@
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
 "@smartface/builder@^0.10.0-rc":
-  version "0.10.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.10.0-rc.4.tgz#9657f6873e744ba806014d0d9a64d2dfa135e25e"
-  integrity sha512-1113P6TIU8v1tB0YrgUztBEJe2KrRMKx0YvDVQwtH6fy1iao4XUwXSx6pLNTupkF0yeYhW2XWbNwkWuXJ4RPJg==
+  version "0.10.0-rc.6"
+  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.10.0-rc.6.tgz#60478c1cb801556610035e369da58e22b2f58eda"
+  integrity sha512-ZjQ9tbQZQhJb1lgPSH1ybr05qHNFyA50nvnzSY59BbZ/hCoAcBblAC4eaepS/14/cLkC1n7WEub7rmPbym9LHw==
   dependencies:
     "@smartface/html-to-text" "^1.0.5"
     "@smartface/library-reader" "^0.8.4"
@@ -662,9 +662,9 @@
     text "^0.1.0"
 
 "@smartface/dispatcher@^0.10.0-rc":
-  version "0.10.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.0-rc.4.tgz#01d0a420f2c15f2d402af95bf34fbc1e9092b9a6"
-  integrity sha512-dc2R4Y7gbKF/afdFbNKIzfGNDQ428/QN/JqLArsK7aeO3GHZXaMZgdpc8tPmA0U6YxG+wyXsupDhGWrljP6WRA==
+  version "0.10.0-rc.6"
+  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.0-rc.6.tgz#e59fb22b3e7d6c928453a5536dcb09f273a86324"
+  integrity sha512-tlfkXjIgcMUbuG68FG5v3YsNPNwXFQKDOOwnigaU+T/lV+RJu/TGW3zd4f8oKmNnrdxSeinLnbKlqMmMHf6kgg==
   dependencies:
     cors "^2.8.5"
     crc-32 "^1.2.0"
@@ -705,9 +705,9 @@
     rmdir "^1.2.0"
 
 "@smartface/library-reader@^0.10.0-rc":
-  version "0.10.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.10.0-rc.4.tgz#b76685ce4b67eb9b4a64e8c4ca5f82d3f409a4eb"
-  integrity sha512-poh1/TCKvub2kq3MHSVcEy750tDgJvNbDq4A2fTwPlrxFyZXtXWWb4U6Erds7iL/u3NANpu2l1o1nd5LbLxz5Q==
+  version "0.10.0-rc.6"
+  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.10.0-rc.6.tgz#6883431c15e9c72635f871868e0197bcaa27e4f5"
+  integrity sha512-WT/ie+3u+/5JREfQckt3Ryfgn7Ed1GsSroNjdFEttOnK+syI7Twdaz54kx1b7+Qy6rrAH4ZOki0rtLz2zqQ6qg==
   dependencies:
     async "^2.6.1"
 
@@ -741,9 +741,9 @@
   integrity sha512-WlHAJnAiXgKmT/4qh8Rx3TO9Y4sejDo2Xe/M25s4ClECWNB+RY132KDq0LPi2ZnmmCOASRg6Qbp7QZ24WYQdTA==
 
 "@smartface/tsc-watch@^0.10.0-rc":
-  version "0.10.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.10.0-rc.4.tgz#0a506d35c797931c24f34b76fe372572bd653d18"
-  integrity sha512-oTfiy4che87eaaCM5EGqujxnBINtDEUg/IL0wBNXZDsC+LiSGuNbx4MZuA6+99l1fGUbhZaDBs+xEkRQgpAoqw==
+  version "0.10.0-rc.6"
+  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.10.0-rc.6.tgz#73190694840dd4ca52650beaeffea7158bc17f16"
+  integrity sha512-XcXeFrza21mggqBD8D2HElJ/7vDmONwdxkQ8jvGNnx068WUk4NeKmigYlxbBQL+0OFeql3DhSaHZCHJ3+w27Sw==
   dependencies:
     chalk "^4.1.2"
     tsc-watch "^4.6.0"
@@ -1649,9 +1649,9 @@ download@^7.1.0:
     pify "^3.0.0"
 
 duplexer3@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
-  integrity sha512-CEj8FwwNA4cVH2uFCoHUrmojhYh1vmCdOaneKJXwkeY1i9jnlslVo9dx+hQ5Hl9GnH/Bwy/IjxAyOePyPKYnzA==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.5.tgz#0b5e4d7bad5de8901ea4440624c8e1d20099217e"
+  integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 duplexer@~0.1.1:
   version "0.1.2"
@@ -2517,9 +2517,9 @@ global@~4.4.0:
     process "^0.11.10"
 
 globals@^13.6.0, globals@^13.9.0:
-  version "13.16.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-13.16.0.tgz#9be4aca28f311aaeb974ea54978ebbb5e35ce46a"
-  integrity sha512-A1lrQfpNF+McdPOnnFqY3kSN0AFTy485bTi1bkLk4mVPODIUEcSfhHgRqA+QdXPksrSTTztYXx37NFV+GpGk3Q==
+  version "13.17.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-13.17.0.tgz#902eb1e680a41da93945adbdcb5a9f361ba69bd4"
+  integrity sha512-1C+6nQRb1GwGMKm2dH/E7enFAMxGTmGI7/dEdhy/DNelv85w9B72t3uc5frtMNXIbzrarJJ/lTCjcaZwbLJmyw==
   dependencies:
     type-fest "^0.20.2"
 
