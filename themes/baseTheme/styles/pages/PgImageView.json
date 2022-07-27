@@ -1,0 +1,15 @@
+{
+  "#pgImageView": {
+    "&-imgOriginal": {
+      "borderColor": "rgba( 0, 0, 0, 1 )",
+      "borderWidth": 1,
+      "height": 160,
+      "image": "smartface.png",
+      "imageFillType": "MIDCENTER",
+      "left": 0,
+      "testId": "6_UakgonT",
+      "top": 0,
+      "usePageVariable": true
+    }
+  }
+}

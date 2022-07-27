@@ -99,7 +99,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView #pgImageView-imgOriginal",
 			"id": "294f-4c49-0903-b54c",
 			"oldName": "imgMain_1",
 			"props": {
@@ -109,17 +109,7 @@
 				"usePageVariable": true
 			},
 			"type": "ImageView",
-			"userProps": {
-				"borderColor": "rgba( 0, 0, 0, 1 )",
-				"borderWidth": 1,
-				"height": 160,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFILL",
-				"left": 0,
-				"testId": "6_UakgonT",
-				"top": 0,
-				"usePageVariable": true
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label",
