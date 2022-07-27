@@ -1,0 +1,205 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "e3f6-aa44-c834-9d4a",
+			"initialized": true,
+			"props": {
+				"children": [
+					"8f23-1b8d-bc92-6218",
+					"5a3b-d3d7-f7cd-f6d1",
+					"0bfd-7149-9d61-24d0",
+					"57c9-fd2d-ea08-bf0b"
+				],
+				"name": "pgBorderRadius",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.10.0"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "8f23-1b8d-bc92-6218",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e3f6-aa44-c834-9d4a"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "5a3b-d3d7-f7cd-f6d1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e3f6-aa44-c834-9d4a",
+				"title": "pgBorderRadius"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgBorderRadius"
+			}
+		},
+		{
+			"className": ".sf-button #pgBorderRadius-btnMain",
+			"id": "0bfd-7149-9d61-24d0",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnMain",
+				"parent": "e3f6-aa44-c834-9d4a",
+				"text": "button1"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "button1"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgBorderRadius-flMain",
+			"id": "57c9-fd2d-ea08-bf0b",
+			"props": {
+				"children": [
+					"ed3e-7257-beb2-6be2",
+					"5e00-7758-5a2e-21b7",
+					"c697-e1e5-3b4f-d4af",
+					"7c6c-9031-8ef4-73b0",
+					"9eae-df28-3289-714e",
+					"165f-9e9c-63b7-f6f7",
+					"cbd7-c205-1da6-925d",
+					"51e4-fac3-b798-3bdc"
+				],
+				"name": "flexLayout1",
+				"parent": "e3f6-aa44-c834-9d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label",
+			"id": "ed3e-7257-beb2-6be2",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblTopLeft",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"text": "Top Left"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Top Left"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "5e00-7758-5a2e-21b7",
+			"oldName": "switch1",
+			"props": {
+				"children": [],
+				"name": "swTopLeft",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"toggle": false
+			},
+			"type": "Switch",
+			"userProps": {
+				"toggle": false
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "c697-e1e5-3b4f-d4af",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"name": "lblTopRight",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"text": "Top Right"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Top Right"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "7c6c-9031-8ef4-73b0",
+			"oldName": "switch2",
+			"props": {
+				"children": [],
+				"name": "swTopRight",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"toggle": false
+			},
+			"type": "Switch",
+			"userProps": {
+				"toggle": false
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "9eae-df28-3289-714e",
+			"oldName": "label3",
+			"props": {
+				"children": [],
+				"name": "lblBottomLeft",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"text": "Bottom Left"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Bottom Left"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "165f-9e9c-63b7-f6f7",
+			"oldName": "switch3",
+			"props": {
+				"children": [],
+				"name": "swBottomLeft",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"toggle": false
+			},
+			"type": "Switch",
+			"userProps": {
+				"toggle": false
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "cbd7-c205-1da6-925d",
+			"oldName": "label4",
+			"props": {
+				"children": [],
+				"name": "lblBottomRight",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"text": "Bottom Right"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Bottom Right"
+			}
+		},
+		{
+			"className": ".sf-switch",
+			"id": "51e4-fac3-b798-3bdc",
+			"oldName": "switch4",
+			"props": {
+				"children": [],
+				"name": "swBottomRight",
+				"parent": "57c9-fd2d-ea08-bf0b",
+				"toggle": false
+			},
+			"type": "Switch",
+			"userProps": {
+				"toggle": false
+			}
+		}
+	]
+}
