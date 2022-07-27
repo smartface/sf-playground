@@ -1,21 +1,18 @@
 import PgListViewMaterialDesign from 'generated/pages/pgListViewMaterial';
-import FlMaterialTextBox from '@smartface/component-materialtextbox';
+// import FlMaterialTextBox from '@smartface/component-materialtextbox';
 import LviMaterialTextBox from 'components/LviMaterialTextBox';
 import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router } from '@smartface/router';
+import { IMaterialTextBox } from '@smartface/native/ui/materialtextbox/materialtextbox';
 
 export default class PgListViewMaterial extends withDismissAndBackButton(PgListViewMaterialDesign) {
-  data: ReturnType<PgListViewMaterial['generateMaterialData']>[] = Array.from(Array(30), () => this.generateMaterialData());
+  data: Partial<IMaterialTextBox>[] = Array.from(Array(30), () => ({
+    hint: 'test',
+    text: 'asdf'
+  }));
   constructor(private router?: Router, private route?: Route) {
     super({});
-  }
-
-  private generateMaterialData(): FlMaterialTextBox['options'] {
-    return {
-      hint: 'test',
-      text: 'asdf'
-    };
   }
 
   initListView() {

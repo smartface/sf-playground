@@ -4,6 +4,13 @@ import { Router, Route } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import Font from '@smartface/native/ui/font';
+import Picker from '@smartface/native/ui/picker';
+import Label from '@smartface/native/ui/label';
+import TextAlignment from '@smartface/native/ui/shared/textalignment';
+import Flex from '@smartface/native/ui/shared/Flex';
+import ImageView from '@smartface/native/ui/imageview';
+import Image from '@smartface/native/ui/image';
+import Application from '@smartface/native/application';
 
 export default class PgMaterialTextBox extends withDismissAndBackButton(PgMaterialTextBoxDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -18,15 +25,87 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
   }
 
   setRightLayout() {
-    const view = new FlexLayout({
-      flexGrow: 1,
-      backgroundColor: Color.BLUE
+    const picker = new Picker({
+      items: ['Default Right Layout', 'Clear All', 'Show Hide', 'Dropdown']
     });
-    this.mtbExample.rightLayout = {
-      view,
-      width: 40,
-      height: 20
-    };
+    picker.show((params) => {
+      let view: FlexLayout;
+      switch (params.index) {
+        // Clear All
+        case 1: {
+          view = new FlexLayout({
+            flexGrow: 1
+          });
+          const label = new Label({
+            text: 'Clear All',
+            flexGrow: 1
+          });
+          view.onTouch = () => {
+            this.mtbExample.text = '';
+            return false;
+          };
+          view.addChild(label);
+          break;
+        }
+        case 2: {
+          // Show / Hide
+          view = new FlexLayout({
+            flexGrow: 1,
+            alignContent: FlexLayout.AlignContent.FLEX_END
+          });
+          const label = new Label({
+            text: 'Hide',
+            textAlignment: TextAlignment.MIDRIGHT,
+            flexGrow: 1
+          });
+          view.onTouch = () => {
+            const isPassword = this.mtbExample.isPassword;
+            this.mtbExample.isPassword = !isPassword; //Toggle the variable
+            label.text = isPassword ? 'Hide' : 'Show';
+            return false;
+          };
+          view.addChild(label);
+          break;
+        }
+        case 3: {
+          // Drop down
+
+          view = new FlexLayout({
+            flexGrow: 1,
+            alignContent: FlexLayout.AlignContent.FLEX_END
+          });
+          const mtb = this.mtbExample;
+          // this.mtbExample.onTouch = () => {
+          //   return true;
+          // };
+          this.mtbExample.onEditBegins = () => {
+            alert('dropdown pressed');
+            this.mtbExample.removeFocus();
+          };
+          this.mtbExample.nativeObject.enabled = false;
+          const imageview = new ImageView({
+            flexGrow: 1,
+            tintColor: Color.BLACK,
+            alignSelf: FlexLayout.AlignSelf.FLEX_END
+          });
+          imageview.image = Image.createFromFile('images://arrowbottom.png');
+          view.addChild(imageview);
+          break;
+        }
+        default: {
+          view = new FlexLayout({
+            flexGrow: 1,
+            backgroundColor: Color.BLUE
+          });
+          break;
+        }
+      }
+      this.mtbExample.rightLayout = {
+        view,
+        width: 60,
+        height: 20
+      };
+    });
   }
 
   setLeftLayout() {
