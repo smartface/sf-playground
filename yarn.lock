@@ -635,10 +635,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@smartface/builder@^0.10.0-rc":
-  version "0.10.0-rc.6"
-  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.10.0-rc.6.tgz#60478c1cb801556610035e369da58e22b2f58eda"
-  integrity sha512-ZjQ9tbQZQhJb1lgPSH1ybr05qHNFyA50nvnzSY59BbZ/hCoAcBblAC4eaepS/14/cLkC1n7WEub7rmPbym9LHw==
+"@smartface/builder@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.10.1.tgz#85cbb21d48059166878026c96c331282db0e079e"
+  integrity sha512-Aogk09lyJpwvGHFCfNkrbJzmqJgflJKnPE990bU+d6mFeJHm8Jm4TwntXVZmgnJd3RdDfIPBYCjFAMrc7eG91w==
   dependencies:
     "@smartface/html-to-text" "^1.0.5"
     "@smartface/library-reader" "^0.8.4"
@@ -661,10 +661,10 @@
     shortid "^2.2.16"
     text "^0.1.0"
 
-"@smartface/dispatcher@^0.10.0-rc":
-  version "0.10.0-rc.6"
-  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.0-rc.6.tgz#e59fb22b3e7d6c928453a5536dcb09f273a86324"
-  integrity sha512-tlfkXjIgcMUbuG68FG5v3YsNPNwXFQKDOOwnigaU+T/lV+RJu/TGW3zd4f8oKmNnrdxSeinLnbKlqMmMHf6kgg==
+"@smartface/dispatcher@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.1.tgz#eff7c8982910653b83e45e2a06a8659552ff5edf"
+  integrity sha512-kffDpaKYnvftoHoa6NhqUldMzxV5boeEf7PRwn6qDvFCln0+9oVKxSD9ee+KIgyPH+r9z3tJch0oCT1MNrx+ow==
   dependencies:
     cors "^2.8.5"
     crc-32 "^1.2.0"
@@ -704,10 +704,10 @@
     pngcrush "^3.0.0"
     rmdir "^1.2.0"
 
-"@smartface/library-reader@^0.10.0-rc":
-  version "0.10.0-rc.6"
-  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.10.0-rc.6.tgz#6883431c15e9c72635f871868e0197bcaa27e4f5"
-  integrity sha512-WT/ie+3u+/5JREfQckt3Ryfgn7Ed1GsSroNjdFEttOnK+syI7Twdaz54kx1b7+Qy6rrAH4ZOki0rtLz2zqQ6qg==
+"@smartface/library-reader@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.10.1.tgz#8cec95344cb7ccc5e3a7f5dfb2ff4c275550643c"
+  integrity sha512-O/71OXb9uxGLmV9hsPCLggt0qGhRGOZrHyvGx+uOg6zRW+gkhRsqjXfQZ+bvlFdQ0pu+V4cSvT0q0WtqmkQ3rQ==
   dependencies:
     async "^2.6.1"
 
@@ -740,10 +740,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-1.3.16.tgz#7c8ddd1e044a28cf01c7bdb0cdf726467f9ce508"
   integrity sha512-WlHAJnAiXgKmT/4qh8Rx3TO9Y4sejDo2Xe/M25s4ClECWNB+RY132KDq0LPi2ZnmmCOASRg6Qbp7QZ24WYQdTA==
 
-"@smartface/tsc-watch@^0.10.0-rc":
-  version "0.10.0-rc.6"
-  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.10.0-rc.6.tgz#73190694840dd4ca52650beaeffea7158bc17f16"
-  integrity sha512-XcXeFrza21mggqBD8D2HElJ/7vDmONwdxkQ8jvGNnx068WUk4NeKmigYlxbBQL+0OFeql3DhSaHZCHJ3+w27Sw==
+"@smartface/tsc-watch@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.10.1.tgz#d6726036eee5d9f25d359a76aab0869d2c724e32"
+  integrity sha512-yXhieLR7E2Na6ltes/8SspKLxHHNgtoWa156DYDBX9h3TyYAVqtUWIYgc02IyKTjL+zFIn7q3xiW69sCLLjiqw==
   dependencies:
     chalk "^4.1.2"
     tsc-watch "^4.6.0"

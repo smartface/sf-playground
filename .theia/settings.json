@@ -11,5 +11,6 @@
     "workspace.preserveWindow": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.autoSave": "off",
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "explorer.autoReveal": true
 }

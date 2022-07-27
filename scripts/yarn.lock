@@ -29,11 +29,6 @@
   resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-5.0.4.tgz#d204d2bb1695d04d2d4a5454ea08970c6256717b"
   integrity sha512-K/8VHTsYe0TS98F5CEB0V2RU8g43NMI1InWLHT0iUogSxsH2ilwf5RpwPojDr0n2vay6IiT1rEtrLKdZZ58tfw==
 
-"@smartface/component-materialtextbox@^7.0.2":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@smartface/component-materialtextbox/-/component-materialtextbox-7.0.4.tgz#e14bf6f6cb835d69629906b923d1d5de7279e334"
-  integrity sha512-euOwFCSBFoW5JOYlB39A3x8I61z1XMjmfYn1Ak4FFPxuRZT+RneX0dZtrW+Ezxot3GHXp01j80SPoR6HK66btQ==
-
 "@smartface/contx@^4.2.0":
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/@smartface/contx/-/contx-4.2.10.tgz#4614e06dacf69960afd58ea7ae0b018421815b75"
@@ -83,10 +78,10 @@
   dependencies:
     "@smartface/core" "^5.0.3"
 
-"@smartface/native@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.3.tgz#972d7a183ff8a7a9f2417c518ab2e8ae13a8b2eb"
-  integrity sha512-Tfg3SEYH/8JMTi+wcqxzz0NyyfmCUJzACEDDciwge1ZWREwM0ep0pLGbCMjsOwhKuJkzsMIVR3Aj/ynL+I5Qdw==
+"@smartface/native@alpha":
+  version "5.0.4-alpha.2"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.4-alpha.2.tgz#2274c4bf0db73fe1ff6316e4389afbab3416341d"
+  integrity sha512-flmD/BBatmpL/WTGLW0eOLuyNu0/YDLN6mIL71XPLw2976Id6xadeybB4XzBuD6S6AkDwajUAqin4CGBTPCa/A==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"

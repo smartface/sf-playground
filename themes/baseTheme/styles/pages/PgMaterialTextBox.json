@@ -6,7 +6,7 @@
         "flexDirection": "ROW",
         "justifyContent": "CENTER",
         "alignContent": "STRETCH",
-        "alignItems": "CENTER",
+        "alignItems": "STRETCH",
         "flexWrap": "NOWRAP",
         "direction": "INHERIT"
       }
