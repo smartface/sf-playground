@@ -114,6 +114,7 @@ import PgForm from 'pages/pgForm';
 import PgFetch from 'pages/pgFetch';
 import PgOrientation from 'pages/pgOrientation';
 import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
+import PgBorderRadius from 'pages/pgBorderRadius';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -194,7 +195,8 @@ export const tab0: Tab = {
     PgDatePicker,
     PgWebView,
     PgButton,
-    PgLabelFlexShrink
+    PgLabelFlexShrink,
+    PgBorderRadius
   ]
 };
 

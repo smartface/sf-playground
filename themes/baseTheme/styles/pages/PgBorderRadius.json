@@ -1,0 +1,12 @@
+{
+  "#pgBorderRadius": {
+    "&-flMain": {
+      "flexProps": {
+        "alignItems": "CENTER"
+      }
+    },
+    "&-btnMain": {
+      "borderRadius": 0
+    }
+  }
+}
