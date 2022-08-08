@@ -2,8 +2,100 @@ import PgFlexLayoutDesign from 'generated/pages/pgFlexLayout';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Picker from '@smartface/native/ui/picker';
+import Flex from '@smartface/native/ui/shared/Flex';
 import FlexLayout from '@smartface/native/ui/flexlayout';
-import System from '@smartface/native/device/system';
+
+const JustifyContent = [
+  {
+    native: Flex.JustifyContent.CENTER,
+    context: 'CENTER'
+  },
+  {
+    native: Flex.JustifyContent.FLEX_START,
+    context: 'FLEX_START'
+  },
+  {
+    native: Flex.JustifyContent.FLEX_END,
+    context: 'FLEX_END'
+  },
+  {
+    native: Flex.JustifyContent.SPACE_AROUND,
+    context: 'SPACE_AROUND'
+  },
+  {
+    native: Flex.JustifyContent.SPACE_BETWEEN,
+    context: 'SPACE_BETWEEN'
+  },
+  {
+    native: Flex.JustifyContent.SPACE_EVENLY,
+    context: 'SPACE_EVENLY'
+  },
+]
+
+const FlexDirection = [
+  {
+    native: Flex.FlexDirection.COLUMN,
+    context: 'COLUMN'
+  },
+  {
+    native: Flex.FlexDirection.COLUMN_REVERSE,
+    context: 'COLUMN_REVERSE'
+  },
+  {
+    native: Flex.FlexDirection.ROW,
+    context: 'ROW'
+  },
+  {
+    native: Flex.FlexDirection.ROW_REVERSE,
+    context: 'ROW_REVERSE'
+  },
+];
+
+const AlignItems = [
+  {
+    native: Flex.AlignItems.AUTO,
+    context: 'AUTO'
+  },
+  {
+    native: Flex.AlignItems.CENTER,
+    context: 'CENTER'
+  },
+  {
+    native: Flex.AlignItems.FLEX_END,
+    context: 'FLEX_END'
+  },
+  {
+    native: Flex.AlignItems.FLEX_START,
+    context: 'FLEX_START'
+  },
+  {
+    native: Flex.AlignItems.STRETCH,
+    context: 'STRETCH'
+  },
+]
+
+const AlignContent = [
+  {
+    native: Flex.AlignContent.AUTO,
+    context: 'AUTO'
+  },
+  {
+    native: Flex.AlignContent.CENTER,
+    context: 'CENTER'
+  },
+  {
+    native: Flex.AlignContent.FLEX_END,
+    context: 'FLEX_END'
+  },
+  {
+    native: Flex.AlignContent.FLEX_START,
+    context: 'FLEX_START'
+  },
+  {
+    native: Flex.AlignContent.STRETCH,
+    context: 'STRETCH'
+  },
+]
 
 export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -18,15 +110,15 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
 
   showPickerForJustifyContent() {
     const picker = new Picker();
-    const items = ['CENTER', 'FLEX_START', 'FLEX_END', 'SPACE_AROUND', 'SPACE_BETWEEN'];
-    picker.items = items;
+    picker.items = JustifyContent.map((justifyContent) => justifyContent.context);
     picker.on('selected', (index) => {
-      console.info('selected: ', index);
+      this.fl.justifyContent = JustifyContent[index].native
+      console.info('justifyContent: ', index);
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
           flexProps: {
-            justifyContent: items[index]
+            justifyContent: JustifyContent[index].context
           }
         }
       });
@@ -35,8 +127,9 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
   }
 
   changeWrap() {
-    const isWrap = this.fl.flexWrap === FlexLayout.FlexWrap.WRAP;
-    this.fl.flexWrap = isWrap ? FlexLayout.FlexWrap.NOWRAP : FlexLayout.FlexWrap.WRAP;
+    const isWrap = this.fl.flexWrap === Flex.FlexWrap.WRAP;
+    this.fl.flexWrap = isWrap ? Flex.FlexWrap.NOWRAP : Flex.FlexWrap.WRAP;
+    console.info('flexWrap: ', this.fl.flexWrap);
     this.fl.dispatch({
       type: 'updateUserStyle',
       userStyle: {
@@ -50,15 +143,16 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
 
   changeFlexDirection() {
     const picker = new Picker();
-    const items = ['COLUMN', 'COLUMN_REVERSE', 'ROW', 'ROW_REVERSE'];
+    const items = FlexDirection.map((direction) => direction.context)
     picker.items = items;
     picker.on('selected', (index) => {
-      console.info('selected: ', index);
+      console.info('flexDirection: ', index);
+      this.fl.flexDirection = FlexDirection[index].native
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
           flexProps: {
-            flexDirection: items[index]
+            flexDirection: FlexDirection[index].context
           }
         }
       });
@@ -67,8 +161,8 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
   }
 
   changeDirection() {
-    const isLTR = this.fl.direction === FlexLayout.Direction.LTR;
-    this.fl.direction = isLTR ? FlexLayout.Direction.RTL : FlexLayout.Direction.LTR;
+    const isLTR = this.fl.direction === Flex.Direction.LTR;
+    this.fl.direction = isLTR ? Flex.Direction.RTL : Flex.Direction.LTR;
     this.fl.dispatch({
       type: 'updateUserStyle',
       userStyle: {
@@ -82,15 +176,16 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
 
   showPickerForAlignItems() {
     const picker = new Picker();
-    const items = ['AUTO', 'CENTER', 'FLEX_START', 'FLEX_END', 'STRETCH'];
+    const items = AlignItems.map((items) => items.context);
     picker.items = items;
     picker.on('selected', (index) => {
-      console.info('selected: ', index);
+      console.info('alignItems: ', index);
+      this.fl.alignItems = AlignItems[index].native
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
           flexProps: {
-            alignItems: items[index]
+            alignItems: AlignItems[index].context
           }
         }
       });
@@ -100,15 +195,16 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
 
   showPickerForAlignContent() {
     const picker = new Picker();
-    const items = ['AUTO', 'CENTER', 'FLEX_START', 'FLEX_END', 'STRETCH'];
+    const items = AlignContent.map((alignContent) => alignContent.context)
     picker.items = items;
     picker.on('selected', (index) => {
-      console.info('selected: ', index);
+      console.info('alignContent: ', index);
+      this.fl.alignContent = AlignContent[index].native
       this.fl.dispatch({
         type: 'updateUserStyle',
         userStyle: {
           flexProps: {
-            alignContent: items[index]
+            alignContent: AlignContent[index].context
           }
         }
       });
