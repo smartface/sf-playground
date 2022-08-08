@@ -6,10 +6,10 @@
     "@smartface/extension-utils": "^17.0.0",
     "@smartface/i18n": "^5.0.4",
     "@smartface/mixins": "^5.0.4",
-    "@smartface/native": "alpha",
+    "@smartface/native": "^5.0.4-alpha.8",
     "@smartface/router": "^2.3.1",
     "@smartface/source-map": "^5.0.4",
-    "@smartface/styling-context": "^5.0.4",
+    "@smartface/styling-context": "^5.0.5-alpha",
     "@smartface/webviewbridge": "^5.0.4",
     "axios": "0.26.1"
   }
