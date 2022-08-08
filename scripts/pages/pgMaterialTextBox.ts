@@ -26,7 +26,7 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
 
   setRightLayout() {
     const picker = new Picker({
-      items: ['Default Right Layout', 'Clear All', 'Show Hide', 'Dropdown']
+      items: ['Default Right Layout', 'Clear All', 'Show Hide', 'Dropdown', 'Input View (iOS)']
     });
     picker.show((params) => {
       let view: FlexLayout;
@@ -75,14 +75,51 @@ export default class PgMaterialTextBox extends withDismissAndBackButton(PgMateri
             alignContent: FlexLayout.AlignContent.FLEX_END
           });
           const mtb = this.mtbExample;
-          // this.mtbExample.onTouch = () => {
-          //   return true;
-          // };
-          this.mtbExample.onEditBegins = () => {
+          this.mtbExample.onTouch = () => {
             alert('dropdown pressed');
-            this.mtbExample.removeFocus();
+            return true;
+          };
+          this.mtbExample.onEditBegins = () => {
+            this.mtbExample.onTouch()
+            return false;
           };
           this.mtbExample.nativeObject.enabled = false;
+          const imageview = new ImageView({
+            flexGrow: 1,
+            tintColor: Color.BLACK,
+            alignSelf: FlexLayout.AlignSelf.FLEX_END
+          });
+          imageview.image = Image.createFromFile('images://arrowbottom.png');
+          view.addChild(imageview);
+          break;
+        }
+        case 4: {
+          // Input View (iOS only, dropdown for Android)
+
+          view = new FlexLayout({
+            flexGrow: 1,
+            alignContent: FlexLayout.AlignContent.FLEX_END
+          });
+          const inputView = new FlexLayout({
+            flexGrow: 1
+          })
+          const inputViewPicker = new Picker({
+            items:  ['test' ,'test2', 'test3'],
+            onSelected: (index) => {
+              this.mtbExample.text = inputViewPicker.items[index];
+            }
+          });
+          inputView.addChild(inputViewPicker);
+          picker.textColor = Color.BLACK;
+          picker.dialogBackgroundColor = Color.WHITE;
+          this.mtbExample.onTouch = () => {
+            picker.show(({ index }) => this.mtbExample.text = inputViewPicker.items[index] );
+            return true;
+          };
+          this.mtbExample.ios.inputView = {
+            height: 200,
+            view: inputView
+          }
           const imageview = new ImageView({
             flexGrow: 1,
             tintColor: Color.BLACK,
