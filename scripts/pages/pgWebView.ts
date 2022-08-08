@@ -34,7 +34,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     });
 
     const chart = new Chart({
-      webViewBridge: wvb as any, // TODO: Remove this after util-to-native is over
+      webViewBridge: wvb, 
       apexOptions: {
         barOptions: {
           percent: 0.75
