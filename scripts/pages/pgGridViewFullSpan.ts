@@ -47,6 +47,7 @@ export default class PgGridViewFullSpan extends withDismissAndBackButton(PgGridV
 
   initGridViewEvents() {
     // We might want to test this with eventemitter as well.
+    // this.gvMain.layoutManager.contentInset = { left: 10, right: 10, top: 1, bottom: 1}
     this.gvMain.layoutManager.onFullSpan = (type) => {
       if (type == 1) {
         return 200;
@@ -119,7 +120,6 @@ export default class PgGridViewFullSpan extends withDismissAndBackButton(PgGridV
 
   initGridView() {
     this.gvMain.refreshEnabled = true;
-    this.gvMain.backgroundColor = Color.TRANSPARENT;
     this.gvMain.itemCount = this.myDataset.length;
     this.gvMain.scrollBarEnabled = false;
     this.initGridViewEvents();
