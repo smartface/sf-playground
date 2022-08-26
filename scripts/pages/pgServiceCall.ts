@@ -4,6 +4,8 @@ import Network from '@smartface/native/device/network';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import System from '@smartface/native/device/system';
+import Permission from '@smartface/native/device/permission';
+import { Permissions } from '@smartface/native/device/permission/permission';
 
 export default class PgServiceCall extends withDismissAndBackButton(PgServiceCallDesign) {
   isConnected: boolean;
@@ -78,8 +80,14 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     console.log('Network carrier test: ', Network.carrier);
     console.log('Network connectionIP test: ', Network.connectionIP);
     console.log('Network SMSEnabled test: ', Network.SMSEnabled);
+    try {
     console.log('Network IMSI test: ', Network.IMSI);
-    console.log('Network bluetoothMacAddress test: ', Network.bluetoothMacAddress);
+    } catch (error) {
+        console.log("Works on Android 10 and below")
+    }
+    if( System.OS === System.OSType.IOS || (System.OS === System.OSType.ANDROID && Permission.android.checkPermission(Permissions.ANDROID.BLUETOOTH_CONNECT))){
+        console.log('Network bluetoothMacAddress test: ', Network.bluetoothMacAddress);
+    }
     console.log('Network wirelessMacAddress test: ', Network.wirelessMacAddress);
     console.log('Network roamingEnabled test: ', Network.roamingEnabled);
   }
