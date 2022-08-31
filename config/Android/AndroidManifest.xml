@@ -83,7 +83,7 @@
         </intent>
     </queries>
 	
-	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication" android:requestLegacyExternalStorage="true" android:extractNativeLibs="true" android:allowNativeHeapPointerTagging="false">
+	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication" android:requestLegacyExternalStorage="true" android:extractNativeLibs="true" android:allowNativeHeapPointerTagging="false" android:networkSecurityConfig="@xml/network_security_config">
 		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
 		<activity android:name=".A" 
 					android:label="${ApplicationName}" 	
