@@ -114,6 +114,7 @@ import PgForm from 'pages/pgForm';
 import PgFetch from 'pages/pgFetch';
 import PgOrientation from 'pages/pgOrientation';
 import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
+import pgSliderCalendar from 'pages/pgSliderCalendar';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -209,7 +210,7 @@ export const tab2: Tab = {
   name: 'Modules',
   imageName: 'modules.png',
   tabIndex: 2,
-  pages: [PgListViewMaterial, PgBarcodeScanner, PgZoomableImageView, PgListViewIndex, PgSpriteView, PgCalendar, PgI18N]
+  pages: [PgListViewMaterial, PgBarcodeScanner, PgZoomableImageView, PgListViewIndex, PgSpriteView, PgCalendar, PgI18N, pgSliderCalendar]
 };
 
 export const tab3: Tab = {

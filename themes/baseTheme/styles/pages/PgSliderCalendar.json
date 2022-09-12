@@ -1,0 +1,33 @@
+{
+  "#pgSliderCalendar": {
+    "&-gviDayOfCalendar": {
+      "flexProps": {
+        "positionType": "RELATIVE",
+        "alignItems": "FLEX_START",
+        "flexDirection": "ROW",
+        "alignContent": "FLEX_START",
+        "justifyContent": "SPACE_EVENLY"
+      },
+      "flex": {
+        "positionType": 0
+      }
+    },
+    "&-flDaysName": {
+      "flexProps": {
+        "flexGrow": 1,
+        "alignItems": "FLEX_START",
+        "flexDirection": "ROW",
+        "justifyContent": "SPACE_EVENLY",
+        "alignContent": "FLEX_START"
+      }
+    },
+    "&-gvMain": {
+      "flexProps": {
+        "flexGrow": 10
+      }
+    },
+    "&-lblFullDate": {
+      "textAlignment": "MIDCENTER"
+    }
+  }
+}

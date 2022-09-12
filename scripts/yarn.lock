@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-6.3.1.tgz#1ae963dd40405450a2945408cba553e1afa3e0fb"
   integrity sha512-8YXBE2ZcU/pImVOHX7MWrSR/X5up7t6rPWZlk34RwZEcdr3ua6X+32pSd6XuOQRN+vbuvYNfA6iey8NbrjuMFQ==
 
-"@smartface/component-calendar@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@smartface/component-calendar/-/component-calendar-5.0.0.tgz#76713a3e561bc9d8cd29fca8d630fa61210d7bac"
-  integrity sha512-oQcia7aJwOevx/v31dDnj4o7wV2nzQ/iNOc89VCcU1+CTw+uAe/hBf970QtBHsfu33sanjCK0ppAtGz9lFoR1A==
+"@smartface/component-calendar@^5.0.3":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@smartface/component-calendar/-/component-calendar-5.0.2.tgz#cd154a1bc1b43d294bf9d2eb3422434ef6f81bae"
+  integrity sha512-1kxT3y7+o7ZeqdSIgwX8euv6HjcNrO36Cc9T6ulsBHKv66/mKnrlEr1hUQAsjIUCYhjGbOWsaWP9ukGPBM/M1g==
   dependencies:
     "@types/moment-hijri" "^2.1.0"
     moment "^2.28.0"
@@ -78,10 +78,10 @@
   dependencies:
     "@smartface/core" "^5.0.3"
 
-"@smartface/native@^5.0.4-alpha.8":
-  version "5.0.4-alpha.8"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.4-alpha.8.tgz#06f5af04df004430fee70f9d621dfc182da881ac"
-  integrity sha512-t6v1uu92KvU/cvqT0X57tdSkGhjwhinIlDBrgTFeHGUv6b4wqMROY/Dp8v1ZJhVZ8a2ddy8/g+hW3c/d9u6dJg==
+"@smartface/native@5.0.4-alpha.12":
+  version "5.0.4-alpha.12"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.4-alpha.12.tgz#5dfebfe21cb115ee44ff179a954e7cc042eabe4f"
+  integrity sha512-irvKlsxJct2bhGoCLEyKaIYNUxiV6lME7RbSOeRhdbJbtA4FHRgOKvvq8ZVXyjo0RJ7ZRzqE9gGw3g00RBk48A==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"

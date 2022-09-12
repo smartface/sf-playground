@@ -1,0 +1,256 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "89b3-b281-3e70-ca3c",
+			"initialized": true,
+			"props": {
+				"children": [
+					"196b-01ed-1268-e715",
+					"db34-9636-11c0-f366",
+					"641e-2206-ea2e-55d7",
+					"4877-6601-51eb-c7c1"
+				],
+				"name": "pgSliderCalendar",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.10.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "196b-01ed-1268-e715",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "89b3-b281-3e70-ca3c"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "db34-9636-11c0-f366",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "89b3-b281-3e70-ca3c",
+				"title": "pgSliderCalendar"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgSliderCalendar"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "641e-2206-ea2e-55d7",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"8e4b-9607-570e-b0fa",
+					"ccee-5460-23ac-ff7e"
+				],
+				"name": "flCalendarWrapper",
+				"parent": "89b3-b281-3e70-ca3c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #pgSliderCalendar-flDaysName",
+			"id": "8e4b-9607-570e-b0fa",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"449f-e287-0e7f-aa05",
+					"497d-7718-ae63-ce81",
+					"7646-c48e-97b0-ab55",
+					"c46a-13dc-30f1-9084",
+					"c741-344b-3821-9052",
+					"b382-c2ff-4065-1ddb",
+					"5118-0db7-b58d-0c84"
+				],
+				"name": "flDaysName",
+				"parent": "641e-2206-ea2e-55d7"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "449f-e287-0e7f-aa05",
+			"oldName": "day0",
+			"props": {
+				"children": [],
+				"name": "day0lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "497d-7718-ae63-ce81",
+			"oldName": "day1",
+			"props": {
+				"children": [],
+				"name": "day1lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "7646-c48e-97b0-ab55",
+			"oldName": "day2",
+			"props": {
+				"children": [],
+				"name": "day2lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "c46a-13dc-30f1-9084",
+			"oldName": "day3",
+			"props": {
+				"children": [],
+				"name": "day3lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "c741-344b-3821-9052",
+			"oldName": "day4",
+			"props": {
+				"children": [],
+				"name": "day4lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "b382-c2ff-4065-1ddb",
+			"oldName": "day5",
+			"props": {
+				"children": [],
+				"name": "day5lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label .daylbl",
+			"id": "5118-0db7-b58d-0c84",
+			"oldName": "day6",
+			"props": {
+				"children": [],
+				"name": "day6lbl",
+				"parent": "8e4b-9607-570e-b0fa",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-gridView #pgSliderCalendar-gvMain",
+			"id": "ccee-5460-23ac-ff7e",
+			"oldName": "gridView1",
+			"props": {
+				"children": [
+					"ffcc-a0ef-7dc5-fccc"
+				],
+				"itemCount": 1,
+				"itemLength": 227,
+				"layoutManager": {
+					"scrollDirection": "HORIZONTAL",
+					"spanCount": 1
+				},
+				"name": "gvMain",
+				"parent": "641e-2206-ea2e-55d7"
+			},
+			"type": "GridView",
+			"userProps": {
+				"itemCount": 1,
+				"itemLength": 227,
+				"layoutManager": {
+					"scrollDirection": "HORIZONTAL",
+					"spanCount": 1
+				}
+			}
+		},
+		{
+			"className": ".sf-gridViewItem .gviDayOfCalendar #pgSliderCalendar-gviDayOfCalendar",
+			"hiddenComponent": false,
+			"id": "ffcc-a0ef-7dc5-fccc",
+			"props": {
+				"children": [],
+				"name": "gviDayOfCalendar",
+				"parent": "ccee-5460-23ac-ff7e"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "gviDayOfCalendar",
+				"id": "518f-11e6-cfdd-5e19"
+			},
+			"type": "GridViewItem",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				}
+			}
+		},
+		{
+			"className": ".sf-label #pgSliderCalendar-lblFullDate",
+			"id": "4877-6601-51eb-c7c1",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblFullDate",
+				"parent": "89b3-b281-3e70-ca3c",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		}
+	]
+}

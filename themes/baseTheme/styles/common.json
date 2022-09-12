@@ -92,5 +92,19 @@
       "bottom": 15,
       "top": 15
     }
+  },
+  ".btnDay": {
+    "borderRadius": 40,
+    "width": 40,
+    "height": 40,
+    "textColor": "rgba( 0, 0, 0, 1 )",
+    "backgroundColor": {
+      "normal": "rgba( 255, 255, 255, 1 )"
+    },
+    "borderColor": "rgba( 255, 255, 255, 1 )"
+  },
+  ".daylbl": {
+    "width": 40,
+    "textAlignment": "MIDCENTER"
   }
 }

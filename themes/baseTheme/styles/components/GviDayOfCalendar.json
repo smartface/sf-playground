@@ -1,0 +1,14 @@
+{
+  ".gviDayOfCalendar": {
+    "flexProps": {
+      "alignSelf": "CENTER",
+      "alignItems": "CENTER",
+      "flexDirection": "ROW",
+      "justifyContent": "SPACE_EVENLY",
+      "alignContent": "CENTER",
+      "flexWrap": "NOWRAP"
+    },
+    "width": 412.82,
+    "height": 226.92
+  }
+}
