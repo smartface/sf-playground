@@ -54,6 +54,7 @@
 					"3efa-11cd-3aaa-4a7b",
 					"985b-0064-cb81-e2cc",
 					"abb3-c21d-0ac6-eac0",
+					"f3be-ce9e-4531-d949",
 					"0473-2b49-bc9e-5cf1",
 					"9b2f-f9cf-31e5-11a3",
 					"5f82-cfe5-aacf-07e0",
@@ -161,6 +162,25 @@
 			"userProps": {
 				"left": 0,
 				"text": "Get Video Info",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "f3be-ce9e-4531-d949",
+			"oldName": "btnGetInfo_1",
+			"props": {
+				"children": [],
+				"name": "btnStop",
+				"parent": "043a-c3ab-f7c6-5b5b",
+				"text": "Stop",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"left": 0,
+				"text": "Stop",
 				"top": 0,
 				"usePageVariable": true
 			}

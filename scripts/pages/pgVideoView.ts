@@ -3,6 +3,7 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import File from '@smartface/native/io/file';
 import Path from '@smartface/native/io/path';
+import { themeService } from 'theme';
 
 export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDesign) {
   private _loopEnabled = false;
@@ -14,6 +15,7 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
     this.btnLoadURL.on('press', () => this.loadURL());
     this.btnCustomErrorMessage.on('press', () => this.customErrorMessage());
     this.btnSeekTo.on('press', () => this.seekTo45());
+    this.btnStop.on('press', () => this.stop());
     this.btnLoopEnabled.on('press', () => this.switchLoopEnabled());
     this.swFastForward.on('toggleChanged', (value) => this.changeFastForward(value));
     this.swLoadingIndicator.on('toggleChanged', (value) => this.changeLoadingIndicator(value));
@@ -81,6 +83,10 @@ export default class PgVideoView extends withDismissAndBackButton(PgVideoViewDes
       totalDuration: this.video.totalDuration,
       isPlaying: this.video.isPlaying()
     });
+  }
+
+  stop() {
+    this.video.stop();
   }
 
   customErrorMessage() {
