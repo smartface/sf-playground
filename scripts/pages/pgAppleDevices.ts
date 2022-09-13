@@ -6,7 +6,7 @@ import { Route } from '@smartface/router';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import Hardware from '@smartface/native/device/hardware';
 import AsyncTask from '@smartface/native/global/asynctask';
-
+import deviceMappings from '../constants/deviceMapping.json'
 export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevicesDesign) {
   dataSet: string[];
   constructor(private router?: Router, private route?: Route) {
@@ -23,6 +23,12 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
 
   scrambleDatasetOnOrientationChange() {
     this.dataSet.sort(() => 0.5 - Math.random());
+  }
+
+  initCopyDeviceMapping() {
+    const copiedJSONFile = copy(deviceMappings);
+    this.dataSet = Object.values(copiedJSONFile);
+    console.log(this.dataSet);
   }
   initListView() {
     this.lvAppleDevices.refreshEnabled = false;
@@ -54,6 +60,7 @@ export default class PgAppleDevices extends withDismissAndBackButton(PgAppleDevi
    */
   onLoad() {
     super.onLoad();
+    this.initCopyDeviceMapping();
     this.initListView();
   }
 }

@@ -3,10 +3,12 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Button from '@smartface/native/ui/button';
 import Sound from '@smartface/native/device/sound';
+import { onHide } from '@smartface/styling-context/lib/pageContextPatch';
 
 export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
   mySound: Sound;
   myButton: Button;
+  stopMusicButton: Button;
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
@@ -27,6 +29,9 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
     });
   }
 
+  onHide(){
+      this.mySound.stop();
+  }
   onShow() {
     super.onShow();
   }
@@ -51,12 +56,25 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
         this.mySound.loadURL('https://www.rmp-streaming.com/media/bbb-360p.mp4');
       }
     });
+    this.stopMusicButton = new Button({
+        text: 'Stop Music',
+        onPress: () => {
+            this.mySound.stop();
+        }
+    })
 
     this.addChild(this.myButton, 'myButton', '.sf-button', {
       top: 100,
       width: 100,
       height: 80,
-      backgroundColor: '#FFFF00'
+      backgroundColor: '#343efa'
     });
+
+    this.addChild(this.stopMusicButton, 'stopMusicButton', '.sf-button', {
+        top: 100,
+        width: 100,
+        height: 80,
+        backgroundColor: '#181c66'
+      });
   }
 }

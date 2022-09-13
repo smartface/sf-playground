@@ -81,7 +81,6 @@
 				"borderWidth": 1,
 				"height": 140,
 				"html": "<br>",
-				"maxLines": 0,
 				"text": "\n",
 				"usePageVariable": true
 			}
