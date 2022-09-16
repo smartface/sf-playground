@@ -82,6 +82,7 @@ export default class PgColorAndHtml extends withDismissAndBackButton(PgColorAndH
 
   initHtml() {
     this.taHtml.text = exampleHtml;
+    this.tvHtml.scrollEnabled = false
     this.btnAttrTexts.onTouch = () => {
       this.createAndShowAttributedTexts();
       return false;
