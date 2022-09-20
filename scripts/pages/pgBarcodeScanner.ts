@@ -21,7 +21,7 @@ export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcode
     };
     this.lblBarcodeText.onTouch = () => {
       if (!this.lblBarcodeText.text.startsWith('(')) {
-        System.clipboard = this.lblBarcodeText.text;
+        System.setClipboard({text:this.lblBarcodeText.text});
         const toast = new Toast();
         toast.message = 'Copied to Clipboard!';
         toast.duration = 2;

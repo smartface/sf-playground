@@ -14,7 +14,7 @@ export default class PgSystem extends withDismissAndBackButton(PgSystemDesign) {
     console.log('Device.System.OSVersion: ' + System.OSVersion);
     console.log('Device.System.batteryLevel: ' + System.batteryLevel);
     console.log('Device.System.isBatteryCharged: ' + System.isBatteryCharged);
-    console.log('Device.System.clipboard: ' + System.clipboard);
+    console.log('Device.System.getClipboard: ' + System.getClipboard());
     console.log('Device.System.language: ' + System.language);
     console.log('Device.System.region: ' + System.region);
     console.log('Device.System.vibrate(): ' + System.vibrate({ millisecond: 500 }));
@@ -31,7 +31,7 @@ export default class PgSystem extends withDismissAndBackButton(PgSystemDesign) {
     System.OSVersion: ${System.OSVersion}
     System.batteryLevel: ${System.batteryLevel}
     System.isBatteryCharged: ${System.isBatteryCharged}
-    System.clipboard: ${System.clipboard}
+    System.getClipboard: ${System.getClipboard()}
     System.language: ${System.language}
     System.region: ${System.region}
     System.vibrate(): ${System.vibrate({ millisecond: 500 })}
