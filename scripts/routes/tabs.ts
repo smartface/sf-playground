@@ -115,6 +115,7 @@ import PgFetch from 'pages/pgFetch';
 import PgOrientation from 'pages/pgOrientation';
 import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
 import PgSSLPinningHttp from 'pages/pgSSLPinningHttp';
+import PgCustomHeaderbar from 'pages/pgCustomHeader'
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -245,6 +246,7 @@ export const tab4: Tab = {
     PgDynamicSize,
     PgScrollViewInsideScrollView,
     PgListViewExtendShrink,
-    PgForm
+    PgForm,
+    PgCustomHeaderbar
   ]
 };

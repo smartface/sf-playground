@@ -1,0 +1,57 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .flCustomHeaderbar",
+			"id": "0722-ef3d-1574-e19f",
+			"props": {
+				"children": [
+					"6b50-58d2-2d76-8870",
+					"1db6-8229-5d12-4503"
+				],
+				"name": "flCustomHeaderbar",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-searchView .flCustomHeaderbar-searchView",
+			"id": "6b50-58d2-2d76-8870",
+			"oldName": "searchView1",
+			"props": {
+				"children": [],
+				"hint": "Search",
+				"name": "searchViewMain",
+				"parent": "0722-ef3d-1574-e19f"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "SearchView",
+			"userProps": {
+				"hint": "Search"
+			}
+		},
+		{
+			"className": ".sf-label .flCustomHeaderbar-lblSearchIcon",
+			"id": "1db6-8229-5d12-4503",
+			"oldName": "searchIcon",
+			"props": {
+				"children": [],
+				"name": "lblSearchIcon",
+				"parent": "0722-ef3d-1574-e19f",
+				"text": "search"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "search"
+			}
+		}
+	]
+}
