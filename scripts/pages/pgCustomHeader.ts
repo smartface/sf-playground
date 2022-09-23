@@ -3,8 +3,6 @@ import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import System from '@smartface/native/device/system';
 import Color from '@smartface/native/ui/color';
-import Font from '@smartface/native/ui/font';
-import { FontStyle } from '@smartface/native/ui/font/font';
 
 const isAndroid = System.OS === System.OSType.ANDROID;
 
@@ -12,26 +10,20 @@ export default class PgCustomHeader extends withDismissAndBackButton(PgCustomHea
     searchIsActive: boolean = false;
     constructor(private router?: Router, private route?: Route) {
         super({});
-        this.flCustomHeaderbar.searchViewMain.hint = 'search'
         this.flCustomHeaderbar.lblSearchIcon.on('touch', () => {
-            console.log(this.searchIsActive)
-            if (!this.searchIsActive) {
-                console.log('test1')
-                this.flCustomHeaderbar.searchViewMain.visible = true;
-                this.flCustomHeaderbar.lblSearchIcon.font = Font.create('SFProText', 16, FontStyle.BOLD);
-                this.flCustomHeaderbar.lblSearchIcon.text = 'Cancel'
-                this.searchIsActive = true;
+            this.searchIsActive = !this.searchIsActive;
+            this.flCustomHeaderbar.searchViewVisible = this.searchIsActive;
+            if(this.searchIsActive){
+                this.flCustomHeaderbar.labelText = 'Cancel'
             }else{
-                console.log('test')
-                this.flCustomHeaderbar.searchViewMain.visible = false;
-                this.flCustomHeaderbar.lblSearchIcon.font = Font.create('FontAwesome5FreeSolid', 17);
-                this.flCustomHeaderbar.lblSearchIcon.text = 'search'
-                this.searchIsActive = false;
+                this.flCustomHeaderbar.labelText = 'search'
             }
         })
+
     }
     initSearchView(): void {
         this.flCustomHeaderbar.searchViewMain.hint = 'Search';
+        this.flCustomHeaderbar.searchViewVisible = this.searchIsActive;
         this.flCustomHeaderbar.searchViewMain.cursorColor = Color.BLACK;
         if (isAndroid) {
             this.flCustomHeaderbar.searchViewMain.textFieldBackgroundColor = Color.create(199, 199, 199);
@@ -62,7 +54,6 @@ export default class PgCustomHeader extends withDismissAndBackButton(PgCustomHea
      */
     onLoad() {
         super.onLoad();
-        this.flCustomHeaderbar.searchViewMain.visible = false;
         this.initSearchView();
     }
 }
