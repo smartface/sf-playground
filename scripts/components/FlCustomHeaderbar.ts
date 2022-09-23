@@ -13,7 +13,6 @@ export default class FlCustomHeaderbar extends FlCustomHeaderbarDesign {
         return this._searchViewIsActive;
     }
     set searchViewVisible(value: boolean) {
-        console.log(value);
         this.searchViewMain.dispatch({
             type: 'updateUserStyle',
             userStyle: {
