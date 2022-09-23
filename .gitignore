@@ -1,5 +1,8 @@
 # Editor related ignore files
 .theia/compiler_status.json
+.theia/dis_ws_diff.zip
+.theia/requested_files_debug.json
+.theia/ws_diff.json
 # .theia # If you need to enforce settings project wide, comment this line and uncomment the line above.
 .vscode
 .DS_Store
