@@ -1,0 +1,30 @@
+{
+  ".flCustomHeaderbar": {
+    "flexProps": {
+      "flexDirection": "ROW"
+    },
+    "&-searchView": {
+      "width": null,
+      "flexProps": {
+        "flexGrow": 4
+      },
+      "backgroundColor": "rgba( 0, 161, 241, 1 )"
+    },
+    "&-lblSearchIcon": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "font": {
+        "name": "",
+        "family": "FontAwesome5FreeSolid",
+        "style": null,
+        "bold": false,
+        "italic": false
+      },
+      "textAlignment": "MIDCENTER",
+      "textColor": "rgba( 255, 255, 255, 1 )",
+      "marginTop": 10
+    },
+    "backgroundColor": "rgba( 0, 161, 241, 1 )"
+  }
+}
