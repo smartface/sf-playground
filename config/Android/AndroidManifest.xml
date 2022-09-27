@@ -13,7 +13,7 @@
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<!-- Required for vibrate function. -->
-	<!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
+	<uses-permission android:name="android.permission.VIBRATE" />
 	<!-- Required for contact list functions. -->
 	<uses-permission android:name="android.permission.READ_CONTACTS"/>
 	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
