@@ -10,8 +10,8 @@
 	<!-- Required for Internet access by 3G, GSM and WIFI -->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<!-- Required for GPS Usage. -->
-	<!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
-	<!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<!-- Required for vibrate function. -->
 	<!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
 	<!-- Required for contact list functions. -->
