@@ -1,0 +1,61 @@
+{
+  "#pgIcon": {
+    "&-wrapper": {
+      "height": 60,
+      "flexProps": {
+        "flexDirection": "ROW",
+        "justifyContent": "SPACE_EVENLY",
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH"
+      }
+    },
+    "&-label": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "height": null,
+      "textColor": "rgba( 0, 0, 0, 1 )"
+    },
+    "&-icon": {
+      "height": null,
+      "flexProps": {
+        "flexGrow": 1
+      }
+    },
+    "&-iconEditHeader": {
+      "textColor": "rgba( 0, 0, 0, 1 )",
+      "font": {
+        "name": "",
+        "family": "Default",
+        "style": "Regular",
+        "size": 15,
+        "bold": false,
+        "italic": false
+      }
+    },
+    "&-flIconEditWrapper": {
+      "height": 70,
+      "borderWidth": 2,
+      "backgroundColor": "rgba( 255, 255, 255, 0 )",
+      "shadowColor": "rgba( 255, 255, 255, 1 )",
+      "borderColor": "rgba( 0, 0, 0, 1 )",
+      "flexProps": {
+        "alignItems": "STRETCH",
+        "justifyContent": "CENTER",
+        "alignContent": "CENTER",
+        "flexWrap": "NOWRAP",
+        "direction": "INHERIT"
+      },
+      "marginTop": 10
+    },
+    "&-iconEdit": {
+      "textAlignment": "MIDCENTER",
+      "textColor": "rgba( 0, 0, 0, 1 )"
+    },
+    "&-tbIconEdit": {
+      "borderWidth": 1,
+      "borderRadius": 0,
+      "borderColor": "rgba( 155, 155, 155, 1 )"
+    }
+  }
+}

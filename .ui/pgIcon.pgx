@@ -1,0 +1,212 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "ae52-e80b-a244-a2ff",
+			"initialized": true,
+			"props": {
+				"children": [
+					"bdd2-e36b-2b87-cf4e",
+					"45d8-dd80-cdbd-7a84",
+					"906c-5d01-e36c-ed0f",
+					"c70d-f7b2-6689-8592",
+					"c46f-2233-4407-bff5",
+					"c9c3-0c54-6bcf-36b8",
+					"e8cc-0744-2b71-a124"
+				],
+				"name": "pgIcon",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.10.3"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "bdd2-e36b-2b87-cf4e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "ae52-e80b-a244-a2ff"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "45d8-dd80-cdbd-7a84",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "ae52-e80b-a244-a2ff",
+				"title": "pgIcon"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgIcon"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgIcon-wrapper",
+			"id": "906c-5d01-e36c-ed0f",
+			"oldName": "flWrapper",
+			"props": {
+				"children": [
+					"b64d-fef4-a8bc-5c64"
+				],
+				"name": "flGlyphWrapper",
+				"parent": "ae52-e80b-a244-a2ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgIcon-label",
+			"id": "b64d-fef4-a8bc-5c64",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblGlyph",
+				"parent": "906c-5d01-e36c-ed0f",
+				"text": "Glyph:"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Glyph:"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgIcon-wrapper",
+			"id": "c70d-f7b2-6689-8592",
+			"oldName": "flGlyphWrapper_2",
+			"props": {
+				"children": [
+					"0db3-9e16-6979-eec3"
+				],
+				"name": "fllUnicodeWrapper",
+				"parent": "ae52-e80b-a244-a2ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgIcon-label",
+			"id": "0db3-9e16-6979-eec3",
+			"oldName": "lblGlyph_2",
+			"props": {
+				"children": [],
+				"name": "lblUnicode",
+				"parent": "c70d-f7b2-6689-8592",
+				"text": "Unicode:"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Unicode:"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgIcon-wrapper",
+			"id": "c46f-2233-4407-bff5",
+			"oldName": "flGlyphWrapper_1",
+			"props": {
+				"children": [
+					"11ec-48eb-2abb-cb75"
+				],
+				"name": "flTextWrapper",
+				"parent": "ae52-e80b-a244-a2ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgIcon-label",
+			"id": "11ec-48eb-2abb-cb75",
+			"oldName": "lblGlyph_1",
+			"props": {
+				"children": [],
+				"name": "lblText",
+				"parent": "c46f-2233-4407-bff5",
+				"text": "Text:"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Text:"
+			}
+		},
+		{
+			"className": ".sf-view .separator-relative",
+			"id": "c9c3-0c54-6bcf-36b8",
+			"oldName": "view1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "ae52-e80b-a244-a2ff"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "e8cc-0744-2b71-a124",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"9ac3-d5fd-d6d5-38f8",
+					"830a-d41b-cf3d-79a7",
+					"463d-7bcc-8ca4-363c"
+				],
+				"name": "flIconEdit",
+				"parent": "ae52-e80b-a244-a2ff"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgIcon-iconEditHeader",
+			"id": "9ac3-d5fd-d6d5-38f8",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"maxLines": 2,
+				"name": "lblIconEditHeader",
+				"parent": "e8cc-0744-2b71-a124",
+				"text": "Enter a icon code below to see the icon of the font"
+			},
+			"type": "Label",
+			"userProps": {
+				"maxLines": 2,
+				"text": "Enter a icon code below to see the icon of the font"
+			}
+		},
+		{
+			"className": ".sf-textBox #pgIcon-tbIconEdit",
+			"id": "830a-d41b-cf3d-79a7",
+			"oldName": "textBox1",
+			"props": {
+				"children": [],
+				"hint": "Enter a text to see the icon(e.g. user)",
+				"name": "tbIconEdit",
+				"parent": "e8cc-0744-2b71-a124"
+			},
+			"type": "TextBox",
+			"userProps": {
+				"hint": "Enter a text to see the icon(e.g. user)"
+			}
+		},
+		{
+			"className": ".sf-flexLayout #pgIcon-flIconEditWrapper",
+			"id": "463d-7bcc-8ca4-363c",
+			"oldName": "flexLayout2",
+			"props": {
+				"children": [],
+				"name": "flIconEditWrapper",
+				"parent": "e8cc-0744-2b71-a124"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

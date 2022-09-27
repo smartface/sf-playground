@@ -115,7 +115,8 @@ import PgFetch from 'pages/pgFetch';
 import PgOrientation from 'pages/pgOrientation';
 import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
 import PgSSLPinningHttp from 'pages/pgSSLPinningHttp';
-import PgCustomHeaderbar from 'pages/pgCustomHeader'
+import PgCustomHeaderbar from 'pages/pgCustomHeader';
+import PgIcon from 'pages/pgIcon';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -157,6 +158,7 @@ export const tab0: Tab = {
     PgSystem,
     PgScreen,
     PgGridView,
+    PgIcon,
     PgPicker,
     PgTimePicker,
     PgViewGroup,
@@ -204,7 +206,21 @@ export const tab1: Tab = {
   name: 'Utility',
   imageName: 'utility.png',
   tabIndex: 1,
-  pages: [PgXHR, PgPhotoPicker, PgArt, PgChart, PgWebSocket, PgServiceCall, PgLocationManagment, PgAppleDevices, PgColorAndHtml, PgSSLPinning, PgAxios, PgFetch, PgSSLPinningHttp]
+  pages: [
+    PgXHR,
+    PgPhotoPicker,
+    PgArt,
+    PgChart,
+    PgWebSocket,
+    PgServiceCall,
+    PgLocationManagment,
+    PgAppleDevices,
+    PgColorAndHtml,
+    PgSSLPinning,
+    PgAxios,
+    PgFetch,
+    PgSSLPinningHttp
+  ]
 };
 
 export const tab2: Tab = {

@@ -85,7 +85,11 @@
       "positionType": "ABSOLUTE"
     },
     "bottom": 0,
-    "backgroundColor": "rgba( 0, 0, 0, 0.1 )"
+    "backgroundColor": "rgba( 0, 0, 0, 0.1 )",
+    "&-relative": {
+      "height": 1,
+      "backgroundColor": "rgba( 155, 155, 155, 1 )"
+    }
   },
   ".contentInset": {
     "contentInset": {
