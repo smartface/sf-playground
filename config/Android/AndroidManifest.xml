@@ -28,10 +28,11 @@
 	<!-- Allows an application to get information about the currently or recently running tasks. -->
 	<!--<uses-permission android:name="android.permission.GET_TASKS"/>-->
 	<!-- Required for camera functions. -->
-	<!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+	<uses-permission android:name="android.permission.CAMERA" />
 	<!-- Required for write external storage. -->
 	<!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
-	<!-- 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
 	<!-- Required for read phone state. -->
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<!-- 	<uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" /><uses-permission android:name="android.permission.RESTART_PACKAGES" /> -->
