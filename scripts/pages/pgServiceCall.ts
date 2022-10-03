@@ -60,18 +60,12 @@ export default class PgServiceCall extends withDismissAndBackButton(PgServiceCal
     Network.isConnected()
       .then(() => {
         this.lblNetworkStatus.text = 'Connected to internet';
-        this.lblNetworkStatus.dispatch({
-          type: 'pushClassNames',
-          classNames: '#pgServiceCall-lblNetworkStatus-online'
-        });
+        this.lblNetworkStatus.style.addClass('#pgServiceCall-lblNetworkStatus-online');
         this.isConnected = true;
       })
       .catch(() => {
         this.lblNetworkStatus.text = 'Not connected to internet';
-        this.lblNetworkStatus.dispatch({
-          type: 'removeClassName',
-          className: '#pgServiceCall-lblNetworkStatus-online'
-        });
+        this.lblNetworkStatus.style.removeClass('#pgServiceCall-lblNetworkStatus-online');
         this.isConnected = false;
       });
   }

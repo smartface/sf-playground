@@ -154,9 +154,6 @@ function createSwipeAction(text: string, className?: string) {
   const swipeItem = new StyleableSwipeItem();
   themeService.addGlobalComponent(swipeItem as any, `listView-swipeItem${++swipeItemCount}`);
   swipeItem.text = text;
-  swipeItem.dispatch({
-    type: 'pushClassNames',
-    classNames: [className]
-  });
+  swipeItem.style.addClass([className]);
   return swipeItem;
 }

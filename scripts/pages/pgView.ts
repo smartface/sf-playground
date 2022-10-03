@@ -19,13 +19,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
   setMinAndMaxWidth() {
     const min = parseInt(this.tbMinWidth.text) || 0;
     const max = parseInt(this.tbMaxWidth.text) || 100;
-    this.v4.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        minWidth: min,
-        maxWidth: max
-      }
-    });
+    this.v4.style.apply({ minWidth: min, maxWidth: max });
   }
 
   initProps() {
@@ -96,12 +90,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     const visible = this._boxesVisible;
     this._boxesVisible = !this._boxesVisible;
     [this.v1, this.v2, this.v3].forEach((v) => {
-      v.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          visible: !visible
-        }
-      });
+        v.style.apply({ visible: !visible });
     });
   }
   disableTouch() {
@@ -110,14 +99,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
 
   updateElevation(value: number) {
     [this.v1, this.v2, this.v3].forEach((v) => {
-      v.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          android: {
-            elevation: value
-          }
-        }
-      });
+        v.style.apply({ android: { elevation: value } });
     });
   }
 
@@ -125,24 +107,14 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
 
   setAspectRatio() {
     [this.v1, this.v2, this.v3].forEach((v) => {
-      v.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          aspectRatio: 1
-        }
-      });
+        v.style.apply({ aspectRatio: 1 });
     });
     this.applyFlLayout();
   }
 
   updateAlpha(alpha: number) {
     [this.v1, this.v2, this.v3].forEach((v) => {
-      v.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          alpha: alpha / 100
-        }
-      });
+        v.style.apply({ alpha: alpha / 100 });
     });
   }
 
@@ -153,14 +125,7 @@ export default class PgView extends withDismissAndBackButton(PgViewDesign) {
     picker.on('selected', (index) => {
       console.info('selected: ', index);
       [this.v1, this.v2, this.v3].forEach((v) => {
-        v.dispatch({
-          type: 'updateUserStyle',
-          userStyle: {
-            flexProps: {
-              alignSelf: items[index]
-            }
-          }
-        });
+          v.style.apply({ alignSelf: items[index] });
       });
       this.applyFlLayout();
     });

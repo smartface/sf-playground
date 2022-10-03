@@ -22,21 +22,11 @@ export default class PgActivityIndicator extends withDismissAndBackButton(PgActi
   }
 
   setColorRed() {
-    this.ai.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        color: '#FF0000'
-      }
-    });
+      this.ai.style.apply({ color: '#FF0000'});
   }
 
   setColorBlue() {
-    this.ai.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        color: '#0000FF'
-      }
-    });
+      this.ai.style.apply({ color: '#0000FF' });
   }
 
   /**

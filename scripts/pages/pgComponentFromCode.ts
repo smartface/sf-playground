@@ -19,13 +19,7 @@ export default class PgComponentFromCode extends withDismissAndBackButton(PgComp
 
     flexParent.addChild(flexChild, 'flexChild', '.sf-flexLayout'); //Necessary
 
-    flexChild.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        backgroundColor: '#00FF00',
-        flexGrow: 1
-      }
-    });
+    flexChild.style.apply({ backgroundColor: '#00FF00', flexGrow: 1 });
   }
 
   onShow() {

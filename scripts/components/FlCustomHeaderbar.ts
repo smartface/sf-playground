@@ -13,12 +13,7 @@ export default class FlCustomHeaderbar extends FlCustomHeaderbarDesign {
         return this._searchViewIsActive;
     }
     set searchViewVisible(value: boolean) {
-        this.searchViewMain.dispatch({
-            type: 'updateUserStyle',
-            userStyle: {
-                visible: value
-            }
-        })
+        this.searchViewMain.style.apply({ visible: value });
     }
     set labelText(value: string) {
         this.lblSearchIcon.text = value;

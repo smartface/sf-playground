@@ -34,12 +34,7 @@ export default class LviCompanyInfoExtended extends LviCompanyInfoExtendedDesign
     this.lblCompanyInfo.text = value;
   }
   set separatorVisible(value: boolean) {
-    this.separator.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        visible: value
-      }
-    });
+    this.separator.style.apply({ visible: value });
   }
   static getHeight() {
     return Height;

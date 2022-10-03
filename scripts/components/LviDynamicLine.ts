@@ -15,12 +15,7 @@ export default class LviDynamicLine extends LviDynamicLineDesign {
     this.lblLine.text = value;
   }
   set separatorVisible(value: boolean) {
-    this.separator.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        visible: value
-      }
-    });
+    this.separator.style.apply({ visible: value });
   }
   static getHeight(text: string) {
     /**

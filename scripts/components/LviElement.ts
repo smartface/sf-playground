@@ -27,10 +27,7 @@ export default class LviElement extends LviElementDesign {
   }
 
   toggleZebra(isZebra = false) {
-    this.flElementWrapper.dispatch({
-      type: 'pushClassNames',
-      classNames: isZebra ? `${wrapperClassName}-zebra` : `${wrapperClassName}`
-    });
+      this.flElementWrapper.style.addClass(isZebra ? `${wrapperClassName}-zebra` : `${wrapperClassName}`);
   }
 
   static getHeight(): number {

@@ -21,14 +21,8 @@ function initWaitDialog(opts?: { closeOnTouch: boolean }) {
   });
   themeService.addGlobalComponent(dialog.layout, 'genericDialog');
   themeService.addGlobalComponent(component, 'genericWaitingIndicator');
-  (dialog.layout as StyleableFlexLayout).dispatch({
-    type: 'pushClassNames',
-    classNames: '.dialog'
-  });
-  component.dispatch({
-    type: 'pushClassNames',
-    classNames: '.flWaitingIndicator'
-  });
+  (dialog.layout as StyleableFlexLayout).style.addClass('.dialog');
+  component.style.addClass('.flWaitingIndicator');
   if (opts?.closeOnTouch) {
     dialog.layout.onTouchEnded = (isInside) => {
       isInside && dialog.hide();

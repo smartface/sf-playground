@@ -28,12 +28,7 @@ export default class LviCompanyInfo extends LviCompanyInfoDesign {
     this.lblCompanySection.text = value;
   }
   set separatorVisible(value: boolean) {
-    this.separator.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        visible: value
-      }
-    });
+    this.separator.style.apply({ visible: value });
   }
   static getHeight() {
     return Height;
