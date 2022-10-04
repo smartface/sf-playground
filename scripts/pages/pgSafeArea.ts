@@ -6,15 +6,7 @@ export default class PgSafeArea extends withDismissAndBackButton(PgSafeAreaDesig
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.ios.onSafeAreaPaddingChange = (padding) => {
-      this.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          paddingBottom: padding.bottom,
-          paddingLeft: padding.left,
-          paddingRight: padding.right,
-          paddingTop: padding.top
-        }
-      });
+        this.style.apply({ paddingBottom: padding.bottom, paddingLeft: padding.left, paddingRight: padding.right, paddingTop: padding.top });
     };
     this.onOrientationChange = () => {
       console.info('orientation changed');

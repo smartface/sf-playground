@@ -107,9 +107,9 @@
   integrity sha512-c/SAF3eelLmA/k19Y1frDb+Vauw0OHV27gl1S0DwINA5saz1kN6InYYYmmxc4SJMX4lCeMNgCJZMK2X57vzEfg==
 
 "@smartface/styling-context@^5.0.5-alpha":
-  version "5.0.5-alpha.8"
-  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.5-alpha.8.tgz#8eefff9f496c09c0803856b72eba0b87935019a1"
-  integrity sha512-vhcTkWNhk55vXO8lavcL9pNZVRRKRN1UHDHXhedQua94eigy2NDRHLvAKE52JBHCUpGhi4UjT+XIQLlbl2gN4A==
+  version "5.0.5-alpha.9"
+  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.5-alpha.9.tgz#c725486f16d48b9cd96cb635ff1520330ae26b3f"
+  integrity sha512-TiOvESt+75CKSFrLReoev+VnhAG0NAwQnVnECSt+8SgjyLSAV/JymHTrwU6lviyQRNRhDkNfU4ze1/WfAs0kPw==
   dependencies:
     "@smartface/contx" "^4.2.0"
     "@smartface/styler" "^2.0.0"
