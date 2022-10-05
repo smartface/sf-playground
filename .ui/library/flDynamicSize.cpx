@@ -15,11 +15,7 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {},
-				"left": 5,
-				"top": 466.67
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label .flDynamicSize-lblDynamicSize",
@@ -27,6 +23,7 @@
 			"oldName": "lblNoSize",
 			"props": {
 				"children": [],
+				"maxLines": 0,
 				"name": "lblDynamicSize",
 				"parent": "8120-5b64-07b4-23ab",
 				"text": "short text",

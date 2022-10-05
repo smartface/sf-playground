@@ -15,20 +15,7 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"deltaX": 0,
-				"deltaY": 0,
-				"flexProps": {},
-				"height": 300,
-				"lastX": 64,
-				"lastY": 100,
-				"left": 64,
-				"node": null,
-				"top": 100,
-				"width": 300,
-				"x": 64,
-				"y": 100
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .flWaitingIndicator-wrapper",

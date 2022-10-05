@@ -17,11 +17,7 @@
 				"page": "__library__"
 			},
 			"type": "ListViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": 45.33,
-				"top": 428
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .lviCompanyInfoExtended-wrapper",
@@ -82,6 +78,7 @@
 			"oldName": "lblCompanySection_1",
 			"props": {
 				"children": [],
+				"maxLines": 3,
 				"name": "lblCompanyInfo",
 				"parent": "5584-f9f3-b477-9af6",
 				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis risus tincidunt, vehicula ipsum ac, ultricies velit. Nunc mollis libero ac aliquam maximus. Pellentesque sodales sem nec dolor placerat rhoncus.",

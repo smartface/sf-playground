@@ -17,11 +17,7 @@
 				"page": "__library__"
 			},
 			"type": "ListViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": 22.73,
-				"top": 200
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .lviCompanyInfo-wrapper",

@@ -5,7 +5,7 @@
 			"id": "0722-ef3d-1574-e19f",
 			"props": {
 				"children": [
-					"6b50-58d2-2d76-8870",
+					"762c-c672-760e-a071",
 					"1db6-8229-5d12-4503"
 				],
 				"name": "flCustomHeaderbar",
@@ -18,17 +18,31 @@
 			"userProps": {}
 		},
 		{
+			"className": ".sf-flexLayout",
+			"id": "762c-c672-760e-a071",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"c856-63da-4f9d-378c"
+				],
+				"name": "flWrapper",
+				"parent": "0722-ef3d-1574-e19f"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
 			"className": ".sf-searchView .flCustomHeaderbar-searchView",
-			"id": "6b50-58d2-2d76-8870",
+			"id": "c856-63da-4f9d-378c",
 			"oldName": "searchView1",
 			"props": {
 				"children": [],
 				"hint": "Search",
 				"name": "searchViewMain",
-				"parent": "0722-ef3d-1574-e19f"
-			},
-			"source": {
-				"page": "__library__"
+				"parent": "762c-c672-760e-a071"
 			},
 			"type": "SearchView",
 			"userProps": {

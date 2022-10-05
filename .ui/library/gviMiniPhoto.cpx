@@ -15,11 +15,7 @@
 				"page": "__library__"
 			},
 			"type": "GridViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": "37.50",
-				"top": "54.50"
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .gviMiniPhoto-flex",
@@ -37,7 +33,6 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"testId": "OlrJ5aPaB",
 				"usePageVariable": true
 			}
 		},
@@ -55,7 +50,6 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"testId": "dPyUkTQXx",
 				"usePageVariable": true
 			}
 		}

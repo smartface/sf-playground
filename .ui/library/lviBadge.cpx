@@ -16,15 +16,10 @@
 				"page": "__library__"
 			},
 			"type": "ListViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": 0,
-				"testId": "TIeR1NGuG",
-				"top": 514.5454545454545
-			}
+			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .lviBadge-flWrapper",
 			"id": "8d92-d42a-c5d6-2f63",
 			"props": {
 				"children": [
@@ -43,16 +38,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"flexDirection": "ROW"
-				},
-				"testId": "t3XWR0grK",
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "0a0b-b039-6c11-6f37",
 			"initialized": true,
@@ -69,25 +59,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"flexProps": {
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"height": 50,
-				"left": 0,
-				"marginLeft": 20,
-				"testId": "HCZssz8KW",
-				"top": 0,
-				"usePageVariable": true,
-				"width": 50
+				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "6dcc-977c-9027-2582",
 			"initialized": true,
@@ -104,25 +80,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"flexProps": {
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"height": 50,
-				"left": 0,
-				"marginLeft": 20,
-				"testId": "HCZssz8KW",
-				"top": 0,
-				"usePageVariable": true,
-				"width": 50
+				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "a2c1-bda9-0d04-b0d3",
 			"initialized": true,
@@ -139,25 +101,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"flexProps": {
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"height": 50,
-				"left": 0,
-				"marginLeft": 20,
-				"testId": "HCZssz8KW",
-				"top": 0,
-				"usePageVariable": true,
-				"width": 50
+				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "f3fa-7639-7215-9a51",
 			"initialized": true,
@@ -174,25 +122,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"flexProps": {
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"height": 50,
-				"left": 0,
-				"marginLeft": 20,
-				"testId": "HCZssz8KW",
-				"top": 0,
-				"usePageVariable": true,
-				"width": 50
+				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "1187-81d0-5205-fe41",
 			"initialized": true,
@@ -209,21 +143,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"flexProps": {
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"height": 50,
-				"left": 0,
-				"marginLeft": 20,
-				"testId": "HCZssz8KW",
-				"top": 0,
-				"usePageVariable": true,
-				"width": 50
+				"usePageVariable": true
 			}
 		}
 	]

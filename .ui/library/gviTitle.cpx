@@ -16,9 +16,7 @@
 				"page": "__library__"
 			},
 			"type": "GridViewItem",
-			"userProps": {
-				"paddingLeft": 16
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label",
@@ -37,12 +35,7 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": null,
 				"text": "label1",
-				"textAlignment": "MIDCENTER",
 				"usePageVariable": true
 			}
 		}
