@@ -92,5 +92,28 @@
       "bottom": 15,
       "top": 15
     }
+  },
+  ".flWrapper": {
+    "flexProps": {
+      "flexGrow": 4,
+      "alignItems": "CENTER",
+      "alignContent": "CENTER"
+    }
+  },
+  ".iconBack": {
+    "flexProps": {
+      "flexGrow": 1,
+      "positionType": "RELATIVE"
+    },
+    "font": {
+      "family": "FontAwesome5FreeSolid",
+      "italic": false,
+      "bold": false
+    },
+    "glyph": "",
+    "width": 50,
+    "height": 50,
+    "textAlignment": "MIDCENTER",
+    "textColor": "rgba( 255, 255, 255, 1 )"
   }
 }

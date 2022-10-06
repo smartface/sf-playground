@@ -5,7 +5,8 @@
 			"id": "0722-ef3d-1574-e19f",
 			"props": {
 				"children": [
-					"762c-c672-760e-a071",
+					"2402-8ea2-bb16-aa5f",
+					"4fe1-a95d-b6c0-e23a",
 					"1db6-8229-5d12-4503"
 				],
 				"name": "flCustomHeaderbar",
@@ -18,12 +19,27 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout",
-			"id": "762c-c672-760e-a071",
+			"className": ".icon .iconBack",
+			"id": "2402-8ea2-bb16-aa5f",
+			"oldName": "icon1",
+			"props": {
+				"children": [],
+				"name": "iconBack",
+				"parent": "0722-ef3d-1574-e19f"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Icon",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .flCustomHeaderbar-flWrapper",
+			"id": "4fe1-a95d-b6c0-e23a",
 			"oldName": "flexLayout1",
 			"props": {
 				"children": [
-					"c856-63da-4f9d-378c"
+					"5ec4-a030-137a-5938"
 				],
 				"name": "flWrapper",
 				"parent": "0722-ef3d-1574-e19f"
@@ -36,13 +52,13 @@
 		},
 		{
 			"className": ".sf-searchView .flCustomHeaderbar-searchView",
-			"id": "c856-63da-4f9d-378c",
+			"id": "5ec4-a030-137a-5938",
 			"oldName": "searchView1",
 			"props": {
 				"children": [],
 				"hint": "Search",
 				"name": "searchViewMain",
-				"parent": "762c-c672-760e-a071"
+				"parent": "4fe1-a95d-b6c0-e23a"
 			},
 			"type": "SearchView",
 			"userProps": {
