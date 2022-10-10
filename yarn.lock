@@ -635,10 +635,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@smartface/builder@^0.10.6-beta.1":
-  version "0.10.6-beta.1"
-  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.10.6-beta.1.tgz#2282e978e32f7a6bc2cfecbd730b62718460f095"
-  integrity sha512-pQXev7sTvbEe/jHHFXtXMSf+a7JlFW5ppexKcwqbOBICJIqEN8STrWwoq5E67LNidIluD4wKG/f4OxyY/UKHdQ==
+"@smartface/builder@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@smartface/builder/-/builder-0.10.6.tgz#6e62e49c5ee93d8a71d4eadae2c78001b56ded71"
+  integrity sha512-kjTkxMlNBSX7Lq81QKnIwQqC0k4RjPDxfXOgwMB343GfRttQZsP4I2GlichBFm0aFeJf4+wGZLfJs9FreM1Dyw==
   dependencies:
     "@smartface/html-to-text" "^1.0.5"
     "@smartface/library-reader" "^0.8.4"
@@ -658,10 +658,10 @@
     recursive-readdir "^2.2.1"
     rmdir "^1.2.0"
 
-"@smartface/dispatcher@^0.10.6-beta.1":
-  version "0.10.6-beta.1"
-  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.6-beta.1.tgz#286c7d744800214fa298ceb8181ee2b64573ca9f"
-  integrity sha512-vImRWKYZBGhufTewiNOAuglevIPF+SkjVkbbDqmWogdRal9Twz4ellpc/2YvLgzdxFZe7Nfpb2pTc8yyjH+XoA==
+"@smartface/dispatcher@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.6.tgz#05e61b757dbd21db40a9dd7eca36f34c5f4a9e80"
+  integrity sha512-+1kGd42jTc+7TjxwIfqT99tkLoPbjgLqjAN0W0whKVoSR3bBvGJr5+Gt6TetO25wIDHXfTd74qXsQlRw/v9BUw==
   dependencies:
     "@smartface/nsfw-prebuild" "^2.2.2"
     cors "^2.8.5"
@@ -703,10 +703,10 @@
     pngcrush "^3.0.0"
     rmdir "^1.2.0"
 
-"@smartface/library-reader@^0.10.6-beta.1":
-  version "0.10.6-beta.1"
-  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.10.6-beta.1.tgz#dea71d81407abe766d6b2b29048212d0de244618"
-  integrity sha512-zf7To9A6hy6IlKBa1wlb081aMUcrY0LcJET8IxtoAtgZCQakPL3vxbsPX0YJ5RgVaASFZuFigD0t2oCeNR3GKA==
+"@smartface/library-reader@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@smartface/library-reader/-/library-reader-0.10.6.tgz#c8bd217f5f6d8c2855e185326c02da010deffaca"
+  integrity sha512-8imH6l9thNeK8wzV4HnkfQ6AWNgtaUaHrcK+ny3D1XY8zZU5YN8MSNkXtD18SzbAASUIYW0GgruvloufCYBePw==
   dependencies:
     async "^2.6.1"
 
@@ -717,10 +717,10 @@
   dependencies:
     async "^2.6.1"
 
-"@smartface/marketplace-service@^0.10.6-beta.1":
-  version "0.10.6-beta.1"
-  resolved "https://registry.yarnpkg.com/@smartface/marketplace-service/-/marketplace-service-0.10.6-beta.1.tgz#aaa93925eff361cbff417281d2648b224612b300"
-  integrity sha512-Evk9R40Qua2fn/lupeRIWfitJtsgT7iKg7fIuTblBwXCbR8vDSTGOF0C/eRRHd6hhTQYgixpJMAEgEYUHlp6BQ==
+"@smartface/marketplace-service@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@smartface/marketplace-service/-/marketplace-service-0.10.6.tgz#ae790f05d8178d02538953a3f4a1bb240ef9c6c2"
+  integrity sha512-lfJEzXsfulnsB72A6+Lh+WailQp66VZ/Zb+H2ik0SGscSdjZYpYt/74U53vtC/UuO/zJDiG3fOM+DSGJpvEFbg==
   dependencies:
     async "^2.6.1"
     bytes "^3.0.0"
@@ -749,10 +749,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-1.3.16.tgz#7c8ddd1e044a28cf01c7bdb0cdf726467f9ce508"
   integrity sha512-WlHAJnAiXgKmT/4qh8Rx3TO9Y4sejDo2Xe/M25s4ClECWNB+RY132KDq0LPi2ZnmmCOASRg6Qbp7QZ24WYQdTA==
 
-"@smartface/tsc-watch@^0.10.6-beta.1":
-  version "0.10.6-beta.1"
-  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.10.6-beta.1.tgz#2d09933c0dedcdcdeebc33e43393940a6d75d18a"
-  integrity sha512-EqtagcD8kBu5OLTjuc0gXZDme5XlBc81Knjia+nJ3jX6lPqED8/vOeD7+bHw/HLwoe2EqtW1R0zzDUlyuSPu4g==
+"@smartface/tsc-watch@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@smartface/tsc-watch/-/tsc-watch-0.10.6.tgz#5944a01204132cd16a4f07979bc5f2922e87bc5d"
+  integrity sha512-BCNnNat3HQ6i0b3oZ1Wm75F3SfD2SRV2WKvMAU/J/KBfQZE+r+RXVs50hHIHYq9agrNViyXVl482ZqjOJ+M24A==
   dependencies:
     chalk "^4.1.2"
     tsc-watch "^4.6.0"

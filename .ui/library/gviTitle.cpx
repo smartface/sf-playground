@@ -1,8 +1,8 @@
 {
 	"components": [
 		{
-			"className": ".sf-gridViewItem",
-			"hiddenComponent": true,
+			"className": ".sf-gridViewItem .gviTitle",
+			"hiddenComponent": false,
 			"id": "c23a-58bd-e72b-1b7e",
 			"props": {
 				"children": [
@@ -19,7 +19,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".sf-label .gviTitle-lblTitle",
 			"id": "3925-fb44-0d01-b8cf",
 			"oldName": "label1",
 			"props": {
