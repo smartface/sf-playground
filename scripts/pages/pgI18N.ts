@@ -1,7 +1,7 @@
 import PgI18NDesign from 'generated/pages/pgI18N';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
-import { i18n } from '@smartface/i18n';
+import  i18n  from '@smartface/i18n';
 import Picker from '@smartface/native/ui/picker';
 
 export default class PgI18N extends withDismissAndBackButton(PgI18NDesign) {

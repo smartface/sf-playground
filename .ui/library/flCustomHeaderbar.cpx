@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-flexLayout .flCustomHeaderbar",
+			"hiddenComponent": true,
 			"id": "0722-ef3d-1574-e19f",
 			"props": {
 				"children": [

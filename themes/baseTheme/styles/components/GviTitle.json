@@ -1,5 +1,11 @@
 {
   ".gviTitle": {
-    "paddingLeft": 16
+    "paddingLeft": 16,
+    "&-lblTitle": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textAlignment": "MIDCENTER"
+    }
   }
 }

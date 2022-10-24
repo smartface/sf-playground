@@ -1,0 +1,48 @@
+{
+  ".flBottomSheet": {
+    "&-flWrapper": {
+      "flexProps": {
+        "flexDirection": "ROW",
+        "alignItems": "CENTER"
+      },
+      "&-iconBack": {
+        "flexProps": {
+          "flexGrow": 1,
+          "positionType": "RELATIVE"
+        },
+        "width": 50,
+        "height": 50,
+        "textColor": "rgba( 255, 255, 255, 1 )",
+        "font": {
+          "family": "FontAwesome5FreeSolid",
+          "style": null,
+          "italic": false,
+          "bold": false,
+          "size": 17
+        },
+        "glyph": "",
+        "textAlignment": "MIDLEFT",
+        "marginLeft": 20
+      },
+      "backgroundColor": "rgba( 0, 161, 241, 1 )",
+      "textAlignment": "MIDCENTER",
+      "&-lblTitle": {
+        "flexProps": {
+          "flexGrow": 4
+        },
+        "textAlignment": "MIDLEFT",
+        "shadowColor": "rgba( 255, 255, 255, 1 )",
+        "textColor": "rgba( 255, 255, 255, 1 )"
+      },
+      "borderRadius": 16,
+      "borderBottomLeftRadius": -2,
+      "borderBottomRightRadius": -2,
+      "height": 60
+    },
+    "&-btnMain": {
+      "marginLeft": 20,
+      "margin": 20,
+      "marginTop": 20
+    }
+  }
+}
