@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .flImage",
 			"hiddenComponent": true,
 			"id": "2ca1-cb03-95f1-c455",
 			"initialized": true,
@@ -16,18 +16,10 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexDirection": "ROW"
-				},
-				"height": 50,
-				"marginLeft": 20,
-				"testId": "HCZssz8KW",
-				"width": 50
-			}
+			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .flImage-imgIcon",
 			"id": "e484-4e90-7ed1-3e83",
 			"props": {
 				"children": [],
@@ -40,12 +32,7 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"height": 40,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"testId": "AzxLc9-mQ",
-				"usePageVariable": true,
-				"width": 50
+				"usePageVariable": true
 			}
 		}
 	]

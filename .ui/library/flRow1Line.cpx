@@ -18,11 +18,7 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {},
-				"left": 7.41,
-				"top": 131.48
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label .flRow1Line-label1",

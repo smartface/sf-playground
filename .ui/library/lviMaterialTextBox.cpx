@@ -15,11 +15,7 @@
 				"page": "__library__"
 			},
 			"type": "ListViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": 27.87,
-				"top": 101.64
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-materialTextBox .lviMaterialTextBox-mtb",

@@ -1,0 +1,16 @@
+{
+  ".flImage": {
+    "flexProps": {
+      "flexDirection": "ROW"
+    },
+    "width": 50,
+    "height": 50,
+    "marginLeft": 20,
+    "&-imgIcon": {
+      "height": 50,
+      "width": 50,
+      "imageFillType": "ASPECTFIT",
+      "image": "smartface.png"
+    }
+  }
+}

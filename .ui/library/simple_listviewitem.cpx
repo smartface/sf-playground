@@ -18,11 +18,7 @@
 				"page": "__library__"
 			},
 			"type": "ListViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": 4,
-				"top": 72.67
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label .lviElement-title.value",
@@ -64,7 +60,6 @@
 			"userProps": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 10.478940217391305,
-				"marginRight": 16,
 				"text": ""
 			}
 		},

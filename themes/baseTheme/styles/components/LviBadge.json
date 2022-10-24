@@ -1,0 +1,20 @@
+{
+  ".lviBadge": {
+    "&-flWrapper": {
+      "flexProps": {
+        "flexGrow": 1,
+        "flexDirection": "ROW"
+      },
+      "&-flImage": {
+        "height": 50,
+        "flexProps": {
+          "flexDirection": "ROW"
+        },
+        "width": 40,
+        "marginLeft": 20,
+        "left": 0,
+        "top": 0
+      }
+    }
+  }
+}

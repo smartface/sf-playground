@@ -14,13 +14,7 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {},
-				"height": 926.32,
-				"left": 356.14,
-				"top": 0,
-				"width": 71.93
-			}
+			"userProps": {}
 		}
 	]
 }

@@ -17,11 +17,7 @@
 				"page": "__library__"
 			},
 			"type": "ListViewItem",
-			"userProps": {
-				"flexProps": {},
-				"left": 2,
-				"top": 12.67
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label .lviTitle-lblTitle",

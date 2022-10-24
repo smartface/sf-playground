@@ -18,12 +18,7 @@
 				"page": "__library__"
 			},
 			"type": "GridViewItem",
-			"userProps": {
-				"flexProps": {},
-				"height": 227,
-				"left": 102.77777777777779,
-				"top": 88.88888888888889
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-imageView .sf-gridViewItem-simple-preview",

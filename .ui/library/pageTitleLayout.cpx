@@ -16,16 +16,7 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"justifyContent": "CENTER"
-				},
-				"height": 24,
-				"left": 34,
-				"top": 721,
-				"width": 150
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-imageView .pageTitleLayout_logo",
@@ -43,10 +34,7 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 46.42857142857143,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"usePageVariable": true,
-				"width": null
+				"usePageVariable": true
 			}
 		}
 	]

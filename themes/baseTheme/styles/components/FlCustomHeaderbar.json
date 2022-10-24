@@ -6,9 +6,10 @@
     "&-searchView": {
       "width": null,
       "flexProps": {
-        "flexGrow": 4
+        "flexGrow": 1
       },
-      "backgroundColor": "rgba( 0, 161, 241, 1 )"
+      "backgroundColor": "rgba( 0, 161, 241, 1 )",
+      "height": null
     },
     "&-lblSearchIcon": {
       "flexProps": {
@@ -22,9 +23,21 @@
         "italic": false
       },
       "textAlignment": "MIDCENTER",
-      "textColor": "rgba( 255, 255, 255, 1 )",
-      "marginTop": 10
+      "textColor": "rgba( 255, 255, 255, 1 )"
     },
-    "backgroundColor": "rgba( 0, 161, 241, 1 )"
+    "backgroundColor": "rgba( 0, 161, 241, 1 )",
+    "&-flWrapper": {
+      "flexProps": {
+        "flexGrow": 4,
+        "alignItems": "CENTER",
+        "alignContent": "STRETCH",
+        "flexDirection": "ROW",
+        "justifyContent": "FLEX_START"
+      },
+      "width": null,
+      "height": null
+    },
+    "&-searchViewMain": {
+    }
   }
 }

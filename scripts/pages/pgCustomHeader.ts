@@ -18,8 +18,8 @@ export default class PgCustomHeader extends withDismissAndBackButton(PgCustomHea
             }else{
                 this.flCustomHeaderbar.labelText = 'search'
             }
-        })
-
+        }) 
+        this.flCustomHeaderbar.iconBack.on('touch',()=> router.goBack())
     }
     initSearchView(): void {
         this.flCustomHeaderbar.searchViewMain.hint = 'Search';
@@ -45,7 +45,7 @@ export default class PgCustomHeader extends withDismissAndBackButton(PgCustomHea
      */
     onShow() {
         super.onShow();
-        this.initBackButton(this.router); //Addes a back button to the page headerbar.
+        //this.initBackButton(this.router); //Addes a back button to the page headerbar.
     }
 
     /**

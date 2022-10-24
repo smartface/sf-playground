@@ -1,0 +1,20 @@
+{
+  ".lviPages": {
+    "&-lblPageName": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textAlignment": "MIDCENTER"
+    },
+    "&-flSeparator": {
+      "flexProps": {
+        "positionType": "ABSOLUTE"
+      },
+      "height": 1,
+      "left": 0,
+      "right": 0,
+      "top": 1,
+      "backgroundColor": "rgba( 155, 155, 155, 1 )"
+    }
+  }
+}

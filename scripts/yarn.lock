@@ -79,9 +79,9 @@
     "@smartface/core" "^5.0.3"
 
 "@smartface/native@alpha":
-  version "5.0.4-alpha.50"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.4-alpha.50.tgz#c7633c2156962b3f020c2d64765bf53e8bbbbc07"
-  integrity sha512-mdr9C3drCc8bH4hZjaR2op/M3O1b3D0urcFKVOsacDe4q4fBbNb2XDvo2KCTS2ihtmr/HLqYWPFx1AyhxrlGJw==
+  version "5.0.4-alpha.56"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.4-alpha.56.tgz#cddf0ba7115de108f970ffdb48c25adff8a8f7bd"
+  integrity sha512-OuZ1CTH/vme2mAOVbiocDvqzWZWFPk8Bn6kP9IvnjjwEdn7daXJ6lh62uRllyviWwZ919cCwGU9pLG91FevfPw==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
@@ -107,9 +107,9 @@
   integrity sha512-c/SAF3eelLmA/k19Y1frDb+Vauw0OHV27gl1S0DwINA5saz1kN6InYYYmmxc4SJMX4lCeMNgCJZMK2X57vzEfg==
 
 "@smartface/styling-context@^5.0.5-alpha":
-  version "5.0.5-alpha.9"
-  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.5-alpha.9.tgz#c725486f16d48b9cd96cb635ff1520330ae26b3f"
-  integrity sha512-TiOvESt+75CKSFrLReoev+VnhAG0NAwQnVnECSt+8SgjyLSAV/JymHTrwU6lviyQRNRhDkNfU4ze1/WfAs0kPw==
+  version "5.0.5-alpha.10"
+  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.5-alpha.10.tgz#5fe7da125796e3a529aa728599c9e5e8f4e310ae"
+  integrity sha512-ZWkcqfQKi0vok5LU2N014n/D0pGPBNF66OhnMV2x/jQSgYPgQKEz5/Ln84drr4iRBSGYvL1mlMWa3pkCL7OFug==
   dependencies:
     "@smartface/contx" "^4.2.0"
     "@smartface/styler" "^2.0.0"
