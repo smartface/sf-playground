@@ -27,39 +27,15 @@ export default class PgYogaTest extends PgYogaTestDesign {
     for (let i = 0; i < MAX_ITEM_LENGTH; i++) {
       const parentFlex = new StyleableFlexLayout();
       this.svMain.addChild(parentFlex, `parent${i}`, '.sf-flexLayout #pgYogaTest-parent');
-      parentFlex.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          width: this.getRandomWidth(),
-          height: this.getRandomHeight()
-        }
-      });
+      parentFlex.style.apply({ width: this.getRandomWidth(), height: this.getRandomHeight() });
 
       const childFlex = new StyleableFlexLayout();
       parentFlex.addChild(childFlex, `child${i}`, '.sf-flexLayout #pgYogaTest-child');
-      childFlex.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          width: this.getRandomWidth(),
-          height: this.getRandomHeight()
-        }
-      });
+      childFlex.style.apply({ width: this.getRandomWidth(), height: this.getRandomHeight() });
 
       setInterval(() => {
-        parentFlex.dispatch({
-          type: 'updateUserStyle',
-          userStyle: {
-            width: this.getRandomWidth(),
-            height: this.getRandomHeight()
-          }
-        });
-        childFlex.dispatch({
-          type: 'updateUserStyle',
-          userStyle: {
-            width: this.getRandomWidth() / 2,
-            height: this.getRandomHeight() / 2
-          }
-        });
+          parentFlex.style.apply({ width: this.getRandomWidth(), height: this.getRandomHeight() });
+          childFlex.style.apply({ width: this.getRandomWidth() / 2, height: this.getRandomHeight() / 2 });
       }, this.getRandomDuration());
     }
   }

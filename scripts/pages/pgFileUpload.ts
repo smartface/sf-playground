@@ -29,12 +29,7 @@ export default class PgFileUpload extends withDismissAndBackButton(PgFileUploadD
   }
 
   setVisible(view: StyleableView, visible: boolean) {
-    view.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        visible
-      }
-    });
+      view.style.apply({ visible });
   }
 
   initUploadIndicator() {

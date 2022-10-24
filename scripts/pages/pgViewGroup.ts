@@ -20,16 +20,7 @@ export default class PgViewGroup extends withDismissAndBackButton(PgViewGroupDes
   // showcase purposes. As a best practice, remove this and
   // use WYSIWYG editor to style your pages.
   centerizeTheChildrenLayout() {
-    this.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          flexDirection: 'ROW',
-          justifyContent: 'CENTER',
-          alignItems: 'CENTER'
-        }
-      }
-    });
+      this.style.apply({ flexProps: { flexDirection: 'ROW', justifyContent: 'CENTER', alignItems: 'CENTER' } });
   }
 
   /**

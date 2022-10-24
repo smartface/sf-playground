@@ -114,14 +114,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     picker.on('selected', (index) => {
       this.fl.justifyContent = JustifyContent[index].native
       console.info('justifyContent: ', index);
-      this.fl.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          flexProps: {
-            justifyContent: JustifyContent[index].context
-          }
-        }
-      });
+      this.fl.style.apply({ flexProps: { justifyContent: JustifyContent[index].context } });
     });
     picker.show();
   }
@@ -130,14 +123,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     const isWrap = this.fl.flexWrap === Flex.FlexWrap.WRAP;
     this.fl.flexWrap = isWrap ? Flex.FlexWrap.NOWRAP : Flex.FlexWrap.WRAP;
     console.info('flexWrap: ', this.fl.flexWrap);
-    this.fl.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          flexWrap: isWrap ? 'NOWRAP' : 'WRAP'
-        }
-      }
-    });
+    this.fl.style.apply({ flexProps: { flexWrap: isWrap ? 'NOWRAP' : 'WRAP' } });
     this.btnFlexWrap.text = isWrap ? 'Change to Flex NoWrap' : 'Change to Flex Wrap';
   }
 
@@ -147,15 +133,8 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     picker.items = items;
     picker.on('selected', (index) => {
       console.info('flexDirection: ', index);
-      this.fl.flexDirection = FlexDirection[index].native
-      this.fl.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          flexProps: {
-            flexDirection: FlexDirection[index].context
-          }
-        }
-      });
+      this.fl.flexDirection = FlexDirection[index].native;
+      this.fl.style.apply({ flexProps: { flexDirection: FlexDirection[index].context } });
     });
     picker.show();
   }
@@ -163,14 +142,7 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
   changeDirection() {
     const isLTR = this.fl.direction === Flex.Direction.LTR;
     this.fl.direction = isLTR ? Flex.Direction.RTL : Flex.Direction.LTR;
-    this.fl.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          direction: isLTR ? 'RTL' : 'LTR'
-        }
-      }
-    });
+    this.fl.style.apply({ flexProps: { direction: isLTR ? 'RTL' : 'LTR' } });
     this.btnDirection.text = isLTR ? 'Change to RTL' : 'Change to LTR';
   }
 
@@ -180,15 +152,8 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     picker.items = items;
     picker.on('selected', (index) => {
       console.info('alignItems: ', index);
-      this.fl.alignItems = AlignItems[index].native
-      this.fl.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          flexProps: {
-            alignItems: AlignItems[index].context
-          }
-        }
-      });
+      this.fl.alignItems = AlignItems[index].native;
+      this.fl.style.apply({ flexProps: { alignItems: AlignItems[index].context } });
     });
     picker.show();
   }
@@ -199,15 +164,8 @@ export default class PgFlexLayout extends withDismissAndBackButton(PgFlexLayoutD
     picker.items = items;
     picker.on('selected', (index) => {
       console.info('alignContent: ', index);
-      this.fl.alignContent = AlignContent[index].native
-      this.fl.dispatch({
-        type: 'updateUserStyle',
-        userStyle: {
-          flexProps: {
-            alignContent: AlignContent[index].context
-          }
-        }
-      });
+      this.fl.alignContent = AlignContent[index].native;
+      this.fl.style.apply({ flexProps: { alignContent: AlignContent[index].context } });
     });
     picker.show();
   }

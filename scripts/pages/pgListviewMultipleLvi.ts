@@ -130,15 +130,6 @@ export default class PgListviewMultipleLvi extends withDismissAndBackButton(PgLi
       this.lvMain.refreshData();
       this.lvMain.stopRefresh();
     };
-
-    this.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        paddingTop: 0,
-        paddingLeft: 0,
-        paddingBottom: 0,
-        paddingRight: 0
-      }
-    });
+    this.style.apply({ paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0 });
   }
 }

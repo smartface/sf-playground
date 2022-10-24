@@ -97,15 +97,7 @@ export default class PgListviewPagination extends withDismissAndBackButton(PgLis
           }
         });
 
-        myListViewItem.dispatch({
-          type: 'updateUserStyle',
-          userStyle: {
-            flexProps: {
-              justifyContent: 'CENTER',
-              alignItems: 'CENTER'
-            }
-          }
-        });
+        myListViewItem.style.apply({ justifyContent: 'CENTER', alignItems: 'CENTER' });
       } else {
         let titleLayout = new StyleableFlexLayout();
         let titleLabel = new StyleableLabel();

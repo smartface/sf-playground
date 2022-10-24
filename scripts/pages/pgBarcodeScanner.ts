@@ -11,103 +11,93 @@ import System from '@smartface/native/device/system';
 import Toast from '@smartface/native/ui/toast';
 
 export default class PgBarcodeScanner extends withDismissAndBackButton(PgBarcodeScannerDesign) {
-  nativeBarcodeScanner: BarcodeScanner;
-  private wrapperOldHeight = themeService.getNativeStyle('.sf-flexLayout').height;
-  constructor(private router?: Router, private route?: Route) {
-    super({});
-    this.btnShowBarcode.onPress = () => {
-      this.showBarcode();
-      this.toggleBarcodeVisibility(true);
-    };
-    this.lblBarcodeText.onTouch = () => {
-      if (!this.lblBarcodeText.text.startsWith('(')) {
-        System.setClipboard({text:this.lblBarcodeText.text});
-        const toast = new Toast();
-        toast.message = 'Copied to Clipboard!';
-        toast.duration = 2;
-        toast.show();
-      }
-      return true;
-    };
-  }
+    nativeBarcodeScanner: BarcodeScanner;
+    private wrapperOldHeight = themeService.getNativeStyle('.sf-flexLayout').height;
+    constructor(private router?: Router, private route?: Route) {
+        super({});
+        this.btnShowBarcode.onPress = () => {
+            this.showBarcode();
+            this.toggleBarcodeVisibility(true);
+        };
+        this.lblBarcodeText.onTouch = () => {
+            if (!this.lblBarcodeText.text.startsWith('(')) {
+                System.setClipboard({ text: this.lblBarcodeText.text });
+                const toast = new Toast();
+                toast.message = 'Copied to Clipboard!';
+                toast.duration = 2;
+                toast.show();
+            }
+            return true;
+        };
+    }
 
-  onShow() {
-    super.onShow();
-    this.initBackButton(this.router);
-  }
+    onShow() {
+        super.onShow();
+        this.initBackButton(this.router);
+    }
 
-  onLoad() {
-    super.onLoad();
-    this.nativeBarcodeScanner = new BarcodeScanner({
-      layout: this.flBarcode,
-      width: Screen.width,
-      height: this.wrapperOldHeight // can also set null
-    });
-  }
-
-  showBarcode() {
-    this.nativeBarcodeScanner
-      .checkPermission()
-      .then(() => this.showScanPage())
-      .catch(async () => {
-        await this.askUserForPermission();
-        Application.call({
-          uriScheme: `app-settings:root=LOCATION_SERVICES`
+    onLoad() {
+        super.onLoad();
+        this.nativeBarcodeScanner = new BarcodeScanner({
+            layout: this.flBarcode,
+            width: Screen.width,
+            height: this.wrapperOldHeight // can also set null
         });
-      });
-  }
-  hideBarcode(): void {
-    this.nativeBarcodeScanner.stopCamera();
-    this.nativeBarcodeScanner.hide();
-  }
+    }
 
-  showScanPage(): void {
-    this.nativeBarcodeScanner.show().then((result) => {
-      this.toggleBarcodeVisibility(false);
-      this.hideBarcode();
-      this.lblBarcodeFormat.text = result.barcode.format;
-      this.lblBarcodeText.text = result.barcode.text;
-    });
-    setTimeout(() => {
-      this.nativeBarcodeScanner.startCamera();
-    }, 250);
-  }
+    showBarcode() {
+        this.nativeBarcodeScanner
+            .checkPermission()
+            .then(() => this.showScanPage())
+            .catch(async () => {
+                await this.askUserForPermission();
+                Application.call({
+                    uriScheme: `app-settings:root=LOCATION_SERVICES`
+                });
+            });
+    }
+    hideBarcode(): void {
+        this.nativeBarcodeScanner.stopCamera();
+        this.nativeBarcodeScanner.hide();
+    }
 
-  private toggleButtonVisibility(visible: boolean) {
-    this.btnShowBarcode.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        visible
-      }
-    });
-  }
+    showScanPage(): void {
+        this.nativeBarcodeScanner.show().then((result) => {
+            this.toggleBarcodeVisibility(false);
+            this.hideBarcode();
+            this.lblBarcodeFormat.text = result.barcode.format;
+            this.lblBarcodeText.text = result.barcode.text;
+        });
+        setTimeout(() => {
+            this.nativeBarcodeScanner.startCamera();
+        }, 250);
+    }
 
-  private toggleBarcodeVisibility(toggle: boolean) {
-    this.toggleButtonVisibility(!toggle);
-    this.flBarcode.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        height: toggle ? this.wrapperOldHeight : 0
-      }
-    });
-  }
+    private toggleButtonVisibility(visible: boolean) {
+        this.btnShowBarcode.style.apply({ visible });
+    }
 
-  private async askUserForPermission(): Promise<void> {
-    return new Promise((resolve, reject) => {
-      const alertView = new AlertView({
-        title: 'needCameraPermission'
-      });
-      alertView.addButton({
-        type: AlertView.Android.ButtonType.NEGATIVE,
-        text: 'Reject',
-        onClick: () => reject()
-      });
-      alertView.addButton({
-        type: AlertView.Android.ButtonType.POSITIVE,
-        text: 'Allow',
-        onClick: () => resolve()
-      });
-      alertView.show();
-    });
-  }
+    private toggleBarcodeVisibility(toggle: boolean) {
+        this.flBarcode.style.apply({ height: toggle ? this.wrapperOldHeight : 0 })
+        this.toggleButtonVisibility(!toggle);
+    }
+
+    private async askUserForPermission(): Promise<void> {
+        return new Promise((resolve, reject) => {
+            const alertView = new AlertView({
+                title: 'needCameraPermission'
+            });
+            alertView.addButton({
+                type: AlertView.Android.ButtonType.NEGATIVE,
+                text: 'Reject',
+                onClick: () => reject()
+            });
+            alertView.addButton({
+                type: AlertView.Android.ButtonType.POSITIVE,
+                text: 'Allow',
+                onClick: () => resolve()
+            });
+            alertView.show();
+        });
+    }
 }

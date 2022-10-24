@@ -17,16 +17,7 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
   // showcase purposes. As a best practice, remove this and
   // use WYSIWYG editor to style your pages.
   centerizeTheChildrenLayout() {
-    this.dispatch({
-      type: 'updateUserStyle',
-      userStyle: {
-        flexProps: {
-          flexDirection: 'COLUMN',
-          justifyContent: 'CENTER',
-          alignItems: 'CENTER'
-        }
-      }
-    });
+      this.style.apply({ flexProps: { flexDirection: 'COLUMN', justifyContent: 'CENTER', alignItems: 'CENTER' } });
   }
 
   onHide(){
