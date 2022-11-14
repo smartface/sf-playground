@@ -1,4 +1,4 @@
-import PgPermissionDesign from 'generated/pages/pgPermission';
+import PgPermissionForAndroidDesign from 'generated/pages/pgPermissionForAndroid';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Permission from '@smartface/native/device/permission';
@@ -11,7 +11,7 @@ interface Result{
     hasParent:boolean,
     parentPermission?:string
 }
-export default class PgPermission extends withDismissAndBackButton(PgPermissionDesign) {
+export default class PgPermissionForAndroid extends withDismissAndBackButton(PgPermissionForAndroidDesign) {
     dataSet: Result[] = [];
     constructor(private router?: Router, private route?: Route) {
         super({});

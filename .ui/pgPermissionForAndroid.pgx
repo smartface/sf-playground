@@ -2,76 +2,80 @@
 	"components": [
 		{
 			"className": ".sf-page",
-			"id": "8fe2-8bb0-df41-80f3",
-			"initialized": true,
+			"id": "98a4-7285-93e2-47c1",
+			"initialized": false,
 			"props": {
 				"children": [
-					"72e7-0639-8f14-3502",
-					"ca30-40aa-6b38-5075",
-					"a99f-7ae5-9769-f94e"
+					"cbd0-33ab-bcdf-39e5",
+					"7da4-7a6a-25e7-295e",
+					"0b96-9cbf-20ab-71be"
 				],
-				"name": "pgPermission",
+				"name": "pgPermissionForAndroid",
 				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "0.10.5-rc.0"
+			"version": "0.10.5-rc.0",
+			"degree": 0
 		},
 		{
 			"className": ".sf-statusBar",
-			"id": "72e7-0639-8f14-3502",
+			"id": "cbd0-33ab-bcdf-39e5",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
-				"parent": "8fe2-8bb0-df41-80f3"
+				"parent": "98a4-7285-93e2-47c1"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {},
+			"degree": 1
 		},
 		{
 			"className": ".sf-headerBar",
-			"id": "ca30-40aa-6b38-5075",
+			"id": "7da4-7a6a-25e7-295e",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "8fe2-8bb0-df41-80f3",
+				"parent": "98a4-7285-93e2-47c1",
 				"title": "pgPermission"
 			},
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "pgPermission"
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-listView .grow",
-			"id": "a99f-7ae5-9769-f94e",
+			"id": "0b96-9cbf-20ab-71be",
 			"oldName": "listView1",
 			"props": {
 				"children": [
-					"df93-203e-4c9a-ee2a"
+					"d461-e3be-ab5f-83c4"
 				],
 				"itemCount": 5,
 				"name": "lviMain",
-				"parent": "8fe2-8bb0-df41-80f3",
+				"parent": "98a4-7285-93e2-47c1",
 				"rowHeight": 54
 			},
 			"type": "ListView",
 			"userProps": {
 				"itemCount": 5,
 				"rowHeight": 54
-			}
+			},
+			"degree": 1
 		},
 		{
 			"className": ".sf-listViewItem .lviPermission #pgPermission-lviPermission",
 			"hiddenComponent": false,
-			"id": "df93-203e-4c9a-ee2a",
+			"id": "d461-e3be-ab5f-83c4",
 			"props": {
 				"children": [],
 				"name": "lviPermission",
-				"parent": "a99f-7ae5-9769-f94e"
+				"parent": "0b96-9cbf-20ab-71be"
 			},
 			"source": {
 				"page": "__library__",
@@ -86,7 +90,8 @@
 				"flexProps": {
 					"positionType": "RELATIVE"
 				}
-			}
+			},
+			"degree": 2
 		}
 	]
 }
