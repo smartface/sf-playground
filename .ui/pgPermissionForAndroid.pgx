@@ -1,0 +1,97 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "98a4-7285-93e2-47c1",
+			"initialized": false,
+			"props": {
+				"children": [
+					"cbd0-33ab-bcdf-39e5",
+					"7da4-7a6a-25e7-295e",
+					"0b96-9cbf-20ab-71be"
+				],
+				"name": "pgPermissionForAndroid",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.10.5-rc.0",
+			"degree": 0
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "cbd0-33ab-bcdf-39e5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "98a4-7285-93e2-47c1"
+			},
+			"type": "StatusBar",
+			"userProps": {},
+			"degree": 1
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "7da4-7a6a-25e7-295e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "98a4-7285-93e2-47c1",
+				"title": "pgPermission"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgPermission"
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-listView .grow",
+			"id": "0b96-9cbf-20ab-71be",
+			"oldName": "listView1",
+			"props": {
+				"children": [
+					"d461-e3be-ab5f-83c4"
+				],
+				"itemCount": 5,
+				"name": "lviMain",
+				"parent": "98a4-7285-93e2-47c1",
+				"rowHeight": 54
+			},
+			"type": "ListView",
+			"userProps": {
+				"itemCount": 5,
+				"rowHeight": 54
+			},
+			"degree": 1
+		},
+		{
+			"className": ".sf-listViewItem .lviPermission #pgPermission-lviPermission",
+			"hiddenComponent": false,
+			"id": "d461-e3be-ab5f-83c4",
+			"props": {
+				"children": [],
+				"name": "lviPermission",
+				"parent": "0b96-9cbf-20ab-71be"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "lviPermission",
+				"id": "0675-5fd7-5d4d-8d72"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				}
+			},
+			"degree": 2
+		}
+	]
+}

@@ -116,6 +116,7 @@ import PgOrientation from 'pages/pgOrientation';
 import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
 import PgSSLPinningHttp from 'pages/pgSSLPinningHttp';
 import PgCustomHeaderbar from 'pages/pgCustomHeader'
+import PgPermissionForAndroid from 'pages/pgPermissionForAndroid';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -196,7 +197,8 @@ export const tab0: Tab = {
     PgDatePicker,
     PgWebView,
     PgButton,
-    PgLabelFlexShrink
+    PgLabelFlexShrink,
+    PgPermissionForAndroid
   ]
 };
 

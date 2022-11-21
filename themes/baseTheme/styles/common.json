@@ -115,5 +115,8 @@
     "height": 50,
     "textAlignment": "MIDCENTER",
     "textColor": "rgba( 255, 255, 255, 1 )"
+  },
+  ".lblTextCenter": {
+    "textAlignment": "MIDCENTER"
   }
 }
