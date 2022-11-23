@@ -9,7 +9,14 @@
 					"88c1-a794-5133-e410",
 					"c05b-24ff-2ff1-01e2",
 					"799a-dc64-a611-a33f",
-					"a615-9d95-7087-eb56"
+					"5b6c-eaa3-d8fc-53b8",
+					"b7cc-9a44-fcab-c84b",
+					"69f6-270e-0e51-8d00",
+					"8bad-042c-8df0-8413",
+					"0043-ae51-81d8-d800",
+					"d421-83dc-7994-45ac",
+					"a615-9d95-7087-eb56",
+					"4adb-9272-03bb-bea5"
 				],
 				"name": "page1",
 				"orientation": "PORTRAIT",
@@ -54,61 +61,156 @@
 				"children": [],
 				"name": "lbl",
 				"parent": "a4e3-b04b-308f-a283",
-				"text": "Page1",
+				"text": "Camera Permissions",
 				"usePageVariable": true
 			},
 			"type": "Label",
 			"userProps": {
 				"autoHeight": 39.325842696629216,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20,
-					"alignSelf": "STRETCH",
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 32,
-					"bold": false,
-					"italic": false,
-					"family": "SFProText",
-					"style": "Regular"
-				},
-				"height": 600,
-				"left": 0,
-				"multiline": true,
-				"testId": "L-42gAben",
-				"text": "Page1",
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 210, 210, 210, 1 )",
-				"top": 0,
+				"text": "Camera Permissions",
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-button",
-			"id": "a615-9d95-7087-eb56",
+			"id": "5b6c-eaa3-d8fc-53b8",
+			"oldName": "btnRequestPermission_1",
 			"props": {
 				"autoHeight": 50.561797752808985,
 				"children": [],
-				"name": "btnNext",
+				"name": "btnRequestCamera",
 				"parent": "a4e3-b04b-308f-a283",
-				"text": "Next Page",
+				"text": "Request Camera",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
 				"autoHeight": 50.561797752808985,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"testId": "ucEDBF6ZMB",
-				"text": "Next Page",
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
+				"text": "Request Camera",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b7cc-9a44-fcab-c84b",
+			"oldName": "btnRequestPermission_1_1",
+			"props": {
+				"autoHeight": 50.561797752808985,
+				"children": [],
+				"name": "btnGetCameraAuthorization",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Get Camera Status",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.561797752808985,
+				"text": "Get Camera Status",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "69f6-270e-0e51-8d00",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Photo Library Permissions"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Photo Library Permissions"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "8bad-042c-8df0-8413",
+			"oldName": "btnRequestPermission_1",
+			"props": {
+				"autoHeight": 50.561797752808985,
+				"children": [],
+				"name": "btnRequestPhotoLibrary",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Reqıest Photo Library",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.561797752808985,
+				"text": "Reqıest Photo Library",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "0043-ae51-81d8-d800",
+			"oldName": "btnRequestPhotoLibrary_1",
+			"props": {
+				"autoHeight": 50.561797752808985,
+				"children": [],
+				"name": "btnGetPhotoLibrary",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Get Photo Library",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.561797752808985,
+				"text": "Get Photo Library",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "d421-83dc-7994-45ac",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Location Permissions"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Location Permissions"
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a615-9d95-7087-eb56",
+			"oldName": "btnRequestLocation",
+			"props": {
+				"autoHeight": 50.561797752808985,
+				"children": [],
+				"name": "btnRequestLastKnownLocation",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Request Last Known Location",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.561797752808985,
+				"text": "Request Last Known Location",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "4adb-9272-03bb-bea5",
+			"oldName": "btnGetLastKnowLocation",
+			"props": {
+				"autoHeight": 50.561797752808985,
+				"children": [],
+				"name": "btnGetLastKnownLocationStatus",
+				"parent": "a4e3-b04b-308f-a283",
+				"text": "Get Location Status",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.561797752808985,
+				"text": "Get Location Status",
+				"usePageVariable": true
 			}
 		}
 	]
