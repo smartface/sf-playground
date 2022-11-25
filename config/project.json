@@ -99,7 +99,7 @@
             "android": {
                 "outputFolder": "output/Android",
                 "packageName": "io.smartface.demo",
-                "obfuscationEnabled": true
+                "obfuscationEnabled": false
             }
         },
         "tempFolder": "output/.tmp"
