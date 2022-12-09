@@ -69,6 +69,7 @@ export default class PgPicker extends withDismissAndBackButton(PgPickerDesign) {
 
   onShow() {
     super.onShow();
+    this.initBackButton(this.router);
   }
 
   onLoad() {

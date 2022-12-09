@@ -38,7 +38,7 @@ export default class PgShare extends withDismissAndBackButton(PgShareDesign) {
   }
 
   shareImage() {
-    Share.shareImage(new Image({ path: Path.ImagesUriScheme + 'smartface.png' }), this, []);
+    Share.shareImage(Image.createFromFile(Path.ImagesUriScheme + 'smartface.png'), this, []);
   }
 
   shareText() {

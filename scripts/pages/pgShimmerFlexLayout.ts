@@ -2,7 +2,7 @@ import PgShimmerFlexLayoutDesign from 'generated/pages/pgShimmerFlexLayout';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 import Picker from '@smartface/native/ui/picker';
-import { ShimmeringDirection } from '@smartface/native/ui/shimmerflexlayout/shimmerflexlayout';
+import { ShimmerHighlight, ShimmeringDirection } from '@smartface/native/ui/shimmerflexlayout/shimmerflexlayout';
 
 export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShimmerFlexLayoutDesign) {
   constructor(private router?: Router, private route?: Route) {
@@ -34,6 +34,8 @@ export default class PgShimmerFlexLayout extends withDismissAndBackButton(PgShim
         this.sfl.stopShimmering();
         this.btnToggleShimmer.text = 'Start Shimmering';
       } else {
+        this.sfl.baseAlpha = 0.5;
+        this.sfl.android.build(ShimmerHighlight.AlphaHighlight);
         this.sfl.startShimmering();
         this.btnToggleShimmer.text = 'Stop Shimmering';
       }

@@ -25,6 +25,7 @@ export default class PgSound extends withDismissAndBackButton(PgSoundDesign) {
   }
   onShow() {
     super.onShow();
+    this.initBackButton(this.router);
   }
 
   onLoad() {

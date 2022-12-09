@@ -34,7 +34,7 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
                 console.info('success fetchFromUrl');
                 this.imgFillTypes.image = image;
             },
-            placeholder: Image.createFromFile('imageview_preview.png')
+            placeholder: Image.createFromFile(Path.ImagesUriScheme + 'imageview_preview.png')
         });
     }
 
@@ -50,7 +50,7 @@ export default class PgImageView extends withDismissAndBackButton(PgImageViewDes
             onFailure: () => console.error('couldnt loadFromUrl'),
             onSuccess: () => console.log('success loadFromUrl'),
             fade: true,
-            placeholder: Image.createFromFile('imageview_preview.png'),
+            placeholder: Image.createFromFile(Path.ImagesUriScheme + 'imageview_preview.png'),
             useHTTPCacheControl: false,
             android: {
                 useDiskCache: false,

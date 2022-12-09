@@ -11,6 +11,8 @@ import System from '@smartface/native/device/system';
 import Hardware from '@smartface/native/device/hardware';
 import Accelerometer from '@smartface/native/device/accelerometer';
 import { DialogStyle } from '@smartface/native/ui/dialog/dialog';
+import { withDismissAndBackButton } from '@smartface/mixins/lib/withDismissAndBackButton';
+import { Router, Route } from '@smartface/router';
 
 class StyleableActivityIndicator extends styleableComponentMixin(ActivityIndicator) {}
 class StyleableImageView extends styleableComponentMixin(ImageView) {}
@@ -31,10 +33,10 @@ const imageOptions = {
 const { paddingLeft, paddingRight } = themeService.getStyle('.sf-page');
 const IMAGE_WIDTH = Screen.width - (paddingLeft + paddingRight);
 
-export default class PgGlide extends PgGlideDesign {
+export default class PgGlide extends withDismissAndBackButton(PgGlideDesign) {
   dialog: Dialog;
   activityIndicator: StyleableActivityIndicator;
-  constructor() {
+  constructor(private router?: Router, private route?: Route) {
     super({});
   }
   initButtons() {
@@ -97,6 +99,7 @@ export default class PgGlide extends PgGlideDesign {
 
   onShow() {
     super.onShow();
+    this.initBackButton(this.router)
   }
 
   onLoad() {

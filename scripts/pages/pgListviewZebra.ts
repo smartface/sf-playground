@@ -31,6 +31,7 @@ export default class PgListviewZebra extends withDismissAndBackButton(PgListview
     super.onShow();
     this.refreshListView();
     this.headerBar.title = 'Zebra ListView';
+    this.initBackButton(this.router);
   }
 
   onLoad() {
