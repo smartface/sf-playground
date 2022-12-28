@@ -93,7 +93,7 @@ export default class PgPermissionForAndroid extends withDismissAndBackButton(PgP
         })
     }
     microphonePermissionResult = () => {
-        const result = Permission.android.checkPermission(Permissions.android.microphone);
+        const result = Permission.android.checkPermission(Permissions.microphone);
         this.dataSet.push({
             title: 'microphone',
             isCommon:false,

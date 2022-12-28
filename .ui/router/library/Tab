@@ -1,0 +1,103 @@
+[
+	{
+		"id": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6",
+		"type": "StackRouter",
+		"isContainer": true,
+		"name": "tab",
+		"children": [
+			"9757adb5-4b2c-4c47-8703-cc0720740320",
+			"43fbea8e-ea7c-49e7-ab9b-35a0afb13def",
+			"e36bbba7-3bee-4618-b9c6-1424216f56cb"
+		],
+		"props": {
+			"x": 4.759570358479493,
+			"y": -185.5644170143849,
+			"homeRoute": "mainRoute",
+			"to": "mainRoute",
+			"path": "tab"
+		},
+		"parent": "libAppRouter"
+	},
+	{
+		"id": "9757adb5-4b2c-4c47-8703-cc0720740320",
+		"type": "Route",
+		"isContainer": false,
+		"name": "mainRoute",
+		"children": [],
+		"props": {
+			"path": "mainRoute",
+			"x": 4.759570358479493,
+			"y": -65.5644170143849,
+			"page": "mainPage"
+		},
+		"parent": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+	},
+	{
+		"id": "43fbea8e-ea7c-49e7-ab9b-35a0afb13def",
+		"type": "StackRouter",
+		"isContainer": true,
+		"name": "modal",
+		"children": [
+			"27e9b0f1-9954-4c93-8d7e-4b6ed6e56c74"
+		],
+		"props": {
+			"path": "modal",
+			"modal": true,
+			"x": -2.7404296415205067,
+			"y": -22.5644170143849,
+			"homeRoute": "modal",
+			"to": "modal"
+		},
+		"parent": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+	},
+	{
+		"id": "27e9b0f1-9954-4c93-8d7e-4b6ed6e56c74",
+		"type": "Route",
+		"isContainer": false,
+		"name": "modal",
+		"children": [],
+		"props": {
+			"path": "modal",
+			"x": 154.7595703584795,
+			"y": 54.4355829856151,
+			"page": "pgModalTest"
+		},
+		"parent": "43fbea8e-ea7c-49e7-ab9b-35a0afb13def"
+	},
+	{
+		"id": "e36bbba7-3bee-4618-b9c6-1424216f56cb",
+		"type": "StackRouter",
+		"isContainer": true,
+		"name": "bottomSheet",
+		"children": [
+			"f6e6d4b7-49a6-44c5-9309-08af3ce40e3f"
+		],
+		"props": {
+			"path": "bottomSheet",
+			"modal": true,
+			"x": 147.2595703584795,
+			"y": -22.5644170143849,
+			"modalType": "bottom-sheet",
+			"homeRoute": "bottomSheet",
+			"to": "bottomSheet",
+			"bottomSheetOptions": {
+				"detents": "medium, large"
+			}
+		},
+		"parent": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+	},
+	{
+		"id": "f6e6d4b7-49a6-44c5-9309-08af3ce40e3f",
+		"type": "Route",
+		"isContainer": false,
+		"name": "bottomSheet",
+		"children": [],
+		"props": {
+			"path": "bottomSheet",
+			"x": 147.2595703584795,
+			"y": 97.4355829856151,
+			"page": "pgModalBottomSheet"
+		},
+		"parent": "e36bbba7-3bee-4618-b9c6-1424216f56cb"
+	}
+]

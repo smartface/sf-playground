@@ -1,10 +1,16 @@
 {
 	"components": [
 		{
-			"className": ".bottomTabbar",
+			"className": ".sf-bottomTabbar .bottomtabbar",
 			"id": "fe25-1c84-df89-e888",
 			"props": {
-				"children": [],
+				"children": [
+					"1623-f4b6-7aa3-a33d",
+					"2acd-6427-1801-a602",
+					"cc1b-1aca-dc22-ee91",
+					"f8c4-3206-062d-3c4a",
+					"db8a-eb5e-9232-75fb"
+				],
 				"name": "bottomTabbar",
 				"parent": "57f4-201f-4bfc-5fc6"
 			},
@@ -13,6 +19,96 @@
 			},
 			"type": "BottomTabbar",
 			"userProps": {}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomtabbar-tbiNative",
+			"id": "1623-f4b6-7aa3-a33d",
+			"oldName": "tabbarNative",
+			"props": {
+				"children": [],
+				"name": "tbiNative",
+				"parent": "fe25-1c84-df89-e888",
+				"title": "Native"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabBarItem",
+			"userProps": {
+				"title": "Native"
+			}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomtabbar-tbiUtility",
+			"id": "2acd-6427-1801-a602",
+			"oldName": "tabBarItem1",
+			"props": {
+				"children": [],
+				"name": "tbiUtility",
+				"parent": "fe25-1c84-df89-e888",
+				"title": "Utiliy"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabBarItem",
+			"userProps": {
+				"title": "Utiliy"
+			}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomtabbar-tbiModules",
+			"id": "cc1b-1aca-dc22-ee91",
+			"oldName": "tabBarItem1",
+			"props": {
+				"children": [],
+				"name": "tbiModules",
+				"parent": "fe25-1c84-df89-e888",
+				"title": "Modules"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabBarItem",
+			"userProps": {
+				"title": "Modules"
+			}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomtabbar-tbiRouter",
+			"id": "f8c4-3206-062d-3c4a",
+			"oldName": "tabBarItem1",
+			"props": {
+				"children": [],
+				"name": "tbiRouter",
+				"parent": "fe25-1c84-df89-e888",
+				"title": "Router"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabBarItem",
+			"userProps": {
+				"title": "Router"
+			}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomtabbar-tbiMisc",
+			"id": "db8a-eb5e-9232-75fb",
+			"oldName": "tabBarItem1",
+			"props": {
+				"children": [],
+				"name": "tbiMisc",
+				"parent": "fe25-1c84-df89-e888",
+				"title": "Misc"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabBarItem",
+			"userProps": {
+				"title": "Misc"
+			}
 		}
 	]
 }

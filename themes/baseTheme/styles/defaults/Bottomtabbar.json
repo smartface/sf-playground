@@ -1,0 +1,39 @@
+{
+  ".bottomtabbar": {
+    "&-tbiNative": {
+      "icon": {
+        "normal": "sfnative.png",
+        "selected": "sfnative.png"
+      }
+    },
+    "&-tbiUtility": {
+      "icon": {
+        "normal": "utility.png",
+        "selected": "utility.png"
+      }
+    },
+    "&-tbiModules": {
+      "icon": {
+        "normal": "modules.png",
+        "selected": "modules.png"
+      }
+    },
+    "&-tbiRouter": {
+      "icon": {
+        "normal": "router.png",
+        "selected": "router.png"
+      }
+    },
+    "&-tbiMisc": {
+      "icon": {
+        "normal": "misc.png",
+        "selected": "misc.png"
+      }
+    },
+    "backgroundColor": "rgba( 255, 255, 255, 1 )",
+    "itemColor": {
+      "normal": "rgba( 155, 155, 155, 1 )",
+      "selected": "rgba( 74, 144, 226, 1 )"
+    }
+  }
+}
