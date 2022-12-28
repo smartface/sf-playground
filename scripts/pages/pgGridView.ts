@@ -15,10 +15,10 @@ export default class PgGridView extends withDismissAndBackButton(PgGridViewDesig
   }
 
   initPressEvents() {
-    this.flFullSpan.imgRightArrow.on('touch', () => this.router.push('PgGridViewFullSpan'));
-    this.flHorizontalCard.imgRightArrow.on('touch', () => this.router.push('PgGridViewHorizontalCard'));
-    this.flRowRange.imgRightArrow.on('touch', () => this.router.push('PgGridViewRowRange'));
-    this.flPagination.imgRightArrow.on('touch', () => this.router.push('PgGridViewPagination'));
+    this.flFullSpan.on('touch', () => this.router.push('PgGridViewFullSpan'));
+    this.flHorizontalCard.on('touch', () => this.router.push('PgGridViewHorizontalCard'));
+    this.flRowRange.on('touch', () => this.router.push('PgGridViewRowRange'));
+    this.flPagination.on('touch', () => this.router.push('PgGridViewPagination'));
   }
 
   /**
