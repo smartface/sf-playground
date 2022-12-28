@@ -658,10 +658,10 @@
     recursive-readdir "^2.2.1"
     rmdir "^1.2.0"
 
-"@smartface/dispatcher@^0.10.7":
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.7.tgz#68af5c3ec59b62d05386ae5ede93b9b9cbea7dbd"
-  integrity sha512-LHlKLcF/U7gkzshXIB7YvmkUi1e5uwdIvB3mPjS4deOBJlsc9cD+5UE2/o1+508JkDtfx0mOEbexXu5sKWlBwQ==
+"@smartface/dispatcher@^0.10.8-alpha.0":
+  version "0.10.8-alpha.0"
+  resolved "https://registry.yarnpkg.com/@smartface/dispatcher/-/dispatcher-0.10.8-alpha.0.tgz#dafce2ee2939eadec1a142d26448f0a4ccf4c8ab"
+  integrity sha512-8HKDPx9omVAOweboxDcKp0BYBS2pgDy0EHK067nzssOi4vk77gfLMH+1r/4r6cAD7FRi2HwprOddp55XBrK3lw==
   dependencies:
     "@smartface/nsfw-prebuild" "^2.2.2"
     cors "^2.8.5"
