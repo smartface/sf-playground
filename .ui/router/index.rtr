@@ -1,0 +1,145 @@
+{
+	"appRoot": "appRouter",
+	"libRoot": "libAppRouter",
+	"componentByID": {
+		"appRouter": {
+			"type": "AppRouter",
+			"name": "appRouter",
+			"id": "appRouter",
+			"isContainer": true,
+			"parent": "",
+			"props": {
+				"path": "/",
+				"x": 62.312034012839035,
+				"y": -335.9367188115981
+			},
+			"children": [
+				"2f46e384-a8ae-4269-b53f-1e16295b594b"
+			]
+		},
+		"libAppRouter": {
+			"type": "AppRouter",
+			"name": "libAppRouter",
+			"id": "libAppRouter",
+			"isContainer": true,
+			"parent": "",
+			"props": {
+				"x": 4.759570358479493,
+				"path": "/",
+				"y": -305.5644170143849
+			},
+			"children": []
+		},
+		"2f46e384-a8ae-4269-b53f-1e16295b594b": {
+			"id": "2f46e384-a8ae-4269-b53f-1e16295b594b",
+			"type": "BottomTabBarRouter",
+			"isContainer": true,
+			"name": "btb",
+			"children": [
+				"165f978a-3d3e-4258-a73c-b2bf56ddfd20",
+				"d3b36ad0-d98f-47e7-b639-9b41ee7dbcf9",
+				"e3c98658-4aa7-4c9e-9a44-a4918841d6ea",
+				"31f89143-a370-4595-a927-37b46930b128",
+				"0f9580ed-b525-49bb-ab5e-fbafa0f71439"
+			],
+			"isDirty": false,
+			"props": {
+				"path": "btb",
+				"x": 62.312034012839035,
+				"y": -215.9367188115981,
+				"to": "tab0"
+			},
+			"parent": "appRouter"
+		},
+		"165f978a-3d3e-4258-a73c-b2bf56ddfd20": {
+			"id": "165f978a-3d3e-4258-a73c-b2bf56ddfd20",
+			"type": "StackRouter",
+			"isContainer": false,
+			"name": "tab0",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "tab0",
+				"x": 43.71881513960119,
+				"y": 59.37134471780027
+			},
+			"parent": "2f46e384-a8ae-4269-b53f-1e16295b594b",
+			"source": {
+				"id": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+			},
+			"isLib": true
+		},
+		"d3b36ad0-d98f-47e7-b639-9b41ee7dbcf9": {
+			"id": "d3b36ad0-d98f-47e7-b639-9b41ee7dbcf9",
+			"type": "StackRouter",
+			"isContainer": false,
+			"name": "tab1",
+			"children": [],
+			"props": {
+				"path": "tab1",
+				"x": 151.06378360687916,
+				"y": 59.37134471780027
+			},
+			"parent": "2f46e384-a8ae-4269-b53f-1e16295b594b",
+			"source": {
+				"id": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+			},
+			"isLib": true,
+			"isDirty": false
+		},
+		"e3c98658-4aa7-4c9e-9a44-a4918841d6ea": {
+			"id": "e3c98658-4aa7-4c9e-9a44-a4918841d6ea",
+			"type": "StackRouter",
+			"isContainer": false,
+			"name": "tab2",
+			"children": [],
+			"props": {
+				"path": "tab2",
+				"x": 261.15386958030206,
+				"y": 59.608642741835894
+			},
+			"parent": "2f46e384-a8ae-4269-b53f-1e16295b594b",
+			"source": {
+				"id": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+			},
+			"isLib": true,
+			"isDirty": false
+		},
+		"31f89143-a370-4595-a927-37b46930b128": {
+			"id": "31f89143-a370-4595-a927-37b46930b128",
+			"type": "StackRouter",
+			"isContainer": false,
+			"name": "tab3",
+			"children": [],
+			"props": {
+				"path": "tab3",
+				"x": 367.8877719950898,
+				"y": 59.77057420594116
+			},
+			"parent": "2f46e384-a8ae-4269-b53f-1e16295b594b",
+			"source": {
+				"id": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+			},
+			"isLib": true,
+			"isDirty": false
+		},
+		"0f9580ed-b525-49bb-ab5e-fbafa0f71439": {
+			"id": "0f9580ed-b525-49bb-ab5e-fbafa0f71439",
+			"type": "StackRouter",
+			"isContainer": false,
+			"name": "tab4",
+			"children": [],
+			"props": {
+				"path": "tab4",
+				"x": 475.2327404623676,
+				"y": 59.77057420594117
+			},
+			"parent": "2f46e384-a8ae-4269-b53f-1e16295b594b",
+			"isDirty": false,
+			"source": {
+				"id": "f4023a2c-1513-4373-97a8-1cc9e8ff30c6"
+			},
+			"isLib": true
+		}
+	}
+}
