@@ -34,6 +34,7 @@ export default class PgWebView extends withDismissAndBackButton(PgWebViewDesign)
     });
 
     const chart = new Chart({
+        //@ts-ignore
       webViewBridge: wvb, 
       apexOptions: {
         barOptions: {

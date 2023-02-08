@@ -1,3 +1,5 @@
+import Application from '@smartface/native/application';
+import { Router } from '@smartface/router';
 import $$AppRouter from 'generated/router';
 
 class MainRouter extends $$AppRouter {
@@ -5,7 +7,10 @@ class MainRouter extends $$AppRouter {
     super();
   }
 }
-
+Application.on('backButtonPressed', () => {
+    Router.getActiveRouter()?.goBack();
+  });
+  
 const router = new MainRouter();
 
 let listenerCounter = 0;
