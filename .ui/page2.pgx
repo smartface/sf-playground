@@ -93,7 +93,6 @@
 				},
 				"height": 90,
 				"left": 0,
-				"multiline": true,
 				"text": "Page2",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",

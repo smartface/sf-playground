@@ -14,7 +14,7 @@
   resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-6.3.1.tgz#1ae963dd40405450a2945408cba553e1afa3e0fb"
   integrity sha512-8YXBE2ZcU/pImVOHX7MWrSR/X5up7t6rPWZlk34RwZEcdr3ua6X+32pSd6XuOQRN+vbuvYNfA6iey8NbrjuMFQ==
 
-"@smartface/component-calendar@^5.0.0":
+"@smartface/component-calendar@^5.0.5":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@smartface/component-calendar/-/component-calendar-5.0.5.tgz#55d62fa5acc7cdc784f03dbb58411e90d330232d"
   integrity sha512-nAoiCswbKr+7Eubtx4AmQeEnr+mm2rT0j2IAWFxGFJub7lOdktal1UO+bK0oGu2XXpNFyjeuEVjX9X/5Z563wA==
@@ -24,7 +24,7 @@
     moment-hijri "2.1.2"
     source-map "0.6.1"
 
-"@smartface/component-keyboardlayout@^5.0.0":
+"@smartface/component-keyboardlayout@^5.0.4":
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/@smartface/component-keyboardlayout/-/component-keyboardlayout-5.0.4.tgz#d204d2bb1695d04d2d4a5454ea08970c6256717b"
   integrity sha512-K/8VHTsYe0TS98F5CEB0V2RU8g43NMI1InWLHT0iUogSxsH2ilwf5RpwPojDr0n2vay6IiT1rEtrLKdZZ58tfw==
@@ -38,10 +38,10 @@
     "@smartface/styler" "^2.0.0"
     filtrex "^0.5.4"
 
-"@smartface/core@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.0.8.tgz#1f532c489afa602d6afe9cd4e7402fb0494f956b"
-  integrity sha512-h1Jo0bXJm+eDqyYCeDwg6OAwjQ9GoBAc4Eji4Q+Cjua7izXdjxYRy57pIUokqarNgFvGUOvp1J+I6HWxLYNT1Q==
+"@smartface/core@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.1.0.tgz#af535454303299d2fb073dcad342d7da9a33acb9"
+  integrity sha512-erG45DGy1tp24Wcqods959tCzzdYYacBh1lCIIumilUJVY93Vdp7y1k3EuNXIDTxoDfjW0wrwiw/Iv1c50RMnA==
 
 "@smartface/extension-utils@^17.0.0":
   version "17.0.0"
@@ -64,29 +64,29 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/i18n@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.0.8.tgz#796a4d9dea6bbe278181e23ad876ac3602c26e64"
-  integrity sha512-jBrH7yEdhnwA3YcnQIsTiLysL648tuDctZr7bFE6W/GZdRtikcQxkCMwvZtWJ+sI2SryP8CV2w7fZnhL+BsPYg==
+"@smartface/i18n@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.1.0.tgz#41c1355a0593148133de741114fa5b82584628bc"
+  integrity sha512-hDXZWPTr3OOMvXRHB2pyOuSVJr6beba6qOmlnRuuST7/CMn/Cl8W2bgQ1lVbA25bVeSS3pJyXSSa/Ujpu2mJhA==
   dependencies:
     i18next "21.6.15"
 
-"@smartface/mixins@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-5.0.8.tgz#f70a0a4e13a3a32a2e5b4541368d047693380855"
-  integrity sha512-CxzN76LOkLa6XDAu9/eY2r0uOfIzbovtreGGdUwr9K/S5eGe/EXqdyp+aFHNINfRwy5ZBrA08Vg9w1k4nNhigg==
+"@smartface/mixins@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-5.1.0.tgz#80232fbe40cd83fcbcc7bf0ba37ffce229c02009"
+  integrity sha512-wN9XPLhoa3Xa+dFm5LD0aXD7868B6BGrNTfQImGlkAkKIC1TxoGcJpPf5oEtUDKsPXseBGOByOGb0wBUtdA2UA==
   dependencies:
-    "@smartface/core" "^5.0.8"
+    "@smartface/core" "^5.1.0"
 
-"@smartface/native@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.5.tgz#730b48f4f46664facfd7c9c0e0b5b3f2ef265759"
-  integrity sha512-fS+AQnYAe8GoOkpLWi1YdgFFs68BBTnKZ2MTB/058pfbEZ9H51RfWar74L8Ik2iJUMXCur7QKn7oKqYxlsr8Tw==
+"@smartface/native@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.1.0.tgz#8062a66bf61d0b50516dbdb4080e4ae6227c06bf"
+  integrity sha512-+io+fOeOL4tg9f76KZBPGkG9pt7MY3mjtotREW2OjzVzmQwxYwadpT7jRHI6uZQ3s5xoEBpPbBV/ai+U49e0rA==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
 
-"@smartface/router@^2.3.1":
+"@smartface/router@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@smartface/router/-/router-2.4.1.tgz#b968e247d99db15239b2321c066c95fc1fd0f15e"
   integrity sha512-A+xK+ur2ac4WtAa/ddmPa0VYbdPIT7mOhl8JB/gRF/n5swDTj8AYDygT/HIP9T9mIi/Qnl59kFo4RVUFGL2ZMQ==
@@ -94,10 +94,10 @@
     path-to-regexp "^2.4.0"
     resolve-pathname "^2.2.0"
 
-"@smartface/source-map@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.0.8.tgz#2e0f86a7cc3cd371712efb59b08531be7224e8a0"
-  integrity sha512-9UCYn1fJ/SlkAsfxSOaXblUY58U4luHh/a/Ki88NGCsxg5AZDpA2CNJeBa6cYdoCz4RYo2GrQDDHJrWUvaJ16Q==
+"@smartface/source-map@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.1.0.tgz#0ea326218093cd5ec93ade2694858481ad6d6218"
+  integrity sha512-ve0ywDcLFVmn9tG3NhwGUMLJ/Vl1ypB8s46MPH4eEI9Ffeqh2R42+L4aXc6ThBuyyJM7sN0pIxcJbo1N+73Cww==
   dependencies:
     source-map "0.6.1"
 
@@ -106,11 +106,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-2.1.0.tgz#a4d200f80c391352af52c5b9fce3035939af2619"
   integrity sha512-c/SAF3eelLmA/k19Y1frDb+Vauw0OHV27gl1S0DwINA5saz1kN6InYYYmmxc4SJMX4lCeMNgCJZMK2X57vzEfg==
 
-
-"@smartface/styling-context@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.8.tgz#5947fc7f6b8dd72ed93f4950679ea9daf465119c"
-  integrity sha512-sqnAOxONtjADUcJ5WU/sX4sb1TUezg7dQ6mdbbqIQ5ynStMh45XQULhxiMpwneDywtJ3TeQM6Eo8vi82HfxEZA==
+"@smartface/styling-context@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.1.0.tgz#0a148d604c1437f9112d6d29cd149dc0a330652f"
+  integrity sha512-2GHob6oP1erFjT3Kjf00U+JmDjg8IkDm98tDgnV0MnFAxpWEbNDctKqANdXI5xHWylu4RYe83bbNHoZyTWAmQw==
   dependencies:
     "@smartface/contx" "^4.2.0"
     "@smartface/styler" "^2.0.0"
@@ -122,10 +121,10 @@
   dependencies:
     events "^3.3.0"
 
-"@smartface/webviewbridge@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.0.8.tgz#81ce9112f3e5087574e57bbe7eb0fafb4f83c880"
-  integrity sha512-8wT4Xe2HQWKdfLazRHNmsvovNV5mTFAGv2xOTw1Vk54VrVFRA2/9KO/YtdmY4yr3+3555k77ZOqR2opTGK/6wA==
+"@smartface/webviewbridge@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.1.0.tgz#a7321dd968576ead3a45d780e03bc0fd277076d0"
+  integrity sha512-azRSYqWcGENtVdWohGtyNFKWexs8SfQhfnp3JSbFtbwf4Ye+dJiSwatEpGgwxhk7sBQXdQm2xTUqQQEfU3GvpQ==
   dependencies:
     events "^3.3.0"
 

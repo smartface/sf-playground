@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-bottomTabbar .bottomtabbar",
+			"className": ".sf-bottomTabbar .bottomTabbar",
 			"id": "fe25-1c84-df89-e888",
 			"props": {
 				"children": [

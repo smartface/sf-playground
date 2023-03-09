@@ -17,7 +17,7 @@ interface SwipeActions {
   swipeOnDelete?: SwipeItem['onPress'];
 }
 
-class StyleableSwipeItem extends styleableComponentMixin(SwipeItem) {}
+class StyleableSwipeItem extends styleableComponentMixin<any>(SwipeItem) {}
 
 // Add your other swipe items like this
 const deleteItem = createSwipeAction('Delete', '.swipeItem.delete');
@@ -89,7 +89,7 @@ export default class LvExtend extends LvExtendDesign {
       Object.assign(listViewItem, this.items[index].properties);
     };
     this.onRowSwipe = (opts) => {
-      const items: SwipeItem[] = [];
+      const items: any = [];
       if (this.items[opts.index].properties.swipeOnEdit) {
         editItem.onPress = this.items[opts.index].properties.swipeOnEdit;
         items.push(editItem);
