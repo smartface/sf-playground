@@ -106,10 +106,10 @@
   resolved "https://registry.yarnpkg.com/@smartface/styler/-/styler-2.1.0.tgz#a4d200f80c391352af52c5b9fce3035939af2619"
   integrity sha512-c/SAF3eelLmA/k19Y1frDb+Vauw0OHV27gl1S0DwINA5saz1kN6InYYYmmxc4SJMX4lCeMNgCJZMK2X57vzEfg==
 
-"@smartface/styling-context@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.1.0.tgz#0a148d604c1437f9112d6d29cd149dc0a330652f"
-  integrity sha512-2GHob6oP1erFjT3Kjf00U+JmDjg8IkDm98tDgnV0MnFAxpWEbNDctKqANdXI5xHWylu4RYe83bbNHoZyTWAmQw==
+"@smartface/styling-context@5.0.9":
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@smartface/styling-context/-/styling-context-5.0.9.tgz#443f62e4b804cbbe9e96b5f85835d613b7aaf8eb"
+  integrity sha512-deHFLoL5U6yPm1XTKkX1/fPePYXGPKerlyncGhjd7ylJNiSClXQ4gDNP7vD5SN/nO2sOZ7fouPnm419rzMrATg==
   dependencies:
     "@smartface/contx" "^4.2.0"
     "@smartface/styler" "^2.0.0"
