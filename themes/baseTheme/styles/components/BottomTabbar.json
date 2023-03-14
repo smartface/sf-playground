@@ -1,9 +1,0 @@
-{
-  ".bottomTabbar": {
-    "backgroundColor": "rgba( 208, 2, 27, 1 )",
-    "itemColor": {
-      "selected": "rgba( 74, 144, 226, 1 )",
-      "normal": "rgba( 155, 155, 155, 1 )"
-    }
-  }
-}

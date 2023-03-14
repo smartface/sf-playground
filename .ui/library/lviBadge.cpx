@@ -42,7 +42,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
+			"className": ".sf-flexLayout .flImage .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "0a0b-b039-6c11-6f37",
 			"initialized": true,
@@ -63,7 +63,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
+			"className": ".sf-flexLayout .flImage .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "6dcc-977c-9027-2582",
 			"initialized": true,
@@ -84,7 +84,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
+			"className": ".sf-flexLayout .flImage .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "a2c1-bda9-0d04-b0d3",
 			"initialized": true,
@@ -105,7 +105,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
+			"className": ".sf-flexLayout .flImage .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "f3fa-7639-7215-9a51",
 			"initialized": true,
@@ -126,7 +126,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviBadge-flWrapper-flImage",
+			"className": ".sf-flexLayout .flImage .lviBadge-flWrapper-flImage",
 			"hiddenComponent": false,
 			"id": "1187-81d0-5205-fe41",
 			"initialized": true,
