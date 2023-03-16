@@ -97,7 +97,7 @@
 					android:launchMode="singleTask"
 					android:windowSoftInputMode="adjustPan"
 					android:screenOrientation="${Orientation}"
-					android:theme="@style/defaultTheme" 
+					android:theme="@style/Theme.App.Starting"
                     android:exported="true" 
                     android:resizeableActivity="false">
 			<intent-filter>
