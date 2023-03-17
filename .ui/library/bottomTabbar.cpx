@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-bottomTabbar .bottomtabbar",
+			"className": ".bottomTabbar .bottomtabbar",
 			"id": "fe25-1c84-df89-e888",
 			"props": {
 				"children": [
@@ -21,7 +21,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-tabbarItem .bottomtabbar-tbiNative",
+			"className": ".tabbarItem .bottomtabbar-tbiNative",
 			"id": "1623-f4b6-7aa3-a33d",
 			"oldName": "tabbarNative",
 			"props": {
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"className": ".sf-tabbarItem .bottomtabbar-tbiUtility",
+			"className": ".tabbarItem .bottomtabbar-tbiUtility",
 			"id": "2acd-6427-1801-a602",
 			"oldName": "tabBarItem1",
 			"props": {
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"className": ".sf-tabbarItem .bottomtabbar-tbiModules",
+			"className": ".tabbarItem .bottomtabbar-tbiModules",
 			"id": "cc1b-1aca-dc22-ee91",
 			"oldName": "tabBarItem1",
 			"props": {
@@ -75,7 +75,7 @@
 			}
 		},
 		{
-			"className": ".sf-tabbarItem .bottomtabbar-tbiRouter",
+			"className": ".tabbarItem .bottomtabbar-tbiRouter",
 			"id": "f8c4-3206-062d-3c4a",
 			"oldName": "tabBarItem1",
 			"props": {
@@ -93,7 +93,7 @@
 			}
 		},
 		{
-			"className": ".sf-tabbarItem .bottomtabbar-tbiMisc",
+			"className": ".tabbarItem .bottomtabbar-tbiMisc",
 			"id": "db8a-eb5e-9232-75fb",
 			"oldName": "tabBarItem1",
 			"props": {

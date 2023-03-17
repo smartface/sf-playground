@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": " .page",
 			"id": "28ff-c191-b033-01f6",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": " .statusBar",
 			"id": "4bf6-6894-814a-5f68",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": " .headerBar",
 			"id": "31f2-d738-1672-5ff4",
 			"props": {
 				"children": [],
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow-relative",
+			"className": ".scrollView .grow-relative",
 			"id": "11f2-fa8a-1a74-85b2",
 			"oldName": "scrollView1",
 			"props": {
@@ -70,7 +70,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-textView",
+			"className": ".textView",
 			"id": "c79b-0e79-3e1a-426c",
 			"oldName": "textView1",
 			"props": {
@@ -91,7 +91,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "01a2-e295-056b-f803",
 			"oldName": "button1",
 			"props": {
@@ -108,7 +108,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "2bb3-4c55-bcea-f617",
 			"oldName": "btnGet_1",
 			"props": {
@@ -125,7 +125,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "e129-8f39-6f5e-d591",
 			"oldName": "btnPost_1",
 			"props": {
@@ -142,7 +142,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "847b-1ee6-c6bd-00f2",
 			"oldName": "btnPut_1",
 			"props": {
@@ -159,7 +159,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "5753-0c43-95ff-5d86",
 			"oldName": "btnPatch_1",
 			"props": {

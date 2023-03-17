@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "bbf1-b3c9-b1a8-81df",
 			"initialized": true,
 			"props": {
@@ -25,7 +25,7 @@
 			"version": "0.10.0-rc.1"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "5999-4e03-1e9d-1954",
 			"props": {
 				"children": [],
@@ -37,7 +37,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "5596-19f2-b1e1-6ce5",
 			"props": {
 				"children": [],
@@ -52,7 +52,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "96f9-aa2d-b925-350c",
 			"oldName": "button1",
 			"props": {
@@ -67,7 +67,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "a323-2aaa-6349-05b7",
 			"oldName": "button2",
 			"props": {
@@ -82,7 +82,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "fbe9-0099-febc-4fd4",
 			"oldName": "button3",
 			"props": {
@@ -97,7 +97,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgOrientation-textWrapper",
+			"className": ".flexLayout #pgOrientation-textWrapper",
 			"id": "47b0-a2c2-ec48-5cbb",
 			"oldName": "flexLayout1",
 			"props": {
@@ -112,7 +112,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label #pgOrientation-text",
+			"className": ".label #pgOrientation-text",
 			"id": "f920-0d59-ead9-0a2d",
 			"oldName": "label1",
 			"props": {
@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgOrientation-text",
+			"className": ".label #pgOrientation-text",
 			"id": "edaf-c1cb-14e4-83fe",
 			"oldName": "label2",
 			"props": {
@@ -139,7 +139,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout #pgOrientation-textWrapper",
+			"className": ".flexLayout #pgOrientation-textWrapper",
 			"id": "dcae-6151-b53b-77e8",
 			"oldName": "flOrientationTextWrapper_1",
 			"props": {
@@ -154,7 +154,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label #pgOrientation-text",
+			"className": ".label #pgOrientation-text",
 			"id": "75f8-c839-57f7-c953",
 			"oldName": "lblOrientationText_1",
 			"props": {
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgOrientation-text",
+			"className": ".label #pgOrientation-text",
 			"id": "ccb5-1f51-3da5-449a",
 			"oldName": "lblOrientation_1",
 			"props": {

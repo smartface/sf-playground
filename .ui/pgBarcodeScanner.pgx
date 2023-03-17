@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "7913-786f-f8bd-81f8",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "2bec-1497-8fcc-0cbf",
 			"props": {
 				"children": [],
@@ -38,7 +38,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "713d-b9e7-e105-e65f",
 			"props": {
 				"children": [],
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "bd6a-a093-1ad0-8ab1",
 			"oldName": "flexLayout1",
 			"props": {
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "7944-8f14-47fe-5ed1",
 			"oldName": "button1",
 			"props": {
@@ -92,7 +92,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "5036-68eb-70ad-2534",
 			"oldName": "lblBarcodeText",
 			"props": {
@@ -107,11 +107,12 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "bdb1-b68e-2c11-bb6b",
 			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 0,
 				"name": "lblBarcodeText",
 				"parent": "7913-786f-f8bd-81f8",
 				"text": "(Scan Barcode or QR to fill this area)",
@@ -128,7 +129,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "eee4-a405-acb8-69cd",
 			"props": {
 				"children": [],
@@ -143,7 +144,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "0dbe-5bfd-d65a-57e4",
 			"oldName": "lblBarcodeTextDisclaimer_1",
 			"props": {
@@ -158,11 +159,12 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "b43d-5ba2-fe80-78d2",
 			"oldName": "lblBarcodeText_1",
 			"props": {
 				"children": [],
+				"maxLines": 0,
 				"name": "lblBarcodeFormat",
 				"parent": "7913-786f-f8bd-81f8",
 				"text": "(Scan Barcode or QR to fill this area)",

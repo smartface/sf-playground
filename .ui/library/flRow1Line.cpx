@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": true,
 			"id": "3541-f1d3-c335-9e7c",
 			"props": {
@@ -21,7 +21,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .flRow1Line-label1",
+			"className": ".label .flRow1Line-label1",
 			"id": "b37f-a6c4-54fe-afeb",
 			"oldName": "label1",
 			"props": {
@@ -42,7 +42,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView .flRow1Line-imgRightArrow",
+			"className": ".imageView .flRow1Line-imgRightArrow",
 			"id": "d12c-64ba-12e1-19d4",
 			"oldName": "imageView1",
 			"props": {
@@ -60,7 +60,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line-separator",
+			"className": ".flexLayout .flRow1Line-separator",
 			"id": "66a3-0528-0191-84f5",
 			"oldName": "flexLayout1",
 			"props": {

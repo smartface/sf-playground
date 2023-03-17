@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "a7ae-6da9-37b5-c68a",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgComponentFromCode",
 				"parent": null,
@@ -21,7 +21,7 @@
 			"type": "StatusBar",
 			"id": "0070-1dc8-1a6d-ad4b",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "a7ae-6da9-37b5-c68a",
@@ -36,7 +36,7 @@
 			"userProps": {
 				"title": "ComponentFromCode"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "a7ae-6da9-37b5-c68a",
@@ -52,7 +52,7 @@
 			"type": "Page",
 			"id": "a7ae-6da9-37b5-c68a",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgComponentFromCode",
 				"parent": null,
@@ -69,7 +69,7 @@
 			"type": "StatusBar",
 			"id": "0070-1dc8-1a6d-ad4b",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "a7ae-6da9-37b5-c68a",
@@ -84,7 +84,7 @@
 			"userProps": {
 				"title": "ComponentFromCode"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "a7ae-6da9-37b5-c68a",

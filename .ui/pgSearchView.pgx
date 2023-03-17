@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "5b62-4c72-6295-b864",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "a4eb-dcc1-7de0-04ab",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "37b0-bd9d-5bee-278b",
 			"props": {
 				"children": [],
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "e10c-74ab-aa77-337b",
 			"oldName": "scrollView1",
 			"props": {
@@ -80,7 +80,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-searchView",
+			"className": ".searchView",
 			"id": "607b-cc9e-330f-e2b3",
 			"oldName": "searchView1",
 			"props": {
@@ -100,7 +100,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "8f38-8edc-fad6-75e2",
 			"oldName": "button1",
 			"props": {
@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "00a7-0677-0e67-02fe",
 			"oldName": "label1",
 			"props": {
@@ -145,7 +145,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider .marginHorizontal",
+			"className": ".slider .marginHorizontal",
 			"id": "2a09-dba0-1323-523c",
 			"oldName": "slider1",
 			"props": {
@@ -162,7 +162,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "2bec-8f81-e79d-5d86",
 			"oldName": "btnBackgroundImage_1",
 			"props": {
@@ -189,7 +189,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "8d07-14aa-fca6-2b89",
 			"oldName": "btnCancelButton_1",
 			"props": {
@@ -216,7 +216,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "ed4f-6ce0-7582-4179",
 			"oldName": "btnCloseIcon_1",
 			"props": {
@@ -243,7 +243,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "237c-aaa8-1f9b-432d",
 			"oldName": "btnCloseIcon_2",
 			"props": {
@@ -270,7 +270,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "d8a1-8c27-91b6-fa83",
 			"oldName": "btnFont_1",
 			"props": {
@@ -297,7 +297,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "aae1-e445-ac0b-0da6",
 			"oldName": "btnIconified_1",
 			"props": {
@@ -324,7 +324,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "4a5f-9a17-8f95-5416",
 			"oldName": "btnSetLeftItem_1",
 			"props": {
@@ -351,7 +351,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "5e69-a009-0e1e-88a4",
 			"oldName": "btnShowCancelButton_1",
 			"props": {
@@ -378,7 +378,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "54f9-de17-09d0-1a99",
 			"oldName": "btnLoadingColor_1",
 			"props": {
@@ -405,7 +405,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "03a1-1b0c-6b4f-f0b5",
 			"oldName": "btnSearchButtonIcon_1",
 			"props": {
@@ -432,7 +432,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "97e9-9ab2-540d-eaf1",
 			"oldName": "btnSearchIcon_1",
 			"props": {
@@ -459,7 +459,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal",
+			"className": ".button .marginHorizontal",
 			"id": "bc18-b5b3-ee32-34b5",
 			"oldName": "btnSearchViewStyle_1",
 			"props": {

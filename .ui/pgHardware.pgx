@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "429f-c98f-3a09-cd18",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "ccf9-3ee6-fdb7-11d4",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "c766-8eb7-a18e-d5e6",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow #pgHardware-lblHardwareStatus",
+			"className": ".label .grow #pgHardware-lblHardwareStatus",
 			"id": "6ca3-8b31-6c49-4de9",
 			"oldName": "label1",
 			"props": {

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "0e7e-af23-8304-9e8d",
 			"initialized": true,
 			"props": {
@@ -27,7 +27,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "4da7-6579-557a-3bf9",
 			"props": {
 				"children": [],
@@ -39,7 +39,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "77e2-adf4-8aaa-454e",
 			"props": {
 				"children": [],
@@ -54,7 +54,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "e011-de6c-a4b1-4e7b",
 			"oldName": "label1",
 			"props": {
@@ -72,7 +72,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "2247-f31b-f135-c140",
 			"oldName": "flRow1Line",
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "f5a7-7222-5293-807f",
 			"oldName": "flRow1Line1",
@@ -134,7 +134,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "b692-73b8-f2fd-b20c",
 			"oldName": "flRow1Line2",
@@ -165,7 +165,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "373a-852a-f79d-6a77",
 			"oldName": "flRow1Line3",
@@ -196,7 +196,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "8ed3-078e-dee7-5835",
 			"oldName": "flRow1Line4",
@@ -227,7 +227,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "98be-1488-7712-700a",
 			"oldName": "flRow1Line",
@@ -258,7 +258,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "dc71-efbb-0e2a-1ff4",
 			"oldName": "flZebra_1",
@@ -289,7 +289,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "7906-6aae-0e0f-fb43",
 			"oldName": "flExtendShrink_1",

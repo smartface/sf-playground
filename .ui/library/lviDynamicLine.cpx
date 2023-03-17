@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviDynamicLine",
+			"className": ".listViewItem .lviDynamicLine",
 			"hiddenComponent": true,
 			"id": "ff27-1cb1-7e29-36d7",
 			"props": {
@@ -19,7 +19,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .lviDynamicLine-lblLine",
+			"className": ".label .lviDynamicLine-lblLine",
 			"id": "ccdd-7f58-42be-fde4",
 			"oldName": "label1",
 			"props": {
@@ -40,7 +40,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .separator",
+			"className": ".flexLayout .separator",
 			"id": "a72d-02c8-021b-97ab",
 			"oldName": "flexLayout1",
 			"props": {

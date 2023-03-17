@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "f7f9-f337-4ee5-c255",
 			"initialized": true,
 			"props": {
@@ -25,7 +25,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "04ed-8f2f-3c9c-7cd6",
 			"props": {
 				"children": [],
@@ -37,7 +37,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "f61a-7267-eb56-c082",
 			"props": {
 				"children": [],
@@ -52,7 +52,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "27a6-ec45-d7ff-63f4",
 			"oldName": "button1",
 			"props": {
@@ -69,7 +69,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "6c0c-a255-a1dc-ba5e",
 			"oldName": "btnAlignContent_1",
 			"props": {
@@ -86,7 +86,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "8e73-fc56-f91a-df0e",
 			"oldName": "btnAlignItems_1",
 			"props": {
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "88a6-d8f7-dc1a-5274",
 			"oldName": "btnDirection_1",
 			"props": {
@@ -120,7 +120,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "be05-0e4a-0ab4-43ad",
 			"oldName": "btnFlexDirection_1",
 			"props": {
@@ -137,7 +137,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "82f0-5679-f7f9-c6e8",
 			"oldName": "btnFlexWrap_1",
 			"props": {
@@ -154,7 +154,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgFlexLayout-fl",
+			"className": ".flexLayout #pgFlexLayout-fl",
 			"id": "c99a-c77c-fa50-2314",
 			"oldName": "flexLayout1",
 			"props": {
@@ -180,7 +180,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "15b5-e2a2-8054-8701",
 			"oldName": "flexLayout1",
 			"props": {
@@ -200,7 +200,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "b016-15ad-defd-b25c",
 			"oldName": "fl1_1",
 			"props": {
@@ -221,7 +221,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "8ac9-8bf9-6c90-78b0",
 			"oldName": "fl2_1",
 			"props": {

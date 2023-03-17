@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "e052-4a64-6098-e54f",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "64c7-0576-5056-518a",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "3316-5227-0320-0b7c",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "fcd5-11c1-4a1d-910e",
 			"oldName": "scrollView1",
 			"props": {
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"className": ".sf-materialTextBox",
+			"className": ".materialTextBox",
 			"id": "5014-bec7-5e81-3039",
 			"oldName": "materialTextBox1",
 			"props": {
@@ -90,7 +90,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgMaterialTextBox-characterRestrictionWrapper",
+			"className": ".flexLayout #pgMaterialTextBox-characterRestrictionWrapper",
 			"id": "dc28-91b8-288b-7a3e",
 			"oldName": "flexLayout1",
 			"props": {
@@ -105,7 +105,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "f253-8659-47c5-151c",
 			"oldName": "textBox1",
 			"props": {
@@ -126,7 +126,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow",
+			"className": ".button .grow",
 			"id": "30b6-31b2-92d6-b354",
 			"oldName": "button1",
 			"props": {
@@ -147,7 +147,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "ae30-e0f0-7603-67de",
 			"oldName": "button1",
 			"props": {
@@ -166,7 +166,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "828f-6099-34c7-16a7",
 			"oldName": "btnSetCharacterRestrictionColor_1",
 			"props": {
@@ -185,7 +185,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "726c-ba8b-bad6-37e7",
 			"oldName": "btnSetClearButtonColor_1",
 			"props": {
@@ -204,7 +204,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "92ad-64c1-7962-f008",
 			"oldName": "btnSetEnableCharacterRestriction_1",
 			"props": {
@@ -223,7 +223,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "58bd-53c2-f63d-7e8f",
 			"oldName": "btnSetErrorMessage_1",
 			"props": {
@@ -242,7 +242,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3189-4794-42c0-b361",
 			"oldName": "btnSetLeftLayout_1",
 			"props": {
@@ -261,7 +261,7 @@
 			}
 		},
 		{
-			"className": ".sf-materialTextBox",
+			"className": ".materialTextBox",
 			"id": "e70e-afe5-5753-caf1",
 			"oldName": "materialTextBox1",
 			"props": {

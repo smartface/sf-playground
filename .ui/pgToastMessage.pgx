@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "f39d-b1a6-919c-5663",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgToastMessage",
 				"parent": null,
@@ -21,7 +21,7 @@
 			"type": "StatusBar",
 			"id": "8568-a745-1ca6-cce5",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "f39d-b1a6-919c-5663",
@@ -36,7 +36,7 @@
 			"userProps": {
 				"title": "ToastMessage"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "f39d-b1a6-919c-5663",
@@ -52,7 +52,7 @@
 			"type": "Page",
 			"id": "f39d-b1a6-919c-5663",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgToastMessage",
 				"parent": null,
@@ -69,7 +69,7 @@
 			"type": "StatusBar",
 			"id": "8568-a745-1ca6-cce5",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "f39d-b1a6-919c-5663",
@@ -84,7 +84,7 @@
 			"userProps": {
 				"title": "ToastMessage"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "f39d-b1a6-919c-5663",

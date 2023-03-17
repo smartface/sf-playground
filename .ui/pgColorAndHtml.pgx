@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgColorAndHtml",
+			"className": ".page #pgColorAndHtml",
 			"id": "beed-009e-bdf2-bb74",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "075e-e9f0-6d74-7e68",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "688e-1d40-c4ec-4586",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "e511-4598-ca6e-8a0c",
 			"props": {
 				"children": [
@@ -65,7 +65,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flTouch",
+			"className": ".flexLayout #pgColorAndHtml-flTouch",
 			"id": "38b2-cc6d-8a10-97f2",
 			"props": {
 				"children": [],
@@ -80,7 +80,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flColorArea .card",
+			"className": ".flexLayout #pgColorAndHtml-flColorArea .card",
 			"id": "25e7-dc55-8bf7-2b62",
 			"props": {
 				"children": [
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblTitle",
+			"className": ".label #pgColorAndHtml-lblTitle",
 			"id": "532d-dbe6-571c-fed8",
 			"props": {
 				"children": [],
@@ -118,7 +118,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flRow",
+			"className": ".flexLayout #pgColorAndHtml-flRow",
 			"id": "5ce3-1e31-ef48-269d",
 			"props": {
 				"children": [
@@ -139,7 +139,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblRgb",
+			"className": ".label #pgColorAndHtml-lblRgb",
 			"id": "5dc6-a975-26e2-3a27",
 			"props": {
 				"children": [],
@@ -154,7 +154,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox #pgColorAndHtml-textBox",
+			"className": ".textBox #pgColorAndHtml-textBox",
 			"id": "7d8b-ecba-3fca-d835",
 			"props": {
 				"children": [],
@@ -171,7 +171,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblRgb",
+			"className": ".label #pgColorAndHtml-lblRgb",
 			"id": "51b6-c9c6-b692-3c25",
 			"props": {
 				"children": [],
@@ -186,7 +186,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox #pgColorAndHtml-textBox",
+			"className": ".textBox #pgColorAndHtml-textBox",
 			"id": "25cb-536f-3260-4e30",
 			"props": {
 				"children": [],
@@ -203,7 +203,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblRgb",
+			"className": ".label #pgColorAndHtml-lblRgb",
 			"id": "03bb-bba9-2c22-a191",
 			"props": {
 				"children": [],
@@ -218,7 +218,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox #pgColorAndHtml-textBox",
+			"className": ".textBox #pgColorAndHtml-textBox",
 			"id": "4789-f6b5-f3ea-ff07",
 			"props": {
 				"children": [],
@@ -235,7 +235,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flRow",
+			"className": ".flexLayout #pgColorAndHtml-flRow",
 			"id": "9b2e-4888-a485-2ccd",
 			"props": {
 				"children": [
@@ -251,7 +251,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblKey",
+			"className": ".label #pgColorAndHtml-lblKey",
 			"id": "9d35-e0bd-fe67-537e",
 			"props": {
 				"children": [],
@@ -266,7 +266,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblValue",
+			"className": ".label #pgColorAndHtml-lblValue",
 			"id": "4515-4721-d4f9-2524",
 			"props": {
 				"children": [],
@@ -283,7 +283,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flRow",
+			"className": ".flexLayout #pgColorAndHtml-flRow",
 			"id": "7961-afd3-3d2a-cff5",
 			"props": {
 				"children": [
@@ -299,7 +299,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblKey",
+			"className": ".label #pgColorAndHtml-lblKey",
 			"id": "8a9c-04c6-ad11-3f26",
 			"props": {
 				"children": [],
@@ -314,7 +314,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblValue",
+			"className": ".label #pgColorAndHtml-lblValue",
 			"id": "cd5c-a895-c422-350d",
 			"props": {
 				"children": [],
@@ -331,7 +331,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flRow",
+			"className": ".flexLayout #pgColorAndHtml-flRow",
 			"id": "7baa-6d67-033b-4482",
 			"props": {
 				"children": [
@@ -347,7 +347,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblKey",
+			"className": ".label #pgColorAndHtml-lblKey",
 			"id": "0c0d-dbd8-cb2e-17de",
 			"props": {
 				"children": [],
@@ -362,7 +362,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblValue",
+			"className": ".label #pgColorAndHtml-lblValue",
 			"id": "3933-08c2-3c4f-0bd4",
 			"props": {
 				"children": [],
@@ -379,7 +379,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flRow",
+			"className": ".flexLayout #pgColorAndHtml-flRow",
 			"id": "fc1d-fb4c-8ace-939a",
 			"props": {
 				"children": [
@@ -395,7 +395,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblKey",
+			"className": ".label #pgColorAndHtml-lblKey",
 			"id": "6b1b-972b-5066-d1d2",
 			"props": {
 				"children": [],
@@ -410,7 +410,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgColorAndHtml-lblValue",
+			"className": ".label #pgColorAndHtml-lblValue",
 			"id": "d1b0-753b-c213-a5bd",
 			"props": {
 				"children": [],
@@ -427,7 +427,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .card #pgColorAndHtml-flGuidArea",
+			"className": ".flexLayout .card #pgColorAndHtml-flGuidArea",
 			"id": "3215-ee5d-7205-b657",
 			"props": {
 				"children": [
@@ -443,7 +443,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "4eea-bc2f-3437-6096",
 			"props": {
 				"children": [],
@@ -458,7 +458,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "c98e-5be6-f92a-113e",
 			"props": {
 				"children": [],
@@ -475,7 +475,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .card #pgColorAndHtml-HtmlArea",
+			"className": ".flexLayout .card #pgColorAndHtml-HtmlArea",
 			"id": "fd17-247f-6982-d2f7",
 			"props": {
 				"children": [
@@ -494,7 +494,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "7811-c815-afb1-801d",
 			"props": {
 				"children": [],
@@ -509,7 +509,7 @@
 			}
 		},
 		{
-			"className": ".sf-textArea #pgColorAndHtml-txtAreaHtml",
+			"className": ".textArea #pgColorAndHtml-txtAreaHtml",
 			"id": "2610-d122-c1d1-091b",
 			"props": {
 				"children": [],
@@ -523,7 +523,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgColorAndHtml-flRow #pgColorAndHtml-flRowHtml",
+			"className": ".flexLayout #pgColorAndHtml-flRow #pgColorAndHtml-flRowHtml",
 			"id": "2eea-ec93-d12d-914a",
 			"props": {
 				"children": [
@@ -541,7 +541,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow",
+			"className": ".button .grow",
 			"id": "a583-9b27-9354-c72b",
 			"props": {
 				"children": [],
@@ -559,7 +559,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow",
+			"className": ".button .grow",
 			"id": "f6d7-a5d6-69f8-b974",
 			"props": {
 				"children": [],
@@ -576,7 +576,7 @@
 			}
 		},
 		{
-			"className": ".sf-textView #pgColorAndHtml-tvHtml",
+			"className": ".textView #pgColorAndHtml-tvHtml",
 			"id": "5804-9746-7f5e-3203",
 			"props": {
 				"children": [],
@@ -596,7 +596,7 @@
 			}
 		},
 		{
-			"className": ".sf-textView #pgColorAndHtml-tvHtml",
+			"className": ".textView #pgColorAndHtml-tvHtml",
 			"id": "9b53-f88e-7b5a-ac33",
 			"oldName": "textView1",
 			"props": {
@@ -618,7 +618,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .card",
+			"className": ".flexLayout .card",
 			"id": "edf6-50b8-f3a0-9453",
 			"oldName": "flCombinedStyleArea",
 			"props": {
@@ -637,7 +637,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "2213-a00b-ae86-06eb",
 			"oldName": "lblTitleGetCombinedStyle",
 			"props": {
@@ -653,7 +653,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "41fe-c643-a14f-cf86",
 			"oldName": "btnGetCombinedStyle",
 			"props": {
@@ -671,7 +671,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "f5a3-8727-f68f-ffb3",
 			"oldName": "btnGetNativeStyle_1",
 			"props": {

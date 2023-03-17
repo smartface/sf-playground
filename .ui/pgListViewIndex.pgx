@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "547b-de76-e208-cc8a",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgListViewIndex",
 				"parent": null,
@@ -20,7 +20,7 @@
 			"type": "StatusBar",
 			"id": "c861-8ced-c3a1-3c71",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "547b-de76-e208-cc8a",
@@ -35,7 +35,7 @@
 			"userProps": {
 				"title": "ListViewIndex"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "547b-de76-e208-cc8a",
@@ -51,7 +51,7 @@
 			"type": "Page",
 			"id": "547b-de76-e208-cc8a",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgListViewIndex",
 				"parent": null,
@@ -67,7 +67,7 @@
 			"type": "StatusBar",
 			"id": "c861-8ced-c3a1-3c71",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "547b-de76-e208-cc8a",
@@ -82,7 +82,7 @@
 			"userProps": {
 				"title": "ListViewIndex"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "547b-de76-e208-cc8a",

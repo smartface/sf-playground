@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "d2cd-0607-2822-249c",
 			"initialized": true,
 			"props": {
@@ -18,7 +18,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "c746-e34a-4ed1-4aeb",
 			"props": {
 				"children": [],
@@ -32,7 +32,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "1917-de0f-a0a3-f593",
 			"props": {
 				"children": [],
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "eaee-66a6-65c3-4ef0",
 			"oldName": "scrollView1",
 			"props": {
@@ -69,7 +69,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-switch",
+			"className": ".switch",
 			"id": "800c-ba2a-0ec9-6f35",
 			"oldName": "switch1",
 			"props": {
@@ -89,7 +89,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "8bf8-2712-a643-77c0",
 			"oldName": "button1",
 			"props": {
@@ -106,7 +106,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "5382-c2b6-c15f-4839",
 			"oldName": "btnEnable_1",
 			"props": {
@@ -123,7 +123,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "f6df-0b99-42d3-6bf9",
 			"oldName": "btnThumbImage_1",
 			"props": {
@@ -140,7 +140,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "15f6-96a8-3002-c067",
 			"oldName": "btnThumbOffColor_1",
 			"props": {
@@ -157,7 +157,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "ee18-e8aa-21cc-61d2",
 			"oldName": "btnThumbOnColor_1",
 			"props": {
@@ -174,7 +174,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "f497-6421-cd37-fdb5",
 			"oldName": "btnThumbOffColor_1",
 			"props": {
@@ -191,7 +191,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "3080-b3ae-e19c-d2b6",
 			"oldName": "btnThumbOnColor_1",
 			"props": {
@@ -208,7 +208,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical",
+			"className": ".button .marginVertical",
 			"id": "682b-9a47-e6b0-1ab6",
 			"oldName": "button1",
 			"props": {

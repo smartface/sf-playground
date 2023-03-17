@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": " .page",
 			"id": "73dd-6eef-0570-de44",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": " .statusBar",
 			"id": "7d83-93d7-e744-5512",
 			"props": {
 				"children": [],
@@ -33,7 +33,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": " .headerBar",
 			"id": "1587-0041-10da-aeb1",
 			"props": {
 				"children": [],
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"className": ".sf-webView",
+			"className": " .webView",
 			"id": "2ce7-f3d6-d755-c118",
 			"props": {
 				"children": [],
@@ -68,7 +68,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": " .flexLayout",
 			"id": "e8d7-ed5b-1706-d591",
 			"props": {
 				"children": [
@@ -88,7 +88,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical .grow",
+			"className": ".button .marginHorizontal .marginVertical .grow",
 			"id": "32a0-2435-e9f4-9f5d",
 			"props": {
 				"children": [],
@@ -104,7 +104,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginVertical .marginHorizontal .grow",
+			"className": ".button .marginVertical .marginHorizontal .grow",
 			"id": "1e5b-0adf-7131-ac69",
 			"props": {
 				"children": [],

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "1499-7088-a5cf-0e93",
 			"initialized": true,
 			"props": {
@@ -23,7 +23,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "dbe1-ad1c-78c7-8866",
 			"props": {
 				"children": [],
@@ -35,7 +35,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "bc62-12a6-3bc7-139d",
 			"props": {
 				"children": [],
@@ -50,7 +50,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "2417-8ae8-29ff-0b33",
 			"oldName": "btnHasCamera_1",
 			"props": {
@@ -68,7 +68,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "7d14-945f-c56a-789d",
 			"oldName": "button1",
 			"props": {
@@ -86,7 +86,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3462-771f-ed32-bbc6",
 			"oldName": "btnHasCamera_1",
 			"props": {
@@ -104,7 +104,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "03d7-edde-247a-9d94",
 			"oldName": "btnRecordVideo_1",
 			"props": {
@@ -122,7 +122,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".imageView",
 			"id": "9fbe-b39d-f2a8-e51c",
 			"oldName": "imageView1",
 			"props": {

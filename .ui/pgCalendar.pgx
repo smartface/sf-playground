@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "dbd4-4058-ffa3-c636",
 			"initialized": true,
 			"props": {
@@ -20,7 +20,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "3eab-a287-025a-c277",
 			"props": {
 				"children": [],
@@ -32,7 +32,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "14db-c1b9-7d00-73e1",
 			"props": {
 				"children": [],
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "8a06-dd2c-4ae5-f9e6",
 			"oldName": "flexLayout1",
 			"props": {
@@ -62,11 +62,12 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow",
+			"className": ".label .grow",
 			"id": "4a4d-b256-a381-fae2",
 			"oldName": "label1",
 			"props": {
 				"children": [],
+				"maxLines": 0,
 				"name": "lblEvents",
 				"parent": "dbd4-4058-ffa3-c636",
 				"text": "Select a day or month",

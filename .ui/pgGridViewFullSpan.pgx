@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgGridViewFullSpan",
+			"className": ".page #pgGridViewFullSpan",
 			"id": "e57d-5ee3-e397-876f",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "2539-105f-c666-511d",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "97d5-2716-27d2-39e5",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-gridView #pgGridViewFullSpan-gvMain .grow",
+			"className": ".gridView #pgGridViewFullSpan-gvMain .grow",
 			"id": "8711-6c3b-0d51-64b6",
 			"oldName": "gridView1",
 			"props": {
@@ -72,7 +72,7 @@
 			}
 		},
 		{
-			"className": ".sf-gridViewItem",
+			"className": ".gridViewItem",
 			"hiddenComponent": false,
 			"id": "de6c-b42a-2c5c-47c6",
 			"props": {

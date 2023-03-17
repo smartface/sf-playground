@@ -1,9 +1,9 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": " .page",
 			"id": "7761adc8",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"a829471c",
@@ -28,11 +28,10 @@
 				"paddingRight": 16,
 				"safeAreaEnabled": true
 			},
-			"version": "6.15.1",
-			"degree": 0
+			"version": "6.15.1"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": " .statusBar",
 			"id": "a829471c",
 			"props": {
 				"children": [],
@@ -43,11 +42,10 @@
 			"type": "StatusBar",
 			"userProps": {
 				"visible": true
-			},
-			"degree": 1
+			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": " .headerBar",
 			"id": "35f1c1a1",
 			"props": {
 				"children": [],
@@ -60,11 +58,10 @@
 			"userProps": {
 				"title": "Page2",
 				"visible": true
-			},
-			"degree": 1
+			}
 		},
 		{
-			"className": ".sf-label",
+			"className": " .label",
 			"id": "ce08-3fd4-03e6-4438",
 			"props": {
 				"autoHeight": 76.66666666666667,
@@ -93,18 +90,17 @@
 				},
 				"height": 90,
 				"left": 0,
+				"testId": "dtgphCYa4b",
 				"text": "Page2",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
 				"top": 0,
 				"usePageVariable": true,
-				"width": null,
-				"testId": "dtgphCYa4b"
-			},
-			"degree": 1
+				"width": null
+			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "9e3d-3c8c-de2c-aad8",
 			"props": {
 				"autoHeight": 51.11111111111111,
@@ -122,13 +118,12 @@
 					"positionType": "RELATIVE"
 				},
 				"left": 0,
+				"testId": "6SWaorSDtL",
 				"text": "Say Hello",
 				"top": 0,
 				"usePageVariable": true,
-				"width": null,
-				"testId": "6SWaorSDtL"
-			},
-			"degree": 1
+				"width": null
+			}
 		}
 	]
 }

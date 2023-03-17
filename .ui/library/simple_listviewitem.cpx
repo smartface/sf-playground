@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviElement",
+			"className": ".listViewItem .lviElement",
 			"hiddenComponent": true,
 			"id": "1841-ff9a-b968-028d",
 			"initialized": true,
@@ -21,7 +21,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .lviElement-title.value",
+			"className": ".label .lviElement-title.value",
 			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
 				"autoHeight": 51.086956521739125,
@@ -43,7 +43,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .sf-listViewItem-simple-chevron",
+			"className": ".label .sf-listViewItem-simple-chevron",
 			"id": "8474-887d-3102-405e",
 			"props": {
 				"autoHeight": 51.086956521739125,
@@ -64,7 +64,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviElement-line",
+			"className": ".flexLayout .lviElement-line",
 			"id": "bd8f-5e00-4110-7fd7",
 			"props": {
 				"children": [],

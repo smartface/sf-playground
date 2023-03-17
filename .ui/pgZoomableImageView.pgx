@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "eae6-6ace-e86b-fe2e",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgZoomableImageView",
 				"parent": null,
@@ -21,7 +21,7 @@
 			"type": "StatusBar",
 			"id": "8f43-4f51-2d14-5b50",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "eae6-6ace-e86b-fe2e",
@@ -36,7 +36,7 @@
 			"userProps": {
 				"title": "ZoomableImageView"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "eae6-6ace-e86b-fe2e",
@@ -52,7 +52,7 @@
 			"type": "Page",
 			"id": "eae6-6ace-e86b-fe2e",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgZoomableImageView",
 				"parent": null,
@@ -69,7 +69,7 @@
 			"type": "StatusBar",
 			"id": "8f43-4f51-2d14-5b50",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "eae6-6ace-e86b-fe2e",
@@ -84,7 +84,7 @@
 			"userProps": {
 				"title": "ZoomableImageView"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "eae6-6ace-e86b-fe2e",

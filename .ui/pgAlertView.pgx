@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": " .page",
 			"id": "4277-ea6f-12e7-6d1a",
 			"initialized": true,
 			"props": {
@@ -26,7 +26,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": " .statusBar",
 			"id": "8186-4e85-ae83-4675",
 			"props": {
 				"children": [],
@@ -38,7 +38,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": " .headerBar",
 			"id": "87c2-8e66-772e-634a",
 			"props": {
 				"children": [],
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "0050-f964-6986-3ba7",
 			"oldName": "button1",
 			"props": {
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "2373-8174-b769-dc23",
 			"oldName": "btnShow_1",
 			"props": {
@@ -89,7 +89,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": " .label",
 			"id": "57f9-17bb-d6e9-a5fb",
 			"oldName": "label1",
 			"props": {
@@ -105,7 +105,7 @@
 			}
 		},
 		{
-			"className": ".sf-switch",
+			"className": " .switch",
 			"id": "7076-5620-03fe-ae1a",
 			"oldName": "switch1",
 			"props": {
@@ -128,7 +128,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": " .view",
 			"id": "af59-3091-0b4c-c4b3",
 			"props": {
 				"children": [],
@@ -142,7 +142,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": " .label",
 			"id": "b6b6-24c8-ff30-0d5c",
 			"props": {
 				"children": [],
@@ -156,7 +156,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "2b76-51a6-675b-14f6",
 			"oldName": "btnShow_1",
 			"props": {
@@ -174,7 +174,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "8b3a-ff89-b01d-c6b4",
 			"oldName": "btnIsShowing_1",
 			"props": {

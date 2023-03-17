@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "91bf-c225-6916-5275",
 			"initialized": true,
 			"props": {
@@ -27,7 +27,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "0899-0c41-668b-9b66",
 			"props": {
 				"children": [],
@@ -39,7 +39,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "0df1-6e5f-ac89-23d4",
 			"props": {
 				"children": [],
@@ -54,7 +54,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "f88e-82e2-b735-1c90",
 			"oldName": "textBox1",
 			"props": {
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "1739-4d23-cf03-174f",
 			"oldName": "btnEncrypt",
 			"props": {
@@ -88,7 +88,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "6b09-d4a2-c008-8f99",
 			"oldName": "btnEncrypt_1",
 			"props": {
@@ -105,7 +105,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "5013-731e-1daf-6990",
 			"oldName": "btnEncryptRSA_1",
 			"props": {
@@ -122,7 +122,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "4581-022c-03e0-d973",
 			"oldName": "btnDecryptRSA_1",
 			"props": {
@@ -139,7 +139,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "fca0-a461-e92b-9efe",
 			"oldName": "lblRsaOutput",
 			"props": {
@@ -155,7 +155,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "8be2-3c85-6bc7-3e1d",
 			"oldName": "lblRsaOutputInfo_1",
 			"props": {
@@ -182,7 +182,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "d58b-804c-ce0c-580c",
 			"oldName": "lblRsaOutputInfo_1",
 			"props": {
@@ -198,7 +198,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "61b1-f67b-6647-ae13",
 			"oldName": "lblRsaOutput_1",
 			"props": {

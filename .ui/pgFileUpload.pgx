@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgFileUpload",
+			"className": ".page #pgFileUpload",
 			"id": "418e-8dda-507d-bdba",
 			"initialized": true,
 			"props": {
@@ -22,7 +22,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "f689-e659-ceab-312a",
 			"props": {
 				"children": [],
@@ -34,7 +34,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "8d2c-b2df-4dfd-43a4",
 			"props": {
 				"children": [],
@@ -49,7 +49,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgFileUpload-flFileSelector",
+			"className": ".flexLayout #pgFileUpload-flFileSelector",
 			"id": "d4a9-8d2e-9090-f2c4",
 			"props": {
 				"children": [
@@ -67,7 +67,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgFileUpload-lblFileSelectorName",
+			"className": ".label #pgFileUpload-lblFileSelectorName",
 			"id": "01f4-fc8d-64ff-c379",
 			"props": {
 				"children": [],
@@ -84,7 +84,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView #pgFileUpload-imgFileSelectorDownArrow",
+			"className": ".imageView #pgFileUpload-imgFileSelectorDownArrow",
 			"id": "1b67-6c77-aee5-37d7",
 			"props": {
 				"children": [],
@@ -97,7 +97,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgFileUpload-flUploadIndicator",
+			"className": ".flexLayout #pgFileUpload-flUploadIndicator",
 			"id": "d0a9-1c31-256c-1355",
 			"props": {
 				"children": [
@@ -115,7 +115,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgFileUpload-lblUploadIndicator",
+			"className": ".label #pgFileUpload-lblUploadIndicator",
 			"id": "aa3a-0578-82da-177c",
 			"props": {
 				"children": [],
@@ -132,7 +132,7 @@
 			}
 		},
 		{
-			"className": ".sf-activityIndicator #pgFileUpload-aiUploadIndicator",
+			"className": ".activityIndicator #pgFileUpload-aiUploadIndicator",
 			"id": "d176-450a-2e3c-39d5",
 			"props": {
 				"children": [],
@@ -147,7 +147,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgFileUpload-flSpacer",
+			"className": ".flexLayout #pgFileUpload-flSpacer",
 			"id": "de3c-2eb9-1fb4-cd1d",
 			"props": {
 				"children": [],
@@ -160,7 +160,7 @@
 			}
 		},
 		{
-			"className": ".sf-button #pgFileUpload-btnUpload",
+			"className": ".button #pgFileUpload-btnUpload",
 			"id": "1500-8a02-cea6-e802",
 			"props": {
 				"children": [],

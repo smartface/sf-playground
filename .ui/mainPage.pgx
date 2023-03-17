@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page .sf-page.nopadding",
+			"className": ".page .sf-page.nopadding",
 			"id": "89e6-3f97-10a5-0ac9",
 			"initialized": true,
 			"props": {
@@ -26,7 +26,7 @@
 			}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": " .statusBar",
 			"id": "1e1d-0be5-8938-a0a2",
 			"props": {
 				"children": [],
@@ -40,7 +40,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": " .headerBar",
 			"id": "5ea3-0ed0-d993-b3bf",
 			"props": {
 				"children": [],
@@ -55,7 +55,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": " .label",
 			"id": "f503-10f0-ea93-0a47",
 			"props": {
 				"children": [],
@@ -74,7 +74,7 @@
 			}
 		},
 		{
-			"className": ".sf-listView",
+			"className": " .listView",
 			"id": "0266-2245-f3ca-9eed",
 			"props": {
 				"children": [
@@ -94,7 +94,7 @@
 			}
 		},
 		{
-			"className": ".sf-listViewItem",
+			"className": ".listViewItem .lviPages",
 			"hiddenComponent": false,
 			"id": "2211-3416-bbe6-94cc",
 			"initialized": true,
@@ -122,7 +122,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .flListViewIndex",
+			"className": ".flexLayout .flListViewIndex",
 			"hiddenComponent": false,
 			"id": "27dc-460a-04eb-dbd1",
 			"props": {

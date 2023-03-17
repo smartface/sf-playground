@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "eabe-73a1-586b-d5b0",
 			"initialized": true,
 			"props": {
@@ -27,7 +27,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "ef18-7045-c841-73e0",
 			"props": {
 				"children": [],
@@ -39,7 +39,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "e768-ed89-1bea-a813",
 			"props": {
 				"children": [],
@@ -54,7 +54,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "77da-80b0-3a0a-c3e4",
 			"oldName": "button1",
 			"props": {
@@ -73,7 +73,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "8270-aa11-1a2b-0da0",
 			"oldName": "button2",
 			"props": {
@@ -92,7 +92,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .marginHorizontal .marginVertical",
+			"className": ".button .marginHorizontal .marginVertical",
 			"id": "7715-f786-df98-63cd",
 			"oldName": "button3",
 			"props": {
@@ -112,7 +112,7 @@
 			}
 		},
 		{
-			"className": ".sf-gridView",
+			"className": ".gridView",
 			"id": "a75f-9d5e-c2ee-fadc",
 			"oldName": "gridView1",
 			"props": {
@@ -140,7 +140,7 @@
 			}
 		},
 		{
-			"className": ".sf-gridViewItem",
+			"className": ".gridViewItem",
 			"hiddenComponent": false,
 			"id": "2f5a-7f10-2f50-c98c",
 			"props": {
