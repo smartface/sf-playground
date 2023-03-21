@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "4d60-5b4d-c051-0073",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "f3b0-0651-5fe9-48a7",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "6300-4adb-1cef-0e1a",
 			"props": {
 				"children": [],

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "3938-1b66-2b76-aa90",
 			"initialized": true,
 			"props": {
@@ -25,7 +25,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "b787-a89e-948c-98fb",
 			"props": {
 				"children": [],
@@ -37,7 +37,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "251d-c285-f266-8430",
 			"props": {
 				"children": [],
@@ -52,7 +52,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "f380-1f4a-a0b4-182c",
 			"oldName": "label1",
 			"props": {
@@ -75,7 +75,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "759b-d6ad-58d6-2db2",
 			"oldName": "button1",
 			"props": {
@@ -92,7 +92,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "4bc7-c258-c336-22c3",
 			"oldName": "button1",
 			"props": {
@@ -109,7 +109,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "c3e1-e33f-68a0-0db9",
 			"oldName": "btnEffectStyle_1",
 			"props": {
@@ -126,7 +126,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "1ce6-e781-5798-894e",
 			"oldName": "label1",
 			"props": {
@@ -142,7 +142,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider",
+			"className": ".slider",
 			"id": "1119-5723-17ff-bc11",
 			"oldName": "slider1",
 			"props": {
@@ -160,7 +160,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "a47d-0540-6850-4d31",
 			"oldName": "flexLayout1",
 			"props": {
@@ -193,7 +193,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView .grow",
+			"className": ".imageView .grow",
 			"id": "7ea0-9cbd-d47c-3869",
 			"oldName": "imageView1",
 			"props": {

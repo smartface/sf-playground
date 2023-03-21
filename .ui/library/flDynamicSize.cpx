@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout .flDynamicSize",
+			"className": ".flexLayout .flDynamicSize",
 			"hiddenComponent": true,
 			"id": "8120-5b64-07b4-23ab",
 			"props": {
@@ -18,7 +18,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .flDynamicSize-lblDynamicSize",
+			"className": ".label .flDynamicSize-lblDynamicSize",
 			"id": "9cd6-45be-3903-64ae",
 			"oldName": "lblNoSize",
 			"props": {

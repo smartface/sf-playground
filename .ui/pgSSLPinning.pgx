@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "ace5-0083-94bd-412a",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgSSLPinning",
 				"parent": null,
@@ -21,7 +21,7 @@
 			"type": "StatusBar",
 			"id": "a04d-b3db-6db7-3191",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "ace5-0083-94bd-412a",
@@ -36,7 +36,7 @@
 			"userProps": {
 				"title": "SSLPinning"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "ace5-0083-94bd-412a",
@@ -52,7 +52,7 @@
 			"type": "Page",
 			"id": "ace5-0083-94bd-412a",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgSSLPinning",
 				"parent": null,
@@ -69,7 +69,7 @@
 			"type": "StatusBar",
 			"id": "a04d-b3db-6db7-3191",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "ace5-0083-94bd-412a",
@@ -84,7 +84,7 @@
 			"userProps": {
 				"title": "SSLPinning"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "ace5-0083-94bd-412a",

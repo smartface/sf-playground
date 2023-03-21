@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviPermission",
+			"className": ".listViewItem .lviPermission",
 			"id": "0675-5fd7-5d4d-8d72",
 			"props": {
 				"children": [
@@ -23,7 +23,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow .lblTextCenter",
+			"className": ".label .grow .lblTextCenter",
 			"id": "9e4b-edb0-0b0d-98cd",
 			"oldName": "label1",
 			"props": {
@@ -41,7 +41,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow .lblTextCenter",
+			"className": ".label .grow .lblTextCenter",
 			"id": "aed0-cfab-b17e-bb23",
 			"oldName": "label1",
 			"props": {
@@ -59,7 +59,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow",
+			"className": ".button .grow",
 			"id": "e221-3b43-005d-6e77",
 			"oldName": "button1",
 			"props": {
@@ -77,7 +77,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviPages-flSeparator",
+			"className": ".flexLayout .lviPages-flSeparator",
 			"id": "7717-7901-36ad-a077",
 			"oldName": "flexLayout1",
 			"props": {

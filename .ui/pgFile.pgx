@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "6439-bea3-5242-7b69",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "53f0-40e0-470e-e132",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "e63c-7be0-5bd9-db37",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "dff2-511c-0e56-e1fb",
 			"oldName": "scrollView1",
 			"props": {
@@ -68,7 +68,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "d84e-3130-7b10-e258",
 			"oldName": "btnReadFile_1",
 			"props": {
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "af1c-f20d-9975-dfb8",
 			"oldName": "button1",
 			"props": {
@@ -102,7 +102,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "b5cb-1636-5274-bd7c",
 			"oldName": "button1",
 			"props": {
@@ -119,7 +119,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "a2a1-97a3-9acd-628d",
 			"oldName": "btnWriteFile_1",
 			"props": {
@@ -136,7 +136,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "0caf-81ea-c24a-d09d",
 			"oldName": "btnGetFiles_1",
 			"props": {
@@ -153,7 +153,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "bd98-4fdd-f736-0b02",
 			"oldName": "btnCopy_1",
 			"props": {
@@ -170,7 +170,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "16e7-4f6e-b965-6440",
 			"oldName": "btnMove_1",
 			"props": {
@@ -187,7 +187,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "9692-3cd3-fded-49a2",
 			"oldName": "label1",
 			"props": {
@@ -213,7 +213,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "70dd-3532-80f8-7c98",
 			"oldName": "lblPathDetails_1",
 			"props": {

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "e01a-d643-2187-ec9e",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "3bb2-e6b4-ab5d-00ce",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "3cde-4967-a22a-b05d",
 			"props": {
 				"children": [],
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "c26f-b38e-1a32-b289",
 			"oldName": "button1",
 			"props": {
@@ -68,7 +68,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgMapView-flSelector",
+			"className": ".flexLayout #pgMapView-flSelector",
 			"id": "abcf-033c-13da-1f90",
 			"props": {
 				"children": [
@@ -87,7 +87,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgMapView-lblCurrentSelection",
+			"className": ".label #pgMapView-lblCurrentSelection",
 			"id": "6615-f3cf-3514-1f6e",
 			"props": {
 				"children": [],
@@ -104,7 +104,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView #pgMapView-imgDropDown",
+			"className": ".imageView #pgMapView-imgDropDown",
 			"id": "53e5-cf55-f913-dd30",
 			"props": {
 				"children": [],
@@ -118,7 +118,7 @@
 			}
 		},
 		{
-			"className": ".sf-mapView #pgMapView-map",
+			"className": ".mapView #pgMapView-map",
 			"id": "c1b5-8472-4b97-290e",
 			"props": {
 				"children": [],

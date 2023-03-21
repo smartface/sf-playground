@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "8c02-b5be-c343-bc28",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "f7c6-611c-c81e-82a5",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "5e68-71c5-bcf9-01ce",
 			"props": {
 				"children": [],
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "76ff-7f67-093f-a2a1",
 			"oldName": "scrollView1",
 			"props": {
@@ -74,7 +74,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "0aba-0371-3010-0324",
 			"props": {
 				"children": [],
@@ -88,7 +88,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "59e3-1fb2-3214-4d7c",
 			"oldName": "label1_1",
 			"props": {
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "0f8a-d137-c1b2-345e",
 			"oldName": "label2_1",
 			"props": {
@@ -118,7 +118,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView",
+			"className": ".scrollView",
 			"id": "dae1-39a1-5c57-5aa6",
 			"oldName": "scrollView1",
 			"props": {
@@ -142,7 +142,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "18b6-61ab-1b26-23bf",
 			"oldName": "label3",
 			"props": {
@@ -157,7 +157,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "1f2f-951c-bd8b-cf42",
 			"oldName": "label2",
 			"props": {
@@ -172,7 +172,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "8cd6-a9e8-2d13-5b81",
 			"oldName": "label1",
 			"props": {
@@ -187,7 +187,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "dbab-aeab-2018-81a6",
 			"oldName": "innerlabel3_1",
 			"props": {
@@ -202,7 +202,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "935b-3340-6537-4527",
 			"oldName": "innerlabel4_1",
 			"props": {
@@ -217,7 +217,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "fe9a-e010-ad0c-663f",
 			"oldName": "innerlabel5_1",
 			"props": {
@@ -232,7 +232,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow",
+			"className": ".label .grow",
 			"id": "0180-eb51-dcab-d025",
 			"oldName": "innerlabel6_1",
 			"props": {
@@ -256,7 +256,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "22f1-6b10-e72a-7f2e",
 			"oldName": "flexLayout1",
 			"props": {
@@ -271,7 +271,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "f893-baae-ac84-d746",
 			"oldName": "fl1_1",
 			"props": {
@@ -286,7 +286,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "ec4b-5f59-307c-56f4",
 			"oldName": "fl2_1",
 			"props": {

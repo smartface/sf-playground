@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "0e36-9477-0bdf-e927",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgSound",
 				"parent": null,
@@ -21,7 +21,7 @@
 			"type": "StatusBar",
 			"id": "3013-679e-d3b2-caed",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "0e36-9477-0bdf-e927",
@@ -36,7 +36,7 @@
 			"userProps": {
 				"title": "Sound"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "0e36-9477-0bdf-e927",
@@ -52,7 +52,7 @@
 			"type": "Page",
 			"id": "0e36-9477-0bdf-e927",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgSound",
 				"parent": null,
@@ -69,7 +69,7 @@
 			"type": "StatusBar",
 			"id": "3013-679e-d3b2-caed",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "0e36-9477-0bdf-e927",
@@ -84,7 +84,7 @@
 			"userProps": {
 				"title": "Sound"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "0e36-9477-0bdf-e927",

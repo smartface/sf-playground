@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgLocationManagment",
+			"className": ".page #pgLocationManagment",
 			"id": "4807-daeb-cce7-d542",
 			"initialized": true,
 			"props": {
@@ -23,7 +23,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "0ac2-0a2e-330c-b8b4",
 			"props": {
 				"children": [],
@@ -35,7 +35,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "4146-0501-c7de-998c",
 			"props": {
 				"children": [],
@@ -50,7 +50,7 @@
 			}
 		},
 		{
-			"className": ".sf-button #pgLocationManagment-btn",
+			"className": ".button #pgLocationManagment-btn",
 			"id": "3d4c-a7eb-87ae-1234",
 			"props": {
 				"children": [],
@@ -67,7 +67,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgLocationManagment-flWrap",
+			"className": ".flexLayout #pgLocationManagment-flWrap",
 			"id": "e6f3-d09c-3653-56a2",
 			"oldName": "flexLayout1",
 			"props": {
@@ -82,7 +82,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-button .grow-relative",
+			"className": ".button .grow-relative",
 			"id": "cba9-173e-dddb-405e",
 			"props": {
 				"children": [],
@@ -102,7 +102,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow-relative",
+			"className": ".button .grow-relative",
 			"id": "ce7c-a3de-e210-1624",
 			"oldName": "btnNavigate_1",
 			"props": {
@@ -123,7 +123,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgLocationManagment-flCoordinateArea",
+			"className": ".flexLayout #pgLocationManagment-flCoordinateArea",
 			"id": "7f61-3b03-0f51-021b",
 			"props": {
 				"children": [
@@ -139,7 +139,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgLocationManagment-flLatitude",
+			"className": ".flexLayout #pgLocationManagment-flLatitude",
 			"id": "9ea0-0e3d-6178-ca85",
 			"props": {
 				"children": [
@@ -155,7 +155,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgLocationManagment-flCoordinateArea-leftlbl",
+			"className": ".label #pgLocationManagment-flCoordinateArea-leftlbl",
 			"id": "3abc-4ffa-4cbf-2974",
 			"props": {
 				"children": [],
@@ -170,7 +170,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgLocationManagment-flCoordinateArea-lbl",
+			"className": ".label #pgLocationManagment-flCoordinateArea-lbl",
 			"id": "3c3e-4b4f-427b-e6b8",
 			"props": {
 				"children": [],
@@ -187,7 +187,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgLocationManagment-flLongitude",
+			"className": ".flexLayout #pgLocationManagment-flLongitude",
 			"id": "61af-7cf2-c868-f12b",
 			"props": {
 				"children": [
@@ -203,7 +203,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgLocationManagment-flCoordinateArea-leftlbl",
+			"className": ".label #pgLocationManagment-flCoordinateArea-leftlbl",
 			"id": "1fa3-3f7f-8de2-85d7",
 			"props": {
 				"children": [],
@@ -218,7 +218,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgLocationManagment-flCoordinateArea-lbl",
+			"className": ".label #pgLocationManagment-flCoordinateArea-lbl",
 			"id": "bb86-03c2-fb39-52fd",
 			"props": {
 				"children": [],
@@ -235,7 +235,7 @@
 			}
 		},
 		{
-			"className": ".sf-mapView #pgLocationManagment-mapView",
+			"className": ".mapView #pgLocationManagment-mapView",
 			"id": "1807-6bff-7394-9e3f",
 			"props": {
 				"children": [],
@@ -250,7 +250,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "7ee9-5ee5-5497-8fbf",
 			"props": {
 				"children": [],

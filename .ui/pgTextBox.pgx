@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "f514-b2a5-80fd-2e93",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "19cd-5732-3107-e0f6",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "a314-f725-9cb0-0acb",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "5cc7-98e2-ea6e-4784",
 			"oldName": "scrollView1",
 			"props": {
@@ -71,7 +71,7 @@
 			"type": "ScrollView"
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "c6f0-bf81-b383-387c",
 			"oldName": "label1",
 			"props": {
@@ -89,7 +89,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "97a5-0312-e36c-4caa",
 			"oldName": "tbUsername",
 			"props": {
@@ -110,7 +110,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "2343-23bf-0aa4-8778",
 			"oldName": "textBox2",
 			"props": {
@@ -131,7 +131,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "3bcb-3a6b-e4bd-9bc1",
 			"oldName": "tb",
 			"props": {
@@ -152,7 +152,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "7679-645b-2d5d-d753",
 			"oldName": "tbPin_1",
 			"props": {
@@ -171,7 +171,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "b6e6-0934-253a-cbab",
 			"oldName": "btnTextAlignment_1",
 			"props": {
@@ -190,7 +190,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "931b-d11b-6238-0207",
 			"oldName": "lblTextBox_1",
 			"props": {
@@ -208,7 +208,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "3b1a-e7e4-043c-9a63",
 			"oldName": "flexLayout1",
 			"props": {
@@ -233,7 +233,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow-relative #pgTextBox-btnKeyTypes",
+			"className": ".button .grow-relative #pgTextBox-btnKeyTypes",
 			"id": "a1d2-b2b6-c8d3-b257",
 			"oldName": "button1",
 			"props": {
@@ -251,7 +251,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow-relative #pgTextBox-btnKeyTypes",
+			"className": ".button .grow-relative #pgTextBox-btnKeyTypes",
 			"id": "c179-7068-e692-60b5",
 			"oldName": "btnActionKeyTypeDefault_1",
 			"props": {
@@ -269,7 +269,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow-relative #pgTextBox-btnKeyTypes",
+			"className": ".button .grow-relative #pgTextBox-btnKeyTypes",
 			"id": "f684-860b-9631-00b9",
 			"oldName": "btnActionKeyTypeGo_1",
 			"props": {
@@ -287,7 +287,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow-relative #pgTextBox-btnKeyTypes",
+			"className": ".button .grow-relative #pgTextBox-btnKeyTypes",
 			"id": "e365-b8a3-8539-3b73",
 			"oldName": "btnActionKeyTypeNext_1",
 			"props": {
@@ -305,7 +305,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow-relative #pgTextBox-btnKeyTypes",
+			"className": ".button .grow-relative #pgTextBox-btnKeyTypes",
 			"id": "6ff8-852e-aae4-0ecb",
 			"oldName": "btnActionKeyTypeSearch_1",
 			"props": {
@@ -323,7 +323,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3549-84e6-5372-fa4f",
 			"oldName": "button1",
 			"props": {
@@ -342,7 +342,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "727d-c9ed-405d-c3b5",
 			"oldName": "lblTextBox_1",
 			"props": {
@@ -360,7 +360,7 @@
 			}
 		},
 		{
-			"className": ".sf-textView",
+			"className": ".textView",
 			"id": "f131-1066-b1af-9422",
 			"oldName": "textView1",
 			"props": {
@@ -381,7 +381,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "986a-9e36-8802-cec0",
 			"oldName": "lblTextView_1",
 			"props": {
@@ -399,7 +399,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "8a11-0c62-5386-cf13",
 			"oldName": "textBox1",
 			"props": {

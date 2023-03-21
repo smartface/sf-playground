@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "327b-8058-27d5-6d77",
 			"initialized": true,
 			"props": {
@@ -18,7 +18,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "cb8c-7519-d9cc-81ed",
 			"props": {
 				"children": [],
@@ -32,7 +32,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "a65b-e5f6-aaca-3be1",
 			"props": {
 				"children": [],
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			"className": ".sf-mapView",
+			"className": ".mapView",
 			"id": "eac6-95c9-f102-c8b0",
 			"props": {
 				"children": [],

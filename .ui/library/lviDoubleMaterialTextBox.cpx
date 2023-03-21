@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviDoubleMaterialTextBox .paddingHorizontal",
+			"className": ".listViewItem .lviDoubleMaterialTextBox .paddingHorizontal",
 			"hiddenComponent": true,
 			"id": "53cd-102b-bdc1-fac4",
 			"props": {
@@ -19,7 +19,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-materialTextBox .lviDoubleMaterialTextBox-mtb",
+			"className": ".materialTextBox .lviDoubleMaterialTextBox-mtb",
 			"id": "2ccc-81cd-ccbb-eb66",
 			"oldName": "mtb",
 			"props": {
@@ -37,7 +37,7 @@
 			}
 		},
 		{
-			"className": ".sf-materialTextBox .lviDoubleMaterialTextBox-mtb",
+			"className": ".materialTextBox .lviDoubleMaterialTextBox-mtb",
 			"id": "8339-96cb-a057-4e1f",
 			"oldName": "mtb1_1",
 			"props": {

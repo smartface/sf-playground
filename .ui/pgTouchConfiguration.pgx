@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "aa26-2d29-3351-758b",
 			"initialized": true,
 			"props": {
@@ -21,7 +21,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "cbbc-714b-bf59-b8e7",
 			"props": {
 				"children": [],
@@ -33,7 +33,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "0edc-2bba-1da3-abd6",
 			"props": {
 				"children": [],
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgTouchConfiguration-flex",
+			"className": ".flexLayout #pgTouchConfiguration-flex",
 			"id": "4f11-6877-848e-2cab",
 			"props": {
 				"children": [
@@ -65,7 +65,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgTouchConfiguration-lblPress",
+			"className": ".label #pgTouchConfiguration-lblPress",
 			"id": "2028-bb69-fb66-1f10",
 			"props": {
 				"children": [],
@@ -82,7 +82,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgTouchConfiguration-flColorArea .card",
+			"className": ".flexLayout #pgTouchConfiguration-flColorArea .card",
 			"id": "d0aa-f953-3cbf-3c1c",
 			"props": {
 				"children": [
@@ -104,7 +104,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgTouchConfiguration-lblTitle",
+			"className": ".label #pgTouchConfiguration-lblTitle",
 			"id": "f88b-29eb-f0a2-dc98",
 			"props": {
 				"children": [],
@@ -119,7 +119,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgTouchConfiguration-flRow",
+			"className": ".flexLayout #pgTouchConfiguration-flRow",
 			"id": "ae90-e588-7782-6fde",
 			"props": {
 				"children": [
@@ -135,7 +135,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgTouchConfiguration-lblOption",
+			"className": ".label #pgTouchConfiguration-lblOption",
 			"id": "f71d-f3a7-e068-d214",
 			"props": {
 				"children": [],
@@ -150,7 +150,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox #pgTouchConfiguration-textBox",
+			"className": ".textBox #pgTouchConfiguration-textBox",
 			"id": "6e7b-93e9-bfb6-6638",
 			"props": {
 				"children": [],
@@ -167,7 +167,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout #pgTouchConfiguration-flRow",
+			"className": ".flexLayout #pgTouchConfiguration-flRow",
 			"id": "f0f8-18cc-6b4c-ce5b",
 			"props": {
 				"children": [
@@ -183,7 +183,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgTouchConfiguration-lblOption",
+			"className": ".label #pgTouchConfiguration-lblOption",
 			"id": "6eb8-3c6e-9c02-a333",
 			"props": {
 				"children": [],
@@ -198,7 +198,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox #pgTouchConfiguration-textBox",
+			"className": ".textBox #pgTouchConfiguration-textBox",
 			"id": "b2b1-bb43-3ef7-319a",
 			"props": {
 				"children": [],
@@ -215,7 +215,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "c5c0-0ecf-4db7-ef37",
 			"props": {
 				"children": [],

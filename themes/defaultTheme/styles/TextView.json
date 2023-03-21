@@ -24,8 +24,8 @@
     "masksToBounds": true,
     "width": null,
     "height": 131,
-    "maxLines": 0,
-    "ellipsizeMode": "NONE",
+    "maxLines": 1,
+    "ellipsizeMode": "END",
     "textAlignment": "MIDLEFT",
     "flexProps": {
       "alignSelf": "AUTO",

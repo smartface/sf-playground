@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "b226-ea77-66b2-d26d",
 			"initialized": true,
 			"props": {
@@ -20,7 +20,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "301d-7ec3-4bb8-3b9d",
 			"props": {
 				"children": [],
@@ -34,7 +34,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "7ec5-e244-5446-1424",
 			"props": {
 				"children": [],
@@ -49,7 +49,7 @@
 			}
 		},
 		{
-			"className": ".sf-webView",
+			"className": ".webView",
 			"id": "480c-123b-d704-2854",
 			"props": {
 				"children": [],
@@ -67,7 +67,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "255d-171a-233a-b38e",
 			"oldName": "button1",
 			"props": {
@@ -84,7 +84,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "2e97-81f5-a629-220e",
 			"oldName": "btnReconnect_1",
 			"props": {

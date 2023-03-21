@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": " .page",
 			"id": "dadf-0824-f8da-caf1",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": " .statusBar",
 			"id": "cc73-fab4-c5cc-9d9b",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": " .headerBar",
 			"id": "061f-121a-f40b-7297",
 			"props": {
 				"children": [],
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-activityIndicator",
+			"className": " .activityIndicator",
 			"id": "68e5-b661-f462-96ee",
 			"oldName": "a",
 			"props": {
@@ -69,7 +69,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "c71c-1a25-3a48-3ba6",
 			"oldName": "button1",
 			"props": {
@@ -92,7 +92,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "1217-0e63-1ffa-6eca",
 			"oldName": "btnRed_1",
 			"props": {
@@ -115,7 +115,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": " .label",
 			"id": "d9bb-bf65-b02f-dda9",
 			"oldName": "label1",
 			"props": {
@@ -131,7 +131,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "cc85-5614-08dd-d89a",
 			"oldName": "button1",
 			"props": {
@@ -149,7 +149,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": " .button",
 			"id": "2a35-4450-7588-5cf1",
 			"oldName": "btnDefault_1",
 			"props": {

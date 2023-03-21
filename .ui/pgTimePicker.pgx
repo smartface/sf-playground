@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "04e4-6cbb-1eec-03cd",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "a22c-3d4f-2da8-8fd5",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "e296-4af4-27ba-2c49",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "e7c6-478f-76a6-978b",
 			"oldName": "button1",
 			"props": {

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "9bb3-0724-fc91-e6cb",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			"degree": 0
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "9a1e-01ba-d187-c74c",
 			"props": {
 				"children": [],
@@ -37,7 +37,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "7175-4f84-702a-b7d8",
 			"props": {
 				"children": [],
@@ -53,7 +53,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "9d9f-0d33-c399-cda2",
 			"oldName": "button1",
 			"props": {
@@ -72,7 +72,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "1318-9e50-5b69-e975",
 			"oldName": "btnShare_1",
 			"props": {
@@ -91,7 +91,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "38cf-d520-4cdb-e718",
 			"oldName": "btnShareContacts_1",
 			"props": {
@@ -110,7 +110,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "6fd2-a202-3c8c-aeda",
 			"oldName": "btnShareFile_1",
 			"props": {
@@ -129,7 +129,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "1f97-cc03-400f-8747",
 			"oldName": "btnShareImage_1",
 			"props": {

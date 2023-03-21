@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout .flWaitingIndicator",
+			"className": ".flexLayout .flWaitingIndicator",
 			"hiddenComponent": true,
 			"id": "e2c4-b7c4-7c63-c444",
 			"props": {
@@ -18,7 +18,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout .flWaitingIndicator-wrapper",
+			"className": ".flexLayout .flWaitingIndicator-wrapper",
 			"id": "8823-f001-a984-b5ce",
 			"oldName": "flexLayout1",
 			"props": {
@@ -35,7 +35,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-gifImageView .flWaitingIndicator-giv",
+			"className": ".gifImageView .flWaitingIndicator-giv",
 			"id": "97f9-8827-4f08-a60f",
 			"oldName": "gifImageView1",
 			"props": {

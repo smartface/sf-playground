@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgPhotoCropper",
+			"className": ".page #pgPhotoCropper",
 			"id": "59fc-aa30-b0ba-3c18",
 			"initialized": true,
 			"props": {
@@ -20,7 +20,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "58d9-53f9-aac0-a875",
 			"props": {
 				"children": [],
@@ -32,7 +32,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar #pgPhotoCropper-headerBar",
+			"className": ".headerBar #pgPhotoCropper-headerBar",
 			"id": "ee8a-66b5-61a7-f9ca",
 			"props": {
 				"children": [],
@@ -44,7 +44,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout #pgPhotoCropper-flex",
+			"className": ".flexLayout #pgPhotoCropper-flex",
 			"id": "52df-d577-d0e6-f137",
 			"props": {
 				"children": [],
@@ -59,7 +59,7 @@
 			}
 		},
 		{
-			"className": ".sf-gridView #pgPhotoCropper-gvPhotos",
+			"className": ".gridView #pgPhotoCropper-gvPhotos",
 			"id": "d663-9cbe-3957-3391",
 			"props": {
 				"children": [
@@ -76,7 +76,7 @@
 			}
 		},
 		{
-			"className": ".sf-gridViewItem .gviMiniPhoto",
+			"className": ".gridViewItem .gviMiniPhoto",
 			"hiddenComponent": false,
 			"id": "7925-9d41-5c2d-f594",
 			"props": {

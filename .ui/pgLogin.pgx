@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "dfc3-9700-8047-a537",
 			"initialized": true,
 			"props": {
@@ -22,7 +22,7 @@
 			}
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "3ed4-5abd-3d56-c310",
 			"props": {
 				"children": [],
@@ -36,7 +36,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "648a-2d80-0d9f-1bda",
 			"props": {
 				"children": [],
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "4fad-7bea-ac6e-08c8",
 			"props": {
 				"children": [
@@ -76,7 +76,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".imageView",
 			"id": "6afd-1324-e534-c989",
 			"props": {
 				"children": [],
@@ -95,7 +95,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "0d4c-27a1-23d4-ca76",
 			"props": {
 				"children": [
@@ -115,7 +115,7 @@
 			}
 		},
 		{
-			"className": ".sf-materialTextBox",
+			"className": ".materialTextBox",
 			"id": "4e3a-d7cd-1dca-aef0",
 			"oldName": "materialTextBox1",
 			"props": {
@@ -130,7 +130,7 @@
 			}
 		},
 		{
-			"className": ".sf-materialTextBox",
+			"className": ".materialTextBox",
 			"id": "31ab-6c1d-991b-63ba",
 			"oldName": "mtbEmail_1",
 			"props": {
@@ -145,7 +145,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "bced-2b0e-ccd1-f354",
 			"props": {
 				"children": [],

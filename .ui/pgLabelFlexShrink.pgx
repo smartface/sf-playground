@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "838d-550d-839e-7749",
 			"initialized": true,
 			"props": {
@@ -20,7 +20,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "dd1a-d552-1146-530e",
 			"props": {
 				"children": [],
@@ -32,7 +32,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "cad5-9010-f5fa-9c59",
 			"props": {
 				"children": [],
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "7e07-07eb-13d1-bda3",
 			"oldName": "flexLayout1",
 			"props": {
@@ -67,7 +67,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "554d-352d-ac20-78e4",
 			"oldName": "label1",
 			"props": {
@@ -87,7 +87,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "8d9a-e4df-c609-30d6",
 			"oldName": "flexLayout2",
 			"props": {
@@ -105,7 +105,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "6c80-56eb-4920-5766",
 			"oldName": "flexLayout2_1",
 			"props": {
@@ -123,7 +123,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "6a75-f8e0-e87b-868e",
 			"oldName": "flShrink2_1",
 			"props": {
@@ -141,7 +141,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "b801-04c2-fb19-0dfe",
 			"oldName": "button1",
 			"props": {

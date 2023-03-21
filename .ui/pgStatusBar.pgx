@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "a0c7-3b5c-7370-42b0",
 			"initialized": true,
 			"props": {
@@ -23,7 +23,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "c231-eb13-8778-68f3",
 			"props": {
 				"children": [],
@@ -37,7 +37,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "254c-704c-5920-1fad",
 			"props": {
 				"children": [],
@@ -52,7 +52,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "fbca-ff80-50ba-1d1c",
 			"oldName": "button1",
 			"props": {
@@ -69,7 +69,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "0aa8-975c-7b45-2582",
 			"oldName": "btnGetHeight_1",
 			"props": {
@@ -86,7 +86,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "6a02-7d7b-1a0d-64ab",
 			"oldName": "btnSetTransparent_1",
 			"props": {
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "fef8-58e3-190f-66b6",
 			"oldName": "label1",
 			"props": {
@@ -121,7 +121,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "a194-f9e4-5385-bf8d",
 			"oldName": "flexLayout1",
 			"props": {
@@ -141,7 +141,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow .marginHorizontal",
+			"className": ".button .grow .marginHorizontal",
 			"id": "d9a0-feb0-d39a-ef41",
 			"oldName": "button1",
 			"props": {
@@ -165,7 +165,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow .marginHorizontal",
+			"className": ".button .grow .marginHorizontal",
 			"id": "cbd4-e1f5-f11d-f9ad",
 			"oldName": "btnDefault_1",
 			"props": {

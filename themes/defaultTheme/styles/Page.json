@@ -26,6 +26,10 @@
             "flexWrap": "NOWRAP",
             "justifyContent": "FLEX_START"
         },
+        "paddingTop": 16,
+        "paddingLeft": 16,
+        "paddingBottom": 16,
+        "paddingRight": 16,
         "backgroundColor": "#FFFFFF",
         "orientation": "PORTRAIT"
     },

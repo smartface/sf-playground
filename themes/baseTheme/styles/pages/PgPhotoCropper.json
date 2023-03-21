@@ -17,11 +17,7 @@
 			"height": 40,
 			"bottom": 30,
 			"left": 10,
-			"right": 10,
-			"layoutManager": {
-				"spanCount": 1,
-				"scrollDirection": "HORIZONTAL"
-			}
+			"right": 10
 		},
 		"&-flex": {
 			"flexProps": {

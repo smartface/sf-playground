@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgPhotoViewer",
+			"className": ".page #pgPhotoViewer",
 			"id": "b744-77f8-0f13-e099",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "7c75-a3a3-f68d-413a",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "9869-e894-0051-972a",
 			"props": {
 				"children": [],
@@ -43,7 +43,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView .grow-relative #pgPhotoViewer-img",
+			"className": ".imageView .grow-relative #pgPhotoViewer-img",
 			"id": "8fa7-278a-94e0-9b38",
 			"props": {
 				"children": [],

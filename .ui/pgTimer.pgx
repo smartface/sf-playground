@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "b3a7-3bc0-d465-d13c",
 			"initialized": true,
 			"props": {
@@ -21,7 +21,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "ca03-b4eb-c8bd-a97c",
 			"props": {
 				"children": [],
@@ -33,7 +33,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "a3a1-93b8-aba6-4fc2",
 			"props": {
 				"children": [],
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "6fc8-590a-8a59-aa8b",
 			"oldName": "button1",
 			"props": {
@@ -66,7 +66,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "5842-4cb6-f692-80da",
 			"oldName": "button1",
 			"props": {
@@ -84,7 +84,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "ec4e-c89e-1a62-14c4",
 			"oldName": "btnClearIntervals",
 			"props": {

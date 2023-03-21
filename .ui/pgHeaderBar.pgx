@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "0a15-1cff-ec1b-d2ec",
 			"initialized": true,
 			"props": {
@@ -21,7 +21,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "8991-d33d-04ea-0b11",
 			"props": {
 				"children": [],
@@ -33,7 +33,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "0518-ea25-1eea-6f4e",
 			"props": {
 				"children": [],
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "96ce-2a24-84a8-2478",
 			"oldName": "scrollView1",
 			"props": {
@@ -78,7 +78,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "5e8a-cacb-b6df-73e3",
 			"oldName": "btnSetItemColor_1",
 			"props": {
@@ -97,7 +97,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "d885-288d-dc5d-40be",
 			"oldName": "button1",
 			"props": {
@@ -116,7 +116,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "c4c1-1e7e-38fd-d1d0",
 			"oldName": "button1",
 			"props": {
@@ -131,7 +131,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "ddd1-6bbe-78cd-61ff",
 			"oldName": "btnVisible_1",
 			"props": {
@@ -150,7 +150,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3ec1-4997-7148-871c",
 			"oldName": "btnTransparent_1",
 			"props": {
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "22c1-854c-48d7-86fb",
 			"oldName": "btnTranslucent_1",
 			"props": {
@@ -188,7 +188,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "e683-9d57-99f0-0ecd",
 			"oldName": "btnTitleLayout_1",
 			"props": {
@@ -207,7 +207,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "118e-92bb-8217-ac50",
 			"oldName": "btnTitleFont_1",
 			"props": {
@@ -226,7 +226,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3bc4-a318-6337-9474",
 			"oldName": "btnSetSubtitle_1",
 			"props": {
@@ -245,7 +245,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "80c8-5e71-d017-9723",
 			"oldName": "btnSetPadding_1",
 			"props": {
@@ -264,7 +264,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "0f83-6622-a81f-2d7d",
 			"oldName": "btnSetLogo_1",
 			"props": {
@@ -283,7 +283,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3398-1a15-bd3d-9aec",
 			"oldName": "btnSetContentInset_1",
 			"props": {
@@ -302,7 +302,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "9dfe-ddce-991d-3f1c",
 			"oldName": "btnSetLogo_1",
 			"props": {
@@ -321,7 +321,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "02dc-e850-742f-96a2",
 			"oldName": "btnSetItemColor_1",
 			"props": {
@@ -340,7 +340,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "5fe6-f844-84fa-50aa",
 			"oldName": "btnSetBorderVisibility_1",
 			"props": {
@@ -359,7 +359,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "883b-0cf2-10f7-f5e0",
 			"oldName": "flElevation_1",
 			"props": {
@@ -381,7 +381,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow",
+			"className": ".label .grow",
 			"id": "ea20-629e-8299-5243",
 			"oldName": "lblElevation",
 			"props": {
@@ -397,7 +397,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider",
+			"className": ".slider",
 			"id": "2dd9-5557-0820-7456",
 			"oldName": "slElevation",
 			"props": {
@@ -413,7 +413,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "0767-81bd-5516-b6ae",
 			"oldName": "flexLayout1",
 			"props": {
@@ -435,7 +435,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow",
+			"className": ".label .grow",
 			"id": "df24-9de1-8cdd-ab7b",
 			"oldName": "label1",
 			"props": {
@@ -451,7 +451,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider",
+			"className": ".slider",
 			"id": "9fa3-f892-2d83-e8b3",
 			"oldName": "slider1",
 			"props": {

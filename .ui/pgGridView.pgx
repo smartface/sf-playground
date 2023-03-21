@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "29a1-15f0-d80e-1301",
 			"initialized": false,
 			"props": {
@@ -24,7 +24,7 @@
 			"degree": 0
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "9157-54e1-d8bb-c3e7",
 			"props": {
 				"children": [],
@@ -37,7 +37,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "86c7-69ad-8662-8746",
 			"props": {
 				"children": [],
@@ -53,7 +53,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "2dae-12ba-9b1c-c9b2",
 			"oldName": "label1",
 			"props": {
@@ -71,7 +71,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "5fde-3868-cb8d-d27b",
 			"oldName": "flRow1Line",
@@ -103,7 +103,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "08d8-0d34-9587-a02b",
 			"oldName": "flRow1Line_4",
@@ -135,7 +135,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "c053-2c1a-e234-8294",
 			"oldName": "flRow1Line_3",
@@ -167,7 +167,7 @@
 			"degree": 1
 		},
 		{
-			"className": ".sf-flexLayout .flRow1Line",
+			"className": ".flexLayout .flRow1Line",
 			"hiddenComponent": false,
 			"id": "4d6b-e008-4bf5-924c",
 			"oldName": "flRow1Line_2",

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviMaterialTextBox .paddingHorizontal",
+			"className": ".listViewItem .lviMaterialTextBox .paddingHorizontal",
 			"hiddenComponent": true,
 			"id": "6d9e-90b9-8a2b-6ad8",
 			"props": {
@@ -18,7 +18,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-materialTextBox .lviMaterialTextBox-mtb",
+			"className": ".materialTextBox .lviMaterialTextBox-mtb",
 			"id": "ecd2-f74b-8cd1-e3b1",
 			"oldName": "materialTextBox1",
 			"props": {

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviPages",
+			"className": ".listViewItem .lviPages",
 			"hiddenComponent": true,
 			"id": "6489-e37f-2143-0faf",
 			"initialized": true,
@@ -20,7 +20,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .lviPages-lblPageName",
+			"className": ".label .lviPages-lblPageName",
 			"id": "0596-82ca-47e0-3fea",
 			"props": {
 				"children": [],
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviPages-flSeparator",
+			"className": ".flexLayout .lviPages-flSeparator",
 			"id": "0a89-9189-8972-8d64",
 			"props": {
 				"children": [],

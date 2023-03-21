@@ -1,98 +1,48 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "1188-6ea7-44ad-7023",
-			"userProps": {},
-			"className": ".sf-page",
+			"initialized": true,
 			"props": {
-				"name": "pgCallDetection",
-				"parent": null,
 				"children": [
 					"298a-63b2-1b72-0883",
 					"e61d-70b6-6871-edaf"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "298a-63b2-1b72-0883",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "1188-6ea7-44ad-7023",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "e61d-70b6-6871-edaf",
-			"userProps": {
-				"title": "CallDetection"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "1188-6ea7-44ad-7023",
-				"children": [],
-				"title": "CallDetection",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"fabf-7b02-c7f9-50c9": {
-			"type": "Page",
-			"id": "1188-6ea7-44ad-7023",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgCallDetection",
-				"parent": null,
-				"children": [
-					"298a-63b2-1b72-0883",
-					"e61d-70b6-6871-edaf"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		"11ab-e2d5-b311-1e9e": {
-			"type": "StatusBar",
-			"id": "298a-63b2-1b72-0883",
+			"type": "Page",
 			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "1188-6ea7-44ad-7023",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+			"version": "0.0.1.a"
 		},
-		"f7d2-78ec-919d-2f86": {
-			"type": "HeaderBar",
-			"id": "e61d-70b6-6871-edaf",
-			"userProps": {
-				"title": "CallDetection"
-			},
-			"className": ".sf-headerBar",
+		{
+			"className": ".statusBar",
+			"id": "298a-63b2-1b72-0883",
 			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "1188-6ea7-44ad-7023"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "e61d-70b6-6871-edaf",
+			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "1188-6ea7-44ad-7023",
-				"children": [],
-				"title": "CallDetection",
-				"visible": true,
-				"isRemovable": false
+				"title": "CallDetection"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "CallDetection"
 			}
 		}
-	}
+	]
 }

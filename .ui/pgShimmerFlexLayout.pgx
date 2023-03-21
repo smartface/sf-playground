@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "7428-985a-1805-4283",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "ffb6-aa13-a10c-aee3",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "d09d-435d-4261-0d5e",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "5254-39d9-3da0-9e0e",
 			"oldName": "scrollView1",
 			"props": {
@@ -64,7 +64,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-shimmerFlexLayout",
+			"className": ".shimmerFlexLayout",
 			"id": "4646-8c0c-5c33-cb34",
 			"oldName": "shimmerFlexLayout1",
 			"props": {
@@ -87,7 +87,7 @@
 			}
 		},
 		{
-			"className": ".sf-switch",
+			"className": ".switch",
 			"id": "67eb-0d20-926a-f090",
 			"props": {
 				"children": [],
@@ -103,7 +103,7 @@
 			}
 		},
 		{
-			"className": ".sf-activityIndicator",
+			"className": ".activityIndicator",
 			"id": "02c8-dceb-205a-a5cc",
 			"props": {
 				"children": [],
@@ -115,7 +115,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-searchView",
+			"className": ".searchView",
 			"id": "2909-a62c-b19b-72a3",
 			"props": {
 				"children": [],
@@ -129,7 +129,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "258e-48c0-d958-c48e",
 			"oldName": "btnToggle",
 			"props": {
@@ -149,7 +149,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "6694-b5ce-d11c-0cef",
 			"oldName": "lblAlpa",
 			"props": {
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider",
+			"className": ".slider",
 			"id": "e263-d1e5-b035-1bd7",
 			"oldName": "slider1",
 			"props": {
@@ -185,7 +185,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "4d00-2c08-c992-81e0",
 			"oldName": "button1",
 			"props": {

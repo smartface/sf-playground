@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listView .grow",
+			"className": ".listView .grow",
 			"hiddenComponent": true,
 			"id": "d15b-453b-59d7-5823",
 			"props": {

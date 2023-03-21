@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "6dbc-1135-d929-5416",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "afcb-385b-14c9-9c9c",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "5dee-f2d1-7b43-ff87",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow-relative",
+			"className": ".scrollView .grow-relative",
 			"id": "3265-4632-8823-84ec",
 			"oldName": "scrollView1",
 			"props": {
@@ -81,7 +81,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "4bb0-184a-2c84-ef2a",
 			"oldName": "label1",
 			"props": {
@@ -99,7 +99,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView #pgImageView-imgOriginal",
+			"className": ".imageView #pgImageView-imgOriginal",
 			"id": "294f-4c49-0903-b54c",
 			"oldName": "imgMain_1",
 			"props": {
@@ -112,7 +112,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"hiddenComponent": false,
 			"id": "6d67-34fc-4190-f0c6",
 			"oldName": "lblOriginal_1",
@@ -131,7 +131,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".imageView",
 			"id": "14a9-9cf2-498a-219e",
 			"oldName": "imageView1",
 			"props": {
@@ -153,7 +153,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "be4f-6f1b-804f-29d8",
 			"oldName": "label1",
 			"props": {
@@ -171,7 +171,7 @@
 			}
 		},
 		{
-			"className": ".sf-switch",
+			"className": ".switch",
 			"id": "cbff-46aa-bad7-6408",
 			"oldName": "switch1",
 			"props": {
@@ -194,7 +194,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "69b5-6d4b-10f5-fe9b",
 			"oldName": "button1",
 			"props": {
@@ -216,7 +216,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "4f30-52a0-884d-c59d",
 			"oldName": "btnCompress_1",
 			"props": {
@@ -238,7 +238,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "7624-a01a-5f95-ff14",
 			"oldName": "btnCompress_1",
 			"props": {
@@ -260,7 +260,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "69be-9e3b-cc2e-3333",
 			"oldName": "btnCrop_1",
 			"props": {
@@ -282,7 +282,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "fac4-58ef-e8fb-689e",
 			"oldName": "btnResize_1",
 			"props": {
@@ -304,7 +304,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "d57b-9735-153a-d737",
 			"oldName": "btnRotate_1",
 			"props": {
@@ -326,7 +326,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".imageView",
 			"id": "2f3f-d117-4020-397b",
 			"oldName": "imgMain_1",
 			"props": {
@@ -349,7 +349,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "e99d-d034-d147-052f",
 			"oldName": "lblAutoMirrored_1",
 			"props": {
@@ -367,7 +367,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "ee3b-0358-3498-263e",
 			"oldName": "button1",
 			"props": {
@@ -385,7 +385,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "2424-e03c-9809-3773",
 			"oldName": "btnFillType_1",
 			"props": {
@@ -403,7 +403,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "bb1a-630e-9185-0f65",
 			"oldName": "btnTintColor_1",
 			"props": {
@@ -421,7 +421,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "2c92-a500-fa3e-db8e",
 			"oldName": "btnLoadFromUrl_1",
 			"props": {
@@ -439,7 +439,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "dee0-3c30-6f7c-b949",
 			"oldName": "btnFetchFromUrl_1",
 			"props": {

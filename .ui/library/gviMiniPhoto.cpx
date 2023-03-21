@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-gridViewItem .gviMiniPhoto",
+			"className": ".gridViewItem .gviMiniPhoto",
 			"hiddenComponent": true,
 			"id": "8417-61ca-c49a-4b9c",
 			"props": {
@@ -18,7 +18,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout .gviMiniPhoto-flex",
+			"className": ".flexLayout .gviMiniPhoto-flex",
 			"id": "bbbf-3cbd-81b7-f82d",
 			"props": {
 				"children": [
@@ -37,7 +37,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView .gviMiniPhoto-img",
+			"className": ".imageView .gviMiniPhoto-img",
 			"id": "a171-65a9-b720-aef6",
 			"props": {
 				"children": [],

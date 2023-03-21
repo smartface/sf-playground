@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout .flImage",
+			"className": ".flexLayout .flImage",
 			"hiddenComponent": true,
 			"id": "2ca1-cb03-95f1-c455",
 			"initialized": true,
@@ -19,7 +19,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView .flImage-imgIcon",
+			"className": ".imageView .flImage-imgIcon",
 			"id": "e484-4e90-7ed1-3e83",
 			"props": {
 				"children": [],

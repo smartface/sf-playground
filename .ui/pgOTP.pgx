@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "38bd-e95b-18d3-8a4f",
 			"initialized": true,
 			"props": {
@@ -32,7 +32,7 @@
 			"version": "6.15.1"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "11d6-10e0-c104-ac41",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "73e5-9fbe-194a-dcab",
 			"props": {
 				"children": [],
@@ -62,7 +62,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "254b-2029-77c7-7acf",
 			"props": {
 				"children": [],
@@ -79,7 +79,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "7c68-868d-d82e-1dfb",
 			"props": {
 				"autoHeight": 39.325842696629216,
@@ -107,7 +107,6 @@
 					"style": "Regular"
 				},
 				"height": 600,
-				"multiline": true,
 				"testId": "L-42gAben",
 				"text": "Page1",
 				"textAlignment": "MIDCENTER",

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .lviCompanyInfoExtended",
+			"className": ".listViewItem .lviCompanyInfoExtended",
 			"hiddenComponent": true,
 			"id": "06e0-47b3-b20a-bcf6",
 			"props": {
@@ -20,7 +20,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout .lviCompanyInfoExtended-wrapper",
+			"className": ".flexLayout .lviCompanyInfoExtended-wrapper",
 			"id": "5584-f9f3-b477-9af6",
 			"oldName": "flexLayout1",
 			"props": {
@@ -39,7 +39,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .lviCompanyInfoExtended-companyName",
+			"className": ".label .lviCompanyInfoExtended-companyName",
 			"id": "a840-343c-2a19-a2d3",
 			"oldName": "label1",
 			"props": {
@@ -56,7 +56,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .lviCompanyInfoExtended-companySection",
+			"className": ".label .lviCompanyInfoExtended-companySection",
 			"id": "a766-5be7-40e1-5d48",
 			"oldName": "lblCompanyName_1",
 			"props": {
@@ -73,7 +73,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .lviCompanyInfoExtended-companyInfo",
+			"className": ".label .lviCompanyInfoExtended-companyInfo",
 			"id": "a92d-769e-f551-db81",
 			"oldName": "lblCompanySection_1",
 			"props": {
@@ -91,7 +91,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .lviCompanyInfoExtended-rightLayout",
+			"className": ".flexLayout .lviCompanyInfoExtended-rightLayout",
 			"id": "fb16-2161-fcc6-a322",
 			"oldName": "flMain_1",
 			"props": {
@@ -111,7 +111,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView .lviCompanyInfoExtended-rightLayout-imgUpArrow",
+			"className": ".imageView .lviCompanyInfoExtended-rightLayout-imgUpArrow",
 			"id": "0ee7-b23b-bf9d-af60",
 			"oldName": "imageView1",
 			"props": {
@@ -129,7 +129,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .separator",
+			"className": ".flexLayout .separator",
 			"id": "3b18-662d-84ba-f1b9",
 			"oldName": "flexLayout1",
 			"props": {

@@ -4,7 +4,7 @@
 			"type": "Page",
 			"id": "b9f2-cb13-abcb-32d9",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgSSLPinningHttp",
 				"parent": null,
@@ -21,7 +21,7 @@
 			"type": "StatusBar",
 			"id": "cc67-5732-d205-17c4",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "b9f2-cb13-abcb-32d9",
@@ -36,7 +36,7 @@
 			"userProps": {
 				"title": "pgSSLPinningHttp"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "b9f2-cb13-abcb-32d9",
@@ -52,7 +52,7 @@
 			"type": "Page",
 			"id": "b9f2-cb13-abcb-32d9",
 			"userProps": {},
-			"className": ".sf-page",
+			"className": ".page",
 			"props": {
 				"name": "pgSSLPinningHttp",
 				"parent": null,
@@ -69,7 +69,7 @@
 			"type": "StatusBar",
 			"id": "cc67-5732-d205-17c4",
 			"userProps": {},
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
 				"parent": "b9f2-cb13-abcb-32d9",
@@ -84,7 +84,7 @@
 			"userProps": {
 				"title": "pgSSLPinningHttp"
 			},
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
 				"parent": "b9f2-cb13-abcb-32d9",

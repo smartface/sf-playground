@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "f41f-1e33-ca9b-03a2",
 			"initialized": true,
 			"props": {
@@ -22,7 +22,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "00a9-d824-6955-2ceb",
 			"props": {
 				"children": [],
@@ -34,7 +34,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "d12c-24e3-e8a2-5be9",
 			"props": {
 				"children": [],
@@ -49,7 +49,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "295c-2bc0-4730-5168",
 			"oldName": "button1",
 			"props": {
@@ -66,7 +66,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "01b6-b83b-d9c5-991e",
 			"oldName": "btnShow_1",
 			"props": {
@@ -83,7 +83,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "76d5-c4f6-0623-b9c9",
 			"oldName": "flexLayout1",
 			"props": {
@@ -105,7 +105,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow",
+			"className": ".label .grow",
 			"id": "2545-6f9b-b17d-796c",
 			"oldName": "label1",
 			"props": {
@@ -120,7 +120,7 @@
 			}
 		},
 		{
-			"className": ".sf-switch",
+			"className": ".switch",
 			"id": "e352-bb4a-a491-9b6b",
 			"oldName": "switch1",
 			"props": {
@@ -140,7 +140,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "d7be-20e0-e83a-fe06",
 			"oldName": "flTransparent_1",
 			"props": {
@@ -162,7 +162,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .grow",
+			"className": ".label .grow",
 			"id": "6435-3be7-4488-7b07",
 			"oldName": "lblTransparent",
 			"props": {
@@ -177,7 +177,7 @@
 			}
 		},
 		{
-			"className": ".sf-switch",
+			"className": ".switch",
 			"id": "ddfe-dc88-35e3-24d5",
 			"oldName": "swTransparent",
 			"props": {

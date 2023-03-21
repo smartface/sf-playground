@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"hiddenComponent": true,
 			"id": "c024-9919-5047-dbb7",
 			"props": {
@@ -19,7 +19,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout .flBottomSheet-flWrapper",
+			"className": ".flexLayout .flBottomSheet-flWrapper",
 			"id": "ffa0-1f92-0897-f3e9",
 			"oldName": "flexLayout1",
 			"props": {
@@ -52,7 +52,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label .flBottomSheet-flWrapper-lblTitle",
+			"className": ".label .flBottomSheet-flWrapper-lblTitle",
 			"id": "db47-4a4f-1a92-012a",
 			"oldName": "label1",
 			"props": {
@@ -70,7 +70,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .flBottomSheet-btnMain",
+			"className": ".button .flBottomSheet-btnMain",
 			"id": "6ce0-098c-d20a-a365",
 			"oldName": "button1",
 			"props": {

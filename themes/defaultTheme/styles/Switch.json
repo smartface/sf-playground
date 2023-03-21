@@ -22,7 +22,6 @@
     }
   },
   ".switch": {
-    "masksToBounds": true,
     "width": 60,
     "android": {
       "toggleOffColor": "#EEEEEE"

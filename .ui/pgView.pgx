@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "6030-9a20-5bfa-ca13",
 			"initialized": true,
 			"props": {
@@ -21,7 +21,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "4dda-9007-f091-1e94",
 			"props": {
 				"children": [],
@@ -33,7 +33,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "d458-6641-6955-9962",
 			"props": {
 				"children": [],
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "c896-ddbc-c010-4414",
 			"oldName": "lbl1_1",
 			"props": {
@@ -73,7 +73,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "7587-70b4-8760-cb70",
 			"oldName": "view1",
 			"props": {
@@ -94,7 +94,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "9040-e5c3-f57d-54cb",
 			"oldName": "scrollView1",
 			"props": {
@@ -128,7 +128,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "f942-8c71-9879-d575",
 			"oldName": "label1",
 			"props": {
@@ -153,7 +153,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "93d9-30ad-ee34-d3db",
 			"oldName": "flexLayout1",
 			"props": {
@@ -180,7 +180,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "eb46-921d-85d7-f785",
 			"oldName": "view1",
 			"props": {
@@ -209,7 +209,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "2ce7-7307-6aa9-ce36",
 			"oldName": "v1_1",
 			"props": {
@@ -236,7 +236,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "20bf-ab28-9ac8-17f8",
 			"oldName": "v2_1",
 			"props": {
@@ -262,7 +262,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "fbed-f70f-5705-3a81",
 			"oldName": "v3_1",
 			"props": {
@@ -288,7 +288,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "6f70-4e39-c591-dcda",
 			"oldName": "button1",
 			"props": {
@@ -307,7 +307,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "05c9-ee6f-5ca4-2a34",
 			"oldName": "btnAlignSelf_1",
 			"props": {
@@ -326,7 +326,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "2280-bb68-7abc-743a",
 			"oldName": "btnTouchEnabled_1",
 			"props": {
@@ -345,7 +345,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "5602-fcae-d863-eb60",
 			"oldName": "label1",
 			"props": {
@@ -361,7 +361,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider",
+			"className": ".slider",
 			"id": "b036-595b-c98c-f30d",
 			"oldName": "slider1",
 			"props": {
@@ -377,7 +377,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "ac05-25e0-44ae-1ddb",
 			"oldName": "button1",
 			"props": {
@@ -394,7 +394,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "b67e-504e-bd4e-3019",
 			"oldName": "lblAlpha_1",
 			"props": {
@@ -410,7 +410,7 @@
 			}
 		},
 		{
-			"className": ".sf-slider",
+			"className": ".slider",
 			"id": "4894-4c8b-a966-5382",
 			"oldName": "slAlpha_1",
 			"props": {
@@ -426,7 +426,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "287a-39c3-6e40-cb8c",
 			"oldName": "flWrapper_1",
 			"props": {
@@ -453,7 +453,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "3319-2a32-3435-e9af",
 			"oldName": "v1",
 			"props": {
@@ -482,7 +482,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "7808-d22d-3321-e9bb",
 			"oldName": "v4_1",
 			"props": {
@@ -508,7 +508,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "2e4f-8ee5-5f97-6b54",
 			"oldName": "v4_1",
 			"props": {
@@ -537,7 +537,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "913b-3299-8334-be99",
 			"oldName": "v5_1",
 			"props": {
@@ -566,7 +566,7 @@
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".view",
 			"id": "ea4c-fc5b-0507-2bcf",
 			"oldName": "v6_1",
 			"props": {
@@ -595,7 +595,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "bb62-4dff-4248-6437",
 			"oldName": "flMaxWidthHeight",
 			"props": {
@@ -618,7 +618,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "7499-3959-3568-aee5",
 			"oldName": "tbMin",
 			"props": {
@@ -639,7 +639,7 @@
 			}
 		},
 		{
-			"className": ".sf-button .grow",
+			"className": ".button .grow",
 			"id": "da9a-4768-4f6f-3aa0",
 			"oldName": "btnSetMinMax",
 			"props": {
@@ -660,7 +660,7 @@
 			}
 		},
 		{
-			"className": ".sf-textBox",
+			"className": ".textBox",
 			"id": "c775-3cd2-0978-0a40",
 			"oldName": "tbMax",
 			"props": {
@@ -681,7 +681,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "5a77-cddc-56e9-15ec",
 			"oldName": "flexLayout1",
 			"props": {
@@ -701,7 +701,7 @@
 			}
 		},
 		{
-			"className": ".sf-view .grow",
+			"className": ".view .grow",
 			"id": "bc19-96d6-c08b-a287",
 			"oldName": "view1",
 			"props": {
@@ -725,7 +725,7 @@
 			}
 		},
 		{
-			"className": ".sf-view .grow",
+			"className": ".view .grow",
 			"id": "bdb9-6b69-94b5-173d",
 			"oldName": "vz1_1",
 			"props": {
@@ -749,7 +749,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "48d2-9e6e-c703-2b8c",
 			"oldName": "btnAspectRatio_1",
 			"props": {
@@ -768,7 +768,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "3505-3905-032a-ee63",
 			"oldName": "btnZIndex_1",
 			"props": {
@@ -787,7 +787,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".flexLayout",
 			"id": "d89b-32c6-332c-dfae",
 			"oldName": "flZIndex_1",
 			"props": {
@@ -807,7 +807,7 @@
 			}
 		},
 		{
-			"className": ".sf-view .grow .gradient-left",
+			"className": ".view .grow .gradient-left",
 			"id": "d596-585c-cfba-2b58",
 			"oldName": "vFlip1",
 			"props": {
@@ -822,7 +822,7 @@
 			}
 		},
 		{
-			"className": ".sf-view .grow .gradient-vertical",
+			"className": ".view .grow .gradient-vertical",
 			"id": "7d0c-04de-4434-7626",
 			"oldName": "vFlip2",
 			"props": {
@@ -837,7 +837,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "e529-c826-c634-0fe6",
 			"oldName": "btnBringToFront_1",
 			"props": {
@@ -856,7 +856,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "016d-3156-a041-9c31",
 			"oldName": "btnFlipVertical_1",
 			"props": {

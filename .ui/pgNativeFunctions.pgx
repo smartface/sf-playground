@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".page",
 			"id": "b52b-b058-0de2-1778",
 			"initialized": true,
 			"props": {
@@ -19,7 +19,7 @@
 			"version": "0.0.1.a"
 		},
 		{
-			"className": ".sf-statusBar",
+			"className": ".statusBar",
 			"id": "fa7e-257f-c00b-08bc",
 			"props": {
 				"children": [],
@@ -31,7 +31,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".headerBar",
 			"id": "6858-8137-cecc-636d",
 			"props": {
 				"children": [],
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView .grow",
+			"className": ".scrollView .grow",
 			"id": "54a0-c172-ae5d-e1bf",
 			"props": {
 				"children": [
@@ -76,7 +76,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "6d30-7e3d-afaa-ec61",
 			"props": {
 				"children": [],
@@ -92,7 +92,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "a382-3a09-a5cc-7cb8",
 			"props": {
 				"children": [],
@@ -109,7 +109,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "4718-e7c2-87bf-55d5",
 			"props": {
 				"children": [],
@@ -126,7 +126,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "bbdb-e422-c1db-9b86",
 			"props": {
 				"children": [],
@@ -143,7 +143,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "5432-9c96-1517-cc9f",
 			"props": {
 				"children": [],
@@ -159,7 +159,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "a79a-5af5-5f1f-69a5",
 			"props": {
 				"children": [],
@@ -176,7 +176,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "eaf8-58dc-8fb1-c452",
 			"props": {
 				"children": [],
@@ -193,7 +193,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "c1a1-1557-6e2c-eee5",
 			"props": {
 				"children": [],
@@ -209,7 +209,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "8cbb-2419-9018-f622",
 			"props": {
 				"children": [],
@@ -226,7 +226,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "8b4c-ab87-d7ab-2b31",
 			"props": {
 				"children": [],
@@ -242,7 +242,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "d7c7-a3e1-9b37-2f55",
 			"props": {
 				"children": [],
@@ -259,7 +259,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".label",
 			"id": "ddfe-5416-1a14-cf96",
 			"props": {
 				"children": [],
@@ -275,7 +275,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "9a78-63d3-60ab-3064",
 			"props": {
 				"children": [],
@@ -292,7 +292,7 @@
 			}
 		},
 		{
-			"className": ".sf-button",
+			"className": ".button",
 			"id": "5e2a-fc62-f78d-ae10",
 			"props": {
 				"children": [],
