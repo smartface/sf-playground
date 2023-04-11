@@ -50,7 +50,6 @@
 			"id": "3265-4632-8823-84ec",
 			"oldName": "scrollView1",
 			"props": {
-				"autoSizeEnabled": false,
 				"children": [
 					"4bb0-184a-2c84-ef2a",
 					"294f-4c49-0903-b54c",
@@ -77,7 +76,6 @@
 			},
 			"type": "ScrollView",
 			"userProps": {
-				"autoSizeEnabled": false
 			}
 		},
 		{

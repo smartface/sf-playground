@@ -270,7 +270,6 @@
 			"id": "2a2f-9a91-6295-6f26",
 			"oldName": "scrollView1",
 			"props": {
-				"autoSizeEnabled": false,
 				"children": [
 					"76ac-584f-f99d-7db1",
 					"c1d3-c5b8-6faf-8d77",
@@ -283,7 +282,6 @@
 			"type": "ScrollView",
 			"userProps": {
 				"align": "VERTICAL",
-				"autoSizeEnabled": false,
 				"height": 200,
 				"testId": "q_iUAS3K6",
 				"usePageVariable": true
@@ -357,7 +355,6 @@
 			"id": "aadb-24c4-8629-d83d",
 			"oldName": "svMain_1",
 			"props": {
-				"autoSizeEnabled": true,
 				"children": [
 					"c195-66d3-e7fd-3e97",
 					"9a87-3d87-8c1d-91d7",
@@ -370,7 +367,6 @@
 			"type": "ScrollView",
 			"userProps": {
 				"align": "HORIZONTAL",
-				"autoSizeEnabled": true,
 				"height": 200,
 				"layout": {
 					"flexProps": {
