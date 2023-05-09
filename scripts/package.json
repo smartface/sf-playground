@@ -4,13 +4,13 @@
     "@smartface/component-calendar": "^5.0.5",
     "@smartface/component-keyboardlayout": "^5.0.4",
     "@smartface/extension-utils": "^17.0.0",
-    "@smartface/i18n": "^5.1.0",
-    "@smartface/mixins": "^5.1.0",
-    "@smartface/native": "^5.1.0",
+    "@smartface/i18n": "^5.1.6",
+    "@smartface/mixins": "^5.1.6",
+    "@smartface/native": "^5.1.2",
     "@smartface/router": "^2.4.1",
-    "@smartface/source-map": "^5.1.0",
+    "@smartface/source-map": "^5.1.6",
     "@smartface/styling-context": "5.0.9",
-    "@smartface/webviewbridge": "^5.1.0",
+    "@smartface/webviewbridge": "^5.1.6",
     "axios": "0.26.1"
   }
 }
