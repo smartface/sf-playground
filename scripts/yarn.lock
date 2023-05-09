@@ -38,10 +38,10 @@
     "@smartface/styler" "^2.0.0"
     filtrex "^0.5.4"
 
-"@smartface/core@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.1.0.tgz#af535454303299d2fb073dcad342d7da9a33acb9"
-  integrity sha512-erG45DGy1tp24Wcqods959tCzzdYYacBh1lCIIumilUJVY93Vdp7y1k3EuNXIDTxoDfjW0wrwiw/Iv1c50RMnA==
+"@smartface/core@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@smartface/core/-/core-5.1.6.tgz#a08324f341c7af26e4c3c8dc4fd9034a62827247"
+  integrity sha512-7brJEeb2A3ZHrQNpocQRN/p/1RSZIbbk0T/d784lf7Cfv3H6euZO5m1Dfpw13qeaanIMKqnOm8pZiIH2guHqPw==
 
 "@smartface/extension-utils@^17.0.0":
   version "17.0.0"
@@ -64,24 +64,24 @@
   dependencies:
     html-parse-stringify "1.0.2"
 
-"@smartface/i18n@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.1.0.tgz#41c1355a0593148133de741114fa5b82584628bc"
-  integrity sha512-hDXZWPTr3OOMvXRHB2pyOuSVJr6beba6qOmlnRuuST7/CMn/Cl8W2bgQ1lVbA25bVeSS3pJyXSSa/Ujpu2mJhA==
+"@smartface/i18n@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@smartface/i18n/-/i18n-5.1.6.tgz#06b7c5d7423dc1765a16681f0dbd853c576467e1"
+  integrity sha512-SP7HHMg7yftXSsJV1dHvaGfZqFTdB5FOYtZ5JWmDTxSdCbjPIwKsaxiliACt47tY0HxY6lqDUUpMWkNCmCvwSw==
   dependencies:
     i18next "21.6.15"
 
-"@smartface/mixins@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-5.1.0.tgz#80232fbe40cd83fcbcc7bf0ba37ffce229c02009"
-  integrity sha512-wN9XPLhoa3Xa+dFm5LD0aXD7868B6BGrNTfQImGlkAkKIC1TxoGcJpPf5oEtUDKsPXseBGOByOGb0wBUtdA2UA==
+"@smartface/mixins@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@smartface/mixins/-/mixins-5.1.6.tgz#575bb147157a95413770b1e6073f41c536978fbd"
+  integrity sha512-EAC5kQ0CmoQk1U0EZS/KBramCJ32unHrJQILRtzXLQV8dnspCDJe6kDrq9cPbd64cDvjZaHw+1eY2lFG6AsLvA==
   dependencies:
-    "@smartface/core" "^5.1.0"
+    "@smartface/core" "^5.1.6"
 
-"@smartface/native@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.1.0.tgz#8062a66bf61d0b50516dbdb4080e4ae6227c06bf"
-  integrity sha512-+io+fOeOL4tg9f76KZBPGkG9pt7MY3mjtotREW2OjzVzmQwxYwadpT7jRHI6uZQ3s5xoEBpPbBV/ai+U49e0rA==
+"@smartface/native@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.1.2.tgz#22969e222074f1ce1b52597a676acb1f4a0c5d17"
+  integrity sha512-6BzbHbu8Et9IUKRbsLa+Sv88BdD6j/A323nJ1lBYBMhPDCt5vRYxUh7fkgxS1ikRf2f3EtM4w3ehXaDVqsTO5Q==
   dependencies:
     abort-controller "^3.0.0"
     events "^3.3.0"
@@ -94,10 +94,10 @@
     path-to-regexp "^2.4.0"
     resolve-pathname "^2.2.0"
 
-"@smartface/source-map@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.1.0.tgz#0ea326218093cd5ec93ade2694858481ad6d6218"
-  integrity sha512-ve0ywDcLFVmn9tG3NhwGUMLJ/Vl1ypB8s46MPH4eEI9Ffeqh2R42+L4aXc6ThBuyyJM7sN0pIxcJbo1N+73Cww==
+"@smartface/source-map@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@smartface/source-map/-/source-map-5.1.6.tgz#84fdd9e4fbdad792483c29e70b7226817564b230"
+  integrity sha512-wa8qvAUQUA7jvWaGxezWQtmwIuk+jGJHo0aIq0sHNNMwycU5QCXQbDX65zQEHJYSHeFLBrMvOkl7oRrugQDuMQ==
   dependencies:
     source-map "0.6.1"
 
@@ -121,10 +121,10 @@
   dependencies:
     events "^3.3.0"
 
-"@smartface/webviewbridge@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.1.0.tgz#a7321dd968576ead3a45d780e03bc0fd277076d0"
-  integrity sha512-azRSYqWcGENtVdWohGtyNFKWexs8SfQhfnp3JSbFtbwf4Ye+dJiSwatEpGgwxhk7sBQXdQm2xTUqQQEfU3GvpQ==
+"@smartface/webviewbridge@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@smartface/webviewbridge/-/webviewbridge-5.1.6.tgz#a7659b9453e582334fabe60dda6e65ca4ad2c023"
+  integrity sha512-nZ9wKN/F3gJApHvLKZSi6MRddIZGtaNXhrhGPJW7pzlmmPLTuVfCsENHe2qYSPNfkChJGxmNcyovKNkJRqYaTA==
   dependencies:
     events "^3.3.0"
 
