@@ -48,24 +48,10 @@ export default class PgGridViewPagination extends withDismissAndBackButton(PgGri
 
   initGridView() {
     this.gvMain.layoutManager.onItemLength = () => Screen.width;
-
-    this.gvMain.layoutManager.ios.targetContentOffset = (proposedContentOffset, velocity) => {
-      let positionX = this.gvMain.contentOffset.x / Screen.width;
-      let decimalPositionX = positionX;
-      let precisionPositionX = positionX % 1;
-
-      if (velocity.x == 0 && precisionPositionX >= 0.5) {
-        decimalPositionX = decimalPositionX + 1;
-      } else if (velocity.x > 0) {
-        decimalPositionX = decimalPositionX + 1;
-      }
-
-      return { x: decimalPositionX * Screen.width, y: 0 };
-    };
     this.gvMain.backgroundColor = Color.TRANSPARENT;
-    this.gvMain.android.paginationEnabled = true;
     this.gvMain.scrollBarEnabled = false;
     this.gvMain.refreshEnabled = false;
+    this.gvMain.paginationEnabled = true;
     this.gvMain.itemCount = this.myDataset.length;
     this.gvMain.onItemBind = (gridViewItem: GviTitle, index) => {
       let { title, backgroundColor } = this.myDataset[this.myDataset.length - index - 1];
