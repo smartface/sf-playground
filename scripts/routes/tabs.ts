@@ -117,6 +117,7 @@ import PgLabelFlexShrink from 'pages/pgLabelFlexShrink';
 import PgSSLPinningHttp from 'pages/pgSSLPinningHttp';
 import PgCustomHeaderbar from 'pages/pgCustomHeader'
 import PgPermissionForAndroid from 'pages/pgPermissionForAndroid';
+import PgSvgImageView from 'pages/pgSvgImageView';
 
 type Tab = { name: string; tabIndex: number; pages: ConstructorOf<Page>[]; imageName: string };
 
@@ -198,7 +199,8 @@ export const tab0: Tab = {
     PgWebView,
     PgButton,
     PgLabelFlexShrink,
-    PgPermissionForAndroid
+    PgPermissionForAndroid,
+    PgSvgImageView
   ]
 };
 
