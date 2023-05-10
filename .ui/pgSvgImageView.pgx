@@ -1,0 +1,93 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "dc51-9c6c-19eb-092f",
+			"initialized": true,
+			"props": {
+				"children": [
+					"783a-60e2-c76b-94dc",
+					"59f6-45eb-5be6-c840",
+					"5719-f5b2-9625-dfd0",
+					"2f0c-b98d-903d-13c8",
+					"ea7c-b746-c81a-47cd"
+				],
+				"name": "pgSvgImageView",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "0.12.1"
+		},
+		{
+			"className": ".statusBar",
+			"id": "783a-60e2-c76b-94dc",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "dc51-9c6c-19eb-092f"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "59f6-45eb-5be6-c840",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "dc51-9c6c-19eb-092f",
+				"title": "pgSvgImageView"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgSvgImageView"
+			}
+		},
+		{
+			"className": ".svgImageView",
+			"id": "5719-f5b2-9625-dfd0",
+			"oldName": "svgImageView1",
+			"props": {
+				"children": [],
+				"name": "svgImageViewMain",
+				"parent": "dc51-9c6c-19eb-092f"
+			},
+			"type": "SvgImageView",
+			"userProps": {}
+		},
+		{
+			"className": ".button",
+			"id": "2f0c-b98d-903d-13c8",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnLoadFromUrl",
+				"parent": "dc51-9c6c-19eb-092f",
+				"text": "Load From URL"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Load From URL"
+			}
+		},
+		{
+			"className": ".button",
+			"id": "ea7c-b746-c81a-47cd",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnLoadFromFile",
+				"parent": "dc51-9c6c-19eb-092f",
+				"text": "Load From File"
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Load From File"
+			}
+		}
+	]
+}
