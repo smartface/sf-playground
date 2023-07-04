@@ -252,5 +252,5 @@ export const tab4: Tab = {
     PgListViewExtendShrink,
     PgForm,
     PgCustomHeaderbar
-  ] // M1
+  ] // INTEL
 };
