@@ -40,7 +40,7 @@ export default class PgHeaderSearch extends withDismissAndBackButton(Page1Design
 
   generateRandomData() {
     this._original = new Array(50).fill(0).map(() => {
-      return faker.lorem.word();
+      return 'asd';
     });
     this._data = this._original;
   }

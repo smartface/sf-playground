@@ -31,7 +31,7 @@ export default class PgListViewExtendShrink extends withDismissAndBackButton(PgL
         resolve(
           new Array(10).fill(0).map(() => {
             return {
-              name: faker.company.companyName(),
+              name: faker.company.name(),
               section: faker.company.bs(),
               info: faker.lorem.paragraph(5)
             };

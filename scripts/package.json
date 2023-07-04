@@ -1,16 +1,26 @@
 {
   "dependencies": {
-    "@faker-js/faker": "^6.3.1",
+    "@faker-js/faker": "^8.0.2",
     "@smartface/component-calendar": "^5.0.5",
-    "@smartface/component-keyboardlayout": "^5.0.4",
+    "@smartface/component-keyboardlayout": "^5.0.0",
+    "@smartface/component-materialtextbox": "^7.0.2",
     "@smartface/extension-utils": "^17.0.0",
-    "@smartface/i18n": "^5.1.6",
+    "@smartface/i18n": "^5.0.8",
     "@smartface/mixins": "^5.1.6",
-    "@smartface/native": "^5.1.2",
-    "@smartface/router": "^2.4.1",
-    "@smartface/source-map": "^5.1.6",
-    "@smartface/styling-context": "5.0.9",
-    "@smartface/webviewbridge": "^5.1.6",
-    "axios": "0.26.1"
+    "@smartface/native": "5.1.5-alpha.2",
+    "@smartface/plugin-firebase": "7.2.1",
+    "@smartface/router": "^2.3.1",
+    "@smartface/security": "^5.1.2",
+    "@smartface/source-map": "5.1.6",
+    "@smartface/styling-context": "5.1.7",
+    "axios": "0.26.1",
+    "dayjs": "^1.11.6",
+    "fast-deep-equal": "^3.1.3",
+    "node-html-parser": "^6.1.5",
+    "qrcode-generator": "^1.4.4",
+    "redux": "^4.1.2",
+    "semver": "^7.3.8",
+    "source-map": "0.6.1",
+    "urijs": "^1.19.11"
   }
 }
